@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "VidRe", "index.html", [
+    [ "Licenses", "license.html", null ],
     [ "Topics", "topics.html", "topics" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]

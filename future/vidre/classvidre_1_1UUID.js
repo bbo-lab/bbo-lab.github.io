@@ -7,6 +7,7 @@ var classvidre_1_1UUID =
       [ "Other", "classvidre_1_1UUID.html#a481ab71c50e072456ae5ac54126c2032a6311ae17c1ee52b36e68aaf4ad066387", null ]
     ] ],
     [ "Type", "classvidre_1_1UUID.html#a304be9c7e14465241f9c50052023fbd0", [
+      [ "NIL", "classvidre_1_1UUID.html#a304be9c7e14465241f9c50052023fbd0abc0b1e8b63f3f00318eee5aeabc14255", null ],
       [ "Time", "classvidre_1_1UUID.html#a304be9c7e14465241f9c50052023fbd0aa76d4ef5f3f6a672bbfab2865563e530", null ],
       [ "Security", "classvidre_1_1UUID.html#a304be9c7e14465241f9c50052023fbd0a2fae32629d4ef4fc6341f1751b405e45", null ],
       [ "MD5", "classvidre_1_1UUID.html#a304be9c7e14465241f9c50052023fbd0a7f138a09169b250e9dcb378140907378", null ],

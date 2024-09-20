@@ -118,7 +118,8 @@ $(function(){initNavTree('classvidre_1_1UUID.html',''); initResizable(); });
 <p><code>#include &lt;<a class="el" href="uuid_8hh_source.html">vidre/util/uuid.hh</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>UUIDs. </p>
-<p>This class wraps the <a href="https://www.man7.org/linux/man-pages/man3/uuid.3.html">uuid</a> library. </p>
+<p>This class wraps the <a href="https://www.man7.org/linux/man-pages/man3/uuid.3.html">uuid</a> library.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://datatracker.ietf.org/doc/html/rfc4122">RFC 4122</a> </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -135,6 +136,8 @@ Public Types</h2></td></tr>
 <tr class="memdesc:a481ab71c50e072456ae5ac54126c2032"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classvidre_1_1UUID.html" title="UUIDs.">UUID</a> variant.  <a href="#a481ab71c50e072456ae5ac54126c2032">More...</a><br /></td></tr>
 <tr class="separator:a481ab71c50e072456ae5ac54126c2032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a304be9c7e14465241f9c50052023fbd0" id="r_a304be9c7e14465241f9c50052023fbd0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a304be9c7e14465241f9c50052023fbd0">Type</a> { <br />
+&#160;&#160;<a class="el" href="#a304be9c7e14465241f9c50052023fbd0abc0b1e8b63f3f00318eee5aeabc14255">NIL</a> = UUID_TYPE_DCE_NIL
+, <br />
 &#160;&#160;<a class="el" href="#a304be9c7e14465241f9c50052023fbd0aa76d4ef5f3f6a672bbfab2865563e530">Time</a> = UUID_TYPE_DCE_TIME
 , <br />
 &#160;&#160;<a class="el" href="#a304be9c7e14465241f9c50052023fbd0a2fae32629d4ef4fc6341f1751b405e45">Security</a> = UUID_TYPE_DCE_SECURITY
@@ -156,10 +159,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a25cd3e36fca380e9aa98b1616321d0d3" id="r_a25cd3e36fca380e9aa98b1616321d0d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25cd3e36fca380e9aa98b1616321d0d3">UUID</a> (const std::string &amp;s)</td></tr>
 <tr class="separator:a25cd3e36fca380e9aa98b1616321d0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4e83f2a666e0f824b3fc9f01f947e5e" id="r_af4e83f2a666e0f824b3fc9f01f947e5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4e83f2a666e0f824b3fc9f01f947e5e">operator Variant</a> () const noexcept</td></tr>
-<tr class="memdesc:af4e83f2a666e0f824b3fc9f01f947e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get variant.  <br /></td></tr>
+<tr class="memdesc:af4e83f2a666e0f824b3fc9f01f947e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit variant conversion.  <br /></td></tr>
 <tr class="separator:af4e83f2a666e0f824b3fc9f01f947e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a135eed6f64e1ac8328a726a37840a969" id="r_a135eed6f64e1ac8328a726a37840a969"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a135eed6f64e1ac8328a726a37840a969">operator Type</a> () const noexcept</td></tr>
-<tr class="memdesc:a135eed6f64e1ac8328a726a37840a969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DCE type.  <br /></td></tr>
+<tr class="memdesc:a135eed6f64e1ac8328a726a37840a969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit DCE type conversion.  <br /></td></tr>
 <tr class="separator:a135eed6f64e1ac8328a726a37840a969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5dc96b2999285704479948e48292bfa" id="r_af5dc96b2999285704479948e48292bfa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5dc96b2999285704479948e48292bfa">tostring</a> (bool lowercase=false) const noexcept</td></tr>
 <tr class="memdesc:af5dc96b2999285704479948e48292bfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert to string.  <br /></td></tr>
@@ -226,6 +229,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p><a class="el" href="classvidre_1_1UUID.html" title="UUIDs.">UUID</a> variant. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://datatracker.ietf.org/doc/html/rfc4122">RFC 4122</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a481ab71c50e072456ae5ac54126c2032a4c4a1a6b1eeebaeb1f2c4627368b79d8" name="a481ab71c50e072456ae5ac54126c2032a4c4a1a6b1eeebaeb1f2c4627368b79d8"></a>NCS&#160;</td><td class="fielddoc"><p>Apollo NCS variant (backwards compatibility). </p>
 </td></tr>
@@ -260,9 +264,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>DCE variant type. </p>
-<dl class="section see"><dt>See also</dt><dd><a href="https://datatracker.ietf.org/doc/html/rfc4122">https://datatracker.ietf.org/doc/html/rfc4122</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://datatracker.ietf.org/doc/html/rfc4122">RFC 4122</a> </dd></dl>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a304be9c7e14465241f9c50052023fbd0aa76d4ef5f3f6a672bbfab2865563e530" name="a304be9c7e14465241f9c50052023fbd0aa76d4ef5f3f6a672bbfab2865563e530"></a>Time&#160;</td><td class="fielddoc"><p>Time-/MAC-based. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a304be9c7e14465241f9c50052023fbd0abc0b1e8b63f3f00318eee5aeabc14255" name="a304be9c7e14465241f9c50052023fbd0abc0b1e8b63f3f00318eee5aeabc14255"></a>NIL&#160;</td><td class="fielddoc"><p>"NIL" (refers to the <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier#Nil_UUID">"Nil UUID"</a>). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a304be9c7e14465241f9c50052023fbd0aa76d4ef5f3f6a672bbfab2865563e530" name="a304be9c7e14465241f9c50052023fbd0aa76d4ef5f3f6a672bbfab2865563e530"></a>Time&#160;</td><td class="fielddoc"><p>Time-/MAC-based. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a304be9c7e14465241f9c50052023fbd0a2fae32629d4ef4fc6341f1751b405e45" name="a304be9c7e14465241f9c50052023fbd0a2fae32629d4ef4fc6341f1751b405e45"></a>Security&#160;</td><td class="fielddoc"><p>Security version, with embedded POSIX UIDs. </p>
 </td></tr>
@@ -345,8 +351,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate random or time-based <a class="el" href="classvidre_1_1UUID.html" title="UUIDs.">UUID</a>. </p>
-<p>This function generates a random <a class="el" href="classvidre_1_1UUID.html" title="UUIDs.">UUID</a> if a high-quality random source is available, a time-/MAC-based <a class="el" href="classvidre_1_1UUID.html" title="UUIDs.">UUID</a> otherwise. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a4df4fadef256a84c52f3903035f8bbbd" title="Create a time- and MAC-based UUID.">UUID::makeTime()</a> <br  />
- <a class="el" href="#a19e93f0b350c4b6d57cf6281975182cc" title="Safely create a time- and MAC-based UUID.">UUID::makeTimeSafe()</a> </dd></dl>
+<p>This function generates a random <a class="el" href="classvidre_1_1UUID.html" title="UUIDs.">UUID</a> if a high-quality random source is available, a time-/MAC-based <a class="el" href="classvidre_1_1UUID.html" title="UUIDs.">UUID</a> otherwise.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a4df4fadef256a84c52f3903035f8bbbd" title="Create a time- and MAC-based UUID.">UUID::makeTime()</a> <br  />
+ <a class="el" href="#a19e93f0b350c4b6d57cf6281975182cc" title="Safely create a time- and MAC-based UUID.">UUID::makeTimeSafe()</a> <br  />
+ <a class="el" href="#a141af316782ac02e31787a1a553f0464" title="Create a random or pseudo-random UUID.">UUID::makeRandom()</a> </dd></dl>
 
 </div>
 </div>
@@ -375,9 +383,10 @@ Protected Attributes</h2></td></tr>
 
 <p>Create a time- and MAC-based <a class="el" href="classvidre_1_1UUID.html" title="UUIDs.">UUID</a>. </p>
 <blockquote class="doxtable">
-<p>&zwj;This function forces the use of the alternative algorithm which uses the current time and the local ethernet MAC address (if available). This algorithm used to be the default one used to generate UUIDs, but because of the use of the ethernet MAC address, it can leak information about when and where the <a class="el" href="classvidre_1_1UUID.html" title="UUIDs.">UUID</a> was generated. [...] If neither of these two synchronization mechanisms can be used, it is theoretically possible that two concurrently running processes obtain the same UUID(s). </p>
+<p>&zwj;This function forces the use of the alternative algorithm which uses the current time and the local ethernet MAC address (if available). This algorithm used to be the default one used to generate UUIDs, but because of the use of the ethernet MAC address, it can leak information about when and where the <a class="el" href="classvidre_1_1UUID.html" title="UUIDs.">UUID</a> was generated. </p>
 </blockquote>
-<p><a href="https://www.man7.org/linux/man-pages/man3/uuid_generate.3.html">man uuid_generate</a></p>
+<p>(see <a href="https://www.man7.org/linux/man-pages/man3/uuid_generate.3.html">uuid_generate_time man-page</a>)</p>
+<p>Note, however, that uniqueness of UUIDs is not guaranteed.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a19e93f0b350c4b6d57cf6281975182cc" title="Safely create a time- and MAC-based UUID.">UUID::makeTimeSafe()</a> </dd></dl>
 
 </div>
@@ -406,13 +415,13 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Safely create a time- and MAC-based <a class="el" href="classvidre_1_1UUID.html" title="UUIDs.">UUID</a>. </p>
-<p>This function uses synchronization mechanisms to avoid that identical UUIDs are generated on a local machine.</p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::runtime_error()</td><td>if synchronization fails </td></tr>
+    <tr><td class="paramname">std::runtime_error()</td><td>if synchronization fails</td></tr>
   </table>
   </dd>
 </dl>
+<p>This function uses synchronization mechanisms to ensure uniqueness of time-based UUIDs</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a4df4fadef256a84c52f3903035f8bbbd" title="Create a time- and MAC-based UUID.">UUID::makeTime()</a> </dd></dl>
 
 </div>
@@ -569,8 +578,15 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get variant. </p>
-
+<p>Implicit variant conversion. </p>
+<p>Usage: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> fn(<span class="keyword">const</span> <a class="code hl_class" href="classvidre_1_1UUID.html">UUID</a> &amp;uuid) {</div>
+<div class="line">    <span class="keywordflow">if</span> (uuid == <a class="code hl_enumvalue" href="#a481ab71c50e072456ae5ac54126c2032a7ec86cdcd1ba706dcb1764fabd5ad86a">UUID::Variant::DCE</a>) {</div>
+<div class="line">        <span class="comment">// ...</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassvidre_1_1UUID_html"><div class="ttname"><a href="classvidre_1_1UUID.html">vidre::UUID</a></div><div class="ttdoc">UUIDs.</div><div class="ttdef"><b>Definition</b> uuid.hh:50</div></div>
+<div class="ttc" id="aclassvidre_1_1UUID_html_a481ab71c50e072456ae5ac54126c2032a7ec86cdcd1ba706dcb1764fabd5ad86a"><div class="ttname"><a href="#a481ab71c50e072456ae5ac54126c2032a7ec86cdcd1ba706dcb1764fabd5ad86a">vidre::UUID::Variant::DCE</a></div><div class="ttdeci">@ DCE</div><div class="ttdoc">DCE 1.1 UUIDs (see RFC 4122).</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a135eed6f64e1ac8328a726a37840a969" name="a135eed6f64e1ac8328a726a37840a969"></a>
@@ -596,7 +612,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get DCE type. </p>
+<p>Implicit DCE type conversion. </p>
+<dl class="section see"><dt>See also</dt><dd><code>operator <a class="el" href="#a481ab71c50e072456ae5ac54126c2032" title="UUID variant.">Variant()</a></code> </dd></dl>
 
 </div>
 </div>
