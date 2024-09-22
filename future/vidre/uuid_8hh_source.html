@@ -36,7 +36,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="vidre.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">VidRe<span id="projectnumber">&#160;0.0</span>
+   <div id="projectname">VidRe<span id="projectnumber">&#160;.</span>
    </div>
    <div id="projectbrief">Video recording software for scientific purposes.</div>
   </td>
@@ -132,8 +132,8 @@ $(function(){initNavTree('uuid_8hh_source.html',''); initResizable(); });
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// @file</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#ifndef VIDRE_BASE_CONFIG_HH</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define VIDRE_BASE_CONFIG_HH</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#ifndef VIDRE_BASE_UTIL_UUID_HH</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define VIDRE_BASE_UTIL_UUID_HH</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;<a class="code" href="vidre_2config_8hh.html">vidre/config.hh</a>&gt;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
@@ -141,8 +141,7 @@ $(function(){initNavTree('uuid_8hh_source.html',''); initResizable(); });
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespacevidre.html">   33</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a> {</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classvidre_1_1UUID.html">   50</a></span>    <span class="keyword">class </span><a class="code hl_define" href="group__api-base-details.html#ga7b9377d6ed66036851c9191e8367f2a9">VIDRE_BASE_VISIBILITY</a> <a class="code hl_class" href="classvidre_1_1UUID.html">UUID</a> {</div>
@@ -261,9 +260,8 @@ $(function(){initNavTree('uuid_8hh_source.html',''); initResizable(); });
 </div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>}  <span class="comment">// namespace vidre</span></div>
-</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">#endif  </span><span class="comment">// VIDRE_BASE_CONFIG_HH</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">#endif  </span><span class="comment">// VIDRE_BASE_UTIL_UUID_HH</span></div>
 <div class="ttc" id="aclassvidre_1_1UUID_html"><div class="ttname"><a href="classvidre_1_1UUID.html">vidre::UUID</a></div><div class="ttdoc">UUIDs.</div><div class="ttdef"><b>Definition</b> uuid.hh:50</div></div>
 <div class="ttc" id="aclassvidre_1_1UUID_html_a0b85e8f2657d384aca44119a91a8687a"><div class="ttname"><a href="classvidre_1_1UUID.html#a0b85e8f2657d384aca44119a91a8687a">vidre::UUID::UUID</a></div><div class="ttdeci">UUID()=default</div></div>
 <div class="ttc" id="aclassvidre_1_1UUID_html_a141af316782ac02e31787a1a553f0464"><div class="ttname"><a href="classvidre_1_1UUID.html#a141af316782ac02e31787a1a553f0464">vidre::UUID::makeRandom</a></div><div class="ttdeci">static UUID makeRandom() noexcept</div><div class="ttdoc">Create a random or pseudo-random UUID.</div><div class="ttdef"><b>Definition</b> uuid.hh:131</div></div>
@@ -279,7 +277,7 @@ $(function(){initNavTree('uuid_8hh_source.html',''); initResizable(); });
 <div class="ttc" id="aclassvidre_1_1UUID_html_aede93d0cd6815f1edaa17d319eac7860"><div class="ttname"><a href="classvidre_1_1UUID.html#aede93d0cd6815f1edaa17d319eac7860">vidre::UUID::uuid_</a></div><div class="ttdeci">uuid_t uuid_</div><div class="ttdef"><b>Definition</b> uuid.hh:158</div></div>
 <div class="ttc" id="aclassvidre_1_1UUID_html_afbb71f977747ebd7f0cdc3295054861a"><div class="ttname"><a href="classvidre_1_1UUID.html#afbb71f977747ebd7f0cdc3295054861a">vidre::UUID::makeSHA1</a></div><div class="ttdeci">static UUID makeSHA1(const UUID ns, const std::string &amp;name) noexcept</div><div class="ttdoc">Create a name-based UUID with SHA-1 hashing.</div><div class="ttdef"><b>Definition</b> uuid.hh:147</div></div>
 <div class="ttc" id="agroup__api-base-details_html_ga7b9377d6ed66036851c9191e8367f2a9"><div class="ttname"><a href="group__api-base-details.html#ga7b9377d6ed66036851c9191e8367f2a9">VIDRE_BASE_VISIBILITY</a></div><div class="ttdeci">#define VIDRE_BASE_VISIBILITY</div><div class="ttdoc">Declaration specification for import/export for the base library.</div><div class="ttdef"><b>Definition</b> config.hh:54</div></div>
-<div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> uuid.hh:33</div></div>
+<div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> module.hh:43</div></div>
 <div class="ttc" id="avidre_2config_8hh_html"><div class="ttname"><a href="vidre_2config_8hh.html">config.hh</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

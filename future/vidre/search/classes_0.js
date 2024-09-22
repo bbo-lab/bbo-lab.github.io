@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uuid_0',['UUID',['../classvidre_1_1UUID.html',1,'vidre']]]
+  ['information_0',['Information',['../structvidre_1_1module_1_1Information.html',1,'vidre::module']]]
 ];
