@@ -1,0 +1,5 @@
+var group__api_core_util_macro =
+[
+    [ "VIDRE_STRINGIFY", "group__api-core-util-macro.html#ga4d780a49ed37a17ed7d74b9b5afcafed", null ],
+    [ "VIDRE_STRINGIFY_EXPAND", "group__api-core-util-macro.html#ga2939b51004ff0961c89c40a92ffbd531", null ]
+];
