@@ -25,14 +25,47 @@
 var NAVTREE =
 [
   [ "VidRe", "index.html", [
+    [ "Development", "dev.html", [
+      [ "Objective", "dev.html#dev-objective", null ],
+      [ "Design", "dev.html#dev-design", [
+        [ "Backend", "dev.html#dev-backend", [
+          [ "Monitoring", "dev.html#dev-backend-monitoring", null ],
+          [ "Devices", "dev.html#dev-backend-devices", null ],
+          [ "Storage", "dev.html#dev-backend-storage", null ],
+          [ "Real-time interface", "dev.html#dev-backend-realtime", null ],
+          [ "Transport", "dev.html#dev-backend-transport", null ],
+          [ "Settings", "dev.html#dev-backend-settings", null ]
+        ] ],
+        [ "Frontend", "dev.html#dev-frontend", null ]
+      ] ],
+      [ "Implementation", "dev.html#dev-impl", [
+        [ "Language(s) and configuration", "dev.html#dev-lang", null ],
+        [ "Version control", "dev.html#dev-git", null ],
+        [ "Documentation", "dev.html#dev-docs", null ]
+      ] ],
+      [ "Libraries", "dev.html#dev-libs", [
+        [ "Core library", "dev.html#dev-core", [
+          [ "Error handling", "dev.html#core-exception", null ],
+          [ "Logging", "dev.html#core-logging", null ],
+          [ "Plugins", "dev.html#core-plugins", null ],
+          [ "System information", "dev.html#core-sysinfo", null ],
+          [ "Storage", "dev.html#core-storage", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "Licenses", "license.html", null ],
     [ "Topics", "topics.html", "topics" ],
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
@@ -44,9 +77,11 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "Examples", "examples.html", "examples" ]
   ] ]
 ];
 

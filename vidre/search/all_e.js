@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['s_20license_3a_0',['VidRe&apos;s license:',['../license.html#autotoc_md0',1,'']]],
-  ['security_1',['Security',['../classvidre_1_1UUID.html#a304be9c7e14465241f9c50052023fbd0a2fae32629d4ef4fc6341f1751b405e45',1,'vidre::UUID']]],
-  ['sha1_2',['SHA1',['../classvidre_1_1UUID.html#a304be9c7e14465241f9c50052023fbd0a9a9f4eb6d0036a164588b6ee74390442',1,'vidre::UUID']]]
+  ['random_0',['Random',['../classvidre_1_1uuid.html#a5b9648f028bfb70ebdbd5d57ec4ac6c3a64663f4646781c9c0110838b905daa23',1,'vidre::uuid']]],
+  ['real_20time_20interface_1',['Real-time interface',['../dev.html#dev-backend-realtime',1,'']]]
 ];

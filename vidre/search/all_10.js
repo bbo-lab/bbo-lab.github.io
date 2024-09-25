@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['utilities_0',['utilities',['../group__api-core-util-macro.html',1,'Macro utilities.'],['../group__api-core-util.html',1,'Utilities.']]],
-  ['uuid_1',['uuid',['../classvidre_1_1UUID.html',1,'vidre::UUID'],['../classvidre_1_1UUID.html#a0b85e8f2657d384aca44119a91a8687a',1,'vidre::UUID::UUID()=default'],['../classvidre_1_1UUID.html#a25cd3e36fca380e9aa98b1616321d0d3',1,'vidre::UUID::UUID(const std::string &amp;s)'],['../group__api-core-util-uuid.html',1,'UUID']]],
-  ['uuid_2ecc_2',['uuid.cc',['../uuid_8cc.html',1,'']]],
-  ['uuid_2ehh_3',['uuid.hh',['../uuid_8hh.html',1,'']]],
-  ['uuid_5f_4',['uuid_',['../classvidre_1_1UUID.html#aede93d0cd6815f1edaa17d319eac7860',1,'vidre::UUID']]]
+  ['time_0',['Time',['../classvidre_1_1uuid.html#a5b9648f028bfb70ebdbd5d57ec4ac6c3aa76d4ef5f3f6a672bbfab2865563e530',1,'vidre::uuid']]],
+  ['time_20interface_1',['Real-time interface',['../dev.html#dev-backend-realtime',1,'']]],
+  ['tostring_2',['tostring',['../classvidre_1_1uuid.html#a19b5142800d92b85d4925ba49f3ce00d',1,'vidre::uuid']]],
+  ['transport_3',['Transport',['../dev.html#dev-backend-transport',1,'']]],
+  ['type_4',['type',['../classvidre_1_1uuid.html#a5b9648f028bfb70ebdbd5d57ec4ac6c3',1,'vidre::uuid']]]
 ];

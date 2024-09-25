@@ -1,7 +1,7 @@
-<map id="Utilities." name="Utilities.">
+<map id="Utilities" name="Utilities">
 <area shape="rect" id="Node000002" href="$group__api-core.html" title=" " alt="" coords="5,55,105,80"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="153,55,231,80"/>
-<area shape="rect" id="Node000003" href="$group__api-core-util-json.html" title=" " alt="" coords="309,5,367,31"/>
-<area shape="rect" id="Node000004" href="$group__api-core-util-macro.html" title=" " alt="" coords="279,55,397,80"/>
-<area shape="rect" id="Node000005" href="$group__api-core-util-uuid.html" title=" " alt="" coords="310,104,366,129"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="153,55,227,80"/>
+<area shape="rect" id="Node000003" href="$group__api-core-util-json.html" title=" " alt="" coords="305,5,363,31"/>
+<area shape="rect" id="Node000004" href="$group__api-core-util-macro.html" title=" " alt="" coords="275,55,393,80"/>
+<area shape="rect" id="Node000005" href="$group__api-core-util-uuid.html" title=" " alt="" coords="306,104,362,129"/>
 </map>

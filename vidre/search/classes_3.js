@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uuid_0',['UUID',['../classvidre_1_1UUID.html',1,'vidre']]]
+  ['library_0',['library',['../classvidre_1_1plugin_1_1dynamic_1_1library.html',1,'vidre::plugin::dynamic']]]
 ];

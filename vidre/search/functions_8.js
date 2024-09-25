@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7elibrary_0',['~library',['../classvidre_1_1plugin_1_1dynamic_1_1library.html#add82b33113fba9fb00fcee32b0fd267c',1,'vidre::plugin::dynamic::library']]]
+  ['uuid_0',['uuid',['../classvidre_1_1uuid.html#aab52f5f7d26380e10c8300f6fff22245',1,'vidre::uuid::uuid()=default'],['../classvidre_1_1uuid.html#afa3f6b85d01f44f2a110746e6892b958',1,'vidre::uuid::uuid(const std::string &amp;s)']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['variant_0',['Variant',['../classvidre_1_1UUID.html#a481ab71c50e072456ae5ac54126c2032',1,'vidre::UUID']]]
+  ['variant_0',['variant',['../classvidre_1_1uuid.html#ac551c936acd5ce8a261aede0e8685825',1,'vidre::uuid']]]
 ];

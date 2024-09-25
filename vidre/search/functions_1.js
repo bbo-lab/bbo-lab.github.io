@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isvalid_0',['isvalid',['../classvidre_1_1plugin_1_1dynamic_1_1library.html#a9447055e0c405483c654e7ba02bb1772',1,'vidre::plugin::dynamic::library']]]
+  ['exception_0',['exception',['../group__api-core-exception.html#gaa4e8c7acde1daf230d7b6f8e23361c7e',1,'vidre::exception']]]
 ];

@@ -1,5 +1,7 @@
 <map id="libs/core/vidre/util/uuid.hh" name="libs/core/vidre/util/uuid.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,144,45"/>
-<area shape="rect" id="Node000002" href="$uuid_8cc.html" title=" " alt="" coords="5,93,144,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,59,77,93,72,93,72,59"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="138,5,277,45"/>
+<area shape="rect" id="Node000002" href="$examples_2core_2uuid_8cc.html" title=" " alt="" coords="5,93,212,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,57,138,95,135,91,176,53"/>
+<area shape="rect" id="Node000003" href="$src_2libs_2core_2vidre_2util_2uuid_8cc.html" title=" " alt="" coords="237,101,375,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,53,288,99,284,103,235,57"/>
 </map>

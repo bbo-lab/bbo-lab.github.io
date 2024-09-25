@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['operator_20std_3a_3astring_0',['string',['../classvidre_1_1UUID.html#a348d39cd8c2bc09f7fbe59f95745819c',1,'vidre::UUID']]],
-  ['operator_20type_1',['operator Type',['../classvidre_1_1UUID.html#a135eed6f64e1ac8328a726a37840a969',1,'vidre::UUID']]],
-  ['operator_20variant_2',['operator Variant',['../classvidre_1_1UUID.html#af4e83f2a666e0f824b3fc9f01f947e5e',1,'vidre::UUID']]],
-  ['operator_3d_3d_3',['operator==',['../classvidre_1_1UUID.html#a9aca4db346103f65cd3745de9b09a690',1,'vidre::UUID::operator==(const UUID &amp;other) const noexcept'],['../classvidre_1_1UUID.html#a8b46b9518c93106ffce254bf2de49e8d',1,'vidre::UUID::operator==(const std::string &amp;s) const noexcept']]]
+  ['main_0',['main',['../examples_2core_2uuid_8cc.html#a217dbf8b442f20279ea00b898af96f52',1,'uuid.cc']]],
+  ['make_1',['make',['../classvidre_1_1uuid.html#a8787c0e6688cf56bc97290ad70c3ce20',1,'vidre::uuid']]],
+  ['makemd5_2',['makeMD5',['../classvidre_1_1uuid.html#a4f6fe04ce51c2ccfdc4227d5258bf31f',1,'vidre::uuid']]],
+  ['makerandom_3',['makeRandom',['../classvidre_1_1uuid.html#a56719949cecad3eaeacf06bf4a4c3978',1,'vidre::uuid']]],
+  ['makesha1_4',['makeSHA1',['../classvidre_1_1uuid.html#a10a5ee540b68cdfcf6751517eec9f257',1,'vidre::uuid']]],
+  ['maketime_5',['makeTime',['../classvidre_1_1uuid.html#a89f0b020b55fdedda6741c75b27cef6e',1,'vidre::uuid']]],
+  ['maketimesafe_6',['makeTimeSafe',['../classvidre_1_1uuid.html#a0565a662ac8b625852cd7b547f8ffad9',1,'vidre::uuid']]]
 ];

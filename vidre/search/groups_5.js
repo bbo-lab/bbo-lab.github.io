@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['implementation_20details_0',['Implementation details.',['../group__api-core-details.html',1,'']]]
+  ['json_0',['JSON.',['../group__api-core-util-json.html',1,'']]]
 ];

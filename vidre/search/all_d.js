@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['random_0',['Random',['../classvidre_1_1UUID.html#a304be9c7e14465241f9c50052023fbd0a64663f4646781c9c0110838b905daa23',1,'vidre::UUID']]]
+  ['parse_0',['parse',['../classvidre_1_1uuid.html#ac5215e2e0dee98835911078c5d5d8cf3',1,'vidre::uuid']]],
+  ['plugin_2ehh_1',['plugin.hh',['../plugin_8hh.html',1,'']]],
+  ['plugins_2',['plugins',['../group__api-core-plugin.html',1,'Plugins'],['../dev.html#core-plugins',1,'Plugins']]]
 ];

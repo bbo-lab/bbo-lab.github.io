@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tostring_0',['tostring',['../classvidre_1_1UUID.html#af5dc96b2999285704479948e48292bfa',1,'vidre::UUID']]]
+  ['parse_0',['parse',['../classvidre_1_1uuid.html#ac5215e2e0dee98835911078c5d5d8cf3',1,'vidre::uuid']]]
 ];

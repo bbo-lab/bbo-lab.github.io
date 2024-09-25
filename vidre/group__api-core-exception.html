@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VidRe: Errors and exceptions.</title>
+<title>VidRe: Errors and exceptions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -101,17 +101,86 @@ $(function(){initNavTree('group__api-core-exception.html',''); initResizable(); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Errors and exceptions.<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library.</a></div></div></div>
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">Errors and exceptions<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library.</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Errors and exceptions.:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Errors and exceptions:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__api-core-exception.svg" width="326" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__api-core-exception.svg" width="322" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-<p><a class="el" href="exception_8hh.html">libs/core/vidre/exception.hh</a> </p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p><a class="el" href="exception_8hh.html">libs/core/vidre/exception.hh</a></p>
+<p>There are many pro's and con's for using exceptions versus error return types—which we shall not repeat here. As a rule of thumb: do not use exceptions in fast computational paths (where stack unwinding is an unpredictable cost), but use it whereever more information can be transmitted with an exception than with a simple error code.</p>
+<p><span style="color: orange"><b>TBD</b>: needs a pulled-in version of <a href="https://www.boost.org/doc/libs/1_75_0/libs/exception/doc/tutorial_transporting_data.html">https://www.boost.org/doc/libs/1_75_0/libs/exception/doc/tutorial_transporting_data.html</a></span> </p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1exception.html">vidre::exception</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">...  <a href="classvidre_1_1exception.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gade4af19b162a15ef719613fee7a76869" id="r_gade4af19b162a15ef719613fee7a76869"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#gade4af19b162a15ef719613fee7a76869">class</a> <a class="el" href="#gade4af19b162a15ef719613fee7a76869">Tag</a> , <a class="el" href="#gade4af19b162a15ef719613fee7a76869">class</a> T &gt; </td></tr>
+<tr class="memitem:gade4af19b162a15ef719613fee7a76869"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="#gade4af19b162a15ef719613fee7a76869">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gade4af19b162a15ef719613fee7a76869">vidre::error_info</a> = boost::error_info&lt;<a class="el" href="#gade4af19b162a15ef719613fee7a76869">Tag</a>, T&gt;</td></tr>
+<tr class="separator:gade4af19b162a15ef719613fee7a76869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gaa4e8c7acde1daf230d7b6f8e23361c7e" id="r_gaa4e8c7acde1daf230d7b6f8e23361c7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa4e8c7acde1daf230d7b6f8e23361c7e">vidre::exception::exception</a> (<a class="el" href="#gade4af19b162a15ef719613fee7a76869">const</a> std::source_location <a class="el" href="#gade4af19b162a15ef719613fee7a76869">location</a>=std::source_location::current())</td></tr>
+<tr class="separator:gaa4e8c7acde1daf230d7b6f8e23361c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="gade4af19b162a15ef719613fee7a76869" name="gade4af19b162a15ef719613fee7a76869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade4af19b162a15ef719613fee7a76869">&#9670;&#160;</a></span>error_info</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="#gade4af19b162a15ef719613fee7a76869">class</a> <a class="el" href="#gade4af19b162a15ef719613fee7a76869">Tag</a> , <a class="el" href="#gade4af19b162a15ef719613fee7a76869">class</a> T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#gade4af19b162a15ef719613fee7a76869">using</a> <a class="el" href="#gade4af19b162a15ef719613fee7a76869">vidre::error_info</a> = boost::error_info&lt;<a class="el" href="#gade4af19b162a15ef719613fee7a76869">Tag</a>, T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gaa4e8c7acde1daf230d7b6f8e23361c7e" name="gaa4e8c7acde1daf230d7b6f8e23361c7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa4e8c7acde1daf230d7b6f8e23361c7e">&#9670;&#160;</a></span>exception()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vidre::exception::exception </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#gade4af19b162a15ef719613fee7a76869">const</a> std::source_location&#160;</td>
+          <td class="paramname"><em>location</em> = <code>std::source_location::current()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

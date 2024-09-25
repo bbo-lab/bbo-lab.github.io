@@ -103,7 +103,7 @@ $(function(){initNavTree('group__api-core-util-uuid.html',''); initResizable(); 
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
-  <div class="headertitle"><div class="title">UUID<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library.</a> &raquo; <a class="el" href="group__api-core-util.html">Utilities.</a></div></div></div>
+  <div class="headertitle"><div class="title">UUID<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library.</a> &raquo; <a class="el" href="group__api-core-util.html">Utilities</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -111,15 +111,29 @@ $(function(){initNavTree('group__api-core-util-uuid.html',''); initResizable(); 
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__api-core-util-uuid.svg" width="192" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__api-core-util-uuid.svg" width="188" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p><a class="el" href="uuid_8hh.html">libs/core/vidre/util/uuid.hh</a> </p><dl class="section see"><dt>See also</dt><dd><a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">https://en.wikipedia.org/wiki/Universally_unique_identifier</a> </dd></dl>
+<p><a class="el" href="uuid_8hh.html">libs/core/vidre/util/uuid.hh</a></p>
+<p><b>Example</b>: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="uuid_8hh.html">vidre/util/uuid.hh</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="examples_2core_2uuid_8cc.html#a217dbf8b442f20279ea00b898af96f52">main</a>(<span class="keywordtype">int</span> <a class="code hl_typedef" href="group__api-core-exception.html#gade4af19b162a15ef719613fee7a76869">argc</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> **<a class="code hl_typedef" href="group__api-core-exception.html#gade4af19b162a15ef719613fee7a76869">argv</a>) {</div>
+<div class="line">    std::cout &lt;&lt; uuid::makeRandom().tostring() &lt;&lt; std::endl;</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aexamples_2core_2uuid_8cc_html_a217dbf8b442f20279ea00b898af96f52"><div class="ttname"><a href="examples_2core_2uuid_8cc.html#a217dbf8b442f20279ea00b898af96f52">main</a></div><div class="ttdeci">int main(int argc, const char **argv)</div><div class="ttdef"><b>Definition</b> uuid.cc:6</div></div>
+<div class="ttc" id="agroup__api-core-exception_html_gade4af19b162a15ef719613fee7a76869"><div class="ttname"><a href="group__api-core-exception.html#gade4af19b162a15ef719613fee7a76869">vidre::error_info</a></div><div class="ttdeci">boost::error_info&lt; Tag, T &gt; error_info</div><div class="ttdef"><b>Definition</b> exception.hh:52</div></div>
+<div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> exception.hh:46</div></div>
+<div class="ttc" id="auuid_8hh_html"><div class="ttname"><a href="uuid_8hh.html">uuid.hh</a></div></div>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">https://en.wikipedia.org/wiki/Universally_unique_identifier</a> </dd></dl>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1UUID.html">vidre::UUID</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UUIDs.  <a href="classvidre_1_1UUID.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1uuid.html">vidre::uuid</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UUIDs.  <a href="classvidre_1_1uuid.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
