@@ -38,18 +38,21 @@ var NAVTREE =
         ] ],
         [ "Frontend", "dev.html#dev-frontend", null ]
       ] ],
-      [ "Implementation", "dev.html#dev-impl", [
+      [ "Coding", "dev.html#dev-code", [
         [ "Language(s) and configuration", "dev.html#dev-lang", null ],
         [ "Version control", "dev.html#dev-git", null ],
         [ "Documentation", "dev.html#dev-docs", null ]
       ] ],
-      [ "Libraries", "dev.html#dev-libs", [
+      [ "Implementation", "dev.html#dev-impl", [
         [ "Core library", "dev.html#dev-core", [
           [ "Error handling", "dev.html#core-exception", null ],
           [ "Logging", "dev.html#core-logging", null ],
+          [ "Data format", "dev.html#core-format", null ],
+          [ "Storage", "dev.html#core-storage", null ],
           [ "Plugins", "dev.html#core-plugins", null ],
           [ "System information", "dev.html#core-sysinfo", null ],
-          [ "Storage", "dev.html#core-storage", null ]
+          [ "Transport", "dev.html#core-transport", null ],
+          [ "Settings", "dev.html#core-settings", null ]
         ] ]
       ] ]
     ] ],
