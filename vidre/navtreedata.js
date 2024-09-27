@@ -38,6 +38,7 @@ var NAVTREE =
         ] ],
         [ "Frontend", "dev.html#dev-frontend", null ]
       ] ],
+      [ "Milestones", "dev.html#dev-milestone", null ],
       [ "Coding", "dev.html#dev-code", [
         [ "Language(s) and configuration", "dev.html#dev-lang", null ],
         [ "Version control", "dev.html#dev-git", null ],
