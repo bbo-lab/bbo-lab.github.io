@@ -127,8 +127,6 @@ var NAVTREEINDEX0 =
 "namespacemembers.html":[3,1,0],
 "namespacemembers_type.html":[3,1,1],
 "namespaces.html":[3,0],
-"namespacevidre.html":[2,0,4],
-"namespacevidre_1_1plugin.html":[2,0,1,2,0],
 "pages.html":[],
 "plugin_8hh.html":[5,0,0,0,4],
 "plugin_8hh_source.html":[5,0,0,0,4],
