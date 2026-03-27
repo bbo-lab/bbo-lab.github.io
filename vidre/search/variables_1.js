@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['category_0',['category',['../structvidre_1_1plugin_1_1information.html#ab19939b69410cb7a45d2f9d953d65ad3',1,'vidre::plugin::information']]]
+  ['bpp_5f_0',['bpp_',['../classvidre_1_1input_1_1midraw.html#a833c34df1cf95961c1061260c94ae60b',1,'vidre::input::midraw']]],
+  ['brief_1',['brief',['../structvidre_1_1plugin_1_1information.html#a915edba2f93bf5ff5d7f3cbf26d353d8',1,'vidre::plugin::information']]],
+  ['buf_5f_2',['buf_',['../classvidre_1_1log_1_1io_1_1string.html#a02aa41e99adb63cc5c45978c7f540756',1,'vidre::log::io::string']]]
 ];

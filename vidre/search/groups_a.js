@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['storage_0',['Storage',['../group__api-core-storage.html',1,'']]]
+  ['network_20library_0',['Network library',['../group__api-network.html',1,'']]]
 ];

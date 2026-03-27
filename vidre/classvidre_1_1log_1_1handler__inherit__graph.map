@@ -1,0 +1,21 @@
+<map id="vidre::log::handler" name="vidre::log::handler">
+<area shape="rect" id="Node000001" title="Log message handler." alt="" coords="5,203,131,228"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1log_1_1alert.html" title="Alert (requiring user interaction)." alt="" coords="189,5,297,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,189,114,116,142,75,177,40,195,29,198,33,180,44,146,79,118,119,82,191"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1log_1_1critical.html" title="Critical condition (such as hardware failure)." alt="" coords="182,55,303,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="83,190,122,140,148,113,177,89,198,78,201,82,180,94,152,117,126,143,87,193"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1log_1_1error.html" title="Errors." alt="" coords="188,104,297,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="95,192,133,165,177,138,202,127,205,132,180,143,136,169,98,196"/>
+<area shape="rect" id="Node000005" href="$classvidre_1_1log_1_1fatal.html" title="Fatal log message." alt="" coords="189,153,297,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="126,196,196,176,197,181,127,201"/>
+<area shape="rect" id="Node000006" href="$classvidre_1_1log_1_1info.html" title="Purely informational." alt="" coords="191,203,295,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="144,213,190,213,190,218,144,218"/>
+<area shape="rect" id="Node000007" href="$classvidre_1_1log_1_1notice.html" title="Noteworthy condition." alt="" coords="183,252,302,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="127,229,197,249,196,254,126,234"/>
+<area shape="rect" id="Node000008" href="$classvidre_1_1log_1_1status.html" title="Status message." alt="" coords="183,301,302,327"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="98,234,136,260,180,286,207,299,205,304,177,291,134,265,95,238"/>
+<area shape="rect" id="Node000009" href="$classvidre_1_1log_1_1trace.html" title="Log trace." alt="" coords="187,351,299,376"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="88,238,127,287,152,313,180,336,203,348,200,353,177,340,149,317,123,290,83,241"/>
+<area shape="rect" id="Node000010" href="$classvidre_1_1log_1_1warning.html" title="Warnings." alt="" coords="179,400,307,425"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="82,239,119,311,147,351,180,385,200,397,197,402,177,389,143,354,114,314,77,242"/>
+</map>

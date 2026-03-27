@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exception_0',['exception',['../group__api-core-exception.html#gaa4e8c7acde1daf230d7b6f8e23361c7e',1,'vidre::exception']]]
+  ['block_5fwise_0',['block_wise',['../examples_2core_2log_8cc.html#ad49d45006d6d6590d946d8f09c3743be',1,'log.cc']]]
 ];

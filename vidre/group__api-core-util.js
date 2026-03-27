@@ -1,6 +1,9 @@
 var group__api_core_util =
 [
-    [ "JSON.", "group__api-core-util-json.html", null ],
-    [ "Macro utilities.", "group__api-core-util-macro.html", "group__api-core-util-macro" ],
-    [ "UUID", "group__api-core-util-uuid.html", "group__api-core-util-uuid" ]
+    [ "Development utilities.", "group__api-core-util-develop.html", "group__api-core-util-develop" ],
+    [ "JSON", "group__api-core-util-json.html", "group__api-core-util-json" ],
+    [ "Macro utilities", "group__api-core-util-macro.html", "group__api-core-util-macro" ],
+    [ "System information", "group__api-core-util-sysinfo.html", "group__api-core-util-sysinfo" ],
+    [ "UUID", "group__api-core-util-uuid.html", "group__api-core-util-uuid" ],
+    [ "Version macros", "group__api-core-util-version.html", "group__api-core-util-version" ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dynamic_0',['dynamic',['../classvidre_1_1plugin_1_1dynamic.html',1,'vidre::plugin']]]
+  ['alert_0',['alert',['../classvidre_1_1log_1_1alert.html',1,'vidre::log']]]
 ];

@@ -1,0 +1,35 @@
+var namespacevidre_1_1log =
+[
+    [ "io", "namespacevidre_1_1log_1_1io.html", "namespacevidre_1_1log_1_1io" ],
+    [ "alert", "classvidre_1_1log_1_1alert.html", "classvidre_1_1log_1_1alert" ],
+    [ "critical", "classvidre_1_1log_1_1critical.html", "classvidre_1_1log_1_1critical" ],
+    [ "debug", "classvidre_1_1log_1_1debug.html", "classvidre_1_1log_1_1debug" ],
+    [ "error", "classvidre_1_1log_1_1error.html", "classvidre_1_1log_1_1error" ],
+    [ "fatal", "classvidre_1_1log_1_1fatal.html", "classvidre_1_1log_1_1fatal" ],
+    [ "file", "classvidre_1_1log_1_1io_1_1file.html", "classvidre_1_1log_1_1io_1_1file" ],
+    [ "handler", "classvidre_1_1log_1_1handler.html", "classvidre_1_1log_1_1handler" ],
+    [ "info", "classvidre_1_1log_1_1info.html", "classvidre_1_1log_1_1info" ],
+    [ "notice", "classvidre_1_1log_1_1notice.html", "classvidre_1_1log_1_1notice" ],
+    [ "null", "classvidre_1_1log_1_1null.html", "classvidre_1_1log_1_1null" ],
+    [ "status", "classvidre_1_1log_1_1status.html", "classvidre_1_1log_1_1status" ],
+    [ "stream", "classvidre_1_1log_1_1io_1_1stream.html", "classvidre_1_1log_1_1io_1_1stream" ],
+    [ "string", "classvidre_1_1log_1_1io_1_1string.html", "classvidre_1_1log_1_1io_1_1string" ],
+    [ "style", "structvidre_1_1log_1_1io_1_1style.html", "structvidre_1_1log_1_1io_1_1style" ],
+    [ "trace", "classvidre_1_1log_1_1trace.html", "classvidre_1_1log_1_1trace" ],
+    [ "warning", "classvidre_1_1log_1_1warning.html", "classvidre_1_1log_1_1warning" ],
+    [ "convertible_to_message_type", "conceptvidre_1_1log_1_1convertible__to__message__type.html", null ],
+    [ "functor", "conceptvidre_1_1log_1_1functor.html", null ],
+    [ "message_type", "group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d", null ],
+    [ "level", "group__api-core-log-if.html#gac7188c64802d58d335e10371224772ec", [
+      [ "fatal", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecadf6402fd9ecc60f5a2159fdf45711cd4", null ],
+      [ "alert", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca7ed21143076d0cca420653d4345baa2f", null ],
+      [ "critical", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca7e85bcb66fb9a809d5ab4f62a8b8bea8", null ],
+      [ "error", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecacb5e100e5a9a3e7f6d1fd97512215282", null ],
+      [ "warning", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca7b83d3f08fa392b79e3f553b585971cd", null ],
+      [ "notice", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecaefd2af60c8501931cb9c736b5ad74f65", null ],
+      [ "status", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca9acb44549b41563697bb490144ec6258", null ],
+      [ "info", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecacaf9b6b99962bf5c2264824231d7a40c", null ],
+      [ "debug", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecaad42f6697b035b7580e4fef93be20b4d", null ],
+      [ "trace", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182", null ]
+    ] ]
+];

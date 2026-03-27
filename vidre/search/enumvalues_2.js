@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['ncs_0',['NCS',['../classvidre_1_1uuid.html#ac551c936acd5ce8a261aede0e8685825a4c4a1a6b1eeebaeb1f2c4627368b79d8',1,'vidre::uuid']]],
-  ['nil_1',['NIL',['../classvidre_1_1uuid.html#a5b9648f028bfb70ebdbd5d57ec4ac6c3abc0b1e8b63f3f00318eee5aeabc14255',1,'vidre::uuid']]]
+  ['color_0',['color',['../structvidre_1_1log_1_1io_1_1style.html#a7d9725faa7d08f7538d1993e66fa8c2daffdf1de081aa33919f49775e8e3bc331',1,'vidre::log::io::style']]],
+  ['corrupt_1',['corrupt',['../classvidre_1_1ffmpeg_1_1packet.html#a79008614186dc48447d2959bce849bf6a8465c8f92f7f2c27243ddc4ab23511df',1,'vidre::ffmpeg::packet']]],
+  ['critical_2',['critical',['../group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca7e85bcb66fb9a809d5ab4f62a8b8bea8',1,'vidre::log']]],
+  ['cuda_3',['cuda',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a39466fe22b062a34cfe09f3cc8c24868',1,'vidre::ffmpeg']]]
 ];

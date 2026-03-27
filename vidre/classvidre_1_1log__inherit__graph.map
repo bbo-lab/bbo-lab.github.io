@@ -1,0 +1,7 @@
+<map id="vidre::log" name="vidre::log">
+<area shape="rect" id="Node000001" title="Message logging interface." alt="" coords="89,5,163,31"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1log_1_1fatal.html" title="Fatal log message." alt="" coords="5,79,113,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,43,72,80,68,77,104,39"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1log_1_1trace.html" title="Log trace." alt="" coords="138,79,250,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,39,185,77,181,80,145,42"/>
+</map>

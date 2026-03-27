@@ -1,0 +1,21 @@
+<map id="plugins/onsemi/midlib2/midlib2.cc" name="plugins/onsemi/midlib2/midlib2.cc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="35,5,189,45"/>
+<area shape="rect" id="Node000002" href="$plugin_8hh.html" title=" " alt="" coords="59,93,165,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,46,115,79,109,79,109,46"/>
+<area shape="rect" id="Node000003" href="$libs_2core_2vidre_2core_2config_8hh.html" title=" " alt="" coords="44,240,180,265"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="76,121,42,139,26,152,14,168,11,178,11,187,22,204,42,220,67,232,64,237,39,224,18,208,6,188,5,177,10,165,22,149,39,135,74,116"/>
+<area shape="rect" id="Node000006" href="$information_8hh.html" title=" " alt="" coords="25,167,199,192"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="115,119,115,153,109,153,109,119"/>
+<area shape="rect" id="Node000007" href="$dynamic_8hh.html" title=" " alt="" coords="223,167,382,192"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="144,116,260,159,258,164,142,121"/>
+<area shape="rect" id="Node000004" href="$vidre_2config_8hh.html" title=" " alt="" coords="5,313,112,339"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="105,267,78,304,73,301,101,264"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="136,313,197,339"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="123,264,152,301,147,304,119,267"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="115,192,115,226,109,226,109,192"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="273,195,157,237,155,232,271,190"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="228,240,327,265"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="301,193,288,228,283,226,296,191"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="351,240,412,265"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="317,190,360,229,357,233,314,194"/>
+</map>

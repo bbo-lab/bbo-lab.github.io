@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['random_0',['Random',['../classvidre_1_1uuid.html#a5b9648f028bfb70ebdbd5d57ec4ac6c3a64663f4646781c9c0110838b905daa23',1,'vidre::uuid']]]
+  ['error_0',['error',['../group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecacb5e100e5a9a3e7f6d1fd97512215282',1,'vidre::log']]]
 ];

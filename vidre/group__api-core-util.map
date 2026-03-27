@@ -1,7 +1,10 @@
 <map id="Utilities" name="Utilities">
-<area shape="rect" id="Node000002" href="$group__api-core.html" title=" " alt="" coords="5,55,105,80"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="153,55,227,80"/>
-<area shape="rect" id="Node000003" href="$group__api-core-util-json.html" title=" " alt="" coords="305,5,363,31"/>
-<area shape="rect" id="Node000004" href="$group__api-core-util-macro.html" title=" " alt="" coords="275,55,393,80"/>
-<area shape="rect" id="Node000005" href="$group__api-core-util-uuid.html" title=" " alt="" coords="306,104,362,129"/>
+<area shape="rect" id="Node000002" href="$group__api-core.html" title=" " alt="" coords="5,129,95,155"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="143,129,209,155"/>
+<area shape="rect" id="Node000003" href="$group__api-core-util-develop.html" title=" " alt="" coords="257,5,405,31"/>
+<area shape="rect" id="Node000004" href="$group__api-core-util-json.html" title=" " alt="" coords="302,55,361,80"/>
+<area shape="rect" id="Node000005" href="$group__api-core-util-macro.html" title=" " alt="" coords="280,104,383,129"/>
+<area shape="rect" id="Node000006" href="$group__api-core-util-sysinfo.html" title=" " alt="" coords="264,153,399,179"/>
+<area shape="rect" id="Node000007" href="$group__api-core-util-uuid.html" title=" " alt="" coords="303,203,359,228"/>
+<area shape="rect" id="Node000008" href="$group__api-core-util-version.html" title=" " alt="" coords="275,252,388,277"/>
 </map>

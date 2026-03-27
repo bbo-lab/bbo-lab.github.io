@@ -1,0 +1,11 @@
+<map id="libs/ffmpeg/vidre/ffmpeg/format/muxing.hh" name="libs/ffmpeg/vidre/ffmpeg/format/muxing.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="91,5,253,45"/>
+<area shape="rect" id="Node000002" href="$ffmpeg_2vidre_2ffmpeg_2format_8hh.html" title=" " alt="" coords="91,93,253,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,59,175,93,169,93,169,59"/>
+<area shape="rect" id="Node000003" href="$ffmpeg_8hh.html" title=" " alt="" coords="82,181,262,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="175,147,175,181,169,181,169,147"/>
+<area shape="rect" id="Node000004" href="$main_8cc.html" title=" " alt="" coords="5,255,152,280"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="148,217,96,257,92,252,145,213"/>
+<area shape="rect" id="Node000005" href="$ffmpeg_8cc.html" title=" " alt="" coords="177,255,357,280"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="200,213,253,252,250,257,197,217"/>
+</map>

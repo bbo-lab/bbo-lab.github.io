@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['json_0',['JSON.',['../group__api-core-util-json.html',1,'']]]
+  ['handling_0',['Error handling',['../group__api-support-ffmpeg-util-error.html',1,'']]],
+  ['helpers_1',['Terminal helpers',['../group__api-core-os-tty.html',1,'']]]
 ];

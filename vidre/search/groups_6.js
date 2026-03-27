@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['library_0',['library',['../group__api-core.html',1,'Core library.'],['../group__api-device.html',1,'Device library.'],['../group__api-network.html',1,'Network library.']]]
+  ['implementation_20details_0',['Implementation details',['../group__api-core-details.html',1,'Implementation details'],['../group__api-core-log-details.html',1,'Implementation details'],['../group__api-device-onsemi-details.html',1,'Implementation details']]],
+  ['implementations_20details_1',['Implementations details',['../group__api-support-ffmpeg-details.html',1,'']]],
+  ['information_2',['information',['../group__api-core-util-sysinfo.html',1,'System information'],['../group__api-config-version.html',1,'Version information']]],
+  ['interface_3',['Interface',['../group__api-core-log-if.html',1,'']]]
 ];

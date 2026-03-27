@@ -1,9 +1,13 @@
-<map id="Core library." name="Core library.">
-<area shape="rect" id="Node000002" href="$group__api.html" title=" " alt="" coords="5,104,84,129"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="132,104,232,129"/>
-<area shape="rect" id="Node000007" href="$group__api-core-details.html" title=" " alt="" coords="280,5,455,31"/>
-<area shape="rect" id="Node000003" href="$group__api-core-exception.html" title=" " alt="" coords="286,55,449,80"/>
-<area shape="rect" id="Node000005" href="$group__api-core-plugin.html" title=" " alt="" coords="333,104,402,129"/>
-<area shape="rect" id="Node000004" href="$group__api-core-storage.html" title=" " alt="" coords="331,153,403,179"/>
-<area shape="rect" id="Node000006" href="$group__api-core-util.html" title=" " alt="" coords="331,203,404,228"/>
+<map id="Core library" name="Core library">
+<area shape="rect" id="Node000002" href="$group__api.html" title="The C++ application programming interface." alt="" coords="5,203,80,228"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="128,203,217,228"/>
+<area shape="rect" id="Node000009" href="$group__api-core-cpp.html" title=" " alt="" coords="279,5,405,31"/>
+<area shape="rect" id="Node000011" href="$group__api-core-details.html" title=" " alt="" coords="265,55,419,80"/>
+<area shape="rect" id="Node000003" href="$group__api-core-exception.html" title=" " alt="" coords="267,104,417,129"/>
+<area shape="rect" id="Node000004" href="$group__api-core-log.html" title=" " alt="" coords="309,153,375,179"/>
+<area shape="rect" id="Node000005" href="$group__api-core-memory.html" title=" " alt="" coords="307,203,377,228"/>
+<area shape="rect" id="Node000010" href="$group__api-core-os.html" title=" " alt="" coords="271,252,413,277"/>
+<area shape="rect" id="Node000007" href="$group__api-core-plugin.html" title=" " alt="" coords="309,301,375,327"/>
+<area shape="rect" id="Node000006" href="$group__api-core-storage.html" title=" " alt="" coords="309,351,375,376"/>
+<area shape="rect" id="Node000008" href="$group__api-core-util.html" title=" " alt="" coords="309,400,375,425"/>
 </map>
