@@ -1,4 +1,4 @@
-# bbo-lab.github.io
+# BBO lab
 
 Documentation for software developed by [BBO](https://mpinb.mpg.de/en/research-groups/groups/behavior-and-brain-organization/research-focus.html)
 at the institute
