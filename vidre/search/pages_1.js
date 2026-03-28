@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['developer_20info_0',['Developer info',['../dev.html',1,'']]]
+  ['coding_20style_20and_20documentation_0',['Coding style and documentation',['../dev_2style.html',1,'dev']]],
+  ['command_20line_20control_1',['Command-line control',['../usage_2apps_2terminal.html',1,'usage/apps']]],
+  ['control_2',['Command-line control',['../usage_2apps_2terminal.html',1,'usage/apps']]]
 ];

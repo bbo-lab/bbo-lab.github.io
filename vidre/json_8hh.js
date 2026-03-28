@@ -1,4 +1,4 @@
 var json_8hh =
 [
-    [ "vidre::json", "group__api-core-util-json.html#ga7f489112f4d012f5564859b7a790834c", null ]
+    [ "vidre::settings::json", "group__api-core-settings.html#gae24f82c6a1d6b4a4155fffdf0db67338", null ]
 ];

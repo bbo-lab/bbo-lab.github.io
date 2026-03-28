@@ -31,6 +31,7 @@ var group__api_core_settings =
       [ "type_", "classvidre_1_1settings_1_1node.html#af03d5c30e4789d6e73081d81b4aaef8c", null ],
       [ "ref_", "classvidre_1_1settings_1_1node.html#afa5718e2b2706d826264ca0b291e522b", null ]
     ] ],
+    [ "vidre::settings::json", "group__api-core-settings.html#gae24f82c6a1d6b4a4155fffdf0db67338", null ],
     [ "vidre::settings::node::operator=", "group__api-core-settings.html#ga66e5f17c073117caf81927dfb8c4628f", null ],
     [ "vidre::settings::node::operator=", "group__api-core-settings.html#ga40f095a91e0a4199e17743db6a02ee56", null ]
 ];

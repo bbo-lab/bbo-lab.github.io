@@ -8,7 +8,7 @@ var searchData=
   ['errc_5',['errc',['../group__api-support-ffmpeg-util-error.html#gada6a0890c35b0b5d9a126daa7da5bc19',1,'vidre::ffmpeg']]],
   ['errc_5finfo_6',['errc_info',['../group__api-support-ffmpeg-util-error.html#ga2760daf6efb50c83affe9a5428a7bb14',1,'vidre::ffmpeg']]],
   ['error_7',['error',['../classvidre_1_1log_1_1error.html',1,'vidre::log::error'],['../classvidre_1_1log_1_1error.html#afd6a938a4062d4ef5fff774519611c66',1,'vidre::log::error::error()'],['../group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecacb5e100e5a9a3e7f6d1fd97512215282',1,'vidre::log::error']]],
-  ['error_20handling_8',['Error handling',['../group__api-support-ffmpeg-util-error.html',1,'Error handling'],['../dev_2attic.html#core-exception',1,'Error handling']]],
+  ['error_20handling_8',['Error handling',['../group__api-support-ffmpeg-util-error.html',1,'Error handling'],['../dev_2goals.html#core-exception',1,'Error handling']]],
   ['error_5fcategory_9',['error_category',['../structvidre_1_1ffmpeg_1_1error__category.html',1,'vidre::ffmpeg']]],
   ['error_5finfo_10',['error_info',['../group__api-core-exception.html#gade4af19b162a15ef719613fee7a76869',1,'vidre']]],
   ['errors_20and_20exceptions_11',['Errors and exceptions',['../group__api-core-exception.html',1,'']]],

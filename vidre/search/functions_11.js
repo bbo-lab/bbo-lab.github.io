@@ -3,7 +3,7 @@ var searchData=
   ['save_0',['save',['../classvidre_1_1settings_1_1file.html#a8369feca7993869a2ce9a6807a2019da',1,'vidre::settings::file::save()'],['../classvidre_1_1settings_1_1file.html#af16bb5eeeeaa39586194dc9610765d72',1,'vidre::settings::file::save(const std::filesystem::path &amp;file)']]],
   ['set_1',['set',['../classvidre_1_1ffmpeg_1_1dictionary.html#a992d05bfc7dbf3c26a352abade550a16',1,'vidre::ffmpeg::dictionary']]],
   ['setformat_2',['setformat',['../classvidre_1_1input_1_1midraw.html#ae8b2e76a8706608e74d16970dd3ead63',1,'vidre::input::midraw']]],
-  ['show_3',['show',['../examples_2core_2settings_8cc.html#a6bb29766e3e1bf7a9ad3df99e19de7c6',1,'settings.cc']]],
+  ['setup_3',['setup',['../examples_2core_2settings_8cc.html#a424b18b7eec2a2d9af616711fc1b472b',1,'setup(const std::string &amp;optstring):&#160;settings.cc'],['../examples_2core_2settings_8cc.html#af3a58773ba9d1bafb1b22d51b7541f73',1,'setup(settings::json options):&#160;settings.cc']]],
   ['show_5fmemory_4',['show_memory',['../structshow__memory.html#ac5f92328325965ab073de4b09eefd5be',1,'show_memory']]],
   ['simple_5flogging_5',['simple_logging',['../examples_2core_2log_8cc.html#a64293669c94470407f5231c27676054e',1,'log.cc']]],
   ['size_6',['size',['../classvidre_1_1input_1_1midraw.html#ad6940b12a9bf0c2a1d4844bc6efe216f',1,'vidre::input::midraw::size()'],['../classvidre_1_1script_1_1engine_1_1stack.html#a2c5dd77b71a56a9422bf48c98b0d5600',1,'vidre::script::engine::stack::size()']]],

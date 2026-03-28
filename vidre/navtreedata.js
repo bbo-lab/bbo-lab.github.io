@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "VidRe", "index.html", [
+    [ "Introduction", "index.html#Introduction", null ],
     [ "Developer info", "dev.html", "dev" ],
     [ "Licenses", "license.html", null ],
     [ "Usage", "usage.html", "usage" ],
@@ -73,8 +74,8 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classvidre_1_1settings_1_1node.html#a46c04863502e2539085096e14bddc02d",
-"group__api-core-details.html#ga8399da9ef7ce5c7108bcf65aaaba9d98",
-"group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ac5a75f2e316f475f314d3e3aa0535cd2"
+"group__api-core-details.html#ga5888893a997f4d25137eda4af1752d95",
+"group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ac524426a886e7c0b3fdd51b1ca622e95"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

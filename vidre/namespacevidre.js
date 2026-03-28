@@ -20,6 +20,5 @@ var namespacevidre =
     [ "uuid", "classvidre_1_1uuid.html", "classvidre_1_1uuid" ],
     [ "error_info", "group__api-core-exception.html#gade4af19b162a15ef719613fee7a76869", null ],
     [ "throw_message", "group__api-core-exception.html#ga9e67ae9ac7b922375331a8434c12cc33", null ],
-    [ "json", "group__api-core-util-json.html#ga7f489112f4d012f5564859b7a790834c", null ],
     [ "size_of", "group__api-core-cpp-util.html#ga60b45cf7ce0de3e77e3f93db02eb0e96", null ]
 ];

@@ -42,7 +42,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="vidre.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">VidRe<span id="projectnumber">&#160;.</span>
+   <div id="projectname">VidRe<span id="projectnumber">&#160;0.0</span>
    </div>
    <div id="projectbrief">Video recording suite.</div>
   </td>
@@ -117,7 +117,6 @@ $(function(){initNavTree('dev_2attic.html',''); initResizable(true); });
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="dev-objective"></a>
 Objective</h1>
-<p>The objective is to create a videography software suite, that allows to record scientifically relevant data from different types of video sources including supplemental information and data streams (such as timing, audio, etc.). Ultimately we aim at a modular framework that allows to supplement real-time features, such as object recognition combined with feedback.</p>
 <h1><a class="anchor" id="dev-design"></a>
 Design</h1>
 <p>To facilitate remote data acquisition, which may happen on a headless system, recording and displaying data are separated into a backend (the recording service or daemon, respectively) and the frontend (the user interface). The following diagram gives an idea of the components and the acquisition data flow:</p>
@@ -198,7 +197,6 @@ Coding</h1>
 <h2><a class="anchor" id="dev-lang"></a>
 Language(s) and configuration</h2>
 <p>Core functionality should be provided in C++ (at least <a href="https://en.cppreference.com/w/cpp/20">C++20</a>). Note, however, that the software must be compilable on at least Linux® and Windows®. For user-interface applications <a href="https://www.qt.io/product/framework">Qt6</a> forms the basis.</p>
-<p>A clang-format file is provided.</p>
 <p>While the backend (the recording service or daemon, respectively) will rely on compiled code, interfaces to other languages (mainly Python, but also Matlab and more) will be provided. The frontend (user interface), though, could be a mixture of Python and C++ (see <a href="https://doc.qt.io/qtforpython-6/">Qt for Python</a>). <span style="color: orange"><b>TBD</b>:<br  />
  With respect to the backend, it should be discussed if a terminal UI should be provided to simplify configuration or supervision, especially on a headless, remote machine.</span></p>
 <p>For project configuration we use <a href="https://cmake.org/cmake/help/latest/">CMake</a>.</p>

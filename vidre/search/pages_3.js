@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['licenses_0',['Licenses',['../license.html',1,'']]],
-  ['list_1',['Todo List',['../todo.html',1,'']]]
+  ['file_20and_20directory_20structure_0',['File and directory structure',['../dev_2structure.html',1,'dev']]]
 ];

@@ -42,7 +42,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="vidre.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">VidRe<span id="projectnumber">&#160;.</span>
+   <div id="projectname">VidRe<span id="projectnumber">&#160;0.0</span>
    </div>
    <div id="projectbrief">Video recording suite.</div>
   </td>
@@ -116,7 +116,7 @@ $(function(){initNavTree('examples_2core_2settings_8cc-example.html',''); initRe
 </div><!--header-->
 <div class="contents">
 <p>Using settings.</p>
-<p>Using settings.This file demonstrates how to load configurations and display the contents.</p>
+<p>Using settings.This file demonstrates how to load a configuration file (Lua) and passing options to functions (JSON).</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="settings_8hh.html">vidre/settings.hh</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="log_8hh.html">vidre/log.hh</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="core_2vidre_2exception_8hh.html">vidre/exception.hh</a>&gt;</span></div>
@@ -124,54 +124,41 @@ $(function(){initNavTree('examples_2core_2settings_8cc-example.html',''); initRe
 <div class="line"><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a>;</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> <a id="a0" name="a0"></a><a class="code hl_function" href="examples_2core_2settings_8cc.html#a6bb29766e3e1bf7a9ad3df99e19de7c6">show</a>(<span class="keyword">const</span> <a id="_a1" name="_a1"></a><a class="code hl_class" href="classvidre_1_1settings_1_1node.html">settings::node</a> &amp;t, <span class="keywordtype">int</span> indent = 0) {</div>
-<div class="line">    <span class="keyword">auto</span> info = <a id="_a2" name="_a2"></a><a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>();</div>
-<div class="line"> </div>
-<div class="line">    <span class="keywordflow">switch</span> (t.<a id="a3" name="a3"></a><a class="code hl_function" href="classvidre_1_1settings_1_1node.html#ad52f037f439e85f5db5cf284a3250a3a">type</a>()) {</div>
-<div class="line">        <span class="keywordflow">case</span> lua::type::table: {</div>
-<div class="line">            <span class="keywordflow">if</span> (indent &gt; 0)</div>
-<div class="line">                info &lt;&lt; log::endl;</div>
-<div class="line"> </div>
-<div class="line">            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; indent; ++i)</div>
-<div class="line">                info &lt;&lt; <span class="stringliteral">&quot;    &quot;</span>;</div>
-<div class="line"> </div>
-<div class="line">            <span class="keyword">auto</span> keylist = t.<a id="a4" name="a4"></a><a class="code hl_function" href="classvidre_1_1settings_1_1node.html#aa8149b6a4266d1bfbe083e636b205d22">keys</a>();</div>
-<div class="line">            std::sort(keylist.begin(), keylist.end());</div>
-<div class="line"> </div>
-<div class="line">            <span class="keywordflow">for</span> (<span class="keyword">auto</span> key : keylist) {</div>
-<div class="line">                info &lt;&lt; key &lt;&lt; <span class="stringliteral">&quot; = &quot;</span>;</div>
-<div class="line">                <a class="code hl_function" href="examples_2core_2settings_8cc.html#a6bb29766e3e1bf7a9ad3df99e19de7c6">show</a>(t[key], indent + 1);</div>
-<div class="line">            }</div>
-<div class="line"> </div>
-<div class="line">            <span class="keywordflow">return</span>;</div>
-<div class="line">        } </div>
-<div class="line">        <span class="keywordflow">case</span> lua::type::number:</div>
-<div class="line">            info &lt;&lt; lua::number(t);</div>
-<div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> lua::type::string:</div>
-<div class="line">            info &lt;&lt; std::string(t);</div>
-<div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">default</span>:</div>
-<div class="line">            info &lt;&lt; <span class="stringliteral">&quot;&lt;&quot;</span> &lt;&lt; <a class="code hl_variable" href="group__api-core-script.html#gabd8119066998bb964d89a9df44caaccc">script::g</a>.type_name(t.<a class="code hl_function" href="classvidre_1_1settings_1_1node.html#ad52f037f439e85f5db5cf284a3250a3a">type</a>()) &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
-<div class="line">    }</div>
-<div class="line">    info &lt;&lt; log::endl;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> <a id="a0" name="a0"></a><a class="code hl_function" href="examples_2core_2settings_8cc.html#a424b18b7eec2a2d9af616711fc1b472b">setup</a>(<span class="keyword">const</span> std::string &amp;optstring) {</div>
+<div class="line">    <a class="code hl_typedef" href="group__api-core-settings.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a> options = settings::json::parse(optstring);</div>
+<div class="line">    <a id="_a1" name="_a1"></a><a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;\nOptions as string (JSON):\n&quot;</span> &lt;&lt; options.dump(4) &lt;&lt; log::endl;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> <a id="a5" name="a5"></a><a class="code hl_function" href="main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span>, <span class="keyword">const</span> <span class="keywordtype">char</span> **) {</div>
+<div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="examples_2core_2settings_8cc.html#a424b18b7eec2a2d9af616711fc1b472b">setup</a>(<a class="code hl_typedef" href="group__api-core-settings.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a> options) {</div>
+<div class="line">    <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;\nOptions as variant (JSON):\n&quot;</span> &lt;&lt; options.dump(4) &lt;&lt; log::endl;</div>
+<div class="line">    <a class="code hl_function" href="examples_2core_2settings_8cc.html#a424b18b7eec2a2d9af616711fc1b472b">setup</a>(options.dump());</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a id="a2" name="a2"></a><a class="code hl_function" href="main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span>, <span class="keyword">const</span> <span class="keywordtype">char</span> **) {</div>
 <div class="line">    <a class="code hl_function" href="classvidre_1_1log_1_1io_1_1stream.html#a9328d4564fc9039d64c81e77b24bf83e">log::io::stream::threshold</a>(0, <a class="code hl_enumvalue" href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182">log::level::trace</a>);</div>
 <div class="line">    <a class="code hl_function" href="classvidre_1_1log_1_1trace.html#ab6eaf9fc74f5299a6250ac8110e1ba53">log::trace::pattern</a>(<span class="stringliteral">&quot;*/core/*&quot;</span>);</div>
-<div class="line">    <a id="_a6" name="_a6"></a><a class="code hl_class" href="classvidre_1_1log_1_1trace.html">log::trace</a> <a class="code hl_define" href="main_8cc.html#a984419155311b73f3b996434475cc123">tr</a>;</div>
-<div class="line"> </div>
+<div class="line">    <a id="_a3" name="_a3"></a><a class="code hl_class" href="classvidre_1_1log_1_1trace.html">log::trace</a> <a class="code hl_define" href="main_8cc.html#a984419155311b73f3b996434475cc123">tr</a>;</div>
+<div class="line"></div>
 <div class="line">    std::filesystem::path cfgpath = PROJECT_SOURCE_DIR <span class="stringliteral">&quot;/examples/core/settings.lua&quot;</span>;</div>
 <div class="line"> </div>
-<div class="line">    <a id="_a7" name="_a7"></a><a class="code hl_class" href="classvidre_1_1settings_1_1file.html">settings::file</a> cfg;</div>
-<div class="line">    cfg.<a id="a8" name="a8"></a><a class="code hl_function" href="classvidre_1_1settings_1_1file.html#aa1fd6a11a76652bbc47e02f8801ed561">load</a>(cfgpath);</div>
+<div class="line">    <a id="_a4" name="_a4"></a><a class="code hl_class" href="classvidre_1_1settings_1_1file.html">settings::file</a> cfg;</div>
+<div class="line">    cfg.<a id="a5" name="a5"></a><a class="code hl_function" href="classvidre_1_1settings_1_1file.html#aa1fd6a11a76652bbc47e02f8801ed561">load</a>(cfgpath);</div>
 <div class="line"> </div>
 <div class="line">    lua::number version = cfg[<span class="stringliteral">&quot;version&quot;</span>];</div>
 <div class="line">    <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;Config version: &quot;</span> &lt;&lt; version &lt;&lt; log::endl;</div>
 <div class="line"> </div>
-<div class="line">    cfg.<a id="a9" name="a9"></a><a class="code hl_function" href="classvidre_1_1settings_1_1file.html#a8369feca7993869a2ce9a6807a2019da">save</a>(<span class="stringliteral">&quot;/dev/stdout&quot;</span>);</div>
+<div class="line">    <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;File contents (Lua): &quot;</span> &lt;&lt; log::endl;</div>
+<div class="line">    cfg.<a id="a6" name="a6"></a><a class="code hl_function" href="classvidre_1_1settings_1_1file.html#a8369feca7993869a2ce9a6807a2019da">save</a>(<span class="stringliteral">&quot;/dev/stdout&quot;</span>);</div>
+<div class="line"></div>
+<div class="line">    <a class="code hl_function" href="examples_2core_2settings_8cc.html#a424b18b7eec2a2d9af616711fc1b472b">setup</a>({{<span class="stringliteral">&quot;fps&quot;</span>, 20},  <span class="comment">//</span></div>
+<div class="line">           {<span class="stringliteral">&quot;geometry&quot;</span>,</div>
+<div class="line">            {</div>
+<div class="line">                {<span class="stringliteral">&quot;x&quot;</span>, 0},        <span class="comment">//</span></div>
+<div class="line">                {<span class="stringliteral">&quot;y&quot;</span>, 0},        <span class="comment">//</span></div>
+<div class="line">                {<span class="stringliteral">&quot;width&quot;</span>, 320},  <span class="comment">//</span></div>
+<div class="line">                {<span class="stringliteral">&quot;height&quot;</span>, 200}  <span class="comment">//</span></div>
+<div class="line">            }}});</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
@@ -183,13 +170,10 @@ $(function(){initNavTree('examples_2core_2settings_8cc-example.html',''); initRe
 <div class="ttc" id="aclassvidre_1_1settings_1_1file_html"><div class="ttname"><a href="classvidre_1_1settings_1_1file.html">vidre::settings::file</a></div><div class="ttdoc">Configuration file.</div><div class="ttdef"><b>Definition</b> file.hh:41</div></div>
 <div class="ttc" id="aclassvidre_1_1settings_1_1file_html_a8369feca7993869a2ce9a6807a2019da"><div class="ttname"><a href="classvidre_1_1settings_1_1file.html#a8369feca7993869a2ce9a6807a2019da">vidre::settings::file::save</a></div><div class="ttdeci">void save()</div><div class="ttdoc">Save configuration.</div><div class="ttdef"><b>Definition</b> settings.cc:259</div></div>
 <div class="ttc" id="aclassvidre_1_1settings_1_1file_html_aa1fd6a11a76652bbc47e02f8801ed561"><div class="ttname"><a href="classvidre_1_1settings_1_1file.html#aa1fd6a11a76652bbc47e02f8801ed561">vidre::settings::file::load</a></div><div class="ttdeci">void load(const std::filesystem::path &amp;file, bool force=false)</div><div class="ttdoc">Load configuration file.</div><div class="ttdef"><b>Definition</b> settings.cc:67</div></div>
-<div class="ttc" id="aclassvidre_1_1settings_1_1node_html"><div class="ttname"><a href="classvidre_1_1settings_1_1node.html">vidre::settings::node</a></div><div class="ttdoc">Configuration node.</div><div class="ttdef"><b>Definition</b> node.hh:53</div></div>
-<div class="ttc" id="aclassvidre_1_1settings_1_1node_html_aa8149b6a4266d1bfbe083e636b205d22"><div class="ttname"><a href="classvidre_1_1settings_1_1node.html#aa8149b6a4266d1bfbe083e636b205d22">vidre::settings::node::keys</a></div><div class="ttdeci">std::vector&lt; std::string &gt; keys() const</div><div class="ttdoc">Get list of keys.</div><div class="ttdef"><b>Definition</b> settings.cc:46</div></div>
-<div class="ttc" id="aclassvidre_1_1settings_1_1node_html_ad52f037f439e85f5db5cf284a3250a3a"><div class="ttname"><a href="classvidre_1_1settings_1_1node.html#ad52f037f439e85f5db5cf284a3250a3a">vidre::settings::node::type</a></div><div class="ttdeci">lua::type type() const noexcept</div><div class="ttdoc">Get Lua type behind this node.</div><div class="ttdef"><b>Definition</b> node.hh:146</div></div>
 <div class="ttc" id="acore_2vidre_2exception_8hh_html"><div class="ttname"><a href="core_2vidre_2exception_8hh.html">exception.hh</a></div></div>
-<div class="ttc" id="aexamples_2core_2settings_8cc_html_a6bb29766e3e1bf7a9ad3df99e19de7c6"><div class="ttname"><a href="examples_2core_2settings_8cc.html#a6bb29766e3e1bf7a9ad3df99e19de7c6">show</a></div><div class="ttdeci">void show(const settings::node &amp;t, int indent=0)</div><div class="ttdef"><b>Definition</b> settings.cc:9</div></div>
+<div class="ttc" id="aexamples_2core_2settings_8cc_html_a424b18b7eec2a2d9af616711fc1b472b"><div class="ttname"><a href="examples_2core_2settings_8cc.html#a424b18b7eec2a2d9af616711fc1b472b">setup</a></div><div class="ttdeci">void setup(const std::string &amp;optstring)</div><div class="ttdoc">[settings-json]</div><div class="ttdef"><b>Definition</b> settings.cc:10</div></div>
 <div class="ttc" id="agroup__api-core-log-if_html_ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182"><div class="ttname"><a href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182">vidre::log::level::trace</a></div><div class="ttdeci">@ trace</div><div class="ttdoc">Tracing.</div><div class="ttdef"><b>Definition</b> log.hh:162</div></div>
-<div class="ttc" id="agroup__api-core-script_html_gabd8119066998bb964d89a9df44caaccc"><div class="ttname"><a href="group__api-core-script.html#gabd8119066998bb964d89a9df44caaccc">vidre::script::g</a></div><div class="ttdeci">engine g</div><div class="ttdoc">Global script state.</div></div>
+<div class="ttc" id="agroup__api-core-settings_html_gae24f82c6a1d6b4a4155fffdf0db67338"><div class="ttname"><a href="group__api-core-settings.html#gae24f82c6a1d6b4a4155fffdf0db67338">vidre::settings::json</a></div><div class="ttdeci">nlohmann::json json</div><div class="ttdoc">Variant (JSON node).</div><div class="ttdef"><b>Definition</b> json.hh:43</div></div>
 <div class="ttc" id="alog_8hh_html"><div class="ttname"><a href="log_8hh.html">log.hh</a></div></div>
 <div class="ttc" id="amain_8cc_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition</b> main.cc:16</div></div>
 <div class="ttc" id="amain_8cc_html_a984419155311b73f3b996434475cc123"><div class="ttname"><a href="main_8cc.html#a984419155311b73f3b996434475cc123">tr</a></div><div class="ttdeci">#define tr(...)</div><div class="ttdef"><b>Definition</b> main.cc:14</div></div>

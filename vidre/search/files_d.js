@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['script_2ecc_0',['script.cc',['../examples_2core_2script_8cc.html',1,'(Global Namespace)'],['../src_2libs_2core_2vidre_2script_8cc.html',1,'(Global Namespace)']]],
-  ['script_2ehh_1',['script.hh',['../script_8hh.html',1,'']]],
-  ['settings_2ecc_2',['settings.cc',['../examples_2core_2settings_8cc.html',1,'(Global Namespace)'],['../src_2libs_2core_2vidre_2settings_8cc.html',1,'(Global Namespace)']]],
-  ['settings_2ehh_3',['settings.hh',['../settings_8hh.html',1,'']]],
-  ['shared_2ehh_4',['shared.hh',['../shared_8hh.html',1,'']]],
-  ['storage_2ehh_5',['storage.hh',['../storage_8hh.html',1,'']]]
+  ['packet_2ehh_0',['packet.hh',['../packet_8hh.html',1,'']]],
+  ['paths_2ecc_1',['paths.cc',['../paths_8cc.html',1,'']]],
+  ['paths_2ehh_2',['paths.hh',['../paths_8hh.html',1,'']]],
+  ['pixelformat_2ehh_3',['pixelformat.hh',['../pixelformat_8hh.html',1,'']]],
+  ['plugin_2ehh_4',['plugin.hh',['../plugin_8hh.html',1,'']]],
+  ['plugins_2ecc_5',['plugins.cc',['../plugins_8cc.html',1,'']]],
+  ['pylon_2ecc_6',['pylon.cc',['../pylon_8cc.html',1,'']]]
 ];

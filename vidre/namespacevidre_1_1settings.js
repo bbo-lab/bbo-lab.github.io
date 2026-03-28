@@ -1,5 +1,6 @@
 var namespacevidre_1_1settings =
 [
     [ "file", "classvidre_1_1settings_1_1file.html", "classvidre_1_1settings_1_1file" ],
-    [ "node", "classvidre_1_1settings_1_1node.html", "classvidre_1_1settings_1_1node" ]
+    [ "node", "classvidre_1_1settings_1_1node.html", "classvidre_1_1settings_1_1node" ],
+    [ "json", "group__api-core-settings.html#gae24f82c6a1d6b4a4155fffdf0db67338", null ]
 ];

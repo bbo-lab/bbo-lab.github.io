@@ -1,7 +1,7 @@
-<map id="apps/encode/main.cc" name="apps/encode/main.cc">
-<area shape="rect" id="Node000001" title=" " alt="" coords="345,5,492,31"/>
+<map id="apps/tools/encode/main.cc" name="apps/tools/encode/main.cc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="329,5,508,31"/>
 <area shape="rect" id="Node000002" href="$vidre_2config_8hh.html" title=" " alt="" coords="540,695,647,720"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="345,26,233,43,172,59,113,81,39,110,26,119,17,130,10,144,8,163,8,562,10,580,15,594,34,614,64,629,99,644,164,658,280,673,526,698,526,703,279,678,163,663,98,649,61,634,31,619,10,597,5,581,3,562,3,163,5,143,12,127,23,115,37,105,111,76,170,54,232,38,345,21"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="330,28,223,45,167,60,113,81,39,110,26,119,17,130,10,144,8,163,8,562,10,580,15,594,34,614,64,629,99,644,164,658,280,673,526,698,526,703,279,678,163,663,98,649,61,634,31,619,10,597,5,581,3,562,3,163,5,143,12,127,23,115,37,105,111,76,165,55,222,40,329,23"/>
 <area shape="rect" id="Node000003" href="$core_2vidre_2exception_8hh.html" title=" " alt="" coords="257,548,385,573"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="357,33,267,54,168,83,125,101,90,121,67,142,61,152,59,164,59,415,63,444,77,469,97,490,122,508,182,533,244,548,243,553,181,538,119,512,93,494,72,472,58,446,53,416,53,163,56,151,63,138,87,116,123,96,167,78,265,49,356,28"/>
 <area shape="rect" id="Node000009" href="$ffmpeg_8hh.html" title=" " alt="" coords="233,79,345,104"/>
@@ -13,7 +13,7 @@
 <area shape="rect" id="Node000029" title=" " alt="" coords="605,79,760,104"/>
 <area shape="poly" id="edge47_Node000001_Node000029" title=" " alt="" coords="462,28,627,72,626,78,460,33"/>
 <area shape="rect" id="Node000030" title=" " alt="" coords="784,79,856,104"/>
-<area shape="poly" id="edge48_Node000001_Node000030" title=" " alt="" coords="492,28,618,48,771,76,770,81,618,53,492,33"/>
+<area shape="poly" id="edge48_Node000001_Node000030" title=" " alt="" coords="496,28,771,76,770,81,495,33"/>
 <area shape="rect" id="Node000004" href="$libs_2core_2vidre_2core_2config_8hh.html" title=" " alt="" coords="328,621,464,647"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="335,571,376,610,372,614,331,575"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="489,621,645,647"/>

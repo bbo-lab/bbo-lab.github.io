@@ -32,7 +32,7 @@ var searchData=
   ['plain_29',['plain',['../structvidre_1_1log_1_1io_1_1style.html#a7d9725faa7d08f7538d1993e66fa8c2da37e350d1fce7343bdc395aea91dc2c21',1,'vidre::log::io::style']]],
   ['plugin_2ehh_30',['plugin.hh',['../plugin_8hh.html',1,'']]],
   ['plugindir_31',['plugindir',['../structvidre_1_1plugin_1_1hub.html#a3b6cbdfeb0bfbf56be79b81358e73c15',1,'vidre::plugin::hub']]],
-  ['plugins_32',['Plugins',['../group__api-core-plugin.html',1,'Plugins'],['../dev_2attic.html#core-plugins',1,'Plugins']]],
+  ['plugins_32',['Plugins',['../group__api-core-plugin.html',1,'Plugins'],['../dev_2goals.html#core-plugins',1,'Plugins']]],
   ['plugins_2ecc_33',['plugins.cc',['../plugins_8cc.html',1,'']]],
   ['prefix_34',['prefix',['../structstyle__tags.html#a6f83e35421fc53040b2618949e2cfe8b',1,'style_tags']]],
   ['push_35',['push',['../classvidre_1_1settings_1_1node.html#aca076eec4b0522045ce0c881a08e28de',1,'vidre::settings::node']]],

@@ -42,7 +42,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="vidre.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">VidRe<span id="projectnumber">&#160;.</span>
+   <div id="projectname">VidRe<span id="projectnumber">&#160;0.0</span>
    </div>
    <div id="projectbrief">Video recording suite.</div>
   </td>
@@ -115,6 +115,7 @@ $(function(){initNavTree('group__api-core-settings.html',''); initResizable(true
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Settings<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a></div></div></div>
 </div><!--header-->
@@ -128,7 +129,9 @@ $(function(){initNavTree('group__api-core-settings.html',''); initResizable(true
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p><a class="el" href="settings_8hh.html">libs/core/vidre/settings.hh</a></p>
-<p>Configuration files are, as also stated elsewhere, implemented using Lua (see <a class="el" href="group__api-core-script.html">Scripting</a>). The advantage of using Lua as a configuration language is, that it also allows to implement complex functions, such as is required for abstracting camera interfaces, where, for example setting the frame rate or exposure time, would require, first to do calculations and, second, update multiple registers at once. </p>
+<p>Configuration files are, as also stated elsewhere, implemented using Lua (see <a class="el" href="group__api-core-script.html">Scripting</a>). For passing settings,</p>
+<p>The advantage of using Lua as a configuration language is, that it also allows to implement complex functions, such as is required for abstracting camera interfaces, where, for example setting the frame rate or exposure time, would require, first to do calculations and, second, update multiple registers at once.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="examples_2core_2settings_8cc-example.html">examples/core/settings.cc</a> </dd></dl>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -145,6 +148,12 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration node.  <a href="classvidre_1_1settings_1_1node.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gae24f82c6a1d6b4a4155fffdf0db67338" id="r_gae24f82c6a1d6b4a4155fffdf0db67338"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae24f82c6a1d6b4a4155fffdf0db67338">vidre::settings::json</a> = nlohmann::json</td></tr>
+<tr class="memdesc:gae24f82c6a1d6b4a4155fffdf0db67338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variant (JSON node).  <br /></td></tr>
+<tr class="separator:gae24f82c6a1d6b4a4155fffdf0db67338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga66e5f17c073117caf81927dfb8c4628f" id="r_ga66e5f17c073117caf81927dfb8c4628f"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
@@ -154,6 +163,26 @@ Functions</h2></td></tr>
 <tr class="memitem:ga40f095a91e0a4199e17743db6a02ee56"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1settings_1_1node.html">node</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga40f095a91e0a4199e17743db6a02ee56">vidre::settings::node::operator=</a> (const char *value)</td></tr>
 <tr class="separator:ga40f095a91e0a4199e17743db6a02ee56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="gae24f82c6a1d6b4a4155fffdf0db67338" name="gae24f82c6a1d6b4a4155fffdf0db67338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae24f82c6a1d6b4a4155fffdf0db67338">&#9670;&#160;</a></span>json</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#gae24f82c6a1d6b4a4155fffdf0db67338">vidre::settings::json</a> = nlohmann::json</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variant (JSON node). </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="examples_2core_2settings_8cc-example.html">examples/core/settings.cc</a> </dd>
+<dd>
+<a href="https://json.nlohmann.me/">https://json.nlohmann.me/</a> </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga66e5f17c073117caf81927dfb8c4628f" name="ga66e5f17c073117caf81927dfb8c4628f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga66e5f17c073117caf81927dfb8c4628f">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>

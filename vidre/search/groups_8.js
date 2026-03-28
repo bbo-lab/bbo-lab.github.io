@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['libraries_0',['Other support libraries',['../group__api-support.html',1,'']]],
-  ['library_1',['library',['../group__api-core.html',1,'Core library'],['../group__api-device.html',1,'Device library'],['../group__api-core-cpp-format.html',1,'Format library'],['../group__api-network.html',1,'Network library']]],
-  ['logging_2',['Logging',['../group__api-core-log.html',1,'']]]
+  ['macro_20utilities_0',['Macro utilities',['../group__api-core-util-macro.html',1,'']]],
+  ['macros_1',['Version macros',['../group__api-core-util-version.html',1,'']]],
+  ['memory_2',['Memory',['../group__api-core-memory.html',1,'']]],
+  ['memory_3',['System memory',['../group__api-core-os-memory.html',1,'']]],
+  ['midlib2_20wrapper_4',['OnSemi MIDlib2 wrapper',['../group__api-device-onsemi.html',1,'']]],
+  ['muxing_5',['Muxing',['../group__api-support-ffmpeg-format-muxing.html',1,'']]]
 ];

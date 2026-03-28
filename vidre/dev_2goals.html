@@ -268,23 +268,9 @@ Transport</h3>
 <h3><a class="anchor" id="core-settings"></a>
 Settings</h3>
 <p>As core configuration and settings format, VidRe will use Lua. The advantage of Lua is, that configuration files for cameras, where settings may require to adjust multiple camera registers, may implement wrapper functions.</p>
-<p>For easy use, the following should be implemented: </p><div class="fragment"><div class="line"><span class="keyword">class </span>options {</div>
-<div class="line">    <span class="keyword">class </span>entry; <span class="comment">// basically a variant, that can hold maps, arrays and values</span></div>
-<div class="line"> </div>
-<div class="line">    options(<span class="keyword">const</span> std::string &amp;json);</div>
-<div class="line">    options(<span class="keyword">const</span> std::initializer_list&lt;entry&gt; &amp;table);</div>
-<div class="line">};</div>
-</div><!-- fragment --><p> which would allow to write </p><div class="fragment"><div class="line">plugin[<span class="stringliteral">&quot;device/video/uvc&quot;</span>].setup({ </div>
-<div class="line">    { <span class="stringliteral">&quot;fps&quot;</span>, 20 }, </div>
-<div class="line">    { <span class="stringliteral">&quot;geometry&quot;</span>, {</div>
-<div class="line">        {<span class="stringliteral">&quot;x&quot;</span>, 0}, </div>
-<div class="line">        {<span class="stringliteral">&quot;y&quot;</span>, 0}, </div>
-<div class="line">        {<span class="stringliteral">&quot;width&quot;</span>, 320},</div>
-<div class="line">        {<span class="stringliteral">&quot;height&quot;</span>, 200}</div>
-<div class="line">    }}</div>
-<div class="line">});</div>
-</div><!-- fragment --><p> instead of </p><div class="fragment"><div class="line">plugin[<span class="stringliteral">&quot;device/video/uvc&quot;</span>].setup(<span class="stringliteral">&quot;{ \&quot;fps\&quot;: 20, … }&quot;</span>);</div>
-</div><!-- fragment --> </div></div><!-- contents -->
+<p>For simple message passing, VidRe, however, relies on JSON.</p>
+<p>See <a class="el" href="group__api-core-settings.html">Settings</a> for further information. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

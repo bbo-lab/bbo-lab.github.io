@@ -42,7 +42,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="vidre.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">VidRe<span id="projectnumber">&#160;.</span>
+   <div id="projectname">VidRe<span id="projectnumber">&#160;0.0</span>
    </div>
    <div id="projectbrief">Video recording suite.</div>
   </td>
@@ -115,7 +115,10 @@ $(function(){initNavTree('dev_2overview.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Overview</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><p>With VidRe, acquisition and control are separated as backend and frontend, respectively. They backend is implemented as a service <a href="https://en.wikipedia.org/wiki/Daemon_(computing)">daemon</a> (src/apps/daemon) that is responsible for acquisition without requiring a graphical display (suitable for embedded use). The frontend provides two options, either a command-line interface (src/apps/cli) or a graphical user-interface (src/apps/gui). Additional tools, for example to convert a video stream to MP4, are provided (src/apps/tools).</p>
+<p>Core functionality is provided in C++ (at least <a href="https://en.cppreference.com/w/cpp/20">C++20</a>, see <a class="el" href="group__api.html">C++-API</a>). At the moment of writing, we framework targets Linux® and Windows®. For graphical user-interface applications <a href="https://www.qt.io/product/framework">Qt6</a> is used.</p>
+<p>The objective is to provide a videography software suite, that allows to record scientifically relevant data from different types of video sources including supplemental information and data streams (such as timing, audio, etc.). Ultimately we aim at a modular framework that allows to supplement real-time features, such as object recognition combined with feedback. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

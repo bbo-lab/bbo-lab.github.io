@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['usage_2edox_0',['usage.dox',['../usage_8dox.html',1,'']]],
-  ['util_2ehh_1',['util.hh',['../core_2vidre_2cpp_2util_8hh.html',1,'(Global Namespace)'],['../ffmpeg_2vidre_2ffmpeg_2util_8hh.html',1,'(Global Namespace)']]],
-  ['uuid_2ecc_2',['uuid.cc',['../examples_2core_2uuid_8cc.html',1,'(Global Namespace)'],['../src_2libs_2core_2vidre_2util_2uuid_8cc.html',1,'(Global Namespace)']]],
-  ['uuid_2ehh_3',['uuid.hh',['../uuid_8hh.html',1,'']]],
-  ['uvc_2ecc_4',['uvc.cc',['../uvc_8cc.html',1,'']]]
+  ['terminal_2edox_0',['terminal.dox',['../terminal_8dox.html',1,'']]],
+  ['tools_2edox_1',['tools.dox',['../tools_8dox.html',1,'']]],
+  ['tty_2ehh_2',['tty.hh',['../tty_8hh.html',1,'']]],
+  ['types_2ehh_3',['types.hh',['../types_8hh.html',1,'']]]
 ];

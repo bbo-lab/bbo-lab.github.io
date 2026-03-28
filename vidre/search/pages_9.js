@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['usage_0',['Usage',['../usage.html',1,'']]],
-  ['user_20interface_1',['Graphical user interface',['../usage_2apps_2gui.html',1,'usage/apps']]]
+  ['todo_20list_0',['Todo List',['../todo.html',1,'']]],
+  ['tools_1',['Tools',['../usage_2apps_2tools.html',1,'usage/apps']]]
 ];
