@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['json_0',['json',['../group__api-core-settings.html#gae24f82c6a1d6b4a4155fffdf0db67338',1,'vidre::settings']]]
+  ['index_5ftype_0',['index_type',['../classvidre_1_1script_1_1engine_1_1stack.html#ae4bca2d96e4a9a9d141fbdfb8cf139df',1,'vidre::script::engine::stack']]]
 ];

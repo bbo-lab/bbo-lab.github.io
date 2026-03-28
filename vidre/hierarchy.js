@@ -39,8 +39,10 @@ var hierarchy =
       [ "vidre::settings::file", "classvidre_1_1settings_1_1file.html", null ]
     ] ],
     [ "vidre::log::null", "classvidre_1_1log_1_1null.html", null ],
+    [ "vidre::arg::option", "classvidre_1_1arg_1_1option.html", null ],
     [ "vidre::ffmpeg::format::output", "classvidre_1_1ffmpeg_1_1format_1_1output.html", null ],
     [ "vidre::ffmpeg::packet", "classvidre_1_1ffmpeg_1_1packet.html", null ],
+    [ "vidre::arg::parser", "classvidre_1_1arg_1_1parser.html", null ],
     [ "show_memory", "structshow__memory.html", null ],
     [ "vidre::script::engine::stack", "classvidre_1_1script_1_1engine_1_1stack.html", null ],
     [ "lua::state", null, [

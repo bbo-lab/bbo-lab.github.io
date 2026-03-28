@@ -1,5 +1,6 @@
 var examples =
 [
+    [ "examples/core/app.cc", "examples_2core_2app_8cc-example.html", null ],
     [ "examples/core/develop.cc", "examples_2core_2develop_8cc-example.html", null ],
     [ "examples/core/log.cc", "examples_2core_2log_8cc-example.html", null ],
     [ "examples/core/sysinfo.cc", "examples_2core_2sysinfo_8cc-example.html", null ],

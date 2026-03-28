@@ -18,9 +18,11 @@ var searchData=
   ['line_20control_15',['Command-line control',['../usage_2apps_2terminal.html',1,'usage/apps']]],
   ['list_16',['Todo List',['../todo.html',1,'']]],
   ['load_17',['load',['../classvidre_1_1plugin_1_1dynamic.html#aaf74b9499e7a7596b7f03ce19d44c42e',1,'vidre::plugin::dynamic::load()'],['../classvidre_1_1settings_1_1file.html#aa1fd6a11a76652bbc47e02f8801ed561',1,'vidre::settings::file::load()']]],
-  ['log_2ecc_18',['log.cc',['../examples_2core_2log_8cc.html',1,'(Global Namespace)'],['../src_2libs_2core_2vidre_2log_8cc.html',1,'(Global Namespace)']]],
-  ['log_2ehh_19',['log.hh',['../log_8hh.html',1,'']]],
-  ['logging_20',['Logging',['../group__api-core-log.html',1,'Logging'],['../dev_2goals.html#core-logging',1,'Logging']]],
-  ['longquote_21',['longquote',['../src_2libs_2core_2vidre_2settings_8cc.html#a343093ec128d431c26530e3a2e7feeba',1,'settings.cc']]],
-  ['lua_22',['Lua',['../dev_2style.html#autotoc_md1',1,'']]]
+  ['loadfile_18',['loadfile',['../group__api-core-util-filesystem.html#gad987b505f807a7cdc050d2f8836659a4',1,'vidre']]],
+  ['log_2ecc_19',['log.cc',['../examples_2core_2log_8cc.html',1,'(Global Namespace)'],['../src_2libs_2core_2vidre_2log_8cc.html',1,'(Global Namespace)']]],
+  ['log_2ehh_20',['log.hh',['../log_8hh.html',1,'']]],
+  ['logging_21',['Logging',['../group__api-core-log.html',1,'Logging'],['../dev_2goals.html#core-logging',1,'Logging']]],
+  ['long_5foption_22',['long_option',['../classvidre_1_1arg_1_1option.html#a9c12aeee8a8164a9d6f2f27fa0a34997',1,'vidre::arg::option']]],
+  ['longquote_23',['longquote',['../src_2libs_2core_2vidre_2settings_8cc.html#a343093ec128d431c26530e3a2e7feeba',1,'settings.cc']]],
+  ['lua_24',['Lua',['../dev_2style.html#autotoc_md1',1,'']]]
 ];

@@ -184,15 +184,15 @@ $(function(){initNavTree('uuid_8hh_source.html',''); initResizable(true); });
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre_1_1detail_1_1uuid.html">uuid</a> {</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keyword">enum</span> variant {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keyword">enum</span> <a class="code hl_typedef" href="group__api-core-app.html#gae2863d95361f587b86cebbe4a00c2f9d">variant</a> {</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                NCS = UUID_VARIANT_NCS,</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                DCE = UUID_VARIANT_DCE,</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                Microsoft = UUID_VARIANT_MICROSOFT,</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                Future = UUID_VARIANT_OTHER</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            };</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keyword">inline</span> variant get_variant(uuid_t u) <span class="keyword">noexcept</span> {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>variant<span class="keyword">&gt;</span>(uuid_variant(u.data));</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keyword">inline</span> <a class="code hl_typedef" href="group__api-core-app.html#gae2863d95361f587b86cebbe4a00c2f9d">variant</a> get_variant(uuid_t u) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="group__api-core-app.html#gae2863d95361f587b86cebbe4a00c2f9d">variant</a><span class="keyword">&gt;</span>(uuid_variant(u.data));</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            }</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keyword">enum</span> type {</div>
@@ -302,15 +302,15 @@ $(function(){initNavTree('uuid_8hh_source.html',''); initResizable(true); });
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre_1_1detail_1_1uuid.html">uuid</a> {</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <span class="keyword">enum</span> variant {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <span class="keyword">enum</span> <a class="code hl_typedef" href="group__api-core-app.html#gae2863d95361f587b86cebbe4a00c2f9d">variant</a> {</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                NCS = boost::uuids::uuid::variant_type::variant_ncs,</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                DCE = boost::uuids::uuid::variant_type::variant_rfc_4122,</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                Microsoft = boost::uuids::uuid::variant_type::variant_microsoft,</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                Future = boost::uuids::uuid::variant_type::variant_future</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            };</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <span class="keyword">inline</span> variant get_variant(uuid_t u) <span class="keyword">noexcept</span> {</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>variant<span class="keyword">&gt;</span>(u.variant());</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <span class="keyword">inline</span> <a class="code hl_typedef" href="group__api-core-app.html#gae2863d95361f587b86cebbe4a00c2f9d">variant</a> get_variant(uuid_t u) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="group__api-core-app.html#gae2863d95361f587b86cebbe4a00c2f9d">variant</a><span class="keyword">&gt;</span>(u.variant());</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            }</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            <span class="keyword">enum</span> type {</div>
@@ -521,6 +521,7 @@ $(function(){initNavTree('uuid_8hh_source.html',''); initResizable(true); });
 <div class="ttc" id="aclassvidre_1_1uuid_html_ac551c936acd5ce8a261aede0e8685825a7ec86cdcd1ba706dcb1764fabd5ad86a"><div class="ttname"><a href="classvidre_1_1uuid.html#ac551c936acd5ce8a261aede0e8685825a7ec86cdcd1ba706dcb1764fabd5ad86a">vidre::uuid::variant::DCE</a></div><div class="ttdeci">@ DCE</div><div class="ttdoc">DCE 1.1 UUIDs (see RFC 4122).</div><div class="ttdef"><b>Definition</b> uuid.hh:296</div></div>
 <div class="ttc" id="aclassvidre_1_1uuid_html_ac551c936acd5ce8a261aede0e8685825aadff855173c9b92b5478129af7d39e03"><div class="ttname"><a href="classvidre_1_1uuid.html#ac551c936acd5ce8a261aede0e8685825aadff855173c9b92b5478129af7d39e03">vidre::uuid::variant::Future</a></div><div class="ttdeci">@ Future</div><div class="ttdoc">Reserved for future versions.</div><div class="ttdef"><b>Definition</b> uuid.hh:298</div></div>
 <div class="ttc" id="aclassvidre_1_1uuid_html_afa3f6b85d01f44f2a110746e6892b958"><div class="ttname"><a href="classvidre_1_1uuid.html#afa3f6b85d01f44f2a110746e6892b958">vidre::uuid::uuid</a></div><div class="ttdeci">uuid(const std::string &amp;s)</div><div class="ttdef"><b>Definition</b> uuid.hh:388</div></div>
+<div class="ttc" id="agroup__api-core-app_html_gae2863d95361f587b86cebbe4a00c2f9d"><div class="ttname"><a href="group__api-core-app.html#gae2863d95361f587b86cebbe4a00c2f9d">vidre::arg::variant</a></div><div class="ttdeci">settings::json variant</div><div class="ttdoc">Variant.</div><div class="ttdef"><b>Definition</b> arguments.hh:44</div></div>
 <div class="ttc" id="agroup__api-core-details_html_ga6c2d85761ef80f8a974396c5059068bb"><div class="ttname"><a href="group__api-core-details.html#ga6c2d85761ef80f8a974396c5059068bb">VIDRE_CORE_VISIBILITY</a></div><div class="ttdeci">#define VIDRE_CORE_VISIBILITY</div><div class="ttdoc">Declaration specification for import/export for the core library.</div><div class="ttdef"><b>Definition</b> config.hh:55</div></div>
 <div class="ttc" id="alibs_2core_2vidre_2core_2config_8hh_html"><div class="ttname"><a href="libs_2core_2vidre_2core_2config_8hh.html">config.hh</a></div></div>
 <div class="ttc" id="anamespacevidre_1_1detail_1_1uuid_html"><div class="ttname"><a href="namespacevidre_1_1detail_1_1uuid.html">vidre::detail::uuid</a></div><div class="ttdoc">UUID abstraction (libuuid vs.</div><div class="ttdef"><b>Definition</b> uuid.hh:57</div></div>

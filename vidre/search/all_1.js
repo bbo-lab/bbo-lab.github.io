@@ -32,7 +32,7 @@ var searchData=
   ['block_5fwise_29',['block_wise',['../examples_2core_2log_8cc.html#ad49d45006d6d6590d946d8f09c3743be',1,'log.cc']]],
   ['boost_30',['boost',['../namespaceboost.html',1,'']]],
   ['bpp_5f_31',['bpp_',['../classvidre_1_1input_1_1midraw.html#a833c34df1cf95961c1061260c94ae60b',1,'vidre::input::midraw']]],
-  ['brief_32',['brief',['../structvidre_1_1plugin_1_1information.html#a915edba2f93bf5ff5d7f3cbf26d353d8',1,'vidre::plugin::information']]],
+  ['brief_32',['brief',['../classvidre_1_1arg_1_1option.html#a2b12886db8af6dbe9c4399eac0b46690',1,'vidre::arg::option::brief'],['../structvidre_1_1plugin_1_1information.html#a915edba2f93bf5ff5d7f3cbf26d353d8',1,'vidre::plugin::information::brief']]],
   ['bsf_5fnot_5ffound_33',['bsf_not_found',['../group__api-support-ffmpeg-util-error.html#ggada6a0890c35b0b5d9a126daa7da5bc19adc825158cf0f96ab37165347ac5df202',1,'vidre::ffmpeg']]],
   ['buf_5f_34',['buf_',['../classvidre_1_1static__error__message.html#a2d9c8282ff1c7250c098050c2636649d',1,'vidre::static_error_message::buf_'],['../classvidre_1_1log_1_1io_1_1string.html#a02aa41e99adb63cc5c45978c7f540756',1,'vidre::log::io::string::buf_']]],
   ['buffer_5ftoo_5fsmall_35',['buffer_too_small',['../group__api-support-ffmpeg-util-error.html#ggada6a0890c35b0b5d9a126daa7da5bc19a115eca9246eb7d59f3139bc1d0a668d7',1,'vidre::ffmpeg']]],

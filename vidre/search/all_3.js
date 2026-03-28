@@ -33,7 +33,7 @@ var searchData=
   ['domain_30',['domain',['../structvidre_1_1plugin_1_1information.html#a19c760f3cca2260a29e69b628f9d5704',1,'vidre::plugin::information']]],
   ['drm_5fprime_31',['drm_prime',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a013fcb8e23ee86a65053af9c4ab42946',1,'vidre::ffmpeg']]],
   ['dummy_2ecc_32',['dummy.cc',['../dummy_8cc.html',1,'']]],
-  ['dump_33',['dump',['../src_2libs_2core_2vidre_2settings_8cc.html#af81428f90b3834efe0ab782d95a1126e',1,'settings.cc']]],
+  ['dump_33',['dump',['../src_2libs_2core_2vidre_2settings_8cc.html#ab525b948ddc879f817fa25bfa2c5a46f',1,'settings.cc']]],
   ['dxva2_5fvld_34',['dxva2_vld',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a15e9a382986cb34f26b4ef8ad00d08ad',1,'vidre::ffmpeg']]],
   ['dynamic_35',['dynamic',['../classvidre_1_1plugin_1_1dynamic.html',1,'vidre::plugin::dynamic'],['../classvidre_1_1plugin_1_1dynamic.html#a72a4e4ed9ce2c163d213a30ecbe9a99b',1,'vidre::plugin::dynamic::dynamic()']]],
   ['dynamic_2ecc_36',['dynamic.cc',['../dynamic_8cc.html',1,'']]],

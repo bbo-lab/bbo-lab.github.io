@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['device_0',['device',['../group__api-device-onsemi-types.html#ga9b5e730786191097583cb79b82e97d49',1,'vidre::midlib2']]]
+  ['callback_5ftype_0',['callback_type',['../classvidre_1_1arg_1_1option.html#ab19e7ce7ea6a7e764390c414a757ec6e',1,'vidre::arg::option']]]
 ];

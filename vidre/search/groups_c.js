@@ -9,5 +9,6 @@ var searchData=
   ['support_20flags_6',['Software support flags',['../group__api-config-have.html',1,'']]],
   ['support_20libraries_7',['Other support libraries',['../group__api-support.html',1,'']]],
   ['system_20memory_8',['System memory',['../group__api-core-os-memory.html',1,'']]],
-  ['system_20settings_9',['API/ABI and system settings',['../group__api-config-abi.html',1,'']]]
+  ['system_20settings_9',['API/ABI and system settings',['../group__api-config-abi.html',1,'']]],
+  ['system_20tools_10',['File-system tools.',['../group__api-core-util-filesystem.html',1,'']]]
 ];

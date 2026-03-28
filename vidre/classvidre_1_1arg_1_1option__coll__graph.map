@@ -1,0 +1,11 @@
+<map id="vidre::arg::option" name="vidre::arg::option">
+<area shape="rect" id="Node000001" title="Program argument description." alt="" coords="29,359,148,384"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1arg_1_1parser.html" title="Argument parser." alt="" coords="29,271,149,296"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,310,91,358,86,358,86,310"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,183,172,208"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,222,91,270,86,270,86,222"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="49,95,129,120"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="91,134,91,182,86,182,86,134"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="25,5,152,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="91,59,91,94,86,94,86,59"/>
+</map>

@@ -18,10 +18,11 @@ var searchData=
   ['intro_2edox_15',['intro.dox',['../intro_8dox.html',1,'']]],
   ['introduction_16',['Introduction',['../usage_2intro.html',1,'usage']]],
   ['invalid_17',['Invalid',['../classvidre_1_1uuid.html#a5b9648f028bfb70ebdbd5d57ec4ac6c3a4bbb8f967da6d1a610596d7257179c2b',1,'vidre::uuid']]],
-  ['is_5ferror_5fcode_5fenum_3c_20vidre_3a_3affmpeg_3a_3aerrc_20_3e_18',['is_error_code_enum&lt; vidre::ffmpeg::errc &gt;',['../structstd_1_1is__error__code__enum_3_01vidre_1_1ffmpeg_1_1errc_01_4.html',1,'std']]],
-  ['is_5fwritable_19',['is_writable',['../classvidre_1_1ffmpeg_1_1frame.html#a0ff15766e5a45d2855f15b0d4e62f439',1,'vidre::ffmpeg::frame']]],
-  ['isatty_20',['isatty',['../group__api-core-os-tty.html#ga9ff232c97af564aa1110a2f2677739ed',1,'vidre::os::isatty(FILE *stream) noexcept'],['../group__api-core-os-tty.html#ga9269686d278d53a6dfccb5c5319c1ffb',1,'vidre::os::isatty() noexcept']]],
-  ['isnil_21',['isnil',['../classvidre_1_1settings_1_1node.html#a3495ac28a5d072ea50ee75d5b7129758',1,'vidre::settings::node']]],
-  ['istable_22',['istable',['../classvidre_1_1settings_1_1node.html#a3ff46a51df01fd85ad420b5fd71d2277',1,'vidre::settings::node']]],
-  ['isvalid_23',['isvalid',['../classvidre_1_1plugin_1_1dynamic_1_1library.html#a9447055e0c405483c654e7ba02bb1772',1,'vidre::plugin::dynamic::library::isvalid()'],['../classvidre_1_1plugin_1_1dynamic.html#a8b7db07ae2cc3ede3802ef14949551bb',1,'vidre::plugin::dynamic::isvalid()']]]
+  ['invocation_5f_18',['invocation_',['../classvidre_1_1arg_1_1parser.html#a4ee34708a0ab7cb74f64f39f9b195bc4',1,'vidre::arg::parser']]],
+  ['is_5ferror_5fcode_5fenum_3c_20vidre_3a_3affmpeg_3a_3aerrc_20_3e_19',['is_error_code_enum&lt; vidre::ffmpeg::errc &gt;',['../structstd_1_1is__error__code__enum_3_01vidre_1_1ffmpeg_1_1errc_01_4.html',1,'std']]],
+  ['is_5fwritable_20',['is_writable',['../classvidre_1_1ffmpeg_1_1frame.html#a0ff15766e5a45d2855f15b0d4e62f439',1,'vidre::ffmpeg::frame']]],
+  ['isatty_21',['isatty',['../group__api-core-os-tty.html#ga9ff232c97af564aa1110a2f2677739ed',1,'vidre::os::isatty(FILE *stream) noexcept'],['../group__api-core-os-tty.html#ga9269686d278d53a6dfccb5c5319c1ffb',1,'vidre::os::isatty() noexcept']]],
+  ['isnil_22',['isnil',['../classvidre_1_1settings_1_1node.html#a3495ac28a5d072ea50ee75d5b7129758',1,'vidre::settings::node']]],
+  ['istable_23',['istable',['../classvidre_1_1settings_1_1node.html#a3ff46a51df01fd85ad420b5fd71d2277',1,'vidre::settings::node']]],
+  ['isvalid_24',['isvalid',['../classvidre_1_1plugin_1_1dynamic_1_1library.html#a9447055e0c405483c654e7ba02bb1772',1,'vidre::plugin::dynamic::library::isvalid()'],['../classvidre_1_1plugin_1_1dynamic.html#a8b7db07ae2cc3ede3802ef14949551bb',1,'vidre::plugin::dynamic::isvalid()']]]
 ];

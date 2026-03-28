@@ -4,6 +4,10 @@ var annotated_dup =
       [ "is_error_code_enum< vidre::ffmpeg::errc >", "structstd_1_1is__error__code__enum_3_01vidre_1_1ffmpeg_1_1errc_01_4.html", null ]
     ] ],
     [ "vidre", "namespacevidre.html", [
+      [ "arg", "namespacevidre_1_1arg.html", [
+        [ "option", "classvidre_1_1arg_1_1option.html", "classvidre_1_1arg_1_1option" ],
+        [ "parser", "classvidre_1_1arg_1_1parser.html", "classvidre_1_1arg_1_1parser" ]
+      ] ],
       [ "ffmpeg", "namespacevidre_1_1ffmpeg.html", [
         [ "format", "namespacevidre_1_1ffmpeg_1_1format.html", [
           [ "context", "classvidre_1_1ffmpeg_1_1format_1_1context.html", "classvidre_1_1ffmpeg_1_1format_1_1context" ],
