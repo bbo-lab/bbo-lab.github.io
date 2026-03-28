@@ -1,0 +1,20 @@
+<map id="/home/sawinski/Workspace/MPINB/vidre/docs/dev/style.hh" name="/home/sawinski/Workspace/MPINB/vidre/docs/dev/style.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="441,5,649,45"/>
+<area shape="rect" id="Node000002" href="$core_2vidre_2exception_8hh.html" title=" " alt="" coords="377,93,505,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="522,48,469,87,466,83,519,43"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="522,167,577,192"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="549,46,551,153,546,153,543,46"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="583,93,641,119"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="563,44,595,81,591,84,559,47"/>
+<area shape="rect" id="Node000003" href="$libs_2core_2vidre_2core_2config_8hh.html" title=" " alt="" coords="44,167,180,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,121,179,166,178,161,388,116"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="205,167,361,192"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="417,121,322,163,320,159,415,116"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="460,116,522,157,519,161,457,121"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="385,167,498,192"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="444,119,444,153,439,153,439,119"/>
+<area shape="rect" id="Node000004" href="$vidre_2config_8hh.html" title=" " alt="" coords="5,240,112,265"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="105,194,78,231,73,228,101,191"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="136,240,197,265"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="123,191,152,228,147,231,119,194"/>
+</map>
