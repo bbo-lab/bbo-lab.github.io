@@ -25,41 +25,9 @@
 var NAVTREE =
 [
   [ "VidRe", "index.html", [
-    [ "Development", "dev.html", [
-      [ "Objective", "dev.html#dev-objective", null ],
-      [ "Design", "dev.html#dev-design", [
-        [ "Backend", "dev.html#dev-backend", [
-          [ "Monitoring", "dev.html#dev-backend-monitoring", null ],
-          [ "Devices", "dev.html#dev-backend-devices", null ],
-          [ "Storage", "dev.html#dev-backend-storage", null ],
-          [ "Real-time interface", "dev.html#dev-backend-realtime", null ],
-          [ "Transport", "dev.html#dev-backend-transport", null ],
-          [ "Settings", "dev.html#dev-backend-settings", null ]
-        ] ],
-        [ "Frontend", "dev.html#dev-frontend", null ]
-      ] ],
-      [ "Milestones", "dev.html#dev-milestone", [
-        [ "Zero", "dev.html#milestone-0", null ]
-      ] ],
-      [ "Coding", "dev.html#dev-code", [
-        [ "Language(s) and configuration", "dev.html#dev-lang", null ],
-        [ "Version control", "dev.html#dev-git", null ],
-        [ "Documentation", "dev.html#dev-docs", null ]
-      ] ],
-      [ "Implementation", "dev.html#dev-impl", [
-        [ "Core library", "dev.html#dev-core", [
-          [ "Error handling", "dev.html#core-exception", null ],
-          [ "Logging", "dev.html#core-logging", null ],
-          [ "Data format", "dev.html#core-format", null ],
-          [ "Storage", "dev.html#core-storage", null ],
-          [ "Plugins", "dev.html#core-plugins", null ],
-          [ "System information", "dev.html#core-sysinfo", null ],
-          [ "Transport", "dev.html#core-transport", null ],
-          [ "Settings", "dev.html#core-settings", null ]
-        ] ]
-      ] ]
-    ] ],
+    [ "Developer info", "dev.html", "dev" ],
     [ "Licenses", "license.html", null ],
+    [ "Usage", "usage.html", "usage" ],
     [ "Todo List", "todo.html", null ],
     [ "Topics", "topics.html", "topics" ],
     [ "Namespaces", "namespaces.html", [
@@ -67,6 +35,7 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
@@ -78,7 +47,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
@@ -103,9 +72,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"dev.html#dev-core",
-"group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a57789d55c710ed00aff0678137bfd802",
-"src_2libs_2core_2vidre_2util_2sysinfo_8cc.html"
+"classvidre_1_1settings_1_1node.html#a46c04863502e2539085096e14bddc02d",
+"group__api-core-details.html#ga8399da9ef7ce5c7108bcf65aaaba9d98",
+"group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ac5a75f2e316f475f314d3e3aa0535cd2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

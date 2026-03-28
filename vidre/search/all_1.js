@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['backend_0',['Backend',['../dev.html#dev-backend',1,'']]],
+  ['backend_0',['Backend',['../dev_2attic.html#dev-backend',1,'']]],
   ['bayer_5fbggr16be_1',['bayer_bggr16be',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a23bae8481a692cdfaee91f2d81a32750',1,'vidre::ffmpeg']]],
   ['bayer_5fbggr16le_2',['bayer_bggr16le',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ac5d36baad8295fd4a251a52f79a86585',1,'vidre::ffmpeg']]],
   ['bayer_5fbggr8_3',['bayer_bggr8',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a5f687d7e35b32fb79c62a4f74663bfa4',1,'vidre::ffmpeg']]],
@@ -34,7 +34,7 @@ var searchData=
   ['bpp_5f_31',['bpp_',['../classvidre_1_1input_1_1midraw.html#a833c34df1cf95961c1061260c94ae60b',1,'vidre::input::midraw']]],
   ['brief_32',['brief',['../structvidre_1_1plugin_1_1information.html#a915edba2f93bf5ff5d7f3cbf26d353d8',1,'vidre::plugin::information']]],
   ['bsf_5fnot_5ffound_33',['bsf_not_found',['../group__api-support-ffmpeg-util-error.html#ggada6a0890c35b0b5d9a126daa7da5bc19adc825158cf0f96ab37165347ac5df202',1,'vidre::ffmpeg']]],
-  ['buf_5f_34',['buf_',['../classvidre_1_1log_1_1io_1_1string.html#a02aa41e99adb63cc5c45978c7f540756',1,'vidre::log::io::string']]],
+  ['buf_5f_34',['buf_',['../classvidre_1_1static__error__message.html#a2d9c8282ff1c7250c098050c2636649d',1,'vidre::static_error_message::buf_'],['../classvidre_1_1log_1_1io_1_1string.html#a02aa41e99adb63cc5c45978c7f540756',1,'vidre::log::io::string::buf_']]],
   ['buffer_5ftoo_5fsmall_35',['buffer_too_small',['../group__api-support-ffmpeg-util-error.html#ggada6a0890c35b0b5d9a126daa7da5bc19a115eca9246eb7d59f3139bc1d0a668d7',1,'vidre::ffmpeg']]],
   ['bug_36',['bug',['../group__api-support-ffmpeg-util-error.html#ggada6a0890c35b0b5d9a126daa7da5bc19aae0e4bdad7b5f67141743366026d2ea5',1,'vidre::ffmpeg']]]
 ];

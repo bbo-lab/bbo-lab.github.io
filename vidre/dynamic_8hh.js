@@ -1,10 +1,13 @@
 var dynamic_8hh =
 [
     [ "VIDRE_USING_DLFCN", "dynamic_8hh.html#a8068d7afc26eb642fb633fa1ec25bad9", null ],
-    [ "vidre::plugin::detail::handle_type", "group__api-core-details.html#ga811973d287b42e4970c0d01b5957f318", null ],
-    [ "vidre::plugin::detail::symbol_type", "group__api-core-details.html#ga32e4d2f84ef70d6a10d507cc44c03ef8", null ],
-    [ "vidre::plugin::detail::mode", "group__api-core-details.html#ga3efa35ccb56979c3c94213e6a693d6a7", [
-      [ "vidre::plugin::detail::lazy", "group__api-core-details.html#gga3efa35ccb56979c3c94213e6a693d6a7a545b7624ab3a69c0759c520ea41c2882", null ],
-      [ "vidre::plugin::detail::now", "group__api-core-details.html#gga3efa35ccb56979c3c94213e6a693d6a7a16407b5b14fcc2cc8a8ad4d0c6b195e1", null ]
-    ] ]
+    [ "vidre::plugin::detail::library::handle_type", "group__api-core-details.html#ga758ab909353c31bc93701d66f6d3493e", null ],
+    [ "vidre::plugin::detail::library::symbol_type", "group__api-core-details.html#ga8399da9ef7ce5c7108bcf65aaaba9d98", null ],
+    [ "vidre::plugin::detail::library::mode", "group__api-core-details.html#gad8066a9007fdb004c8489dd55960e84d", [
+      [ "vidre::plugin::detail::library::lazy", "group__api-core-details.html#ggad8066a9007fdb004c8489dd55960e84da20cb051379b29b7a650962d040ef9593", null ],
+      [ "vidre::plugin::detail::library::now", "group__api-core-details.html#ggad8066a9007fdb004c8489dd55960e84da752fc31b6cd773c6fd0b56de2f2c8745", null ]
+    ] ],
+    [ "vidre::plugin::detail::library::open", "group__api-core-details.html#ga5888893a997f4d25137eda4af1752d95", null ],
+    [ "vidre::plugin::detail::library::close", "group__api-core-details.html#gae6cdd5de3409c2c859e1797798e74cc9", null ],
+    [ "vidre::plugin::detail::library::symbol", "group__api-core-details.html#gaec68bb8c33fafb49e2949ab7242958c5", null ]
 ];

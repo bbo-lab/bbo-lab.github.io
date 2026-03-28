@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['valid_0',['valid',['../classvidre_1_1ffmpeg_1_1format_1_1context.html#a587c9f1d56026126db0c0977c528f55d',1,'vidre::ffmpeg::format::context']]],
-  ['vidre_5fmodule_1',['VIDRE_MODULE',['../midlib2_8cc.html#a8583011af4cd0a13cd4a0e2a1dd5c0b7',1,'midlib2.cc']]],
-  ['vidre_5fplugin_2',['vidre_plugin',['../midlib2_8cc.html#abc1338525d7d28e449e0b079d83fc34c',1,'midlib2.cc']]],
-  ['vidre_5fpreload_3',['vidre_preload',['../onsemi_2midlib2_2preload_8cc.html#a254aa0383a5f9ec88ccf7ebb353d243d',1,'preload.cc']]]
+  ['threshold_0',['threshold',['../classvidre_1_1log_1_1io_1_1stream.html#a9328d4564fc9039d64c81e77b24bf83e',1,'vidre::log::io::stream::threshold(unsigned chanid) noexcept'],['../classvidre_1_1log_1_1io_1_1stream.html#a89cc6376c3584ba50d1758870f79719d',1,'vidre::log::io::stream::threshold(unsigned chanid, int lvl) noexcept'],['../classvidre_1_1log_1_1io_1_1stream.html#a5dbccaa112021f7a22bdd834e0ae0685',1,'vidre::log::io::stream::threshold(unsigned chanid, level lvl) noexcept']]],
+  ['tmpdir_1',['tmpdir',['../group__api-core-os-path.html#ga2b0c900161e3153879bb1c87b07e3f35',1,'vidre::os']]],
+  ['to_5fstring_2',['to_string',['../namespaceboost.html#a800ccc200cca804ec0c618295438f6a9',1,'boost']]],
+  ['tostring_3',['tostring',['../classvidre_1_1uuid.html#a19b5142800d92b85d4925ba49f3ce00d',1,'vidre::uuid']]],
+  ['trace_4',['trace',['../classvidre_1_1log_1_1trace.html#a3f307127cb4ecd186bff02f8d2a7280b',1,'vidre::log::trace']]],
+  ['tracing_5',['tracing',['../examples_2core_2log_8cc.html#a0412ae6a35c6b5573ede8b3fb39de653',1,'log.cc']]],
+  ['type_6',['type',['../classvidre_1_1settings_1_1node.html#ad52f037f439e85f5db5cf284a3250a3a',1,'vidre::settings::node']]]
 ];

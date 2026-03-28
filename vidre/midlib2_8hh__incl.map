@@ -1,9 +1,9 @@
-<map id="plugins/onsemi/midlib2/vidre/onsemi/midlib2.hh" name="plugins/onsemi/midlib2/vidre/onsemi/midlib2.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="60,5,223,45"/>
-<area shape="rect" id="Node000002" href="$plugins_2onsemi_2midlib2_2vidre_2onsemi_2midlib2_2config_8hh.html" title=" " alt="" coords="5,93,147,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,47,101,84,96,81,125,44"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="171,101,245,126"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="158,44,192,88,188,91,154,47"/>
-<area shape="rect" id="Node000003" href="$vidre_2config_8hh.html" title=" " alt="" coords="23,181,129,207"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,134,79,167,73,167,73,134"/>
+<map id="plugins/camera/onsemi/midlib2/vidre/onsemi/midlib2.hh" name="plugins/camera/onsemi/midlib2/vidre/onsemi/midlib2.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="63,5,219,60"/>
+<area shape="rect" id="Node000002" href="$plugins_2camera_2onsemi_2midlib2_2vidre_2onsemi_2midlib2_2config_8hh.html" title=" " alt="" coords="5,108,147,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,62,99,98,95,95,121,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="171,115,245,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,59,194,102,189,106,158,62"/>
+<area shape="rect" id="Node000003" href="$vidre_2config_8hh.html" title=" " alt="" coords="23,196,129,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,148,79,182,73,182,73,148"/>
 </map>

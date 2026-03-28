@@ -1,7 +1,7 @@
 var searchData=
 [
   ['warning_0',['warning',['../classvidre_1_1log_1_1warning.html',1,'vidre::log::warning'],['../classvidre_1_1log_1_1warning.html#ab75c1c0292d0915b2bf8724deb4bb071',1,'vidre::log::warning::warning()'],['../group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca7b83d3f08fa392b79e3f553b585971cd',1,'vidre::log::warning']]],
-  ['what_1',['what',['../classvidre_1_1ffmpeg_1_1exception.html#a0b73a2adb20527b514a652f177c558b7',1,'vidre::ffmpeg::exception']]],
+  ['what_1',['what',['../classvidre_1_1system__error.html#a05949044ae392abac3cb51c078b813f0',1,'vidre::system_error::what()'],['../classvidre_1_1plugin_1_1dynamic_1_1exception.html#a2cbe00ce8c8bd2e4f48992bbc0a37c0a',1,'vidre::plugin::dynamic::exception::what()'],['../classvidre_1_1plugin_1_1exception.html#ae2a9b5c21aa45a11538f54ef0df08424',1,'vidre::plugin::exception::what()'],['../classvidre_1_1ffmpeg_1_1exception.html#a0b73a2adb20527b514a652f177c558b7',1,'vidre::ffmpeg::exception::what()']]],
   ['width_5f_2',['width_',['../classvidre_1_1input_1_1midraw.html#a8960a6f73eaf4cd7bacb09ac270310b0',1,'vidre::input::midraw']]],
   ['wrapper_3',['OnSemi MIDlib2 wrapper',['../group__api-device-onsemi.html',1,'']]],
   ['write_5fheader_4',['write_header',['../classvidre_1_1ffmpeg_1_1format_1_1context.html#a2182bd32c94dceca5844d2177270df39',1,'vidre::ffmpeg::format::context']]],

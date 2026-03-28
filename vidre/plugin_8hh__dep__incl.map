@@ -1,9 +1,9 @@
 <map id="libs/core/vidre/plugin.hh" name="libs/core/vidre/plugin.hh">
 <area shape="rect" id="Node000001" title=" " alt="" coords="219,5,377,31"/>
-<area shape="rect" id="Node000002" href="$plugin_8cc.html" title=" " alt="" coords="5,79,196,133"/>
+<area shape="rect" id="Node000002" href="$plugins_8cc.html" title=" " alt="" coords="5,79,196,133"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,39,162,81,160,76,258,34"/>
-<area shape="rect" id="Node000003" href="$midlib2_8cc.html" title=" " alt="" coords="221,86,375,126"/>
+<area shape="rect" id="Node000003" href="$check_8cc.html" title=" " alt="" coords="220,86,376,126"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="301,44,301,86,295,86,295,44"/>
-<area shape="rect" id="Node000004" href="$onsemi_2midlib2_2preload_8cc.html" title=" " alt="" coords="399,86,554,126"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="336,34,438,83,436,88,333,39"/>
+<area shape="rect" id="Node000004" href="$midlib2_8cc.html" title=" " alt="" coords="400,86,556,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="335,34,439,83,437,88,333,39"/>
 </map>

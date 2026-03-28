@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['n_0',['n',['../structshow__memory.html#a04a9e5190df1f6b7d36aac8c71d1bed2',1,'show_memory']]],
-  ['name_1',['name',['../structvidre_1_1plugin_1_1information.html#a39643c60e698e459eb87fe795460b4bb',1,'vidre::plugin::information']]]
+  ['l_5f_0',['L_',['../classvidre_1_1script_1_1engine_1_1stack.html#a15b458fff4a10b1aa7d8a1892fb3aaf8',1,'vidre::script::engine::stack']]],
+  ['level_5f_1',['level_',['../classvidre_1_1log_1_1handler.html#ad4bec1badeb3093fa3be91ee42c78008',1,'vidre::log::handler']]]
 ];

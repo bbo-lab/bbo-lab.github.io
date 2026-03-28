@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['symbol_5ftype_0',['symbol_type',['../group__api-core-details.html#ga32e4d2f84ef70d6a10d507cc44c03ef8',1,'vidre::plugin::detail']]]
+  ['message_5ftype_0',['message_type',['../group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d',1,'vidre::log']]]
 ];

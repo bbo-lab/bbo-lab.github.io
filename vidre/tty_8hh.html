@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.13.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -6,6 +7,7 @@
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>VidRe: libs/core/vidre/os/tty.hh File Reference</title>
+<link rel="icon" href="vidre.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,6 +30,9 @@ MathJax.Hub.Config({
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">DoxygenAwesomeDarkModeToggle.init()</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -39,7 +44,7 @@ MathJax.Hub.Config({
   <td id="projectalign">
    <div id="projectname">VidRe<span id="projectnumber">&#160;.</span>
    </div>
-   <div id="projectbrief">Video recording software for scientific purposes.</div>
+   <div id="projectbrief">Video recording suite.</div>
   </td>
  </tr>
  </tbody>
@@ -128,7 +133,7 @@ $(function(){initNavTree('tty_8hh.html',''); initResizable(true); });
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="tty_8hh__dep__incl.svg" width="154" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="tty_8hh__dep__incl.svg" width="362" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="tty_8hh_source.html">Go to the source code of this file.</a></p>
@@ -138,21 +143,27 @@ Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre.html">vidre</a></td></tr>
 <tr class="memdesc:namespacevidre"><td class="mdescLeft">&#160;</td><td class="mdescRight">General namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1os.html">vidre::os</a></td></tr>
+<tr class="memdesc:namespacevidre_1_1os"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operating-system utilities. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gac2a6375872f10f7ab3a268666b06988a" id="r_gac2a6375872f10f7ab3a268666b06988a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-os.html#gac2a6375872f10f7ab3a268666b06988a">VIDRE_OS_ISATTY</a>&#160;&#160;&#160;::isatty</td></tr>
+<tr class="memitem:gac2a6375872f10f7ab3a268666b06988a" id="r_gac2a6375872f10f7ab3a268666b06988a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-os-tty.html#gac2a6375872f10f7ab3a268666b06988a">VIDRE_OS_ISATTY</a>&#160;&#160;&#160;::isatty</td></tr>
 <tr class="memdesc:gac2a6375872f10f7ab3a268666b06988a"><td class="mdescLeft">&#160;</td><td class="mdescRight">POSIX <code>isatty</code> abstraction.  <br /></td></tr>
 <tr class="separator:gac2a6375872f10f7ab3a268666b06988a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0b6c1c560401f6d1d4e58c6bebd74a47" id="r_ga0b6c1c560401f6d1d4e58c6bebd74a47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-os.html#ga0b6c1c560401f6d1d4e58c6bebd74a47">VIDRE_OS_FILENO</a>&#160;&#160;&#160;::fileno</td></tr>
+<tr class="memitem:ga0b6c1c560401f6d1d4e58c6bebd74a47" id="r_ga0b6c1c560401f6d1d4e58c6bebd74a47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-os-tty.html#ga0b6c1c560401f6d1d4e58c6bebd74a47">VIDRE_OS_FILENO</a>&#160;&#160;&#160;::fileno</td></tr>
 <tr class="memdesc:ga0b6c1c560401f6d1d4e58c6bebd74a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">POSIX <code>fileno</code> abstraction.  <br /></td></tr>
 <tr class="separator:ga0b6c1c560401f6d1d4e58c6bebd74a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gab83554a76083392efd737f5556d52ef1" id="r_gab83554a76083392efd737f5556d52ef1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-os-tty.html#gab83554a76083392efd737f5556d52ef1">vidre::isatty</a> (FILE *stream) noexcept</td></tr>
-<tr class="memdesc:gab83554a76083392efd737f5556d52ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check, if a C-stream is a TTY.  <br /></td></tr>
-<tr class="separator:gab83554a76083392efd737f5556d52ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ff232c97af564aa1110a2f2677739ed" id="r_ga9ff232c97af564aa1110a2f2677739ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-os-tty.html#ga9ff232c97af564aa1110a2f2677739ed">vidre::os::isatty</a> (FILE *stream) noexcept</td></tr>
+<tr class="memdesc:ga9ff232c97af564aa1110a2f2677739ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check, if a C-stream is a TTY.  <br /></td></tr>
+<tr class="separator:ga9ff232c97af564aa1110a2f2677739ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9269686d278d53a6dfccb5c5319c1ffb" id="r_ga9269686d278d53a6dfccb5c5319c1ffb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-os-tty.html#ga9269686d278d53a6dfccb5c5319c1ffb">vidre::os::isatty</a> () noexcept</td></tr>
+<tr class="memdesc:ga9269686d278d53a6dfccb5c5319c1ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check, if <code>stdout</code> is a TTY.  <br /></td></tr>
+<tr class="separator:ga9269686d278d53a6dfccb5c5319c1ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

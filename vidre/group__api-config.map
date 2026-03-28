@@ -1,7 +1,8 @@
 <map id="Configuration" name="Configuration">
-<area shape="rect" id="Node000002" href="$group__api.html" title="The C++ application programming interface." alt="" coords="5,70,80,95"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="128,70,227,95"/>
-<area shape="rect" id="Node000004" href="$group__api-config-abi.html" title=" " alt="" coords="280,5,423,45"/>
-<area shape="rect" id="Node000005" href="$group__api-config-have.html" title=" " alt="" coords="275,70,428,95"/>
-<area shape="rect" id="Node000003" href="$group__api-config-version.html" title=" " alt="" coords="284,119,419,145"/>
+<area shape="rect" id="Node000002" href="$group__api.html" title="The C++ application programming interface." alt="" coords="5,95,80,121"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="128,95,227,121"/>
+<area shape="rect" id="Node000005" href="$group__api-config-abi.html" title=" " alt="" coords="280,5,423,45"/>
+<area shape="rect" id="Node000006" href="$group__api-config-have.html" title=" " alt="" coords="275,70,428,95"/>
+<area shape="rect" id="Node000004" href="$group__api-config-paths.html" title=" " alt="" coords="291,119,412,145"/>
+<area shape="rect" id="Node000003" href="$group__api-config-version.html" title=" " alt="" coords="284,169,419,194"/>
 </map>

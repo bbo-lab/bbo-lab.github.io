@@ -1,5 +1,7 @@
-<map id="System abstractions" name="System abstractions">
-<area shape="rect" id="Node000002" href="$group__api-core.html" title=" " alt="" coords="5,5,95,31"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="143,5,285,31"/>
-<area shape="rect" id="Node000003" href="$group__api-core-os-tty.html" title=" " alt="" coords="333,5,451,31"/>
+<map id="OS utilities" name="OS utilities">
+<area shape="rect" id="Node000002" href="$group__api-core.html" title=" " alt="" coords="5,55,95,80"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="143,55,229,80"/>
+<area shape="rect" id="Node000003" href="$group__api-core-os-memory.html" title=" " alt="" coords="277,5,396,31"/>
+<area shape="rect" id="Node000004" href="$group__api-core-os-path.html" title=" " alt="" coords="309,55,365,80"/>
+<area shape="rect" id="Node000005" href="$group__api-core-os-tty.html" title=" " alt="" coords="278,104,395,129"/>
 </map>

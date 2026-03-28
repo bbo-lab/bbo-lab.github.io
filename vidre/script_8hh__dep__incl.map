@@ -1,0 +1,20 @@
+<map id="libs/core/vidre/script.hh" name="libs/core/vidre/script.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="337,5,494,31"/>
+<area shape="rect" id="Node000002" href="$examples_2core_2script_8cc.html" title=" " alt="" coords="5,79,196,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="360,37,197,81,196,76,359,32"/>
+<area shape="rect" id="Node000003" href="$src_2libs_2core_2vidre_2script_8cc.html" title=" " alt="" coords="221,93,378,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="390,41,317,95,314,91,387,37"/>
+<area shape="rect" id="Node000004" href="$settings_8hh.html" title=" " alt="" coords="445,269,615,295"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="415,44,413,81,415,127,424,175,443,220,455,235,470,248,502,267,500,272,467,252,451,239,438,223,419,177,409,127,407,81,410,44"/>
+<area shape="rect" id="Node000007" href="$file_8hh.html" title=" " alt="" coords="453,181,607,221"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="432,41,520,180,516,182,428,44"/>
+<area shape="rect" id="Node000008" href="$node_8hh.html" title=" " alt="" coords="504,86,657,126"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="451,35,545,83,543,88,449,40"/>
+<area shape="rect" id="Node000005" href="$examples_2core_2settings_8cc.html" title=" " alt="" coords="332,343,523,397"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="508,305,460,345,457,341,504,301"/>
+<area shape="rect" id="Node000006" href="$src_2libs_2core_2vidre_2settings_8cc.html" title=" " alt="" coords="547,357,718,383"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="556,302,620,355,617,359,553,306"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="533,235,533,269,527,269,527,235"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="606,136,616,156,624,178,626,201,620,222,609,239,594,252,562,271,559,267,591,248,605,235,616,220,621,200,619,179,612,158,601,139"/>
+<area shape="poly" id="edge10_Node000008_Node000007" title=" " alt="" coords="566,139,543,183,538,180,562,137"/>
+</map>

@@ -1,0 +1,38 @@
+<map id="libs/core/vidre/settings.hh" name="libs/core/vidre/settings.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="397,5,567,31"/>
+<area shape="rect" id="Node000002" href="$libs_2core_2vidre_2core_2config_8hh.html" title=" " alt="" coords="402,299,538,324"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="463,33,434,52,400,79,368,113,343,153,340,178,347,208,364,249,391,273,423,291,420,295,388,278,360,252,342,210,335,179,338,151,363,110,396,75,431,48,460,29"/>
+<area shape="rect" id="Node000005" href="$script_8hh.html" title=" " alt="" coords="579,225,683,251"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="543,28,585,46,604,60,620,77,636,111,643,147,643,182,639,212,634,211,637,182,637,148,631,112,616,80,601,64,582,51,541,33"/>
+<area shape="rect" id="Node000009" href="$node_8hh.html" title=" " alt="" coords="353,152,504,177"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="479,32,458,80,438,139,433,138,453,78,474,30"/>
+<area shape="rect" id="Node000015" href="$file_8hh.html" title=" " alt="" coords="467,79,606,104"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="493,29,522,66,517,69,489,33"/>
+<area shape="rect" id="Node000003" href="$vidre_2config_8hh.html" title=" " alt="" coords="362,372,469,397"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="463,326,435,363,430,360,459,323"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="493,372,554,397"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="481,323,509,360,504,363,477,326"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="606,253,510,295,508,291,604,248"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="563,299,641,324"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="629,252,614,287,610,285,624,250"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="666,299,719,324"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="643,249,676,286,672,290,639,253"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="743,299,826,324"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="657,248,748,290,746,295,655,253"/>
+<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="435,177,466,285,460,286,429,179"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="462,175,587,218,585,223,460,180"/>
+<area shape="rect" id="Node000010" href="$core_2vidre_2exception_8hh.html" title=" " alt="" coords="150,225,278,251"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="395,180,263,223,261,218,393,175"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="374,225,433,251"/>
+<area shape="poly" id="edge17_Node000009_Node000014" title=" " alt="" coords="427,179,414,213,409,212,422,177"/>
+<area shape="poly" id="edge13_Node000010_Node000002" title=" " alt="" coords="256,248,416,292,415,298,254,253"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="221,299,377,324"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="229,249,277,288,273,292,226,253"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="5,299,60,324"/>
+<area shape="poly" id="edge15_Node000010_Node000012" title=" " alt="" coords="186,253,74,297,72,292,184,248"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="84,299,197,324"/>
+<area shape="poly" id="edge16_Node000010_Node000013" title=" " alt="" coords="204,253,164,291,161,287,200,249"/>
+<area shape="poly" id="edge19_Node000015_Node000002" title=" " alt="" coords="537,105,518,178,482,286,476,285,513,177,531,104"/>
+<area shape="poly" id="edge20_Node000015_Node000005" title=" " alt="" coords="547,103,618,212,614,215,542,106"/>
+<area shape="poly" id="edge21_Node000015_Node000009" title=" " alt="" coords="521,106,459,147,456,142,518,102"/>
+</map>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['packed_5f_0',['packed_',['../classvidre_1_1input_1_1midraw.html#aed586bcb12f972d0005ae4d1716c4d60',1,'vidre::input::midraw']]],
-  ['prefix_1',['prefix',['../structstyle__tags.html#a6f83e35421fc53040b2618949e2cfe8b',1,'style_tags']]]
+  ['n_0',['n',['../structshow__memory.html#a04a9e5190df1f6b7d36aac8c71d1bed2',1,'show_memory']]],
+  ['name_1',['name',['../structvidre_1_1plugin_1_1information.html#a39643c60e698e459eb87fe795460b4bb',1,'vidre::plugin::information']]]
 ];

@@ -10,7 +10,10 @@ var searchData=
   ['vidre_3a_3alog_7',['log',['../namespacevidre_1_1log.html',1,'vidre']]],
   ['vidre_3a_3alog_3a_3aio_8',['io',['../namespacevidre_1_1log_1_1io.html',1,'vidre::log']]],
   ['vidre_3a_3amidlib2_9',['midlib2',['../namespacevidre_1_1midlib2.html',1,'vidre']]],
-  ['vidre_3a_3aplugin_10',['plugin',['../namespacevidre_1_1plugin.html',1,'vidre']]],
-  ['vidre_3a_3aplugin_3a_3adetail_11',['detail',['../namespacevidre_1_1plugin_1_1detail.html',1,'vidre::plugin']]],
-  ['vidre_3a_3asysinfo_12',['sysinfo',['../namespacevidre_1_1sysinfo.html',1,'vidre']]]
+  ['vidre_3a_3aos_10',['os',['../namespacevidre_1_1os.html',1,'vidre']]],
+  ['vidre_3a_3aplugin_11',['plugin',['../namespacevidre_1_1plugin.html',1,'vidre']]],
+  ['vidre_3a_3aplugin_3a_3adetail_12',['detail',['../namespacevidre_1_1plugin_1_1detail.html',1,'vidre::plugin']]],
+  ['vidre_3a_3aplugin_3a_3adetail_3a_3alibrary_13',['library',['../namespacevidre_1_1plugin_1_1detail_1_1library.html',1,'vidre::plugin::detail']]],
+  ['vidre_3a_3ascript_14',['script',['../namespacevidre_1_1script.html',1,'vidre']]],
+  ['vidre_3a_3asettings_15',['settings',['../namespacevidre_1_1settings.html',1,'vidre']]]
 ];

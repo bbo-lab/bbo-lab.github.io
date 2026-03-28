@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['warning_0',['warning',['../classvidre_1_1log_1_1warning.html#ab75c1c0292d0915b2bf8724deb4bb071',1,'vidre::log::warning']]],
-  ['what_1',['what',['../classvidre_1_1ffmpeg_1_1exception.html#a0b73a2adb20527b514a652f177c558b7',1,'vidre::ffmpeg::exception']]],
-  ['write_5fheader_2',['write_header',['../classvidre_1_1ffmpeg_1_1format_1_1context.html#a2182bd32c94dceca5844d2177270df39',1,'vidre::ffmpeg::format::context']]],
-  ['write_5fpacket_3',['write_packet',['../classvidre_1_1ffmpeg_1_1format_1_1context.html#afdd411bd4bbb699b54a654da4b7a8457',1,'vidre::ffmpeg::format::context']]],
-  ['write_5ftrailer_4',['write_trailer',['../classvidre_1_1ffmpeg_1_1format_1_1context.html#a17252f8c907b213ad690b831edc13258',1,'vidre::ffmpeg::format::context']]]
+  ['unref_0',['unref',['../classvidre_1_1settings_1_1node.html#a46c04863502e2539085096e14bddc02d',1,'vidre::settings::node']]],
+  ['uuid_1',['uuid',['../classvidre_1_1uuid.html#aab52f5f7d26380e10c8300f6fff22245',1,'vidre::uuid::uuid()=default'],['../classvidre_1_1uuid.html#afa3f6b85d01f44f2a110746e6892b958',1,'vidre::uuid::uuid(const std::string &amp;s)'],['../classvidre_1_1uuid.html#ab6b8559236da9a26dd52b499391bb3f8',1,'vidre::uuid::uuid(const detail::uuid_t &amp;u) noexcept']]]
 ];

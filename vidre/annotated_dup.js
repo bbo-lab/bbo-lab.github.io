@@ -42,14 +42,25 @@ var annotated_dup =
         [ "trace", "classvidre_1_1log_1_1trace.html", "classvidre_1_1log_1_1trace" ],
         [ "warning", "classvidre_1_1log_1_1warning.html", "classvidre_1_1log_1_1warning" ]
       ] ],
+      [ "os", "namespacevidre_1_1os.html", [
+        [ "memory", "structvidre_1_1os_1_1memory.html", "structvidre_1_1os_1_1memory" ]
+      ] ],
       [ "plugin", "namespacevidre_1_1plugin.html", [
         [ "dynamic", "classvidre_1_1plugin_1_1dynamic.html", "classvidre_1_1plugin_1_1dynamic" ],
+        [ "exception", "classvidre_1_1plugin_1_1exception.html", "classvidre_1_1plugin_1_1exception" ],
+        [ "hub", "structvidre_1_1plugin_1_1hub.html", null ],
         [ "information", "structvidre_1_1plugin_1_1information.html", "structvidre_1_1plugin_1_1information" ]
       ] ],
-      [ "sysinfo", "namespacevidre_1_1sysinfo.html", [
-        [ "memory", "structvidre_1_1sysinfo_1_1memory.html", "structvidre_1_1sysinfo_1_1memory" ]
+      [ "script", "namespacevidre_1_1script.html", [
+        [ "engine", "classvidre_1_1script_1_1engine.html", "classvidre_1_1script_1_1engine" ]
+      ] ],
+      [ "settings", "namespacevidre_1_1settings.html", [
+        [ "file", "classvidre_1_1settings_1_1file.html", "classvidre_1_1settings_1_1file" ],
+        [ "node", "classvidre_1_1settings_1_1node.html", "classvidre_1_1settings_1_1node" ]
       ] ],
       [ "exception", "classvidre_1_1exception.html", "classvidre_1_1exception" ],
+      [ "static_error_message", "classvidre_1_1static__error__message.html", "classvidre_1_1static__error__message" ],
+      [ "system_error", "classvidre_1_1system__error.html", "classvidre_1_1system__error" ],
       [ "uuid", "classvidre_1_1uuid.html", "classvidre_1_1uuid" ]
     ] ],
     [ "show_memory", "structshow__memory.html", "structshow__memory" ],

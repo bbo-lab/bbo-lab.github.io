@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['threshold_5f_0',['threshold_',['../classvidre_1_1log_1_1io_1_1stream.html#a2b8bd21bc3026214aaee68457c03c8f7',1,'vidre::log::io::stream']]],
-  ['total_1',['total',['../structvidre_1_1sysinfo_1_1memory.html#a5f4f34d94fab14d4b071efc09e4d5fc2',1,'vidre::sysinfo::memory']]]
+  ['packed_5f_0',['packed_',['../classvidre_1_1input_1_1midraw.html#aed586bcb12f972d0005ae4d1716c4d60',1,'vidre::input::midraw']]],
+  ['plugindir_1',['plugindir',['../structvidre_1_1plugin_1_1hub.html#a3b6cbdfeb0bfbf56be79b81358e73c15',1,'vidre::plugin::hub']]],
+  ['prefix_2',['prefix',['../structstyle__tags.html#a6f83e35421fc53040b2618949e2cfe8b',1,'style_tags']]]
 ];
