@@ -18,8 +18,6 @@ var classvidre_1_1settings_1_1node =
     [ "istable", "classvidre_1_1settings_1_1node.html#a3ff46a51df01fd85ad420b5fd71d2277", null ],
     [ "type", "classvidre_1_1settings_1_1node.html#ad52f037f439e85f5db5cf284a3250a3a", null ],
     [ "keys", "classvidre_1_1settings_1_1node.html#aa8149b6a4266d1bfbe083e636b205d22", null ],
-    [ "operator=", "group__api-core-settings.html#ga66e5f17c073117caf81927dfb8c4628f", null ],
-    [ "operator=", "group__api-core-settings.html#ga40f095a91e0a4199e17743db6a02ee56", null ],
     [ "type_", "classvidre_1_1settings_1_1node.html#af03d5c30e4789d6e73081d81b4aaef8c", null ],
     [ "ref_", "classvidre_1_1settings_1_1node.html#afa5718e2b2706d826264ca0b291e522b", null ]
 ];

@@ -1,7 +1,7 @@
 <map id="Logging" name="Logging">
-<area shape="rect" id="Node000002" href="$group__api-core.html" title=" " alt="" coords="5,55,95,80"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="143,55,209,80"/>
-<area shape="rect" id="Node000005" href="$group__api-core-log-details.html" title="Internal implementation details." alt="" coords="257,5,411,31"/>
-<area shape="rect" id="Node000003" href="$group__api-core-log-if.html" title="General logging." alt="" coords="297,55,371,80"/>
-<area shape="rect" id="Node000004" href="$group__api-core-log-io.html" title="Log streaming facilities." alt="" coords="303,104,365,129"/>
+<area shape="rect" id="Node000002" href="$group__api-core.html" title=" " alt="" coords="5,55,104,80"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="152,55,225,80"/>
+<area shape="rect" id="Node000005" href="$group__api-core-log-details.html" title="Internal implementation details." alt="" coords="273,5,448,31"/>
+<area shape="rect" id="Node000003" href="$group__api-core-log-if.html" title="General logging." alt="" coords="321,55,401,80"/>
+<area shape="rect" id="Node000004" href="$group__api-core-log-io.html" title="Log streaming facilities." alt="" coords="327,104,394,129"/>
 </map>

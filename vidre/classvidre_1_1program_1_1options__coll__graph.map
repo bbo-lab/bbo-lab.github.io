@@ -1,0 +1,24 @@
+<map id="vidre::program::options&lt; N &gt;" name="vidre::program::options&lt; N &gt;">
+<area shape="rect" id="Node000001" title="Program options." alt="" coords="588,110,803,135"/>
+<area shape="rect" id="Node000002" href="$structvidre_1_1program_1_1argument.html" title="Program argument definition." alt="" coords="285,167,475,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="464,162,624,133,625,138,465,167"/>
+<area shape="rect" id="Node000005" href="$structvidre_1_1program_1_1argument_1_1options.html" title="Internal helper for accessing options&lt;N&gt;." alt="" coords="601,160,790,200"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="488,177,601,177,601,183,488,183"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1variant.html" title="A simple variant." alt="" coords="20,167,129,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="143,177,285,177,285,183,143,183"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1program_1_1argument_1_1parser.html" title="Argument parser." alt="" coords="923,127,1112,167"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="964,175,889,206,803,229,750,236,696,238,590,230,495,213,423,195,424,190,496,208,590,224,696,232,750,231,802,224,887,200,962,170"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="803,166,922,154,923,159,804,171"/>
+<area shape="rect" id="Node000006" href="$classvidre_1_1detail_1_1tinymap.html" title="Simple, small key&#45;variant pair map." alt="" coords="614,7,777,33"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="763,34,803,45,852,62,900,82,982,124,980,129,898,86,850,67,802,51,762,39"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="315,7,445,33"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="459,17,614,17,614,23,459,23"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="55,7,94,33"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="108,17,315,17,315,23,108,23"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="602,61,789,86"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="767,87,803,95,930,124,929,129,802,100,766,92"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="337,63,423,89"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="437,73,602,71,602,77,437,78"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="5,57,144,97"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="158,74,336,74,336,79,158,80"/>
+</map>

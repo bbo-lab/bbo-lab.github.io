@@ -29,6 +29,10 @@ var NAVTREE =
     [ "Developer info", "dev.html", "dev" ],
     [ "Licenses", "license.html", null ],
     [ "Usage", "usage.html", "usage" ],
+    [ "Service daemon", "usage-apps-daemon.html", null ],
+    [ "Graphical user interface", "usage-apps-gui.html", null ],
+    [ "Command-line control", "usage-apps-terminal.html", null ],
+    [ "Tools", "usage-apps-tools.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Topics", "topics.html", "topics" ],
     [ "Namespaces", "namespaces.html", [
@@ -49,7 +53,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
@@ -73,11 +77,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classvidre_1_1plugin_1_1exception.html#a4cf42ea72569d519cf211529b291d3aa",
-"functions_r.html",
-"group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a9a0d86d1181207be7d76f507c4cc245a",
-"structvidre_1_1os_1_1memory.html#aadb3a12e9f25cbbcbc15dd32157c6ce7"
+"classvidre_1_1script_1_1engine.html#a3a146cd467490cda01431f8340e95922",
+"file_8hh.html",
+"group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a5f687d7e35b32fb79c62a4f74663bfa4",
+"pixelformat_8hh_source.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronization';
-var SYNCOFFMSG = 'click to enable panel synchronization';
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';

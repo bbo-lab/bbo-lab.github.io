@@ -20,5 +20,5 @@ var searchData=
   ['p416le_17',['p416le',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ae5da592ec2e7fabfa85bc58fe528525b',1,'vidre::ffmpeg']]],
   ['pal8_18',['pal8',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a87fc96d1799c38c69b0a0a56d74f8ed4',1,'vidre::ffmpeg']]],
   ['plain_19',['plain',['../structvidre_1_1log_1_1io_1_1style.html#a7d9725faa7d08f7538d1993e66fa8c2da37e350d1fce7343bdc395aea91dc2c21',1,'vidre::log::io::style']]],
-  ['positional_5fargument_20',['positional_argument',['../classvidre_1_1arg_1_1option.html#a7ce3ac914423ee3fc83ca1e935632225a14f07cd663d66176ee0b19a3f60e6566',1,'vidre::arg::option']]]
+  ['positional_20',['positional',['../structvidre_1_1program_1_1argument.html#ac90264a2e4fed1f3f173b8756dec6d92a7f93b1075b3b7fab8063e6cb999b76be',1,'vidre::program::argument']]]
 ];

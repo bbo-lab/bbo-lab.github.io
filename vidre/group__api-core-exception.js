@@ -8,7 +8,7 @@ var group__api_core_exception =
       [ "buf_", "classvidre_1_1static__error__message.html#a2d9c8282ff1c7250c098050c2636649d", null ]
     ] ],
     [ "vidre::exception", "classvidre_1_1exception.html", [
-      [ "exception", "group__api-core-exception.html#gaa4e8c7acde1daf230d7b6f8e23361c7e", null ]
+      [ "exception", "classvidre_1_1exception.html#aa4e8c7acde1daf230d7b6f8e23361c7e", null ]
     ] ],
     [ "vidre::system_error", "classvidre_1_1system__error.html", [
       [ "system_error", "classvidre_1_1system__error.html#af42fbaa2b0b21a0360062ee1452888e3", null ],
@@ -17,6 +17,5 @@ var group__api_core_exception =
     ] ],
     [ "VIDRE_EXCEPTION_BUFSIZE", "group__api-core-exception.html#ga0d1dfc58d5f0c64d79d94de790c50a55", null ],
     [ "vidre::error_info", "group__api-core-exception.html#gade4af19b162a15ef719613fee7a76869", null ],
-    [ "vidre::throw_message", "group__api-core-exception.html#ga9e67ae9ac7b922375331a8434c12cc33", null ],
-    [ "vidre::exception::exception", "group__api-core-exception.html#gaa4e8c7acde1daf230d7b6f8e23361c7e", null ]
+    [ "vidre::throw_message", "group__api-core-exception.html#ga9e67ae9ac7b922375331a8434c12cc33", null ]
 ];

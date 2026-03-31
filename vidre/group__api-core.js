@@ -10,6 +10,6 @@ var group__api_core =
     [ "Utilities", "group__api-core-util.html", "group__api-core-util" ],
     [ "C++ compatibility", "group__api-core-cpp.html", "group__api-core-cpp" ],
     [ "OS utilities", "group__api-core-os.html", "group__api-core-os" ],
-    [ "Application tools", "group__api-core-app.html", "group__api-core-app" ],
+    [ "Program invocation and tools", "group__api-core-program.html", "group__api-core-program" ],
     [ "Implementation details", "group__api-core-details.html", "group__api-core-details" ]
 ];

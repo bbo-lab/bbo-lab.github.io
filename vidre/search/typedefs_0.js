@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['callback_5ftype_0',['callback_type',['../classvidre_1_1arg_1_1option.html#ab19e7ce7ea6a7e764390c414a757ec6e',1,'vidre::arg::option']]]
+  ['callback_5ftype_0',['callback_type',['../structvidre_1_1program_1_1argument.html#a89a516e568f11a676d4c0b6f630186a5',1,'vidre::program::argument']]]
 ];

@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$structvidre_1_1plugin_1_1information.html" title="Module information." alt="" coords="5,5,169,31"/>
+<area shape="rect" id="Node000000" href="$structvidre_1_1program_1_1argument.html" title="Program argument definition." alt="" coords="5,13,195,38"/>
+<area shape="rect" id="Node000001" href="$structvidre_1_1program_1_1argument_1_1parameter.html" title="Alternative construction of positional arguments." alt="" coords="243,5,432,45"/>
+<area shape="poly" id="edge24_Node000000_Node000001" title=" " alt="" coords="208,23,243,23,243,28,208,28"/>
 </map>

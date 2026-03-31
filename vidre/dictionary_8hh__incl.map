@@ -1,27 +1,27 @@
 <map id="libs/ffmpeg/vidre/ffmpeg/util/dictionary.hh" name="libs/ffmpeg/vidre/ffmpeg/util/dictionary.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="245,5,408,45"/>
-<area shape="rect" id="Node000002" href="$libs_2ffmpeg_2vidre_2ffmpeg_2config_8hh.html" title=" " alt="" coords="95,167,246,192"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,48,252,68,219,95,198,125,182,155,178,153,193,122,215,92,249,64,284,43"/>
-<area shape="rect" id="Node000004" href="$ffmpeg_2vidre_2ffmpeg_2util_2exception_8hh.html" title=" " alt="" coords="230,93,423,119"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="329,46,329,79,324,79,324,46"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="447,93,550,119"/>
-<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="369,43,462,85,460,90,367,48"/>
-<area shape="rect" id="Node000003" href="$vidre_2config_8hh.html" title=" " alt="" coords="5,313,112,339"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="147,194,115,214,86,242,72,271,64,300,59,299,67,269,82,238,112,210,144,190"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="303,121,210,163,208,158,301,116"/>
-<area shape="rect" id="Node000005" href="$core_2vidre_2exception_8hh.html" title=" " alt="" coords="271,167,399,192"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="331,119,335,153,329,153,325,119"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="423,167,529,192"/>
-<area shape="poly" id="edge12_Node000004_Node000011" title=" " alt="" coords="352,116,440,158,438,163,350,121"/>
-<area shape="rect" id="Node000006" href="$libs_2core_2vidre_2core_2config_8hh.html" title=" " alt="" coords="96,240,232,265"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="308,194,205,237,203,232,306,190"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="257,240,413,265"/>
-<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="337,192,337,226,332,226,332,192"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="437,240,491,265"/>
-<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="357,190,432,231,429,235,354,194"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="515,240,629,265"/>
-<area shape="poly" id="edge11_Node000005_Node000010" title=" " alt="" coords="374,189,521,233,520,239,372,195"/>
-<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="149,268,88,308,86,303,146,263"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="136,313,197,339"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="167,266,168,300,163,300,162,266"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="264,5,447,45"/>
+<area shape="rect" id="Node000002" href="$libs_2ffmpeg_2vidre_2ffmpeg_2config_8hh.html" title=" " alt="" coords="101,167,269,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="309,48,271,68,236,95,213,125,197,155,192,153,209,122,232,91,268,64,306,43"/>
+<area shape="rect" id="Node000004" href="$ffmpeg_2vidre_2ffmpeg_2util_2exception_8hh.html" title=" " alt="" coords="246,93,465,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="358,46,358,79,353,79,353,46"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="489,93,603,119"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="402,43,506,86,504,91,400,48"/>
+<area shape="rect" id="Node000003" href="$vidre_2config_8hh.html" title=" " alt="" coords="5,313,124,339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="157,194,123,214,92,242,77,270,70,300,65,299,72,269,88,238,120,209,155,190"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="329,121,226,164,224,159,327,116"/>
+<area shape="rect" id="Node000005" href="$core_2vidre_2exception_8hh.html" title=" " alt="" coords="293,167,436,192"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="360,119,364,153,359,154,354,119"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="460,167,581,192"/>
+<area shape="poly" id="edge12_Node000004_Node000011" title=" " alt="" coords="383,116,482,159,480,164,381,121"/>
+<area shape="rect" id="Node000006" href="$libs_2core_2vidre_2core_2config_8hh.html" title=" " alt="" coords="103,240,253,265"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="336,195,222,237,220,233,334,190"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="277,240,452,265"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="367,192,367,226,362,226,362,192"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="477,240,535,265"/>
+<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="389,190,472,231,470,236,386,194"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="560,240,684,265"/>
+<area shape="poly" id="edge11_Node000005_Node000010" title=" " alt="" coords="407,189,568,234,567,239,405,195"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="161,268,96,308,93,304,158,263"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="149,313,215,339"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="181,266,183,300,178,300,176,266"/>
 </map>

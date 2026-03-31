@@ -34,12 +34,17 @@ var group__api_core_plugin =
       [ "get", "classvidre_1_1plugin_1_1dynamic_1_1library.html#abf676686ad54201f6a3c34e62d03c3ee", null ],
       [ "handle_", "classvidre_1_1plugin_1_1dynamic_1_1library.html#aef40b086cd30a39f16c0348a5f149522", null ]
     ] ],
+    [ "vidre::plugin::exception", "classvidre_1_1plugin_1_1exception.html", [
+      [ "exception", "classvidre_1_1plugin_1_1exception.html#a4cf42ea72569d519cf211529b291d3aa", null ],
+      [ "what", "classvidre_1_1plugin_1_1exception.html#ae2a9b5c21aa45a11538f54ef0df08424", null ],
+      [ "msg_", "classvidre_1_1plugin_1_1exception.html#a52924c8cf365cedaa5e308ab20171380", null ]
+    ] ],
     [ "vidre::plugin::hub", "structvidre_1_1plugin_1_1hub.html", null ],
     [ "vidre::plugin::information", "structvidre_1_1plugin_1_1information.html", [
       [ "name", "structvidre_1_1plugin_1_1information.html#a39643c60e698e459eb87fe795460b4bb", null ],
       [ "version", "structvidre_1_1plugin_1_1information.html#a7f3fb48c3db21e5e04ec8a3dfedf0f1c", null ],
       [ "domain", "structvidre_1_1plugin_1_1information.html#a19c760f3cca2260a29e69b628f9d5704", null ],
-      [ "organization", "structvidre_1_1plugin_1_1information.html#aa50511fcd4b66ebe20cb79b21bc5dd28", null ],
+      [ "organization", "structvidre_1_1plugin_1_1information.html#a213ba8b119d8769ab68c7ef697835549", null ],
       [ "brief", "structvidre_1_1plugin_1_1information.html#a915edba2f93bf5ff5d7f3cbf26d353d8", null ],
       [ "description", "structvidre_1_1plugin_1_1information.html#a0249c259ca48fd75cbd267b902361924", null ],
       [ "category", "structvidre_1_1plugin_1_1information.html#ab19939b69410cb7a45d2f9d953d65ad3", null ],

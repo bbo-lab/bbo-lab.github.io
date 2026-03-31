@@ -7,5 +7,6 @@ var searchData=
   ['line_4',['line',['../classvidre_1_1log_1_1trace.html#addc649fd66eec3fe4ae91fcac5c38781',1,'vidre::log::trace']]],
   ['load_5',['load',['../classvidre_1_1plugin_1_1dynamic.html#aaf74b9499e7a7596b7f03ce19d44c42e',1,'vidre::plugin::dynamic::load()'],['../classvidre_1_1settings_1_1file.html#aa1fd6a11a76652bbc47e02f8801ed561',1,'vidre::settings::file::load()']]],
   ['loadfile_6',['loadfile',['../group__api-core-util-filesystem.html#gad987b505f807a7cdc050d2f8836659a4',1,'vidre']]],
-  ['longquote_7',['longquote',['../src_2libs_2core_2vidre_2settings_8cc.html#a343093ec128d431c26530e3a2e7feeba',1,'settings.cc']]]
+  ['log_5flevel_7',['log_level',['../examples_2core_2program_8cc.html#a43b9c10e529c4f34db26d087c11c5bba',1,'program.cc']]],
+  ['longquote_8',['longquote',['../src_2libs_2core_2vidre_2settings_8cc.html#a343093ec128d431c26530e3a2e7feeba',1,'settings.cc']]]
 ];

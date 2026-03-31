@@ -1,7 +1,11 @@
 var hierarchy =
 [
+    [ "vidre::program::argument", "structvidre_1_1program_1_1argument.html", [
+      [ "vidre::program::argument::parameter", "structvidre_1_1program_1_1argument_1_1parameter.html", null ]
+    ] ],
     [ "vidre::ffmpeg::format::context", "classvidre_1_1ffmpeg_1_1format_1_1context.html", null ],
     [ "vidre::log::debug", "classvidre_1_1log_1_1debug.html", null ],
+    [ "vidre::variant::deduce< T >", "structvidre_1_1variant_1_1deduce.html", null ],
     [ "vidre::ffmpeg::dictionary", "classvidre_1_1ffmpeg_1_1dictionary.html", null ],
     [ "vidre::plugin::dynamic", "classvidre_1_1plugin_1_1dynamic.html", null ],
     [ "std::error_category", null, [
@@ -39,10 +43,11 @@ var hierarchy =
       [ "vidre::settings::file", "classvidre_1_1settings_1_1file.html", null ]
     ] ],
     [ "vidre::log::null", "classvidre_1_1log_1_1null.html", null ],
-    [ "vidre::arg::option", "classvidre_1_1arg_1_1option.html", null ],
+    [ "vidre::program::argument::options", "structvidre_1_1program_1_1argument_1_1options.html", null ],
+    [ "vidre::program::options< N >", "classvidre_1_1program_1_1options.html", null ],
     [ "vidre::ffmpeg::format::output", "classvidre_1_1ffmpeg_1_1format_1_1output.html", null ],
     [ "vidre::ffmpeg::packet", "classvidre_1_1ffmpeg_1_1packet.html", null ],
-    [ "vidre::arg::parser", "classvidre_1_1arg_1_1parser.html", null ],
+    [ "vidre::program::argument::parser", "classvidre_1_1program_1_1argument_1_1parser.html", null ],
     [ "show_memory", "structshow__memory.html", null ],
     [ "vidre::script::engine::stack", "classvidre_1_1script_1_1engine_1_1stack.html", null ],
     [ "lua::state", null, [
@@ -63,5 +68,9 @@ var hierarchy =
     [ "true_type", null, [
       [ "std::is_error_code_enum< vidre::ffmpeg::errc >", "structstd_1_1is__error__code__enum_3_01vidre_1_1ffmpeg_1_1errc_01_4.html", null ]
     ] ],
-    [ "vidre::uuid", "classvidre_1_1uuid.html", null ]
+    [ "vidre::uuid", "classvidre_1_1uuid.html", null ],
+    [ "vidre::variant", "classvidre_1_1variant.html", null ],
+    [ "std::vector< T >", null, [
+      [ "vidre::detail::tinymap", "classvidre_1_1detail_1_1tinymap.html", null ]
+    ] ]
 ];

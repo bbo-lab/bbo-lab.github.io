@@ -1,6 +1,6 @@
 <map id="Utilities" name="Utilities">
-<area shape="rect" id="Node000002" href="$group__api-support-ffmpeg.html" title=" " alt="" coords="5,31,131,56"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="179,31,245,56"/>
-<area shape="rect" id="Node000004" href="$group__api-support-ffmpeg-util-data.html" title=" " alt="" coords="293,5,405,31"/>
-<area shape="rect" id="Node000003" href="$group__api-support-ffmpeg-util-error.html" title=" " alt="" coords="298,55,401,80"/>
+<area shape="rect" id="Node000002" href="$group__api-support-ffmpeg.html" title=" " alt="" coords="5,31,140,56"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="188,31,261,56"/>
+<area shape="rect" id="Node000004" href="$group__api-support-ffmpeg-util-data.html" title=" " alt="" coords="309,5,432,31"/>
+<area shape="rect" id="Node000003" href="$group__api-support-ffmpeg-util-error.html" title=" " alt="" coords="314,55,427,80"/>
 </map>

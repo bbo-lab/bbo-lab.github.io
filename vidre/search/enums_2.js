@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['level_0',['level',['../group__api-core-log-if.html#gac7188c64802d58d335e10371224772ec',1,'vidre::log']]]
+  ['kind_0',['kind',['../structvidre_1_1program_1_1argument.html#ac90264a2e4fed1f3f173b8756dec6d92',1,'vidre::program::argument']]]
 ];

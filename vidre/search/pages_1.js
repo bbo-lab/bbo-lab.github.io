@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['coding_20style_20and_20documentation_0',['Coding style and documentation',['../dev_2style.html',1,'dev']]],
-  ['command_20line_20control_1',['Command-line control',['../usage_2apps_2terminal.html',1,'usage/apps']]],
-  ['control_2',['Command-line control',['../usage_2apps_2terminal.html',1,'usage/apps']]]
+  ['coding_20style_20and_20documentation_0',['Coding style and documentation',['../dev-style.html',1,'dev']]],
+  ['command_20line_20control_1',['Command-line control',['../usage-apps-terminal.html',1,'']]],
+  ['control_2',['Command-line control',['../usage-apps-terminal.html',1,'']]]
 ];

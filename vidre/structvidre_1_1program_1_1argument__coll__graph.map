@@ -1,0 +1,22 @@
+<map id="vidre::program::argument" name="vidre::program::argument">
+<area shape="rect" id="Node000001" title="Program argument definition." alt="" coords="285,151,475,177"/>
+<area shape="rect" id="Node000004" href="$structvidre_1_1program_1_1argument_1_1options.html" title="Internal helper for accessing options&lt;N&gt;." alt="" coords="588,111,777,151"/>
+<area shape="poly" id="edge4_Node000004_Node000001" title=" " alt="" coords="488,149,588,138,588,144,489,155"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1variant.html" title="A simple variant." alt="" coords="20,151,129,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,161,285,161,285,167,143,167"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1program_1_1argument_1_1parser.html" title="Argument parser." alt="" coords="897,85,1087,125"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="934,133,861,159,778,180,696,188,614,190,536,186,469,179,469,174,537,181,614,184,696,183,777,175,859,154,932,128"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="791,124,873,119,897,116,898,121,874,124,791,130"/>
+<area shape="rect" id="Node000005" href="$classvidre_1_1detail_1_1tinymap.html" title="Simple, small key&#45;variant pair map." alt="" coords="601,7,764,33"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="755,33,874,64,933,83,932,88,873,69,753,38"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="315,7,445,33"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="459,17,601,17,601,23,459,23"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="55,7,94,33"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="108,17,315,17,315,23,108,23"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="589,61,776,86"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="790,82,897,93,897,98,789,87"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="337,63,423,89"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="437,73,589,71,589,77,437,78"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="5,57,144,97"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="158,74,336,74,336,79,158,80"/>
+</map>

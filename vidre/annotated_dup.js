@@ -4,9 +4,8 @@ var annotated_dup =
       [ "is_error_code_enum< vidre::ffmpeg::errc >", "structstd_1_1is__error__code__enum_3_01vidre_1_1ffmpeg_1_1errc_01_4.html", null ]
     ] ],
     [ "vidre", "namespacevidre.html", [
-      [ "arg", "namespacevidre_1_1arg.html", [
-        [ "option", "classvidre_1_1arg_1_1option.html", "classvidre_1_1arg_1_1option" ],
-        [ "parser", "classvidre_1_1arg_1_1parser.html", "classvidre_1_1arg_1_1parser" ]
+      [ "detail", "namespacevidre_1_1detail.html", [
+        [ "tinymap", "classvidre_1_1detail_1_1tinymap.html", "classvidre_1_1detail_1_1tinymap" ]
       ] ],
       [ "ffmpeg", "namespacevidre_1_1ffmpeg.html", [
         [ "format", "namespacevidre_1_1ffmpeg_1_1format.html", [
@@ -55,6 +54,10 @@ var annotated_dup =
         [ "hub", "structvidre_1_1plugin_1_1hub.html", null ],
         [ "information", "structvidre_1_1plugin_1_1information.html", "structvidre_1_1plugin_1_1information" ]
       ] ],
+      [ "program", "namespacevidre_1_1program.html", [
+        [ "argument", "structvidre_1_1program_1_1argument.html", "structvidre_1_1program_1_1argument" ],
+        [ "options", "classvidre_1_1program_1_1options.html", "classvidre_1_1program_1_1options" ]
+      ] ],
       [ "script", "namespacevidre_1_1script.html", [
         [ "engine", "classvidre_1_1script_1_1engine.html", "classvidre_1_1script_1_1engine" ]
       ] ],
@@ -65,7 +68,8 @@ var annotated_dup =
       [ "exception", "classvidre_1_1exception.html", "classvidre_1_1exception" ],
       [ "static_error_message", "classvidre_1_1static__error__message.html", "classvidre_1_1static__error__message" ],
       [ "system_error", "classvidre_1_1system__error.html", "classvidre_1_1system__error" ],
-      [ "uuid", "classvidre_1_1uuid.html", "classvidre_1_1uuid" ]
+      [ "uuid", "classvidre_1_1uuid.html", "classvidre_1_1uuid" ],
+      [ "variant", "classvidre_1_1variant.html", "classvidre_1_1variant" ]
     ] ],
     [ "show_memory", "structshow__memory.html", "structshow__memory" ],
     [ "style_tags", "structstyle__tags.html", "structstyle__tags" ]
