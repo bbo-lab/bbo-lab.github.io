@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['options_0',['options',['../structvidre_1_1program_1_1argument_1_1options.html',1,'vidre::program::argument::options'],['../classvidre_1_1program_1_1options.html',1,'vidre::program::options&lt; N &gt;']]],
-  ['output_1',['output',['../classvidre_1_1ffmpeg_1_1format_1_1output.html',1,'vidre::ffmpeg::format']]]
+  ['node_0',['node',['../classvidre_1_1settings_1_1node.html',1,'vidre::settings']]],
+  ['notice_1',['notice',['../classvidre_1_1log_1_1notice.html',1,'vidre::log']]],
+  ['null_2',['null',['../classvidre_1_1log_1_1null.html',1,'vidre::log']]]
 ];

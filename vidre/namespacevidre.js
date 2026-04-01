@@ -15,6 +15,7 @@ var namespacevidre =
     [ "program", "namespacevidre_1_1program.html", "namespacevidre_1_1program" ],
     [ "script", "namespacevidre_1_1script.html", "namespacevidre_1_1script" ],
     [ "settings", "namespacevidre_1_1settings.html", "namespacevidre_1_1settings" ],
+    [ "storage", "namespacevidre_1_1storage.html", "namespacevidre_1_1storage" ],
     [ "exception", "classvidre_1_1exception.html", "classvidre_1_1exception" ],
     [ "static_error_message", "classvidre_1_1static__error__message.html", "classvidre_1_1static__error__message" ],
     [ "system_error", "classvidre_1_1system__error.html", "classvidre_1_1system__error" ],

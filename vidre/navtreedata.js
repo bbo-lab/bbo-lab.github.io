@@ -29,10 +29,6 @@ var NAVTREE =
     [ "Developer info", "dev.html", "dev" ],
     [ "Licenses", "license.html", null ],
     [ "Usage", "usage.html", "usage" ],
-    [ "Service daemon", "usage-apps-daemon.html", null ],
-    [ "Graphical user interface", "usage-apps-gui.html", null ],
-    [ "Command-line control", "usage-apps-terminal.html", null ],
-    [ "Tools", "usage-apps-tools.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Topics", "topics.html", "topics" ],
     [ "Namespaces", "namespaces.html", [
@@ -77,10 +73,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classvidre_1_1script_1_1engine.html#a3a146cd467490cda01431f8340e95922",
-"file_8hh.html",
-"group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a5f687d7e35b32fb79c62a4f74663bfa4",
-"pixelformat_8hh_source.html"
+"classvidre_1_1script_1_1engine.html",
+"ffmpeg_2vidre_2ffmpeg_2format_8hh_source.html",
+"group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a4cb930a18ebee2b45407944dd4c061da",
+"namespacevidre_1_1script.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

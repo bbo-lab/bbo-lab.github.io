@@ -5,7 +5,7 @@ var group__api_core =
     [ "Memory", "group__api-core-memory.html", null ],
     [ "Scripting", "group__api-core-script.html", "group__api-core-script" ],
     [ "Settings", "group__api-core-settings.html", "group__api-core-settings" ],
-    [ "Storage", "group__api-core-storage.html", null ],
+    [ "Storage", "group__api-core-storage.html", "group__api-core-storage" ],
     [ "Plugins", "group__api-core-plugin.html", "group__api-core-plugin" ],
     [ "Utilities", "group__api-core-util.html", "group__api-core-util" ],
     [ "C++ compatibility", "group__api-core-cpp.html", "group__api-core-cpp" ],

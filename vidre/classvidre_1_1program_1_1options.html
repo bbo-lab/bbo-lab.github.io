@@ -135,7 +135,8 @@ $(function(){initNavTree('classvidre_1_1program_1_1options.html',''); initResiza
 <div class="textblock"><div class="compoundTemplParams">template&lt;size_t N&gt;<br />
 class vidre::program::options&lt; N &gt;</div><p>Program options. </p>
 <p>Usage: </p><div class="fragment"><div class="line">        <a class="code hl_class" href="classvidre_1_1program_1_1options.html">program::options</a> args(  <span class="comment">//</span></div>
-<div class="line">            <span class="stringliteral">&quot;Example program\nCopyright (C) 2024-2026 MPI f. Neurobiol. of Behavior—ceasar, Bonn, Germany&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;Example program&quot;</span>,  <span class="comment">//</span></div>
+<div class="line">            <span class="stringliteral">&quot;Copyright (C) 2024-2026 MPI f. Neurobiol. of Behavior—ceasar, Bonn, Germany&quot;</span>,</div>
 <div class="line">            <span class="stringliteral">&quot;Example program showing use of the argument parser.&quot;</span>,</div>
 <div class="line">            {</div>
 <div class="line">                {<span class="stringliteral">&quot;help&quot;</span>, <span class="charliteral">&#39;h&#39;</span>, <span class="stringliteral">&quot;Show this usage information.&quot;</span>, <a class="code hl_function" href="examples_2core_2program_8cc.html#ac11030303300c5c57f494e1a11461ad9">help</a>},</div>
@@ -156,15 +157,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adcb946222ab196e0ada1756a990e665c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab393dcbd5b7a2022a715fbc8c605e72f" id="r_ab393dcbd5b7a2022a715fbc8c605e72f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab393dcbd5b7a2022a715fbc8c605e72f">options</a> (const <a class="el" href="classvidre_1_1program_1_1options.html">options</a> &amp;)=delete</td></tr>
 <tr class="separator:ab393dcbd5b7a2022a715fbc8c605e72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5afc25605f72837748b5e8e0482c687" id="r_ac5afc25605f72837748b5e8e0482c687"><td class="memItemLeft" align="right" valign="top">consteval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5afc25605f72837748b5e8e0482c687">options</a> (const char *brief_, const char *description_, std::initializer_list&lt; <a class="el" href="structvidre_1_1program_1_1argument.html">argument</a> &gt; args_)</td></tr>
-<tr class="memdesc:ac5afc25605f72837748b5e8e0482c687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
-<tr class="separator:ac5afc25605f72837748b5e8e0482c687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5aefd4852527b8ce07620457588b74b" id="r_af5aefd4852527b8ce07620457588b74b"><td class="memItemLeft" align="right" valign="top">consteval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5aefd4852527b8ce07620457588b74b">options</a> (const char *brief_, const char *copyright_, const char *description_, std::initializer_list&lt; <a class="el" href="structvidre_1_1program_1_1argument.html">argument</a> &gt; args_)</td></tr>
+<tr class="memdesc:af5aefd4852527b8ce07620457588b74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:af5aefd4852527b8ce07620457588b74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aa688fb46017c13a400b511974b751bed" id="r_aa688fb46017c13a400b511974b751bed"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa688fb46017c13a400b511974b751bed">brief</a> {}</td></tr>
 <tr class="memdesc:aa688fb46017c13a400b511974b751bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Brief program description (see <a class="el" href="examples_2core_2program_8cc-example.html">examples/core/program.cc</a>).  <br /></td></tr>
 <tr class="separator:aa688fb46017c13a400b511974b751bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ff4cc0602afc1b3484f06d939a5b0e" id="r_ae0ff4cc0602afc1b3484f06d939a5b0e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0ff4cc0602afc1b3484f06d939a5b0e">copyright</a> {}</td></tr>
+<tr class="memdesc:ae0ff4cc0602afc1b3484f06d939a5b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright notice if applicable.  <br /></td></tr>
+<tr class="separator:ae0ff4cc0602afc1b3484f06d939a5b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e39015b9a6bb28d31271ada950b716f" id="r_a9e39015b9a6bb28d31271ada950b716f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e39015b9a6bb28d31271ada950b716f">description</a> {}</td></tr>
 <tr class="memdesc:a9e39015b9a6bb28d31271ada950b716f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Program usage text.  <br /></td></tr>
 <tr class="separator:a9e39015b9a6bb28d31271ada950b716f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,8 +261,8 @@ template&lt;size_t N&gt; </div>
 
 </div>
 </div>
-<a id="ac5afc25605f72837748b5e8e0482c687" name="ac5afc25605f72837748b5e8e0482c687"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5afc25605f72837748b5e8e0482c687">&#9670;&#160;</a></span>options() <span class="overload">[4/4]</span></h2>
+<a id="af5aefd4852527b8ce07620457588b74b" name="af5aefd4852527b8ce07620457588b74b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5aefd4852527b8ce07620457588b74b">&#9670;&#160;</a></span>options() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,6 +276,11 @@ template&lt;size_t N&gt; </div>
           <td class="memname"><a class="el" href="classvidre_1_1program_1_1options.html">vidre::program::options</a>&lt; N &gt;::options </td>
           <td>(</td>
           <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>brief_</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>copyright_</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -295,6 +304,7 @@ template&lt;size_t N&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">brief</td><td>Short, brief program description. </td></tr>
+    <tr><td class="paramname">copyright</td><td>Copyright information (may be nullptr). </td></tr>
     <tr><td class="paramname">description</td><td>Long program description. </td></tr>
     <tr><td class="paramname">options</td><td>Program options. </td></tr>
   </table>
@@ -327,6 +337,32 @@ template&lt;size_t N&gt; </div>
 </div><div class="memdoc">
 
 <p>Brief program description (see <a class="el" href="examples_2core_2program_8cc-example.html">examples/core/program.cc</a>). </p>
+
+</div>
+</div>
+<a id="ae0ff4cc0602afc1b3484f06d939a5b0e" name="ae0ff4cc0602afc1b3484f06d939a5b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0ff4cc0602afc1b3484f06d939a5b0e">&#9670;&#160;</a></span>copyright</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* <a class="el" href="classvidre_1_1program_1_1options.html">vidre::program::options</a>&lt; N &gt;::copyright {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copyright notice if applicable. </p>
 
 </div>
 </div>

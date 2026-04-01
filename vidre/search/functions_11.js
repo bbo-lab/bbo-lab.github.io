@@ -4,7 +4,7 @@ var searchData=
   ['savefile_1',['savefile',['../group__api-core-util-filesystem.html#ga71ba836c12bc3fc80375a5553ee74c45',1,'vidre']]],
   ['set_2',['set',['../classvidre_1_1detail_1_1tinymap.html#a24d17ec22ab01d57fa5badc4165fc17d',1,'vidre::detail::tinymap::set()'],['../classvidre_1_1ffmpeg_1_1dictionary.html#a992d05bfc7dbf3c26a352abade550a16',1,'vidre::ffmpeg::dictionary::set()']]],
   ['setformat_3',['setformat',['../classvidre_1_1input_1_1midraw.html#ae8b2e76a8706608e74d16970dd3ead63',1,'vidre::input::midraw']]],
-  ['setup_4',['setup',['../examples_2core_2settings_8cc.html#a424b18b7eec2a2d9af616711fc1b472b',1,'setup(const std::string &amp;optstring):&#160;settings.cc'],['../examples_2core_2settings_8cc.html#af3a58773ba9d1bafb1b22d51b7541f73',1,'setup(settings::json options):&#160;settings.cc']]],
+  ['setup_4',['setup',['../group__api-core-log-if.html#ga5b9bbc7d2cec4cf074305770214d5dc5',1,'vidre::log::setup()'],['../examples_2core_2settings_8cc.html#a424b18b7eec2a2d9af616711fc1b472b',1,'setup(const std::string &amp;optstring):&#160;settings.cc'],['../examples_2core_2settings_8cc.html#af3a58773ba9d1bafb1b22d51b7541f73',1,'setup(settings::json options):&#160;settings.cc']]],
   ['show_5',['show',['../classvidre_1_1program_1_1argument_1_1parser.html#a31147c9f97f2ea2381958de3854d0d63',1,'vidre::program::argument::parser']]],
   ['show_5fmemory_6',['show_memory',['../structshow__memory.html#ac5f92328325965ab073de4b09eefd5be',1,'show_memory']]],
   ['simple_5flogging_7',['simple_logging',['../examples_2core_2log_8cc.html#a64293669c94470407f5231c27676054e',1,'log.cc']]],

@@ -65,6 +65,10 @@ var annotated_dup =
         [ "file", "classvidre_1_1settings_1_1file.html", "classvidre_1_1settings_1_1file" ],
         [ "node", "classvidre_1_1settings_1_1node.html", "classvidre_1_1settings_1_1node" ]
       ] ],
+      [ "storage", "namespacevidre_1_1storage.html", [
+        [ "ccv", "classvidre_1_1storage_1_1ccv.html", null ],
+        [ "generic", "classvidre_1_1storage_1_1generic.html", null ]
+      ] ],
       [ "exception", "classvidre_1_1exception.html", "classvidre_1_1exception" ],
       [ "static_error_message", "classvidre_1_1static__error__message.html", "classvidre_1_1static__error__message" ],
       [ "system_error", "classvidre_1_1system__error.html", "classvidre_1_1system__error" ],

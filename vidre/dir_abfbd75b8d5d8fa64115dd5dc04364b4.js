@@ -6,6 +6,7 @@ var dir_abfbd75b8d5d8fa64115dd5dc04364b4 =
     [ "os", "dir_a7925f9e5d918c39e014db8ed7a835ab.html", "dir_a7925f9e5d918c39e014db8ed7a835ab" ],
     [ "plugin", "dir_3eff881f0c3c450464bad0d99963a35a.html", "dir_3eff881f0c3c450464bad0d99963a35a" ],
     [ "settings", "dir_6befe78a6c2dbaa93ec40d521d837f32.html", "dir_6befe78a6c2dbaa93ec40d521d837f32" ],
+    [ "storage", "dir_43696e9230b71dbdcf64b2d56c385572.html", "dir_43696e9230b71dbdcf64b2d56c385572" ],
     [ "util", "dir_44dda3653d8ed495fb138f7de47cfc57.html", "dir_44dda3653d8ed495fb138f7de47cfc57" ],
     [ "exception.cc", "core_2vidre_2exception_8cc.html", null ],
     [ "exception.hh", "core_2vidre_2exception_8hh.html", "core_2vidre_2exception_8hh" ],
@@ -19,5 +20,6 @@ var dir_abfbd75b8d5d8fa64115dd5dc04364b4 =
     [ "script.hh", "script_8hh.html", "script_8hh" ],
     [ "settings.cc", "src_2libs_2core_2vidre_2settings_8cc.html", "src_2libs_2core_2vidre_2settings_8cc" ],
     [ "settings.hh", "settings_8hh.html", null ],
+    [ "storage.cc", "storage_8cc.html", null ],
     [ "storage.hh", "storage_8hh.html", null ]
 ];

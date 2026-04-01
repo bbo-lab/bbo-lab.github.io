@@ -31,5 +31,6 @@ var namespacevidre_1_1log =
       [ "info", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecacaf9b6b99962bf5c2264824231d7a40c", null ],
       [ "debug", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecaad42f6697b035b7580e4fef93be20b4d", null ],
       [ "trace", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182", null ]
-    ] ]
+    ] ],
+    [ "setup", "group__api-core-log-if.html#ga5b9bbc7d2cec4cf074305770214d5dc5", null ]
 ];

@@ -3,6 +3,7 @@ var hierarchy =
     [ "vidre::program::argument", "structvidre_1_1program_1_1argument.html", [
       [ "vidre::program::argument::parameter", "structvidre_1_1program_1_1argument_1_1parameter.html", null ]
     ] ],
+    [ "vidre::storage::ccv", "classvidre_1_1storage_1_1ccv.html", null ],
     [ "vidre::ffmpeg::format::context", "classvidre_1_1ffmpeg_1_1format_1_1context.html", null ],
     [ "vidre::log::debug", "classvidre_1_1log_1_1debug.html", null ],
     [ "vidre::variant::deduce< T >", "structvidre_1_1variant_1_1deduce.html", null ],
@@ -23,6 +24,7 @@ var hierarchy =
       [ "vidre::exception", "classvidre_1_1exception.html", null ]
     ] ],
     [ "vidre::ffmpeg::frame", "classvidre_1_1ffmpeg_1_1frame.html", null ],
+    [ "vidre::storage::generic", "classvidre_1_1storage_1_1generic.html", null ],
     [ "vidre::log::handler", "classvidre_1_1log_1_1handler.html", [
       [ "vidre::log::alert", "classvidre_1_1log_1_1alert.html", null ],
       [ "vidre::log::critical", "classvidre_1_1log_1_1critical.html", null ],

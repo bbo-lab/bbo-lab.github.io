@@ -1,7 +1,7 @@
 var searchData=
 [
   ['n_0',['n',['../structshow__memory.html#a04a9e5190df1f6b7d36aac8c71d1bed2',1,'show_memory']]],
-  ['name_1',['name',['../structvidre_1_1plugin_1_1information.html#a39643c60e698e459eb87fe795460b4bb',1,'vidre::plugin::information::name'],['../structvidre_1_1ffmpeg_1_1error__category.html#ab91e7caacb03f614a9f43740b7374a63',1,'vidre::ffmpeg::error_category::name()']]],
+  ['name_1',['name',['../structvidre_1_1plugin_1_1information.html#a39643c60e698e459eb87fe795460b4bb',1,'vidre::plugin::information::name'],['../structvidre_1_1ffmpeg_1_1error__category.html#ab91e7caacb03f614a9f43740b7374a63',1,'vidre::ffmpeg::error_category::name()'],['../src_2libs_2core_2vidre_2log_8cc.html#a8f8f80d37794cde9472343e4487ba3eb',1,'name:&#160;log.cc']]],
   ['natural_2',['natural',['../classvidre_1_1variant.html#a9b0cf54fcd3ddcb18764f02900d31db5a6c9e52ef9b80952d178a157f169d8e49',1,'vidre::variant']]],
   ['nb_3',['nb',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a9c59153d22d9f7cc021b17b425cc31c5',1,'vidre::ffmpeg']]],
   ['ncs_4',['NCS',['../classvidre_1_1uuid.html#ac551c936acd5ce8a261aede0e8685825a4c4a1a6b1eeebaeb1f2c4627368b79d8',1,'vidre::uuid']]],

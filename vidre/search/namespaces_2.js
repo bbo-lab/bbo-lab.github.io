@@ -16,5 +16,6 @@ var searchData=
   ['vidre_3a_3aplugin_3a_3adetail_3a_3alibrary_13',['library',['../namespacevidre_1_1plugin_1_1detail_1_1library.html',1,'vidre::plugin::detail']]],
   ['vidre_3a_3aprogram_14',['program',['../namespacevidre_1_1program.html',1,'vidre']]],
   ['vidre_3a_3ascript_15',['script',['../namespacevidre_1_1script.html',1,'vidre']]],
-  ['vidre_3a_3asettings_16',['settings',['../namespacevidre_1_1settings.html',1,'vidre']]]
+  ['vidre_3a_3asettings_16',['settings',['../namespacevidre_1_1settings.html',1,'vidre']]],
+  ['vidre_3a_3astorage_17',['storage',['../namespacevidre_1_1storage.html',1,'vidre']]]
 ];

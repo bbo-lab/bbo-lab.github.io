@@ -144,7 +144,7 @@ C++</h2>
 <div class="line"> </div>
 <div class="line">        <span class="keyword">class </span>VIDRE_EXAMPLE_VISIBILITY ExampleClass {</div>
 <div class="line">        <span class="keyword">public</span>:</div>
-<div class="line">            <span class="keyword">explicit</span> ExampleClass(<span class="keyword">const</span> std::string &amp;name) : name_(name) {</div>
+<div class="line">            <span class="keyword">explicit</span> ExampleClass(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="src_2libs_2core_2vidre_2log_8cc.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>) : name_(<a class="code hl_variable" href="src_2libs_2core_2vidre_2log_8cc.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>) {</div>
 <div class="line">                <span class="keywordflow">if</span> (name_.empty()) {</div>
 <div class="line">                    throw vidre::exception() &lt;&lt; throw_message(<span class="stringliteral">&quot;Name cannot be empty&quot;</span>);</div>
 <div class="line">                }</div>
@@ -175,6 +175,7 @@ C++</h2>
 <div class="ttc" id="acore_2vidre_2exception_8hh_html"><div class="ttname"><a href="core_2vidre_2exception_8hh.html">exception.hh</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 <div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> midraw.hh:31</div></div>
+<div class="ttc" id="asrc_2libs_2core_2vidre_2log_8cc_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="src_2libs_2core_2vidre_2log_8cc.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> log.cc:240</div></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">/* Copyright ...</span></div>
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"><span class="preprocessor">#include &quot;style.h&quot;</span></div>
@@ -183,7 +184,7 @@ C++</h2>
 <div class="line"> </div>
 <div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a>;</div>
 <div class="line"> </div>
-<div class="line">style::ExampleClass::ExampleClass(<span class="keyword">const</span> std::string &amp;name)</div>
+<div class="line">style::ExampleClass::ExampleClass(<span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="src_2libs_2core_2vidre_2log_8cc.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">void</span> style::ExampleClass::processData(<span class="keyword">const</span> std::vector&lt;int&gt; &amp;values) {</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;value : values) {</div>

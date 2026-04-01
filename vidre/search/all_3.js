@@ -2,7 +2,7 @@ var searchData=
 [
   ['d3d11_0',['d3d11',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a6590a43543d53241ebf77667ac85f2a7',1,'vidre::ffmpeg']]],
   ['d3d11va_5fvld_1',['d3d11va_vld',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ab8381096479e4172895f8b3b2b4b8925',1,'vidre::ffmpeg']]],
-  ['daemon_2',['Service daemon',['../usage-apps-daemon.html',1,'']]],
+  ['daemon_2',['Service daemon',['../usage-apps-daemon.html',1,'usage-apps']]],
   ['daemon_2edox_3',['daemon.dox',['../daemon_8dox.html',1,'']]],
   ['data_20format_4',['Data format',['../dev-goals.html#core-format',1,'']]],
   ['data_20structures_5',['Data structures',['../group__api-support-ffmpeg-util-data.html',1,'']]],
