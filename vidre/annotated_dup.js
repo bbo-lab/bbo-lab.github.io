@@ -51,7 +51,7 @@ var annotated_dup =
       [ "plugin", "namespacevidre_1_1plugin.html", [
         [ "dynamic", "classvidre_1_1plugin_1_1dynamic.html", "classvidre_1_1plugin_1_1dynamic" ],
         [ "exception", "classvidre_1_1plugin_1_1exception.html", "classvidre_1_1plugin_1_1exception" ],
-        [ "hub", "structvidre_1_1plugin_1_1hub.html", null ],
+        [ "hub", "structvidre_1_1plugin_1_1hub.html", "structvidre_1_1plugin_1_1hub" ],
         [ "information", "structvidre_1_1plugin_1_1information.html", "structvidre_1_1plugin_1_1information" ]
       ] ],
       [ "program", "namespacevidre_1_1program.html", [
@@ -67,7 +67,7 @@ var annotated_dup =
       ] ],
       [ "storage", "namespacevidre_1_1storage.html", [
         [ "ccv", "classvidre_1_1storage_1_1ccv.html", null ],
-        [ "generic", "classvidre_1_1storage_1_1generic.html", null ]
+        [ "generic", "classvidre_1_1storage_1_1generic.html", "classvidre_1_1storage_1_1generic" ]
       ] ],
       [ "exception", "classvidre_1_1exception.html", "classvidre_1_1exception" ],
       [ "static_error_message", "classvidre_1_1static__error__message.html", "classvidre_1_1static__error__message" ],

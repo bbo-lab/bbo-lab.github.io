@@ -15,5 +15,8 @@ var searchData=
   ['hub_12',['hub',['../structvidre_1_1plugin_1_1hub.html',1,'vidre::plugin']]],
   ['hub_2ecc_13',['hub.cc',['../hub_8cc.html',1,'']]],
   ['hub_2ehh_14',['hub.hh',['../hub_8hh.html',1,'']]],
-  ['hw_5fdecode_5fvideo_2ecc_15',['hw_decode_video.cc',['../hw__decode__video_8cc.html',1,'']]]
+  ['hw_5fdecode_5fvideo_2ecc_15',['hw_decode_video.cc',['../hw__decode__video_8cc.html',1,'']]],
+  ['hw_5fdecoder_5finit_16',['hw_decoder_init',['../hw__decode__video_8cc.html#a028fa118aac024a955e2a56e668624d0',1,'hw_decode_video.cc']]],
+  ['hw_5fdevice_5fctx_17',['hw_device_ctx',['../hw__decode__video_8cc.html#a08d3cd3b71ea4209189c445198b095b8',1,'hw_decode_video.cc']]],
+  ['hw_5fpix_5ffmt_18',['hw_pix_fmt',['../hw__decode__video_8cc.html#a4a8dc36f4e1b77be375dfcf127a130cc',1,'hw_decode_video.cc']]]
 ];

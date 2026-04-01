@@ -137,15 +137,114 @@ $(function(){initNavTree('hw__decode__video_8cc.html',''); initResizable(true); 
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a028fa118aac024a955e2a56e668624d0" id="r_a028fa118aac024a955e2a56e668624d0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a028fa118aac024a955e2a56e668624d0">hw_decoder_init</a> (AVCodecContext *ctx, const enum AVHWDeviceType type)</td></tr>
+<tr class="separator:a028fa118aac024a955e2a56e668624d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fb0a6a2e086f6728fc1f2901b59c83" id="r_ac0fb0a6a2e086f6728fc1f2901b59c83"><td class="memItemLeft" align="right" valign="top">static enum AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0fb0a6a2e086f6728fc1f2901b59c83">get_hw_format</a> (AVCodecContext *ctx, const enum AVPixelFormat *pix_fmts)</td></tr>
+<tr class="separator:ac0fb0a6a2e086f6728fc1f2901b59c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa376d8bc0bb004de4856e8920e0f6217" id="r_aa376d8bc0bb004de4856e8920e0f6217"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa376d8bc0bb004de4856e8920e0f6217">decode_write</a> (AVCodecContext *avctx, AVPacket *packet)</td></tr>
+<tr class="separator:aa376d8bc0bb004de4856e8920e0f6217"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97" id="r_a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a08d3cd3b71ea4209189c445198b095b8" id="r_a08d3cd3b71ea4209189c445198b095b8"><td class="memItemLeft" align="right" valign="top">static AVBufferRef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08d3cd3b71ea4209189c445198b095b8">hw_device_ctx</a> = NULL</td></tr>
+<tr class="separator:a08d3cd3b71ea4209189c445198b095b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8dc36f4e1b77be375dfcf127a130cc" id="r_a4a8dc36f4e1b77be375dfcf127a130cc"><td class="memItemLeft" align="right" valign="top">static enum AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a8dc36f4e1b77be375dfcf127a130cc">hw_pix_fmt</a></td></tr>
+<tr class="separator:a4a8dc36f4e1b77be375dfcf127a130cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2960eb597f48f3b59bbb850b47e895ff" id="r_a2960eb597f48f3b59bbb850b47e895ff"><td class="memItemLeft" align="right" valign="top">static FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2960eb597f48f3b59bbb850b47e895ff">output_file</a> = NULL</td></tr>
+<tr class="separator:a2960eb597f48f3b59bbb850b47e895ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad43c3812e6d13e0518d9f8b8f463ffcf" id="r_ad43c3812e6d13e0518d9f8b8f463ffcf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a> = 0</td></tr>
 <tr class="separator:ad43c3812e6d13e0518d9f8b8f463ffcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a028fa118aac024a955e2a56e668624d0" name="a028fa118aac024a955e2a56e668624d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a028fa118aac024a955e2a56e668624d0">&#9670;&#160;</a></span>hw_decoder_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int hw_decoder_init </td>
+          <td>(</td>
+          <td class="paramtype">AVCodecContext *</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const enum AVHWDeviceType</td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0fb0a6a2e086f6728fc1f2901b59c83" name="ac0fb0a6a2e086f6728fc1f2901b59c83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0fb0a6a2e086f6728fc1f2901b59c83">&#9670;&#160;</a></span>get_hw_format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static enum AVPixelFormat get_hw_format </td>
+          <td>(</td>
+          <td class="paramtype">AVCodecContext *</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const enum AVPixelFormat *</td>          <td class="paramname"><span class="paramname"><em>pix_fmts</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa376d8bc0bb004de4856e8920e0f6217" name="aa376d8bc0bb004de4856e8920e0f6217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa376d8bc0bb004de4856e8920e0f6217">&#9670;&#160;</a></span>decode_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int decode_write </td>
+          <td>(</td>
+          <td class="paramtype">AVCodecContext *</td>          <td class="paramname"><span class="paramname"><em>avctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AVPacket *</td>          <td class="paramname"><span class="paramname"><em>packet</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&#160;</a></span>main()</h2>
 
@@ -168,6 +267,72 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a08d3cd3b71ea4209189c445198b095b8" name="a08d3cd3b71ea4209189c445198b095b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08d3cd3b71ea4209189c445198b095b8">&#9670;&#160;</a></span>hw_device_ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AVBufferRef* hw_device_ctx = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a8dc36f4e1b77be375dfcf127a130cc" name="a4a8dc36f4e1b77be375dfcf127a130cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a8dc36f4e1b77be375dfcf127a130cc">&#9670;&#160;</a></span>hw_pix_fmt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum AVPixelFormat hw_pix_fmt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2960eb597f48f3b59bbb850b47e895ff" name="a2960eb597f48f3b59bbb850b47e895ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2960eb597f48f3b59bbb850b47e895ff">&#9670;&#160;</a></span>output_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FILE* output_file = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad43c3812e6d13e0518d9f8b8f463ffcf" name="ad43c3812e6d13e0518d9f8b8f463ffcf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad43c3812e6d13e0518d9f8b8f463ffcf">&#9670;&#160;</a></span>count</h2>
 

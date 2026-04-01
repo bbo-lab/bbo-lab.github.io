@@ -6,5 +6,6 @@ var searchData=
   ['has_3',['has',['../classvidre_1_1detail_1_1tinymap.html#a8230516fe0c80cad0a590a096c9925a6',1,'vidre::detail::tinymap']]],
   ['has_5funparsed_4',['has_unparsed',['../classvidre_1_1program_1_1argument_1_1parser.html#a42a8ee66c4db26a1515ed6e4d70f34ab',1,'vidre::program::argument::parser']]],
   ['header_5',['header',['../classvidre_1_1log_1_1io_1_1file.html#abe199ea37ede9df96f3ada1b80d7b2cb',1,'vidre::log::io::file']]],
-  ['help_6',['help',['../classvidre_1_1program_1_1argument_1_1parser.html#ae32acbbbc3706663ad64ca630aa66497',1,'vidre::program::argument::parser::help()'],['../examples_2core_2program_8cc.html#ac11030303300c5c57f494e1a11461ad9',1,'help():&#160;program.cc']]]
+  ['help_6',['help',['../classvidre_1_1program_1_1argument_1_1parser.html#ae32acbbbc3706663ad64ca630aa66497',1,'vidre::program::argument::parser::help()'],['../examples_2core_2program_8cc.html#ac11030303300c5c57f494e1a11461ad9',1,'help(program::argument::parser &amp;p, variant):&#160;program.cc']]],
+  ['hw_5fdecoder_5finit_7',['hw_decoder_init',['../hw__decode__video_8cc.html#a028fa118aac024a955e2a56e668624d0',1,'hw_decode_video.cc']]]
 ];

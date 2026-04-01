@@ -14,7 +14,7 @@ var dir_abfbd75b8d5d8fa64115dd5dc04364b4 =
     [ "log.hh", "log_8hh.html", "log_8hh" ],
     [ "os.hh", "os_8hh.html", null ],
     [ "plugin.hh", "plugin_8hh.html", null ],
-    [ "program.cc", "src_2libs_2core_2vidre_2program_8cc.html", null ],
+    [ "program.cc", "src_2libs_2core_2vidre_2program_8cc.html", "src_2libs_2core_2vidre_2program_8cc" ],
     [ "program.hh", "program_8hh.html", "program_8hh" ],
     [ "script.cc", "src_2libs_2core_2vidre_2script_8cc.html", "src_2libs_2core_2vidre_2script_8cc" ],
     [ "script.hh", "script_8hh.html", "script_8hh" ],

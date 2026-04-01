@@ -11,5 +11,8 @@ var searchData=
   ['maketime_8',['makeTime',['../classvidre_1_1uuid.html#a89f0b020b55fdedda6741c75b27cef6e',1,'vidre::uuid']]],
   ['maketimesafe_9',['makeTimeSafe',['../classvidre_1_1uuid.html#a0565a662ac8b625852cd7b547f8ffad9',1,'vidre::uuid']]],
   ['message_10',['message',['../structvidre_1_1ffmpeg_1_1error__category.html#a58e9d9f2e8e2ae4d38dff1aafba3d09f',1,'vidre::ffmpeg::error_category']]],
-  ['midraw_11',['midraw',['../classvidre_1_1input_1_1midraw.html#aa36c6a4ab31cf5ce878b049fbe0b817e',1,'vidre::input::midraw::midraw() noexcept=default'],['../classvidre_1_1input_1_1midraw.html#a197cb9708a4df1fd33204dfb3f0f9009',1,'vidre::input::midraw::midraw(const std::filesystem::path &amp;filename) noexcept']]]
+  ['mi_5flog_5fdebug_11',['mi_log_debug',['../aptina_8cc.html#a0443ab04fd24eec44ebdc49330b62ec0',1,'aptina.cc']]],
+  ['mi_5flog_5ferror_12',['mi_log_error',['../aptina_8cc.html#a9e637bacc6e9a897210b576485b4444d',1,'aptina.cc']]],
+  ['mi_5flog_5finfo_13',['mi_log_info',['../aptina_8cc.html#a3112769fb3e31ba1613424a8d6c84cb9',1,'aptina.cc']]],
+  ['midraw_14',['midraw',['../classvidre_1_1input_1_1midraw.html#aa36c6a4ab31cf5ce878b049fbe0b817e',1,'vidre::input::midraw::midraw() noexcept=default'],['../classvidre_1_1input_1_1midraw.html#a197cb9708a4df1fd33204dfb3f0f9009',1,'vidre::input::midraw::midraw(const std::filesystem::path &amp;filename) noexcept']]]
 ];

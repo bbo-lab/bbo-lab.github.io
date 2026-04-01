@@ -147,27 +147,38 @@ $(function(){initNavTree('generic_8hh_source.html',''); initResizable(true); });
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">namespace </span>storage {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> std::size_t dynamic = std::size_t(-1);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="group__api-core-storage.html#gae38827745f7e9281745d089aabec25bb">   40</a></span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> std::size_t <a class="code hl_variable" href="group__api-core-storage.html#gae38827745f7e9281745d089aabec25bb">dynamic</a> = std::size_t(-1);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classvidre_1_1storage_1_1generic.html">   49</a></span>        <span class="keyword">class </span><a class="code hl_define" href="group__api-core-details.html#ga6c2d85761ef80f8a974396c5059068bb">VIDRE_CORE_VISIBILITY</a> <a class="code hl_class" href="classvidre_1_1storage_1_1generic.html">generic</a> {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keyword">class </span>common;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keyword">class </span>header;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keyword">class </span>data;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        };</div>
-</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }  <span class="comment">// namespace storage</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="group__api-core-storage.html#ga48c02724852345b0e7a9c4d99d86941f">   45</a></span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> std::size_t <a class="code hl_variable" href="group__api-core-storage.html#ga48c02724852345b0e7a9c4d99d86941f">alignment</a> = 8; <span class="comment">// sufficient for double on ARM64</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classvidre_1_1storage_1_1generic.html">   56</a></span>        <span class="keyword">class </span><a class="code hl_define" href="group__api-core-details.html#ga6c2d85761ef80f8a974396c5059068bb">VIDRE_CORE_VISIBILITY</a> <a class="code hl_class" href="classvidre_1_1storage_1_1generic.html">generic</a> {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">class </span>common;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keyword">class </span>info;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keyword">class </span>data;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}  <span class="comment">// namespace vidre</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif  </span><span class="comment">// VIDRE_CORE_STORAGE_GENERIC_HH</span></div>
-<div class="ttc" id="aclassvidre_1_1storage_1_1generic_html"><div class="ttname"><a href="classvidre_1_1storage_1_1generic.html">vidre::storage::generic</a></div><div class="ttdoc">Generic data storage file.</div><div class="ttdef"><b>Definition</b> generic.hh:49</div></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classvidre_1_1storage_1_1generic.html#ace6174b153a6f45fba2a37b57906c187">   63</a></span>            <span class="keyword">generic</span>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        };</div>
+</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }  <span class="comment">// namespace storage</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}  <span class="comment">// namespace vidre</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif  </span><span class="comment">// VIDRE_CORE_STORAGE_GENERIC_HH</span></div>
+<div class="ttc" id="aclassvidre_1_1storage_1_1generic_html"><div class="ttname"><a href="classvidre_1_1storage_1_1generic.html">vidre::storage::generic</a></div><div class="ttdoc">Generic data storage file.</div><div class="ttdef"><b>Definition</b> generic.hh:56</div></div>
 <div class="ttc" id="agroup__api-core-details_html_ga6c2d85761ef80f8a974396c5059068bb"><div class="ttname"><a href="group__api-core-details.html#ga6c2d85761ef80f8a974396c5059068bb">VIDRE_CORE_VISIBILITY</a></div><div class="ttdeci">#define VIDRE_CORE_VISIBILITY</div><div class="ttdoc">Declaration specification for import/export for the core library.</div><div class="ttdef"><b>Definition</b> config.hh:55</div></div>
+<div class="ttc" id="agroup__api-core-storage_html_ga48c02724852345b0e7a9c4d99d86941f"><div class="ttname"><a href="group__api-core-storage.html#ga48c02724852345b0e7a9c4d99d86941f">vidre::storage::alignment</a></div><div class="ttdeci">static constexpr std::size_t alignment</div><div class="ttdoc">Default alignment.</div><div class="ttdef"><b>Definition</b> generic.hh:45</div></div>
+<div class="ttc" id="agroup__api-core-storage_html_gae38827745f7e9281745d089aabec25bb"><div class="ttname"><a href="group__api-core-storage.html#gae38827745f7e9281745d089aabec25bb">vidre::storage::dynamic</a></div><div class="ttdeci">static constexpr std::size_t dynamic</div><div class="ttdoc">Dynamic storage constraint.</div><div class="ttdef"><b>Definition</b> generic.hh:40</div></div>
 <div class="ttc" id="alibs_2core_2vidre_2core_2config_8hh_html"><div class="ttname"><a href="libs_2core_2vidre_2core_2config_8hh.html">config.hh</a></div></div>
 <div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> midraw.hh:31</div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -16,5 +16,11 @@ var log_8hh =
       [ "debug", "log_8hh.html#ggac7188c64802d58d335e10371224772ecaad42f6697b035b7580e4fef93be20b4d", null ],
       [ "trace", "log_8hh.html#ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182", null ]
     ] ],
-    [ "setup", "log_8hh.html#ga5b9bbc7d2cec4cf074305770214d5dc5", null ]
+    [ "setup", "log_8hh.html#ga5b9bbc7d2cec4cf074305770214d5dc5", null ],
+    [ "level_n", "log_8hh.html#a388f2da64b353809ca10bc3b4dbf7cc4", null ],
+    [ "level_min", "log_8hh.html#a7625a30ab5fbb87dae61f4addfd5dc63", null ],
+    [ "level_max", "log_8hh.html#a8226791964f115d55b58f319d716ccfa", null ],
+    [ "level_default", "log_8hh.html#a91d20bd99261c731592be8c65fedc951", null ],
+    [ "endl", "log_8hh.html#ga1577b0dcbee0ca055b143f0c988fcb2c", null ],
+    [ "indent_s", "log_8hh.html#ga54c4d30d637a3c5ef4f42adea9a1bd42", null ]
 ];

@@ -113,7 +113,8 @@ $(function(){initNavTree('decode__video_8cc.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">decode_video.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -133,10 +134,89 @@ $(function(){initNavTree('decode__video_8cc.html',''); initResizable(true); });
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a947958498d3f7e193095798e91cf1734" id="r_a947958498d3f7e193095798e91cf1734"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a947958498d3f7e193095798e91cf1734">decode_packet</a> (const AVPacket *pkt, AVFrame *frame)</td></tr>
+<tr class="separator:a947958498d3f7e193095798e91cf1734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a44e4ddfb699cb1a263e34948d05c3" id="r_a08a44e4ddfb699cb1a263e34948d05c3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08a44e4ddfb699cb1a263e34948d05c3">open_codec_context</a> (AVFormatContext *<a class="el" href="#a409462acdf7aebe5bfbe1bcd811efa5d">fmt_ctx</a>, enum AVMediaType type)</td></tr>
+<tr class="separator:a08a44e4ddfb699cb1a263e34948d05c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627" id="r_a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a409462acdf7aebe5bfbe1bcd811efa5d" id="r_a409462acdf7aebe5bfbe1bcd811efa5d"><td class="memItemLeft" align="right" valign="top">static AVFormatContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a409462acdf7aebe5bfbe1bcd811efa5d">fmt_ctx</a> = NULL</td></tr>
+<tr class="separator:a409462acdf7aebe5bfbe1bcd811efa5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e10f5f24d4c8dd311b8eedc376accf5" id="r_a2e10f5f24d4c8dd311b8eedc376accf5"><td class="memItemLeft" align="right" valign="top">static AVCodecContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e10f5f24d4c8dd311b8eedc376accf5">video_dec_ctx</a> = NULL</td></tr>
+<tr class="separator:a2e10f5f24d4c8dd311b8eedc376accf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9decdb9a2529baa6bd2a855a12f1f0fc" id="r_a9decdb9a2529baa6bd2a855a12f1f0fc"><td class="memItemLeft" align="right" valign="top">static AVStream *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9decdb9a2529baa6bd2a855a12f1f0fc">video_stream</a> = NULL</td></tr>
+<tr class="separator:a9decdb9a2529baa6bd2a855a12f1f0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e56268ab4ce7a25e7a17c2e088a3c1" id="r_ad3e56268ab4ce7a25e7a17c2e088a3c1"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3e56268ab4ce7a25e7a17c2e088a3c1">src_filename</a> = NULL</td></tr>
+<tr class="separator:ad3e56268ab4ce7a25e7a17c2e088a3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35f69f407b98b5244f837e25813bc11" id="r_af35f69f407b98b5244f837e25813bc11"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af35f69f407b98b5244f837e25813bc11">video_stream_idx</a> = -1</td></tr>
+<tr class="separator:af35f69f407b98b5244f837e25813bc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ed10020a0da147673b777941ded6ed" id="r_af9ed10020a0da147673b777941ded6ed"><td class="memItemLeft" align="right" valign="top">static AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9ed10020a0da147673b777941ded6ed">video_frame</a> = NULL</td></tr>
+<tr class="separator:af9ed10020a0da147673b777941ded6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f496a4d3575928c5b94568bbedd753" id="r_ac9f496a4d3575928c5b94568bbedd753"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9f496a4d3575928c5b94568bbedd753">video_frame_count</a> = 0</td></tr>
+<tr class="separator:ac9f496a4d3575928c5b94568bbedd753"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a947958498d3f7e193095798e91cf1734" name="a947958498d3f7e193095798e91cf1734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a947958498d3f7e193095798e91cf1734">&#9670;&#160;</a></span>decode_packet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int decode_packet </td>
+          <td>(</td>
+          <td class="paramtype">const AVPacket *</td>          <td class="paramname"><span class="paramname"><em>pkt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AVFrame *</td>          <td class="paramname"><span class="paramname"><em>frame</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08a44e4ddfb699cb1a263e34948d05c3" name="a08a44e4ddfb699cb1a263e34948d05c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08a44e4ddfb699cb1a263e34948d05c3">&#9670;&#160;</a></span>open_codec_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int open_codec_context </td>
+          <td>(</td>
+          <td class="paramtype">AVFormatContext *</td>          <td class="paramname"><span class="paramname"><em>fmt_ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum AVMediaType</td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&#160;</a></span>main()</h2>
 
@@ -154,6 +234,161 @@ Functions</h2></td></tr>
           <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>&#160;)</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a409462acdf7aebe5bfbe1bcd811efa5d" name="a409462acdf7aebe5bfbe1bcd811efa5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a409462acdf7aebe5bfbe1bcd811efa5d">&#9670;&#160;</a></span>fmt_ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AVFormatContext* fmt_ctx = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e10f5f24d4c8dd311b8eedc376accf5" name="a2e10f5f24d4c8dd311b8eedc376accf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e10f5f24d4c8dd311b8eedc376accf5">&#9670;&#160;</a></span>video_dec_ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AVCodecContext* video_dec_ctx = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9decdb9a2529baa6bd2a855a12f1f0fc" name="a9decdb9a2529baa6bd2a855a12f1f0fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9decdb9a2529baa6bd2a855a12f1f0fc">&#9670;&#160;</a></span>video_stream</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AVStream* video_stream = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3e56268ab4ce7a25e7a17c2e088a3c1" name="ad3e56268ab4ce7a25e7a17c2e088a3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e56268ab4ce7a25e7a17c2e088a3c1">&#9670;&#160;</a></span>src_filename</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* src_filename = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af35f69f407b98b5244f837e25813bc11" name="af35f69f407b98b5244f837e25813bc11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35f69f407b98b5244f837e25813bc11">&#9670;&#160;</a></span>video_stream_idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int video_stream_idx = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9ed10020a0da147673b777941ded6ed" name="af9ed10020a0da147673b777941ded6ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ed10020a0da147673b777941ded6ed">&#9670;&#160;</a></span>video_frame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AVFrame* video_frame = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9f496a4d3575928c5b94568bbedd753" name="ac9f496a4d3575928c5b94568bbedd753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f496a4d3575928c5b94568bbedd753">&#9670;&#160;</a></span>video_frame_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int video_frame_count = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

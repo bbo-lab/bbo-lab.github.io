@@ -7,5 +7,6 @@ var searchData=
   ['vidre_5flua_5fpanic_4',['vidre_lua_panic',['../src_2libs_2core_2vidre_2script_8cc.html#a14b9185bfb4c56eb4affd2f72f497f73',1,'script.cc']]],
   ['vidre_5fmodule_5',['VIDRE_MODULE',['../midlib2_8cc.html#a8583011af4cd0a13cd4a0e2a1dd5c0b7',1,'midlib2.cc']]],
   ['vidre_5fplugin_6',['vidre_plugin',['../midlib2_8cc.html#abc1338525d7d28e449e0b079d83fc34c',1,'midlib2.cc']]],
-  ['vidre_5fpreload_7',['vidre_preload',['../check_8cc.html#a254aa0383a5f9ec88ccf7ebb353d243d',1,'check.cc']]]
+  ['vidre_5fpreload_7',['vidre_preload',['../check_8cc.html#a254aa0383a5f9ec88ccf7ebb353d243d',1,'check.cc']]],
+  ['vidre_5fuse_5ffret_8',['vidre_use_fret',['../src_2libs_2core_2vidre_2log_8cc.html#a7a931c16bb0fa14f4685dbf575f6ae37',1,'log.cc']]]
 ];

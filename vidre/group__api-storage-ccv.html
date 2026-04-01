@@ -176,7 +176,7 @@ $(function(){initNavTree('group__api-storage-ccv.html',''); initResizable(true);
 <p>The <code>image-data</code> depends on <em>image-type</em> (usually Mono8 or Mono10). When <em>bits-are-packed</em>. Example: Mono10 data may be received from the camera as 16-bit values, for storage this can be packed to 10-bit values.</p>
 <p><b>New in version 0.20</b>:</p>
 <p>For the use with memory alignment sensitive architectures, fields are padded to 4 bytes (int32).</p>
-<p><code>field-length </code>: the field-length must be 4-byte aligned.</p>
+<p><code>field-length </code>: the field-length must be 4- or 8-byte aligned (see <code><a class="el" href="group__api-core-storage.html#ga48c02724852345b0e7a9c4d99d86941f" title="Default alignment.">vidre::storage::alignment</a></code>).</p>
 <p><code>endianness</code>: <code>b</code> for "big endian", "l" for little endian.</p>
 <p><code>system-identification</code>:</p>
 <p><span style="color: orange"><b>TBD</b>:<br  />

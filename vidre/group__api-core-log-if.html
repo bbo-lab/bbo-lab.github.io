@@ -115,7 +115,8 @@ $(function(){initNavTree('group__api-core-log-if.html',''); initResizable(true);
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Interface<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-log.html">Logging</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -131,7 +132,8 @@ $(function(){initNavTree('group__api-core-log-if.html',''); initResizable(true);
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>General logging. </p>
-<p>The general log interface used within the framework follows the convention: </p><div class="fragment"><div class="line">log::LEVEL() &lt;&lt; <span class="stringliteral">&quot;message output&quot;</span> &lt;&lt; log::endl;</div>
+<p>The general log interface used within the framework follows the convention: </p><div class="fragment"><div class="line">log::LEVEL() &lt;&lt; <span class="stringliteral">&quot;message output&quot;</span> &lt;&lt; <a class="code hl_variable" href="#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
+<div class="ttc" id="agroup__api-core-log-if_html_ga1577b0dcbee0ca055b143f0c988fcb2c"><div class="ttname"><a href="#ga1577b0dcbee0ca055b143f0c988fcb2c">vidre::log::endl</a></div><div class="ttdeci">static constexpr message_type endl</div><div class="ttdoc">End-of-line.</div><div class="ttdef"><b>Definition</b> log.hh:226</div></div>
 </div><!-- fragment --><p> where <code>LEVEL</code> may be any of the existing <a class="el" href="#gac7188c64802d58d335e10371224772ec">log levels</a> and may be used as if <code>std::clog</code> would be used directly.</p>
 <p>Special conditions apply to the following levels:</p><ul>
 <li><a class="el" href="classvidre_1_1log_1_1fatal.html">log::fatal</a> terminates the program when the object is destructed.</li>
@@ -204,6 +206,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5b9bbc7d2cec4cf074305770214d5dc5" id="r_ga5b9bbc7d2cec4cf074305770214d5dc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5b9bbc7d2cec4cf074305770214d5dc5">vidre::log::setup</a> (const std::string &amp;def)</td></tr>
 <tr class="memdesc:ga5b9bbc7d2cec4cf074305770214d5dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup log streams.  <br /></td></tr>
 <tr class="separator:ga5b9bbc7d2cec4cf074305770214d5dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga1577b0dcbee0ca055b143f0c988fcb2c" id="r_ga1577b0dcbee0ca055b143f0c988fcb2c"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d">message_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1577b0dcbee0ca055b143f0c988fcb2c">vidre::log::endl</a> = {&quot;\n&quot;, 1}</td></tr>
+<tr class="memdesc:ga1577b0dcbee0ca055b143f0c988fcb2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">End-of-line.  <br /></td></tr>
+<tr class="separator:ga1577b0dcbee0ca055b143f0c988fcb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54c4d30d637a3c5ef4f42adea9a1bd42" id="r_ga54c4d30d637a3c5ef4f42adea9a1bd42"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d">message_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga54c4d30d637a3c5ef4f42adea9a1bd42">vidre::log::indent_s</a> = {&quot; &quot;, 4}</td></tr>
+<tr class="separator:ga54c4d30d637a3c5ef4f42adea9a1bd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="gac7188c64802d58d335e10371224772ec" name="gac7188c64802d58d335e10371224772ec"></a>
@@ -270,6 +280,53 @@ Functions</h2></td></tr>
 
 <p>Setup log streams. </p>
 <p>This command intended for use with command line options. FIXME </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga1577b0dcbee0ca055b143f0c988fcb2c" name="ga1577b0dcbee0ca055b143f0c988fcb2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1577b0dcbee0ca055b143f0c988fcb2c">&#9670;&#160;</a></span>endl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d">message_type</a> vidre::log::endl = {&quot;\n&quot;, 1}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>End-of-line. </p>
+
+</div>
+</div>
+<a id="ga54c4d30d637a3c5ef4f42adea9a1bd42" name="ga54c4d30d637a3c5ef4f42adea9a1bd42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga54c4d30d637a3c5ef4f42adea9a1bd42">&#9670;&#160;</a></span>indent_s</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d">message_type</a> vidre::log::indent_s = {&quot; &quot;, 4}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

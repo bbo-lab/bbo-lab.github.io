@@ -37,6 +37,7 @@ var group__api_core_util =
       [ "type_", "classvidre_1_1variant.html#aec4b106eeae1d296bc0f63ba63304cda", null ]
     ] ],
     [ "vidre::variant::deduce< T >", "structvidre_1_1variant_1_1deduce.html", [
-      [ "type", "structvidre_1_1variant_1_1deduce.html#a4ed6a4cf1683003b6a9af95035198970", null ]
+      [ "type", "structvidre_1_1variant_1_1deduce.html#a4ed6a4cf1683003b6a9af95035198970", null ],
+      [ "id", "structvidre_1_1variant_1_1deduce.html#a1b11ff0402be445b85f75a24e8c9b607", null ]
     ] ]
 ];
