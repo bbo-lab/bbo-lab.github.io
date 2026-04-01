@@ -170,7 +170,7 @@ $(function(){initNavTree('group__api-storage-ccv.html',''); initResizable(true);
  device-timestamp        uint64_t                                    0.20
  flag-data               uint32_t                                    0.20
 </pre><p>The <code>frame-index</code> can start at 0 or 1. The <code>computer-time</code> in seconds is based on a performance counter (on Windows®: QueryPerformanceCounter()/GetComputerClockRate()). The <code>camera-time</code> is a time-stamp, provided by the camera (available for "Basler" camera only, 0 for "Aptina" at the moment of writing). The <code>flag-data</code> is a boolean field indicating if the image grab failed.</p>
-<p>The <code>image-data</code> FIXME</p>
+<p>The <code>image-data</code> depends on //image-type// (usually Mono8 or Mono10). When //bits-are-packed// (in memory, Mono12 data will be represented as 16-bit values, for storage this can be packed to 12-bit values).</p>
 <p><b>New in version 0.20</b>:</p>
 <p>For the use with memory alignment sensitive architectures, fields are padded to 4 bytes (int32).</p>
 <p><code>string-padding</code>: choosen, so the next value starts at memory alignment boundary (e.g. <code>string_padding = (string_length/4+1)*4</code>)</p>
