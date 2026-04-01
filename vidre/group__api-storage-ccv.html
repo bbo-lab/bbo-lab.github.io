@@ -157,8 +157,11 @@ $(function(){initNavTree('group__api-storage-ccv.html',''); initResizable(true);
      string-length           uint8_t                                 0.13
      zero-terminated-string  uint8_t[]                               0.13
  )
-</pre><p>replace with (0.20): ( field-length uint8_t 0.20 zero-terminated-string uint8_t[] 0.20 )</p>
-<p>The <code>tail-information</code> depends on camera type:</p>
+</pre><p>replaced in version 0.20 with: </p><pre class="fragment"> (
+     field-length            uint8_t                                 0.20
+     zero-terminated-string  uint8_t[]                               0.20
+ )
+</pre><p>The <code>tail-information</code> depends on camera type:</p>
 <p><code>Aptina:</code> </p><pre class="fragment"> frame-index             uint32_t                                    0.13
  computer-time           double                                      0.13
 </pre><p><code>Basler:</code> </p><pre class="fragment"> frame-index             uint32_t                                    0.13
@@ -173,7 +176,7 @@ $(function(){initNavTree('group__api-storage-ccv.html',''); initResizable(true);
 <p>The <code>image-data</code> depends on //image-type// (usually Mono8 or Mono10). When //bits-are-packed// (in memory, Mono12 data will be represented as 16-bit values, for storage this can be packed to 12-bit values).</p>
 <p><b>New in version 0.20</b>:</p>
 <p>For the use with memory alignment sensitive architectures, fields are padded to 4 bytes (int32).</p>
-<p><code>string-padding</code>: choosen, so the next value starts at memory alignment boundary (e.g. <code>string_padding = (string_length/4+1)*4</code>)</p>
+<p><code>field-length </code>: the field-length must be 4-byte aligned.</p>
 <p><code>endianness</code>: <code>b</code> for "big endian", "l" for little endian.</p>
 <p><code>system-identification</code>: <span style="color: orange"><b>TBD</b>:<br  />
  need to decide what is contained</span></p>
