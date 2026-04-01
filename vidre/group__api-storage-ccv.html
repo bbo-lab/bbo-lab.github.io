@@ -173,17 +173,30 @@ $(function(){initNavTree('group__api-storage-ccv.html',''); initResizable(true);
  device-timestamp        uint64_t                                    0.20
  flag-data               uint32_t                                    0.20
 </pre><p>The <code>frame-index</code> can start at 0 or 1. The <code>computer-time</code> in seconds is based on a performance counter (on Windows®: QueryPerformanceCounter()/GetComputerClockRate()). The <code>camera-time</code> is a time-stamp, provided by the camera (available for "Basler" camera only, 0 for "Aptina" at the moment of writing). The <code>flag-data</code> is a boolean field indicating if the image grab failed.</p>
-<p>The <code>image-data</code> depends on //image-type// (usually Mono8 or Mono10). When //bits-are-packed// (in memory, Mono12 data will be represented as 16-bit values, for storage this can be packed to 12-bit values).</p>
+<p>The <code>image-data</code> depends on <em>image-type</em> (usually Mono8 or Mono10). When <em>bits-are-packed</em>. Example: Mono10 data may be received from the camera as 16-bit values, for storage this can be packed to 10-bit values.</p>
 <p><b>New in version 0.20</b>:</p>
 <p>For the use with memory alignment sensitive architectures, fields are padded to 4 bytes (int32).</p>
 <p><code>field-length </code>: the field-length must be 4-byte aligned.</p>
 <p><code>endianness</code>: <code>b</code> for "big endian", "l" for little endian.</p>
-<p><code>system-identification</code>: <span style="color: orange"><b>TBD</b>:<br  />
- need to decide what is contained</span></p>
-<p><code>image-padding&lt;/t&gt;: choosen, so the the tail-information starts at memory alignment boundary.</code></p>
-<p><code><code>flag-data</code>: <span style="color: orange"><b>TBD</b>:<br  />
- to be decided</span></code></p>
-<p><code>¹ Helmholz Centre Hereon, Geesthacht, Germany </code></p>
+<p><code>system-identification</code>:</p>
+<p><span style="color: orange"><b>TBD</b>:<br  />
+ JS suggests, this is a JSON string containing at least</span> </p><pre class="fragment"> { 
+     {"plugin" : "full/plugin/name"},
+     {"camera" : 
+         { 
+             {"manufacturer", "Manufacturer"},
+             {"user-name" : "User-name if applicable"},
+             {"serial-number" : "91238740981723"}
+         }
+     }
+ }
+</pre><p><span style="color: orange"><b>TBD</b>:<br  />
+ ... but may well also contain all settings?</span></p>
+<p><code>image-padding</code>: choosen, so the the tail-information starts at memory alignment boundary. </p><dl class="section note"><dt>Note</dt><dd>Assuming a cropped Mono10 video is recorded with dimension 133×133 pixels. For packing (<em>bits-are-packed</em>), this means that 28302.4 bytes are used. Therefore, 1.6 bytes must be padded (<em>image-paddeing</em>).</dd></dl>
+<p><code>flag-data</code>:</p>
+<p><span style="color: orange"><b>TBD</b>:<br  />
+ to be decided</span></p>
+<p>¹ Helmholz Centre Hereon, Geesthacht, Germany </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
