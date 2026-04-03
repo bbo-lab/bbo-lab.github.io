@@ -1,20 +1,8 @@
 var searchData=
 [
-  ['save_0',['save',['../classvidre_1_1settings_1_1file.html#a8369feca7993869a2ce9a6807a2019da',1,'vidre::settings::file::save()'],['../classvidre_1_1settings_1_1file.html#af16bb5eeeeaa39586194dc9610765d72',1,'vidre::settings::file::save(const std::filesystem::path &amp;file)']]],
-  ['savefile_1',['savefile',['../group__api-core-util-filesystem.html#ga71ba836c12bc3fc80375a5553ee74c45',1,'vidre']]],
-  ['set_2',['set',['../classvidre_1_1detail_1_1tinymap.html#a24d17ec22ab01d57fa5badc4165fc17d',1,'vidre::detail::tinymap::set()'],['../classvidre_1_1ffmpeg_1_1dictionary.html#a992d05bfc7dbf3c26a352abade550a16',1,'vidre::ffmpeg::dictionary::set()']]],
-  ['setformat_3',['setformat',['../classvidre_1_1input_1_1midraw.html#ae8b2e76a8706608e74d16970dd3ead63',1,'vidre::input::midraw']]],
-  ['setup_4',['setup',['../group__api-core-log-if.html#ga5b9bbc7d2cec4cf074305770214d5dc5',1,'vidre::log::setup()'],['../examples_2core_2settings_8cc.html#a424b18b7eec2a2d9af616711fc1b472b',1,'setup(const std::string &amp;optstring):&#160;settings.cc'],['../examples_2core_2settings_8cc.html#af3a58773ba9d1bafb1b22d51b7541f73',1,'setup(settings::json options):&#160;settings.cc']]],
-  ['show_5',['show',['../classvidre_1_1program_1_1argument_1_1parser.html#a31147c9f97f2ea2381958de3854d0d63',1,'vidre::program::argument::parser']]],
-  ['show_5fmemory_6',['show_memory',['../structshow__memory.html#ac5f92328325965ab073de4b09eefd5be',1,'show_memory']]],
-  ['simple_5flogging_7',['simple_logging',['../examples_2core_2log_8cc.html#a64293669c94470407f5231c27676054e',1,'log.cc']]],
-  ['size_8',['size',['../classvidre_1_1input_1_1midraw.html#ad6940b12a9bf0c2a1d4844bc6efe216f',1,'vidre::input::midraw::size()'],['../classvidre_1_1script_1_1engine_1_1stack.html#a2c5dd77b71a56a9422bf48c98b0d5600',1,'vidre::script::engine::stack::size()']]],
-  ['size_5fof_9',['size_of',['../group__api-core-cpp-util.html#ga60b45cf7ce0de3e77e3f93db02eb0e96',1,'vidre']]],
-  ['stack_10',['stack',['../classvidre_1_1script_1_1engine_1_1stack.html#a7ff951879656780b8748dc090e6db7f3',1,'vidre::script::engine::stack::stack()=delete'],['../classvidre_1_1script_1_1engine_1_1stack.html#a1039ee59c3bcb62247008e1691369da3',1,'vidre::script::engine::stack::stack(engine &amp;L)']]],
-  ['static_5ferror_5fmessage_11',['static_error_message',['../classvidre_1_1static__error__message.html#a6ef76d2a5a571a5bf60683cf4b74ec95',1,'vidre::static_error_message']]],
-  ['status_12',['status',['../classvidre_1_1log_1_1status.html#a795eb49e3b10b4dcc347459394392359',1,'vidre::log::status']]],
-  ['stream_13',['stream',['../classvidre_1_1log_1_1io_1_1stream.html#a98a85d24d069ead5ef2aec04e8dcaaa0',1,'vidre::log::io::stream::stream()=default'],['../classvidre_1_1log_1_1io_1_1stream.html#a23c7701eb9dca0fa19413c564237943f',1,'vidre::log::io::stream::stream(level th) noexcept'],['../classvidre_1_1log_1_1io_1_1stream.html#a252ac457e30c65714de0ea92749bde24',1,'vidre::log::io::stream::stream(style::type sty) noexcept'],['../classvidre_1_1log_1_1io_1_1stream.html#a9d9e61be4c30b070ba7147ca3d1d2f5a',1,'vidre::log::io::stream::stream(level th, style::type sty) noexcept']]],
-  ['string_14',['string',['../classvidre_1_1log_1_1io_1_1string.html#abf6599a2a1929f5724f52602a8cf3eee',1,'vidre::log::io::string']]],
-  ['symbol_15',['symbol',['../group__api-core-details.html#gaec68bb8c33fafb49e2949ab7242958c5',1,'vidre::plugin::detail::library']]],
-  ['system_5ferror_16',['system_error',['../classvidre_1_1system__error.html#af42fbaa2b0b21a0360062ee1452888e3',1,'vidre::system_error']]]
+  ['read_0',['read',['../classvidre_1_1storage_1_1fileio.html#a0a571cb0d1c92835c105c08e0887bc7b',1,'vidre::storage::fileio::read()'],['../group__api-core-details.html#gac56ba6cdf96ed3d8570ad4c92f42c774',1,'vidre::detail::file::read(descriptor fd, uint8_t *buf, std::size_t count)'],['../group__api-core-details.html#ga5ce9cdd7a1027dc0a755d9d4918f62e5',1,'vidre::detail::file::read(descriptor fd, char *buf, std::size_t count)']]],
+  ['ref_1',['ref',['../classvidre_1_1settings_1_1node.html#a6f087df777bb31b75937ad09068aad4f',1,'vidre::settings::node']]],
+  ['remove_2',['remove',['../classvidre_1_1log_1_1io_1_1stream.html#affe3fc82b9cf427434552651dbd37d70',1,'vidre::log::io::stream']]],
+  ['require_3',['require',['../classvidre_1_1script_1_1engine.html#a1d79db5019dea218489d314a6379648b',1,'vidre::script::engine']]],
+  ['reset_4',['reset',['../classvidre_1_1shared.html#a93e9c5c82e5d60bc2d0f81bb1dfad1e3',1,'vidre::shared']]]
 ];

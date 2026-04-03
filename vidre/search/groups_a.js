@@ -4,5 +4,6 @@ var searchData=
   ['os_20utilities_1',['OS utilities',['../group__api-core-os.html',1,'']]],
   ['other_20support_20libraries_2',['Other support libraries',['../group__api-support.html',1,'']]],
   ['output_3',['Output',['../group__api-core-log-io.html',1,'']]],
-  ['overview_4',['Overview',['../group__api-support-ffmpeg-overview.html',1,'']]]
+  ['output_4',['In-/output.',['../group__api-core-storage-io.html',1,'']]],
+  ['overview_5',['Overview',['../group__api-support-ffmpeg-overview.html',1,'']]]
 ];

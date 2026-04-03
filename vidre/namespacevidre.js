@@ -4,6 +4,10 @@ var namespacevidre =
     [ "develop", "namespacevidre_1_1develop.html", [
       [ "inbuild", "group__api-core-util-develop.html#gabc680176303417bdd50638b74427ace0", null ]
     ] ],
+    [ "error", "namespacevidre_1_1error.html", [
+      [ "allocator", "group__api-core-exception.html#ga168bd3604fdf1d1df4bd73fd0337fe46", null ],
+      [ "message", "group__api-core-exception.html#ga1cc617c909969e5310c26c992be0d658", null ]
+    ] ],
     [ "ffmpeg", "namespacevidre_1_1ffmpeg.html", "namespacevidre_1_1ffmpeg" ],
     [ "input", "namespacevidre_1_1input.html", "namespacevidre_1_1input" ],
     [ "log", "namespacevidre_1_1log.html", "namespacevidre_1_1log" ],
@@ -16,16 +20,18 @@ var namespacevidre =
     [ "script", "namespacevidre_1_1script.html", "namespacevidre_1_1script" ],
     [ "settings", "namespacevidre_1_1settings.html", "namespacevidre_1_1settings" ],
     [ "storage", "namespacevidre_1_1storage.html", "namespacevidre_1_1storage" ],
-    [ "exception", "classvidre_1_1exception.html", "classvidre_1_1exception" ],
-    [ "static_error_message", "classvidre_1_1static__error__message.html", "classvidre_1_1static__error__message" ],
-    [ "system_error", "classvidre_1_1system__error.html", "classvidre_1_1system__error" ],
+    [ "bits_of", "structvidre_1_1bits__of.html", "structvidre_1_1bits__of" ],
+    [ "shared", "classvidre_1_1shared.html", "classvidre_1_1shared" ],
     [ "uuid", "classvidre_1_1uuid.html", "classvidre_1_1uuid" ],
     [ "variant", "classvidre_1_1variant.html", "classvidre_1_1variant" ],
-    [ "error_info", "group__api-core-exception.html#gade4af19b162a15ef719613fee7a76869", null ],
-    [ "throw_message", "group__api-core-exception.html#ga9e67ae9ac7b922375331a8434c12cc33", null ],
+    [ "expected", "namespacevidre.html#a3db2df171b8adf8d1f111e3c3d906c8b", null ],
+    [ "unexpected", "namespacevidre.html#ad97a24b112509130b0b63569ad1a8cb6", null ],
     [ "size_of", "group__api-core-cpp-util.html#ga60b45cf7ce0de3e77e3f93db02eb0e96", null ],
+    [ "to_underlying", "group__api-core-cpp-util.html#gaf2585385c90cccecb77ecac59eeb5b5b", null ],
+    [ "abort_with_message", "group__api-core-exception.html#ga23934a101bed2ef0161a0aac21b9d5b8", null ],
     [ "find_files", "group__api-core-util-filesystem.html#ga1eec9f7a63a64696bf67c144f46e66ab", null ],
     [ "find_files", "group__api-core-util-filesystem.html#ga4866562f40b7e38c0577ec4177567e46", null ],
     [ "loadfile", "group__api-core-util-filesystem.html#gad987b505f807a7cdc050d2f8836659a4", null ],
-    [ "savefile", "group__api-core-util-filesystem.html#ga71ba836c12bc3fc80375a5553ee74c45", null ]
+    [ "savefile", "group__api-core-util-filesystem.html#ga71ba836c12bc3fc80375a5553ee74c45", null ],
+    [ "make_shared", "group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9", null ]
 ];

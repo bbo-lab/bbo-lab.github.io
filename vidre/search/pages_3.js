@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['file_20and_20directory_20structure_0',['File and directory structure',['../dev-structure.html',1,'dev']]]
+  ['goals_0',['Design goals',['../dev-goals.html',1,'dev']]],
+  ['graphical_20user_20interface_1',['Graphical user interface',['../usage-apps-gui.html',1,'usage-apps']]]
 ];

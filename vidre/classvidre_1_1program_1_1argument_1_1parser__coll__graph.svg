@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 1202;
+var viewWidth = 1088;
 var viewHeight = 108;
 var sectionId = 'dynsection-0';
 </script>
@@ -59,9 +59,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="Argument parser.">
-<polygon fill="#999999" stroke="#666666" points="743,-50 601,-50 601,-20 743,-20 743,-50"/>
-<text text-anchor="start" x="609" y="-38" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::program::argument</text>
-<text text-anchor="middle" x="672" y="-27" font-family="Helvetica,sans-Serif" font-size="10.00">::parser</text>
+<polygon fill="#999999" stroke="#666666" points="675,-50 550,-50 550,-20 675,-20 675,-50"/>
+<text text-anchor="start" x="558" y="-38" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::program::argument</text>
+<text text-anchor="middle" x="612.5" y="-27" font-family="Helvetica,sans-Serif" font-size="10.00">::parser</text>
 </a>
 </g>
 </g>
@@ -69,8 +69,8 @@ var sectionId = 'dynsection-0';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="structvidre_1_1program_1_1argument.html" target="_top" xlink:title="Program argument definition.">
-<polygon fill="white" stroke="#666666" points="991,-71.5 849,-71.5 849,-52.5 991,-52.5 991,-71.5"/>
-<text text-anchor="middle" x="920" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::program::argument</text>
+<polygon fill="white" stroke="#666666" points="897,-71.5 772,-71.5 772,-52.5 897,-52.5 897,-71.5"/>
+<text text-anchor="middle" x="834.5" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::program::argument</text>
 </a>
 </g>
 </g>
@@ -78,19 +78,19 @@ var sectionId = 'dynsection-0';
 <g id="edge4_Node000003_Node000001" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge4_Node000003_Node000001"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M753.43,-43.83C784.19,-47.2 819,-51.02 848.74,-54.29"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="753.49,-40.31 743.16,-42.7 752.72,-47.27 753.49,-40.31"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M685.2,-43.8C713.21,-47.24 745,-51.14 771.94,-54.44"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="685.43,-40.3 675.07,-42.56 684.57,-47.25 685.43,-40.3"/>
 </a>
 </g>
-<text text-anchor="middle" x="796" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> callback</text>
+<text text-anchor="middle" x="723.5" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> callback</text>
 </g>
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="structvidre_1_1program_1_1argument_1_1options.html" target="_top" xlink:title="Internal helper for accessing options&lt;N&gt;.">
-<polygon fill="white" stroke="#666666" points="1194,-54 1052,-54 1052,-24 1194,-24 1194,-54"/>
-<text text-anchor="start" x="1060" y="-42" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::program::argument</text>
-<text text-anchor="middle" x="1123" y="-31" font-family="Helvetica,sans-Serif" font-size="10.00">::options</text>
+<polygon fill="white" stroke="#666666" points="1080,-54 955,-54 955,-24 1080,-24 1080,-54"/>
+<text text-anchor="start" x="963" y="-42" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::program::argument</text>
+<text text-anchor="middle" x="1017.5" y="-31" font-family="Helvetica,sans-Serif" font-size="10.00">::options</text>
 </a>
 </g>
 </g>
@@ -98,28 +98,28 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1041.41,-34.02C1024.75,-33.18 1007.31,-32.44 991,-32 905.73,-29.72 807.56,-31.29 743.12,-32.89"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="1041.49,-37.52 1051.66,-34.55 1041.86,-30.53 1041.49,-37.52"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M944.64,-34.11C928.95,-33.23 912.42,-32.45 897,-32 820.62,-29.76 732.61,-31.34 675.18,-32.93"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="944.63,-37.61 954.82,-34.7 945.03,-30.62 944.63,-37.61"/>
 </a>
 </g>
-<text text-anchor="middle" x="920" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> opt_</text>
+<text text-anchor="middle" x="834.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> opt_</text>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node3&#45;&gt;Node2</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1001.32,-52.81C1018.05,-50.89 1035.56,-48.89 1051.89,-47.02"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="1000.56,-49.37 991.02,-53.99 1001.35,-56.33 1000.56,-49.37"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M907.24,-52.88C922.99,-50.88 939.52,-48.78 954.83,-46.84"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="906.51,-49.45 897.03,-54.18 907.39,-56.39 906.51,-49.45"/>
 </a>
 </g>
-<text text-anchor="middle" x="1021.5" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> args</text>
+<text text-anchor="middle" x="926" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> args</text>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="classvidre_1_1variant.html" target="_top" xlink:title="A simple variant.">
-<polygon fill="white" stroke="#666666" points="713,-99.5 631,-99.5 631,-80.5 713,-80.5 713,-99.5"/>
-<text text-anchor="middle" x="672" y="-87.5" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::variant</text>
+<polygon fill="white" stroke="#666666" points="649,-99.5 576,-99.5 576,-80.5 649,-80.5 649,-99.5"/>
+<text text-anchor="middle" x="612.5" y="-87.5" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::variant</text>
 </a>
 </g>
 </g>
@@ -127,18 +127,18 @@ var sectionId = 'dynsection-0';
 <g id="edge3_Node000003_Node000004" class="edge">
 <title>Node4&#45;&gt;Node3</title>
 <g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M723.37,-84.27C759.49,-80.16 808.63,-74.56 848.62,-70.01"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="722.61,-80.83 713.07,-85.44 723.4,-87.79 722.61,-80.83"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M659.49,-84.15C692.1,-80 736.22,-74.38 771.87,-69.84"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="658.81,-80.7 649.34,-85.44 659.7,-87.65 658.81,-80.7"/>
 </a>
 </g>
-<text text-anchor="middle" x="796" y="-82" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> default_value</text>
+<text text-anchor="middle" x="723.5" y="-82" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> default_value</text>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="classvidre_1_1detail_1_1tinymap.html" target="_top" xlink:title="Simple, small key&#45;variant pair map.">
-<polygon fill="white" stroke="#666666" points="502,-63.5 380,-63.5 380,-44.5 502,-44.5 502,-63.5"/>
-<text text-anchor="middle" x="441" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::detail::tinymap</text>
+<polygon fill="white" stroke="#666666" points="456,-63.5 349,-63.5 349,-44.5 456,-44.5 456,-63.5"/>
+<text text-anchor="middle" x="402.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::detail::tinymap</text>
 </a>
 </g>
 </g>
@@ -146,18 +146,18 @@ var sectionId = 'dynsection-0';
 <g id="edge5_Node000001_Node000005" class="edge">
 <title>Node5&#45;&gt;Node1</title>
 <g id="a_edge5_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M512.3,-48.17C540.36,-45.84 572.61,-43.16 600.68,-40.83"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="511.84,-44.69 502.17,-49.01 512.42,-51.67 511.84,-44.69"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M466.55,-48.24C493,-45.82 523.65,-43.02 549.94,-40.62"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="465.9,-44.79 456.26,-49.18 466.53,-51.76 465.9,-44.79"/>
 </a>
 </g>
-<text text-anchor="middle" x="556" y="-50" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> parsed_</text>
+<text text-anchor="middle" x="507.5" y="-50" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> parsed_</text>
 </g>
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="286,-66.5 189,-66.5 189,-47.5 286,-47.5 286,-66.5"/>
-<text text-anchor="middle" x="237.5" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; T &gt;</text>
+<polygon fill="white" stroke="#666666" points="261,-66.5 174,-66.5 174,-47.5 261,-47.5 261,-66.5"/>
+<text text-anchor="middle" x="217.5" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; T &gt;</text>
 </a>
 </g>
 </g>
@@ -165,8 +165,8 @@ var sectionId = 'dynsection-0';
 <g id="edge6_Node000005_Node000006" class="edge">
 <title>Node6&#45;&gt;Node5</title>
 <g id="a_edge6_Node000005_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M296.41,-56.14C322.59,-55.75 353.52,-55.29 379.95,-54.89"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="296.2,-52.64 286.25,-56.29 296.3,-59.64 296.2,-52.64"/>
+<path fill="none" stroke="#63b8ff" d="M271.51,-56.13C295.79,-55.73 324.48,-55.26 348.73,-54.87"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="271.35,-52.63 261.41,-56.3 271.46,-59.63 271.35,-52.63"/>
 </a>
 </g>
 </g>
@@ -174,8 +174,8 @@ var sectionId = 'dynsection-0';
 <g id="Node000007" class="node">
 <title>Node7</title>
 <g id="a_Node000007"><a xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="66.5,-67.5 37.5,-67.5 37.5,-48.5 66.5,-48.5 66.5,-67.5"/>
-<text text-anchor="middle" x="52" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">T</text>
+<polygon fill="white" stroke="#666666" points="62,-67.5 33,-67.5 33,-48.5 62,-48.5 62,-67.5"/>
+<text text-anchor="middle" x="47.5" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">T</text>
 </a>
 </g>
 </g>
@@ -183,18 +183,18 @@ var sectionId = 'dynsection-0';
 <g id="edge7_Node000006_Node000007" class="edge">
 <title>Node7&#45;&gt;Node6</title>
 <g id="a_edge7_Node000006_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M76.96,-57.87C105.28,-57.72 153.06,-57.45 188.97,-57.26"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="76.77,-54.37 66.79,-57.92 76.81,-61.37 76.77,-54.37"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M72.44,-57.86C98.75,-57.7 141.56,-57.45 173.69,-57.25"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="72.23,-54.36 62.25,-57.92 72.27,-61.36 72.23,-54.36"/>
 </a>
 </g>
-<text text-anchor="middle" x="146.5" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> elements</text>
+<text text-anchor="middle" x="134.5" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> elements</text>
 </g>
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
 <g id="a_Node000008"><a xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="511,-26.5 371,-26.5 371,-7.5 511,-7.5 511,-26.5"/>
-<text text-anchor="middle" x="441" y="-14.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::string &gt;</text>
+<polygon fill="white" stroke="#666666" points="465,-26.5 340,-26.5 340,-7.5 465,-7.5 465,-26.5"/>
+<text text-anchor="middle" x="402.5" y="-14.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::string &gt;</text>
 </a>
 </g>
 </g>
@@ -202,18 +202,18 @@ var sectionId = 'dynsection-0';
 <g id="edge8_Node000001_Node000008" class="edge">
 <title>Node8&#45;&gt;Node1</title>
 <g id="a_edge8_Node000001_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M521.39,-16.64C541.52,-17.11 563.09,-18.1 583,-20 588.86,-20.56 594.92,-21.28 601,-22.11"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="521.39,-13.14 511.32,-16.44 521.25,-20.14 521.39,-13.14"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M475.21,-16.61C493.75,-17.07 513.65,-18.07 532,-20 537.73,-20.6 543.66,-21.4 549.58,-22.31"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="475.14,-13.1 465.07,-16.4 475,-20.1 475.14,-13.1"/>
 </a>
 </g>
-<text text-anchor="middle" x="556" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> unparsed_</text>
+<text text-anchor="middle" x="507.5" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> unparsed_</text>
 </g>
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
 <g id="a_Node000009"><a xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="270,-26.5 205,-26.5 205,-7.5 270,-7.5 270,-26.5"/>
-<text text-anchor="middle" x="237.5" y="-14.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::string</text>
+<polygon fill="white" stroke="#666666" points="247.5,-26.5 187.5,-26.5 187.5,-7.5 247.5,-7.5 247.5,-26.5"/>
+<text text-anchor="middle" x="217.5" y="-14.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::string</text>
 </a>
 </g>
 </g>
@@ -221,19 +221,19 @@ var sectionId = 'dynsection-0';
 <g id="edge9_Node000008_Node000009" class="edge">
 <title>Node9&#45;&gt;Node8</title>
 <g id="a_edge9_Node000008_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M280.7,-17C306.74,-17 340.76,-17 370.67,-17"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="280.43,-13.5 270.43,-17 280.43,-20.5 280.43,-13.5"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M258.01,-17C281.91,-17 312.89,-17 339.95,-17"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="257.9,-13.5 247.9,-17 257.9,-20.5 257.9,-13.5"/>
 </a>
 </g>
-<text text-anchor="middle" x="328.5" y="-20" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> elements</text>
+<text text-anchor="middle" x="300.5" y="-20" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> elements</text>
 </g>
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
 <g id="a_Node000010"><a xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="104,-30 0,-30 0,0 104,0 104,-30"/>
+<polygon fill="white" stroke="#666666" points="95,-30 0,-30 0,0 95,0 95,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">std::basic_string&lt;</text>
-<text text-anchor="middle" x="52" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00"> Char &gt;</text>
+<text text-anchor="middle" x="47.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00"> Char &gt;</text>
 </a>
 </g>
 </g>
@@ -241,8 +241,8 @@ var sectionId = 'dynsection-0';
 <g id="edge10_Node000009_Node000010" class="edge">
 <title>Node10&#45;&gt;Node9</title>
 <g id="a_edge10_Node000009_Node000010"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M114.21,-15.67C144.61,-16 180.06,-16.38 204.94,-16.66"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="114.15,-12.17 104.11,-15.56 114.08,-19.17 114.15,-12.17"/>
+<path fill="none" stroke="#63b8ff" d="M105.6,-15.68C133.09,-16.01 164.88,-16.39 187.36,-16.65"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="105.34,-12.18 95.3,-15.56 105.25,-19.18 105.34,-12.18"/>
 </a>
 </g>
 </g>

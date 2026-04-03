@@ -1,11 +1,11 @@
 <map id="libs/core/vidre/os/paths.hh" name="libs/core/vidre/os/paths.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="129,5,262,45"/>
-<area shape="rect" id="Node000002" href="$libs_2core_2vidre_2core_2config_8hh.html" title=" " alt="" coords="48,93,199,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,47,145,85,141,81,176,44"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="223,93,314,119"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="215,44,250,81,246,85,211,47"/>
-<area shape="rect" id="Node000003" href="$vidre_2config_8hh.html" title=" " alt="" coords="5,167,124,192"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,121,85,158,81,155,112,117"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="149,167,215,192"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="135,117,166,155,162,158,131,121"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="118,5,239,45"/>
+<area shape="rect" id="Node000002" href="$libs_2core_2vidre_2core_2config_8hh.html" title=" " alt="" coords="44,93,180,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,47,133,84,129,81,161,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="204,93,287,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="197,44,229,81,225,84,193,47"/>
+<area shape="rect" id="Node000003" href="$vidre_2config_8hh.html" title=" " alt="" coords="5,167,112,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,121,78,157,73,154,101,117"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="136,167,197,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="123,117,152,154,147,157,119,121"/>
 </map>

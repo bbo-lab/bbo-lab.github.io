@@ -1,5 +1,5 @@
 <map id="vidre::detail::tinymap" name="vidre::detail::tinymap">
-<area shape="rect" id="Node000001" title="Simple, small key&#45;variant pair map." alt="" coords="5,79,168,104"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="22,5,151,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,44,89,79,84,79,84,44"/>
+<area shape="rect" id="Node000001" title="Simple, small key&#45;variant pair map." alt="" coords="5,79,148,104"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="19,5,135,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,44,79,79,74,79,74,44"/>
 </map>

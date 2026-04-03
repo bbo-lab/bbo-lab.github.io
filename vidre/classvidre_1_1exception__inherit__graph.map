@@ -1,15 +1,15 @@
 <map id="vidre::exception" name="vidre::exception">
-<area shape="rect" id="Node000001" title="Default VidRe exception." alt="" coords="184,92,311,117"/>
-<area shape="rect" id="Node000004" href="$classvidre_1_1ffmpeg_1_1exception.html" title="FFmpeg exception." alt="" coords="359,5,540,31"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="279,82,316,61,358,41,394,28,396,33,360,46,318,66,281,87"/>
-<area shape="rect" id="Node000005" href="$classvidre_1_1plugin_1_1dynamic_1_1exception.html" title="Exception." alt="" coords="366,55,533,95"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="324,91,366,85,366,90,325,96"/>
-<area shape="rect" id="Node000006" href="$classvidre_1_1plugin_1_1exception.html" title="General plugin exception." alt="" coords="362,120,537,145"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="325,113,362,118,362,123,324,118"/>
-<area shape="rect" id="Node000007" href="$classvidre_1_1system__error.html" title="Exception originating from a std::error_code." alt="" coords="375,169,524,195"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="285,121,360,156,395,167,393,172,358,160,283,126"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,67,136,92"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,88,184,93,183,98,149,93"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="13,116,128,141"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,116,183,111,184,116,142,122"/>
+<area shape="rect" id="Node000001" title="Default VidRe exception." alt="" coords="172,92,287,117"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1ffmpeg_1_1exception.html" title="FFmpeg exception." alt="" coords="335,5,497,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="260,82,334,41,367,28,369,33,336,46,262,87"/>
+<area shape="rect" id="Node000005" href="$classvidre_1_1plugin_1_1dynamic_1_1exception.html" title="Exception." alt="" coords="341,55,491,95"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="300,91,341,84,342,90,301,96"/>
+<area shape="rect" id="Node000006" href="$classvidre_1_1plugin_1_1exception.html" title="General plugin exception." alt="" coords="338,120,494,145"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="301,113,338,118,337,124,300,118"/>
+<area shape="rect" id="Node000007" href="$classvidre_1_1system__error.html" title="Exception originating from a std::error_code." alt="" coords="349,169,483,195"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="266,122,336,156,368,167,366,172,334,160,264,127"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,67,124,92"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,88,172,93,171,98,137,93"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="13,116,117,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,117,171,110,172,116,131,122"/>
 </map>

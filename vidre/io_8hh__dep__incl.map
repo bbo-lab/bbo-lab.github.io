@@ -1,0 +1,17 @@
+<map id="libs/core/vidre/storage/io.hh" name="libs/core/vidre/storage/io.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="372,5,523,45"/>
+<area shape="rect" id="Node000002" href="$hdspeed_8cc.html" title=" " alt="" coords="5,93,233,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="369,52,212,96,211,91,367,47"/>
+<area shape="rect" id="Node000003" href="$core_2vidre_2exception_8cc.html" title=" " alt="" coords="258,108,439,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="419,57,363,110,359,106,416,53"/>
+<area shape="rect" id="Node000004" href="$storage_8hh.html" title=" " alt="" coords="463,108,631,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="479,53,537,106,533,110,476,57"/>
+<area shape="rect" id="Node000008" href="$io_8cc.html" title=" " alt="" coords="656,101,807,141"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="519,47,675,98,673,103,517,52"/>
+<area shape="rect" id="Node000005" href="$storage_8cc.html" title=" " alt="" coords="374,203,542,229"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="529,145,471,205,467,201,525,141"/>
+<area shape="rect" id="Node000006" href="$ccv_8hh.html" title=" " alt="" coords="567,196,709,236"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="570,141,621,194,618,198,566,145"/>
+<area shape="rect" id="Node000007" href="$ccv_8cc.html" title=" " alt="" coords="567,284,709,324"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="641,250,641,284,635,284,635,250"/>
+</map>

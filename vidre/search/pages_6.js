@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['licenses_0',['Licenses',['../license.html',1,'']]],
-  ['line_20control_1',['Command-line control',['../usage-apps-terminal.html',1,'usage-apps']]],
-  ['list_2',['Todo List',['../todo.html',1,'']]]
+  ['overview_0',['Overview',['../dev-overview.html',1,'dev']]]
 ];

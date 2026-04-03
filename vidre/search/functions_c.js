@@ -1,7 +1,20 @@
 var searchData=
 [
-  ['name_0',['name',['../structvidre_1_1ffmpeg_1_1error__category.html#ab91e7caacb03f614a9f43740b7374a63',1,'vidre::ffmpeg::error_category']]],
-  ['node_1',['node',['../classvidre_1_1settings_1_1node.html#a0f0fa9535901878cfd823a42e206464a',1,'vidre::settings::node::node()=default'],['../classvidre_1_1settings_1_1node.html#aa7495f9aa700dc612cf733df8f4080aa',1,'vidre::settings::node::node(node &amp;&amp;other)'],['../classvidre_1_1settings_1_1node.html#a82be04c47da231ffbce40c3afd7bfec7',1,'vidre::settings::node::node(const node &amp;)=delete'],['../classvidre_1_1settings_1_1node.html#a21b69c1b5f3adb03713556f0aac480ab',1,'vidre::settings::node::node(const node &amp;parent, const std::string &amp;field)']]],
-  ['notice_2',['notice',['../classvidre_1_1log_1_1notice.html#abeaf851c98d14f1d5665ab98cb27baa9',1,'vidre::log::notice']]],
-  ['null_3',['null',['../classvidre_1_1log_1_1null.html#aaac1e73943f5c57c7a272ea6ea57eaa2',1,'vidre::log::null']]]
+  ['main_0',['main',['../main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;main.cc'],['../examples_2core_2develop_8cc.html#a217dbf8b442f20279ea00b898af96f52',1,'main(int argc, const char **argv):&#160;develop.cc'],['../examples_2core_2log_8cc.html#a217dbf8b442f20279ea00b898af96f52',1,'main(int argc, const char **argv):&#160;log.cc'],['../os_8cc.html#a0fc34f49b0e6eaed5e5c3accb409b1d1',1,'main(int, const char **):&#160;os.cc'],['../plugins_8cc.html#a217dbf8b442f20279ea00b898af96f52',1,'main(int argc, const char **argv):&#160;plugins.cc'],['../examples_2core_2program_8cc.html#a217dbf8b442f20279ea00b898af96f52',1,'main(int argc, const char **argv):&#160;program.cc'],['../examples_2core_2script_8cc.html#a0fc34f49b0e6eaed5e5c3accb409b1d1',1,'main(int, const char **):&#160;script.cc'],['../examples_2core_2settings_8cc.html#a0fc34f49b0e6eaed5e5c3accb409b1d1',1,'main(int, const char **):&#160;settings.cc'],['../examples_2core_2uuid_8cc.html#a217dbf8b442f20279ea00b898af96f52',1,'main(int argc, const char **argv):&#160;uuid.cc'],['../aptina_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;aptina.cc'],['../decode__video_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;decode_video.cc'],['../hdspeed_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;hdspeed.cc'],['../hw__decode__video_8cc.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;hw_decode_video.cc']]],
+  ['make_1',['make',['../classvidre_1_1uuid.html#a8787c0e6688cf56bc97290ad70c3ce20',1,'vidre::uuid']]],
+  ['make_5ferror_5fcode_2',['make_error_code',['../group__api-support-ffmpeg-util-error.html#ga6c27ee65ab618eda5a7b630cef6f789b',1,'vidre::ffmpeg::make_error_code(ffmpeg::errc e)'],['../group__api-support-ffmpeg-util-error.html#ga97308b8af80edcafa4c7c79f9c0a642c',1,'vidre::ffmpeg::make_error_code(int e)']]],
+  ['make_5fshared_3',['make_shared',['../group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9',1,'vidre']]],
+  ['make_5fwritable_4',['make_writable',['../classvidre_1_1ffmpeg_1_1frame.html#a302397fdbe78d4f3f583851ff2db3a4c',1,'vidre::ffmpeg::frame']]],
+  ['makemd5_5',['makeMD5',['../classvidre_1_1uuid.html#a4f6fe04ce51c2ccfdc4227d5258bf31f',1,'vidre::uuid']]],
+  ['makepath_6',['makepath',['../src_2libs_2core_2vidre_2script_8cc.html#a2d5456983b047597ebe9e7beb140df04',1,'script.cc']]],
+  ['makerandom_7',['makeRandom',['../classvidre_1_1uuid.html#a56719949cecad3eaeacf06bf4a4c3978',1,'vidre::uuid']]],
+  ['makesha1_8',['makeSHA1',['../classvidre_1_1uuid.html#a10a5ee540b68cdfcf6751517eec9f257',1,'vidre::uuid']]],
+  ['maketime_9',['makeTime',['../classvidre_1_1uuid.html#a89f0b020b55fdedda6741c75b27cef6e',1,'vidre::uuid']]],
+  ['maketimesafe_10',['makeTimeSafe',['../classvidre_1_1uuid.html#a0565a662ac8b625852cd7b547f8ffad9',1,'vidre::uuid']]],
+  ['max_5fsize_11',['max_size',['../structvidre_1_1detail_1_1exception_1_1allocator.html#af245429e31fea7ce82cda2a6eafe5716',1,'vidre::detail::exception::allocator']]],
+  ['message_12',['message',['../structvidre_1_1ffmpeg_1_1error__category.html#a58e9d9f2e8e2ae4d38dff1aafba3d09f',1,'vidre::ffmpeg::error_category']]],
+  ['mi_5flog_5fdebug_13',['mi_log_debug',['../aptina_8cc.html#a0443ab04fd24eec44ebdc49330b62ec0',1,'aptina.cc']]],
+  ['mi_5flog_5ferror_14',['mi_log_error',['../aptina_8cc.html#a9e637bacc6e9a897210b576485b4444d',1,'aptina.cc']]],
+  ['mi_5flog_5finfo_15',['mi_log_info',['../aptina_8cc.html#a3112769fb3e31ba1613424a8d6c84cb9',1,'aptina.cc']]],
+  ['midraw_16',['midraw',['../classvidre_1_1input_1_1midraw.html#aa36c6a4ab31cf5ce878b049fbe0b817e',1,'vidre::input::midraw::midraw() noexcept=default'],['../classvidre_1_1input_1_1midraw.html#a197cb9708a4df1fd33204dfb3f0f9009',1,'vidre::input::midraw::midraw(const std::filesystem::path &amp;filename) noexcept']]]
 ];

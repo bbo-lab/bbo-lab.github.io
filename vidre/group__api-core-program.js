@@ -36,7 +36,7 @@ var group__api_core_program =
       [ "copyright", "structvidre_1_1program_1_1argument_1_1options.html#a772b9e187a194df28cab0b046ca4b856", null ],
       [ "description", "structvidre_1_1program_1_1argument_1_1options.html#a9227c89ed0c48a8fbde52f050882f570", null ],
       [ "size", "structvidre_1_1program_1_1argument_1_1options.html#ae2fab4855140ba9883ef76dc87afb364", null ],
-      [ "args", "structvidre_1_1program_1_1argument_1_1options.html#a7d9af94c2faa4784ca43180859c8aca9", null ]
+      [ "args", "structvidre_1_1program_1_1argument_1_1options.html#a1ef8a94ecea2900915b331ea261e781c", null ]
     ] ],
     [ "vidre::program::argument::parameter", "structvidre_1_1program_1_1argument_1_1parameter.html", [
       [ "parameter", "structvidre_1_1program_1_1argument_1_1parameter.html#a8fe11abb22a075e11986904b0c2d5312", null ],

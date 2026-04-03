@@ -1,7 +1,9 @@
 <map id="libs/core/vidre/cpp/util.hh" name="libs/core/vidre/cpp/util.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="53,5,194,45"/>
-<area shape="rect" id="Node000002" href="$vidre_2config_8hh.html" title=" " alt="" coords="5,93,124,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,47,84,84,80,80,107,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="148,93,219,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,44,168,81,164,84,136,47"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="103,5,231,45"/>
+<area shape="rect" id="Node000002" href="$vidre_2config_8hh.html" title=" " alt="" coords="5,93,112,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,48,88,87,85,83,139,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="137,93,197,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,46,169,79,164,79,164,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="221,93,286,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="189,44,232,82,228,86,186,48"/>
 </map>

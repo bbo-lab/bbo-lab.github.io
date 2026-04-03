@@ -1,24 +1,24 @@
 <map id="vidre::program::argument::parameter" name="vidre::program::argument::parameter">
-<area shape="rect" id="Node000001" title="Alternative construction of positional arguments." alt="" coords="588,111,777,151"/>
-<area shape="rect" id="Node000002" href="$structvidre_1_1program_1_1argument.html" title="Program argument definition." alt="" coords="285,182,475,207"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="454,177,587,148,588,153,455,182"/>
-<area shape="rect" id="Node000005" href="$structvidre_1_1program_1_1argument_1_1options.html" title="Internal helper for accessing options&lt;N&gt;." alt="" coords="588,175,777,215"/>
-<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="489,192,588,192,588,197,489,197"/>
-<area shape="rect" id="Node000003" href="$classvidre_1_1variant.html" title="A simple variant." alt="" coords="20,182,129,207"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="143,192,285,192,285,197,143,197"/>
-<area shape="rect" id="Node000004" href="$classvidre_1_1program_1_1argument_1_1parser.html" title="Argument parser." alt="" coords="897,140,1087,180"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="940,188,864,220,821,234,778,244,728,250,678,252,578,244,489,227,421,210,423,205,490,222,579,238,678,246,728,245,777,239,820,228,863,215,938,184"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="791,180,897,168,897,173,792,185"/>
-<area shape="rect" id="Node000006" href="$classvidre_1_1detail_1_1tinymap.html" title="Simple, small key&#45;variant pair map." alt="" coords="601,7,764,33"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="744,34,778,45,827,63,875,86,962,137,959,142,872,90,825,68,776,51,742,39"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="315,7,445,33"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="459,17,601,17,601,23,459,23"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="55,7,94,33"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="108,17,315,17,315,23,108,23"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="589,61,776,86"/>
-<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="745,87,778,96,923,137,921,143,777,101,744,92"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="337,63,423,89"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="437,73,589,71,589,77,437,78"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="5,57,144,97"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="158,74,336,74,336,79,158,80"/>
+<area shape="rect" id="Node000001" title="Alternative construction of positional arguments." alt="" coords="533,111,700,151"/>
+<area shape="rect" id="Node000002" href="$structvidre_1_1program_1_1argument.html" title="Program argument definition." alt="" coords="261,182,428,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="413,176,532,148,534,153,414,181"/>
+<area shape="rect" id="Node000005" href="$structvidre_1_1program_1_1argument_1_1options.html" title="Internal helper for accessing options&lt;N&gt;." alt="" coords="533,175,700,215"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="442,192,533,192,533,197,442,197"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1variant.html" title="A simple variant." alt="" coords="20,182,117,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,192,261,192,261,197,131,197"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1program_1_1argument_1_1parser.html" title="Argument parser." alt="" coords="813,140,980,180"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="849,189,780,220,741,234,701,244,656,250,611,251,522,243,443,227,382,210,384,205,444,222,523,238,611,246,656,245,699,239,739,228,778,215,846,184"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="713,180,813,168,813,173,714,185"/>
+<area shape="rect" id="Node000006" href="$classvidre_1_1detail_1_1tinymap.html" title="Simple, small key&#45;variant pair map." alt="" coords="545,7,688,33"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="672,35,701,46,747,64,791,86,870,138,867,142,788,90,745,68,699,50,670,40"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="287,7,403,33"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="417,17,545,17,545,23,417,23"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="49,7,88,33"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="102,17,286,17,286,23,102,23"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="533,61,700,86"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="673,88,701,96,832,137,831,142,699,101,672,93"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="305,63,385,89"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="399,73,533,71,533,77,399,78"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="5,57,132,97"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="145,74,304,74,304,79,145,80"/>
 </map>

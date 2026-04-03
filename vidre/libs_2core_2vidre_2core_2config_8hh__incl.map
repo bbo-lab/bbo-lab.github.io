@@ -1,7 +1,7 @@
 <map id="libs/core/vidre/core/config.hh" name="libs/core/vidre/core/config.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="50,5,197,45"/>
-<area shape="rect" id="Node000002" href="$vidre_2config_8hh.html" title=" " alt="" coords="5,93,124,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,47,84,84,80,80,107,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="149,93,215,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,44,167,80,163,84,135,47"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="46,5,178,45"/>
+<area shape="rect" id="Node000002" href="$vidre_2config_8hh.html" title=" " alt="" coords="5,93,112,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,47,77,83,72,80,97,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="136,93,197,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,44,153,80,149,84,123,47"/>
 </map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['callback_5ftype_0',['callback_type',['../structvidre_1_1program_1_1argument.html#a89a516e568f11a676d4c0b6f630186a5',1,'vidre::program::argument']]]
+  ['allocator_0',['allocator',['../group__api-core-exception.html#ga168bd3604fdf1d1df4bd73fd0337fe46',1,'vidre::error']]]
 ];

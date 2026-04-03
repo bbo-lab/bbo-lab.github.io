@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['info_0',['Developer info',['../dev.html',1,'']]],
-  ['interface_1',['Graphical user interface',['../usage-apps-gui.html',1,'usage-apps']]],
-  ['introduction_2',['Introduction',['../usage-intro.html',1,'usage']]]
+  ['licenses_0',['Licenses',['../license.html',1,'']]],
+  ['line_20control_1',['Command-line control',['../usage-apps-terminal.html',1,'usage-apps']]],
+  ['list_2',['Todo List',['../todo.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tr_0',['tr',['../main_8cc.html#a984419155311b73f3b996434475cc123',1,'main.cc']]]
+  ['filesize_0',['FILESIZE',['../hdspeed_8cc.html#a8049c678a855a57b1030eab386393a8f',1,'hdspeed.cc']]]
 ];

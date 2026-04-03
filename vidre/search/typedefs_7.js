@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['size_5ftype_0',['size_type',['../classvidre_1_1script_1_1engine_1_1stack.html#a4387a453226d2208d0cf4d478c6b1bd5',1,'vidre::script::engine::stack']]],
-  ['symbol_5ftype_1',['symbol_type',['../classvidre_1_1plugin_1_1dynamic_1_1library.html#a79a325a3b53aa18b569188819de272c6',1,'vidre::plugin::dynamic::library::symbol_type'],['../group__api-core-details.html#ga8399da9ef7ce5c7108bcf65aaaba9d98',1,'vidre::plugin::detail::library::symbol_type']]]
+  ['map_0',['map',['../classvidre_1_1program_1_1argument_1_1parser.html#a75ea7373cf04e7f42d7171ab62d97732',1,'vidre::program::argument::parser']]],
+  ['message_1',['message',['../group__api-core-exception.html#ga1cc617c909969e5310c26c992be0d658',1,'vidre::error']]],
+  ['message_5ftype_2',['message_type',['../group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d',1,'vidre::log']]]
 ];

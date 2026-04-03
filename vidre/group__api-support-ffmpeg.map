@@ -1,9 +1,9 @@
 <map id="FFmpeg C++ API" name="FFmpeg C++ API">
-<area shape="rect" id="Node000002" href="$group__api-support.html" title=" " alt="" coords="5,104,173,129"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="221,104,356,129"/>
-<area shape="rect" id="Node000005" href="$group__api-support-ffmpeg-codec.html" title=" " alt="" coords="463,5,526,31"/>
-<area shape="rect" id="Node000007" href="$group__api-support-ffmpeg-details.html" title=" " alt="" coords="404,55,585,80"/>
-<area shape="rect" id="Node000004" href="$group__api-support-ffmpeg-format.html" title=" " alt="" coords="461,104,529,129"/>
-<area shape="rect" id="Node000003" href="$group__api-support-ffmpeg-overview.html" title=" " alt="" coords="453,153,537,179"/>
-<area shape="rect" id="Node000006" href="$group__api-support-ffmpeg-util.html" title=" " alt="" coords="458,203,531,228"/>
+<area shape="rect" id="Node000002" href="$group__api-support.html" title=" " alt="" coords="5,104,156,129"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="204,104,329,129"/>
+<area shape="rect" id="Node000005" href="$group__api-support-ffmpeg-codec.html" title=" " alt="" coords="427,5,487,31"/>
+<area shape="rect" id="Node000007" href="$group__api-support-ffmpeg-details.html" title=" " alt="" coords="377,55,537,80"/>
+<area shape="rect" id="Node000004" href="$group__api-support-ffmpeg-format.html" title=" " alt="" coords="426,104,489,129"/>
+<area shape="rect" id="Node000003" href="$group__api-support-ffmpeg-overview.html" title=" " alt="" coords="419,153,496,179"/>
+<area shape="rect" id="Node000006" href="$group__api-support-ffmpeg-util.html" title=" " alt="" coords="424,203,491,228"/>
 </map>

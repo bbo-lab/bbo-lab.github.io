@@ -1,7 +1,7 @@
 <map id="libs/ffmpeg/vidre/ffmpeg/config.cc" name="libs/ffmpeg/vidre/ffmpeg/config.cc">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,188,45"/>
-<area shape="rect" id="Node000002" href="$libs_2ffmpeg_2vidre_2ffmpeg_2config_8hh.html" title=" " alt="" coords="56,93,137,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,46,99,79,94,79,94,46"/>
-<area shape="rect" id="Node000003" href="$vidre_2config_8hh.html" title=" " alt="" coords="37,167,156,192"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,119,99,153,94,153,94,119"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,168,45"/>
+<area shape="rect" id="Node000002" href="$libs_2ffmpeg_2vidre_2ffmpeg_2config_8hh.html" title=" " alt="" coords="49,93,124,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,46,89,79,84,79,84,46"/>
+<area shape="rect" id="Node000003" href="$vidre_2config_8hh.html" title=" " alt="" coords="33,167,140,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,119,89,153,84,153,84,119"/>
 </map>

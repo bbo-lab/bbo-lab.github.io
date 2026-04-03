@@ -3,7 +3,6 @@ var dev =
     [ "Topics", "dev.html#dev-topics", null ],
     [ "Overview", "dev-overview.html", null ],
     [ "Coding style and documentation", "dev-style.html", null ],
-    [ "File and directory structure", "dev-structure.html", null ],
     [ "Design goals", "dev-goals.html", [
       [ "Overview", "dev-goals.html#dev-goals-overview", [
         [ "Backend", "dev-goals.html#dev-backend", [

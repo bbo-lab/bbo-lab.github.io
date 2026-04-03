@@ -1,9 +1,5 @@
 <map id="vidre::plugin::exception" name="vidre::plugin::exception">
-<area shape="rect" id="Node000001" title="General plugin exception." alt="" coords="57,152,231,177"/>
-<area shape="rect" id="Node000002" href="$classvidre_1_1exception.html" title="Default VidRe exception." alt="" coords="81,79,207,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,118,147,152,141,152,141,118"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,136,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,38,134,77,130,80,91,42"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="160,5,275,31"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="197,42,158,80,154,77,194,38"/>
+<area shape="rect" id="Node000001" title="General plugin exception." alt="" coords="5,79,161,104"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="26,5,141,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,44,86,79,81,79,81,44"/>
 </map>

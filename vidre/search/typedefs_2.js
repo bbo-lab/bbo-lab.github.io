@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['entry_0',['entry',['../classvidre_1_1ffmpeg_1_1dictionary.html#a471ecd8d12e023515a636ece79e4150c',1,'vidre::ffmpeg::dictionary']]],
-  ['errc_5finfo_1',['errc_info',['../group__api-support-ffmpeg-util-error.html#ga2760daf6efb50c83affe9a5428a7bb14',1,'vidre::ffmpeg']]],
-  ['error_5finfo_2',['error_info',['../group__api-core-exception.html#gade4af19b162a15ef719613fee7a76869',1,'vidre']]]
+  ['descriptor_0',['descriptor',['../group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c',1,'vidre::detail::file']]],
+  ['device_1',['device',['../group__api-device-onsemi-types.html#ga9b5e730786191097583cb79b82e97d49',1,'vidre::midlib2']]]
 ];

@@ -1,7 +1,7 @@
 <map id="libs/core/vidre/program.hh" name="libs/core/vidre/program.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="123,5,316,31"/>
-<area shape="rect" id="Node000002" href="$examples_2core_2program_8cc.html" title=" " alt="" coords="5,79,212,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,41,144,81,141,77,192,37"/>
-<area shape="rect" id="Node000003" href="$src_2libs_2core_2vidre_2program_8cc.html" title=" " alt="" coords="236,93,427,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,37,318,91,314,95,244,41"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="117,5,289,31"/>
+<area shape="rect" id="Node000002" href="$examples_2core_2program_8cc.html" title=" " alt="" coords="5,79,196,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,41,134,81,130,77,177,37"/>
+<area shape="rect" id="Node000003" href="$src_2libs_2core_2vidre_2program_8cc.html" title=" " alt="" coords="220,93,392,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,38,293,91,290,95,226,42"/>
 </map>

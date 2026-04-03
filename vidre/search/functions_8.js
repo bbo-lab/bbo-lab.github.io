@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['inbuild_0',['inbuild',['../group__api-core-util-develop.html#gabc680176303417bdd50638b74427ace0',1,'vidre::develop']]],
-  ['info_1',['info',['../classvidre_1_1log_1_1info.html#a0db463eef4a60274ffb4909551086ca3',1,'vidre::log::info::info()'],['../classvidre_1_1plugin_1_1dynamic.html#a71bf4dab5c5da3e8357a7011a4d25ba9',1,'vidre::plugin::dynamic::info()']]],
-  ['installdir_2',['installdir',['../group__api-core-os-path.html#ga37c60d716b042fe4767075a013b7d1a2',1,'vidre::os']]],
-  ['invocation_3',['invocation',['../group__api-core-program.html#ga114629340d2d0d9c5629d3af268b4e9b',1,'vidre::program']]],
-  ['is_5fwritable_4',['is_writable',['../classvidre_1_1ffmpeg_1_1frame.html#a0ff15766e5a45d2855f15b0d4e62f439',1,'vidre::ffmpeg::frame']]],
-  ['isatty_5',['isatty',['../group__api-core-os-tty.html#ga9ff232c97af564aa1110a2f2677739ed',1,'vidre::os::isatty(FILE *stream) noexcept'],['../group__api-core-os-tty.html#ga9269686d278d53a6dfccb5c5319c1ffb',1,'vidre::os::isatty() noexcept']]],
-  ['isnil_6',['isnil',['../classvidre_1_1settings_1_1node.html#a3495ac28a5d072ea50ee75d5b7129758',1,'vidre::settings::node']]],
-  ['istable_7',['istable',['../classvidre_1_1settings_1_1node.html#a3ff46a51df01fd85ad420b5fd71d2277',1,'vidre::settings::node']]],
-  ['isvalid_8',['isvalid',['../classvidre_1_1plugin_1_1dynamic_1_1library.html#a9447055e0c405483c654e7ba02bb1772',1,'vidre::plugin::dynamic::library::isvalid()'],['../classvidre_1_1plugin_1_1dynamic.html#a8b7db07ae2cc3ede3802ef14949551bb',1,'vidre::plugin::dynamic::isvalid()']]]
+  ['handle_0',['handle',['../classvidre_1_1program_1_1argument_1_1parser.html#a33ae02fb4faa228bf95beff3004bfb42',1,'vidre::program::argument::parser']]],
+  ['handle_5flua_5ferror_1',['handle_lua_error',['../examples_2core_2script_8cc.html#aeebd02e2e7aa290fc2bc69ac30dd1f51',1,'script.cc']]],
+  ['handler_2',['handler',['../classvidre_1_1log_1_1handler.html#a16054598fa1155445226173f8593970a',1,'vidre::log::handler::handler()=default'],['../classvidre_1_1log_1_1handler.html#a761c3df0d915f45c56fcf3df435d847b',1,'vidre::log::handler::handler(level lvl)']]],
+  ['has_3',['has',['../classvidre_1_1detail_1_1tinymap.html#a8230516fe0c80cad0a590a096c9925a6',1,'vidre::detail::tinymap']]],
+  ['has_5funparsed_4',['has_unparsed',['../classvidre_1_1program_1_1argument_1_1parser.html#a42a8ee66c4db26a1515ed6e4d70f34ab',1,'vidre::program::argument::parser']]],
+  ['header_5',['header',['../classvidre_1_1log_1_1io_1_1file.html#abe199ea37ede9df96f3ada1b80d7b2cb',1,'vidre::log::io::file::header()'],['../classvidre_1_1storage_1_1ccv_1_1header.html#a563ba6929718b668a239b4f6fa29e4c6',1,'vidre::storage::ccv::header::header()=default']]],
+  ['header_5fsize_6',['header_size',['../classvidre_1_1storage_1_1ccv_1_1header.html#a6da300feba79c9fd9cc67d60b5e7653a',1,'vidre::storage::ccv::header::header_size()'],['../classvidre_1_1storage_1_1ccv_1_1header.html#ae035cb86e90e4e8cc96c0c9ad8649900',1,'vidre::storage::ccv::header::header_size(size_t value)']]],
+  ['help_7',['help',['../classvidre_1_1program_1_1argument_1_1parser.html#ae32acbbbc3706663ad64ca630aa66497',1,'vidre::program::argument::parser::help()'],['../examples_2core_2program_8cc.html#ac11030303300c5c57f494e1a11461ad9',1,'help(program::argument::parser &amp;p, variant):&#160;program.cc']]],
+  ['hw_5fdecoder_5finit_8',['hw_decoder_init',['../hw__decode__video_8cc.html#a028fa118aac024a955e2a56e668624d0',1,'hw_decode_video.cc']]]
 ];

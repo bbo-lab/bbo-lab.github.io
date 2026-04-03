@@ -1,16 +1,16 @@
 <map id="Core library" name="Core library">
-<area shape="rect" id="Node000002" href="$group__api.html" title="The C++ application programming interface." alt="" coords="5,277,84,303"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="132,277,231,303"/>
-<area shape="rect" id="Node000011" href="$group__api-core-cpp.html" title=" " alt="" coords="295,5,437,31"/>
-<area shape="rect" id="Node000014" href="$group__api-core-details.html" title=" " alt="" coords="279,55,453,80"/>
-<area shape="rect" id="Node000003" href="$group__api-core-exception.html" title=" " alt="" coords="285,104,447,129"/>
-<area shape="rect" id="Node000004" href="$group__api-core-log.html" title=" " alt="" coords="329,153,403,179"/>
-<area shape="rect" id="Node000005" href="$group__api-core-memory.html" title=" " alt="" coords="328,203,404,228"/>
-<area shape="rect" id="Node000012" href="$group__api-core-os.html" title=" " alt="" coords="319,252,413,277"/>
-<area shape="rect" id="Node000009" href="$group__api-core-plugin.html" title=" " alt="" coords="331,301,401,327"/>
-<area shape="rect" id="Node000013" href="$group__api-core-program.html" title=" " alt="" coords="291,351,441,391"/>
-<area shape="rect" id="Node000006" href="$group__api-core-script.html" title=" " alt="" coords="327,416,405,441"/>
-<area shape="rect" id="Node000007" href="$group__api-core-settings.html" title=" " alt="" coords="329,465,403,491"/>
-<area shape="rect" id="Node000008" href="$group__api-core-storage.html" title=" " alt="" coords="330,515,402,540"/>
-<area shape="rect" id="Node000010" href="$group__api-core-util.html" title=" " alt="" coords="329,564,403,589"/>
+<area shape="rect" id="Node000002" href="$group__api.html" title="The C++ application programming interface." alt="" coords="5,277,80,303"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="128,277,217,303"/>
+<area shape="rect" id="Node000011" href="$group__api-core-cpp.html" title=" " alt="" coords="279,5,405,31"/>
+<area shape="rect" id="Node000014" href="$group__api-core-details.html" title=" " alt="" coords="265,55,419,80"/>
+<area shape="rect" id="Node000003" href="$group__api-core-exception.html" title=" " alt="" coords="267,104,417,129"/>
+<area shape="rect" id="Node000004" href="$group__api-core-log.html" title=" " alt="" coords="309,153,375,179"/>
+<area shape="rect" id="Node000005" href="$group__api-core-memory.html" title=" " alt="" coords="307,203,377,228"/>
+<area shape="rect" id="Node000012" href="$group__api-core-os.html" title=" " alt="" coords="299,252,385,277"/>
+<area shape="rect" id="Node000009" href="$group__api-core-plugin.html" title=" " alt="" coords="309,301,375,327"/>
+<area shape="rect" id="Node000013" href="$group__api-core-program.html" title=" " alt="" coords="275,351,409,391"/>
+<area shape="rect" id="Node000006" href="$group__api-core-script.html" title=" " alt="" coords="305,416,379,441"/>
+<area shape="rect" id="Node000007" href="$group__api-core-settings.html" title=" " alt="" coords="307,465,377,491"/>
+<area shape="rect" id="Node000008" href="$group__api-core-storage.html" title=" " alt="" coords="309,515,375,540"/>
+<area shape="rect" id="Node000010" href="$group__api-core-util.html" title=" " alt="" coords="309,564,375,589"/>
 </map>

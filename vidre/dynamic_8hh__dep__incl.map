@@ -1,13 +1,13 @@
 <map id="libs/core/vidre/plugin/dynamic.hh" name="libs/core/vidre/plugin/dynamic.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="340,5,499,45"/>
-<area shape="rect" id="Node000002" href="$plugin_8hh.html" title=" " alt="" coords="234,101,413,126"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="390,57,338,102,335,98,386,53"/>
-<area shape="rect" id="Node000006" href="$dynamic_8cc.html" title=" " alt="" coords="437,93,596,133"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="453,52,497,91,493,95,449,56"/>
-<area shape="rect" id="Node000003" href="$plugins_8cc.html" title=" " alt="" coords="5,181,212,236"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="286,134,170,184,168,179,284,129"/>
-<area shape="rect" id="Node000004" href="$check_8cc.html" title=" " alt="" coords="236,189,411,229"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="326,140,326,188,321,188,321,140"/>
-<area shape="rect" id="Node000005" href="$midlib2_8cc.html" title=" " alt="" coords="435,189,609,229"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="361,129,483,186,481,191,359,134"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="314,5,455,45"/>
+<area shape="rect" id="Node000002" href="$plugin_8hh.html" title=" " alt="" coords="219,101,377,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="358,57,312,102,308,98,354,53"/>
+<area shape="rect" id="Node000006" href="$dynamic_8cc.html" title=" " alt="" coords="402,93,543,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="416,53,455,91,451,95,412,57"/>
+<area shape="rect" id="Node000003" href="$plugins_8cc.html" title=" " alt="" coords="5,181,196,236"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="263,134,157,184,155,179,260,129"/>
+<area shape="rect" id="Node000004" href="$check_8cc.html" title=" " alt="" coords="220,189,376,229"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="301,140,301,188,295,188,295,140"/>
+<area shape="rect" id="Node000005" href="$midlib2_8cc.html" title=" " alt="" coords="400,189,556,229"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="333,130,443,186,441,191,331,135"/>
 </map>

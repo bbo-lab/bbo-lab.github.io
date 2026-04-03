@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vidre_5fusing_5fdlfcn_0',['VIDRE_USING_DLFCN',['../dynamic_8hh.html#a8068d7afc26eb642fb633fa1ec25bad9',1,'dynamic.hh']]]
+  ['gib_0',['GiB',['../hdspeed_8cc.html#af2e7183354747a6e72ceadd57162d22f',1,'hdspeed.cc']]]
 ];

@@ -5,6 +5,10 @@ var annotated_dup =
     ] ],
     [ "vidre", "namespacevidre.html", [
       [ "detail", "namespacevidre_1_1detail.html", [
+        [ "exception", "namespacevidre_1_1detail_1_1exception.html", [
+          [ "allocator", "structvidre_1_1detail_1_1exception_1_1allocator.html", "structvidre_1_1detail_1_1exception_1_1allocator" ],
+          [ "store", "classvidre_1_1detail_1_1exception_1_1store.html", "classvidre_1_1detail_1_1exception_1_1store" ]
+        ] ],
         [ "tinymap", "classvidre_1_1detail_1_1tinymap.html", "classvidre_1_1detail_1_1tinymap" ]
       ] ],
       [ "ffmpeg", "namespacevidre_1_1ffmpeg.html", [
@@ -66,12 +70,17 @@ var annotated_dup =
         [ "node", "classvidre_1_1settings_1_1node.html", "classvidre_1_1settings_1_1node" ]
       ] ],
       [ "storage", "namespacevidre_1_1storage.html", [
-        [ "ccv", "classvidre_1_1storage_1_1ccv.html", null ],
-        [ "generic", "classvidre_1_1storage_1_1generic.html", "classvidre_1_1storage_1_1generic" ]
+        [ "ccv", "classvidre_1_1storage_1_1ccv.html", "classvidre_1_1storage_1_1ccv" ],
+        [ "fileio", "classvidre_1_1storage_1_1fileio.html", "classvidre_1_1storage_1_1fileio" ],
+        [ "sink", "classvidre_1_1storage_1_1sink.html", "classvidre_1_1storage_1_1sink" ],
+        [ "source", "classvidre_1_1storage_1_1source.html", "classvidre_1_1storage_1_1source" ],
+        [ "view", "classvidre_1_1storage_1_1view.html", "classvidre_1_1storage_1_1view" ],
+        [ "volume", "structvidre_1_1storage_1_1volume.html", null ],
+        [ "volume< std::endian::big >", "structvidre_1_1storage_1_1volume.html", "structvidre_1_1storage_1_1volume" ],
+        [ "volume< std::endian::little >", "structvidre_1_1storage_1_1volume.html", "structvidre_1_1storage_1_1volume" ]
       ] ],
-      [ "exception", "classvidre_1_1exception.html", "classvidre_1_1exception" ],
-      [ "static_error_message", "classvidre_1_1static__error__message.html", "classvidre_1_1static__error__message" ],
-      [ "system_error", "classvidre_1_1system__error.html", "classvidre_1_1system__error" ],
+      [ "bits_of", "structvidre_1_1bits__of.html", "structvidre_1_1bits__of" ],
+      [ "shared", "classvidre_1_1shared.html", "classvidre_1_1shared" ],
       [ "uuid", "classvidre_1_1uuid.html", "classvidre_1_1uuid" ],
       [ "variant", "classvidre_1_1variant.html", "classvidre_1_1variant" ]
     ] ],

@@ -1,12 +1,8 @@
 var searchData=
 [
-  ['valid_0',['valid',['../classvidre_1_1ffmpeg_1_1format_1_1context.html#a587c9f1d56026126db0c0977c528f55d',1,'vidre::ffmpeg::format::context']]],
-  ['variant_1',['variant',['../classvidre_1_1variant.html#aa53017f6399cfc60756b8cb1b3ee92c4',1,'vidre::variant::variant()=default'],['../classvidre_1_1variant.html#a8cfba7e34c53daf5a37450c5baa0f3d8',1,'vidre::variant::variant(variant &amp;&amp;other)=default'],['../classvidre_1_1variant.html#ab908d45955bdd9eda4e5c856a85ae419',1,'vidre::variant::variant(const variant &amp;other)=default'],['../classvidre_1_1variant.html#a2e91d5be779e55dff9b22a5ad0c4fa01',1,'vidre::variant::variant(unsigned long v) noexcept'],['../classvidre_1_1variant.html#a0f14c66fe6a986a6d96c5e0433b28353',1,'vidre::variant::variant(unsigned int v) noexcept'],['../classvidre_1_1variant.html#a149985363712ea37b74a9f952fede4e7',1,'vidre::variant::variant(unsigned short v) noexcept'],['../classvidre_1_1variant.html#a4f195681629a71c017c95e7cf6aba70a',1,'vidre::variant::variant(long v) noexcept'],['../classvidre_1_1variant.html#a1b4f3590748a6f0904e7a685b5b27243',1,'vidre::variant::variant(int v) noexcept'],['../classvidre_1_1variant.html#a99d4d38ceb396bb2181d7fc45d543446',1,'vidre::variant::variant(short v) noexcept'],['../classvidre_1_1variant.html#ab6b7b9a68f497fa0c14db5d6d7f18e16',1,'vidre::variant::variant(double v) noexcept'],['../classvidre_1_1variant.html#a621f5cad28dcabf24536320a4046db5f',1,'vidre::variant::variant(const char *v) noexcept'],['../classvidre_1_1variant.html#a73faa9e8b0ef32f17fc728c0b5596892',1,'vidre::variant::variant(const std::string &amp;v) noexcept']]],
-  ['version_2',['version',['../examples_2core_2program_8cc.html#a963f147bd27a99d3e0e18a4ee91be179',1,'program.cc']]],
-  ['vidre_5flua_5finit_3',['vidre_lua_init',['../src_2libs_2core_2vidre_2script_8cc.html#aff382720fd92df795bf75ba664d30744',1,'script.cc']]],
-  ['vidre_5flua_5fpanic_4',['vidre_lua_panic',['../src_2libs_2core_2vidre_2script_8cc.html#a14b9185bfb4c56eb4affd2f72f497f73',1,'script.cc']]],
-  ['vidre_5fmodule_5',['VIDRE_MODULE',['../midlib2_8cc.html#a8583011af4cd0a13cd4a0e2a1dd5c0b7',1,'midlib2.cc']]],
-  ['vidre_5fplugin_6',['vidre_plugin',['../midlib2_8cc.html#abc1338525d7d28e449e0b079d83fc34c',1,'midlib2.cc']]],
-  ['vidre_5fpreload_7',['vidre_preload',['../check_8cc.html#a254aa0383a5f9ec88ccf7ebb353d243d',1,'check.cc']]],
-  ['vidre_5fuse_5ffret_8',['vidre_use_fret',['../src_2libs_2core_2vidre_2log_8cc.html#a7a931c16bb0fa14f4685dbf575f6ae37',1,'log.cc']]]
+  ['unique_0',['unique',['../classvidre_1_1shared.html#a062fd97dcbaa91f984d53fbfc5d4ae67',1,'vidre::shared']]],
+  ['unparsed_1',['unparsed',['../classvidre_1_1program_1_1argument_1_1parser.html#a8c9277e395c73b526d36c3e2a305e0a3',1,'vidre::program::argument::parser']]],
+  ['unref_2',['unref',['../classvidre_1_1settings_1_1node.html#a46c04863502e2539085096e14bddc02d',1,'vidre::settings::node']]],
+  ['use_5fcount_3',['use_count',['../classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe',1,'vidre::shared']]],
+  ['uuid_4',['uuid',['../classvidre_1_1uuid.html#aab52f5f7d26380e10c8300f6fff22245',1,'vidre::uuid::uuid()=default'],['../classvidre_1_1uuid.html#afa3f6b85d01f44f2a110746e6892b958',1,'vidre::uuid::uuid(const std::string &amp;s)'],['../classvidre_1_1uuid.html#ab6b8559236da9a26dd52b499391bb3f8',1,'vidre::uuid::uuid(const detail::uuid_t &amp;u) noexcept']]]
 ];

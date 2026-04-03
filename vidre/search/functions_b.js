@@ -1,18 +1,12 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;main.cc'],['../examples_2core_2develop_8cc.html#a217dbf8b442f20279ea00b898af96f52',1,'main(int argc, const char **argv):&#160;develop.cc'],['../examples_2core_2log_8cc.html#a217dbf8b442f20279ea00b898af96f52',1,'main(int argc, const char **argv):&#160;log.cc'],['../os_8cc.html#a0fc34f49b0e6eaed5e5c3accb409b1d1',1,'main(int, const char **):&#160;os.cc'],['../plugins_8cc.html#a217dbf8b442f20279ea00b898af96f52',1,'main(int argc, const char **argv):&#160;plugins.cc'],['../examples_2core_2program_8cc.html#a217dbf8b442f20279ea00b898af96f52',1,'main(int argc, const char **argv):&#160;program.cc'],['../examples_2core_2script_8cc.html#a0fc34f49b0e6eaed5e5c3accb409b1d1',1,'main(int, const char **):&#160;script.cc'],['../examples_2core_2settings_8cc.html#a0fc34f49b0e6eaed5e5c3accb409b1d1',1,'main(int, const char **):&#160;settings.cc'],['../examples_2core_2uuid_8cc.html#a217dbf8b442f20279ea00b898af96f52',1,'main(int argc, const char **argv):&#160;uuid.cc'],['../aptina_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;aptina.cc'],['../decode__video_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;decode_video.cc'],['../hw__decode__video_8cc.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;hw_decode_video.cc']]],
-  ['make_1',['make',['../classvidre_1_1uuid.html#a8787c0e6688cf56bc97290ad70c3ce20',1,'vidre::uuid']]],
-  ['make_5ferror_5fcode_2',['make_error_code',['../group__api-support-ffmpeg-util-error.html#ga6c27ee65ab618eda5a7b630cef6f789b',1,'vidre::ffmpeg::make_error_code(ffmpeg::errc e)'],['../group__api-support-ffmpeg-util-error.html#ga97308b8af80edcafa4c7c79f9c0a642c',1,'vidre::ffmpeg::make_error_code(int e)']]],
-  ['make_5fwritable_3',['make_writable',['../classvidre_1_1ffmpeg_1_1frame.html#a302397fdbe78d4f3f583851ff2db3a4c',1,'vidre::ffmpeg::frame']]],
-  ['makemd5_4',['makeMD5',['../classvidre_1_1uuid.html#a4f6fe04ce51c2ccfdc4227d5258bf31f',1,'vidre::uuid']]],
-  ['makepath_5',['makepath',['../src_2libs_2core_2vidre_2script_8cc.html#a2d5456983b047597ebe9e7beb140df04',1,'script.cc']]],
-  ['makerandom_6',['makeRandom',['../classvidre_1_1uuid.html#a56719949cecad3eaeacf06bf4a4c3978',1,'vidre::uuid']]],
-  ['makesha1_7',['makeSHA1',['../classvidre_1_1uuid.html#a10a5ee540b68cdfcf6751517eec9f257',1,'vidre::uuid']]],
-  ['maketime_8',['makeTime',['../classvidre_1_1uuid.html#a89f0b020b55fdedda6741c75b27cef6e',1,'vidre::uuid']]],
-  ['maketimesafe_9',['makeTimeSafe',['../classvidre_1_1uuid.html#a0565a662ac8b625852cd7b547f8ffad9',1,'vidre::uuid']]],
-  ['message_10',['message',['../structvidre_1_1ffmpeg_1_1error__category.html#a58e9d9f2e8e2ae4d38dff1aafba3d09f',1,'vidre::ffmpeg::error_category']]],
-  ['mi_5flog_5fdebug_11',['mi_log_debug',['../aptina_8cc.html#a0443ab04fd24eec44ebdc49330b62ec0',1,'aptina.cc']]],
-  ['mi_5flog_5ferror_12',['mi_log_error',['../aptina_8cc.html#a9e637bacc6e9a897210b576485b4444d',1,'aptina.cc']]],
-  ['mi_5flog_5finfo_13',['mi_log_info',['../aptina_8cc.html#a3112769fb3e31ba1613424a8d6c84cb9',1,'aptina.cc']]],
-  ['midraw_14',['midraw',['../classvidre_1_1input_1_1midraw.html#aa36c6a4ab31cf5ce878b049fbe0b817e',1,'vidre::input::midraw::midraw() noexcept=default'],['../classvidre_1_1input_1_1midraw.html#a197cb9708a4df1fd33204dfb3f0f9009',1,'vidre::input::midraw::midraw(const std::filesystem::path &amp;filename) noexcept']]]
+  ['level1_0',['level1',['../examples_2core_2log_8cc.html#ad9a0191b10b336d911295dacced2c042',1,'log.cc']]],
+  ['level2_1',['level2',['../examples_2core_2log_8cc.html#a1bb2dd2a07faa1139bb485a1c81218f5',1,'log.cc']]],
+  ['level3_2',['level3',['../examples_2core_2log_8cc.html#ae8db1b1d88fef9504b6da9273677fc5d',1,'log.cc']]],
+  ['library_3',['library',['../classvidre_1_1plugin_1_1dynamic_1_1library.html#a39e4a65b3d36a345f6a326e948a22dd1',1,'vidre::plugin::dynamic::library::library()=default'],['../classvidre_1_1plugin_1_1dynamic_1_1library.html#ae8a94f45c6a7b27cf517673d8b868fbe',1,'vidre::plugin::dynamic::library::library(const char *path, mode flags=mode::lazy)'],['../classvidre_1_1plugin_1_1dynamic_1_1library.html#a706e9d607037065677ff7963e7cc81e0',1,'vidre::plugin::dynamic::library::library(const std::string &amp;path, mode flags=mode::lazy)'],['../classvidre_1_1plugin_1_1dynamic_1_1library.html#a69548174923673a9bb53a589c0e9b547',1,'vidre::plugin::dynamic::library::library(const library &amp;other)=delete'],['../classvidre_1_1plugin_1_1dynamic_1_1library.html#a15668b164215d5ee52c5fd9c76923b6d',1,'vidre::plugin::dynamic::library::library(library &amp;&amp;other)=delete']]],
+  ['line_4',['line',['../classvidre_1_1log_1_1trace.html#addc649fd66eec3fe4ae91fcac5c38781',1,'vidre::log::trace']]],
+  ['load_5',['load',['../classvidre_1_1plugin_1_1dynamic.html#aaf74b9499e7a7596b7f03ce19d44c42e',1,'vidre::plugin::dynamic::load()'],['../classvidre_1_1settings_1_1file.html#aa1fd6a11a76652bbc47e02f8801ed561',1,'vidre::settings::file::load()']]],
+  ['loadfile_6',['loadfile',['../group__api-core-util-filesystem.html#gad987b505f807a7cdc050d2f8836659a4',1,'vidre']]],
+  ['log_5flevel_7',['log_level',['../examples_2core_2program_8cc.html#a43b9c10e529c4f34db26d087c11c5bba',1,'program.cc']]],
+  ['longquote_8',['longquote',['../src_2libs_2core_2vidre_2settings_8cc.html#a343093ec128d431c26530e3a2e7feeba',1,'settings.cc']]]
 ];

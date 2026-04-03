@@ -1,10 +1,10 @@
 <map id="plugins/camera/onsemi/midlib2/vidre/onsemi/midlib2/config.hh" name="plugins/camera/onsemi/midlib2/vidre/onsemi/midlib2/config.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="104,5,279,60"/>
-<area shape="rect" id="Node000002" href="$midlib2_8hh.html" title=" " alt="" coords="5,108,180,163"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,72,120,110,117,106,154,68"/>
-<area shape="rect" id="Node000004" href="$types_8hh.html" title=" " alt="" coords="204,108,379,163"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="229,68,267,106,263,110,225,72"/>
-<area shape="rect" id="Node000003" href="$vidre_2onsemi_2midlib2_8cc.html" title=" " alt="" coords="104,211,279,265"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="130,171,167,209,164,212,126,175"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="257,175,219,212,216,209,253,171"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="95,5,251,60"/>
+<area shape="rect" id="Node000002" href="$midlib2_8hh.html" title=" " alt="" coords="5,108,161,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,72,109,110,105,106,138,69"/>
+<area shape="rect" id="Node000004" href="$types_8hh.html" title=" " alt="" coords="185,108,341,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="208,69,242,106,238,110,204,72"/>
+<area shape="rect" id="Node000003" href="$vidre_2onsemi_2midlib2_8cc.html" title=" " alt="" coords="95,211,251,265"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,171,151,209,147,212,114,175"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="232,175,198,212,194,209,228,171"/>
 </map>

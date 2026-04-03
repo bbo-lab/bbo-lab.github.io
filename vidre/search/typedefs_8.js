@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['throw_5fmessage_0',['throw_message',['../group__api-core-exception.html#ga9e67ae9ac7b922375331a8434c12cc33',1,'vidre']]],
-  ['type_1',['type',['../structvidre_1_1variant_1_1deduce.html#a4ed6a4cf1683003b6a9af95035198970',1,'vidre::variant::deduce']]]
+  ['other_0',['other',['../structvidre_1_1detail_1_1exception_1_1allocator_1_1rebind.html#a866bac8ab9560878ad8a98198b1e7207',1,'vidre::detail::exception::allocator::rebind']]]
 ];
