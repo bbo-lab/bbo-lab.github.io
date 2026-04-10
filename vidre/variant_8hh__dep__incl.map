@@ -1,9 +1,11 @@
 <map id="libs/core/vidre/util/variant.hh" name="libs/core/vidre/util/variant.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="141,5,265,45"/>
-<area shape="rect" id="Node000002" href="$program_8hh.html" title=" " alt="" coords="117,93,289,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,59,206,93,201,93,201,59"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="293,5,417,45"/>
+<area shape="rect" id="Node000002" href="$program_8hh.html" title=" " alt="" coords="269,93,441,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="358,59,358,93,353,93,353,59"/>
 <area shape="rect" id="Node000003" href="$examples_2core_2program_8cc.html" title=" " alt="" coords="5,167,196,221"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="181,129,134,169,130,165,177,125"/>
-<area shape="rect" id="Node000004" href="$src_2libs_2core_2vidre_2program_8cc.html" title=" " alt="" coords="220,181,392,207"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="230,126,293,179,290,183,226,130"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="309,126,179,169,177,164,307,121"/>
+<area shape="rect" id="Node000004" href="$examples_2playground_2uvc_8cc.html" title=" " alt="" coords="220,174,491,214"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="358,132,358,174,353,174,353,132"/>
+<area shape="rect" id="Node000005" href="$src_2libs_2core_2vidre_2program_8cc.html" title=" " alt="" coords="515,181,687,207"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="402,121,569,179,567,184,400,126"/>
 </map>

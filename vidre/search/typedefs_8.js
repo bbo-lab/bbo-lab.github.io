@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['other_0',['other',['../structvidre_1_1detail_1_1exception_1_1allocator_1_1rebind.html#a866bac8ab9560878ad8a98198b1e7207',1,'vidre::detail::exception::allocator::rebind']]]
+  ['length_5ftype_0',['length_type',['../group__api-core-storage-raw.html#ga26567d04ddc408802501d7cfc193175e',1,'vidre::storage::raw']]],
+  ['list_1',['list',['../group__api-device-basics.html#gad0a10c8a1950715442b5d0dcd8a46a03',1,'vidre::device']]]
 ];

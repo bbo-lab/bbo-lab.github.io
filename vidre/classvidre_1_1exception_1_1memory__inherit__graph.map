@@ -1,0 +1,11 @@
+<map id="vidre::exception::memory" name="vidre::exception::memory">
+<area shape="rect" id="Node000001" title="Out&#45;of&#45;memory error." alt="" coords="5,313,175,339"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1exception_1_1runtime.html" title="Runtime exception." alt="" coords="7,240,173,265"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,279,93,313,87,313,87,279"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1exception.html" title="General exception." alt="" coords="33,167,147,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,206,93,240,87,240,87,206"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1error_1_1info.html" title="Base class for supplemental exception info." alt="" coords="33,93,147,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="93,132,93,167,87,167,87,132"/>
+<area shape="rect" id="Node000005" href="$classvidre_1_1detail_1_1exception_1_1supplement.html" title="Supplemental information for exceptions." alt="" coords="13,5,167,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="93,59,93,93,87,93,87,59"/>
+</map>

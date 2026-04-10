@@ -144,7 +144,7 @@ $(function(){initNavTree('examples_2core_2program_8cc-example.html',''); initRes
 <div class="line">    <a class="code hl_function" href="classvidre_1_1log_1_1io_1_1stream.html#a9328d4564fc9039d64c81e77b24bf83e">log::io::stream::threshold</a>(0, <a class="code hl_enumvalue" href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182">log::level::trace</a>);</div>
 <div class="line">    <a class="code hl_function" href="classvidre_1_1log_1_1trace.html#ab6eaf9fc74f5299a6250ac8110e1ba53">log::trace::pattern</a>(<span class="stringliteral">&quot;*&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">    {</div>
+<div class="line">    <span class="keywordflow">try</span> {</div>
 <div class="line">        <a id="_a7" name="_a7"></a><a class="code hl_class" href="classvidre_1_1program_1_1options.html">program::options</a> args(  <span class="comment">//</span></div>
 <div class="line">            <span class="stringliteral">&quot;Example program&quot;</span>,  <span class="comment">//</span></div>
 <div class="line">            <span class="stringliteral">&quot;Copyright (C) 2024-2026 MPI f. Neurobiol. of Behavior—ceasar, Bonn, Germany&quot;</span>,</div>
@@ -162,15 +162,20 @@ $(function(){initNavTree('examples_2core_2program_8cc-example.html',''); initRes
 <div class="line">        parser.parse(argc, argv);</div>
 <div class="line"> </div>
 <div class="line">        parser.show();</div>
+<div class="line">    } <span class="keywordflow">catch</span> (<a id="_a9" name="_a9"></a><a class="code hl_class" href="classvidre_1_1exception.html">exception</a> &amp;e) {</div>
+<div class="line">        std::cerr &lt;&lt; <a id="_a10" name="_a10"></a><a class="code hl_class" href="classvidre_1_1error_1_1diagnostic.html">error::diagnostic</a>(e).<a id="a11" name="a11"></a><a class="code hl_function" href="classvidre_1_1error_1_1diagnostic.html#abca44c8dd955665ff5f9b8b26bad88a4">dump</a>() &lt;&lt; std::endl;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="line"></div>
+<div class="ttc" id="aclassvidre_1_1error_1_1diagnostic_html"><div class="ttname"><a href="classvidre_1_1error_1_1diagnostic.html">vidre::error::diagnostic</a></div><div class="ttdoc">Exception diagnostic.</div><div class="ttdef"><b>Definition</b> exception.hh:434</div></div>
+<div class="ttc" id="aclassvidre_1_1error_1_1diagnostic_html_abca44c8dd955665ff5f9b8b26bad88a4"><div class="ttname"><a href="classvidre_1_1error_1_1diagnostic.html#abca44c8dd955665ff5f9b8b26bad88a4">vidre::error::diagnostic::dump</a></div><div class="ttdeci">string dump() noexcept</div><div class="ttdef"><b>Definition</b> exception.cc:136</div></div>
+<div class="ttc" id="aclassvidre_1_1exception_html"><div class="ttname"><a href="classvidre_1_1exception.html">vidre::exception</a></div><div class="ttdoc">General exception.</div><div class="ttdef"><b>Definition</b> exception.hh:349</div></div>
 <div class="ttc" id="aclassvidre_1_1log_1_1io_1_1stream_html_a9328d4564fc9039d64c81e77b24bf83e"><div class="ttname"><a href="classvidre_1_1log_1_1io_1_1stream.html#a9328d4564fc9039d64c81e77b24bf83e">vidre::log::io::stream::threshold</a></div><div class="ttdeci">static level threshold(unsigned chanid) noexcept</div><div class="ttdoc">Get threshold.</div><div class="ttdef"><b>Definition</b> log.cc:69</div></div>
 <div class="ttc" id="aclassvidre_1_1log_1_1trace_html_ab6eaf9fc74f5299a6250ac8110e1ba53"><div class="ttname"><a href="classvidre_1_1log_1_1trace.html#ab6eaf9fc74f5299a6250ac8110e1ba53">vidre::log::trace::pattern</a></div><div class="ttdeci">static void pattern(std::string_view pat)</div><div class="ttdoc">Set wildcard pattern (what to trace).</div></div>
 <div class="ttc" id="aclassvidre_1_1program_1_1argument_1_1parser_html"><div class="ttname"><a href="classvidre_1_1program_1_1argument_1_1parser.html">vidre::program::argument::parser</a></div><div class="ttdoc">Argument parser.</div><div class="ttdef"><b>Definition</b> program.hh:323</div></div>
-<div class="ttc" id="aclassvidre_1_1program_1_1argument_1_1parser_html_ae32acbbbc3706663ad64ca630aa66497"><div class="ttname"><a href="classvidre_1_1program_1_1argument_1_1parser.html#ae32acbbbc3706663ad64ca630aa66497">vidre::program::argument::parser::help</a></div><div class="ttdeci">std::string help()</div><div class="ttdoc">Create a help string.</div><div class="ttdef"><b>Definition</b> program.cc:254</div></div>
+<div class="ttc" id="aclassvidre_1_1program_1_1argument_1_1parser_html_ae32acbbbc3706663ad64ca630aa66497"><div class="ttname"><a href="classvidre_1_1program_1_1argument_1_1parser.html#ae32acbbbc3706663ad64ca630aa66497">vidre::program::argument::parser::help</a></div><div class="ttdeci">std::string help()</div><div class="ttdoc">Create a help string.</div><div class="ttdef"><b>Definition</b> program.cc:250</div></div>
 <div class="ttc" id="aclassvidre_1_1program_1_1options_html"><div class="ttname"><a href="classvidre_1_1program_1_1options.html">vidre::program::options</a></div><div class="ttdoc">Program options.</div><div class="ttdef"><b>Definition</b> program.hh:288</div></div>
 <div class="ttc" id="aclassvidre_1_1variant_html"><div class="ttname"><a href="classvidre_1_1variant.html">vidre::variant</a></div><div class="ttdoc">A simple variant.</div><div class="ttdef"><b>Definition</b> variant.hh:44</div></div>
 <div class="ttc" id="aexamples_2core_2program_8cc_html_a43b9c10e529c4f34db26d087c11c5bba"><div class="ttname"><a href="examples_2core_2program_8cc.html#a43b9c10e529c4f34db26d087c11c5bba">log_level</a></div><div class="ttdeci">void log_level(program::argument::parser &amp;, variant value)</div><div class="ttdoc">[argument-callbacks]</div><div class="ttdef"><b>Definition</b> program.cc:20</div></div>

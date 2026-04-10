@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['node_0',['node',['../classvidre_1_1settings_1_1node.html',1,'vidre::settings']]],
-  ['notice_1',['notice',['../classvidre_1_1log_1_1notice.html',1,'vidre::log']]],
-  ['null_2',['null',['../classvidre_1_1log_1_1null.html',1,'vidre::log']]]
+  ['memory_0',['memory',['../classvidre_1_1exception_1_1memory.html',1,'vidre::exception::memory'],['../structvidre_1_1os_1_1memory.html',1,'vidre::os::memory']]],
+  ['message_1',['message',['../classvidre_1_1error_1_1message.html',1,'vidre::error']]],
+  ['midraw_2',['midraw',['../classvidre_1_1input_1_1midraw.html',1,'vidre::input']]]
 ];

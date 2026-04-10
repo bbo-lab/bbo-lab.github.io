@@ -1,0 +1,11 @@
+<map id="vidre::storage::raw::entry" name="vidre::storage::raw::entry">
+<area shape="rect" id="Node000001" title="Generic TLV item." alt="" coords="83,5,213,45"/>
+<area shape="rect" id="Node000002" href="$structvidre_1_1storage_1_1raw_1_1integer.html" title=" " alt="" coords="5,93,136,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,57,90,95,86,91,120,54"/>
+<area shape="rect" id="Node000003" href="$structvidre_1_1storage_1_1raw_1_1sequence.html" title="Sequence of TLV entries." alt="" coords="160,93,291,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,54,210,91,206,95,172,57"/>
+<area shape="rect" id="Node000004" href="$structvidre_1_1storage_1_1raw_1_1group.html" title="Group of TLV entries." alt="" coords="160,181,291,221"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="228,147,228,181,223,181,223,147"/>
+<area shape="rect" id="Node000005" href="$structvidre_1_1storage_1_1raw_1_1header.html" title="The file header." alt="" coords="160,269,291,309"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="228,235,228,269,223,269,223,235"/>
+</map>

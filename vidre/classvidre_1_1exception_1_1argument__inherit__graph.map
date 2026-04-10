@@ -1,0 +1,11 @@
+<map id="vidre::exception::argument" name="vidre::exception::argument">
+<area shape="rect" id="Node000001" title="Argument error." alt="" coords="5,313,181,339"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1exception_1_1runtime.html" title="Runtime exception." alt="" coords="11,240,176,265"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,279,96,313,91,313,91,279"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1exception.html" title="General exception." alt="" coords="36,167,151,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,206,96,240,91,240,91,206"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1error_1_1info.html" title="Base class for supplemental exception info." alt="" coords="37,93,150,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="96,132,96,167,91,167,91,132"/>
+<area shape="rect" id="Node000005" href="$classvidre_1_1detail_1_1exception_1_1supplement.html" title="Supplemental information for exceptions." alt="" coords="17,5,170,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="96,59,96,93,91,93,91,59"/>
+</map>

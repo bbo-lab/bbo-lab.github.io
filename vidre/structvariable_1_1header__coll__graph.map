@@ -1,0 +1,31 @@
+<map id="variable::header" name="variable::header">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1195,133,1309,159"/>
+<area shape="rect" id="Node000002" href="$structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html" title="Sequence of TLV entries." alt="" coords="1005,89,1145,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1159,124,1195,131,1194,136,1158,129"/>
+<area shape="rect" id="Node000003" href="$structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html" title="Base class for dynamic elements." alt="" coords="443,74,577,114"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="591,86,613,85,798,78,878,81,982,91,1006,94,1005,100,981,97,878,87,798,83,613,90,591,91"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="695,97,851,152"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="591,101,695,113,694,118,590,106"/>
+<area shape="rect" id="Node000007" href="$structvariable_1_1index.html" title="[dynamic&#45;elements]" alt="" coords="875,5,981,31"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="552,65,581,50,613,38,682,23,754,15,874,13,875,18,754,21,683,28,614,43,583,55,555,69"/>
+<area shape="rect" id="Node000008" href="$structvariable_1_1geometry.html" title=" " alt="" coords="708,232,837,257"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="560,119,624,156,672,188,684,200,696,212,732,230,730,234,693,216,681,204,669,192,621,161,557,123"/>
+<area shape="rect" id="Node000012" href="$structvariable_1_1timestamp.html" title=" " alt="" coords="705,176,841,201"/>
+<area shape="poly" id="edge15_Node000012_Node000003" title=" " alt="" coords="574,117,696,162,730,173,728,178,694,167,572,122"/>
+<area shape="rect" id="Node000004" href="$structvidre_1_1storage_1_1raw_1_1prefix.html" title="The &quot;TL&quot; prefix." alt="" coords="209,74,339,114"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="353,91,443,91,443,97,353,97"/>
+<area shape="rect" id="Node000005" href="$structvidre_1_1storage_1_1raw_1_1id.html" title="The &quot;T&quot; type." alt="" coords="5,81,153,107"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="167,91,209,91,209,97,167,97"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="864,117,1005,110,1005,115,865,122"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="995,28,1069,46,1146,74,1197,103,1236,131,1233,135,1194,107,1144,79,1067,51,994,33"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="851,241,990,231,1068,219,1144,199,1192,179,1230,157,1233,161,1194,184,1146,205,1069,224,990,236,852,247"/>
+<area shape="rect" id="Node000009" href="$structvidre_1_1video_1_1geometry.html" title="Geometry." alt="" coords="435,243,585,268"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="599,250,671,247,708,246,708,251,671,253,599,255"/>
+<area shape="rect" id="Node000010" href="$structvidre_1_1video_1_1position.html" title="Position." alt="" coords="203,217,345,243"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="359,236,435,245,434,250,359,242"/>
+<area shape="rect" id="Node000011" href="$structvidre_1_1video_1_1size.html" title="Size." alt="" coords="213,267,335,292"/>
+<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="348,269,434,260,435,266,349,274"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="854,186,991,181,1145,167,1202,156,1203,161,1146,173,991,187,854,191"/>
+<area shape="rect" id="Node000013" href="$structvidre_1_1video_1_1timestamp.html" title="Timestamp." alt="" coords="431,193,589,219"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="603,197,704,190,705,196,603,203"/>
+</map>

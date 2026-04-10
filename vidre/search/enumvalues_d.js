@@ -20,5 +20,6 @@ var searchData=
   ['p416le_17',['p416le',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ae5da592ec2e7fabfa85bc58fe528525b',1,'vidre::ffmpeg']]],
   ['pal8_18',['pal8',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a87fc96d1799c38c69b0a0a56d74f8ed4',1,'vidre::ffmpeg']]],
   ['plain_19',['plain',['../structvidre_1_1log_1_1io_1_1style.html#a7d9725faa7d08f7538d1993e66fa8c2da37e350d1fce7343bdc395aea91dc2c21',1,'vidre::log::io::style']]],
-  ['positional_20',['positional',['../structvidre_1_1program_1_1argument.html#ac90264a2e4fed1f3f173b8756dec6d92a7f93b1075b3b7fab8063e6cb999b76be',1,'vidre::program::argument']]]
+  ['positional_20',['positional',['../structvidre_1_1program_1_1argument.html#ac90264a2e4fed1f3f173b8756dec6d92a7f93b1075b3b7fab8063e6cb999b76be',1,'vidre::program::argument']]],
+  ['punch_5fhole_21',['punch_hole',['../classvidre_1_1storage_1_1fileio.html#ac27d12f8230081a633fb5e2bb79744f1a0dbd480cedad09bbabd8e07d7e3abdd3',1,'vidre::storage::fileio::punch_hole'],['../group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4ab6059b4778a4ba38b2f12280f3795f9a',1,'vidre::detail::file::punch_hole']]]
 ];

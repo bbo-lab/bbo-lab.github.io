@@ -147,213 +147,249 @@ $(function(){initNavTree('util_2shared_8hh_source.html',''); initResizable(true)
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a> {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Allocator = std::allocator&lt;T&gt;&gt;</div>
-<div class="foldopen" id="foldopen00143" data-start="{" data-end="};">
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html">  143</a></span>    <span class="keyword">class </span><a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> {</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keyword">struct </span>counted_object {</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            std::atomic&lt;size_t&gt; strong_count;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            std::atomic&lt;size_t&gt; weak_count;  <span class="comment">// currently unused, would allow a weak implementation</span></div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            T object;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            counted_object(Args &amp;&amp;...args) : strong_count(1), weak_count(0), object(std::forward&lt;Args&gt;(args)...) {}</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        };</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a> {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Allocator = std::allocator&lt;T&gt;&gt;</div>
+<div class="foldopen" id="foldopen00146" data-start="{" data-end="};">
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html">  146</a></span>    <span class="keyword">class </span><a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a432afa4a4a8e74142093be94c1a9603e">  148</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="classvidre_1_1shared.html#a432afa4a4a8e74142093be94c1a9603e">allocator_type</a> = Allocator;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keyword">struct </span>counted_object {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            std::atomic&lt;size_t&gt; strong_count;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            std::atomic&lt;size_t&gt; weak_count;  <span class="comment">// currently unused, would allow a weak implementation</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            T *object;</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keyword">using </span>CountedObjectAllocator = <span class="keyword">typename</span> std::allocator_traits&lt;Allocator&gt;::template rebind_alloc&lt;counted_object&gt;;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        Allocator allocator;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            counted_object(T *ptr) : strong_count(1), weak_count(0), object(ptr) {}</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        };</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        counted_object *object_{};</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keyword">using </span>CountedObjectAllocator = <span class="keyword">typename</span> std::allocator_traits&lt;Allocator&gt;::template rebind_alloc&lt;counted_object&gt;;</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="comment">// Helper to destroy the counted object</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordtype">void</span> destroy_counted_object() <span class="keyword">noexcept</span> {</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="keywordflow">if</span> (object_) {</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                <span class="comment">// Manually destroy the object and counted object</span></div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                object_-&gt;object.~T();</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                object_-&gt;~counted_object();</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                <span class="comment">// Deallocate memory using the allocator</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                CountedObjectAllocator counted_object_allocator(allocator);</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                counted_object_allocator.deallocate(object_, 1);</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            }</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        }</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        counted_object *object_{};</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        Allocator allocator{};</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        std::function&lt;void(T *)&gt; deleter;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="comment">// Helper to destroy the counted object</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="keywordtype">void</span> destroy_counted_object() noexcept {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="keywordflow">if</span> (object_) {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                <span class="comment">// Manually destroy the object and counted object</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                deleter(object_-&gt;object);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                object_-&gt;~counted_object();</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="foldopen" id="foldopen00176" data-start="{" data-end="}">
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">  176</a></span>        <span class="keyword">explicit</span> <a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a>(Args &amp;&amp;...args) : allocator() {</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            <span class="comment">// Allocate memory for counted object using rebound allocator</span></div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            CountedObjectAllocator counted_object_allocator(allocator);</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            object_ = counted_object_allocator.allocate(1);</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            <span class="comment">// Construct counted object in-place</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            <span class="keyword">new</span> (object_) counted_object(std::forward&lt;Args&gt;(args)...);</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        }</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                <span class="comment">// Deallocate memory using the allocator</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                CountedObjectAllocator counted_object_allocator(allocator);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                counted_object_allocator.deallocate(object_, 1);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordtype">void</span> release() noexcept {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            <span class="keywordflow">if</span> (!object_)</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            <span class="comment">// Decrement strong count</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            <span class="keywordtype">size_t</span> old_count = object_-&gt;strong_count.fetch_sub(1, std::memory_order_acq_rel);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            <span class="keywordflow">if</span> (old_count == 1) {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                <span class="comment">// No more strong references, destroy the object</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                destroy_counted_object();</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        }</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">  194</a></span>        <a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a>() noexcept {}</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="foldopen" id="foldopen00196" data-start="{" data-end="}">
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#acd2a98110a57d97ed04ccb60d0f3c578">  196</a></span>        <a class="code hl_function" href="classvidre_1_1shared.html#acd2a98110a57d97ed04ccb60d0f3c578">shared</a>(T *ptr) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            deleter = [allocator = allocator](T *ptr) <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                ptr-&gt;~T();</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                allocator.deallocate(ptr, 1);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            };</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            CountedObjectAllocator counted_object_allocator(allocator);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            object_ = counted_object_allocator.allocate(1);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            <span class="keyword">new</span> (object_) counted_object(ptr);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        }</div>
 </div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
-<div class="foldopen" id="foldopen00185" data-start="{" data-end="}">
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a53ef4df0ea91c893a03220625ac340c2">  185</a></span>        <a class="code hl_function" href="classvidre_1_1shared.html#a53ef4df0ea91c893a03220625ac340c2">shared</a>(<span class="keyword">const</span> <a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> &amp;other) noexcept : object_(other.object_), allocator(other.allocator) {</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            <span class="keywordflow">if</span> (object_) {</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                object_-&gt;strong_count.fetch_add(1, std::memory_order_relaxed);</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            }</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        }</div>
-</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="foldopen" id="foldopen00191" data-start="{" data-end="}">
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a25b4c3eda20604929d218e76a856bdb7">  191</a></span>        <a class="code hl_function" href="classvidre_1_1shared.html#a25b4c3eda20604929d218e76a856bdb7">shared</a>(<a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> &amp;&amp;other) noexcept : object_(other.object_), allocator(std::move(other.allocator)) {</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            other.object_ = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        }</div>
-</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="foldopen" id="foldopen00195" data-start="{" data-end="}">
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#aa093a347858d436ca6e5c712afdd0a73">  195</a></span>        <a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> &amp;<a class="code hl_function" href="classvidre_1_1shared.html#aa093a347858d436ca6e5c712afdd0a73">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> &amp;other) <span class="keyword">noexcept</span> {</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other) {</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                <span class="comment">// Decrement current reference</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                release();</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                <span class="comment">// Copy other</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                object_ = other.object_;</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                allocator = other.allocator;</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                <span class="keywordflow">if</span> (object_) {</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                    object_-&gt;strong_count.fetch_add(1, std::memory_order_relaxed);</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                }</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            }</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        }</div>
-</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="foldopen" id="foldopen00211" data-start="{" data-end="}">
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a866641a40b835e3442496fd75ec04a5b">  211</a></span>        <a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> &amp;<a class="code hl_function" href="classvidre_1_1shared.html#a866641a40b835e3442496fd75ec04a5b">operator=</a>(<a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> &amp;&amp;other) <span class="keyword">noexcept</span> {</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other) {</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                release();</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="keyword">template</span> &lt;<span class="keyword">class</span> Y, <span class="keyword">class</span> Deleter&gt;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        <span class="keyword">requires</span> std::derived_from&lt;Y, T&gt;</div>
+<div class="foldopen" id="foldopen00210" data-start="{" data-end="}">
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a1e1cd7725321c266f38483a9b50d61c3">  210</a></span>        <a class="code hl_function" href="classvidre_1_1shared.html#a1e1cd7725321c266f38483a9b50d61c3">shared</a>(Y *ptr, Deleter d) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            deleter = [d = std::move(d)](T *ptr) <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                d(<span class="keyword">dynamic_cast&lt;</span>Y *<span class="keyword">&gt;</span>(ptr));</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>            };</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                object_ = other.object_;</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                allocator = std::move(other.allocator);</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                other.object_ = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            }</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        }</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            CountedObjectAllocator counted_object_allocator(allocator);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            object_ = counted_object_allocator.allocate(1);</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            <span class="keyword">new</span> (object_) counted_object(ptr);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        }</div>
 </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
-<div class="foldopen" id="foldopen00222" data-start="{" data-end="}">
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#acb4781c04d2acb0ef2ec27375a95c40f">  222</a></span>        <a class="code hl_function" href="classvidre_1_1shared.html#acb4781c04d2acb0ef2ec27375a95c40f">~shared</a>() {</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            release();</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        }</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="foldopen" id="foldopen00221" data-start="{" data-end="}">
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a53ef4df0ea91c893a03220625ac340c2">  221</a></span>        <a class="code hl_function" href="classvidre_1_1shared.html#a53ef4df0ea91c893a03220625ac340c2">shared</a>(<span class="keyword">const</span> <a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> &amp;other) noexcept : object_(other.object_), allocator(other.allocator), deleter(other.deleter) {</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>            <span class="keywordflow">if</span> (object_) {</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                object_-&gt;strong_count.fetch_add(1, std::memory_order_relaxed);</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            }</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        }</div>
 </div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
 <div class="foldopen" id="foldopen00227" data-start="{" data-end="}">
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a5d9e257f247acc527159c10e13fae1f5">  227</a></span>        T *<a class="code hl_function" href="classvidre_1_1shared.html#a5d9e257f247acc527159c10e13fae1f5">operator-&gt;</a>() noexcept {</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            <span class="keywordflow">return</span> &amp;object_-&gt;object;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a25b4c3eda20604929d218e76a856bdb7">  227</a></span>        <a class="code hl_function" href="classvidre_1_1shared.html#a25b4c3eda20604929d218e76a856bdb7">shared</a>(<a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> &amp;&amp;other) noexcept : object_(other.object_), allocator(std::move(other.allocator)), deleter(other.deleter) {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            other.object_ = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        }</div>
 </div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
 <div class="foldopen" id="foldopen00231" data-start="{" data-end="}">
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#ac649088741fae4b6978884e5140b572d">  231</a></span>        <span class="keyword">const</span> T *<a class="code hl_function" href="classvidre_1_1shared.html#ac649088741fae4b6978884e5140b572d">operator-&gt;</a>() const noexcept {</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            <span class="keywordflow">return</span> &amp;object_-&gt;object;</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        }</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#aa093a347858d436ca6e5c712afdd0a73">  231</a></span>        <a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> &amp;<a class="code hl_function" href="classvidre_1_1shared.html#aa093a347858d436ca6e5c712afdd0a73">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> &amp;other) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other) {</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                <span class="comment">// Decrement current reference</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                release();</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                <span class="comment">// Copy other</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                object_ = other.object_;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                allocator = other.allocator;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                deleter = other.deleter;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                <span class="keywordflow">if</span> (object_) {</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                    object_-&gt;strong_count.fetch_add(1, std::memory_order_relaxed);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            }</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        }</div>
 </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="foldopen" id="foldopen00235" data-start="{" data-end="}">
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#ae6315379e750e737c26b5f281100adb0">  235</a></span>        T &amp;<a class="code hl_function" href="classvidre_1_1shared.html#ae6315379e750e737c26b5f281100adb0">operator*</a>() noexcept {</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            <span class="keywordflow">return</span> object_-&gt;object;</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        }</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="foldopen" id="foldopen00248" data-start="{" data-end="}">
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a866641a40b835e3442496fd75ec04a5b">  248</a></span>        <a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> &amp;<a class="code hl_function" href="classvidre_1_1shared.html#a866641a40b835e3442496fd75ec04a5b">operator=</a>(<a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> &amp;&amp;other) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other) {</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                release();</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>                object_ = other.object_;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                allocator = std::move(other.allocator);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                deleter = other.deleter;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                other.object_ = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            }</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        }</div>
 </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
-<div class="foldopen" id="foldopen00239" data-start="{" data-end="}">
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a85a403d07c1e8a62be8141a62b98333c">  239</a></span>        <span class="keyword">const</span> T &amp;<a class="code hl_function" href="classvidre_1_1shared.html#a85a403d07c1e8a62be8141a62b98333c">operator*</a>() const noexcept {</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            <span class="keywordflow">return</span> object_-&gt;object;</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        }</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="foldopen" id="foldopen00261" data-start="{" data-end="}">
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#acb4781c04d2acb0ef2ec27375a95c40f">  261</a></span>        <a class="code hl_function" href="classvidre_1_1shared.html#acb4781c04d2acb0ef2ec27375a95c40f">~shared</a>() {</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            release();</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        }</div>
 </div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
-<div class="foldopen" id="foldopen00243" data-start="{" data-end="}">
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a63d5f51bb6bf55286e36e7126ae46868">  243</a></span>        T *<a class="code hl_function" href="classvidre_1_1shared.html#a63d5f51bb6bf55286e36e7126ae46868">get</a>() noexcept {</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            <span class="keywordflow">return</span> object_ ? &amp;object_-&gt;object : <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        }</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
+<div class="foldopen" id="foldopen00265" data-start="{" data-end="}">
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a3999d4eeb5a53b5a62e279f1906dcaf3">  265</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classvidre_1_1shared.html#a3999d4eeb5a53b5a62e279f1906dcaf3">swap</a>(<a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> &amp;other) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            std::swap(object_, other.object_);</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            std::swap(allocator, other.allocator);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            std::swap(deleter, other.deleter);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        }</div>
 </div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="foldopen" id="foldopen00247" data-start="{" data-end="}">
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a297e61309205c96408de64158b70d101">  247</a></span>        <span class="keyword">const</span> T *<a class="code hl_function" href="classvidre_1_1shared.html#a297e61309205c96408de64158b70d101">get</a>() const noexcept {</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="keywordflow">return</span> object_ ? &amp;object_-&gt;object : <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        }</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00272" data-start="{" data-end="}">
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a5d9e257f247acc527159c10e13fae1f5">  272</a></span>        T *<a class="code hl_function" href="classvidre_1_1shared.html#a5d9e257f247acc527159c10e13fae1f5">operator-&gt;</a>() noexcept {</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>            <span class="keywordflow">return</span> &amp;object_-&gt;object;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        }</div>
 </div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="foldopen" id="foldopen00251" data-start="{" data-end="}">
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe">  251</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe">use_count</a>() const noexcept {</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            <span class="keywordflow">return</span> object_ ? object_-&gt;strong_count.load(std::memory_order_acquire) : 0;</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        }</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="foldopen" id="foldopen00276" data-start="{" data-end="}">
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#ac649088741fae4b6978884e5140b572d">  276</a></span>        <span class="keyword">const</span> T *<a class="code hl_function" href="classvidre_1_1shared.html#ac649088741fae4b6978884e5140b572d">operator-&gt;</a>() const noexcept {</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            <span class="keywordflow">return</span> &amp;object_-&gt;object;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        }</div>
 </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
-<div class="foldopen" id="foldopen00255" data-start="{" data-end="}">
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a062fd97dcbaa91f984d53fbfc5d4ae67">  255</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classvidre_1_1shared.html#a062fd97dcbaa91f984d53fbfc5d4ae67">unique</a>() const noexcept {</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe">use_count</a>() == 1;</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        }</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="foldopen" id="foldopen00280" data-start="{" data-end="}">
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#ae6315379e750e737c26b5f281100adb0">  280</a></span>        T &amp;<a class="code hl_function" href="classvidre_1_1shared.html#ae6315379e750e737c26b5f281100adb0">operator*</a>() noexcept {</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            <span class="keywordflow">return</span> object_-&gt;object;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        }</div>
 </div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
-<div class="foldopen" id="foldopen00259" data-start="{" data-end="}">
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a93e9c5c82e5d60bc2d0f81bb1dfad1e3">  259</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classvidre_1_1shared.html#a93e9c5c82e5d60bc2d0f81bb1dfad1e3">reset</a>() noexcept {</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            release();</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            object_ = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        }</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="foldopen" id="foldopen00284" data-start="{" data-end="}">
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a85a403d07c1e8a62be8141a62b98333c">  284</a></span>        <span class="keyword">const</span> T &amp;<a class="code hl_function" href="classvidre_1_1shared.html#a85a403d07c1e8a62be8141a62b98333c">operator*</a>() const noexcept {</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            <span class="keywordflow">return</span> object_-&gt;object;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        }</div>
 </div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
-<div class="foldopen" id="foldopen00264" data-start="{" data-end="}">
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a3999d4eeb5a53b5a62e279f1906dcaf3">  264</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classvidre_1_1shared.html#a3999d4eeb5a53b5a62e279f1906dcaf3">swap</a>(<a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> &amp;other) <span class="keyword">noexcept</span> {</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            std::swap(object_, other.object_);</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            std::swap(allocator, other.allocator);</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        }</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="foldopen" id="foldopen00288" data-start="{" data-end="}">
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a63d5f51bb6bf55286e36e7126ae46868">  288</a></span>        T *<a class="code hl_function" href="classvidre_1_1shared.html#a63d5f51bb6bf55286e36e7126ae46868">get</a>() noexcept {</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            <span class="keywordflow">return</span> object_ ? object_-&gt;object : <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        }</div>
 </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        <span class="keywordtype">void</span> release() noexcept {</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            <span class="keywordflow">if</span> (!object_)</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            <span class="comment">// Decrement strong count</span></div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            <span class="keywordtype">size_t</span> old_count = object_-&gt;strong_count.fetch_sub(1, std::memory_order_acq_rel);</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            <span class="keywordflow">if</span> (old_count == 1) {</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                <span class="comment">// No more strong references, destroy the object</span></div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                destroy_counted_object();</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            }</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        }</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    };</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="foldopen" id="foldopen00292" data-start="{" data-end="}">
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a297e61309205c96408de64158b70d101">  292</a></span>        <span class="keyword">const</span> T *<a class="code hl_function" href="classvidre_1_1shared.html#a297e61309205c96408de64158b70d101">get</a>() const noexcept {</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            <span class="keywordflow">return</span> object_ ? object_-&gt;object : <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        }</div>
 </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span></div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Allocator = std::allocator&lt;T&gt;, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="foldopen" id="foldopen00317" data-start="{" data-end="}">
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno"><a class="line" href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">  317</a></span>    <a class="code hl_class" href="classvidre_1_1shared.html">shared&lt;T, Allocator&gt;</a> <a class="code hl_function" href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">make_shared</a>(Args &amp;&amp;...args) {</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classvidre_1_1shared.html">shared&lt;T, Allocator&gt;</a>(std::forward&lt;Args&gt;(args)...);</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    }</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="foldopen" id="foldopen00296" data-start="{" data-end="}">
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe">  296</a></span>        <span class="keywordtype">size_t</span> <a class="code hl_function" href="classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe">use_count</a>() const noexcept {</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            <span class="keywordflow">return</span> object_ ? object_-&gt;strong_count.load(std::memory_order_acquire) : 0;</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        }</div>
 </div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span></div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>}  <span class="comment">// namespace vidre</span></div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="preprocessor">#endif  </span><span class="comment">//</span></div>
-<div class="ttc" id="aclassvidre_1_1shared_html"><div class="ttname"><a href="classvidre_1_1shared.html">vidre::shared</a></div><div class="ttdoc">Shared ownership smart pointer with custom allocator support.</div><div class="ttdef"><b>Definition</b> shared.hh:143</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a062fd97dcbaa91f984d53fbfc5d4ae67"><div class="ttname"><a href="classvidre_1_1shared.html#a062fd97dcbaa91f984d53fbfc5d4ae67">vidre::shared::unique</a></div><div class="ttdeci">bool unique() const noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:255</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a25b4c3eda20604929d218e76a856bdb7"><div class="ttname"><a href="classvidre_1_1shared.html#a25b4c3eda20604929d218e76a856bdb7">vidre::shared::shared</a></div><div class="ttdeci">shared(shared &amp;&amp;other) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:191</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a297e61309205c96408de64158b70d101"><div class="ttname"><a href="classvidre_1_1shared.html#a297e61309205c96408de64158b70d101">vidre::shared::get</a></div><div class="ttdeci">const T * get() const noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:247</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a3999d4eeb5a53b5a62e279f1906dcaf3"><div class="ttname"><a href="classvidre_1_1shared.html#a3999d4eeb5a53b5a62e279f1906dcaf3">vidre::shared::swap</a></div><div class="ttdeci">void swap(shared &amp;other) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:264</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a53ef4df0ea91c893a03220625ac340c2"><div class="ttname"><a href="classvidre_1_1shared.html#a53ef4df0ea91c893a03220625ac340c2">vidre::shared::shared</a></div><div class="ttdeci">shared(const shared &amp;other) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:185</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a5d9e257f247acc527159c10e13fae1f5"><div class="ttname"><a href="classvidre_1_1shared.html#a5d9e257f247acc527159c10e13fae1f5">vidre::shared::operator-&gt;</a></div><div class="ttdeci">T * operator-&gt;() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:227</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a63d5f51bb6bf55286e36e7126ae46868"><div class="ttname"><a href="classvidre_1_1shared.html#a63d5f51bb6bf55286e36e7126ae46868">vidre::shared::get</a></div><div class="ttdeci">T * get() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:243</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a82b0d75c714112a2d62a32f5846a1aba"><div class="ttname"><a href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">vidre::shared::shared</a></div><div class="ttdeci">shared(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition</b> shared.hh:176</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a85a403d07c1e8a62be8141a62b98333c"><div class="ttname"><a href="classvidre_1_1shared.html#a85a403d07c1e8a62be8141a62b98333c">vidre::shared::operator*</a></div><div class="ttdeci">const T &amp; operator*() const noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:239</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a866641a40b835e3442496fd75ec04a5b"><div class="ttname"><a href="classvidre_1_1shared.html#a866641a40b835e3442496fd75ec04a5b">vidre::shared::operator=</a></div><div class="ttdeci">shared &amp; operator=(shared &amp;&amp;other) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:211</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a93e9c5c82e5d60bc2d0f81bb1dfad1e3"><div class="ttname"><a href="classvidre_1_1shared.html#a93e9c5c82e5d60bc2d0f81bb1dfad1e3">vidre::shared::reset</a></div><div class="ttdeci">void reset() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:259</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_aa093a347858d436ca6e5c712afdd0a73"><div class="ttname"><a href="classvidre_1_1shared.html#aa093a347858d436ca6e5c712afdd0a73">vidre::shared::operator=</a></div><div class="ttdeci">shared &amp; operator=(const shared &amp;other) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:195</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_ab63311fbbd43abff5e4bf92590974afe"><div class="ttname"><a href="classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe">vidre::shared::use_count</a></div><div class="ttdeci">size_t use_count() const noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:251</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_ac649088741fae4b6978884e5140b572d"><div class="ttname"><a href="classvidre_1_1shared.html#ac649088741fae4b6978884e5140b572d">vidre::shared::operator-&gt;</a></div><div class="ttdeci">const T * operator-&gt;() const noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:231</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_acb4781c04d2acb0ef2ec27375a95c40f"><div class="ttname"><a href="classvidre_1_1shared.html#acb4781c04d2acb0ef2ec27375a95c40f">vidre::shared::~shared</a></div><div class="ttdeci">~shared()</div><div class="ttdef"><b>Definition</b> shared.hh:222</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_ae6315379e750e737c26b5f281100adb0"><div class="ttname"><a href="classvidre_1_1shared.html#ae6315379e750e737c26b5f281100adb0">vidre::shared::operator*</a></div><div class="ttdeci">T &amp; operator*() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:235</div></div>
-<div class="ttc" id="agroup__api-core-util-shared_html_ga5869272b519d4de2d3ceba7f64fd99f9"><div class="ttname"><a href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">vidre::make_shared</a></div><div class="ttdeci">shared&lt; T, Allocator &gt; make_shared(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition</b> shared.hh:317</div></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="foldopen" id="foldopen00300" data-start="{" data-end="}">
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a062fd97dcbaa91f984d53fbfc5d4ae67">  300</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classvidre_1_1shared.html#a062fd97dcbaa91f984d53fbfc5d4ae67">unique</a>() const noexcept {</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe">use_count</a>() == 1;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        }</div>
+</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
+<div class="foldopen" id="foldopen00304" data-start="{" data-end="}">
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno"><a class="line" href="classvidre_1_1shared.html#a93e9c5c82e5d60bc2d0f81bb1dfad1e3">  304</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classvidre_1_1shared.html#a93e9c5c82e5d60bc2d0f81bb1dfad1e3">reset</a>() noexcept {</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>            release();</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            object_ = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        }</div>
+</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    };</div>
+</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Allocator = std::allocator&lt;T&gt;, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="foldopen" id="foldopen00343" data-start="{" data-end="}">
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno"><a class="line" href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">  343</a></span>    <a class="code hl_class" href="classvidre_1_1shared.html">shared&lt;T, Allocator&gt;</a> <a class="code hl_function" href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">make_shared</a>(Args &amp;&amp;...args) {</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        Allocator allocator;</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        T *obj = allocator.allocate(1);</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>        <span class="keyword">new</span> (obj) T(std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>        <span class="keywordflow">return</span> obj;</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    }</div>
+</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>}  <span class="comment">// namespace vidre</span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="preprocessor">#endif  </span><span class="comment">//</span></div>
+<div class="ttc" id="aclassvidre_1_1shared_html"><div class="ttname"><a href="classvidre_1_1shared.html">vidre::shared</a></div><div class="ttdoc">Shared ownership smart pointer with custom allocator support.</div><div class="ttdef"><b>Definition</b> shared.hh:146</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a062fd97dcbaa91f984d53fbfc5d4ae67"><div class="ttname"><a href="classvidre_1_1shared.html#a062fd97dcbaa91f984d53fbfc5d4ae67">vidre::shared::unique</a></div><div class="ttdeci">bool unique() const noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:300</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a1e1cd7725321c266f38483a9b50d61c3"><div class="ttname"><a href="classvidre_1_1shared.html#a1e1cd7725321c266f38483a9b50d61c3">vidre::shared::shared</a></div><div class="ttdeci">shared(Y *ptr, Deleter d) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:210</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a25b4c3eda20604929d218e76a856bdb7"><div class="ttname"><a href="classvidre_1_1shared.html#a25b4c3eda20604929d218e76a856bdb7">vidre::shared::shared</a></div><div class="ttdeci">shared(shared &amp;&amp;other) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:227</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a297e61309205c96408de64158b70d101"><div class="ttname"><a href="classvidre_1_1shared.html#a297e61309205c96408de64158b70d101">vidre::shared::get</a></div><div class="ttdeci">const T * get() const noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:292</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a29a359567ef1b5d60e9a3b31fbea9695"><div class="ttname"><a href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">vidre::shared::shared</a></div><div class="ttdeci">shared() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:194</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a3999d4eeb5a53b5a62e279f1906dcaf3"><div class="ttname"><a href="classvidre_1_1shared.html#a3999d4eeb5a53b5a62e279f1906dcaf3">vidre::shared::swap</a></div><div class="ttdeci">void swap(shared &amp;other) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:265</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a432afa4a4a8e74142093be94c1a9603e"><div class="ttname"><a href="classvidre_1_1shared.html#a432afa4a4a8e74142093be94c1a9603e">vidre::shared::allocator_type</a></div><div class="ttdeci">Allocator allocator_type</div><div class="ttdef"><b>Definition</b> shared.hh:148</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a53ef4df0ea91c893a03220625ac340c2"><div class="ttname"><a href="classvidre_1_1shared.html#a53ef4df0ea91c893a03220625ac340c2">vidre::shared::shared</a></div><div class="ttdeci">shared(const shared &amp;other) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:221</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a5d9e257f247acc527159c10e13fae1f5"><div class="ttname"><a href="classvidre_1_1shared.html#a5d9e257f247acc527159c10e13fae1f5">vidre::shared::operator-&gt;</a></div><div class="ttdeci">T * operator-&gt;() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:272</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a63d5f51bb6bf55286e36e7126ae46868"><div class="ttname"><a href="classvidre_1_1shared.html#a63d5f51bb6bf55286e36e7126ae46868">vidre::shared::get</a></div><div class="ttdeci">T * get() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:288</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a85a403d07c1e8a62be8141a62b98333c"><div class="ttname"><a href="classvidre_1_1shared.html#a85a403d07c1e8a62be8141a62b98333c">vidre::shared::operator*</a></div><div class="ttdeci">const T &amp; operator*() const noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:284</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a866641a40b835e3442496fd75ec04a5b"><div class="ttname"><a href="classvidre_1_1shared.html#a866641a40b835e3442496fd75ec04a5b">vidre::shared::operator=</a></div><div class="ttdeci">shared &amp; operator=(shared &amp;&amp;other) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:248</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a93e9c5c82e5d60bc2d0f81bb1dfad1e3"><div class="ttname"><a href="classvidre_1_1shared.html#a93e9c5c82e5d60bc2d0f81bb1dfad1e3">vidre::shared::reset</a></div><div class="ttdeci">void reset() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:304</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_aa093a347858d436ca6e5c712afdd0a73"><div class="ttname"><a href="classvidre_1_1shared.html#aa093a347858d436ca6e5c712afdd0a73">vidre::shared::operator=</a></div><div class="ttdeci">shared &amp; operator=(const shared &amp;other) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:231</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_ab63311fbbd43abff5e4bf92590974afe"><div class="ttname"><a href="classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe">vidre::shared::use_count</a></div><div class="ttdeci">size_t use_count() const noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:296</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_ac649088741fae4b6978884e5140b572d"><div class="ttname"><a href="classvidre_1_1shared.html#ac649088741fae4b6978884e5140b572d">vidre::shared::operator-&gt;</a></div><div class="ttdeci">const T * operator-&gt;() const noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:276</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_acb4781c04d2acb0ef2ec27375a95c40f"><div class="ttname"><a href="classvidre_1_1shared.html#acb4781c04d2acb0ef2ec27375a95c40f">vidre::shared::~shared</a></div><div class="ttdeci">~shared()</div><div class="ttdef"><b>Definition</b> shared.hh:261</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_acd2a98110a57d97ed04ccb60d0f3c578"><div class="ttname"><a href="classvidre_1_1shared.html#acd2a98110a57d97ed04ccb60d0f3c578">vidre::shared::shared</a></div><div class="ttdeci">shared(T *ptr) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:196</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_ae6315379e750e737c26b5f281100adb0"><div class="ttname"><a href="classvidre_1_1shared.html#ae6315379e750e737c26b5f281100adb0">vidre::shared::operator*</a></div><div class="ttdeci">T &amp; operator*() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:280</div></div>
+<div class="ttc" id="agroup__api-core-util-shared_html_ga5869272b519d4de2d3ceba7f64fd99f9"><div class="ttname"><a href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">vidre::make_shared</a></div><div class="ttdeci">shared&lt; T, Allocator &gt; make_shared(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition</b> shared.hh:343</div></div>
 <div class="ttc" id="alibs_2core_2vidre_2core_2config_8hh_html"><div class="ttname"><a href="libs_2core_2vidre_2core_2config_8hh.html">config.hh</a></div></div>
 <div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> midraw.hh:31</div></div>
 </div><!-- fragment --></div><!-- contents -->

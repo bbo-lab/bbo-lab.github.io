@@ -1,12 +1,14 @@
 var searchData=
 [
-  ['daemon_2edox_0',['daemon.dox',['../daemon_8dox.html',1,'']]],
-  ['decode_5fvideo_2ecc_1',['decode_video.cc',['../decode__video_8cc.html',1,'']]],
-  ['dev_2edox_2',['dev.dox',['../dev_8dox.html',1,'']]],
-  ['develop_2ecc_3',['develop.cc',['../examples_2core_2develop_8cc.html',1,'(Global Namespace)'],['../src_2libs_2core_2vidre_2util_2develop_8cc.html',1,'(Global Namespace)']]],
-  ['develop_2ehh_4',['develop.hh',['../develop_8hh.html',1,'']]],
-  ['dictionary_2ehh_5',['dictionary.hh',['../dictionary_8hh.html',1,'']]],
-  ['dummy_2ecc_6',['dummy.cc',['../dummy_8cc.html',1,'']]],
-  ['dynamic_2ecc_7',['dynamic.cc',['../dynamic_8cc.html',1,'']]],
-  ['dynamic_2ehh_8',['dynamic.hh',['../dynamic_8hh.html',1,'']]]
+  ['camera_2ecc_0',['camera.cc',['../camera_8cc.html',1,'']]],
+  ['camera_2ehh_1',['camera.hh',['../camera_8hh.html',1,'']]],
+  ['ccv_2ecc_2',['ccv.cc',['../ccv_8cc.html',1,'']]],
+  ['ccv_2ehh_3',['ccv.hh',['../ccv_8hh.html',1,'']]],
+  ['check_2ecc_4',['check.cc',['../check_8cc.html',1,'']]],
+  ['codec_2ehh_5',['codec.hh',['../codec_8hh.html',1,'']]],
+  ['common_2ehh_6',['common.hh',['../common_8hh.html',1,'']]],
+  ['config_2ecc_7',['config.cc',['../core_2vidre_2core_2config_8cc.html',1,'(Global Namespace)'],['../device_2vidre_2device_2config_8cc.html',1,'(Global Namespace)'],['../ffmpeg_2vidre_2ffmpeg_2config_8cc.html',1,'(Global Namespace)']]],
+  ['config_2ehh_8',['config.hh',['../libs_2core_2vidre_2core_2config_8hh.html',1,'(Global Namespace)'],['../libs_2device_2vidre_2device_2config_8hh.html',1,'(Global Namespace)'],['../libs_2ffmpeg_2vidre_2ffmpeg_2config_8hh.html',1,'(Global Namespace)'],['../plugins_2camera_2onsemi_2midlib2_2vidre_2onsemi_2midlib2_2config_8hh.html',1,'(Global Namespace)'],['../vidre_2config_8hh.html',1,'(Global Namespace)']]],
+  ['core_2edox_9',['core.dox',['../core_8dox.html',1,'']]],
+  ['cpp_2edox_10',['cpp.dox',['../cpp_8dox.html',1,'']]]
 ];

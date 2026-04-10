@@ -113,6 +113,7 @@ $(function(){initNavTree('classvidre_1_1shared.html',''); initResizable(true); }
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classvidre_1_1shared-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">vidre::shared&lt; T, Allocator &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-util.html">Utilities</a> &raquo; <a class="el" href="group__api-core-util-shared.html">Shared data structures.</a></div></div></div>
@@ -126,7 +127,7 @@ $(function(){initNavTree('classvidre_1_1shared.html',''); initResizable(true); }
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, typename Allocator = std::allocator&lt;T&gt;&gt;<br />
 class vidre::shared&lt; T, Allocator &gt;</div><p>Shared ownership smart pointer with custom allocator support. </p>
-<p>Implements reference-counted shared ownership similar to std::shared_ptr, but with full control over memory allocation through a custom allocator. The control block (reference counts + object) is allocated as a single contiguous block using the rebound allocator type.</p>
+<p>Implements reference-counted shared ownership similar to std::shared_ptr, but with full control over memory allocation through a custom allocator. The control block (reference counts + object) is allocated as a single contiguous block using the <code>rebind</code>ed allocator type.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The type of the managed object </td></tr>
@@ -193,7 +194,7 @@ Usage Example</h2>
 <div class="line"> </div>
 <div class="line">sp3.reset();              <span class="comment">// Strong count: 1 (object still alive)</span></div>
 <div class="line">sp2.reset();              <span class="comment">// Strong count: 0 (object destroyed)</span></div>
-<div class="ttc" id="agroup__api-core-util-shared_html_ga5869272b519d4de2d3ceba7f64fd99f9"><div class="ttname"><a href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">vidre::make_shared</a></div><div class="ttdeci">shared&lt; T, Allocator &gt; make_shared(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition</b> shared.hh:317</div></div>
+<div class="ttc" id="agroup__api-core-util-shared_html_ga5869272b519d4de2d3ceba7f64fd99f9"><div class="ttname"><a href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">vidre::make_shared</a></div><div class="ttdeci">shared&lt; T, Allocator &gt; make_shared(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition</b> shared.hh:343</div></div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Weak reference support would require:<ul>
 <li>A separate <code>weak&lt;T&gt;</code> class</li>
 <li><code>lock()</code> method to obtain strong reference</li>
@@ -203,13 +204,24 @@ Usage Example</h2>
 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">make_shared</a> Factory function for convenient creation </dd>
 <dd>
-std::shared_ptr Standard equivalent with more features </dd></dl>
+std::shared_ptr Standard equivalent with more features</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>Code/documentatoin copied (only refactored names) directly from DeepSeek, needs audit!</dd></dl>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a432afa4a4a8e74142093be94c1a9603e" id="r_a432afa4a4a8e74142093be94c1a9603e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a432afa4a4a8e74142093be94c1a9603e">allocator_type</a> = Allocator</td></tr>
+<tr class="separator:a432afa4a4a8e74142093be94c1a9603e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a82b0d75c714112a2d62a32f5846a1aba" id="r_a82b0d75c714112a2d62a32f5846a1aba"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a82b0d75c714112a2d62a32f5846a1aba"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a82b0d75c714112a2d62a32f5846a1aba">shared</a> (Args &amp;&amp;...args)</td></tr>
-<tr class="separator:a82b0d75c714112a2d62a32f5846a1aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a359567ef1b5d60e9a3b31fbea9695" id="r_a29a359567ef1b5d60e9a3b31fbea9695"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> () noexcept</td></tr>
+<tr class="separator:a29a359567ef1b5d60e9a3b31fbea9695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2a98110a57d97ed04ccb60d0f3c578" id="r_acd2a98110a57d97ed04ccb60d0f3c578"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd2a98110a57d97ed04ccb60d0f3c578">shared</a> (T *ptr) noexcept</td></tr>
+<tr class="separator:acd2a98110a57d97ed04ccb60d0f3c578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e1cd7725321c266f38483a9b50d61c3" id="r_a1e1cd7725321c266f38483a9b50d61c3"><td class="memTemplParams" colspan="2">template&lt;class Y , class Deleter &gt; <br />
+requires std::derived_from&lt;Y, T&gt;</td></tr>
+<tr class="memitem:a1e1cd7725321c266f38483a9b50d61c3"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1e1cd7725321c266f38483a9b50d61c3">shared</a> (Y *ptr, Deleter d) noexcept</td></tr>
+<tr class="separator:a1e1cd7725321c266f38483a9b50d61c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53ef4df0ea91c893a03220625ac340c2" id="r_a53ef4df0ea91c893a03220625ac340c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53ef4df0ea91c893a03220625ac340c2">shared</a> (const <a class="el" href="classvidre_1_1shared.html">shared</a> &amp;other) noexcept</td></tr>
 <tr class="separator:a53ef4df0ea91c893a03220625ac340c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25b4c3eda20604929d218e76a856bdb7" id="r_a25b4c3eda20604929d218e76a856bdb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25b4c3eda20604929d218e76a856bdb7">shared</a> (<a class="el" href="classvidre_1_1shared.html">shared</a> &amp;&amp;other) noexcept</td></tr>
@@ -220,6 +232,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a866641a40b835e3442496fd75ec04a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb4781c04d2acb0ef2ec27375a95c40f" id="r_acb4781c04d2acb0ef2ec27375a95c40f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb4781c04d2acb0ef2ec27375a95c40f">~shared</a> ()</td></tr>
 <tr class="separator:acb4781c04d2acb0ef2ec27375a95c40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3999d4eeb5a53b5a62e279f1906dcaf3" id="r_a3999d4eeb5a53b5a62e279f1906dcaf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3999d4eeb5a53b5a62e279f1906dcaf3">swap</a> (<a class="el" href="classvidre_1_1shared.html">shared</a> &amp;other) noexcept</td></tr>
+<tr class="separator:a3999d4eeb5a53b5a62e279f1906dcaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d9e257f247acc527159c10e13fae1f5" id="r_a5d9e257f247acc527159c10e13fae1f5"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d9e257f247acc527159c10e13fae1f5">operator-&gt;</a> () noexcept</td></tr>
 <tr class="separator:a5d9e257f247acc527159c10e13fae1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac649088741fae4b6978884e5140b572d" id="r_ac649088741fae4b6978884e5140b572d"><td class="memItemLeft" align="right" valign="top">const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac649088741fae4b6978884e5140b572d">operator-&gt;</a> () const noexcept</td></tr>
@@ -238,19 +252,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a062fd97dcbaa91f984d53fbfc5d4ae67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93e9c5c82e5d60bc2d0f81bb1dfad1e3" id="r_a93e9c5c82e5d60bc2d0f81bb1dfad1e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93e9c5c82e5d60bc2d0f81bb1dfad1e3">reset</a> () noexcept</td></tr>
 <tr class="separator:a93e9c5c82e5d60bc2d0f81bb1dfad1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3999d4eeb5a53b5a62e279f1906dcaf3" id="r_a3999d4eeb5a53b5a62e279f1906dcaf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3999d4eeb5a53b5a62e279f1906dcaf3">swap</a> (<a class="el" href="classvidre_1_1shared.html">shared</a> &amp;other) noexcept</td></tr>
-<tr class="separator:a3999d4eeb5a53b5a62e279f1906dcaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a82b0d75c714112a2d62a32f5846a1aba" name="a82b0d75c714112a2d62a32f5846a1aba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82b0d75c714112a2d62a32f5846a1aba">&#9670;&#160;</a></span>shared() <span class="overload">[1/3]</span></h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a432afa4a4a8e74142093be94c1a9603e" name="a432afa4a4a8e74142093be94c1a9603e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432afa4a4a8e74142093be94c1a9603e">&#9670;&#160;</a></span>allocator_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classvidre_1_1shared.html">vidre::shared</a>&lt; T, Allocator &gt;::allocator_type = Allocator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a0">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a29a359567ef1b5d60e9a3b31fbea9695" name="a29a359567ef1b5d60e9a3b31fbea9695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a359567ef1b5d60e9a3b31fbea9695">&#9670;&#160;</a></span>shared() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
 <div class="memtemplate">
-template&lt;typename... Args&gt; </div>
+template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -258,23 +287,84 @@ template&lt;typename... Args&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classvidre_1_1shared.html">vidre::shared</a>&lt; T, Allocator &gt;::shared </td>
           <td>(</td>
-          <td class="paramtype">Args &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a1">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a3">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
 </dl>
 
 </div>
 </div>
+<a id="acd2a98110a57d97ed04ccb60d0f3c578" name="acd2a98110a57d97ed04ccb60d0f3c578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd2a98110a57d97ed04ccb60d0f3c578">&#9670;&#160;</a></span>shared() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvidre_1_1shared.html">vidre::shared</a>&lt; T, Allocator &gt;::shared </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e1cd7725321c266f38483a9b50d61c3" name="a1e1cd7725321c266f38483a9b50d61c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e1cd7725321c266f38483a9b50d61c3">&#9670;&#160;</a></span>shared() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class Y , class Deleter &gt; <br />
+requires std::derived_from&lt;Y, T&gt;</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvidre_1_1shared.html">vidre::shared</a>&lt; T, Allocator &gt;::shared </td>
+          <td>(</td>
+          <td class="paramtype">Y *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Deleter</td>          <td class="paramname"><span class="paramname"><em>d</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a53ef4df0ea91c893a03220625ac340c2" name="a53ef4df0ea91c893a03220625ac340c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53ef4df0ea91c893a03220625ac340c2">&#9670;&#160;</a></span>shared() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ef4df0ea91c893a03220625ac340c2">&#9670;&#160;</a></span>shared() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,7 +391,7 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
 </div>
 </div>
 <a id="a25b4c3eda20604929d218e76a856bdb7" name="a25b4c3eda20604929d218e76a856bdb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25b4c3eda20604929d218e76a856bdb7">&#9670;&#160;</a></span>shared() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a25b4c3eda20604929d218e76a856bdb7">&#9670;&#160;</a></span>shared() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -351,7 +441,7 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a4">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a5">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
 </dl>
 
 </div>
@@ -381,7 +471,7 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a3">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a4">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
 </dl>
 
 </div>
@@ -413,6 +503,35 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
 
 </div>
 </div>
+<a id="a3999d4eeb5a53b5a62e279f1906dcaf3" name="a3999d4eeb5a53b5a62e279f1906dcaf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3999d4eeb5a53b5a62e279f1906dcaf3">&#9670;&#160;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvidre_1_1shared.html">vidre::shared</a>&lt; T, Allocator &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvidre_1_1shared.html">shared</a>&lt; T, Allocator &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a6">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
+</dl>
+
+</div>
+</div>
 <a id="a5d9e257f247acc527159c10e13fae1f5" name="a5d9e257f247acc527159c10e13fae1f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d9e257f247acc527159c10e13fae1f5">&#9670;&#160;</a></span>operator-&gt;() <span class="overload">[1/2]</span></h2>
 
@@ -437,7 +556,7 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a5">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a7">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
 </dl>
 
 </div>
@@ -493,7 +612,7 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a6">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a8">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
 </dl>
 
 </div>
@@ -549,7 +668,7 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a7">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a9">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
 </dl>
 
 </div>
@@ -605,7 +724,7 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a8">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a10">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
 </dl>
 
 </div>
@@ -634,7 +753,7 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a9">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a11">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
 </dl>
 
 </div>
@@ -663,36 +782,7 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a10">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="a3999d4eeb5a53b5a62e279f1906dcaf3" name="a3999d4eeb5a53b5a62e279f1906dcaf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3999d4eeb5a53b5a62e279f1906dcaf3">&#9670;&#160;</a></span>swap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classvidre_1_1shared.html">vidre::shared</a>&lt; T, Allocator &gt;::swap </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classvidre_1_1shared.html">shared</a>&lt; T, Allocator &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a11">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a12">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
 </dl>
 
 </div>

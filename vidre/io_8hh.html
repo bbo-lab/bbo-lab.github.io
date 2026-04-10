@@ -116,6 +116,7 @@ $(function(){initNavTree('io_8hh.html',''); initResizable(true); });
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#concepts">Concepts</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
@@ -125,23 +126,30 @@ $(function(){initNavTree('io_8hh.html',''); initResizable(true); });
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="libs_2core_2vidre_2core_2config_8hh_source.html">vidre/core/config.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="core_2vidre_2cpp_2util_8hh_source.html">vidre/cpp/util.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="core_2vidre_2exception_8hh_source.html">vidre/exception.hh</a>&gt;</code><br />
 <code>#include &lt;bit&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;filesystem&gt;</code><br />
 <code>#include &lt;fcntl.h&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;sys/ioctl.h&gt;</code><br />
+<code>#include &lt;sys/stat.h&gt;</code><br />
+<code>#include &lt;cerrno&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for io.hh:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="io_8hh__incl.svg" width="662" height="198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="io_8hh__incl.svg" width="100%" height="558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="io_8hh__dep__incl.svg" width="100%" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="io_8hh__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="io_8hh_source.html">Go to the source code of this file.</a></p>
@@ -151,15 +159,21 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1storage_1_1fileio.html">vidre::storage::fileio</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trivial file IO.  <a href="classvidre_1_1storage_1_1fileio.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1volume.html">vidre::storage::volume&lt; std::endian::little &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1extent.html">vidre::storage::extent&lt; std::endian::little &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1volume.html">vidre::storage::volume&lt; std::endian::big &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1extent.html">vidre::storage::extent&lt; std::endian::big &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1storage_1_1view.html">vidre::storage::view</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data view.  <a href="classvidre_1_1storage_1_1view.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1buffer.html">vidre::storage::buffer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write buffer.  <a href="structvidre_1_1storage_1_1buffer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1storage_1_1sink.html">vidre::storage::sink</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data sink.  <a href="classvidre_1_1storage_1_1sink.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data sink skeleton.  <a href="classvidre_1_1storage_1_1sink.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1storage_1_1filesink.html">vidre::storage::filesink</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A file sink.  <a href="classvidre_1_1storage_1_1filesink.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1storage_1_1source.html">vidre::storage::source</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data source.  <a href="classvidre_1_1storage_1_1source.html#details">More...</a><br /></td></tr>
@@ -180,17 +194,27 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
 Concepts</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptvidre_1_1storage_1_1has__data__member.html">vidre::storage::has_data_member</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptvidre_1_1detail_1_1has__data__member.html">vidre::detail::has_data_member</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if type has a "data()" method. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptvidre_1_1storage_1_1has__size__method.html">vidre::storage::has_size_method</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptvidre_1_1detail_1_1has__size__method.html">vidre::detail::has_size_method</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if type has a "data()" method. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga8ae9fe3aa7e2628282e430505ef94d5a" id="r_ga8ae9fe3aa7e2628282e430505ef94d5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga8ae9fe3aa7e2628282e430505ef94d5a">VIDRE_STORAGE_BLOCKSIZE</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="memdesc:ga8ae9fe3aa7e2628282e430505ef94d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default block size (if otherwise it cannot be retrieved from the OS).  <br /></td></tr>
+<tr class="separator:ga8ae9fe3aa7e2628282e430505ef94d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga4d06a614ee39ae6f8e1db6ca1c6c326c" id="r_ga4d06a614ee39ae6f8e1db6ca1c6c326c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">vidre::detail::file::descriptor</a> = int</td></tr>
 <tr class="separator:ga4d06a614ee39ae6f8e1db6ca1c6c326c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a03634bf33195ab3ed2d362f9ee65d9" id="r_ga9a03634bf33195ab3ed2d362f9ee65d9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga9a03634bf33195ab3ed2d362f9ee65d9">vidre::detail::file::size_type</a> = std::size_t</td></tr>
+<tr class="separator:ga9a03634bf33195ab3ed2d362f9ee65d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf952830b24e13cadd3043e030ef9e71" id="r_gaaf952830b24e13cadd3043e030ef9e71"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">vidre::detail::file::offset_type</a> = std::make_signed_t&lt;<a class="el" href="group__api-core-details.html#ga9a03634bf33195ab3ed2d362f9ee65d9">size_type</a>&gt;</td></tr>
+<tr class="separator:gaaf952830b24e13cadd3043e030ef9e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -212,46 +236,62 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__api-core-details.html#gga3892b370e5f5d516b8fc80a6f97726d8a3222693641de90c643e6487373cf5a84">vidre::detail::file::non_block</a> = O_NONBLOCK
 , <br />
 &#160;&#160;<a class="el" href="group__api-core-details.html#gga3892b370e5f5d516b8fc80a6f97726d8aeb2e8983e0cd9b54b305d6b613b99443">vidre::detail::file::synchronous</a> = O_SYNC
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#gga3892b370e5f5d516b8fc80a6f97726d8a88892a034e30b2c1805cd6b76d1d53a0">vidre::detail::file::close_on_exec</a> = O_CLOEXEC
 <br />
  }</td></tr>
 <tr class="separator:ga3892b370e5f5d516b8fc80a6f97726d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga64b4483c36e327a2e404906303619a1b" id="r_ga64b4483c36e327a2e404906303619a1b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-storage-io.html#ga64b4483c36e327a2e404906303619a1b">vidre::storage::mode</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="group__api-core-storage-io.html#gga64b4483c36e327a2e404906303619a1ba334c4a4c42fdb79d7ebc3e73b517e6f8">vidre::storage::mode::none</a> = 0
+<tr class="memitem:ga00b1e2053f507921126d16e20ed49ea5" id="r_ga00b1e2053f507921126d16e20ed49ea5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga00b1e2053f507921126d16e20ed49ea5">vidre::detail::file::whence_type</a> : int { <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#gga00b1e2053f507921126d16e20ed49ea5a0b83d8c3b94d40f84265266b08c9e395">vidre::detail::file::begin</a> = SEEK_SET
 , <br />
-&#160;&#160;<a class="el" href="group__api-core-storage-io.html#gga64b4483c36e327a2e404906303619a1baa43c1b0aa53a0c908810c06ab1ff3967">vidre::storage::mode::input</a> = 1
+&#160;&#160;<a class="el" href="group__api-core-details.html#gga00b1e2053f507921126d16e20ed49ea5a87afcfbcca9b8faf0875ff4998987015">vidre::detail::file::current</a> = SEEK_CUR
 , <br />
-&#160;&#160;<a class="el" href="group__api-core-storage-io.html#gga64b4483c36e327a2e404906303619a1ba78e6221f6393d1356681db398f14ce6d">vidre::storage::mode::output</a> = 2
-, <br />
-&#160;&#160;<a class="el" href="group__api-core-storage-io.html#gga64b4483c36e327a2e404906303619a1baca942afbdc13c5bd23b8a44919a40305">vidre::storage::mode::bidi</a> = 3
+&#160;&#160;<a class="el" href="group__api-core-details.html#gga00b1e2053f507921126d16e20ed49ea5a1c18e6d90c1b9f0593bf3d245e038fc3">vidre::detail::file::end</a> = SEEK_END
 <br />
  }</td></tr>
-<tr class="memdesc:ga64b4483c36e327a2e404906303619a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">In-/output "direction".  <a href="group__api-core-storage-io.html#ga64b4483c36e327a2e404906303619a1b">More...</a><br /></td></tr>
-<tr class="separator:ga64b4483c36e327a2e404906303619a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga00b1e2053f507921126d16e20ed49ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacd1bb2e24b0749a1beaef0a3f4742c4" id="r_gaacd1bb2e24b0749a1beaef0a3f4742c4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gaacd1bb2e24b0749a1beaef0a3f4742c4">vidre::detail::file::allocation_type</a> : int { <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4aaaa661fab18a5b49eae0d20e6b7264e0">vidre::detail::file::allocate_range</a> = FALLOC_FL_ALLOCATE_RANGE
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4ab0176ac180b1e44d8482db2587c4a09d">vidre::detail::file::keep_size</a> = FALLOC_FL_KEEP_SIZE
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4ab6059b4778a4ba38b2f12280f3795f9a">vidre::detail::file::punch_hole</a> = FALLOC_FL_PUNCH_HOLE
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4ac7de45b298934a8959c6ca415327f493">vidre::detail::file::no_hide_stale</a> = FALLOC_FL_NO_HIDE_STALE
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4a12073bdf04e7c35e20fb0845b42bea8b">vidre::detail::file::collapse_range</a> = FALLOC_FL_COLLAPSE_RANGE
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4ac5b989800b29b2520740f7b1732be167">vidre::detail::file::zero_range</a> = FALLOC_FL_ZERO_RANGE
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4aea1360d2f3f017fbe848a9408bfe82e9">vidre::detail::file::insert_range</a> = FALLOC_FL_INSERT_RANGE
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4ad2c77cf460d44a42e1589175f1e84eaf">vidre::detail::file::unshare_range</a> = FALLOC_FL_UNSHARE_RANGE
+<br />
+ }</td></tr>
+<tr class="separator:gaacd1bb2e24b0749a1beaef0a3f4742c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaf7b529521929f9fb34bdfd8feb24c611" id="r_gaf7b529521929f9fb34bdfd8feb24c611"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gaf7b529521929f9fb34bdfd8feb24c611">vidre::detail::file::open</a> (const char *filename, int flags)</td></tr>
-<tr class="separator:gaf7b529521929f9fb34bdfd8feb24c611"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga00db467c019a330ea4ec79ba79b7f7fb" id="r_ga00db467c019a330ea4ec79ba79b7f7fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga00db467c019a330ea4ec79ba79b7f7fb">vidre::detail::file::open</a> (const char *filename, int flags, mode_t mode)</td></tr>
-<tr class="separator:ga00db467c019a330ea4ec79ba79b7f7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4193fbb8547403dd34b1772c50f0e1e6" id="r_ga4193fbb8547403dd34b1772c50f0e1e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga4193fbb8547403dd34b1772c50f0e1e6">vidre::detail::file::close</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd)</td></tr>
-<tr class="separator:ga4193fbb8547403dd34b1772c50f0e1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac56ba6cdf96ed3d8570ad4c92f42c774" id="r_gac56ba6cdf96ed3d8570ad4c92f42c774"><td class="memItemLeft" align="right" valign="top">std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gac56ba6cdf96ed3d8570ad4c92f42c774">vidre::detail::file::read</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, uint8_t *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>)</td></tr>
-<tr class="separator:gac56ba6cdf96ed3d8570ad4c92f42c774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ce9cdd7a1027dc0a755d9d4918f62e5" id="r_ga5ce9cdd7a1027dc0a755d9d4918f62e5"><td class="memItemLeft" align="right" valign="top">std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga5ce9cdd7a1027dc0a755d9d4918f62e5">vidre::detail::file::read</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, char *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>)</td></tr>
-<tr class="separator:ga5ce9cdd7a1027dc0a755d9d4918f62e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5b320d91a487f3113f3b05dd9c09f21" id="r_gaf5b320d91a487f3113f3b05dd9c09f21"><td class="memItemLeft" align="right" valign="top">std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gaf5b320d91a487f3113f3b05dd9c09f21">vidre::detail::file::write</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, const uint8_t *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>)</td></tr>
-<tr class="separator:gaf5b320d91a487f3113f3b05dd9c09f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0d80eb9ffce1467092601b352290a891" id="r_ga0d80eb9ffce1467092601b352290a891"><td class="memItemLeft" align="right" valign="top">std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga0d80eb9ffce1467092601b352290a891">vidre::detail::file::write</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, const char *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>)</td></tr>
-<tr class="separator:ga0d80eb9ffce1467092601b352290a891"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2a9d510a37ba003342d3a02a1d0a5ae5" id="r_ga2a9d510a37ba003342d3a02a1d0a5ae5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-storage-io.html#ga64b4483c36e327a2e404906303619a1b">mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-storage-io.html#ga2a9d510a37ba003342d3a02a1d0a5ae5">vidre::storage::operator|</a> (<a class="el" href="group__api-core-storage-io.html#ga64b4483c36e327a2e404906303619a1b">mode</a> lhs, <a class="el" href="group__api-core-storage-io.html#ga64b4483c36e327a2e404906303619a1b">mode</a> rhs)</td></tr>
-<tr class="separator:ga2a9d510a37ba003342d3a02a1d0a5ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec6acad2abae8c84e5d61f3df3d31512" id="r_gaec6acad2abae8c84e5d61f3df3d31512"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-storage-io.html#ga64b4483c36e327a2e404906303619a1b">mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-storage-io.html#gaec6acad2abae8c84e5d61f3df3d31512">vidre::storage::operator&amp;</a> (<a class="el" href="group__api-core-storage-io.html#ga64b4483c36e327a2e404906303619a1b">mode</a> lhs, <a class="el" href="group__api-core-storage-io.html#ga64b4483c36e327a2e404906303619a1b">mode</a> rhs)</td></tr>
-<tr class="separator:gaec6acad2abae8c84e5d61f3df3d31512"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2e64c9f20b56f55b5b23c0dbe073d1ec" id="r_ga2e64c9f20b56f55b5b23c0dbe073d1ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-storage-io.html#ga64b4483c36e327a2e404906303619a1b">mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-storage-io.html#ga2e64c9f20b56f55b5b23c0dbe073d1ec">vidre::storage::operator~</a> (<a class="el" href="group__api-core-storage-io.html#ga64b4483c36e327a2e404906303619a1b">mode</a> flags)</td></tr>
-<tr class="separator:ga2e64c9f20b56f55b5b23c0dbe073d1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf333bf1f1ebd31d8a5410cbfdce1f5a9" id="r_gaf333bf1f1ebd31d8a5410cbfdce1f5a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-storage-io.html#gaf333bf1f1ebd31d8a5410cbfdce1f5a9">vidre::storage::operator!</a> (<a class="el" href="group__api-core-storage-io.html#ga64b4483c36e327a2e404906303619a1b">mode</a> flags)</td></tr>
-<tr class="separator:gaf333bf1f1ebd31d8a5410cbfdce1f5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac242f94ccdbdba3cbbb270d5c183784c" id="r_gac242f94ccdbdba3cbbb270d5c183784c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gac242f94ccdbdba3cbbb270d5c183784c">vidre::detail::file::open</a> (const char *filename, int flags) noexcept</td></tr>
+<tr class="separator:gac242f94ccdbdba3cbbb270d5c183784c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaded6455f588ada637a992f68a523a156" id="r_gaded6455f588ada637a992f68a523a156"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gaded6455f588ada637a992f68a523a156">vidre::detail::file::open</a> (const char *filename, int flags, mode_t mode) noexcept</td></tr>
+<tr class="separator:gaded6455f588ada637a992f68a523a156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2981ed82c64ee68192a49c87979fe060" id="r_ga2981ed82c64ee68192a49c87979fe060"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga2981ed82c64ee68192a49c87979fe060">vidre::detail::file::close</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd) noexcept</td></tr>
+<tr class="separator:ga2981ed82c64ee68192a49c87979fe060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga543c961dae6d615db3161858f9595f79" id="r_ga543c961dae6d615db3161858f9595f79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga543c961dae6d615db3161858f9595f79">vidre::detail::file::read</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, uint8_t *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>) noexcept</td></tr>
+<tr class="separator:ga543c961dae6d615db3161858f9595f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b75cb872839846e54aa4a24c1608cfc" id="r_ga1b75cb872839846e54aa4a24c1608cfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga1b75cb872839846e54aa4a24c1608cfc">vidre::detail::file::read</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, char *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>) noexcept</td></tr>
+<tr class="separator:ga1b75cb872839846e54aa4a24c1608cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac2bbd6468dd6e335ba07819eee2e029" id="r_gaac2bbd6468dd6e335ba07819eee2e029"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gaac2bbd6468dd6e335ba07819eee2e029">vidre::detail::file::write</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, const uint8_t *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>) noexcept</td></tr>
+<tr class="separator:gaac2bbd6468dd6e335ba07819eee2e029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef4ad35af015fe84a01ff4a847fb403d" id="r_gaef4ad35af015fe84a01ff4a847fb403d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gaef4ad35af015fe84a01ff4a847fb403d">vidre::detail::file::write</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, const char *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>) noexcept</td></tr>
+<tr class="separator:gaef4ad35af015fe84a01ff4a847fb403d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga718ec25a6eb57e3fa3aad7e9dc8a9b47" id="r_ga718ec25a6eb57e3fa3aad7e9dc8a9b47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga718ec25a6eb57e3fa3aad7e9dc8a9b47">vidre::detail::file::seek</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, <a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a> off, <a class="el" href="group__api-core-details.html#ga00b1e2053f507921126d16e20ed49ea5">whence_type</a> whence) noexcept</td></tr>
+<tr class="separator:ga718ec25a6eb57e3fa3aad7e9dc8a9b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67163b027006553f20835afc0159e23a" id="r_ga67163b027006553f20835afc0159e23a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga67163b027006553f20835afc0159e23a">vidre::detail::file::allocate</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, <a class="el" href="group__api-core-details.html#gaacd1bb2e24b0749a1beaef0a3f4742c4">allocation_type</a> mode, <a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a> length, <a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a> offset) noexcept</td></tr>
+<tr class="separator:ga67163b027006553f20835afc0159e23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16a1df29d4fe7bab4eab951aa7661eaa" id="r_ga16a1df29d4fe7bab4eab951aa7661eaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#ga9a03634bf33195ab3ed2d362f9ee65d9">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga16a1df29d4fe7bab4eab951aa7661eaa">vidre::detail::file::blocksize</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd)</td></tr>
+<tr class="separator:ga16a1df29d4fe7bab4eab951aa7661eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

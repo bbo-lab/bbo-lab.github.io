@@ -162,6 +162,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a86f4c376844ac2ae7ce8f1af0f6ca440" id="r_a86f4c376844ac2ae7ce8f1af0f6ca440"><td class="memItemLeft" align="right" valign="top">auto const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86f4c376844ac2ae7ce8f1af0f6ca440">parsed</a> () const noexcept</td></tr>
 <tr class="memdesc:a86f4c376844ac2ae7ce8f1af0f6ca440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get list of parsed elements.  <br /></td></tr>
 <tr class="separator:a86f4c376844ac2ae7ce8f1af0f6ca440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c62ccb74f08c1abe38ff58360ca0bb" id="r_a75c62ccb74f08c1abe38ff58360ca0bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1variant.html">variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75c62ccb74f08c1abe38ff58360ca0bb">get</a> (const std::string &amp;key) noexcept</td></tr>
+<tr class="memdesc:a75c62ccb74f08c1abe38ff58360ca0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get parsed value for a key.  <br /></td></tr>
+<tr class="separator:a75c62ccb74f08c1abe38ff58360ca0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae32acbbbc3706663ad64ca630aa66497" id="r_ae32acbbbc3706663ad64ca630aa66497"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae32acbbbc3706663ad64ca630aa66497">help</a> ()</td></tr>
 <tr class="memdesc:ae32acbbbc3706663ad64ca630aa66497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a help string.  <br /></td></tr>
 <tr class="separator:ae32acbbbc3706663ad64ca630aa66497"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,8 +179,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a892eb0c5a462177932096ed2ed866ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33ae02fb4faa228bf95beff3004bfb42" id="r_a33ae02fb4faa228bf95beff3004bfb42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33ae02fb4faa228bf95beff3004bfb42">handle</a> (const <a class="el" href="structvidre_1_1program_1_1argument.html">argument</a> &amp;opt)</td></tr>
 <tr class="separator:a33ae02fb4faa228bf95beff3004bfb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1085dfa84e58dd137142b8b98883082b" id="r_a1085dfa84e58dd137142b8b98883082b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1085dfa84e58dd137142b8b98883082b">argerror</a> (const std::string &amp;msg)</td></tr>
-<tr class="separator:a1085dfa84e58dd137142b8b98883082b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -335,31 +336,6 @@ template&lt;size_t N&gt; </div>
 
 </div>
 </div>
-<a id="a1085dfa84e58dd137142b8b98883082b" name="a1085dfa84e58dd137142b8b98883082b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1085dfa84e58dd137142b8b98883082b">&#9670;&#160;</a></span>argerror()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void program::argument::parser::argerror </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>msg</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aff0828147246b60608d8752c31196cc1" name="aff0828147246b60608d8752c31196cc1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff0828147246b60608d8752c31196cc1">&#9670;&#160;</a></span>parse()</h2>
 
@@ -461,6 +437,33 @@ template&lt;size_t N&gt; </div>
 </div><div class="memdoc">
 
 <p>Get list of parsed elements. </p>
+
+</div>
+</div>
+<a id="a75c62ccb74f08c1abe38ff58360ca0bb" name="a75c62ccb74f08c1abe38ff58360ca0bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75c62ccb74f08c1abe38ff58360ca0bb">&#9670;&#160;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvidre_1_1variant.html">variant</a> vidre::program::argument::parser::get </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get parsed value for a key. </p>
 
 </div>
 </div>

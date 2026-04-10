@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['map_0',['map',['../classvidre_1_1program_1_1argument_1_1parser.html#a75ea7373cf04e7f42d7171ab62d97732',1,'vidre::program::argument::parser']]],
-  ['message_1',['message',['../group__api-core-exception.html#ga1cc617c909969e5310c26c992be0d658',1,'vidre::error']]],
-  ['message_5ftype_2',['message_type',['../group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d',1,'vidre::log']]]
+  ['json_0',['json',['../group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338',1,'vidre::settings']]]
 ];

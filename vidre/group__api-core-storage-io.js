@@ -1,8 +1,9 @@
 var group__api_core_storage_io =
 [
-    [ "vidre::storage::has_data_member", "conceptvidre_1_1storage_1_1has__data__member.html", null ],
-    [ "vidre::storage::has_size_method", "conceptvidre_1_1storage_1_1has__size__method.html", null ],
     [ "vidre::storage::fileio", "classvidre_1_1storage_1_1fileio.html", [
+      [ "size_type", "classvidre_1_1storage_1_1fileio.html#a067b5143a07ba679fcfcbe118c1b6555", null ],
+      [ "offset_type", "classvidre_1_1storage_1_1fileio.html#a137f22669ec1beb7aec9accffa0793cc", null ],
+      [ "descriptor", "classvidre_1_1storage_1_1fileio.html#a8d2e90345a07d1df67ecf7dff299eb20", null ],
       [ "perms", "classvidre_1_1storage_1_1fileio.html#ac73218feb938e938626fdbe9b8f72aca", null ],
       [ "flag_type", "classvidre_1_1storage_1_1fileio.html#a050081d123e5a253ae3ac3a93f99d94b", [
         [ "readonly", "classvidre_1_1storage_1_1fileio.html#a050081d123e5a253ae3ac3a93f99d94bae497d2cc81126ff756feb2611546b704", null ],
@@ -13,76 +14,137 @@ var group__api_core_storage_io =
         [ "exclusive", "classvidre_1_1storage_1_1fileio.html#a050081d123e5a253ae3ac3a93f99d94ba5b335e22dce41d142269d7011e8e6dcc", null ],
         [ "truncate", "classvidre_1_1storage_1_1fileio.html#a050081d123e5a253ae3ac3a93f99d94ba959f39cdf2125f3469bda03463d51f2a", null ],
         [ "non_block", "classvidre_1_1storage_1_1fileio.html#a050081d123e5a253ae3ac3a93f99d94bada568c0dbaaaeddaa01b9c0da6b3bf0f", null ],
-        [ "synchronous", "classvidre_1_1storage_1_1fileio.html#a050081d123e5a253ae3ac3a93f99d94baf7b6689e8b16f571eacf3c00571ed4a0", null ]
+        [ "synchronous", "classvidre_1_1storage_1_1fileio.html#a050081d123e5a253ae3ac3a93f99d94baf7b6689e8b16f571eacf3c00571ed4a0", null ],
+        [ "close_on_exec", "classvidre_1_1storage_1_1fileio.html#a050081d123e5a253ae3ac3a93f99d94ba8393716f2d9f7901c2097264173214f3", null ]
+      ] ],
+      [ "whence_type", "classvidre_1_1storage_1_1fileio.html#a1671876e7e6aa608e5d92d8526662b59", [
+        [ "begin", "classvidre_1_1storage_1_1fileio.html#a1671876e7e6aa608e5d92d8526662b59a6ef8d5e0bfc3dd57730a6b3095792610", null ],
+        [ "current", "classvidre_1_1storage_1_1fileio.html#a1671876e7e6aa608e5d92d8526662b59a28c9ec4bdf97ca1acf44f0536f789497", null ],
+        [ "end", "classvidre_1_1storage_1_1fileio.html#a1671876e7e6aa608e5d92d8526662b59aedfc32c294404f1deae41ed0b49870ae", null ]
+      ] ],
+      [ "allocation_type", "classvidre_1_1storage_1_1fileio.html#ac27d12f8230081a633fb5e2bb79744f1", [
+        [ "allocate_range", "classvidre_1_1storage_1_1fileio.html#ac27d12f8230081a633fb5e2bb79744f1a9331793b09b788ce6eddca851f588786", null ],
+        [ "keep_size", "classvidre_1_1storage_1_1fileio.html#ac27d12f8230081a633fb5e2bb79744f1a0b18d9a56ffb83a9e01d7e7dffcd5542", null ],
+        [ "punch_hole", "classvidre_1_1storage_1_1fileio.html#ac27d12f8230081a633fb5e2bb79744f1a0dbd480cedad09bbabd8e07d7e3abdd3", null ],
+        [ "no_hide_stale", "classvidre_1_1storage_1_1fileio.html#ac27d12f8230081a633fb5e2bb79744f1a2b3c17fa5876b0bbd8fe65ba9d595541", null ],
+        [ "collapse_range", "classvidre_1_1storage_1_1fileio.html#ac27d12f8230081a633fb5e2bb79744f1a8ef6b5c9b10372dbd0e2cab375845a33", null ],
+        [ "zero_range", "classvidre_1_1storage_1_1fileio.html#ac27d12f8230081a633fb5e2bb79744f1ae063d5a1f84b1554f485f8f1145ffac6", null ],
+        [ "insert_range", "classvidre_1_1storage_1_1fileio.html#ac27d12f8230081a633fb5e2bb79744f1a4ab9c6d127cf421ff17dc90b43732ec3", null ],
+        [ "unshare_range", "classvidre_1_1storage_1_1fileio.html#ac27d12f8230081a633fb5e2bb79744f1af777c6ba99df8d01804f5b2d6d22ba9a", null ]
       ] ],
       [ "fileio", "classvidre_1_1storage_1_1fileio.html#a9dbda57b66fd0aa083f6b64b7d859095", null ],
-      [ "isvalid", "classvidre_1_1storage_1_1fileio.html#a3151f19a1c98237dd19c85092d290984", null ],
+      [ "fileio", "classvidre_1_1storage_1_1fileio.html#a5f65038a0165b6bdcf1c969265c22101", null ],
+      [ "fileio", "classvidre_1_1storage_1_1fileio.html#a894f550f1b6943e37511edc339d92132", null ],
+      [ "fileio", "classvidre_1_1storage_1_1fileio.html#a5d73defc93f8713c0a96fffae83ce4f4", null ],
+      [ "fileio", "classvidre_1_1storage_1_1fileio.html#abb1d5ae3c0f122d0af5956a98cc99cd3", null ],
+      [ "fileio", "classvidre_1_1storage_1_1fileio.html#a3873eab2b3363bbff0c54d1358f7fd64", null ],
+      [ "~fileio", "classvidre_1_1storage_1_1fileio.html#a83c32a82754b2180fc4d3db24c183857", null ],
+      [ "swap", "classvidre_1_1storage_1_1fileio.html#aba881d3467321b7dd0b05917ace3b1bd", null ],
+      [ "valid", "classvidre_1_1storage_1_1fileio.html#a1d48d9c549ae6469997edc292d2bd7f3", null ],
+      [ "operator descriptor", "classvidre_1_1storage_1_1fileio.html#ae355f59e49fb0d92e9e301cec4c312f5", null ],
       [ "open", "classvidre_1_1storage_1_1fileio.html#a43ef6cde7d6980fcd22e9416fb4a7a62", null ],
       [ "temporary", "classvidre_1_1storage_1_1fileio.html#a709c72bcf564d28431758b7070c40d25", null ],
       [ "temporary", "classvidre_1_1storage_1_1fileio.html#aa62447d04321df63548f890546ece91a", null ],
       [ "close", "classvidre_1_1storage_1_1fileio.html#a2644f2f98263f0dc8957414492fb2ea7", null ],
-      [ "write", "classvidre_1_1storage_1_1fileio.html#a034b0dae0b1b9dca86ac84b7da642fc5", null ],
-      [ "read", "classvidre_1_1storage_1_1fileio.html#a0a571cb0d1c92835c105c08e0887bc7b", null ],
-      [ "path_max", "classvidre_1_1storage_1_1fileio.html#a70d2297be570d5cebbeac95e32fa9701", null ],
+      [ "seek", "classvidre_1_1storage_1_1fileio.html#a0ea2e8396710d3f4c69019b94e87234c", null ],
+      [ "position", "classvidre_1_1storage_1_1fileio.html#ac66ea6b31106551b3c6498bae1f9cdaa", null ],
+      [ "size", "classvidre_1_1storage_1_1fileio.html#adff277eaefd819e24511804ef2bcfa52", null ],
+      [ "allocate", "classvidre_1_1storage_1_1fileio.html#a4a3f5f2658bcdd9eae09d711d8843940", null ],
+      [ "write", "classvidre_1_1storage_1_1fileio.html#a05ef18cffd75da240277ad350068361e", null ],
+      [ "read", "classvidre_1_1storage_1_1fileio.html#a50ac17efb76fa1b8342c7b67a90391e0", null ],
+      [ "allocate", "classvidre_1_1storage_1_1fileio.html#a7d3959c9cf46311842ac899cc9887b07", null ],
+      [ "reserve", "classvidre_1_1storage_1_1fileio.html#afcb6b1aab02a3e148be1570674743618", null ],
+      [ "path_max", "classvidre_1_1storage_1_1fileio.html#a19a8fd016e1740079ecdb1f22b663cec", null ],
       [ "default_perms", "classvidre_1_1storage_1_1fileio.html#acd5143be1d41f1506e89b807eb77b749", null ],
-      [ "fd_", "classvidre_1_1storage_1_1fileio.html#abd7d76ade243d863f31634c6ade247d8", null ]
+      [ "fd_", "classvidre_1_1storage_1_1fileio.html#a5657ccb32dfd8499309882b90c92bcb9", null ]
     ] ],
-    [ "vidre::storage::volume< E >", "structvidre_1_1storage_1_1volume.html", null ],
-    [ "vidre::storage::volume< std::endian::little >", "structvidre_1_1storage_1_1volume.html", [
-      [ "volume", "structvidre_1_1storage_1_1volume.html#add78d3eedca4e1a7102904ad5b4b444f", null ],
-      [ "volume", "structvidre_1_1storage_1_1volume.html#aba67a15cf0ae8c0726ab99f1919eb27f", null ],
-      [ "operator std::size_t", "structvidre_1_1storage_1_1volume.html#ac5babe565bd28044c48ae369d9e78edd", null ],
-      [ "size", "structvidre_1_1storage_1_1volume.html#aad109169f6596e9273acc23ddb84170b", null ],
-      [ "managed", "structvidre_1_1storage_1_1volume.html#a155d3d74aa45b0188e1e9967a8ed18e8", null ],
-      [ "dynamic", "structvidre_1_1storage_1_1volume.html#a5a6f65a466bdceb94a8c980a0157a25f", null ]
+    [ "vidre::storage::extent< E >", "structvidre_1_1storage_1_1extent.html", null ],
+    [ "vidre::storage::extent< std::endian::little >", "structvidre_1_1storage_1_1extent.html", [
+      [ "extent", "structvidre_1_1storage_1_1extent.html#ae4f5943ed4a54f5f02d6b5a6dadb4037", null ],
+      [ "extent", "structvidre_1_1storage_1_1extent.html#a79d3621ee5654b7d55d931b34022169d", null ],
+      [ "operator std::size_t", "structvidre_1_1storage_1_1extent.html#ac20e24815352a299e3958ae9b1cb94e7", null ],
+      [ "size", "structvidre_1_1storage_1_1extent.html#accdd6bdf127493940d0c4a329aa3e2b5", null ],
+      [ "writable", "structvidre_1_1storage_1_1extent.html#ab807248999ec89a7032c4f1a15a577a3", null ],
+      [ "dynamic", "structvidre_1_1storage_1_1extent.html#ae4eafd7606fbd6d97afe2eea7141e21a", null ]
     ] ],
-    [ "vidre::storage::volume< std::endian::big >", "structvidre_1_1storage_1_1volume.html", [
-      [ "volume", "structvidre_1_1storage_1_1volume.html#a6103f317979ceea55222f1e743bbb96c", null ],
-      [ "volume", "structvidre_1_1storage_1_1volume.html#a5fac97074b8ad577cbbcc27b2e991ca1", null ],
-      [ "operator std::size_t", "structvidre_1_1storage_1_1volume.html#afadfde39442eed247771e7634f13a94f", null ],
-      [ "dynamic", "structvidre_1_1storage_1_1volume.html#a5dc543eaa8fe0baa65c0fc154630c20a", null ],
-      [ "managed", "structvidre_1_1storage_1_1volume.html#a0dd7fca02275b220c6d56bb73e3c370f", null ],
-      [ "size", "structvidre_1_1storage_1_1volume.html#a41d6a3dd5cbff2f7f18dd9ce66020fed", null ]
+    [ "vidre::storage::extent< std::endian::big >", "structvidre_1_1storage_1_1extent.html", [
+      [ "extent", "structvidre_1_1storage_1_1extent.html#a30da65981770a1c04c679e4e5096b19b", null ],
+      [ "extent", "structvidre_1_1storage_1_1extent.html#a8a046808f2d216e3b3572885ffef724a", null ],
+      [ "extent", "structvidre_1_1storage_1_1extent.html#adfdd9fc51a01de3faf1f62170e6975cf", null ],
+      [ "operator std::size_t", "structvidre_1_1storage_1_1extent.html#aee52394ad7c27fca21957b4cfcf18f3b", null ],
+      [ "dynamic", "structvidre_1_1storage_1_1extent.html#a82cdba78ca9c51f2af4d1c5cd7204958", null ],
+      [ "writable", "structvidre_1_1storage_1_1extent.html#a0df5f2cde5e1b35c1420a1da15dc2678", null ],
+      [ "size", "structvidre_1_1storage_1_1extent.html#a26f6f7dc39a8f49c4aabf8e3e43e5056", null ]
     ] ],
     [ "vidre::storage::view", "classvidre_1_1storage_1_1view.html", [
       [ "size_type", "classvidre_1_1storage_1_1view.html#a8b2ab014151bca410d4f0c5da0f15756", null ],
       [ "pointer", "classvidre_1_1storage_1_1view.html#a557bac1363d0143a5860c837a3f4b961", null ],
       [ "const_pointer", "classvidre_1_1storage_1_1view.html#ac1c1b881d81512a0f084aa3a975792f9", null ],
-      [ "view", "classvidre_1_1storage_1_1view.html#aa4bb1f8186b368d585bec42b70fc0080", null ],
-      [ "view", "classvidre_1_1storage_1_1view.html#a4ef371ec92db5352a4f191ec869e1148", null ],
-      [ "view", "classvidre_1_1storage_1_1view.html#ab514197694817a54c62d00d88b52ef5b", null ],
-      [ "view", "classvidre_1_1storage_1_1view.html#ae97c5e640d705c04d4b569bed85ec1ae", null ],
-      [ "view", "classvidre_1_1storage_1_1view.html#a24d70a11a0a522740185129d96f121fe", null ],
-      [ "view", "classvidre_1_1storage_1_1view.html#a736e8a4d39e623450f7351b73f426233", null ],
-      [ "size", "classvidre_1_1storage_1_1view.html#a8f7b86d46dff812b548b41a79bde574a", null ],
-      [ "data", "classvidre_1_1storage_1_1view.html#aaef83ea3a1cf72d84dad1b54ab07dd75", null ],
-      [ "operator void *", "classvidre_1_1storage_1_1view.html#a13585fdba10235391c202149fa474ba5", null ],
+      [ "view", "classvidre_1_1storage_1_1view.html#a8433da2fec2e9adf0aa64d9075c783ea", null ],
+      [ "view", "classvidre_1_1storage_1_1view.html#a792e96125a0d920e791e2c07be70d780", null ],
+      [ "view", "classvidre_1_1storage_1_1view.html#a9612054622d57f2b8cdbb91e18a77ad0", null ],
+      [ "view", "classvidre_1_1storage_1_1view.html#a8ccea426f1fe3ba56746070359fe1b79", null ],
+      [ "view", "classvidre_1_1storage_1_1view.html#aa8a2ba3e61150da2cfc79377da585bef", null ],
+      [ "view", "classvidre_1_1storage_1_1view.html#a85513defce277e9ce1c658ebe239e2f2", null ],
+      [ "view", "classvidre_1_1storage_1_1view.html#a78008bd341cd17e8416ec7cb28b882e7", null ],
+      [ "operator=", "classvidre_1_1storage_1_1view.html#aa9120bb41a346cfa0b5d447d4fabacee", null ],
+      [ "operator=", "classvidre_1_1storage_1_1view.html#a0b3cd878696151bf8f34937a73ad58d2", null ],
+      [ "size", "classvidre_1_1storage_1_1view.html#a7e267e45fb940b72f57100389dffdc6b", null ],
+      [ "data", "classvidre_1_1storage_1_1view.html#a6a1b157c10c9407eac795b856898affb", null ],
+      [ "operator const_pointer", "classvidre_1_1storage_1_1view.html#a337f32eef53ac4cb4e8b03414538be42", null ],
       [ "operator const void *", "classvidre_1_1storage_1_1view.html#a400358fbfeeaa6b89b2deb2009dd9d48", null ],
-      [ "operator uint8_t *", "classvidre_1_1storage_1_1view.html#a3ee5b9ae34ab9557a3e40aeea6d8c9d9", null ],
-      [ "operator const uint8_t *", "classvidre_1_1storage_1_1view.html#a7cc6e38c03cf510797b28564344f1280", null ],
-      [ "size_", "classvidre_1_1storage_1_1view.html#ae129d774c14335744277ada6ed692d80", null ],
+      [ "operator pointer", "classvidre_1_1storage_1_1view.html#a0c6be5d0339f83ef3eae5a25a73de9b2", null ],
+      [ "operator void *", "classvidre_1_1storage_1_1view.html#a79d763db59c11e65f4fd0e00e54d1e38", null ],
+      [ "size_", "classvidre_1_1storage_1_1view.html#a2a76a7d5c958bf0cb0ab32c70fac98b5", null ],
       [ "data_", "classvidre_1_1storage_1_1view.html#a1692d27d53bd69f5c216c67362411ea1", null ]
+    ] ],
+    [ "vidre::storage::buffer", "structvidre_1_1storage_1_1buffer.html", [
+      [ "size_type", "structvidre_1_1storage_1_1buffer.html#a6d6f1ed38cefc40fd9dd15ee058ef09d", null ],
+      [ "value_type", "structvidre_1_1storage_1_1buffer.html#ae2cd7dcca14447f88ac4da5324f9be12", null ],
+      [ "pointer", "structvidre_1_1storage_1_1buffer.html#a223d8709621a5b9afbee69a70ad5e382", null ],
+      [ "const_pointer", "structvidre_1_1storage_1_1buffer.html#a8b68a03f2bfb49df5d5dda410aa63c45", null ],
+      [ "buffer", "structvidre_1_1storage_1_1buffer.html#a5545d90dc225a47788c452d1d9b2f8a1", null ],
+      [ "~buffer", "structvidre_1_1storage_1_1buffer.html#afefb96aaacd03fc20cf2f0eb75e6fafc", null ],
+      [ "setup", "structvidre_1_1storage_1_1buffer.html#abd934aeac733e9efa92050e5b7e56fe1", null ],
+      [ "operator bool", "structvidre_1_1storage_1_1buffer.html#adf111e09265a792f519b4f343abc164c", null ],
+      [ "full", "structvidre_1_1storage_1_1buffer.html#a3a446ec09919683a9b1c77c0f84ffe3a", null ],
+      [ "flush", "structvidre_1_1storage_1_1buffer.html#ab65ec4afb246e71c7a555e35791467aa", null ],
+      [ "append", "structvidre_1_1storage_1_1buffer.html#ade4092da5e541490e2003c33b6577b33", null ],
+      [ "size", "structvidre_1_1storage_1_1buffer.html#a3b1fd21bb6190b96718b4bb5bc7be2e0", null ],
+      [ "used", "structvidre_1_1storage_1_1buffer.html#a6ec8b36d0e3c391f62c9d49b70fc6f29", null ],
+      [ "data", "structvidre_1_1storage_1_1buffer.html#a054ea2475d5a7221d2a0bf99b3031155", null ]
     ] ],
     [ "vidre::storage::sink", "classvidre_1_1storage_1_1sink.html", [
       [ "size_type", "classvidre_1_1storage_1_1sink.html#a974114572f7abe2db93d3f021c99dc32", null ],
+      [ "offset_type", "classvidre_1_1storage_1_1sink.html#a920bbe3ff038d01541836868cba2a202", null ],
       [ "sink", "classvidre_1_1storage_1_1sink.html#a433b8d22015b306d7ecb30f4607ac31f", null ],
-      [ "dir", "classvidre_1_1storage_1_1sink.html#ac8801c90c922a9a7271be92a47e58cf0", null ],
-      [ "put", "classvidre_1_1storage_1_1sink.html#af03c129d8129b9815dc8161902105ed3", null ],
-      [ "put", "classvidre_1_1storage_1_1sink.html#ac218a6de4377f6e4c03344779179c3d9", null ],
-      [ "put", "classvidre_1_1storage_1_1sink.html#a8b83da0628ce18ba5073d8564fed15a6", null ]
+      [ "~sink", "classvidre_1_1storage_1_1sink.html#abc8fd8e3bebd6e427bd5f4dc40c0eded", null ],
+      [ "flush", "classvidre_1_1storage_1_1sink.html#a1894e6940906cbc3cbf8d865d93d98b9", null ],
+      [ "write", "classvidre_1_1storage_1_1sink.html#a5a220f33e1ba985be8b9cf0a68216efe", null ],
+      [ "valid", "classvidre_1_1storage_1_1sink.html#aabc9ca5ffcf4388bcc81c27a7b2f8e5b", null ],
+      [ "put", "classvidre_1_1storage_1_1sink.html#ade34447d98aa948e01112af93fa966a3", null ],
+      [ "put", "classvidre_1_1storage_1_1sink.html#a78f29e875cf99fe72c48189a99263492", null ],
+      [ "put", "classvidre_1_1storage_1_1sink.html#a03214dafc50adb191551de39df0a4d1a", null ],
+      [ "put", "classvidre_1_1storage_1_1sink.html#a27a11910ac5b9cd318c5a8e88ebeae5e", null ],
+      [ "setbuf", "classvidre_1_1storage_1_1sink.html#a37d31ea6a059e20e332eb763aa1370c6", null ],
+      [ "buf_", "classvidre_1_1storage_1_1sink.html#ae0642d76b035fb59d25e73c8f7cec88b", null ]
+    ] ],
+    [ "vidre::storage::filesink", "classvidre_1_1storage_1_1filesink.html", [
+      [ "mode_type", "classvidre_1_1storage_1_1filesink.html#a3dd5fcab140da57ee81c5891bbeac165", [
+        [ "none", "classvidre_1_1storage_1_1filesink.html#a3dd5fcab140da57ee81c5891bbeac165aeab3861be7e7957b290fa10f65533926", null ],
+        [ "truncate", "classvidre_1_1storage_1_1filesink.html#a3dd5fcab140da57ee81c5891bbeac165aabc8d5825b00a30ff41adc83a0557f80", null ],
+        [ "synchronous", "classvidre_1_1storage_1_1filesink.html#a3dd5fcab140da57ee81c5891bbeac165ac0909a6f517ce79e3f49c636e3f80c27", null ],
+        [ "unbuffered", "classvidre_1_1storage_1_1filesink.html#a3dd5fcab140da57ee81c5891bbeac165aaf15d5942d96c6369664721afd6af1c5", null ]
+      ] ],
+      [ "filesink", "classvidre_1_1storage_1_1filesink.html#abd5183e1276232fa346f10c31d173602", null ],
+      [ "~filesink", "classvidre_1_1storage_1_1filesink.html#a14fd0773a22a43a800cc51741a79e2e6", null ],
+      [ "write", "classvidre_1_1storage_1_1filesink.html#aebb96a9a12fb9206f9fa1509cde1f154", null ],
+      [ "valid", "classvidre_1_1storage_1_1filesink.html#af2acf0b97932fbd2898c6a830846f74a", null ],
+      [ "open", "classvidre_1_1storage_1_1filesink.html#ae7c1b92a824bb51460bc759bcd49c271", null ],
+      [ "close", "classvidre_1_1storage_1_1filesink.html#a85b4d2d8a4e2b6521073c179e8cf0230", null ],
+      [ "fd_", "classvidre_1_1storage_1_1filesink.html#a1d8c901269f4472de76a3e43dddb257e", null ]
     ] ],
     [ "vidre::storage::source", "classvidre_1_1storage_1_1source.html", [
-      [ "source", "classvidre_1_1storage_1_1source.html#afff86749c7104c509a5af185ab665d51", null ],
-      [ "dir", "classvidre_1_1storage_1_1source.html#a93d2cdcb43e043c7fc8ec7c41eedae32", null ]
-    ] ],
-    [ "vidre::storage::mode", "group__api-core-storage-io.html#ga64b4483c36e327a2e404906303619a1b", [
-      [ "vidre::storage::mode::none", "group__api-core-storage-io.html#gga64b4483c36e327a2e404906303619a1ba334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
-      [ "vidre::storage::mode::input", "group__api-core-storage-io.html#gga64b4483c36e327a2e404906303619a1baa43c1b0aa53a0c908810c06ab1ff3967", null ],
-      [ "vidre::storage::mode::output", "group__api-core-storage-io.html#gga64b4483c36e327a2e404906303619a1ba78e6221f6393d1356681db398f14ce6d", null ],
-      [ "vidre::storage::mode::bidi", "group__api-core-storage-io.html#gga64b4483c36e327a2e404906303619a1baca942afbdc13c5bd23b8a44919a40305", null ]
-    ] ],
-    [ "vidre::storage::operator|", "group__api-core-storage-io.html#ga2a9d510a37ba003342d3a02a1d0a5ae5", null ],
-    [ "vidre::storage::operator&", "group__api-core-storage-io.html#gaec6acad2abae8c84e5d61f3df3d31512", null ],
-    [ "vidre::storage::operator~", "group__api-core-storage-io.html#ga2e64c9f20b56f55b5b23c0dbe073d1ec", null ],
-    [ "vidre::storage::operator!", "group__api-core-storage-io.html#gaf333bf1f1ebd31d8a5410cbfdce1f5a9", null ]
+      [ "source", "classvidre_1_1storage_1_1source.html#afff86749c7104c509a5af185ab665d51", null ]
+    ] ]
 ];

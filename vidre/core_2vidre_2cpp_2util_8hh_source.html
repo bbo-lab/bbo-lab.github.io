@@ -139,56 +139,58 @@ $(function(){initNavTree('core_2vidre_2cpp_2util_8hh_source.html',''); initResiz
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#ifndef VIDRE_CORE_CPP_UTIL_HH</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define VIDRE_CORE_CPP_UTIL_HH</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;<a class="code" href="vidre_2config_8hh.html">vidre/config.hh</a>&gt;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;climits&gt;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="code" href="vidre_2config_8hh.html">vidre/config.hh</a>&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;climits&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre_1_1detail.html">detail</a> {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a> {</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="comment">// FIXME</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre_1_1detail.html">detail</a> {</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }  <span class="comment">// namespace detail</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="group__api-core-cpp-util.html#ga60b45cf7ce0de3e77e3f93db02eb0e96">   53</a></span>    <span class="keyword">constexpr</span> std::size_t <a class="code hl_function" href="group__api-core-cpp-util.html#ga60b45cf7ce0de3e77e3f93db02eb0e96">size_of</a>(<span class="keyword">const</span> T (&amp;)[N]) <span class="keyword">noexcept</span> {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">return</span> N;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="comment">// FIXME</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }  <span class="comment">// namespace detail</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="group__api-core-cpp-util.html#ga60b45cf7ce0de3e77e3f93db02eb0e96">   55</a></span>    <span class="keyword">constexpr</span> std::size_t <a class="code hl_function" href="group__api-core-cpp-util.html#ga60b45cf7ce0de3e77e3f93db02eb0e96">size_of</a>(<span class="keyword">const</span> T (&amp;)[N]) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> N;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
 </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// /** Get demangled name of FIXME.</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">//  * */</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="foldopen" id="foldopen00063" data-start="{" data-end="};">
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structvidre_1_1bits__of.html">   63</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structvidre_1_1bits__of.html">bits_of</a> {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="structvidre_1_1bits__of.html#ab416008cadbb9b37448b371e9ac5e74d">   64</a></span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> std::size_t <a class="code hl_variable" href="structvidre_1_1bits__of.html#ab416008cadbb9b37448b371e9ac5e74d">value</a> = CHAR_BIT * <span class="keyword">sizeof</span>(T);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    };</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// /** Get demangled name of FIXME.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">//  * */</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="};">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="structvidre_1_1bits__of.html">   65</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structvidre_1_1bits__of.html">bits_of</a> {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structvidre_1_1bits__of.html#ab416008cadbb9b37448b371e9ac5e74d">   66</a></span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> std::size_t <a class="code hl_variable" href="structvidre_1_1bits__of.html#ab416008cadbb9b37448b371e9ac5e74d">value</a> = CHAR_BIT * <span class="keyword">sizeof</span>(T);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    };</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> E&gt;</div>
-<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="group__api-core-cpp-util.html#gaf2585385c90cccecb77ecac59eeb5b5b">   70</a></span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__api-core-cpp-util.html#gaf2585385c90cccecb77ecac59eeb5b5b">to_underlying</a>(E e) <span class="keyword">noexcept</span> {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::underlying_type_t&lt;E&gt;<span class="keyword">&gt;</span>(e);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> E&gt;</div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="group__api-core-cpp-util.html#gaf2585385c90cccecb77ecac59eeb5b5b">   72</a></span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__api-core-cpp-util.html#gaf2585385c90cccecb77ecac59eeb5b5b">to_underlying</a>(E e) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::underlying_type_t&lt;E&gt;<span class="keyword">&gt;</span>(e);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
 </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}  <span class="comment">// namespace vidre</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#endif  </span><span class="comment">// VIDRE_CORE_CPP_UTIL_HH</span></div>
-<div class="ttc" id="agroup__api-core-cpp-util_html_ga60b45cf7ce0de3e77e3f93db02eb0e96"><div class="ttname"><a href="group__api-core-cpp-util.html#ga60b45cf7ce0de3e77e3f93db02eb0e96">vidre::size_of</a></div><div class="ttdeci">constexpr std::size_t size_of(const T(&amp;)[N]) noexcept</div><div class="ttdoc">Get size of an array of any type.</div><div class="ttdef"><b>Definition</b> util.hh:53</div></div>
-<div class="ttc" id="agroup__api-core-cpp-util_html_gaf2585385c90cccecb77ecac59eeb5b5b"><div class="ttname"><a href="group__api-core-cpp-util.html#gaf2585385c90cccecb77ecac59eeb5b5b">vidre::to_underlying</a></div><div class="ttdeci">constexpr auto to_underlying(E e) noexcept</div><div class="ttdoc">Get value (such as enum class) as underlying value.</div><div class="ttdef"><b>Definition</b> util.hh:70</div></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}  <span class="comment">// namespace vidre</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif  </span><span class="comment">// VIDRE_CORE_CPP_UTIL_HH</span></div>
+<div class="ttc" id="agroup__api-core-cpp-util_html_ga60b45cf7ce0de3e77e3f93db02eb0e96"><div class="ttname"><a href="group__api-core-cpp-util.html#ga60b45cf7ce0de3e77e3f93db02eb0e96">vidre::size_of</a></div><div class="ttdeci">constexpr std::size_t size_of(const T(&amp;)[N]) noexcept</div><div class="ttdoc">Get size of an array of any type.</div><div class="ttdef"><b>Definition</b> util.hh:55</div></div>
+<div class="ttc" id="agroup__api-core-cpp-util_html_gaf2585385c90cccecb77ecac59eeb5b5b"><div class="ttname"><a href="group__api-core-cpp-util.html#gaf2585385c90cccecb77ecac59eeb5b5b">vidre::to_underlying</a></div><div class="ttdeci">constexpr auto to_underlying(E e) noexcept</div><div class="ttdoc">Get value (such as enum class) as underlying value.</div><div class="ttdef"><b>Definition</b> util.hh:72</div></div>
 <div class="ttc" id="anamespacevidre_1_1detail_html"><div class="ttname"><a href="namespacevidre_1_1detail.html">vidre::detail</a></div><div class="ttdef"><b>Definition</b> config.hh:32</div></div>
 <div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> midraw.hh:31</div></div>
-<div class="ttc" id="astructvidre_1_1bits__of_html"><div class="ttname"><a href="structvidre_1_1bits__of.html">vidre::bits_of</a></div><div class="ttdoc">Get demangled name of FIXME.</div><div class="ttdef"><b>Definition</b> util.hh:63</div></div>
-<div class="ttc" id="astructvidre_1_1bits__of_html_ab416008cadbb9b37448b371e9ac5e74d"><div class="ttname"><a href="structvidre_1_1bits__of.html#ab416008cadbb9b37448b371e9ac5e74d">vidre::bits_of::value</a></div><div class="ttdeci">static constexpr std::size_t value</div><div class="ttdef"><b>Definition</b> util.hh:64</div></div>
+<div class="ttc" id="astructvidre_1_1bits__of_html"><div class="ttname"><a href="structvidre_1_1bits__of.html">vidre::bits_of</a></div><div class="ttdoc">Get demangled name of FIXME.</div><div class="ttdef"><b>Definition</b> util.hh:65</div></div>
+<div class="ttc" id="astructvidre_1_1bits__of_html_ab416008cadbb9b37448b371e9ac5e74d"><div class="ttname"><a href="structvidre_1_1bits__of.html#ab416008cadbb9b37448b371e9ac5e74d">vidre::bits_of::value</a></div><div class="ttdeci">static constexpr std::size_t value</div><div class="ttdef"><b>Definition</b> util.hh:66</div></div>
 <div class="ttc" id="avidre_2config_8hh_html"><div class="ttname"><a href="vidre_2config_8hh.html">config.hh</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

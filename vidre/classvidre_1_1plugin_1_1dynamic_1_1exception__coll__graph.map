@@ -1,9 +1,15 @@
 <map id="vidre::plugin::dynamic::exception" name="vidre::plugin::dynamic::exception">
-<area shape="rect" id="Node000001" title="Exception." alt="" coords="29,183,179,223"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,95,120,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,131,98,181,93,184,71,133"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="144,95,224,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,132,122,184,118,181,163,129"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="121,5,247,45"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="187,59,187,94,181,94,181,59"/>
+<area shape="rect" id="Node000001" title="Exception." alt="" coords="695,73,844,113"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1exception.html" title="General exception." alt="" coords="495,54,609,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="624,73,695,82,694,87,623,78"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1error_1_1info.html" title="Base class for supplemental exception info." alt="" coords="325,51,439,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="453,62,495,63,495,68,453,68"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1detail_1_1exception_1_1supplement.html" title="Supplemental information for exceptions." alt="" coords="43,5,196,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="210,36,326,53,325,58,209,41"/>
+<area shape="rect" id="Node000005" href="$classvidre_1_1shared.html" title=" " alt="" coords="5,69,233,139"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="247,82,325,70,325,75,247,87"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="512,105,592,130"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="606,110,670,103,694,100,694,105,671,108,606,115"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="319,101,445,141"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="459,117,512,116,512,121,459,122"/>
 </map>

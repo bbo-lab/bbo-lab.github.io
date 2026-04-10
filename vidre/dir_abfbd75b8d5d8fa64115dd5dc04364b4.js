@@ -8,11 +8,13 @@ var dir_abfbd75b8d5d8fa64115dd5dc04364b4 =
     [ "settings", "dir_6befe78a6c2dbaa93ec40d521d837f32.html", "dir_6befe78a6c2dbaa93ec40d521d837f32" ],
     [ "storage", "dir_43696e9230b71dbdcf64b2d56c385572.html", "dir_43696e9230b71dbdcf64b2d56c385572" ],
     [ "util", "dir_44dda3653d8ed495fb138f7de47cfc57.html", "dir_44dda3653d8ed495fb138f7de47cfc57" ],
+    [ "video", "dir_5e64edb1d148175afeab805cce931001.html", "dir_5e64edb1d148175afeab805cce931001" ],
     [ "exception.cc", "core_2vidre_2exception_8cc.html", null ],
     [ "exception.hh", "core_2vidre_2exception_8hh.html", "core_2vidre_2exception_8hh" ],
     [ "log.cc", "src_2libs_2core_2vidre_2log_8cc.html", "src_2libs_2core_2vidre_2log_8cc" ],
     [ "log.hh", "log_8hh.html", "log_8hh" ],
     [ "os.hh", "os_8hh.html", null ],
+    [ "plugin.cc", "plugin_8cc.html", null ],
     [ "plugin.hh", "plugin_8hh.html", null ],
     [ "program.cc", "src_2libs_2core_2vidre_2program_8cc.html", "src_2libs_2core_2vidre_2program_8cc" ],
     [ "program.hh", "program_8hh.html", "program_8hh" ],
@@ -21,5 +23,7 @@ var dir_abfbd75b8d5d8fa64115dd5dc04364b4 =
     [ "settings.cc", "src_2libs_2core_2vidre_2settings_8cc.html", "src_2libs_2core_2vidre_2settings_8cc" ],
     [ "settings.hh", "settings_8hh.html", null ],
     [ "storage.cc", "storage_8cc.html", null ],
-    [ "storage.hh", "storage_8hh.html", null ]
+    [ "storage.hh", "storage_8hh.html", null ],
+    [ "video.cc", "video_8cc.html", null ],
+    [ "video.hh", "video_8hh.html", null ]
 ];

@@ -1,0 +1,11 @@
+<map id="libs/device/vidre/device/camera.hh" name="libs/device/vidre/device/camera.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="335,5,493,45"/>
+<area shape="rect" id="Node000002" href="$examples_2playground_2uvc_8cc.html" title=" " alt="" coords="5,101,276,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="347,52,197,103,195,98,345,47"/>
+<area shape="rect" id="Node000003" href="$uvc_8hh.html" title=" " alt="" coords="300,93,528,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="417,59,417,93,411,93,411,59"/>
+<area shape="rect" id="Node000005" href="$camera_8cc.html" title=" " alt="" coords="552,101,711,141"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="471,48,588,98,586,103,469,53"/>
+<area shape="rect" id="Node000004" href="$examples_2playground_2uvc_2linux_2uvc_8cc.html" title=" " alt="" coords="300,196,528,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="417,162,417,196,411,196,411,162"/>
+</map>

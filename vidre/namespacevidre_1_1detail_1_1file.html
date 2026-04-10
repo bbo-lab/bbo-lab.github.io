@@ -125,6 +125,10 @@ $(function(){initNavTree('namespacevidre_1_1detail_1_1file.html',''); initResiza
 Typedefs</h2></td></tr>
 <tr class="memitem:ga4d06a614ee39ae6f8e1db6ca1c6c326c" id="r_ga4d06a614ee39ae6f8e1db6ca1c6c326c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> = int</td></tr>
 <tr class="separator:ga4d06a614ee39ae6f8e1db6ca1c6c326c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a03634bf33195ab3ed2d362f9ee65d9" id="r_ga9a03634bf33195ab3ed2d362f9ee65d9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga9a03634bf33195ab3ed2d362f9ee65d9">size_type</a> = std::size_t</td></tr>
+<tr class="separator:ga9a03634bf33195ab3ed2d362f9ee65d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf952830b24e13cadd3043e030ef9e71" id="r_gaaf952830b24e13cadd3043e030ef9e71"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a> = std::make_signed_t&lt;<a class="el" href="group__api-core-details.html#ga9a03634bf33195ab3ed2d362f9ee65d9">size_type</a>&gt;</td></tr>
+<tr class="separator:gaaf952830b24e13cadd3043e030ef9e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -146,26 +150,62 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__api-core-details.html#gga3892b370e5f5d516b8fc80a6f97726d8a3222693641de90c643e6487373cf5a84">non_block</a> = O_NONBLOCK
 , <br />
 &#160;&#160;<a class="el" href="group__api-core-details.html#gga3892b370e5f5d516b8fc80a6f97726d8aeb2e8983e0cd9b54b305d6b613b99443">synchronous</a> = O_SYNC
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#gga3892b370e5f5d516b8fc80a6f97726d8a88892a034e30b2c1805cd6b76d1d53a0">close_on_exec</a> = O_CLOEXEC
 <br />
  }</td></tr>
 <tr class="separator:ga3892b370e5f5d516b8fc80a6f97726d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00b1e2053f507921126d16e20ed49ea5" id="r_ga00b1e2053f507921126d16e20ed49ea5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga00b1e2053f507921126d16e20ed49ea5">whence_type</a> : int { <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#gga00b1e2053f507921126d16e20ed49ea5a0b83d8c3b94d40f84265266b08c9e395">begin</a> = SEEK_SET
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#gga00b1e2053f507921126d16e20ed49ea5a87afcfbcca9b8faf0875ff4998987015">current</a> = SEEK_CUR
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#gga00b1e2053f507921126d16e20ed49ea5a1c18e6d90c1b9f0593bf3d245e038fc3">end</a> = SEEK_END
+<br />
+ }</td></tr>
+<tr class="separator:ga00b1e2053f507921126d16e20ed49ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaacd1bb2e24b0749a1beaef0a3f4742c4" id="r_gaacd1bb2e24b0749a1beaef0a3f4742c4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gaacd1bb2e24b0749a1beaef0a3f4742c4">allocation_type</a> : int { <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4aaaa661fab18a5b49eae0d20e6b7264e0">allocate_range</a> = FALLOC_FL_ALLOCATE_RANGE
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4ab0176ac180b1e44d8482db2587c4a09d">keep_size</a> = FALLOC_FL_KEEP_SIZE
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4ab6059b4778a4ba38b2f12280f3795f9a">punch_hole</a> = FALLOC_FL_PUNCH_HOLE
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4ac7de45b298934a8959c6ca415327f493">no_hide_stale</a> = FALLOC_FL_NO_HIDE_STALE
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4a12073bdf04e7c35e20fb0845b42bea8b">collapse_range</a> = FALLOC_FL_COLLAPSE_RANGE
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4ac5b989800b29b2520740f7b1732be167">zero_range</a> = FALLOC_FL_ZERO_RANGE
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4aea1360d2f3f017fbe848a9408bfe82e9">insert_range</a> = FALLOC_FL_INSERT_RANGE
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4ad2c77cf460d44a42e1589175f1e84eaf">unshare_range</a> = FALLOC_FL_UNSHARE_RANGE
+<br />
+ }</td></tr>
+<tr class="separator:gaacd1bb2e24b0749a1beaef0a3f4742c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaf7b529521929f9fb34bdfd8feb24c611" id="r_gaf7b529521929f9fb34bdfd8feb24c611"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gaf7b529521929f9fb34bdfd8feb24c611">open</a> (const char *filename, int flags)</td></tr>
-<tr class="separator:gaf7b529521929f9fb34bdfd8feb24c611"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga00db467c019a330ea4ec79ba79b7f7fb" id="r_ga00db467c019a330ea4ec79ba79b7f7fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga00db467c019a330ea4ec79ba79b7f7fb">open</a> (const char *filename, int flags, mode_t mode)</td></tr>
-<tr class="separator:ga00db467c019a330ea4ec79ba79b7f7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4193fbb8547403dd34b1772c50f0e1e6" id="r_ga4193fbb8547403dd34b1772c50f0e1e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga4193fbb8547403dd34b1772c50f0e1e6">close</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd)</td></tr>
-<tr class="separator:ga4193fbb8547403dd34b1772c50f0e1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac56ba6cdf96ed3d8570ad4c92f42c774" id="r_gac56ba6cdf96ed3d8570ad4c92f42c774"><td class="memItemLeft" align="right" valign="top">std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gac56ba6cdf96ed3d8570ad4c92f42c774">read</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, uint8_t *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>)</td></tr>
-<tr class="separator:gac56ba6cdf96ed3d8570ad4c92f42c774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ce9cdd7a1027dc0a755d9d4918f62e5" id="r_ga5ce9cdd7a1027dc0a755d9d4918f62e5"><td class="memItemLeft" align="right" valign="top">std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga5ce9cdd7a1027dc0a755d9d4918f62e5">read</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, char *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>)</td></tr>
-<tr class="separator:ga5ce9cdd7a1027dc0a755d9d4918f62e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5b320d91a487f3113f3b05dd9c09f21" id="r_gaf5b320d91a487f3113f3b05dd9c09f21"><td class="memItemLeft" align="right" valign="top">std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gaf5b320d91a487f3113f3b05dd9c09f21">write</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, const uint8_t *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>)</td></tr>
-<tr class="separator:gaf5b320d91a487f3113f3b05dd9c09f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0d80eb9ffce1467092601b352290a891" id="r_ga0d80eb9ffce1467092601b352290a891"><td class="memItemLeft" align="right" valign="top">std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga0d80eb9ffce1467092601b352290a891">write</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, const char *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>)</td></tr>
-<tr class="separator:ga0d80eb9ffce1467092601b352290a891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac242f94ccdbdba3cbbb270d5c183784c" id="r_gac242f94ccdbdba3cbbb270d5c183784c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gac242f94ccdbdba3cbbb270d5c183784c">open</a> (const char *filename, int flags) noexcept</td></tr>
+<tr class="separator:gac242f94ccdbdba3cbbb270d5c183784c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaded6455f588ada637a992f68a523a156" id="r_gaded6455f588ada637a992f68a523a156"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gaded6455f588ada637a992f68a523a156">open</a> (const char *filename, int flags, mode_t mode) noexcept</td></tr>
+<tr class="separator:gaded6455f588ada637a992f68a523a156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2981ed82c64ee68192a49c87979fe060" id="r_ga2981ed82c64ee68192a49c87979fe060"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga2981ed82c64ee68192a49c87979fe060">close</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd) noexcept</td></tr>
+<tr class="separator:ga2981ed82c64ee68192a49c87979fe060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga543c961dae6d615db3161858f9595f79" id="r_ga543c961dae6d615db3161858f9595f79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga543c961dae6d615db3161858f9595f79">read</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, uint8_t *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>) noexcept</td></tr>
+<tr class="separator:ga543c961dae6d615db3161858f9595f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b75cb872839846e54aa4a24c1608cfc" id="r_ga1b75cb872839846e54aa4a24c1608cfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga1b75cb872839846e54aa4a24c1608cfc">read</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, char *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>) noexcept</td></tr>
+<tr class="separator:ga1b75cb872839846e54aa4a24c1608cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac2bbd6468dd6e335ba07819eee2e029" id="r_gaac2bbd6468dd6e335ba07819eee2e029"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gaac2bbd6468dd6e335ba07819eee2e029">write</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, const uint8_t *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>) noexcept</td></tr>
+<tr class="separator:gaac2bbd6468dd6e335ba07819eee2e029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef4ad35af015fe84a01ff4a847fb403d" id="r_gaef4ad35af015fe84a01ff4a847fb403d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#gaef4ad35af015fe84a01ff4a847fb403d">write</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, const char *buf, std::size_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>) noexcept</td></tr>
+<tr class="separator:gaef4ad35af015fe84a01ff4a847fb403d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga718ec25a6eb57e3fa3aad7e9dc8a9b47" id="r_ga718ec25a6eb57e3fa3aad7e9dc8a9b47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga718ec25a6eb57e3fa3aad7e9dc8a9b47">seek</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, <a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a> off, <a class="el" href="group__api-core-details.html#ga00b1e2053f507921126d16e20ed49ea5">whence_type</a> whence) noexcept</td></tr>
+<tr class="separator:ga718ec25a6eb57e3fa3aad7e9dc8a9b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67163b027006553f20835afc0159e23a" id="r_ga67163b027006553f20835afc0159e23a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga67163b027006553f20835afc0159e23a">allocate</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd, <a class="el" href="group__api-core-details.html#gaacd1bb2e24b0749a1beaef0a3f4742c4">allocation_type</a> mode, <a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a> length, <a class="el" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a> offset) noexcept</td></tr>
+<tr class="separator:ga67163b027006553f20835afc0159e23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16a1df29d4fe7bab4eab951aa7661eaa" id="r_ga16a1df29d4fe7bab4eab951aa7661eaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-details.html#ga9a03634bf33195ab3ed2d362f9ee65d9">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-details.html#ga16a1df29d4fe7bab4eab951aa7661eaa">blocksize</a> (<a class="el" href="group__api-core-details.html#ga4d06a614ee39ae6f8e1db6ca1c6c326c">descriptor</a> fd)</td></tr>
+<tr class="separator:ga16a1df29d4fe7bab4eab951aa7661eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

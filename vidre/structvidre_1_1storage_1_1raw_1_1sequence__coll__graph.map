@@ -1,0 +1,13 @@
+<map id="vidre::storage::raw::sequence" name="vidre::storage::raw::sequence">
+<area shape="rect" id="Node000001" title="Sequence of TLV entries." alt="" coords="97,285,227,325"/>
+<area shape="rect" id="Node000002" href="$structvidre_1_1storage_1_1raw_1_1atom.html" title="Generic TLV item." alt="" coords="17,183,147,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,232,149,284,145,287,104,235"/>
+<area shape="rect" id="Node000003" href="$structvidre_1_1storage_1_1raw_1_1prefix.html" title="The &quot;TL&quot; prefix." alt="" coords="14,80,145,120"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="83,134,84,183,79,183,78,134"/>
+<area shape="rect" id="Node000004" href="$structvidre_1_1storage_1_1raw_1_1id.html" title="The &quot;T&quot; type." alt="" coords="5,5,153,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="82,44,82,80,77,80,77,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="175,190,322,215"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="232,228,180,287,176,283,228,224"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="169,87,331,113"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="252,127,251,190,246,190,247,127"/>
+</map>

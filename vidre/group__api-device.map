@@ -1,5 +1,8 @@
 <map id="Device library" name="Device library">
-<area shape="rect" id="Node000002" href="$group__api.html" title="The C++ application programming interface." alt="" coords="5,5,80,31"/>
-<area shape="rect" id="Node000001" title=" " alt="" coords="128,5,231,31"/>
-<area shape="rect" id="Node000003" href="$group__api-device-onsemi.html" title=" " alt="" coords="279,5,447,31"/>
+<area shape="rect" id="Node000002" href="$group__api.html" title="The C++ application programming interface." alt="" coords="5,80,80,105"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="128,80,231,105"/>
+<area shape="rect" id="Node000003" href="$group__api-device-basics.html" title=" " alt="" coords="311,5,415,31"/>
+<area shape="rect" id="Node000005" href="$group__api-device-details.html" title=" " alt="" coords="286,55,439,80"/>
+<area shape="rect" id="Node000004" href="$group__api-device-impl.html" title=" " alt="" coords="281,104,444,129"/>
+<area shape="rect" id="Node000006" href="$group__api-device-onsemi.html" title=" " alt="" coords="279,153,447,179"/>
 </map>

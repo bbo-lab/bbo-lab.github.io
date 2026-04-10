@@ -1,0 +1,9 @@
+<map id="vidre::storage::raw::element::sequence" name="vidre::storage::raw::element::sequence">
+<area shape="rect" id="Node000001" title="Sequence of TLV entries." alt="" coords="66,93,206,133"/>
+<area shape="rect" id="Node000003" href="$structvariable_1_1header.html" title=" " alt="" coords="5,189,120,214"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,146,75,190,71,186,109,142"/>
+<area shape="rect" id="Node000004" href="$structvidre_1_1storage_1_1raw_1_1element_1_1group.html" title="Group of TLV entries." alt="" coords="144,181,275,221"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,142,195,179,191,183,159,146"/>
+<area shape="rect" id="Node000002" href="$structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html" title="Base class for dynamic elements." alt="" coords="69,5,203,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,59,139,93,133,93,133,59"/>
+</map>

@@ -2,11 +2,11 @@ var namespacevidre_1_1ffmpeg =
 [
     [ "format", "namespacevidre_1_1ffmpeg_1_1format.html", "namespacevidre_1_1ffmpeg_1_1format" ],
     [ "dictionary", "classvidre_1_1ffmpeg_1_1dictionary.html", "classvidre_1_1ffmpeg_1_1dictionary" ],
-    [ "error_category", "structvidre_1_1ffmpeg_1_1error__category.html", "structvidre_1_1ffmpeg_1_1error__category" ],
+    [ "errc_info", "classvidre_1_1ffmpeg_1_1errc__info.html", "classvidre_1_1ffmpeg_1_1errc__info" ],
+    [ "error_category", "classvidre_1_1ffmpeg_1_1error__category.html", "classvidre_1_1ffmpeg_1_1error__category" ],
     [ "exception", "classvidre_1_1ffmpeg_1_1exception.html", "classvidre_1_1ffmpeg_1_1exception" ],
     [ "frame", "classvidre_1_1ffmpeg_1_1frame.html", "classvidre_1_1ffmpeg_1_1frame" ],
     [ "packet", "classvidre_1_1ffmpeg_1_1packet.html", "classvidre_1_1ffmpeg_1_1packet" ],
-    [ "errc_info", "group__api-support-ffmpeg-util-error.html#ga2760daf6efb50c83affe9a5428a7bb14", null ],
     [ "errc", "group__api-support-ffmpeg-util-error.html#gada6a0890c35b0b5d9a126daa7da5bc19", [
       [ "bsf_not_found", "group__api-support-ffmpeg-util-error.html#ggada6a0890c35b0b5d9a126daa7da5bc19adc825158cf0f96ab37165347ac5df202", null ],
       [ "bug", "group__api-support-ffmpeg-util-error.html#ggada6a0890c35b0b5d9a126daa7da5bc19aae0e4bdad7b5f67141743366026d2ea5", null ],

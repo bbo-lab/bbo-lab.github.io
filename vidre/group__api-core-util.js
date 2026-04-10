@@ -5,7 +5,7 @@ var group__api_core_util =
     [ "Macro utilities", "group__api-core-util-macro.html", "group__api-core-util-macro" ],
     [ "Shared data structures.", "group__api-core-util-shared.html", "group__api-core-util-shared" ],
     [ "UUID", "group__api-core-util-uuid.html", "group__api-core-util-uuid" ],
-    [ "Version macros", "group__api-core-util-version.html", "group__api-core-util-version" ],
+    [ "Version handling", "group__api-core-util-version.html", "group__api-core-util-version" ],
     [ "vidre::variant", "classvidre_1_1variant.html", [
       [ "value", "classvidre_1_1variant.html#a9b0cf54fcd3ddcb18764f02900d31db5", [
         [ "none", "classvidre_1_1variant.html#a9b0cf54fcd3ddcb18764f02900d31db5a4dfab897e891821fe65f1fafcf7ba99a", null ],

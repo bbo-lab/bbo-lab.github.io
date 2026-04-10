@@ -113,10 +113,7 @@ $(function(){initNavTree('group__api-core-storage-io.html',''); initResizable(tr
 
 <div class="header">
   <div class="summary">
-<a href="#concepts">Concepts</a> &#124;
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle"><div class="title">In-/output.<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-storage.html">Storage</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -135,207 +132,34 @@ $(function(){initNavTree('group__api-core-storage-io.html',''); initResizable(tr
 <p>In principle, the functionality provided by this module resembles the class POSIX read/write. To provide advanced capabilities, such as memory mapping, the interface, however, provides FIXME</p>
 <dl class="section note"><dt>Note</dt><dd>Even though filed under "storage", the I/O-functionality also applies to the concept of "filters". </dd></dl>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
-Concepts</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptvidre_1_1storage_1_1has__data__member.html">vidre::storage::has_data_member</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if type has a "data()" method. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptvidre_1_1storage_1_1has__size__method.html">vidre::storage::has_size_method</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if type has a "data()" method. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1storage_1_1fileio.html">vidre::storage::fileio</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trivial file IO.  <a href="classvidre_1_1storage_1_1fileio.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1volume.html">vidre::storage::volume&lt; E &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data "volume".  <a href="structvidre_1_1storage_1_1volume.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1extent.html">vidre::storage::extent&lt; E &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data extent.  <a href="structvidre_1_1storage_1_1extent.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1volume.html">vidre::storage::volume&lt; std::endian::little &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1extent.html">vidre::storage::extent&lt; std::endian::little &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1volume.html">vidre::storage::volume&lt; std::endian::big &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1extent.html">vidre::storage::extent&lt; std::endian::big &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1storage_1_1view.html">vidre::storage::view</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data view.  <a href="classvidre_1_1storage_1_1view.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1buffer.html">vidre::storage::buffer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write buffer.  <a href="structvidre_1_1storage_1_1buffer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1storage_1_1sink.html">vidre::storage::sink</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data sink.  <a href="classvidre_1_1storage_1_1sink.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data sink skeleton.  <a href="classvidre_1_1storage_1_1sink.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1storage_1_1filesink.html">vidre::storage::filesink</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A file sink.  <a href="classvidre_1_1storage_1_1filesink.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1storage_1_1source.html">vidre::storage::source</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data source.  <a href="classvidre_1_1storage_1_1source.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga64b4483c36e327a2e404906303619a1b" id="r_ga64b4483c36e327a2e404906303619a1b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga64b4483c36e327a2e404906303619a1b">vidre::storage::mode</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="#gga64b4483c36e327a2e404906303619a1ba334c4a4c42fdb79d7ebc3e73b517e6f8">vidre::storage::mode::none</a> = 0
-, <br />
-&#160;&#160;<a class="el" href="#gga64b4483c36e327a2e404906303619a1baa43c1b0aa53a0c908810c06ab1ff3967">vidre::storage::mode::input</a> = 1
-, <br />
-&#160;&#160;<a class="el" href="#gga64b4483c36e327a2e404906303619a1ba78e6221f6393d1356681db398f14ce6d">vidre::storage::mode::output</a> = 2
-, <br />
-&#160;&#160;<a class="el" href="#gga64b4483c36e327a2e404906303619a1baca942afbdc13c5bd23b8a44919a40305">vidre::storage::mode::bidi</a> = 3
-<br />
- }</td></tr>
-<tr class="memdesc:ga64b4483c36e327a2e404906303619a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">In-/output "direction".  <a href="#ga64b4483c36e327a2e404906303619a1b">More...</a><br /></td></tr>
-<tr class="separator:ga64b4483c36e327a2e404906303619a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga2a9d510a37ba003342d3a02a1d0a5ae5" id="r_ga2a9d510a37ba003342d3a02a1d0a5ae5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2a9d510a37ba003342d3a02a1d0a5ae5">vidre::storage::operator|</a> (<a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a> lhs, <a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a> rhs)</td></tr>
-<tr class="separator:ga2a9d510a37ba003342d3a02a1d0a5ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec6acad2abae8c84e5d61f3df3d31512" id="r_gaec6acad2abae8c84e5d61f3df3d31512"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaec6acad2abae8c84e5d61f3df3d31512">vidre::storage::operator&amp;</a> (<a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a> lhs, <a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a> rhs)</td></tr>
-<tr class="separator:gaec6acad2abae8c84e5d61f3df3d31512"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2e64c9f20b56f55b5b23c0dbe073d1ec" id="r_ga2e64c9f20b56f55b5b23c0dbe073d1ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2e64c9f20b56f55b5b23c0dbe073d1ec">vidre::storage::operator~</a> (<a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a> flags)</td></tr>
-<tr class="separator:ga2e64c9f20b56f55b5b23c0dbe073d1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf333bf1f1ebd31d8a5410cbfdce1f5a9" id="r_gaf333bf1f1ebd31d8a5410cbfdce1f5a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf333bf1f1ebd31d8a5410cbfdce1f5a9">vidre::storage::operator!</a> (<a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a> flags)</td></tr>
-<tr class="separator:gaf333bf1f1ebd31d8a5410cbfdce1f5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga64b4483c36e327a2e404906303619a1b" name="ga64b4483c36e327a2e404906303619a1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga64b4483c36e327a2e404906303619a1b">&#9670;&#160;</a></span>mode</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum class <a class="el" href="#ga64b4483c36e327a2e404906303619a1b">vidre::storage::mode</a> : uint8_t</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>In-/output "direction". </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga64b4483c36e327a2e404906303619a1ba334c4a4c42fdb79d7ebc3e73b517e6f8" name="gga64b4483c36e327a2e404906303619a1ba334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"><p>Undefined state. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga64b4483c36e327a2e404906303619a1baa43c1b0aa53a0c908810c06ab1ff3967" name="gga64b4483c36e327a2e404906303619a1baa43c1b0aa53a0c908810c06ab1ff3967"></a>input&#160;</td><td class="fielddoc"><p>Input direction (is a sink). </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga64b4483c36e327a2e404906303619a1ba78e6221f6393d1356681db398f14ce6d" name="gga64b4483c36e327a2e404906303619a1ba78e6221f6393d1356681db398f14ce6d"></a>output&#160;</td><td class="fielddoc"><p>Output direction (is a source). </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga64b4483c36e327a2e404906303619a1baca942afbdc13c5bd23b8a44919a40305" name="gga64b4483c36e327a2e404906303619a1baca942afbdc13c5bd23b8a44919a40305"></a>bidi&#160;</td><td class="fielddoc"><p>Bi-directional. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ga2a9d510a37ba003342d3a02a1d0a5ae5" name="ga2a9d510a37ba003342d3a02a1d0a5ae5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2a9d510a37ba003342d3a02a1d0a5ae5">&#9670;&#160;</a></span>operator|()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a> vidre::storage::operator| </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaec6acad2abae8c84e5d61f3df3d31512" name="gaec6acad2abae8c84e5d61f3df3d31512"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaec6acad2abae8c84e5d61f3df3d31512">&#9670;&#160;</a></span>operator&amp;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a> vidre::storage::operator&amp; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a></td>          <td class="paramname"><span class="paramname"><em>lhs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a></td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga2e64c9f20b56f55b5b23c0dbe073d1ec" name="ga2e64c9f20b56f55b5b23c0dbe073d1ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2e64c9f20b56f55b5b23c0dbe073d1ec">&#9670;&#160;</a></span>operator~()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a> vidre::storage::operator~ </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a></td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaf333bf1f1ebd31d8a5410cbfdce1f5a9" name="gaf333bf1f1ebd31d8a5410cbfdce1f5a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf333bf1f1ebd31d8a5410cbfdce1f5a9">&#9670;&#160;</a></span>operator!()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool vidre::storage::operator! </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#ga64b4483c36e327a2e404906303619a1b">mode</a></td>          <td class="paramname"><span class="paramname"><em>flags</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

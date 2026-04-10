@@ -1,0 +1,11 @@
+<map id="dynamic::timestamp" name="dynamic::timestamp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="95,285,235,311"/>
+<area shape="rect" id="Node000002" href="$structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html" title="Base class for dynamic elements." alt="" coords="13,183,146,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,231,156,283,152,287,104,234"/>
+<area shape="rect" id="Node000003" href="$structvidre_1_1storage_1_1raw_1_1prefix.html" title="The &quot;TL&quot; prefix." alt="" coords="14,80,145,120"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="82,134,82,183,77,183,77,134"/>
+<area shape="rect" id="Node000004" href="$structvidre_1_1storage_1_1raw_1_1id.html" title="The &quot;T&quot; type." alt="" coords="5,5,153,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="82,44,82,80,77,80,77,44"/>
+<area shape="rect" id="Node000005" href="$structvidre_1_1video_1_1timestamp.html" title="Timestamp." alt="" coords="171,190,329,215"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="232,227,177,287,173,283,228,223"/>
+</map>

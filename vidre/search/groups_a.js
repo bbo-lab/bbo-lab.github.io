@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['onsemi_20midlib2_20wrapper_0',['OnSemi MIDlib2 wrapper',['../group__api-device-onsemi.html',1,'']]],
-  ['os_20utilities_1',['OS utilities',['../group__api-core-os.html',1,'']]],
-  ['other_20support_20libraries_2',['Other support libraries',['../group__api-support.html',1,'']]],
-  ['output_3',['Output',['../group__api-core-log-io.html',1,'']]],
-  ['output_4',['In-/output.',['../group__api-core-storage-io.html',1,'']]],
-  ['overview_5',['Overview',['../group__api-support-ffmpeg-overview.html',1,'']]]
+  ['macro_20utilities_0',['Macro utilities',['../group__api-core-util-macro.html',1,'']]],
+  ['mangling_20such_20as_20packing_1',['Bit mangling (such as packing).',['../group__api-core-storage-bit.html',1,'']]],
+  ['memory_2',['Memory',['../group__api-core-memory.html',1,'']]],
+  ['memory_3',['System memory',['../group__api-core-os-memory.html',1,'']]],
+  ['midlib2_20wrapper_4',['OnSemi MIDlib2 wrapper',['../group__api-device-onsemi.html',1,'']]],
+  ['muxing_5',['Muxing',['../group__api-support-ffmpeg-format-muxing.html',1,'']]]
 ];

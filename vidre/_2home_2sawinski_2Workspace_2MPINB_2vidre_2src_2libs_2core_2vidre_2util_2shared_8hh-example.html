@@ -116,7 +116,7 @@ $(function(){initNavTree('_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2
 </div><!--header-->
 <div class="contents">
 <p>Factory function for creating shared objects.</p>
-<p>Factory function for creating shared objects. Constructs a shared object of type T with the given allocator and arguments. Memory for the control block and object is allocated using the rebound allocator type.</p>
+<p>Factory function for creating shared objects. Constructs a shared object of type T with the given allocator and arguments. Memory for the control block and object is allocated using the <code>rebind</code>ed allocator type.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The type of object to create </td></tr>
@@ -175,32 +175,38 @@ $(function(){initNavTree('_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2
 <div class="line"><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a> {</div>
 <div class="line"></div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Allocator = std::allocator&lt;T&gt;&gt;</div>
 <div class="line">    <span class="keyword">class </span>shared {</div>
+<div class="line">    <span class="keyword">public</span>:</div>
+<div class="line">        <span class="keyword">using </span><a id="a0" name="a0"></a><a class="code hl_typedef" href="classvidre_1_1shared.html#a432afa4a4a8e74142093be94c1a9603e">allocator_type</a> = Allocator;</div>
+<div class="line"> </div>
 <div class="line">    <span class="keyword">private</span>:</div>
 <div class="line">        <span class="keyword">struct </span>counted_object {</div>
 <div class="line">            std::atomic&lt;size_t&gt; strong_count;</div>
 <div class="line">            std::atomic&lt;size_t&gt; weak_count;  <span class="comment">// currently unused, would allow a weak implementation</span></div>
-<div class="line">            T object;</div>
+<div class="line">            T *object;</div>
 <div class="line"> </div>
-<div class="line">            <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line">            counted_object(Args &amp;&amp;...args) : strong_count(1), weak_count(0), object(std::forward&lt;Args&gt;(args)...) {}</div>
+<div class="line">            counted_object(T *ptr) : strong_count(1), weak_count(0), object(ptr) {}</div>
 <div class="line">        };</div>
 <div class="line"> </div>
 <div class="line">        <span class="keyword">using </span>CountedObjectAllocator = <span class="keyword">typename</span> std::allocator_traits&lt;Allocator&gt;::template rebind_alloc&lt;counted_object&gt;;</div>
-<div class="line">        Allocator allocator;</div>
 <div class="line"> </div>
 <div class="line">        counted_object *object_{};</div>
 <div class="line"> </div>
+<div class="line">        Allocator allocator{};</div>
+<div class="line">        std::function&lt;void(T *)&gt; deleter;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">private</span>:</div>
 <div class="line">        <span class="comment">// Helper to destroy the counted object</span></div>
 <div class="line">        <span class="keywordtype">void</span> destroy_counted_object() <span class="keyword">noexcept</span> {</div>
 <div class="line">            <span class="keywordflow">if</span> (object_) {</div>
 <div class="line">                <span class="comment">// Manually destroy the object and counted object</span></div>
-<div class="line">                object_-&gt;<a id="a0" name="a0"></a>object.~T();</div>
+<div class="line">                deleter(object_-&gt;<a id="a1" name="a1"></a>object);</div>
 <div class="line">                object_-&gt;~counted_object();</div>
 <div class="line"> </div>
 <div class="line">                <span class="comment">// Deallocate memory using the allocator</span></div>
@@ -209,28 +215,58 @@ $(function(){initNavTree('_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2
 <div class="line">            }</div>
 <div class="line">        }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">public</span>:</div>
-<div class="line">        <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line">        <span class="keyword">explicit</span> <a id="a1" name="a1"></a><a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a>(Args &amp;&amp;...args) : allocator() {</div>
-<div class="line">            <span class="comment">// Allocate memory for counted object using rebound allocator</span></div>
-<div class="line">            CountedObjectAllocator counted_object_allocator(allocator);</div>
-<div class="line">            object_ = counted_object_allocator.allocate(1);</div>
+<div class="line">        <span class="keywordtype">void</span> release() <span class="keyword">noexcept</span> {</div>
+<div class="line">            <span class="keywordflow">if</span> (!object_)</div>
+<div class="line">                <span class="keywordflow">return</span>;</div>
 <div class="line"> </div>
-<div class="line">            <span class="comment">// Construct counted object in-place</span></div>
-<div class="line">            <span class="keyword">new</span> (object_) counted_object(std::forward&lt;Args&gt;(args)...);</div>
-<div class="line">        }</div>
+<div class="line">            <span class="comment">// Decrement strong count</span></div>
+<div class="line">            <span class="keywordtype">size_t</span> old_count = object_-&gt;<a id="a2" name="a2"></a>strong_count.fetch_sub(1, std::memory_order_acq_rel);</div>
 <div class="line"> </div>
-<div class="line">        <a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a>(<span class="keyword">const</span> <a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> &amp;other) noexcept : object_(other.object_), allocator(other.allocator) {</div>
-<div class="line">            <span class="keywordflow">if</span> (object_) {</div>
-<div class="line">                object_-&gt;<a id="a2" name="a2"></a>strong_count.fetch_add(1, std::memory_order_relaxed);</div>
+<div class="line">            <span class="keywordflow">if</span> (old_count == 1) {</div>
+<div class="line">                <span class="comment">// No more strong references, destroy the object</span></div>
+<div class="line">                destroy_counted_object();</div>
 <div class="line">            }</div>
 <div class="line">        }</div>
 <div class="line"> </div>
-<div class="line">        <a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a>(<a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> &amp;&amp;other) noexcept : object_(other.object_), allocator(std::move(other.allocator)) {</div>
+<div class="line">    <span class="keyword">public</span>:</div>
+<div class="line">        <a id="a3" name="a3"></a><a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a>() <span class="keyword">noexcept</span> {}</div>
+<div class="line"> </div>
+<div class="line">        <a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a>(T *ptr) <span class="keyword">noexcept</span> {</div>
+<div class="line">            deleter = [allocator = allocator](T *ptr) <span class="keyword">mutable</span> {</div>
+<div class="line">                ptr-&gt;~T();</div>
+<div class="line">                allocator.deallocate(ptr, 1);</div>
+<div class="line">            };</div>
+<div class="line"> </div>
+<div class="line">            CountedObjectAllocator counted_object_allocator(allocator);</div>
+<div class="line">            object_ = counted_object_allocator.allocate(1);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keyword">new</span> (object_) counted_object(ptr);</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keyword">template</span> &lt;<span class="keyword">class</span> Y, <span class="keyword">class</span> Deleter&gt;</div>
+<div class="line">        <span class="keyword">requires</span> std::derived_from&lt;Y, T&gt;</div>
+<div class="line">        <a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a>(Y *ptr, Deleter d) <span class="keyword">noexcept</span> {</div>
+<div class="line">            deleter = [d = std::move(d)](T *ptr) <span class="keyword">mutable</span> {</div>
+<div class="line">                d(<span class="keyword">dynamic_cast&lt;</span>Y *<span class="keyword">&gt;</span>(ptr));</div>
+<div class="line">            };</div>
+<div class="line"> </div>
+<div class="line">            CountedObjectAllocator counted_object_allocator(allocator);</div>
+<div class="line">            object_ = counted_object_allocator.allocate(1);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keyword">new</span> (object_) counted_object(ptr);</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a>(<span class="keyword">const</span> <a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> &amp;other) noexcept : object_(other.object_), allocator(other.allocator), deleter(other.deleter) {</div>
+<div class="line">            <span class="keywordflow">if</span> (object_) {</div>
+<div class="line">                object_-&gt;strong_count.fetch_add(1, std::memory_order_relaxed);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a>(<a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> &amp;&amp;other) noexcept : object_(other.object_), allocator(std::move(other.allocator)), deleter(other.deleter) {</div>
 <div class="line">            other.object_ = <span class="keyword">nullptr</span>;</div>
 <div class="line">        }</div>
 <div class="line"> </div>
-<div class="line">        <a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> &amp;<a id="a3" name="a3"></a><a class="code hl_function" href="classvidre_1_1shared.html#aa093a347858d436ca6e5c712afdd0a73">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> &amp;other) <span class="keyword">noexcept</span> {</div>
+<div class="line">        <a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> &amp;<a id="a4" name="a4"></a><a class="code hl_function" href="classvidre_1_1shared.html#aa093a347858d436ca6e5c712afdd0a73">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> &amp;other) <span class="keyword">noexcept</span> {</div>
 <div class="line">            <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other) {</div>
 <div class="line">                <span class="comment">// Decrement current reference</span></div>
 <div class="line">                release();</div>
@@ -238,6 +274,7 @@ $(function(){initNavTree('_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2
 <div class="line">                <span class="comment">// Copy other</span></div>
 <div class="line">                object_ = other.object_;</div>
 <div class="line">                allocator = other.allocator;</div>
+<div class="line">                deleter = other.deleter;</div>
 <div class="line"> </div>
 <div class="line">                <span class="keywordflow">if</span> (object_) {</div>
 <div class="line">                    object_-&gt;strong_count.fetch_add(1, std::memory_order_relaxed);</div>
@@ -246,23 +283,31 @@ $(function(){initNavTree('_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2
 <div class="line">            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line">        }</div>
 <div class="line"> </div>
-<div class="line">        <a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> &amp;<a class="code hl_function" href="classvidre_1_1shared.html#aa093a347858d436ca6e5c712afdd0a73">operator=</a>(<a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> &amp;&amp;other) <span class="keyword">noexcept</span> {</div>
+<div class="line">        <a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> &amp;<a class="code hl_function" href="classvidre_1_1shared.html#aa093a347858d436ca6e5c712afdd0a73">operator=</a>(<a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> &amp;&amp;other) <span class="keyword">noexcept</span> {</div>
 <div class="line">            <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other) {</div>
 <div class="line">                release();</div>
 <div class="line"> </div>
 <div class="line">                object_ = other.object_;</div>
 <div class="line">                allocator = std::move(other.allocator);</div>
+<div class="line">                deleter = other.deleter;</div>
+<div class="line"> </div>
 <div class="line">                other.object_ = <span class="keyword">nullptr</span>;</div>
 <div class="line">            }</div>
 <div class="line">            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line">        }</div>
 <div class="line"> </div>
-<div class="line">        <a id="a4" name="a4"></a><a class="code hl_function" href="classvidre_1_1shared.html#acb4781c04d2acb0ef2ec27375a95c40f">~shared</a>() {</div>
+<div class="line">        <a id="a5" name="a5"></a><a class="code hl_function" href="classvidre_1_1shared.html#acb4781c04d2acb0ef2ec27375a95c40f">~shared</a>() {</div>
 <div class="line">            release();</div>
 <div class="line">        }</div>
 <div class="line"> </div>
+<div class="line">        <span class="keywordtype">void</span> <a id="a6" name="a6"></a><a class="code hl_function" href="classvidre_1_1shared.html#a3999d4eeb5a53b5a62e279f1906dcaf3">swap</a>(<a class="code hl_function" href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">shared</a> &amp;other) <span class="keyword">noexcept</span> {</div>
+<div class="line">            std::swap(object_, other.object_);</div>
+<div class="line">            std::swap(allocator, other.allocator);</div>
+<div class="line">            std::swap(deleter, other.deleter);</div>
+<div class="line">        }</div>
+<div class="line"> </div>
 <div class="line">    <span class="keyword">public</span>:</div>
-<div class="line">        T *<a id="a5" name="a5"></a><a class="code hl_function" href="classvidre_1_1shared.html#a5d9e257f247acc527159c10e13fae1f5">operator-&gt;</a>() <span class="keyword">noexcept</span> {</div>
+<div class="line">        T *<a id="a7" name="a7"></a><a class="code hl_function" href="classvidre_1_1shared.html#a5d9e257f247acc527159c10e13fae1f5">operator-&gt;</a>() <span class="keyword">noexcept</span> {</div>
 <div class="line">            <span class="keywordflow">return</span> &amp;object_-&gt;object;</div>
 <div class="line">        }</div>
 <div class="line"> </div>
@@ -270,7 +315,7 @@ $(function(){initNavTree('_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2
 <div class="line">            <span class="keywordflow">return</span> &amp;object_-&gt;object;</div>
 <div class="line">        }</div>
 <div class="line"> </div>
-<div class="line">        T &amp;<a id="a6" name="a6"></a><a class="code hl_function" href="classvidre_1_1shared.html#ae6315379e750e737c26b5f281100adb0">operator*</a>() <span class="keyword">noexcept</span> {</div>
+<div class="line">        T &amp;<a id="a8" name="a8"></a><a class="code hl_function" href="classvidre_1_1shared.html#ae6315379e750e737c26b5f281100adb0">operator*</a>() <span class="keyword">noexcept</span> {</div>
 <div class="line">            <span class="keywordflow">return</span> object_-&gt;object;</div>
 <div class="line">        }</div>
 <div class="line"> </div>
@@ -278,67 +323,54 @@ $(function(){initNavTree('_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2
 <div class="line">            <span class="keywordflow">return</span> object_-&gt;object;</div>
 <div class="line">        }</div>
 <div class="line"> </div>
-<div class="line">        T *<a id="a7" name="a7"></a><a class="code hl_function" href="classvidre_1_1shared.html#a63d5f51bb6bf55286e36e7126ae46868">get</a>() <span class="keyword">noexcept</span> {</div>
-<div class="line">            <span class="keywordflow">return</span> object_ ? &amp;object_-&gt;object : <span class="keyword">nullptr</span>;</div>
+<div class="line">        T *<a id="a9" name="a9"></a><a class="code hl_function" href="classvidre_1_1shared.html#a63d5f51bb6bf55286e36e7126ae46868">get</a>() <span class="keyword">noexcept</span> {</div>
+<div class="line">            <span class="keywordflow">return</span> object_ ? object_-&gt;object : <span class="keyword">nullptr</span>;</div>
 <div class="line">        }</div>
 <div class="line"> </div>
 <div class="line">        <span class="keyword">const</span> T *<a class="code hl_function" href="classvidre_1_1shared.html#a63d5f51bb6bf55286e36e7126ae46868">get</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span> {</div>
-<div class="line">            <span class="keywordflow">return</span> object_ ? &amp;object_-&gt;object : <span class="keyword">nullptr</span>;</div>
+<div class="line">            <span class="keywordflow">return</span> object_ ? object_-&gt;object : <span class="keyword">nullptr</span>;</div>
 <div class="line">        }</div>
 <div class="line"> </div>
-<div class="line">        <span class="keywordtype">size_t</span> <a id="a8" name="a8"></a><a class="code hl_function" href="classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe">use_count</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span> {</div>
+<div class="line">        <span class="keywordtype">size_t</span> <a id="a10" name="a10"></a><a class="code hl_function" href="classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe">use_count</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span> {</div>
 <div class="line">            <span class="keywordflow">return</span> object_ ? object_-&gt;strong_count.load(std::memory_order_acquire) : 0;</div>
 <div class="line">        }</div>
 <div class="line"> </div>
-<div class="line">        <span class="keywordtype">bool</span> <a id="a9" name="a9"></a><a class="code hl_function" href="classvidre_1_1shared.html#a062fd97dcbaa91f984d53fbfc5d4ae67">unique</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span> {</div>
+<div class="line">        <span class="keywordtype">bool</span> <a id="a11" name="a11"></a><a class="code hl_function" href="classvidre_1_1shared.html#a062fd97dcbaa91f984d53fbfc5d4ae67">unique</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span> {</div>
 <div class="line">            <span class="keywordflow">return</span> <a class="code hl_function" href="classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe">use_count</a>() == 1;</div>
 <div class="line">        }</div>
 <div class="line"> </div>
-<div class="line">        <span class="keywordtype">void</span> <a id="a10" name="a10"></a><a class="code hl_function" href="classvidre_1_1shared.html#a93e9c5c82e5d60bc2d0f81bb1dfad1e3">reset</a>() <span class="keyword">noexcept</span> {</div>
+<div class="line">        <span class="keywordtype">void</span> <a id="a12" name="a12"></a><a class="code hl_function" href="classvidre_1_1shared.html#a93e9c5c82e5d60bc2d0f81bb1dfad1e3">reset</a>() <span class="keyword">noexcept</span> {</div>
 <div class="line">            release();</div>
 <div class="line">            object_ = <span class="keyword">nullptr</span>;</div>
-<div class="line">        }</div>
-<div class="line"> </div>
-<div class="line">        <span class="keywordtype">void</span> <a id="a11" name="a11"></a><a class="code hl_function" href="classvidre_1_1shared.html#a3999d4eeb5a53b5a62e279f1906dcaf3">swap</a>(<a class="code hl_function" href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">shared</a> &amp;other) <span class="keyword">noexcept</span> {</div>
-<div class="line">            std::swap(object_, other.object_);</div>
-<div class="line">            std::swap(allocator, other.allocator);</div>
-<div class="line">        }</div>
-<div class="line"> </div>
-<div class="line">    <span class="keyword">private</span>:</div>
-<div class="line">        <span class="keywordtype">void</span> release() <span class="keyword">noexcept</span> {</div>
-<div class="line">            <span class="keywordflow">if</span> (!object_)</div>
-<div class="line">                <span class="keywordflow">return</span>;</div>
-<div class="line"> </div>
-<div class="line">            <span class="comment">// Decrement strong count</span></div>
-<div class="line">            <span class="keywordtype">size_t</span> old_count = object_-&gt;strong_count.fetch_sub(1, std::memory_order_acq_rel);</div>
-<div class="line"> </div>
-<div class="line">            <span class="keywordflow">if</span> (old_count == 1) {</div>
-<div class="line">                <span class="comment">// No more strong references, destroy the object</span></div>
-<div class="line">                destroy_counted_object();</div>
-<div class="line">            }</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
 <div class="line"></div>
 <div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> Allocator = std::allocator&lt;T&gt;, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line">    shared&lt;T, Allocator&gt; <a id="a12" name="a12"></a><a class="code hl_function" href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">make_shared</a>(Args &amp;&amp;...args) {</div>
-<div class="line">        <span class="keywordflow">return</span> shared&lt;T, Allocator&gt;(std::forward&lt;Args&gt;(args)...);</div>
+<div class="line">    shared&lt;T, Allocator&gt; <a id="a13" name="a13"></a><a class="code hl_function" href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">make_shared</a>(Args &amp;&amp;...args) {</div>
+<div class="line">        Allocator allocator;</div>
+<div class="line"> </div>
+<div class="line">        T *obj = allocator.allocate(1);</div>
+<div class="line">        <span class="keyword">new</span> (obj) T(std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">return</span> obj;</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line"> </div>
 <div class="line">}  <span class="comment">// namespace vidre</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#endif  </span><span class="comment">//</span></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a062fd97dcbaa91f984d53fbfc5d4ae67"><div class="ttname"><a href="classvidre_1_1shared.html#a062fd97dcbaa91f984d53fbfc5d4ae67">vidre::shared::unique</a></div><div class="ttdeci">bool unique() const noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:255</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a3999d4eeb5a53b5a62e279f1906dcaf3"><div class="ttname"><a href="classvidre_1_1shared.html#a3999d4eeb5a53b5a62e279f1906dcaf3">vidre::shared::swap</a></div><div class="ttdeci">void swap(shared &amp;other) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:264</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a5d9e257f247acc527159c10e13fae1f5"><div class="ttname"><a href="classvidre_1_1shared.html#a5d9e257f247acc527159c10e13fae1f5">vidre::shared::operator-&gt;</a></div><div class="ttdeci">T * operator-&gt;() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:227</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a63d5f51bb6bf55286e36e7126ae46868"><div class="ttname"><a href="classvidre_1_1shared.html#a63d5f51bb6bf55286e36e7126ae46868">vidre::shared::get</a></div><div class="ttdeci">T * get() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:243</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a82b0d75c714112a2d62a32f5846a1aba"><div class="ttname"><a href="classvidre_1_1shared.html#a82b0d75c714112a2d62a32f5846a1aba">vidre::shared::shared</a></div><div class="ttdeci">shared(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition</b> shared.hh:176</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_a93e9c5c82e5d60bc2d0f81bb1dfad1e3"><div class="ttname"><a href="classvidre_1_1shared.html#a93e9c5c82e5d60bc2d0f81bb1dfad1e3">vidre::shared::reset</a></div><div class="ttdeci">void reset() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:259</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_aa093a347858d436ca6e5c712afdd0a73"><div class="ttname"><a href="classvidre_1_1shared.html#aa093a347858d436ca6e5c712afdd0a73">vidre::shared::operator=</a></div><div class="ttdeci">shared &amp; operator=(const shared &amp;other) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:195</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_ab63311fbbd43abff5e4bf92590974afe"><div class="ttname"><a href="classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe">vidre::shared::use_count</a></div><div class="ttdeci">size_t use_count() const noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:251</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_acb4781c04d2acb0ef2ec27375a95c40f"><div class="ttname"><a href="classvidre_1_1shared.html#acb4781c04d2acb0ef2ec27375a95c40f">vidre::shared::~shared</a></div><div class="ttdeci">~shared()</div><div class="ttdef"><b>Definition</b> shared.hh:222</div></div>
-<div class="ttc" id="aclassvidre_1_1shared_html_ae6315379e750e737c26b5f281100adb0"><div class="ttname"><a href="classvidre_1_1shared.html#ae6315379e750e737c26b5f281100adb0">vidre::shared::operator*</a></div><div class="ttdeci">T &amp; operator*() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:235</div></div>
-<div class="ttc" id="agroup__api-core-util-shared_html_ga5869272b519d4de2d3ceba7f64fd99f9"><div class="ttname"><a href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">vidre::make_shared</a></div><div class="ttdeci">shared&lt; T, Allocator &gt; make_shared(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition</b> shared.hh:317</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a062fd97dcbaa91f984d53fbfc5d4ae67"><div class="ttname"><a href="classvidre_1_1shared.html#a062fd97dcbaa91f984d53fbfc5d4ae67">vidre::shared::unique</a></div><div class="ttdeci">bool unique() const noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:300</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a29a359567ef1b5d60e9a3b31fbea9695"><div class="ttname"><a href="classvidre_1_1shared.html#a29a359567ef1b5d60e9a3b31fbea9695">vidre::shared::shared</a></div><div class="ttdeci">shared() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:194</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a3999d4eeb5a53b5a62e279f1906dcaf3"><div class="ttname"><a href="classvidre_1_1shared.html#a3999d4eeb5a53b5a62e279f1906dcaf3">vidre::shared::swap</a></div><div class="ttdeci">void swap(shared &amp;other) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:265</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a432afa4a4a8e74142093be94c1a9603e"><div class="ttname"><a href="classvidre_1_1shared.html#a432afa4a4a8e74142093be94c1a9603e">vidre::shared::allocator_type</a></div><div class="ttdeci">Allocator allocator_type</div><div class="ttdef"><b>Definition</b> shared.hh:148</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a5d9e257f247acc527159c10e13fae1f5"><div class="ttname"><a href="classvidre_1_1shared.html#a5d9e257f247acc527159c10e13fae1f5">vidre::shared::operator-&gt;</a></div><div class="ttdeci">T * operator-&gt;() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:272</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a63d5f51bb6bf55286e36e7126ae46868"><div class="ttname"><a href="classvidre_1_1shared.html#a63d5f51bb6bf55286e36e7126ae46868">vidre::shared::get</a></div><div class="ttdeci">T * get() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:288</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_a93e9c5c82e5d60bc2d0f81bb1dfad1e3"><div class="ttname"><a href="classvidre_1_1shared.html#a93e9c5c82e5d60bc2d0f81bb1dfad1e3">vidre::shared::reset</a></div><div class="ttdeci">void reset() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:304</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_aa093a347858d436ca6e5c712afdd0a73"><div class="ttname"><a href="classvidre_1_1shared.html#aa093a347858d436ca6e5c712afdd0a73">vidre::shared::operator=</a></div><div class="ttdeci">shared &amp; operator=(const shared &amp;other) noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:231</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_ab63311fbbd43abff5e4bf92590974afe"><div class="ttname"><a href="classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe">vidre::shared::use_count</a></div><div class="ttdeci">size_t use_count() const noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:296</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_acb4781c04d2acb0ef2ec27375a95c40f"><div class="ttname"><a href="classvidre_1_1shared.html#acb4781c04d2acb0ef2ec27375a95c40f">vidre::shared::~shared</a></div><div class="ttdeci">~shared()</div><div class="ttdef"><b>Definition</b> shared.hh:261</div></div>
+<div class="ttc" id="aclassvidre_1_1shared_html_ae6315379e750e737c26b5f281100adb0"><div class="ttname"><a href="classvidre_1_1shared.html#ae6315379e750e737c26b5f281100adb0">vidre::shared::operator*</a></div><div class="ttdeci">T &amp; operator*() noexcept</div><div class="ttdef"><b>Definition</b> shared.hh:280</div></div>
+<div class="ttc" id="agroup__api-core-util-shared_html_ga5869272b519d4de2d3ceba7f64fd99f9"><div class="ttname"><a href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">vidre::make_shared</a></div><div class="ttdeci">shared&lt; T, Allocator &gt; make_shared(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition</b> shared.hh:343</div></div>
 <div class="ttc" id="alibs_2core_2vidre_2core_2config_8hh_html"><div class="ttname"><a href="libs_2core_2vidre_2core_2config_8hh.html">config.hh</a></div></div>
 <div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> midraw.hh:31</div></div>
 </div><!-- fragment --> </div><!-- contents -->

@@ -1,0 +1,7 @@
+<map id="vidre::device::error::tmpl" name="vidre::device::error::tmpl">
+<area shape="rect" id="Node000001" title="Error message." alt="" coords="17,167,147,207"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1error_1_1info.html" title="Base class for supplemental exception info." alt="" coords="43,93,121,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,132,85,167,79,167,79,132"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1detail_1_1exception_1_1supplement.html" title="Supplemental information for exceptions." alt="" coords="5,5,159,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,59,85,93,79,93,79,59"/>
+</map>

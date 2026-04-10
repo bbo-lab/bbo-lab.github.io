@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VidRe: libs/core/vidre/settings/file.hh Source File</title>
+<title>VidRe: libs/core/vidre/storage/file.hh Source File</title>
 <link rel="icon" href="vidre.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -136,54 +136,56 @@ $(function(){initNavTree('file_8hh_source.html',''); initResizable(true); });
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * You should have received a copy of the GNU General Public License</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#ifndef VIDRE_CORE_SETTINGS_FILE_HH</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define VIDRE_CORE_SETTINGS_FILE_HH</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#ifndef VIDRE_CORE_STORAGE_FILE_HH</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define VIDRE_CORE_STORAGE_FILE_HH</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;<a class="code" href="libs_2core_2vidre_2core_2config_8hh.html">vidre/core/config.hh</a>&gt;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;<a class="code" href="script_8hh.html">vidre/script.hh</a>&gt;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;<a class="code" href="node_8hh.html">vidre/settings/node.hh</a>&gt;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a> {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre_1_1settings.html">settings</a> {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
-<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classvidre_1_1settings_1_1file.html">   42</a></span>        <span class="keyword">class </span><a class="code hl_define" href="group__api-core-details.html#ga6c2d85761ef80f8a974396c5059068bb">VIDRE_CORE_VISIBILITY</a> <a class="code hl_function" href="classvidre_1_1settings_1_1file.html#abf982a9eb15c725741eddc86dad27f90">file</a> : <span class="keyword">public</span> <a class="code hl_function" href="classvidre_1_1settings_1_1node.html#a0f0fa9535901878cfd823a42e206464a">node</a> {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classvidre_1_1settings_1_1file.html#abf982a9eb15c725741eddc86dad27f90">   44</a></span>            <a class="code hl_function" href="classvidre_1_1settings_1_1file.html#abf982a9eb15c725741eddc86dad27f90">file</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classvidre_1_1settings_1_1file.html#aa1fd6a11a76652bbc47e02f8801ed561">load</a>(<span class="keyword">const</span> std::filesystem::path &amp;<a class="code hl_function" href="classvidre_1_1settings_1_1file.html#abf982a9eb15c725741eddc86dad27f90">file</a>, <span class="keywordtype">bool</span> force = <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classvidre_1_1settings_1_1file.html#a8369feca7993869a2ce9a6807a2019da">save</a>();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classvidre_1_1settings_1_1file.html#a8369feca7993869a2ce9a6807a2019da">save</a>(<span class="keyword">const</span> std::filesystem::path &amp;<a class="code hl_function" href="classvidre_1_1settings_1_1file.html#abf982a9eb15c725741eddc86dad27f90">file</a>);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        };</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;<a class="code" href="libs_2core_2vidre_2core_2config_8hh.html">vidre/core/config.hh</a>&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;<a class="code" href="io_8hh.html">vidre/storage/io.hh</a>&gt;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;filesystem&gt;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre_1_1storage.html">storage</a> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="namespacevidre_1_1storage_1_1file.html">   50</a></span>        <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre_1_1storage_1_1file.html">file</a> {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="group__api-core-storage-file.html#ga74761fa46ff6c3f16ae3dff2702df681">   56</a></span>            <span class="keyword">using </span><a class="code hl_typedef" href="group__api-core-storage-file.html#ga74761fa46ff6c3f16ae3dff2702df681">path</a> = std::filesystem::path;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="group__api-core-storage-file.html#ga163c2082161da961df2a5c971a9007b0">   60</a></span>            <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group__api-core-storage-file.html#ga163c2082161da961df2a5c971a9007b0">remove</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="group__api-core-storage-file.html#ga74761fa46ff6c3f16ae3dff2702df681">path</a> &amp;filename) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <span class="keywordflow">return</span> std::filesystem::remove(filename);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            }</div>
 </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }  <span class="comment">// namespace settings</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}  <span class="comment">// namespace vidre</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif  </span><span class="comment">// VIDRE_CORE_SETTINGS_FILE_HH</span></div>
-<div class="ttc" id="aclassvidre_1_1settings_1_1file_html_a8369feca7993869a2ce9a6807a2019da"><div class="ttname"><a href="classvidre_1_1settings_1_1file.html#a8369feca7993869a2ce9a6807a2019da">vidre::settings::file::save</a></div><div class="ttdeci">void save()</div><div class="ttdoc">Save configuration.</div><div class="ttdef"><b>Definition</b> settings.cc:262</div></div>
-<div class="ttc" id="aclassvidre_1_1settings_1_1file_html_aa1fd6a11a76652bbc47e02f8801ed561"><div class="ttname"><a href="classvidre_1_1settings_1_1file.html#aa1fd6a11a76652bbc47e02f8801ed561">vidre::settings::file::load</a></div><div class="ttdeci">void load(const std::filesystem::path &amp;file, bool force=false)</div><div class="ttdoc">Load configuration file.</div><div class="ttdef"><b>Definition</b> settings.cc:66</div></div>
-<div class="ttc" id="aclassvidre_1_1settings_1_1file_html_abf982a9eb15c725741eddc86dad27f90"><div class="ttname"><a href="classvidre_1_1settings_1_1file.html#abf982a9eb15c725741eddc86dad27f90">vidre::settings::file::file</a></div><div class="ttdeci">file()=default</div></div>
-<div class="ttc" id="aclassvidre_1_1settings_1_1node_html_a0f0fa9535901878cfd823a42e206464a"><div class="ttname"><a href="classvidre_1_1settings_1_1node.html#a0f0fa9535901878cfd823a42e206464a">vidre::settings::node::node</a></div><div class="ttdeci">node()=default</div></div>
-<div class="ttc" id="agroup__api-core-details_html_ga6c2d85761ef80f8a974396c5059068bb"><div class="ttname"><a href="group__api-core-details.html#ga6c2d85761ef80f8a974396c5059068bb">VIDRE_CORE_VISIBILITY</a></div><div class="ttdeci">#define VIDRE_CORE_VISIBILITY</div><div class="ttdoc">Declaration specification for import/export for the core library.</div><div class="ttdef"><b>Definition</b> config.hh:55</div></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="comment">// FIXME move fileio/filesink here?</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }  <span class="comment">// namespace file</span></div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }  <span class="comment">// namespace storage</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}  <span class="comment">// namespace vidre</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif  </span><span class="comment">// VIDRE_CORE_STORAGE_IO_HH</span></div>
+<div class="ttc" id="agroup__api-core-storage-file_html_ga163c2082161da961df2a5c971a9007b0"><div class="ttname"><a href="group__api-core-storage-file.html#ga163c2082161da961df2a5c971a9007b0">vidre::storage::file::remove</a></div><div class="ttdeci">bool remove(const path &amp;filename) noexcept</div><div class="ttdoc">Remove file.</div><div class="ttdef"><b>Definition</b> file.hh:60</div></div>
+<div class="ttc" id="agroup__api-core-storage-file_html_ga74761fa46ff6c3f16ae3dff2702df681"><div class="ttname"><a href="group__api-core-storage-file.html#ga74761fa46ff6c3f16ae3dff2702df681">vidre::storage::file::path</a></div><div class="ttdeci">std::filesystem::path path</div><div class="ttdef"><b>Definition</b> file.hh:56</div></div>
+<div class="ttc" id="aio_8hh_html"><div class="ttname"><a href="io_8hh.html">io.hh</a></div></div>
 <div class="ttc" id="alibs_2core_2vidre_2core_2config_8hh_html"><div class="ttname"><a href="libs_2core_2vidre_2core_2config_8hh.html">config.hh</a></div></div>
-<div class="ttc" id="anamespacevidre_1_1settings_html"><div class="ttname"><a href="namespacevidre_1_1settings.html">vidre::settings</a></div><div class="ttdoc">Settings/configuration related.</div><div class="ttdef"><b>Definition</b> settings.hh:58</div></div>
+<div class="ttc" id="anamespacevidre_1_1storage_1_1file_html"><div class="ttname"><a href="namespacevidre_1_1storage_1_1file.html">vidre::storage::file</a></div><div class="ttdoc">File related functionality.</div><div class="ttdef"><b>Definition</b> file.hh:50</div></div>
+<div class="ttc" id="anamespacevidre_1_1storage_html"><div class="ttname"><a href="namespacevidre_1_1storage.html">vidre::storage</a></div><div class="ttdoc">Storage-related namespace.</div><div class="ttdef"><b>Definition</b> storage.hh:47</div></div>
 <div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> midraw.hh:31</div></div>
-<div class="ttc" id="anode_8hh_html"><div class="ttname"><a href="node_8hh.html">node.hh</a></div></div>
-<div class="ttc" id="ascript_8hh_html"><div class="ttname"><a href="script_8hh.html">script.hh</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_87a455bccb09a92130c26a11a880c98a.html">libs</a></li><li class="navelem"><a class="el" href="dir_4ccdb3f39e2a0cb7737b4252176ba716.html">core</a></li><li class="navelem"><a class="el" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html">vidre</a></li><li class="navelem"><a class="el" href="dir_6befe78a6c2dbaa93ec40d521d837f32.html">settings</a></li><li class="navelem"><a class="el" href="file_8hh.html">file.hh</a></li>
+    <li class="navelem"><a class="el" href="dir_87a455bccb09a92130c26a11a880c98a.html">libs</a></li><li class="navelem"><a class="el" href="dir_4ccdb3f39e2a0cb7737b4252176ba716.html">core</a></li><li class="navelem"><a class="el" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html">vidre</a></li><li class="navelem"><a class="el" href="dir_43696e9230b71dbdcf64b2d56c385572.html">storage</a></li><li class="navelem"><a class="el" href="file_8hh.html">file.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0 </li>
   </ul>
 </div>
