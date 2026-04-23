@@ -118,40 +118,27 @@ $(function(){initNavTree('namespacevidre_1_1os.html',''); initResizable(true); }
   <div class="headertitle"><div class="title">vidre::os Namespace Reference<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-os.html">OS utilities</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Operating system utilities.  
-<a href="#details">More...</a></p>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Operating system utilities. </p>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1os_1_1memory.html">memory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physical system memory overview.  <a href="structvidre_1_1os_1_1memory.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gad05232615b3e2dcf69d6c69aa05fba20" id="r_gad05232615b3e2dcf69d6c69aa05fba20"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-os-memory.html#gad05232615b3e2dcf69d6c69aa05fba20">pagesize</a> () noexcept</td></tr>
-<tr class="memdesc:gad05232615b3e2dcf69d6c69aa05fba20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get system page size.  <br /></td></tr>
 <tr class="separator:gad05232615b3e2dcf69d6c69aa05fba20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf13e3b241e7fc5077eb521625c762118" id="r_gaf13e3b241e7fc5077eb521625c762118"><td class="memItemLeft" align="right" valign="top">std::filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-os-path.html#gaf13e3b241e7fc5077eb521625c762118">configdir</a> () noexcept</td></tr>
-<tr class="memdesc:gaf13e3b241e7fc5077eb521625c762118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get user-local configuration directory (for VidRe).  <br /></td></tr>
 <tr class="separator:gaf13e3b241e7fc5077eb521625c762118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b0c900161e3153879bb1c87b07e3f35" id="r_ga2b0c900161e3153879bb1c87b07e3f35"><td class="memItemLeft" align="right" valign="top">std::filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-os-path.html#ga2b0c900161e3153879bb1c87b07e3f35">tmpdir</a> () noexcept</td></tr>
-<tr class="memdesc:ga2b0c900161e3153879bb1c87b07e3f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get system temporary directory.  <br /></td></tr>
 <tr class="separator:ga2b0c900161e3153879bb1c87b07e3f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7fb3a071f2730739fab0aa17394417b4" id="r_ga7fb3a071f2730739fab0aa17394417b4"><td class="memItemLeft" align="right" valign="top">std::filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-os-path.html#ga7fb3a071f2730739fab0aa17394417b4">cachedir</a> () noexcept</td></tr>
-<tr class="memdesc:ga7fb3a071f2730739fab0aa17394417b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get user-local cache directory (for VidRe).  <br /></td></tr>
 <tr class="separator:ga7fb3a071f2730739fab0aa17394417b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga37c60d716b042fe4767075a013b7d1a2" id="r_ga37c60d716b042fe4767075a013b7d1a2"><td class="memItemLeft" align="right" valign="top">std::filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-os-path.html#ga37c60d716b042fe4767075a013b7d1a2">installdir</a> () noexcept</td></tr>
-<tr class="memdesc:ga37c60d716b042fe4767075a013b7d1a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">System installation direction of VidRe.  <br /></td></tr>
 <tr class="separator:ga37c60d716b042fe4767075a013b7d1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9ff232c97af564aa1110a2f2677739ed" id="r_ga9ff232c97af564aa1110a2f2677739ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-os-tty.html#ga9ff232c97af564aa1110a2f2677739ed">isatty</a> (FILE *stream) noexcept</td></tr>
-<tr class="memdesc:ga9ff232c97af564aa1110a2f2677739ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check, if a C-stream is a TTY.  <br /></td></tr>
 <tr class="separator:ga9ff232c97af564aa1110a2f2677739ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9269686d278d53a6dfccb5c5319c1ffb" id="r_ga9269686d278d53a6dfccb5c5319c1ffb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-os-tty.html#ga9269686d278d53a6dfccb5c5319c1ffb">isatty</a> () noexcept</td></tr>
-<tr class="memdesc:ga9269686d278d53a6dfccb5c5319c1ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check, if <code>stdout</code> is a TTY.  <br /></td></tr>
 <tr class="separator:ga9269686d278d53a6dfccb5c5319c1ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

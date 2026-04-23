@@ -1,9 +1,9 @@
 <map id="vidre/util/macros.hh" name="vidre/util/macros.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="262,5,398,31"/>
-<area shape="rect" id="Node000002" href="$examples_2playground_2uvc_2linux_2uvc_8cc.html" title=" " alt="" coords="5,79,233,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,38,185,81,183,76,288,33"/>
-<area shape="rect" id="Node000003" href="$native_8cc.html" title=" " alt="" coords="257,93,403,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="333,45,333,93,327,93,327,45"/>
-<area shape="rect" id="Node000004" href="$util_8cc.html" title=" " alt="" coords="427,93,516,119"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="362,35,454,91,451,95,359,40"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="179,5,315,31"/>
+<area shape="rect" id="Node000002" href="$examples_2playground_2uvc_2linux_2uvc_8cc.html" title=" " alt="" coords="5,79,151,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,39,120,81,118,76,209,34"/>
+<area shape="rect" id="Node000003" href="$native_8cc.html" title=" " alt="" coords="175,86,320,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="250,44,250,86,245,86,245,44"/>
+<area shape="rect" id="Node000004" href="$util_8cc.html" title=" " alt="" coords="344,86,433,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="281,35,369,83,366,88,279,40"/>
 </map>

@@ -73,11 +73,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html",
-"classvidre_1_1ffmpeg_1_1frame.html#aed01cbe16e2ea07d1e6f968ffdd9d329",
-"classvidre_1_1log_1_1notice.html#abeaf851c98d14f1d5665ab98cb27baa9",
-"classvidre_1_1storage_1_1ccv_1_1header.html#a4a9625de8141fd64d727d92dd372cffe",
-"dev-goals.html#dev-frontend",
+"annotated.html",
+"classvidre_1_1ffmpeg_1_1frame.html#afa41a0c0169dc22a8b9949b56f65f0cb",
+"classvidre_1_1log_1_1null.html",
+"classvidre_1_1storage_1_1ccv_1_1header.html#a4c85ad0773fada8ef58e234537358877",
+"dev-goals.html#dev-git",
 "fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a70d831c8685ddf61857a6d0e41eb5889",
 "group__api-config-have.html#ga90b7d338bcf58ee5620c65c8b9bc0a47",
 "group__api-core-util-filesystem.html#gad987b505f807a7cdc050d2f8836659a4",

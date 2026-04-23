@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classvidre_1_1ffmpeg_1_1frame.html#aed01cbe16e2ea07d1e6f968ffdd9d329":[5,0,5,0,3,1,1,6],
 "classvidre_1_1ffmpeg_1_1frame.html#afa41a0c0169dc22a8b9949b56f65f0cb":[5,0,5,0,3,1,1,1],
 "classvidre_1_1ffmpeg_1_1packet.html":[5,0,5,0,2,0],
 "classvidre_1_1ffmpeg_1_1packet.html#a79008614186dc48447d2959bce849bf6":[5,0,5,0,2,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "classvidre_1_1log_1_1io_1_1string.html#a910339d99910237c53581383b1d5b5e3":[5,0,1,4,1,4,2],
 "classvidre_1_1log_1_1io_1_1string.html#ab9ebc3479e3c8b19dae3d1ae211efbc2":[5,0,1,4,1,4,1],
 "classvidre_1_1log_1_1io_1_1string.html#abf6599a2a1929f5724f52602a8cf3eee":[5,0,1,4,1,4,0],
-"classvidre_1_1log_1_1notice.html":[5,0,1,4,0,6]
+"classvidre_1_1log_1_1notice.html":[5,0,1,4,0,6],
+"classvidre_1_1log_1_1notice.html#abeaf851c98d14f1d5665ab98cb27baa9":[5,0,1,4,0,6,0]
 };

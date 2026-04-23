@@ -122,9 +122,6 @@ $(function(){initNavTree('classvidre_1_1io_1_1sink.html',''); initResizable(true
 </div><!--header-->
 <div class="contents">
 
-<p>Data sink skeleton.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="libs_2core_2vidre_2io_2types_8hh_source.html">vidre/io/types.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for vidre::io::sink:</div>
@@ -134,8 +131,7 @@ $(function(){initNavTree('classvidre_1_1io_1_1sink.html',''); initResizable(true
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1io_1_1sink__inherit__graph.svg" width="262" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Data sink skeleton. </p>
-<p>The sink class provides a skeleton for data sinks, such as files or filter inputs. It may work as a data stream or a memory region (see <code>sink::mode</code>).</p>
+<div class="textblock"><p>The sink class provides a skeleton for data sinks, such as files or filter inputs. It may work as a data stream or a memory region (see <code>sink::mode</code>).</p>
 <p>Derived classes need to implement at least: </p><div class="fragment"><div class="line"><span class="keyword">class </span>VISIBILITY derived_sink : <span class="keyword">public</span> <span class="keyword">virtual</span> <a class="code hl_class" href="classvidre_1_1io_1_1sink.html">io::sink</a> {</div>
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">     <span class="keyword">virtual</span> ~derived_sink();</div>
@@ -157,7 +153,6 @@ $(function(){initNavTree('classvidre_1_1io_1_1sink.html',''); initResizable(true
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:acf08502e10e27454fe358ef67395df50" id="r_acf08502e10e27454fe358ef67395df50"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf08502e10e27454fe358ef67395df50">shared</a> = std::shared_ptr&lt;<a class="el" href="classvidre_1_1io_1_1sink.html">sink</a>&gt;</td></tr>
-<tr class="memdesc:acf08502e10e27454fe358ef67395df50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer type for sinks.  <br /></td></tr>
 <tr class="separator:acf08502e10e27454fe358ef67395df50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -175,29 +170,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa12494da5a35e10d207390853cf85bea" id="r_aa12494da5a35e10d207390853cf85bea"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa12494da5a35e10d207390853cf85bea">~sink</a> ()</td></tr>
 <tr class="separator:aa12494da5a35e10d207390853cf85bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5522f58cc622cc9032fdbe8af421a583" id="r_a5522f58cc622cc9032fdbe8af421a583"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5522f58cc622cc9032fdbe8af421a583">valid</a> () const noexcept</td></tr>
-<tr class="memdesc:a5522f58cc622cc9032fdbe8af421a583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the stream is valid (ie.  <br /></td></tr>
 <tr class="separator:a5522f58cc622cc9032fdbe8af421a583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16dc0f68eea1f44a508c81a7cc4aad4c" id="r_a16dc0f68eea1f44a508c81a7cc4aad4c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16dc0f68eea1f44a508c81a7cc4aad4c">configure</a> (const <a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a> &amp;config)</td></tr>
-<tr class="memdesc:a16dc0f68eea1f44a508c81a7cc4aad4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure sink.  <br /></td></tr>
 <tr class="separator:a16dc0f68eea1f44a508c81a7cc4aad4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57762352ec5b1d7015c8dee6d11b6479" id="r_a57762352ec5b1d7015c8dee6d11b6479"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__api-core-io-types.html#ga72ac3969f594911943b52eec600f9e2c">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57762352ec5b1d7015c8dee6d11b6479">put</a> (const <a class="el" href="classvidre_1_1memory_1_1view.html">memory::view</a> &amp;v)</td></tr>
-<tr class="memdesc:a57762352ec5b1d7015c8dee6d11b6479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer data from a memory view.  <br /></td></tr>
 <tr class="separator:a57762352ec5b1d7015c8dee6d11b6479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d87b186e2240cb840aadce94c8f4a80" id="r_a8d87b186e2240cb840aadce94c8f4a80"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__api-core-io-types.html#ga72ac3969f594911943b52eec600f9e2c">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d87b186e2240cb840aadce94c8f4a80">put</a> (const <a class="el" href="structvidre_1_1io_1_1packet_1_1base.html">packet::base</a> *p)</td></tr>
-<tr class="memdesc:a8d87b186e2240cb840aadce94c8f4a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a packet.  <br /></td></tr>
 <tr class="separator:a8d87b186e2240cb840aadce94c8f4a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2fd80b8758b7225eba0c8fd2e9f5f9b0" id="r_a2fd80b8758b7225eba0c8fd2e9f5f9b0"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a2fd80b8758b7225eba0c8fd2e9f5f9b0"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="#acf08502e10e27454fe358ef67395df50">shared</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2fd80b8758b7225eba0c8fd2e9f5f9b0">make</a> (Args &amp;&amp;...args)</td></tr>
-<tr class="memdesc:a2fd80b8758b7225eba0c8fd2e9f5f9b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create sink as shared pointer.  <br /></td></tr>
 <tr class="separator:a2fd80b8758b7225eba0c8fd2e9f5f9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa924c391783e1952a717c29dfe9adb64" id="r_aa924c391783e1952a717c29dfe9adb64"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__api-core-io-types.html#ga72ac3969f594911943b52eec600f9e2c">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa924c391783e1952a717c29dfe9adb64">write</a> (const <a class="el" href="classvidre_1_1memory_1_1view.html">memory::view</a> &amp;buf) noexcept</td></tr>
-<tr class="memdesc:aa924c391783e1952a717c29dfe9adb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">The low-level write method (if applicable).  <br /></td></tr>
 <tr class="separator:aa924c391783e1952a717c29dfe9adb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>

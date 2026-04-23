@@ -1,9 +1,9 @@
 var searchData=
 [
   ['s_20and_20configuration_0',['Language(s) and configuration',['../dev-goals.html#dev-lang',1,'']]],
-  ['s_20license_3a_1',['VidRe&apos;s license:',['../license.html#autotoc_md6',1,'']]],
+  ['s_20license_3a_1',['VidRe&apos;s license:',['../license.html#autotoc_md7',1,'']]],
   ['s5c_5fuyvy_5fjpg_2',['s5c_uyvy_jpg',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1aa766a2d4a446481f1658fbe689b6f305',1,'fourcc.hh']]],
-  ['safety_3',['Thread Safety',['../classvidre_1_1shared.html#autotoc_md16',1,'']]],
+  ['safety_3',['Thread Safety',['../classvidre_1_1shared.html#autotoc_md17',1,'']]],
   ['save_4',['save',['../classvidre_1_1settings_1_1file.html#a8369feca7993869a2ce9a6807a2019da',1,'vidre::settings::file::save()'],['../classvidre_1_1settings_1_1file.html#af16bb5eeeeaa39586194dc9610765d72',1,'vidre::settings::file::save(const std::filesystem::path &amp;file)']]],
   ['savefile_5',['savefile',['../group__api-core-util-filesystem.html#ga71ba836c12bc3fc80375a5553ee74c45',1,'vidre']]],
   ['sbggr10_6',['sbggr10',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1aa515dd72b5acd772fcf81c52dd33d94d',1,'fourcc.hh']]],
@@ -127,8 +127,8 @@ var searchData=
   ['string_124',['string',['../classvidre_1_1log_1_1io_1_1string.html',1,'vidre::log::io::string'],['../classvidre_1_1log_1_1io_1_1string.html',1,'vidre::log::string'],['../classvidre_1_1variant.html#a9b0cf54fcd3ddcb18764f02900d31db5afe5df990b579714780f943f3f0807a2e',1,'vidre::variant::string'],['../classvidre_1_1log_1_1io_1_1string.html#abf6599a2a1929f5724f52602a8cf3eee',1,'vidre::log::io::string::string()'],['../group__api-core-exception.html#ga9c123f6f4caebeb5427747c03f39cc18',1,'vidre::error::string'],['../namespacevidre_1_1device_1_1error.html#a93fe76f179eab33ab0c1c92855adcd15',1,'vidre::device::error::string'],['../group__api-core-storage-raw.html#gga775ed8fecfc8b9b9f4e40441f90b2a64ab45cffe084dd3d20d928bee85e7b0f21',1,'vidre::storage::raw::string']]],
   ['string_5fgenerator_125',['string_generator',['../structvidre_1_1detail_1_1uuid_1_1string__generator.html',1,'vidre::detail::uuid::string_generator'],['../structvidre_1_1detail_1_1uuid_1_1string__generator.html#ada2b3fc31fc9f5cedb661185f7e2464a',1,'vidre::detail::uuid::string_generator::string_generator()']]],
   ['strlen_126',['strlen',['../group__api-core-storage-raw.html#gad7e166d95f7cef9f5a8ecb3f6355ab84',1,'vidre::storage::raw']]],
-  ['strong_20references_20this_20class_127',['Strong References (this class)',['../classvidre_1_1shared.html#autotoc_md12',1,'']]],
-  ['strong_20vs_20weak_20references_128',['Strong vs. Weak References',['../classvidre_1_1shared.html#autotoc_md11',1,'']]],
+  ['strong_20references_20this_20class_127',['Strong References (this class)',['../classvidre_1_1shared.html#autotoc_md13',1,'']]],
+  ['strong_20vs_20weak_20references_128',['Strong vs. Weak References',['../classvidre_1_1shared.html#autotoc_md12',1,'']]],
   ['structures_129',['structures',['../group__api-support-ffmpeg-util-data.html',1,'Data structures'],['../group__api-core-util-shared.html',1,'Shared data structures']]],
   ['stv0680_130',['stv0680',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a1175ccb9c3addbc1ca8b6737861caa28',1,'fourcc.hh']]],
   ['style_131',['style',['../dev-style.html',1,'Coding style'],['../structvidre_1_1log_1_1io_1_1style.html',1,'vidre::log::io::style'],['../structvidre_1_1log_1_1io_1_1style.html',1,'vidre::log::style']]],

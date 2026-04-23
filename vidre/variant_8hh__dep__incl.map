@@ -1,15 +1,15 @@
 <map id="vidre/util/variant.hh" name="vidre/util/variant.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="465,5,597,31"/>
-<area shape="rect" id="Node000002" href="$program_8hh.html" title=" " alt="" coords="408,79,527,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="514,43,480,80,476,77,510,39"/>
-<area shape="rect" id="Node000007" href="$util_8cc.html" title=" " alt="" coords="551,79,640,104"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="553,39,587,77,583,80,549,43"/>
-<area shape="rect" id="Node000003" href="$examples_2core_2program_8cc.html" title=" " alt="" coords="5,152,196,207"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="404,110,208,155,197,157,195,152,207,149,403,104"/>
-<area shape="rect" id="Node000004" href="$examples_2playground_2uvc_8cc.html" title=" " alt="" coords="220,159,491,199"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="443,115,382,161,378,157,439,111"/>
-<area shape="rect" id="Node000005" href="$src_2apps_2tools_2uuid_8cc.html" title=" " alt="" coords="515,167,643,192"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="495,111,566,164,562,169,492,115"/>
-<area shape="rect" id="Node000006" href="$src_2libs_2core_2vidre_2program_8cc.html" title=" " alt="" coords="668,167,787,192"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="518,105,656,149,697,164,696,169,654,155,517,110"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="335,5,467,31"/>
+<area shape="rect" id="Node000002" href="$program_8hh.html" title=" " alt="" coords="278,79,397,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="384,43,350,80,346,77,380,39"/>
+<area shape="rect" id="Node000007" href="$util_8cc.html" title=" " alt="" coords="421,79,510,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="423,39,457,77,453,80,419,43"/>
+<area shape="rect" id="Node000003" href="$src_2apps_2tools_2uuid_8cc.html" title=" " alt="" coords="5,159,133,185"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="286,110,109,162,108,157,284,105"/>
+<area shape="rect" id="Node000004" href="$examples_2core_2program_8cc.html" title=" " alt="" coords="157,159,333,185"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="315,115,261,161,257,157,312,111"/>
+<area shape="rect" id="Node000005" href="$examples_2playground_2uvc_8cc.html" title=" " alt="" coords="358,152,503,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="363,111,410,150,406,154,360,115"/>
+<area shape="rect" id="Node000006" href="$src_2libs_2core_2vidre_2program_8cc.html" title=" " alt="" coords="527,159,646,185"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="387,106,551,157,550,162,386,111"/>
 </map>

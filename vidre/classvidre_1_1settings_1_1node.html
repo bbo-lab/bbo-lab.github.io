@@ -121,9 +121,6 @@ $(function(){initNavTree('classvidre_1_1settings_1_1node.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 
-<p>Configuration node.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="lua_8hh_source.html">vidre/settings/lua.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for vidre::settings::node:</div>
@@ -133,8 +130,7 @@ $(function(){initNavTree('classvidre_1_1settings_1_1node.html',''); initResizabl
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1settings_1_1node__inherit__graph.svg" width="151" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Configuration node. </p>
-<p>Configuration nodes represent entries in the configuration tree. These can be sub-nodes or values, such as strings or numbers.</p>
+<div class="textblock"><p>Configuration nodes represent entries in the configuration tree. These can be sub-nodes or values, such as strings or numbers.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="examples_2core_2settings_8cc-example.html">examples/core/settings.cc</a> </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -150,56 +146,43 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8dc3591a43428fcb9f25c7222e08520" id="r_ab8dc3591a43428fcb9f25c7222e08520"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8dc3591a43428fcb9f25c7222e08520">~node</a> ()</td></tr>
 <tr class="separator:ab8dc3591a43428fcb9f25c7222e08520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5508238c663da5dff6e1d562c41224cf" id="r_a5508238c663da5dff6e1d562c41224cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1settings_1_1node.html">node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5508238c663da5dff6e1d562c41224cf">operator[]</a> (const char *field) const</td></tr>
-<tr class="memdesc:a5508238c663da5dff6e1d562c41224cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sub-node by <em>field</em> key.  <br /></td></tr>
 <tr class="separator:a5508238c663da5dff6e1d562c41224cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8a9667ab41aa5ec385528605ef48faf" id="r_aa8a9667ab41aa5ec385528605ef48faf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1settings_1_1node.html">node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8a9667ab41aa5ec385528605ef48faf">operator[]</a> (const std::string &amp;field) const</td></tr>
 <tr class="separator:aa8a9667ab41aa5ec385528605ef48faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab743c70df20f3f6318a2f426634e0b48" id="r_ab743c70df20f3f6318a2f426634e0b48"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab743c70df20f3f6318a2f426634e0b48"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1settings_1_1node.html">node</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab743c70df20f3f6318a2f426634e0b48">operator=</a> (const T &amp;)</td></tr>
-<tr class="memdesc:ab743c70df20f3f6318a2f426634e0b48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit assignment.  <br /></td></tr>
 <tr class="separator:ab743c70df20f3f6318a2f426634e0b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af73dc90a5d7e49e925048bd87fc9fb86" id="r_af73dc90a5d7e49e925048bd87fc9fb86"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af73dc90a5d7e49e925048bd87fc9fb86"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1settings_1_1node.html">node</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af73dc90a5d7e49e925048bd87fc9fb86">operator=</a> (const T *)</td></tr>
 <tr class="separator:af73dc90a5d7e49e925048bd87fc9fb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab8680d8c3e9b891dbfce5c6ab4bd766" id="r_aab8680d8c3e9b891dbfce5c6ab4bd766"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aab8680d8c3e9b891dbfce5c6ab4bd766"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aab8680d8c3e9b891dbfce5c6ab4bd766">operator T</a> () const</td></tr>
-<tr class="memdesc:aab8680d8c3e9b891dbfce5c6ab4bd766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit type conversion for values.  <br /></td></tr>
 <tr class="separator:aab8680d8c3e9b891dbfce5c6ab4bd766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ff46a51df01fd85ad420b5fd71d2277" id="r_a3ff46a51df01fd85ad420b5fd71d2277"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ff46a51df01fd85ad420b5fd71d2277">istable</a> () const noexcept</td></tr>
-<tr class="memdesc:a3ff46a51df01fd85ad420b5fd71d2277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if node is a table.  <br /></td></tr>
 <tr class="separator:a3ff46a51df01fd85ad420b5fd71d2277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad52f037f439e85f5db5cf284a3250a3a" id="r_ad52f037f439e85f5db5cf284a3250a3a"><td class="memItemLeft" align="right" valign="top">lua::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad52f037f439e85f5db5cf284a3250a3a">type</a> () const noexcept</td></tr>
-<tr class="memdesc:ad52f037f439e85f5db5cf284a3250a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Lua type behind this node.  <br /></td></tr>
 <tr class="separator:ad52f037f439e85f5db5cf284a3250a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8149b6a4266d1bfbe083e636b205d22" id="r_aa8149b6a4266d1bfbe083e636b205d22"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8149b6a4266d1bfbe083e636b205d22">keys</a> () const</td></tr>
-<tr class="memdesc:aa8149b6a4266d1bfbe083e636b205d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get list of keys.  <br /></td></tr>
 <tr class="separator:aa8149b6a4266d1bfbe083e636b205d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a3495ac28a5d072ea50ee75d5b7129758" id="r_a3495ac28a5d072ea50ee75d5b7129758"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3495ac28a5d072ea50ee75d5b7129758">isnil</a> () const noexcept</td></tr>
-<tr class="memdesc:a3495ac28a5d072ea50ee75d5b7129758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if reference is nil.  <br /></td></tr>
 <tr class="separator:a3495ac28a5d072ea50ee75d5b7129758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f087df777bb31b75937ad09068aad4f" id="r_a6f087df777bb31b75937ad09068aad4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f087df777bb31b75937ad09068aad4f">ref</a> ()</td></tr>
-<tr class="memdesc:a6f087df777bb31b75937ad09068aad4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference.  <br /></td></tr>
 <tr class="separator:a6f087df777bb31b75937ad09068aad4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46c04863502e2539085096e14bddc02d" id="r_a46c04863502e2539085096e14bddc02d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46c04863502e2539085096e14bddc02d">unref</a> ()</td></tr>
-<tr class="memdesc:a46c04863502e2539085096e14bddc02d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unreference table.  <br /></td></tr>
 <tr class="separator:a46c04863502e2539085096e14bddc02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca076eec4b0522045ce0c881a08e28de" id="r_aca076eec4b0522045ce0c881a08e28de"><td class="memItemLeft" align="right" valign="top">lua::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca076eec4b0522045ce0c881a08e28de">push</a> () const</td></tr>
-<tr class="memdesc:aca076eec4b0522045ce0c881a08e28de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push the table on the stack.  <br /></td></tr>
 <tr class="separator:aca076eec4b0522045ce0c881a08e28de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a838d4ea7c27cf727ac52a9c31af1df58" id="r_a838d4ea7c27cf727ac52a9c31af1df58"><td class="memItemLeft" align="right" valign="top">lua::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a838d4ea7c27cf727ac52a9c31af1df58">get</a> (const std::string &amp;field) const</td></tr>
-<tr class="memdesc:a838d4ea7c27cf727ac52a9c31af1df58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an entry on the stack by name.  <br /></td></tr>
 <tr class="separator:a838d4ea7c27cf727ac52a9c31af1df58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:af03d5c30e4789d6e73081d81b4aaef8c" id="r_af03d5c30e4789d6e73081d81b4aaef8c"><td class="memItemLeft" align="right" valign="top">lua::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af03d5c30e4789d6e73081d81b4aaef8c">type_</a> = lua::type::none</td></tr>
-<tr class="memdesc:af03d5c30e4789d6e73081d81b4aaef8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Lua type this node represents.  <br /></td></tr>
 <tr class="separator:af03d5c30e4789d6e73081d81b4aaef8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa5718e2b2706d826264ca0b291e522b" id="r_afa5718e2b2706d826264ca0b291e522b"><td class="memItemLeft" align="right" valign="top">lua::state::index_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa5718e2b2706d826264ca0b291e522b">ref_</a> = lua::reference::nil</td></tr>
-<tr class="memdesc:afa5718e2b2706d826264ca0b291e522b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lua reference of this node.  <br /></td></tr>
 <tr class="separator:afa5718e2b2706d826264ca0b291e522b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>

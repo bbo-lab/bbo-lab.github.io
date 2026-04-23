@@ -122,20 +122,15 @@ $(function(){initNavTree('classvidre_1_1variant.html',''); initResizable(true); 
 </div><!--header-->
 <div class="contents">
 
-<p>A simple variant.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="variant_8hh_source.html">vidre/util/variant.hh</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A simple variant. </p>
-<p>This variant is, except for std::string, constant evaluated. Internally it stores: <code>long</code>, <code>unsigned</code> long, <code>double</code>, <code>const char *</code>, and, <code>std::string</code>. </p>
+<div class="textblock"><p>This variant is, except for std::string, constant evaluated. Internally it stores: <code>long</code>, <code>unsigned</code> long, <code>double</code>, <code>const char *</code>, and, <code>std::string</code>. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="examples_2core_2program_8cc-example.html#_a2">examples/core/program.cc</a>.</dd>
 </dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1variant_1_1deduce.html">deduce</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for deducing the type.  <a href="structvidre_1_1variant_1_1deduce.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -154,7 +149,6 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="#a9b0cf54fcd3ddcb18764f02900d31db5afe5df990b579714780f943f3f0807a2e">string</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a9b0cf54fcd3ddcb18764f02900d31db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internally stored value type.  <a href="#a9b0cf54fcd3ddcb18764f02900d31db5">More...</a><br /></td></tr>
 <tr class="separator:a9b0cf54fcd3ddcb18764f02900d31db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -188,18 +182,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a73faa9e8b0ef32f17fc728c0b5596892" id="r_a73faa9e8b0ef32f17fc728c0b5596892"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73faa9e8b0ef32f17fc728c0b5596892">variant</a> (const std::string &amp;v) noexcept</td></tr>
 <tr class="separator:a73faa9e8b0ef32f17fc728c0b5596892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad33959815e5ee35d743149dd7c1621" id="r_afad33959815e5ee35d743149dd7c1621"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="#a9b0cf54fcd3ddcb18764f02900d31db5">value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afad33959815e5ee35d743149dd7c1621">type</a> () const noexcept</td></tr>
-<tr class="memdesc:afad33959815e5ee35d743149dd7c1621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value type.  <br /></td></tr>
 <tr class="separator:afad33959815e5ee35d743149dd7c1621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43081dfe705f10a655818841d205beb1" id="r_a43081dfe705f10a655818841d205beb1"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43081dfe705f10a655818841d205beb1">empty</a> () const noexcept</td></tr>
-<tr class="memdesc:a43081dfe705f10a655818841d205beb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if "empty".  <br /></td></tr>
 <tr class="separator:a43081dfe705f10a655818841d205beb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a882340a6ff9242477f5f10bc7d4f00a7" id="r_a882340a6ff9242477f5f10bc7d4f00a7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a882340a6ff9242477f5f10bc7d4f00a7"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a882340a6ff9242477f5f10bc7d4f00a7">operator T</a> () const</td></tr>
-<tr class="memdesc:a882340a6ff9242477f5f10bc7d4f00a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value.  <br /></td></tr>
 <tr class="separator:a882340a6ff9242477f5f10bc7d4f00a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90bf9caa1e643c814b37aa6b388aab02" id="r_a90bf9caa1e643c814b37aa6b388aab02"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a90bf9caa1e643c814b37aa6b388aab02"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classvidre_1_1variant.html">variant</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a90bf9caa1e643c814b37aa6b388aab02">operator=</a> (const T &amp;)</td></tr>
-<tr class="memdesc:a90bf9caa1e643c814b37aa6b388aab02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign value.  <br /></td></tr>
 <tr class="separator:a90bf9caa1e643c814b37aa6b388aab02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28bdbff36542d9ac8f5742dd6ce34541" id="r_a28bdbff36542d9ac8f5742dd6ce34541"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a28bdbff36542d9ac8f5742dd6ce34541"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classvidre_1_1variant.html">variant</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a28bdbff36542d9ac8f5742dd6ce34541">operator=</a> (const T *)</td></tr>

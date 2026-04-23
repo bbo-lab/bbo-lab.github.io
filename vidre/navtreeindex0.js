@@ -1,6 +1,5 @@
 var NAVTREEINDEX0 =
 {
-"_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html":[10,0],
 "annotated.html":[8,0],
 "aptina_8cc.html":[9,0,4,2,2],
 "aptina_8cc.html#a0443ab04fd24eec44ebdc49330b62ec0":[9,0,4,2,2,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "classvidre_1_1ffmpeg_1_1frame.html#a79e301f23001bbada28b611e7bf6416b":[5,0,5,0,3,1,1,2],
 "classvidre_1_1ffmpeg_1_1frame.html#a90deef2d5a92a866d8c9e6bd83e493aa":[5,0,5,0,3,1,1,0],
 "classvidre_1_1ffmpeg_1_1frame.html#a94b151dd5d0600570bce9b7353fb440f":[5,0,5,0,3,1,1,5],
-"classvidre_1_1ffmpeg_1_1frame.html#ae2f80b26077e3266a9d0739eaeaf8176":[5,0,5,0,3,1,1,8]
+"classvidre_1_1ffmpeg_1_1frame.html#ae2f80b26077e3266a9d0739eaeaf8176":[5,0,5,0,3,1,1,8],
+"classvidre_1_1ffmpeg_1_1frame.html#aed01cbe16e2ea07d1e6f968ffdd9d329":[5,0,5,0,3,1,1,6]
 };

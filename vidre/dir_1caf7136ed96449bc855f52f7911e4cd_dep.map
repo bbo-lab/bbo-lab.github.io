@@ -1,4 +1,4 @@
-<map id="plugins/camera/basler/pylon" name="plugins/camera/basler/pylon">
+<map id="camera/basler/pylon" name="camera/basler/pylon">
 <area shape="rect" id="node1" href="dir_1caf7136ed96449bc855f52f7911e4cd.html" title="pylon" alt="" coords="27,52,80,77"/>
 <area shape="rect" id="clust1" href="dir_fb1c622d898c8017dfca951bd4af0e75.html" title="basler" alt="" coords="16,16,91,88"/>
 </map>

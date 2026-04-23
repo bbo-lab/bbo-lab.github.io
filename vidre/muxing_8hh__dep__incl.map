@@ -1,11 +1,11 @@
 <map id="vidre/ffmpeg/format/muxing.hh" name="vidre/ffmpeg/format/muxing.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="149,5,284,45"/>
-<area shape="rect" id="Node000002" href="$ffmpeg_2vidre_2ffmpeg_2format_8hh.html" title=" " alt="" coords="140,93,293,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,59,219,93,214,93,214,59"/>
-<area shape="rect" id="Node000003" href="$ffmpeg_8hh.html" title=" " alt="" coords="161,167,273,192"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="219,132,219,167,214,167,214,132"/>
-<area shape="rect" id="Node000004" href="$main_8cc.html" title=" " alt="" coords="5,240,233,295"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="195,203,151,242,147,238,192,199"/>
-<area shape="rect" id="Node000005" href="$ffmpeg_8cc.html" title=" " alt="" coords="258,255,370,280"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="242,199,302,252,299,256,238,203"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="87,5,221,45"/>
+<area shape="rect" id="Node000002" href="$ffmpeg_2vidre_2ffmpeg_2format_8hh.html" title=" " alt="" coords="77,93,231,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,59,157,93,151,93,151,59"/>
+<area shape="rect" id="Node000003" href="$ffmpeg_8hh.html" title=" " alt="" coords="98,167,210,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="157,132,157,167,151,167,151,132"/>
+<area shape="rect" id="Node000004" href="$main_8cc.html" title=" " alt="" coords="5,240,151,280"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="135,204,98,242,94,238,132,200"/>
+<area shape="rect" id="Node000005" href="$ffmpeg_8cc.html" title=" " alt="" coords="175,247,287,273"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="177,200,222,245,218,249,173,204"/>
 </map>

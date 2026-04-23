@@ -122,9 +122,6 @@ $(function(){initNavTree('structvidre_1_1detail_1_1event.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 
-<p>Trivial event notification primitive based on Linux's eventfd.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="events_8hh_source.html">vidre/util/events.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for vidre::detail::event:</div>
@@ -134,16 +131,13 @@ $(function(){initNavTree('structvidre_1_1detail_1_1event.html',''); initResizabl
 <div class="center"><iframe scrolling="no" frameborder="0" src="structvidre_1_1detail_1_1event__coll__graph.svg" width="146" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Trivial event notification primitive based on Linux's eventfd. </p>
-<dl class="section note"><dt>Note</dt><dd>This is only available on Linux, and is emulated on other platforms. </dd></dl>
+<div class="textblock"><dl class="section note"><dt>Note</dt><dd>This is only available on Linux, and is emulated on other platforms. </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a5b58e5df1d016ff788d83bdf40070599" id="r_a5b58e5df1d016ff788d83bdf40070599"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b58e5df1d016ff788d83bdf40070599">value_type</a> = uint64_t</td></tr>
-<tr class="memdesc:a5b58e5df1d016ff788d83bdf40070599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the notification count.  <br /></td></tr>
 <tr class="separator:a5b58e5df1d016ff788d83bdf40070599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99d1b9cd2d809b32fb4c752dcf937cad" id="r_a99d1b9cd2d809b32fb4c752dcf937cad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99d1b9cd2d809b32fb4c752dcf937cad">result_type</a> = std::pair&lt;int, <a class="el" href="#a5b58e5df1d016ff788d83bdf40070599">value_type</a>&gt;</td></tr>
-<tr class="memdesc:a99d1b9cd2d809b32fb4c752dcf937cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the wait result (status code and notification count).  <br /></td></tr>
 <tr class="separator:a99d1b9cd2d809b32fb4c752dcf937cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -159,57 +153,42 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9922dec5af5cd7f946c968b3c7f6f9fb" id="r_a9922dec5af5cd7f946c968b3c7f6f9fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvidre_1_1detail_1_1event.html">event</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9922dec5af5cd7f946c968b3c7f6f9fb">operator=</a> (<a class="el" href="structvidre_1_1detail_1_1event.html">event</a> &amp;&amp;other) noexcept</td></tr>
 <tr class="separator:a9922dec5af5cd7f946c968b3c7f6f9fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab02fea6a0a24ce073fac1258a4d0f8e4" id="r_ab02fea6a0a24ce073fac1258a4d0f8e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab02fea6a0a24ce073fac1258a4d0f8e4">event</a> (<a class="el" href="#a5b58e5df1d016ff788d83bdf40070599">value_type</a> initval)</td></tr>
-<tr class="memdesc:ab02fea6a0a24ce073fac1258a4d0f8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct event handler.  <br /></td></tr>
 <tr class="separator:ab02fea6a0a24ce073fac1258a4d0f8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a739e5b9cd6d046332b53643d72d1bb73" id="r_a739e5b9cd6d046332b53643d72d1bb73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a739e5b9cd6d046332b53643d72d1bb73">~event</a> ()</td></tr>
 <tr class="separator:a739e5b9cd6d046332b53643d72d1bb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0df49f755a7347b322d8ca545e8c999" id="r_ab0df49f755a7347b322d8ca545e8c999"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0df49f755a7347b322d8ca545e8c999">valid</a> () const noexcept</td></tr>
-<tr class="memdesc:ab0df49f755a7347b322d8ca545e8c999"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if valid.  <br /></td></tr>
 <tr class="separator:ab0df49f755a7347b322d8ca545e8c999"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b1e71dab21899533d5c24b696f17cb8" id="r_a6b1e71dab21899533d5c24b696f17cb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b1e71dab21899533d5c24b696f17cb8">open</a> (<a class="el" href="#a5b58e5df1d016ff788d83bdf40070599">value_type</a> initval)</td></tr>
-<tr class="memdesc:a6b1e71dab21899533d5c24b696f17cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize event handler.  <br /></td></tr>
 <tr class="separator:a6b1e71dab21899533d5c24b696f17cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e59190bf53e7d0c53787a02cc5ec46b" id="r_a4e59190bf53e7d0c53787a02cc5ec46b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e59190bf53e7d0c53787a02cc5ec46b">close</a> () noexcept</td></tr>
-<tr class="memdesc:a4e59190bf53e7d0c53787a02cc5ec46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the event handler.  <br /></td></tr>
 <tr class="separator:a4e59190bf53e7d0c53787a02cc5ec46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a194742f17e426db4402f64f4936287b7" id="r_a194742f17e426db4402f64f4936287b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a194742f17e426db4402f64f4936287b7">terminate</a> (std::chrono::milliseconds timeout)</td></tr>
-<tr class="memdesc:a194742f17e426db4402f64f4936287b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify receiver of the "terminate" condition.  <br /></td></tr>
 <tr class="separator:a194742f17e426db4402f64f4936287b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c82344a1ed984e2ba4698e9ca93719d" id="r_a6c82344a1ed984e2ba4698e9ca93719d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c82344a1ed984e2ba4698e9ca93719d">notify</a> (<a class="el" href="#a5b58e5df1d016ff788d83bdf40070599">value_type</a> <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>=1)</td></tr>
-<tr class="memdesc:a6c82344a1ed984e2ba4698e9ca93719d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the event, i.e.  <br /></td></tr>
 <tr class="separator:a6c82344a1ed984e2ba4698e9ca93719d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a61e79e1f6e34562b6ffb877cd0fa03" id="r_a2a61e79e1f6e34562b6ffb877cd0fa03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a99d1b9cd2d809b32fb4c752dcf937cad">result_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a61e79e1f6e34562b6ffb877cd0fa03">wait</a> ()</td></tr>
-<tr class="memdesc:a2a61e79e1f6e34562b6ffb877cd0fa03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the event to be notified.  <br /></td></tr>
 <tr class="separator:a2a61e79e1f6e34562b6ffb877cd0fa03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27fd556542773c4fd6c676c9eacd46f2" id="r_a27fd556542773c4fd6c676c9eacd46f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a99d1b9cd2d809b32fb4c752dcf937cad">result_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27fd556542773c4fd6c676c9eacd46f2">wait</a> (std::chrono::milliseconds timeout)</td></tr>
-<tr class="memdesc:a27fd556542773c4fd6c676c9eacd46f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the event to be notified, with a timeout.  <br /></td></tr>
 <tr class="separator:a27fd556542773c4fd6c676c9eacd46f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ab2bca5786f380c389720164fff336493" id="r_ab2bca5786f380c389720164fff336493"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2bca5786f380c389720164fff336493">handle</a> = -1</td></tr>
-<tr class="memdesc:ab2bca5786f380c389720164fff336493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal handle (e.g. file descriptor on Linux).  <br /></td></tr>
 <tr class="separator:ab2bca5786f380c389720164fff336493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec99534fd5ca261ad6efc118d187e5ca" id="r_aec99534fd5ca261ad6efc118d187e5ca"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec99534fd5ca261ad6efc118d187e5ca">quit</a> {false}</td></tr>
-<tr class="memdesc:aec99534fd5ca261ad6efc118d187e5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag to indicate termination.  <br /></td></tr>
 <tr class="separator:aec99534fd5ca261ad6efc118d187e5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a7746147de20c5dff14926e0cb3c764ca" id="r_a7746147de20c5dff14926e0cb3c764ca"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="#a5b58e5df1d016ff788d83bdf40070599">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7746147de20c5dff14926e0cb3c764ca">max_count</a> = 0xfffffffffffffffeULL</td></tr>
-<tr class="memdesc:a7746147de20c5dff14926e0cb3c764ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum notification count.  <br /></td></tr>
 <tr class="separator:a7746147de20c5dff14926e0cb3c764ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeff5fe9ce91f14efae265d42c85c1f73" id="r_aeff5fe9ce91f14efae265d42c85c1f73"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeff5fe9ce91f14efae265d42c85c1f73">success</a> = static_cast&lt;int&gt;(std::errc{})</td></tr>
-<tr class="memdesc:aeff5fe9ce91f14efae265d42c85c1f73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification was successful.  <br /></td></tr>
 <tr class="separator:aeff5fe9ce91f14efae265d42c85c1f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26e14c5a92789cd72978f953b1334c0e" id="r_a26e14c5a92789cd72978f953b1334c0e"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26e14c5a92789cd72978f953b1334c0e">try_again</a> = static_cast&lt;int&gt;(std::errc::resource_unavailable_try_again)</td></tr>
-<tr class="memdesc:a26e14c5a92789cd72978f953b1334c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification failed and should be retried.  <br /></td></tr>
 <tr class="separator:a26e14c5a92789cd72978f953b1334c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37243313857852a3d8bae3a0ebf942a5" id="r_a37243313857852a3d8bae3a0ebf942a5"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37243313857852a3d8bae3a0ebf942a5">timed_out</a> = static_cast&lt;int&gt;(std::errc::timed_out)</td></tr>
-<tr class="memdesc:a37243313857852a3d8bae3a0ebf942a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait timed out.  <br /></td></tr>
 <tr class="separator:a37243313857852a3d8bae3a0ebf942a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f22ab8de49557a8e9db0d49382205e7" id="r_a8f22ab8de49557a8e9db0d49382205e7"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f22ab8de49557a8e9db0d49382205e7">terminated</a> = static_cast&lt;int&gt;(std::errc::broken_pipe)</td></tr>
-<tr class="memdesc:a8f22ab8de49557a8e9db0d49382205e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Termination signal received (not handled here).  <br /></td></tr>
 <tr class="separator:a8f22ab8de49557a8e9db0d49382205e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>

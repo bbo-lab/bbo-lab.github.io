@@ -1,4 +1,4 @@
-<map id="plugins/camera/dummy" name="plugins/camera/dummy">
+<map id="camera/dummy" name="camera/dummy">
 <area shape="rect" id="node1" href="dir_b58b1f62dc19f08ca6fdbf949dfffa28.html" title="dummy" alt="" coords="5,5,71,31"/>
 <area shape="rect" id="node2" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html" title="vidre" alt="" coords="13,79,63,104"/>
 <area shape="poly" id="edge1" href="dir_000012_000043.html" alt="" coords="41,31,41,65,35,65,35,31"/>

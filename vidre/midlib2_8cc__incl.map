@@ -1,4 +1,4 @@
-<map id="plugins/camera/onsemi/midlib2/midlib2.cc" name="plugins/camera/onsemi/midlib2/midlib2.cc">
+<map id="camera/onsemi/midlib2/midlib2.cc" name="camera/onsemi/midlib2/midlib2.cc">
 <area shape="rect" id="Node000001" title=" " alt="" coords="215,5,371,45"/>
 <area shape="rect" id="Node000002" href="$plugin_8hh.html" title=" " alt="" coords="240,93,347,119"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="296,46,296,79,291,79,291,46"/>

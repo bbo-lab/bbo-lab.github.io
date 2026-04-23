@@ -123,13 +123,8 @@ $(function(){initNavTree('structvidre_1_1detail_1_1schedule.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>Scheduling settings.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="thread_8hh_source.html">vidre/util/thread.hh</a>&gt;</code></p>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Scheduling settings. </p>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:adf5f0b0a49c40144989d7da46702b913" id="r_adf5f0b0a49c40144989d7da46702b913"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf5f0b0a49c40144989d7da46702b913">policy_type</a> : int { <br />
@@ -148,7 +143,6 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="#adf5f0b0a49c40144989d7da46702b913aa3a13ddc23c56c184449aa5609bf0e8d">deadline</a> = SCHED_DEADLINE
 <br />
  }</td></tr>
-<tr class="memdesc:adf5f0b0a49c40144989d7da46702b913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scheduling policies.  <a href="#adf5f0b0a49c40144989d7da46702b913">More...</a><br /></td></tr>
 <tr class="separator:adf5f0b0a49c40144989d7da46702b913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -166,7 +160,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1e92fa65cf8d6d8764aa78437680cf55" id="r_a1e92fa65cf8d6d8764aa78437680cf55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvidre_1_1detail_1_1schedule.html">schedule</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e92fa65cf8d6d8764aa78437680cf55">operator=</a> (<a class="el" href="structvidre_1_1detail_1_1schedule.html">schedule</a> &amp;&amp;) noexcept=delete</td></tr>
 <tr class="separator:a1e92fa65cf8d6d8764aa78437680cf55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf18dbc4aacd4552c72472f4e53606ee" id="r_aaf18dbc4aacd4552c72472f4e53606ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1status.html">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf18dbc4aacd4552c72472f4e53606ee">priority</a> (int priority)</td></tr>
-<tr class="memdesc:aaf18dbc4aacd4552c72472f4e53606ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set priority.  <br /></td></tr>
 <tr class="separator:aaf18dbc4aacd4552c72472f4e53606ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d5cafab303f3bc9b6acef969168aaa4" id="r_a5d5cafab303f3bc9b6acef969168aaa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1status.html">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d5cafab303f3bc9b6acef969168aaa4">priority</a> (<a class="el" href="#adf5f0b0a49c40144989d7da46702b913">policy_type</a> policy, int priority)</td></tr>
 <tr class="separator:a5d5cafab303f3bc9b6acef969168aaa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,10 +167,8 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a6173a505e87cc9827296d26c6603bf" id="r_a7a6173a505e87cc9827296d26c6603bf"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a6173a505e87cc9827296d26c6603bf">min_priority</a> (<a class="el" href="#adf5f0b0a49c40144989d7da46702b913">policy_type</a> policy)</td></tr>
-<tr class="memdesc:a7a6173a505e87cc9827296d26c6603bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get minimum priority for a policy.  <br /></td></tr>
 <tr class="separator:a7a6173a505e87cc9827296d26c6603bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf65eb8daa01c6b4c889a72410fd90f2" id="r_aaf65eb8daa01c6b4c889a72410fd90f2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf65eb8daa01c6b4c889a72410fd90f2">max_priority</a> (<a class="el" href="#adf5f0b0a49c40144989d7da46702b913">policy_type</a> policy)</td></tr>
-<tr class="memdesc:aaf65eb8daa01c6b4c889a72410fd90f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum priority for a policy.  <br /></td></tr>
 <tr class="separator:aaf65eb8daa01c6b4c889a72410fd90f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -204,7 +195,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Scheduling policies. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo</a></b></dt><dd>need to find some commonality between Windows and Linux scheduling policies, or at least provide a common interface. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo</a></b></dt><dd>need to find some commonality between Windows and Linux scheduling policies, or at least provide a common interface. </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adf5f0b0a49c40144989d7da46702b913a7c230a4da25592141353101cf3876779" name="adf5f0b0a49c40144989d7da46702b913a7c230a4da25592141353101cf3876779"></a>invalid&#160;</td><td class="fielddoc"><p>Invalid scheduling policy. </p>
 </td></tr>

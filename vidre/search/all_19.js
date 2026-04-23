@@ -28,7 +28,7 @@ var searchData=
   ['yaml_25',['YAML',['../group__api-core-settings-yaml.html',1,'']]],
   ['yaml_2ehh_26',['yaml.hh',['../yaml_8hh.html',1,'']]],
   ['ycgco_27',['ycgco',['../classvidre_1_1video_1_1format_1_1color_1_1space.html#a96ce8ff281d2bc0a41cf81e197e23f3aae4150b20a6f312008c670ca4af90172b',1,'vidre::video::format::color::space']]],
-  ['yet_20implemented_28',['Weak References (not yet implemented)',['../classvidre_1_1shared.html#autotoc_md13',1,'']]],
+  ['yet_20implemented_28',['Weak References (not yet implemented)',['../classvidre_1_1shared.html#autotoc_md14',1,'']]],
   ['yuv24_29',['yuv24',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ae8ec26b2326f030b9e913400b0e0254a',1,'fourcc.hh']]],
   ['yuv32_30',['yuv32',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a90d71c1c6df924691121fdc0b72edd6c',1,'fourcc.hh']]],
   ['yuv410_31',['yuv410',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a0bec364560ff782aaeb1df15a006a20a',1,'fourcc.hh']]],

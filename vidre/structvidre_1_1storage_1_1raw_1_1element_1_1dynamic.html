@@ -121,9 +121,6 @@ $(function(){initNavTree('structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.ht
 </div><!--header-->
 <div class="contents">
 
-<p>Base class for dynamic elements.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="raw_8hh_source.html">vidre/storage/raw.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for vidre::storage::raw::element::dynamic:</div>
@@ -140,8 +137,7 @@ $(function(){initNavTree('structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.ht
 <div class="center"><iframe scrolling="no" frameborder="0" src="structvidre_1_1storage_1_1raw_1_1element_1_1dynamic__coll__graph.svg" width="159" height="228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class for dynamic elements. </p>
-<p>Dynamic elements, such as groups of elements or strings, require field updates after all value were set. This is best suited for the file header.</p>
+<div class="textblock"><p>Dynamic elements, such as groups of elements or strings, require field updates after all value were set. This is best suited for the file header.</p>
 <p>Example: </p><div class="fragment"><div class="line">    <span class="keyword">struct </span><a class="code hl_define" href="group__api-core-details.html#ga91542f6e8b34c625fab750990e548aea">__vidre_packed__</a> <a class="code hl_struct" href="structvariable_1_1index.html">index</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> raw::element::dynamic {</div>
 <div class="line">        uint64_t counter{};</div>
 <div class="line"> </div>
@@ -213,13 +209,10 @@ requires compatible_minor&lt;Minor&gt;</td></tr>
 <tr class="memitem:ac0be845bc7abe7e1b7a1b517baa46df9"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac0be845bc7abe7e1b7a1b517baa46df9">dynamic</a> (<a class="el" href="group__api-core-storage-raw.html#ga5fa0321a86ee103a5c9da9fecb857d84">major</a> major_, Minor minor_, uint64_t length_=0) noexcept</td></tr>
 <tr class="separator:ac0be845bc7abe7e1b7a1b517baa46df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d44d5963b9221fe7dae0cba91fe9ed4" id="r_a7d44d5963b9221fe7dae0cba91fe9ed4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__api-core-storage-raw.html#ga26567d04ddc408802501d7cfc193175e">length_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d44d5963b9221fe7dae0cba91fe9ed4">update</a> () noexcept</td></tr>
-<tr class="memdesc:a7d44d5963b9221fe7dae0cba91fe9ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update entry length and return it.  <br /></td></tr>
 <tr class="separator:a7d44d5963b9221fe7dae0cba91fe9ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82b991c3416070f9ab868f30281c0da4" id="r_a82b991c3416070f9ab868f30281c0da4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="#abd71f41c09f6f3f4c31dda19d3a2edf7">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82b991c3416070f9ab868f30281c0da4">put</a> (<a class="el" href="classvidre_1_1io_1_1sink.html">io::sink</a> &amp;f) const noexcept</td></tr>
-<tr class="memdesc:a82b991c3416070f9ab868f30281c0da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write entry to sink.  <br /></td></tr>
 <tr class="separator:a82b991c3416070f9ab868f30281c0da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7e01bebad32559d1af09ff7817d5a2f" id="r_ab7e01bebad32559d1af09ff7817d5a2f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="#abd71f41c09f6f3f4c31dda19d3a2edf7">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7e01bebad32559d1af09ff7817d5a2f">get</a> (<a class="el" href="classvidre_1_1io_1_1source.html">io::source</a> &amp;) noexcept</td></tr>
-<tr class="memdesc:ab7e01bebad32559d1af09ff7817d5a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from source.  <br /></td></tr>
 <tr class="separator:ab7e01bebad32559d1af09ff7817d5a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>

@@ -123,9 +123,6 @@ $(function(){initNavTree('classvidre_1_1log_1_1io_1_1stream.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>Default log stream.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="log_8hh_source.html">vidre/log.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for vidre::log::io::stream:</div>
@@ -142,8 +139,7 @@ $(function(){initNavTree('classvidre_1_1log_1_1io_1_1stream.html',''); initResiz
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1log_1_1io_1_1stream__coll__graph.svg" width="154" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Default log stream. </p>
-<p>This class implements logging to <code>std::clog</code>, but also, serves a base class for implementing individual log streamers.</p>
+<div class="textblock"><p>This class implements logging to <code>std::clog</code>, but also, serves a base class for implementing individual log streamers.</p>
 <p>Developers wishing to implement their own logic should study <code><a class="el" href="classvidre_1_1log_1_1io_1_1file.html" title="File logger.">log::io::file</a></code>. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -159,7 +155,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a81cc8487649b7a143755c8e42aac0907" id="r_a81cc8487649b7a143755c8e42aac0907"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81cc8487649b7a143755c8e42aac0907">~stream</a> ()</td></tr>
 <tr class="separator:a81cc8487649b7a143755c8e42aac0907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad682cd7dd92f5d53feac35f4dc767981" id="r_ad682cd7dd92f5d53feac35f4dc767981"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad682cd7dd92f5d53feac35f4dc767981">put</a> (const <a class="el" href="group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d">message_type</a> &amp;msg) noexcept</td></tr>
-<tr class="memdesc:ad682cd7dd92f5d53feac35f4dc767981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write text to this log stream.  <br /></td></tr>
 <tr class="separator:ad682cd7dd92f5d53feac35f4dc767981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -171,10 +166,8 @@ requires std::derived_from&lt;S, <a class="el" href="classvidre_1_1log_1_1io_1_1
 <tr class="memitem:affe3fc82b9cf427434552651dbd37d70" id="r_affe3fc82b9cf427434552651dbd37d70"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affe3fc82b9cf427434552651dbd37d70">remove</a> (unsigned chanid) noexcept</td></tr>
 <tr class="separator:affe3fc82b9cf427434552651dbd37d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9328d4564fc9039d64c81e77b24bf83e" id="r_a9328d4564fc9039d64c81e77b24bf83e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__api-core-log-if.html#gac7188c64802d58d335e10371224772ec">level</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9328d4564fc9039d64c81e77b24bf83e">threshold</a> (unsigned chanid) noexcept</td></tr>
-<tr class="memdesc:a9328d4564fc9039d64c81e77b24bf83e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get threshold.  <br /></td></tr>
 <tr class="separator:a9328d4564fc9039d64c81e77b24bf83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89cc6376c3584ba50d1758870f79719d" id="r_a89cc6376c3584ba50d1758870f79719d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89cc6376c3584ba50d1758870f79719d">threshold</a> (unsigned chanid, int lvl) noexcept</td></tr>
-<tr class="memdesc:a89cc6376c3584ba50d1758870f79719d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set threshold.  <br /></td></tr>
 <tr class="separator:a89cc6376c3584ba50d1758870f79719d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dbccaa112021f7a22bdd834e0ae0685" id="r_a5dbccaa112021f7a22bdd834e0ae0685"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dbccaa112021f7a22bdd834e0ae0685">threshold</a> (unsigned chanid, <a class="el" href="group__api-core-log-if.html#gac7188c64802d58d335e10371224772ec">level</a> lvl) noexcept</td></tr>
 <tr class="separator:a5dbccaa112021f7a22bdd834e0ae0685"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,13 +175,10 @@ requires std::derived_from&lt;S, <a class="el" href="classvidre_1_1log_1_1io_1_1
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a2b8bd21bc3026214aaee68457c03c8f7" id="r_a2b8bd21bc3026214aaee68457c03c8f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b8bd21bc3026214aaee68457c03c8f7">threshold_</a> = <a class="el" href="group__api-core-log-if.html#ga91d20bd99261c731592be8c65fedc951">level_default</a></td></tr>
-<tr class="memdesc:a2b8bd21bc3026214aaee68457c03c8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log threshold for this stream.  <br /></td></tr>
 <tr class="separator:a2b8bd21bc3026214aaee68457c03c8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad84449a21905d93b3233a4775c08554b" id="r_ad84449a21905d93b3233a4775c08554b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvidre_1_1log_1_1io_1_1style.html#a7d9725faa7d08f7538d1993e66fa8c2d">style::type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad84449a21905d93b3233a4775c08554b">style_</a> = <a class="el" href="structvidre_1_1log_1_1io_1_1style.html#a7d9725faa7d08f7538d1993e66fa8c2da37e350d1fce7343bdc395aea91dc2c21">style::plain</a></td></tr>
-<tr class="memdesc:ad84449a21905d93b3233a4775c08554b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output style.  <br /></td></tr>
 <tr class="separator:ad84449a21905d93b3233a4775c08554b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae94bb7bcfa8942188563dfa167e76967" id="r_ae94bb7bcfa8942188563dfa167e76967"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae94bb7bcfa8942188563dfa167e76967">chanid_</a> = -1</td></tr>
-<tr class="memdesc:ae94bb7bcfa8942188563dfa167e76967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel ID (if av.).  <br /></td></tr>
 <tr class="separator:ae94bb7bcfa8942188563dfa167e76967"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>

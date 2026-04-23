@@ -122,9 +122,6 @@ $(function(){initNavTree('structvidre_1_1program_1_1argument.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
-<p>Program argument definition.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="program_8hh_source.html">vidre/program.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for vidre::program::argument:</div>
@@ -141,8 +138,7 @@ $(function(){initNavTree('structvidre_1_1program_1_1argument.html',''); initResi
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structvidre_1_1program_1_1argument__coll__graph.svg" width="100%" height="444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Program argument definition. </p>
-<p>The parser understands the following program arguments: </p><pre class="fragment"> -h                  A single "short" option.
+<div class="textblock"><p>The parser understands the following program arguments: </p><pre class="fragment"> -h                  A single "short" option.
  -abc                Multiple short options.
  --help              A "long" option.
  -x &lt;value&gt;          A short option with a required argument.
@@ -185,13 +181,10 @@ $(function(){initNavTree('structvidre_1_1program_1_1argument.html',''); initResi
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1program_1_1argument_1_1options.html">options</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal helper for accessing options&lt;N&gt;.  <a href="structvidre_1_1program_1_1argument_1_1options.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1program_1_1argument_1_1parameter.html">parameter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternative construction of positional arguments.  <a href="structvidre_1_1program_1_1argument_1_1parameter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1program_1_1argument_1_1parser.html">parser</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument parser.  <a href="classvidre_1_1program_1_1argument_1_1parser.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -206,10 +199,8 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="#ac90264a2e4fed1f3f173b8756dec6d92a7f93b1075b3b7fab8063e6cb999b76be">positional</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ac90264a2e4fed1f3f173b8756dec6d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kind of argument.  <a href="#ac90264a2e4fed1f3f173b8756dec6d92">More...</a><br /></td></tr>
 <tr class="separator:ac90264a2e4fed1f3f173b8756dec6d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89a516e568f11a676d4c0b6f630186a5" id="r_a89a516e568f11a676d4c0b6f630186a5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89a516e568f11a676d4c0b6f630186a5">callback_type</a> = void (*)(<a class="el" href="classvidre_1_1program_1_1argument_1_1parser.html">parser</a> &amp;p, <a class="el" href="classvidre_1_1variant.html">variant</a> <a class="el" href="#a68a9a4f99b2f797b52e0c7c7f2f2360c">value</a>)</td></tr>
-<tr class="memdesc:a89a516e568f11a676d4c0b6f630186a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for callbacks.  <br /></td></tr>
 <tr class="separator:a89a516e568f11a676d4c0b6f630186a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -244,25 +235,18 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0d502c6c46f9b3d57f9e683907ad0f64" id="r_a0d502c6c46f9b3d57f9e683907ad0f64"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d502c6c46f9b3d57f9e683907ad0f64">long_option</a> {}</td></tr>
-<tr class="memdesc:a0d502c6c46f9b3d57f9e683907ad0f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">The "long" option, also used as key (required).  <br /></td></tr>
 <tr class="separator:a0d502c6c46f9b3d57f9e683907ad0f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5edc9e6d82d67fdba4460171a9f630c" id="r_ab5edc9e6d82d67fdba4460171a9f630c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5edc9e6d82d67fdba4460171a9f630c">short_option</a> {}</td></tr>
-<tr class="memdesc:ab5edc9e6d82d67fdba4460171a9f630c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The "short" option (optional).  <br /></td></tr>
 <tr class="separator:ab5edc9e6d82d67fdba4460171a9f630c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7798ec6ccafc55f6fa366ed568b87b3" id="r_aa7798ec6ccafc55f6fa366ed568b87b3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7798ec6ccafc55f6fa366ed568b87b3">brief</a> {}</td></tr>
-<tr class="memdesc:aa7798ec6ccafc55f6fa366ed568b87b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Brief description of the option (required).  <br /></td></tr>
 <tr class="separator:aa7798ec6ccafc55f6fa366ed568b87b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeda24b1f87cb654dc30ce1d64bf76b12" id="r_aeda24b1f87cb654dc30ce1d64bf76b12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac90264a2e4fed1f3f173b8756dec6d92">argument::kind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeda24b1f87cb654dc30ce1d64bf76b12">type</a> = <a class="el" href="#ac90264a2e4fed1f3f173b8756dec6d92adf4b1a055c1e8b269140259312015294">argument::flag</a></td></tr>
-<tr class="memdesc:aeda24b1f87cb654dc30ce1d64bf76b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option type.  <br /></td></tr>
 <tr class="separator:aeda24b1f87cb654dc30ce1d64bf76b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68a9a4f99b2f797b52e0c7c7f2f2360c" id="r_a68a9a4f99b2f797b52e0c7c7f2f2360c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1variant.html#a9b0cf54fcd3ddcb18764f02900d31db5">variant::value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68a9a4f99b2f797b52e0c7c7f2f2360c">value</a> = <a class="el" href="classvidre_1_1variant.html#a9b0cf54fcd3ddcb18764f02900d31db5a84456a461a87ae71c1a6b050cc4cc806">variant::cstring</a></td></tr>
-<tr class="memdesc:a68a9a4f99b2f797b52e0c7c7f2f2360c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expected value type (if applicable).  <br /></td></tr>
 <tr class="separator:a68a9a4f99b2f797b52e0c7c7f2f2360c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99cc0f500621030f441f02fbd90d8534" id="r_a99cc0f500621030f441f02fbd90d8534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1variant.html">variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99cc0f500621030f441f02fbd90d8534">default_value</a> {}</td></tr>
-<tr class="memdesc:a99cc0f500621030f441f02fbd90d8534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default value (if applicable).  <br /></td></tr>
 <tr class="separator:a99cc0f500621030f441f02fbd90d8534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3978180c079efacf226bd921895aa5f" id="r_af3978180c079efacf226bd921895aa5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a89a516e568f11a676d4c0b6f630186a5">callback_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3978180c079efacf226bd921895aa5f">callback</a> {}</td></tr>
-<tr class="memdesc:af3978180c079efacf226bd921895aa5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function.  <br /></td></tr>
 <tr class="separator:af3978180c079efacf226bd921895aa5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>

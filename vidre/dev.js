@@ -36,6 +36,7 @@ var dev =
       ] ]
     ] ],
     [ "Coding style", "dev-style.html", null ],
+    [ "Directory layout", "dev-layout.html", null ],
     [ "Documentation", "dev-docs.html", null ],
     [ "Attribution", "dev-attribution.html", null ]
 ];

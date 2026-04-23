@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"classvidre_1_1storage_1_1ccv_1_1header.html#a4a9625de8141fd64d727d92dd372cffe":[5,0,5,2,0,3,40],
 "classvidre_1_1storage_1_1ccv_1_1header.html#a4c85ad0773fada8ef58e234537358877":[5,0,5,2,0,3,33],
 "classvidre_1_1storage_1_1ccv_1_1header.html#a540b4ea9ecc9a25e77f787b9544a2b09":[5,0,5,2,0,3,36],
 "classvidre_1_1storage_1_1ccv_1_1header.html#a563ba6929718b668a239b4f6fa29e4c6":[5,0,5,2,0,3,0],
@@ -229,8 +228,8 @@ var NAVTREEINDEX3 =
 "decode__video_8cc.html#ad3e56268ab4ce7a25e7a17c2e088a3c1":[9,0,4,2,4,6],
 "decode__video_8cc.html#af35f69f407b98b5244f837e25813bc11":[9,0,4,2,4,7],
 "decode__video_8cc.html#af9ed10020a0da147673b777941ded6ed":[9,0,4,2,4,8],
-"dev-attribution.html":[1,5],
-"dev-docs.html":[1,4],
+"dev-attribution.html":[1,6],
+"dev-docs.html":[1,5],
 "dev-goals.html":[1,2],
 "dev-goals.html#core-exception":[1,2,3,0,0],
 "dev-goals.html#core-format":[1,2,3,0,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "dev-goals.html#dev-backend-transport":[1,2,0,0,4],
 "dev-goals.html#dev-code":[1,2,2],
 "dev-goals.html#dev-core":[1,2,3,0],
-"dev-goals.html#dev-docs":[1,2,2,2]
+"dev-goals.html#dev-docs":[1,2,2,2],
+"dev-goals.html#dev-frontend":[1,2,0,1]
 };

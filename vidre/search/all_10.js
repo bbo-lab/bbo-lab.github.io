@@ -64,7 +64,7 @@ var searchData=
   ['pixel_2ehh_61',['pixel.hh',['../pixel_8hh.html',1,'']]],
   ['pixel_5fformat_62',['pixel_format',['../group__api-support-ffmpeg-util-data.html#ga87e7b6ceacd0f2dd8c84a15085b61146',1,'vidre::ffmpeg']]],
   ['pixelformat_2ehh_63',['pixelformat.hh',['../pixelformat_8hh.html',1,'']]],
-  ['pixfmt_5fmapping_64',['pixfmt_mapping',['../examples_2playground_2uvc_2linux_2uvc_8cc.html#acc58686a04a2ef6517bd71153c1fd3f8',1,'uvc.cc']]],
+  ['pixfmt_5fmapping_64',['pixfmt_mapping',['../examples_2playground_2uvc_2linux_2uvc_8cc.html#a55c5c4cf772f1e52ebff50e82cc1a655',1,'uvc.cc']]],
   ['pjpg_65',['pjpg',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ad184935fbe9a86f9792e92c1a313e370',1,'fourcc.hh']]],
   ['plain_66',['plain',['../structvidre_1_1log_1_1io_1_1style.html#a7d9725faa7d08f7538d1993e66fa8c2da37e350d1fce7343bdc395aea91dc2c21',1,'vidre::log::io::style']]],
   ['plugin_20categories_67',['Plugin categories.',['../group__api-core-plugin-category.html',1,'']]],
@@ -96,5 +96,5 @@ var searchData=
   ['pwc1_93',['pwc1',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a0625231ac2a1bb9e37a5a08fbb119ac9',1,'fourcc.hh']]],
   ['pwc2_94',['pwc2',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ac17f7095e0ef5721704dc2cb8e710dd9',1,'fourcc.hh']]],
   ['pylon_2ecc_95',['pylon.cc',['../pylon_8cc.html',1,'']]],
-  ['python_96',['Python',['../dev-docs.html#autotoc_md2',1,'Python'],['../dev-style.html#autotoc_md5',1,'Python']]]
+  ['python_96',['Python',['../dev-docs.html#autotoc_md2',1,'Python'],['../dev-style.html#autotoc_md6',1,'Python']]]
 ];

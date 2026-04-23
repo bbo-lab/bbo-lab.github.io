@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['c_0',['C',['../dev-docs.html#autotoc_md0',1,'C++'],['../dev-style.html#autotoc_md3',1,'C++']]],
+  ['c_0',['C',['../dev-docs.html#autotoc_md0',1,'C++'],['../dev-style.html#autotoc_md4',1,'C++']]],
   ['c_20api_1',['C API',['../group__api.html',1,'C++-API'],['../group__api-support-ffmpeg.html',1,'FFmpeg C++ API']]],
   ['c_20compatibility_2',['C++ compatibility',['../group__api-core-cpp.html',1,'']]],
   ['cachedir_3',['cachedir',['../group__api-core-os-path.html#ga7fb3a071f2730739fab0aa17394417b4',1,'vidre::os']]],
@@ -24,7 +24,7 @@ var searchData=
   ['chunk_20handling_21',['Data chunk handling',['../group__api-core-memory-chunk.html',1,'']]],
   ['chunk_2ehh_22',['chunk.hh',['../chunk_8hh.html',1,'']]],
   ['cit_5fyyvyuy_23',['cit_yyvyuy',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1adf620037a8b06b9f027e6e24bd9aa48a',1,'fourcc.hh']]],
-  ['class_24',['Strong References (this class)',['../classvidre_1_1shared.html#autotoc_md12',1,'']]],
+  ['class_24',['Strong References (this class)',['../classvidre_1_1shared.html#autotoc_md13',1,'']]],
   ['clearpackage_25',['clearpackage',['../classvidre_1_1script_1_1engine.html#a5b1e9435db7ce1d9bdbf5f486bdb52cf',1,'vidre::script::engine']]],
   ['clearpath_26',['clearpath',['../classvidre_1_1script_1_1engine.html#a814daee7c4c6e9df4a21337324b98d35',1,'vidre::script::engine']]],
   ['clock_5fspeed_27',['clock_speed',['../classvidre_1_1storage_1_1ccv_1_1header.html#ac4e7439f72bb22c73d6f5464422e6869',1,'vidre::storage::ccv::header::clock_speed()'],['../classvidre_1_1storage_1_1ccv_1_1header.html#a8645908484452852fc6b066b69d411e7',1,'vidre::storage::ccv::header::clock_speed(uint64_t value)']]],
@@ -73,7 +73,7 @@ var searchData=
   ['core_2edox_70',['core.dox',['../core_8dox.html',1,'']]],
   ['corrupt_71',['corrupt',['../classvidre_1_1ffmpeg_1_1packet.html#a79008614186dc48447d2959bce849bf6a8465c8f92f7f2c27243ddc4ab23511df',1,'vidre::ffmpeg::packet']]],
   ['count_72',['count',['../structvidre_1_1event_1_1result.html#afc031f10467674e7d8d0caa8043ff585',1,'vidre::event::result::count'],['../structvidre_1_1video_1_1index.html#ada1fce8a126ccc2eb10a8e0f882ba35d',1,'vidre::video::index::count'],['../hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf',1,'count:&#160;hw_decode_video.cc']]],
-  ['count_20behavior_73',['Reference Count Behavior',['../classvidre_1_1shared.html#autotoc_md14',1,'']]],
+  ['count_20behavior_73',['Reference Count Behavior',['../classvidre_1_1shared.html#autotoc_md15',1,'']]],
   ['counter_74',['counter',['../structvariable_1_1index.html#a82c00bd6071690a23f2c01d9b0b77f0b',1,'variable::index']]],
   ['cpia1_75',['cpia1',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a95123571de4f4751b8d5a5005d2e4f0c',1,'fourcc.hh']]],
   ['cpp_2edox_76',['cpp.dox',['../cpp_8dox.html',1,'']]],

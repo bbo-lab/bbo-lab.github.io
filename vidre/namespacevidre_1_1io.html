@@ -120,16 +120,10 @@ $(function(){initNavTree('namespacevidre_1_1io.html',''); initResizable(true); }
   <div class="headertitle"><div class="title">vidre::io Namespace Reference<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-io.html">In-/output</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>In-/output related functionality.  
-<a href="#details">More...</a></p>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>In-/output related functionality. </p>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1io_1_1packet.html">packet</a></td></tr>
-<tr class="memdesc:namespacevidre_1_1io_1_1packet"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet-based I/O types. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -137,29 +131,23 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1file.html">file</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1pipe.html">pipe</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data pipe.  <a href="classvidre_1_1io_1_1pipe.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1sink.html">sink</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data sink skeleton.  <a href="classvidre_1_1io_1_1sink.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1source.html">source</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data source.  <a href="classvidre_1_1io_1_1source.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gab254d60f9613650ea519a9adc090043a" id="r_gab254d60f9613650ea519a9adc090043a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-io-types.html#gab254d60f9613650ea519a9adc090043a">size_type</a> = std::size_t</td></tr>
-<tr class="memdesc:gab254d60f9613650ea519a9adc090043a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsigned default size type.  <br /></td></tr>
 <tr class="separator:gab254d60f9613650ea519a9adc090043a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga72ac3969f594911943b52eec600f9e2c" id="r_ga72ac3969f594911943b52eec600f9e2c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-io-types.html#ga72ac3969f594911943b52eec600f9e2c">offset_type</a> = std::make_signed_t&lt;<a class="el" href="group__api-core-io-types.html#gab254d60f9613650ea519a9adc090043a">size_type</a>&gt;</td></tr>
-<tr class="memdesc:ga72ac3969f594911943b52eec600f9e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signed default offset type.  <br /></td></tr>
 <tr class="separator:ga72ac3969f594911943b52eec600f9e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ga9fd88433e269dcd2f55a82d37fccd7f2" id="r_ga9fd88433e269dcd2f55a82d37fccd7f2"><td class="memTemplParams" colspan="2">template&lt;class T  = offset_type&gt; </td></tr>
 <tr class="memitem:ga9fd88433e269dcd2f55a82d37fccd7f2"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-io-types.html#ga9fd88433e269dcd2f55a82d37fccd7f2">invalid</a> = static_cast&lt;T&gt;(-1)</td></tr>
-<tr class="memdesc:ga9fd88433e269dcd2f55a82d37fccd7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalid offset value.  <br /></td></tr>
 <tr class="separator:ga9fd88433e269dcd2f55a82d37fccd7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

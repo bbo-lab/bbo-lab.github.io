@@ -121,25 +121,27 @@ $(function(){initNavTree('classvidre_1_1device_1_1base.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
-<p>Abstract device.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="device_2vidre_2device_2base_8hh_source.html">vidre/device/base.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for vidre::device::base:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for vidre::device::base:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1device_1_1base__inherit__graph.svg" width="143" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for vidre::device::base:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1device_1_1base__coll__graph.svg" width="143" height="228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Abstract device. </p>
-<p>Devices may be hard- or software devices. The latter applies, for example, to filters, and the like. Each device provides streams, ie. sinks and sources, as well as generic configuration options. Specific implementations will add more direct functionality. </p>
+<div class="textblock"><p>Devices may be hard- or software devices. The latter applies, for example, to filters, and the like. Each device provides streams, ie. sinks and sources, as well as generic configuration options. Specific implementations will add more direct functionality. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1device_1_1base_1_1enumerator.html">enumerator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware enumerator.  <a href="structvidre_1_1device_1_1base_1_1enumerator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -151,43 +153,31 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a50057854ba2f78caa5db4442a8567530" id="r_a50057854ba2f78caa5db4442a8567530"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50057854ba2f78caa5db4442a8567530">~base</a> ()=default</td></tr>
 <tr class="separator:a50057854ba2f78caa5db4442a8567530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0a83c0aaa382aa24e5992a8849a233e" id="r_aa0a83c0aaa382aa24e5992a8849a233e"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0a83c0aaa382aa24e5992a8849a233e">tag</a> () const noexcept</td></tr>
-<tr class="memdesc:aa0a83c0aaa382aa24e5992a8849a233e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device class tag.  <br /></td></tr>
 <tr class="separator:aa0a83c0aaa382aa24e5992a8849a233e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08ba420845d42784697f41834978e60c" id="r_a08ba420845d42784697f41834978e60c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08ba420845d42784697f41834978e60c">info</a> () const noexcept=0</td></tr>
-<tr class="memdesc:a08ba420845d42784697f41834978e60c"><td class="mdescLeft">&#160;</td><td class="mdescRight">General device info.  <br /></td></tr>
 <tr class="separator:a08ba420845d42784697f41834978e60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade9d459d12f85c8019aa41ab9e0d628e" id="r_ade9d459d12f85c8019aa41ab9e0d628e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-device-basics.html#ga9b96e641ea81e775e9c7b33804193772">state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade9d459d12f85c8019aa41ab9e0d628e">status</a> () const noexcept</td></tr>
-<tr class="memdesc:ade9d459d12f85c8019aa41ab9e0d628e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device status.  <br /></td></tr>
 <tr class="separator:ade9d459d12f85c8019aa41ab9e0d628e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab71ca7ed3beb0b617beffd69c3571d51" id="r_ab71ca7ed3beb0b617beffd69c3571d51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab71ca7ed3beb0b617beffd69c3571d51">setup</a> (<a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a>)=0</td></tr>
-<tr class="memdesc:ab71ca7ed3beb0b617beffd69c3571d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup device.  <br /></td></tr>
 <tr class="separator:ab71ca7ed3beb0b617beffd69c3571d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0711e05741289c79c2ac95980ab98d9" id="r_aa0711e05741289c79c2ac95980ab98d9"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0711e05741289c79c2ac95980ab98d9">id</a> () const noexcept</td></tr>
-<tr class="memdesc:aa0711e05741289c79c2ac95980ab98d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device ID.  <br /></td></tr>
 <tr class="separator:aa0711e05741289c79c2ac95980ab98d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c4efeb1f6a6638ae93dc86b3a9f3379" id="r_a9c4efeb1f6a6638ae93dc86b3a9f3379"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c4efeb1f6a6638ae93dc86b3a9f3379">name</a> () const noexcept</td></tr>
-<tr class="memdesc:a9c4efeb1f6a6638ae93dc86b3a9f3379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device name.  <br /></td></tr>
 <tr class="separator:a9c4efeb1f6a6638ae93dc86b3a9f3379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c09716aa38226e1d9569f444081782e" id="r_a0c09716aa38226e1d9569f444081782e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c09716aa38226e1d9569f444081782e">name</a> (const std::string &amp;username)</td></tr>
-<tr class="memdesc:a0c09716aa38226e1d9569f444081782e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set device name.  <br /></td></tr>
 <tr class="separator:a0c09716aa38226e1d9569f444081782e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8212be594d3534eb628bfa2fcddcfd1" id="r_ac8212be594d3534eb628bfa2fcddcfd1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8212be594d3534eb628bfa2fcddcfd1">connect</a> ()=0</td></tr>
-<tr class="memdesc:ac8212be594d3534eb628bfa2fcddcfd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect device.  <br /></td></tr>
 <tr class="separator:ac8212be594d3534eb628bfa2fcddcfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9147d6de6b774a3f275caee4e766f0c" id="r_af9147d6de6b774a3f275caee4e766f0c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9147d6de6b774a3f275caee4e766f0c">disconnect</a> ()=0</td></tr>
-<tr class="memdesc:af9147d6de6b774a3f275caee4e766f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect device.  <br /></td></tr>
 <tr class="separator:af9147d6de6b774a3f275caee4e766f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a60ca63aba96b03c261298a8ed8295d5b" id="r_a60ca63aba96b03c261298a8ed8295d5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-device-basics.html#ga9b96e641ea81e775e9c7b33804193772">state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60ca63aba96b03c261298a8ed8295d5b">state_</a> {<a class="el" href="group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772a5e543256c480ac577d30f76f9120eb74">state::undefined</a>}</td></tr>
-<tr class="memdesc:a60ca63aba96b03c261298a8ed8295d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current device state.  <br /></td></tr>
 <tr class="separator:a60ca63aba96b03c261298a8ed8295d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35e4752dd1d7b3d30d39f5cf970f61bc" id="r_a35e4752dd1d7b3d30d39f5cf970f61bc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35e4752dd1d7b3d30d39f5cf970f61bc">id_</a> {}</td></tr>
-<tr class="memdesc:a35e4752dd1d7b3d30d39f5cf970f61bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique device ID, if available. Should be empty if not available.  <br /></td></tr>
 <tr class="separator:a35e4752dd1d7b3d30d39f5cf970f61bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6d87a0753b07945e65130d8797fad6a" id="r_ae6d87a0753b07945e65130d8797fad6a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6d87a0753b07945e65130d8797fad6a">name_</a> {}</td></tr>
-<tr class="memdesc:ae6d87a0753b07945e65130d8797fad6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device name, prefably unique, but this is not enforced.  <br /></td></tr>
 <tr class="separator:ae6d87a0753b07945e65130d8797fad6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -292,6 +282,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Device class tag. </p>
 
+<p>Reimplemented in <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#a39b330dc7a966073b47f4ff888d5aef7">vidre::video::uvc::camera</a>.</p>
+
 </div>
 </div>
 <a id="a08ba420845d42784697f41834978e60c" name="a08ba420845d42784697f41834978e60c"></a>
@@ -319,6 +311,8 @@ Protected Attributes</h2></td></tr>
 
 <p>General device info. </p>
 <p>FIXME describe syntax!!! </p>
+
+<p>Implemented in <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#a73007eebc53d6378372134704a0d3070">vidre::video::uvc::camera</a>.</p>
 
 </div>
 </div>
@@ -373,6 +367,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Setup device. </p>
+
+<p>Implemented in <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#a7b6b4b5458e962b2a8757da0edf89885">vidre::video::uvc::camera</a>.</p>
 
 </div>
 </div>
@@ -493,6 +489,8 @@ Protected Attributes</h2></td></tr>
 <p>Connect device. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the device was successfully connected, <code>false</code> otherwise. </dd></dl>
 
+<p>Implemented in <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#aaaad192ae7e6d496d78bb1321ff6c065">vidre::video::uvc::camera</a>.</p>
+
 </div>
 </div>
 <a id="af9147d6de6b774a3f275caee4e766f0c" name="af9147d6de6b774a3f275caee4e766f0c"></a>
@@ -519,6 +517,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Disconnect device. </p>
+
+<p>Implemented in <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#a54d1d5476aed7c467c39f10d00927660">vidre::video::uvc::camera</a>.</p>
 
 </div>
 </div>

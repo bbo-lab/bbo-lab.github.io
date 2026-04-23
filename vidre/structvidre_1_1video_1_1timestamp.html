@@ -121,38 +121,29 @@ $(function(){initNavTree('structvidre_1_1video_1_1timestamp.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>Timestamp.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="video_2vidre_2video_2frame_8hh_source.html">vidre/video/frame.hh</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Timestamp. </p>
-<p>To avoid calculations (esp. divisions) on the critical path of frame acquisition, timestamps are represented as a value and a resolution (in Hz). The actual timestamp in seconds can be calculated as <code>value / resolution</code>. The default resolution is 1 ns (1 GHz), which allows for high-precision timestamps without needing to use floating-point values.</p>
+<div class="textblock"><p>To avoid calculations (esp. divisions) on the critical path of frame acquisition, timestamps are represented as a value and a resolution (in Hz). The actual timestamp in seconds can be calculated as <code>value / resolution</code>. The default resolution is 1 ns (1 GHz), which allows for high-precision timestamps without needing to use floating-point values.</p>
 <dl class="section see"><dt>See also</dt><dd>std::chrono::duration for a more flexible representation of time intervals, if needed. </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a76122be1e1cc9c0f41e38c6feac6c106" id="r_a76122be1e1cc9c0f41e38c6feac6c106"><td class="memTemplParams" colspan="2">template&lt;class Rep , class Period  = std::ratio&lt;1&gt;&gt; </td></tr>
 <tr class="memitem:a76122be1e1cc9c0f41e38c6feac6c106"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a76122be1e1cc9c0f41e38c6feac6c106">operator std::chrono::duration&lt; Rep, Period &gt;</a> () const noexcept</td></tr>
-<tr class="memdesc:a76122be1e1cc9c0f41e38c6feac6c106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert to duration.  <br /></td></tr>
 <tr class="separator:a76122be1e1cc9c0f41e38c6feac6c106"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0734c5603c43830a4a7944a8bce4b3d8" id="r_a0734c5603c43830a4a7944a8bce4b3d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0734c5603c43830a4a7944a8bce4b3d8">now</a> () noexcept</td></tr>
-<tr class="memdesc:a0734c5603c43830a4a7944a8bce4b3d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set from computer time.  <br /></td></tr>
 <tr class="separator:a0734c5603c43830a4a7944a8bce4b3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af5c832fb6595a72b6f3c28cb0adf4e0b" id="r_af5c832fb6595a72b6f3c28cb0adf4e0b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5c832fb6595a72b6f3c28cb0adf4e0b">value</a></td></tr>
-<tr class="memdesc:af5c832fb6595a72b6f3c28cb0adf4e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp value.  <br /></td></tr>
 <tr class="separator:af5c832fb6595a72b6f3c28cb0adf4e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe05263fad100a3a4dfa9ffac0beaf4c" id="r_abe05263fad100a3a4dfa9ffac0beaf4c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe05263fad100a3a4dfa9ffac0beaf4c">resolution</a> = {<a class="el" href="#a82ff1e75044f9187ecd47aa0b3da69d7">default_resolution</a>}</td></tr>
-<tr class="memdesc:abe05263fad100a3a4dfa9ffac0beaf4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp resolution (Hz).  <br /></td></tr>
 <tr class="separator:abe05263fad100a3a4dfa9ffac0beaf4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a82ff1e75044f9187ecd47aa0b3da69d7" id="r_a82ff1e75044f9187ecd47aa0b3da69d7"><td class="memItemLeft" align="right" valign="top">static constexpr const intmax_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82ff1e75044f9187ecd47aa0b3da69d7">default_resolution</a> = std::chrono::steady_clock::duration::period::den</td></tr>
-<tr class="memdesc:a82ff1e75044f9187ecd47aa0b3da69d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The systems default resolution for "steady_clock".  <br /></td></tr>
 <tr class="separator:a82ff1e75044f9187ecd47aa0b3da69d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>

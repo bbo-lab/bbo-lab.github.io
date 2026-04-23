@@ -118,9 +118,6 @@ $(function(){initNavTree('group__api-core-io.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">In-/output<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Data packets and general I/O related functionality.  
-<a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for In-/output:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -129,29 +126,23 @@ $(function(){initNavTree('group__api-core-io.html',''); initResizable(true); });
 <div class="center"><iframe scrolling="no" frameborder="0" src="group__api-core-io.svg" width="436" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Data packets and general I/O related functionality. </p>
 <p><a class="el" href="io_8hh.html">vidre/io.hh</a></p>
 <p>The I/O abstraction focuses on providing mechanism to retrieve, convert and store data, more specifically data streams of various types (such as video and audio). For that it takes inspiration from streaming libraries, such as gstreamer. That means, for example, that the concept of "source" and "sink" are used to represent data providers and consumers, respectively. The concept of "pipes" (or filters, respectively) is used to represent data transformers, such as decoders and encoders. The implementation, in combination with appropriate synchronization primitives, also allows for concurrent data processing, passing either raw byte-sequences or data packets with metadata. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
 Topics</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-io-types.html">Streaming fundamentals</a></td></tr>
-<tr class="memdesc:group__api-core-io-types"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic types and streaming fundamentals. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-io-packet.html">Packet based I/O</a></td></tr>
-<tr class="memdesc:group__api-core-io-packet"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet-based I/O. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-io-file.html">File and memory I/O</a></td></tr>
-<tr class="memdesc:group__api-core-io-file"><td class="mdescLeft">&#160;</td><td class="mdescRight">File based I/O. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-io-details.html">Implementation details</a></td></tr>
-<tr class="memdesc:group__api-core-io-details"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1io.html">vidre::io</a></td></tr>
-<tr class="memdesc:namespacevidre_1_1io"><td class="mdescLeft">&#160;</td><td class="mdescRight">In-/output related functionality. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

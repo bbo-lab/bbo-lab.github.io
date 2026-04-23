@@ -131,7 +131,6 @@ $(function(){initNavTree('group__api-core-util-shared.html',''); initResizable(t
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1shared.html">vidre::shared&lt; T, Allocator &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared ownership smart pointer with custom allocator support.  <a href="classvidre_1_1shared.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -157,8 +156,36 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;, typename
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a13">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
+
+<p>Factory function for creating shared objects. </p>
+<p>Constructs a shared object of type T with the given allocator and arguments. Memory for the control block and object is allocated using the <code>rebind</code>ed allocator type.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of object to create </td></tr>
+    <tr><td class="paramname">Allocator</td><td>The allocator type (deduced from parameter if provided) </td></tr>
+    <tr><td class="paramname">Args</td><td>The argument types for T's constructor </td></tr>
+  </table>
+  </dd>
 </dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Arguments to forward to T's constructor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A shared object managing the newly created instance</dd></dl>
+<p>Example: </p><div class="fragment"><div class="line"><span class="comment">// With default allocator</span></div>
+<div class="line"><span class="keyword">auto</span> p1 = <a class="code hl_function" href="#ga5869272b519d4de2d3ceba7f64fd99f9">make_shared&lt;MyClass&gt;</a>(42, <span class="stringliteral">&quot;example&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// With custom allocator</span></div>
+<div class="line"><span class="keyword">auto</span> p2 = <a class="code hl_function" href="#ga5869272b519d4de2d3ceba7f64fd99f9">make_shared&lt;MyClass, StaticAllocator&lt;MyClass&gt;</a>&gt;(42, <span class="stringliteral">&quot;example&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Allocator with state (if needed)</span></div>
+<div class="line">MyAllocator alloc(some_state);</div>
+<div class="line"><span class="keyword">auto</span> p3 = <a class="code hl_function" href="#ga5869272b519d4de2d3ceba7f64fd99f9">make_shared&lt;MyClass, MyAllocator&gt;</a>(42, <span class="stringliteral">&quot;example&quot;</span>);</div>
+<div class="line"><span class="comment">// Note: allocator is copied, not moved</span></div>
+<div class="ttc" id="agroup__api-core-util-shared_html_ga5869272b519d4de2d3ceba7f64fd99f9"><div class="ttname"><a href="#ga5869272b519d4de2d3ceba7f64fd99f9">vidre::make_shared</a></div><div class="ttdeci">shared&lt; T, Allocator &gt; make_shared(Args &amp;&amp;...args)</div><div class="ttdoc">Factory function for creating shared objects.</div><div class="ttdef"><b>Definition</b> shared.hh:342</div></div>
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The allocator parameter is currently not taken as a function argument. To pass a stateful allocator, consider this alternative: <code>cpp shared&lt;T, MyAllocator&gt; p(allocator_arg, alloc, args...); </code> </dd></dl>
 
 </div>
 </div>

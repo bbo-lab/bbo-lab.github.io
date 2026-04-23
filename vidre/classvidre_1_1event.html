@@ -122,9 +122,6 @@ $(function(){initNavTree('classvidre_1_1event.html',''); initResizable(true); })
 </div><!--header-->
 <div class="contents">
 
-<p>Event signalling primitive.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="events_8hh_source.html">vidre/util/events.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for vidre::event:</div>
@@ -134,15 +131,13 @@ $(function(){initNavTree('classvidre_1_1event.html',''); initResizable(true); })
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1event__coll__graph.svg" width="146" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Event signalling primitive. </p>
-<p>This class provides a simple mechanism for threads to signal events to each other using the Linux eventfd mechanism (emulated on other platforms). It allows one thread (the "producer") to notify another thread (the "consumer") about the occurrence of an event. The consumer will receive the notification count, which indicates how many times the event was signaled since the last wait.</p>
+<div class="textblock"><p>This class provides a simple mechanism for threads to signal events to each other using the Linux eventfd mechanism (emulated on other platforms). It allows one thread (the "producer") to notify another thread (the "consumer") about the occurrence of an event. The consumer will receive the notification count, which indicates how many times the event was signaled since the last wait.</p>
 <dl class="section note"><dt>Note</dt><dd>This class is designed to be used in a single-producer, single-consumer scenario. It does not support multiple producers or consumers, and it does not provide any synchronization mechanisms for concurrent access.</dd></dl>
 <p>Also, the object of this class should be shared between the producer and consumer threads (e.g. via a shared pointer). </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1event_1_1result.html">result</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait result.  <a href="structvidre_1_1event_1_1result.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -157,10 +152,8 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="#a608ed82b9ef02c456fbb4a1ba064693fa1826d9aa57bf77c7e335a5013135e43c">terminated</a> = detail::event::terminated
 <br />
  }</td></tr>
-<tr class="memdesc:a608ed82b9ef02c456fbb4a1ba064693f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification state.  <a href="#a608ed82b9ef02c456fbb4a1ba064693f">More...</a><br /></td></tr>
 <tr class="separator:a608ed82b9ef02c456fbb4a1ba064693f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f108c975ed7a4062cda07d2d0b52f6e" id="r_a2f108c975ed7a4062cda07d2d0b52f6e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f108c975ed7a4062cda07d2d0b52f6e">value_type</a> = <a class="el" href="structvidre_1_1detail_1_1event.html#a5b58e5df1d016ff788d83bdf40070599">detail::event::value_type</a></td></tr>
-<tr class="memdesc:a2f108c975ed7a4062cda07d2d0b52f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the notification count.  <br /></td></tr>
 <tr class="separator:a2f108c975ed7a4062cda07d2d0b52f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -178,22 +171,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5625e7ddb3f3ef6cc456305f765b618" id="r_ad5625e7ddb3f3ef6cc456305f765b618"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5625e7ddb3f3ef6cc456305f765b618">~event</a> ()</td></tr>
 <tr class="separator:ad5625e7ddb3f3ef6cc456305f765b618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa7def5f8814465b6647150e9af3228f" id="r_aaa7def5f8814465b6647150e9af3228f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa7def5f8814465b6647150e9af3228f">terminate</a> (std::chrono::milliseconds timeout=std::chrono::milliseconds(100))</td></tr>
-<tr class="memdesc:aaa7def5f8814465b6647150e9af3228f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify receiver of the "terminate" condition.  <br /></td></tr>
 <tr class="separator:aaa7def5f8814465b6647150e9af3228f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3294922e500a2dd9a997663d342b2538" id="r_a3294922e500a2dd9a997663d342b2538"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a608ed82b9ef02c456fbb4a1ba064693f">state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3294922e500a2dd9a997663d342b2538">notify</a> (uint64_t <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>=1)</td></tr>
-<tr class="memdesc:a3294922e500a2dd9a997663d342b2538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the event, i.e.  <br /></td></tr>
 <tr class="separator:a3294922e500a2dd9a997663d342b2538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef241b43c6f2b0585eaf63b17282d42a" id="r_aef241b43c6f2b0585eaf63b17282d42a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvidre_1_1event_1_1result.html">result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef241b43c6f2b0585eaf63b17282d42a">wait</a> ()</td></tr>
-<tr class="memdesc:aef241b43c6f2b0585eaf63b17282d42a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the event to be notified.  <br /></td></tr>
 <tr class="separator:aef241b43c6f2b0585eaf63b17282d42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d128dda0b269031bc80a106e3a5f3dc" id="r_a9d128dda0b269031bc80a106e3a5f3dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvidre_1_1event_1_1result.html">result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d128dda0b269031bc80a106e3a5f3dc">wait</a> (std::chrono::milliseconds timeout)</td></tr>
-<tr class="memdesc:a9d128dda0b269031bc80a106e3a5f3dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the event to be notified, with a timeout.  <br /></td></tr>
 <tr class="separator:a9d128dda0b269031bc80a106e3a5f3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aba20336bcec34eb9f9057b9e6fd11913" id="r_aba20336bcec34eb9f9057b9e6fd11913"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvidre_1_1detail_1_1event.html">detail::event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba20336bcec34eb9f9057b9e6fd11913">impl_</a> {0}</td></tr>
-<tr class="memdesc:aba20336bcec34eb9f9057b9e6fd11913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-specific event implementation.  <br /></td></tr>
 <tr class="separator:aba20336bcec34eb9f9057b9e6fd11913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>

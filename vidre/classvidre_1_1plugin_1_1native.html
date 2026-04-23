@@ -122,9 +122,6 @@ $(function(){initNavTree('classvidre_1_1plugin_1_1native.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 
-<p>Dynamically linked object plugin loader.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="native_8hh_source.html">vidre/plugin/native.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for vidre::plugin::native:</div>
@@ -133,13 +130,10 @@ $(function(){initNavTree('classvidre_1_1plugin_1_1native.html',''); initResizabl
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1plugin_1_1native__coll__graph.svg" width="334" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Dynamically linked object plugin loader. </p>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1plugin_1_1native_1_1library.html">library</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Library (dynamically linked object) handler.  <a href="classvidre_1_1plugin_1_1native_1_1library.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -147,19 +141,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa5a08ef5d7a0fa01a66704cafa6451ff" id="r_aa5a08ef5d7a0fa01a66704cafa6451ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5a08ef5d7a0fa01a66704cafa6451ff">native</a> ()=default</td></tr>
 <tr class="separator:aa5a08ef5d7a0fa01a66704cafa6451ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbb974048280720a8745412fcbad98ec" id="r_acbb974048280720a8745412fcbad98ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbb974048280720a8745412fcbad98ec">load</a> (const std::string &amp;<a class="el" href="src_2libs_2core_2vidre_2log_8cc.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
-<tr class="memdesc:acbb974048280720a8745412fcbad98ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load plugin by name.  <br /></td></tr>
 <tr class="separator:acbb974048280720a8745412fcbad98ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22ec5316f4611f401e445534c8314e62" id="r_a22ec5316f4611f401e445534c8314e62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22ec5316f4611f401e445534c8314e62">valid</a> () const noexcept</td></tr>
-<tr class="memdesc:a22ec5316f4611f401e445534c8314e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if valid.  <br /></td></tr>
 <tr class="separator:a22ec5316f4611f401e445534c8314e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39d827d2dcebdf2c995a1f5ebd0afba6" id="r_a39d827d2dcebdf2c995a1f5ebd0afba6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structvidre_1_1plugin_1_1information.html">information</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39d827d2dcebdf2c995a1f5ebd0afba6">info</a> () const noexcept</td></tr>
-<tr class="memdesc:a39d827d2dcebdf2c995a1f5ebd0afba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get module information.  <br /></td></tr>
 <tr class="separator:a39d827d2dcebdf2c995a1f5ebd0afba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a7285417a336f039383d6f02e6da6f681" id="r_a7285417a336f039383d6f02e6da6f681"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7285417a336f039383d6f02e6da6f681">extension</a> = <a class="el" href="group__api-config-abi.html#gaf6f22353c17795c562f3df2cf3857ef8">VIDRE_DLL_EXTENSION</a></td></tr>
-<tr class="memdesc:a7285417a336f039383d6f02e6da6f681"><td class="mdescLeft">&#160;</td><td class="mdescRight">File extension for dynamically linked libraries.  <br /></td></tr>
 <tr class="separator:a7285417a336f039383d6f02e6da6f681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>

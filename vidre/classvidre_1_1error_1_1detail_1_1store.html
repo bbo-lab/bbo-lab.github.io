@@ -124,13 +124,9 @@ $(function(){initNavTree('classvidre_1_1error_1_1detail_1_1store.html',''); init
 </div><!--header-->
 <div class="contents">
 
-<p>Thread-local storage for exceptions.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="core_2vidre_2exception_8hh_source.html">vidre/exception.hh</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Thread-local storage for exceptions. </p>
-<p>Even though we're wasting <code>VIDRE_EXCEPTION_STORE</code> bytes per thread - this store should make exceptions mostly usable even under out-of-memory conditions. </p>
+<div class="textblock"><p>Even though we're wasting <code>VIDRE_EXCEPTION_STORE</code> bytes per thread - this store should make exceptions mostly usable even under out-of-memory conditions. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -154,13 +150,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac849865e803780dd555c16b1f303b5d3" id="r_ac849865e803780dd555c16b1f303b5d3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="#a89f084cf39fd60f78664ba12102b066c">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac849865e803780dd555c16b1f303b5d3">free</a> () noexcept</td></tr>
-<tr class="memdesc:ac849865e803780dd555c16b1f303b5d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report free storage.  <br /></td></tr>
 <tr class="separator:ac849865e803780dd555c16b1f303b5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34b3ab00b211126c884f77ed1fe60b6c" id="r_a34b3ab00b211126c884f77ed1fe60b6c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="#a9dd5da189811d441e5b74cde41448639">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34b3ab00b211126c884f77ed1fe60b6c">allocate</a> (size_t n) noexcept</td></tr>
-<tr class="memdesc:a34b3ab00b211126c884f77ed1fe60b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate <em>n</em> bytes.  <br /></td></tr>
 <tr class="separator:a34b3ab00b211126c884f77ed1fe60b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1a864088e9542d5c8eae59b08b3c1ed" id="r_ab1a864088e9542d5c8eae59b08b3c1ed"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1a864088e9542d5c8eae59b08b3c1ed">deallocate</a> (<a class="el" href="#a9dd5da189811d441e5b74cde41448639">pointer</a> ptr) noexcept</td></tr>
-<tr class="memdesc:ab1a864088e9542d5c8eae59b08b3c1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate previously allocated pointer <em>ptr</em>.  <br /></td></tr>
 <tr class="separator:ab1a864088e9542d5c8eae59b08b3c1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>

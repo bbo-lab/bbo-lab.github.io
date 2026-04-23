@@ -10,7 +10,7 @@ var searchData=
   ['unshare_5frange_7',['unshare_range',['../classvidre_1_1io_1_1file.html#ac28231f3be510f5dc37756aab19afd41af4aa4670effd591db9568da426eb6b38',1,'vidre::io::file::unshare_range'],['../group__api-core-io-details.html#gga6b7973b158ab1c09d72020c128f939d9a5931fbfa61cdeeb723dea45b7162dc82',1,'vidre::detail::io::file::unshare_range']]],
   ['update_8',['update',['../structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#a7d44d5963b9221fe7dae0cba91fe9ed4',1,'vidre::storage::raw::element::dynamic::update()'],['../structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#aaf1c0feeac492cbfb63c019e16537ac1',1,'vidre::storage::raw::element::sequence::update()'],['../structvidre_1_1storage_1_1raw_1_1element_1_1group.html#a12faf7c3e14a861bbf425ee14a2191ee',1,'vidre::storage::raw::element::group::update()']]],
   ['usage_9',['Usage',['../usage.html',1,'']]],
-  ['usage_20example_10',['Usage Example',['../classvidre_1_1shared.html#autotoc_md17',1,'Usage Example'],['../todo.html#_todo000009',1,'Usage Example']]],
+  ['usage_20example_10',['Usage Example',['../classvidre_1_1shared.html#autotoc_md18',1,'Usage Example'],['../todo.html#_todo000008',1,'Usage Example']]],
   ['usage_2edox_11',['usage.dox',['../usage_8dox.html',1,'']]],
   ['usb3vision_12',['usb3vision',['../classvidre_1_1video_1_1format_1_1pixel.html#a0aa2a018e63d3f0c4edea876fdc2eed1aeb56861466d6f80ad5b4d18742f245b5',1,'vidre::video::format::pixel']]],
   ['use_5fcount_13',['use_count',['../classvidre_1_1shared.html#ab63311fbbd43abff5e4bf92590974afe',1,'vidre::shared']]],

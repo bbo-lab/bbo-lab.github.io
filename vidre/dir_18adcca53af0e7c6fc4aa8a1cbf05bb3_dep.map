@@ -1,4 +1,4 @@
-<map id="plugins/camera/onsemi/midlib2/vidre/onsemi" name="plugins/camera/onsemi/midlib2/vidre/onsemi">
+<map id="camera/onsemi/midlib2/vidre/onsemi" name="camera/onsemi/midlib2/vidre/onsemi">
 <area shape="rect" id="node2" href="dir_216e27e5ebbd104a1768fe3411ce791b.html" title="midlib2" alt="" coords="38,136,101,161"/>
 <area shape="poly" id="edge1" href="dir_000027_000025.html" alt="" coords="72,88,72,122,67,122,67,88"/>
 <area shape="rect" id="edge1-headlabel" href="dir_000027_000025.html" title="2" alt="" coords="74,110,82,125"/>

@@ -121,9 +121,6 @@ $(function(){initNavTree('structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html
 </div><!--header-->
 <div class="contents">
 
-<p>Instantiation of "fixed-size" elements.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="raw_8hh_source.html">vidre/storage/raw.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for vidre::storage::raw::element::fixed&lt; Value, major, minor &gt;:</div>
@@ -135,8 +132,7 @@ $(function(){initNavTree('structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class Value, <a class="el" href="group__api-core-storage-raw.html#ga5fa0321a86ee103a5c9da9fecb857d84">raw::major</a> major, auto minor&gt;<br />
 requires (not std::derived_from&lt;Value, <a class="el" href="structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html">dynamic</a>&gt;)<br />
-struct vidre::storage::raw::element::fixed&lt; Value, major, minor &gt;</div><p>Instantiation of "fixed-size" elements. </p>
-<p>Example: </p><div class="fragment"><div class="line">    <span class="keyword">using </span><a class="code hl_typedef" href="namespacefixed.html#a8cd189f368c1ae0c498a90d2226cc25e">index</a> = raw::element::fixed&lt;uint64_t, raw::major::video, raw::video::index&gt;;</div>
+struct vidre::storage::raw::element::fixed&lt; Value, major, minor &gt;</div><p>Example: </p><div class="fragment"><div class="line">    <span class="keyword">using </span><a class="code hl_typedef" href="namespacefixed.html#a8cd189f368c1ae0c498a90d2226cc25e">index</a> = raw::element::fixed&lt;uint64_t, raw::major::video, raw::video::index&gt;;</div>
 <div class="line">    <span class="keyword">using </span><a class="code hl_typedef" href="namespacefixed.html#a96fb20e837b885f5f852e0ef91c5abc8">geometry</a> = raw::element::fixed&lt;video::geometry, raw::major::video, raw::video::geometry&gt;;</div>
 <div class="line">    <span class="keyword">using </span><a class="code hl_typedef" href="namespacefixed.html#a4ac0698580cf32120f1673de060b3801">timestamp</a> = raw::element::fixed&lt;video::timestamp, raw::major::video, raw::video::timestamp&gt;;</div>
 <div class="line"> </div>

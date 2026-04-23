@@ -119,9 +119,6 @@ $(function(){initNavTree('classvidre_1_1log_1_1fatal.html',''); initResizable(tr
 </div><!--header-->
 <div class="contents">
 
-<p>Fatal log message.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="log_8hh_source.html">vidre/log.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for vidre::log::fatal:</div>
@@ -138,8 +135,7 @@ $(function(){initNavTree('classvidre_1_1log_1_1fatal.html',''); initResizable(tr
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1log_1_1fatal__coll__graph.svg" width="136" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Fatal log message. </p>
-<dl class="section note"><dt>Note</dt><dd>The destructor here calls <code>std::terminate</code>. </dd></dl>
+<div class="textblock"><dl class="section note"><dt>Note</dt><dd>The destructor here calls <code>std::terminate</code>. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="examples_2core_2raw_8cc-example.html#_a15">examples/core/raw.cc</a>.</dd>
 </dl>
 </div><table class="memberdecls">
@@ -169,11 +165,9 @@ requires (not convertible_to_message_type&lt;V&gt; and std::formattable&lt;std::
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classvidre_1_1log_1_1handler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvidre_1_1log_1_1handler')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classvidre_1_1log_1_1handler.html">vidre::log::handler</a></td></tr>
 <tr class="memitem:a0bbc12cc559feeb947946f57ad3e223f inherit pro_methods_classvidre_1_1log_1_1handler" id="r_a0bbc12cc559feeb947946f57ad3e223f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1log_1_1handler.html#a0bbc12cc559feeb947946f57ad3e223f">emit</a> (const <a class="el" href="group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d">message_type</a> &amp;txt, unsigned=0) noexcept</td></tr>
-<tr class="memdesc:a0bbc12cc559feeb947946f57ad3e223f inherit pro_methods_classvidre_1_1log_1_1handler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit text.  <br /></td></tr>
 <tr class="separator:a0bbc12cc559feeb947946f57ad3e223f inherit pro_methods_classvidre_1_1log_1_1handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classvidre_1_1log_1_1handler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classvidre_1_1log_1_1handler')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classvidre_1_1log_1_1handler.html">vidre::log::handler</a></td></tr>
 <tr class="memitem:ad4bec1badeb3093fa3be91ee42c78008 inherit pro_attribs_classvidre_1_1log_1_1handler" id="r_ad4bec1badeb3093fa3be91ee42c78008"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1log_1_1handler.html#ad4bec1badeb3093fa3be91ee42c78008">level_</a> = <a class="el" href="group__api-core-log-if.html#ga91d20bd99261c731592be8c65fedc951">level_default</a></td></tr>
-<tr class="memdesc:ad4bec1badeb3093fa3be91ee42c78008 inherit pro_attribs_classvidre_1_1log_1_1handler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log level for this object.  <br /></td></tr>
 <tr class="separator:ad4bec1badeb3093fa3be91ee42c78008 inherit pro_attribs_classvidre_1_1log_1_1handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>

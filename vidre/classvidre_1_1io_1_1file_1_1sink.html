@@ -122,9 +122,6 @@ $(function(){initNavTree('classvidre_1_1io_1_1file_1_1sink.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
-<p>A file sink.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="file_8hh_source.html">vidre/io/file.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for vidre::io::file::sink:</div>
@@ -141,8 +138,7 @@ $(function(){initNavTree('classvidre_1_1io_1_1file_1_1sink.html',''); initResiza
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1io_1_1file_1_1sink__coll__graph.svg" width="368" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A file sink. </p>
-<p>The file sink provides a buffered interface for writing to files. It manages an internal buffer and flushes it to the underlying file when necessary. The file is created in write-only mode, and can be configured with various flags for direct I/O, truncation, and buffering. </p>
+<div class="textblock"><p>The file sink provides a buffered interface for writing to files. It manages an internal buffer and flushes it to the underlying file when necessary. The file is created in write-only mode, and can be configured with various flags for direct I/O, truncation, and buffering. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -154,11 +150,9 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="#a461a410d92e16d034a03d381f188ed92aa71fa32a2986f33085504d6ac2a06429">unbuffered</a> = (1 &lt;&lt; 8)
 <br />
  }</td></tr>
-<tr class="memdesc:a461a410d92e16d034a03d381f188ed92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open mode.  <a href="#a461a410d92e16d034a03d381f188ed92">More...</a><br /></td></tr>
 <tr class="separator:a461a410d92e16d034a03d381f188ed92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classvidre_1_1io_1_1sink"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_classvidre_1_1io_1_1sink')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classvidre_1_1io_1_1sink.html">vidre::io::sink</a></td></tr>
 <tr class="memitem:acf08502e10e27454fe358ef67395df50 inherit pub_types_classvidre_1_1io_1_1sink" id="r_acf08502e10e27454fe358ef67395df50"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1sink.html#acf08502e10e27454fe358ef67395df50">shared</a> = std::shared_ptr&lt;<a class="el" href="classvidre_1_1io_1_1sink.html">sink</a>&gt;</td></tr>
-<tr class="memdesc:acf08502e10e27454fe358ef67395df50 inherit pub_types_classvidre_1_1io_1_1sink"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer type for sinks.  <br /></td></tr>
 <tr class="separator:acf08502e10e27454fe358ef67395df50 inherit pub_types_classvidre_1_1io_1_1sink"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -178,16 +172,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac33b905c52d05a61b38637bea6b027c2" id="r_ac33b905c52d05a61b38637bea6b027c2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac33b905c52d05a61b38637bea6b027c2">~sink</a> ()</td></tr>
 <tr class="separator:ac33b905c52d05a61b38637bea6b027c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cf9c9cf080080d0968af607ed6d25eb" id="r_a0cf9c9cf080080d0968af607ed6d25eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cf9c9cf080080d0968af607ed6d25eb">valid</a> () const noexcept override</td></tr>
-<tr class="memdesc:a0cf9c9cf080080d0968af607ed6d25eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if valid (i.e., usable).  <br /></td></tr>
 <tr class="separator:a0cf9c9cf080080d0968af607ed6d25eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2a2d55a94ec57a9f85b74d20c2fa3fd" id="r_ae2a2d55a94ec57a9f85b74d20c2fa3fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1io_1_1file.html#a5df6e0f7d235eaaedea6a9aa0537d4aa">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2a2d55a94ec57a9f85b74d20c2fa3fd">setbuf</a> (<a class="el" href="classvidre_1_1io_1_1file.html#a5df6e0f7d235eaaedea6a9aa0537d4aa">size_type</a> len) noexcept</td></tr>
-<tr class="memdesc:ae2a2d55a94ec57a9f85b74d20c2fa3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set buffer size.  <br /></td></tr>
 <tr class="separator:ae2a2d55a94ec57a9f85b74d20c2fa3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17a220df131654cb01db6a17cf7e716a" id="r_a17a220df131654cb01db6a17cf7e716a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17a220df131654cb01db6a17cf7e716a">open</a> (const std::filesystem::path &amp;filename, <a class="el" href="#a461a410d92e16d034a03d381f188ed92">openmode_type</a> mode=<a class="el" href="#a461a410d92e16d034a03d381f188ed92a68ea3275a81900f1073d62d2d7efc8fc">direct</a>) noexcept</td></tr>
-<tr class="memdesc:a17a220df131654cb01db6a17cf7e716a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open file.  <br /></td></tr>
 <tr class="separator:a17a220df131654cb01db6a17cf7e716a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c881564a40dbb3f9c7f59adf96bb5a3" id="r_a2c881564a40dbb3f9c7f59adf96bb5a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c881564a40dbb3f9c7f59adf96bb5a3">close</a> () noexcept</td></tr>
-<tr class="memdesc:a2c881564a40dbb3f9c7f59adf96bb5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close file.  <br /></td></tr>
 <tr class="separator:a2c881564a40dbb3f9c7f59adf96bb5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvidre_1_1io_1_1sink"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classvidre_1_1io_1_1sink')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvidre_1_1io_1_1sink.html">vidre::io::sink</a></td></tr>
 <tr class="memitem:abe14ed023e99dee9171d7f484638f162 inherit pub_methods_classvidre_1_1io_1_1sink" id="r_abe14ed023e99dee9171d7f484638f162"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1sink.html#abe14ed023e99dee9171d7f484638f162">sink</a> ()=default</td></tr>
@@ -201,13 +191,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeda882525ab0c18c2d0750a8356b87bb inherit pub_methods_classvidre_1_1io_1_1sink" id="r_aeda882525ab0c18c2d0750a8356b87bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1io_1_1sink.html">sink</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1sink.html#aeda882525ab0c18c2d0750a8356b87bb">operator=</a> (<a class="el" href="classvidre_1_1io_1_1sink.html">sink</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:aeda882525ab0c18c2d0750a8356b87bb inherit pub_methods_classvidre_1_1io_1_1sink"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16dc0f68eea1f44a508c81a7cc4aad4c inherit pub_methods_classvidre_1_1io_1_1sink" id="r_a16dc0f68eea1f44a508c81a7cc4aad4c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1sink.html#a16dc0f68eea1f44a508c81a7cc4aad4c">configure</a> (const <a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a> &amp;config)</td></tr>
-<tr class="memdesc:a16dc0f68eea1f44a508c81a7cc4aad4c inherit pub_methods_classvidre_1_1io_1_1sink"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure sink.  <br /></td></tr>
 <tr class="separator:a16dc0f68eea1f44a508c81a7cc4aad4c inherit pub_methods_classvidre_1_1io_1_1sink"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57762352ec5b1d7015c8dee6d11b6479 inherit pub_methods_classvidre_1_1io_1_1sink" id="r_a57762352ec5b1d7015c8dee6d11b6479"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__api-core-io-types.html#ga72ac3969f594911943b52eec600f9e2c">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1sink.html#a57762352ec5b1d7015c8dee6d11b6479">put</a> (const <a class="el" href="classvidre_1_1memory_1_1view.html">memory::view</a> &amp;v)</td></tr>
-<tr class="memdesc:a57762352ec5b1d7015c8dee6d11b6479 inherit pub_methods_classvidre_1_1io_1_1sink"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer data from a memory view.  <br /></td></tr>
 <tr class="separator:a57762352ec5b1d7015c8dee6d11b6479 inherit pub_methods_classvidre_1_1io_1_1sink"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d87b186e2240cb840aadce94c8f4a80 inherit pub_methods_classvidre_1_1io_1_1sink" id="r_a8d87b186e2240cb840aadce94c8f4a80"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__api-core-io-types.html#ga72ac3969f594911943b52eec600f9e2c">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1sink.html#a8d87b186e2240cb840aadce94c8f4a80">put</a> (const <a class="el" href="structvidre_1_1io_1_1packet_1_1base.html">packet::base</a> *p)</td></tr>
-<tr class="memdesc:a8d87b186e2240cb840aadce94c8f4a80 inherit pub_methods_classvidre_1_1io_1_1sink"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a packet.  <br /></td></tr>
 <tr class="separator:a8d87b186e2240cb840aadce94c8f4a80 inherit pub_methods_classvidre_1_1io_1_1sink"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -215,17 +202,14 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a4738b6519de4748fd3e48ef05117910a" id="r_a4738b6519de4748fd3e48ef05117910a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1io_1_1file.html#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4738b6519de4748fd3e48ef05117910a">flush</a> ()</td></tr>
 <tr class="separator:a4738b6519de4748fd3e48ef05117910a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a087c85b8089f4684a568a4458e9d6413" id="r_a087c85b8089f4684a568a4458e9d6413"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1io_1_1file.html#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a087c85b8089f4684a568a4458e9d6413">write</a> (const <a class="el" href="classvidre_1_1memory_1_1view.html">memory::view</a> &amp;buf) noexcept override</td></tr>
-<tr class="memdesc:a087c85b8089f4684a568a4458e9d6413"><td class="mdescLeft">&#160;</td><td class="mdescRight">The low-level write method (if applicable).  <br /></td></tr>
 <tr class="separator:a087c85b8089f4684a568a4458e9d6413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classvidre_1_1io_1_1sink"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classvidre_1_1io_1_1sink')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classvidre_1_1io_1_1sink.html">vidre::io::sink</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a4ffb53d6664ae367bbda2fc527086e28" id="r_a4ffb53d6664ae367bbda2fc527086e28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1io_1_1file.html">file</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ffb53d6664ae367bbda2fc527086e28">fd_</a> {}</td></tr>
-<tr class="memdesc:a4ffb53d6664ae367bbda2fc527086e28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Underlying file I/O.  <br /></td></tr>
 <tr class="separator:a4ffb53d6664ae367bbda2fc527086e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c7d8a1de17cdad94bf2ec434cc4d52b" id="r_a9c7d8a1de17cdad94bf2ec434cc4d52b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvidre_1_1detail_1_1io_1_1buffer.html">detail::io::buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c7d8a1de17cdad94bf2ec434cc4d52b">buf_</a> {}</td></tr>
-<tr class="memdesc:a9c7d8a1de17cdad94bf2ec434cc4d52b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal block buffer.  <br /></td></tr>
 <tr class="separator:a9c7d8a1de17cdad94bf2ec434cc4d52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -233,7 +217,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classvidre_1_1io_1_1sink"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classvidre_1_1io_1_1sink')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classvidre_1_1io_1_1sink.html">vidre::io::sink</a></td></tr>
 <tr class="memitem:a2fd80b8758b7225eba0c8fd2e9f5f9b0 inherit pub_static_methods_classvidre_1_1io_1_1sink" id="r_a2fd80b8758b7225eba0c8fd2e9f5f9b0"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a2fd80b8758b7225eba0c8fd2e9f5f9b0 inherit pub_static_methods_classvidre_1_1io_1_1sink"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classvidre_1_1io_1_1sink.html#acf08502e10e27454fe358ef67395df50">shared</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1sink.html#a2fd80b8758b7225eba0c8fd2e9f5f9b0">make</a> (Args &amp;&amp;...args)</td></tr>
-<tr class="memdesc:a2fd80b8758b7225eba0c8fd2e9f5f9b0 inherit pub_static_methods_classvidre_1_1io_1_1sink"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create sink as shared pointer.  <br /></td></tr>
 <tr class="separator:a2fd80b8758b7225eba0c8fd2e9f5f9b0 inherit pub_static_methods_classvidre_1_1io_1_1sink"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>

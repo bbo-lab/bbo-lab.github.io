@@ -122,9 +122,6 @@ $(function(){initNavTree('classvidre_1_1version.html',''); initResizable(true); 
 </div><!--header-->
 <div class="contents">
 
-<p>Version class for handling version information.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="version_8hh_source.html">vidre/util/version.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for vidre::version:</div>
@@ -133,9 +130,7 @@ $(function(){initNavTree('classvidre_1_1version.html',''); initResizable(true); 
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1version__coll__graph.svg" width="168" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Version class for handling version information. </p>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a667f507012d5225598f6e65acd17e74f" id="r_a667f507012d5225598f6e65acd17e74f"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a667f507012d5225598f6e65acd17e74f">version</a> () noexcept=default</td></tr>
@@ -145,37 +140,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaa85b19d93651c2dc60a8c7b0ff8f8ef" id="r_aaa85b19d93651c2dc60a8c7b0ff8f8ef"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa85b19d93651c2dc60a8c7b0ff8f8ef">version</a> (unsigned <a class="el" href="#a4e1549f7dee40916bdddf2b29366e7ff">major</a>, unsigned <a class="el" href="#a51153a36836c94508fb0af51e89c7071">minor</a>=<a class="el" href="#a33360de96cd6d1ab097f08f3822b8da6">undefined</a>, unsigned <a class="el" href="#acff01150220f265e18aca14ef13e70c3">patch</a>=<a class="el" href="#a33360de96cd6d1ab097f08f3822b8da6">undefined</a>) noexcept</td></tr>
 <tr class="separator:aaa85b19d93651c2dc60a8c7b0ff8f8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa406d2eb32e58ca2d45e142ee730c662" id="r_aa406d2eb32e58ca2d45e142ee730c662"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa406d2eb32e58ca2d45e142ee730c662">version</a> (std::string_view str)</td></tr>
-<tr class="memdesc:aa406d2eb32e58ca2d45e142ee730c662"><td class="mdescLeft">&#160;</td><td class="mdescRight">String constructor.  <br /></td></tr>
 <tr class="separator:aa406d2eb32e58ca2d45e142ee730c662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78a4f51cbb47eb48a1e81d64d74a4497" id="r_a78a4f51cbb47eb48a1e81d64d74a4497"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78a4f51cbb47eb48a1e81d64d74a4497">valid</a> () const</td></tr>
-<tr class="memdesc:a78a4f51cbb47eb48a1e81d64d74a4497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if valid.  <br /></td></tr>
 <tr class="separator:a78a4f51cbb47eb48a1e81d64d74a4497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e1549f7dee40916bdddf2b29366e7ff" id="r_a4e1549f7dee40916bdddf2b29366e7ff"><td class="memItemLeft" align="right" valign="top">constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e1549f7dee40916bdddf2b29366e7ff">major</a> () const</td></tr>
-<tr class="memdesc:a4e1549f7dee40916bdddf2b29366e7ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get major version.  <br /></td></tr>
 <tr class="separator:a4e1549f7dee40916bdddf2b29366e7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51153a36836c94508fb0af51e89c7071" id="r_a51153a36836c94508fb0af51e89c7071"><td class="memItemLeft" align="right" valign="top">constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51153a36836c94508fb0af51e89c7071">minor</a> () const</td></tr>
-<tr class="memdesc:a51153a36836c94508fb0af51e89c7071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get minor version.  <br /></td></tr>
 <tr class="separator:a51153a36836c94508fb0af51e89c7071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff01150220f265e18aca14ef13e70c3" id="r_acff01150220f265e18aca14ef13e70c3"><td class="memItemLeft" align="right" valign="top">constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acff01150220f265e18aca14ef13e70c3">patch</a> () const</td></tr>
-<tr class="memdesc:acff01150220f265e18aca14ef13e70c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get patch version.  <br /></td></tr>
 <tr class="separator:acff01150220f265e18aca14ef13e70c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abea972c6ddd0d09f1d21bfc684323391" id="r_abea972c6ddd0d09f1d21bfc684323391"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abea972c6ddd0d09f1d21bfc684323391">operator==</a> (const <a class="el" href="classvidre_1_1version.html">version</a> &amp;other) const</td></tr>
-<tr class="memdesc:abea972c6ddd0d09f1d21bfc684323391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for equality.  <br /></td></tr>
 <tr class="separator:abea972c6ddd0d09f1d21bfc684323391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6da47d12a0a4d1d108bc27a9bbf24d46" id="r_a6da47d12a0a4d1d108bc27a9bbf24d46"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6da47d12a0a4d1d108bc27a9bbf24d46">operator!=</a> (const <a class="el" href="classvidre_1_1version.html">version</a> &amp;other) const</td></tr>
-<tr class="memdesc:a6da47d12a0a4d1d108bc27a9bbf24d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for inequality.  <br /></td></tr>
 <tr class="separator:a6da47d12a0a4d1d108bc27a9bbf24d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c875fa64fa9df5fe8bbd32096bd928a" id="r_a9c875fa64fa9df5fe8bbd32096bd928a"><td class="memItemLeft" align="right" valign="top">constexpr std::strong_ordering&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c875fa64fa9df5fe8bbd32096bd928a">operator&lt;=&gt;</a> (const <a class="el" href="classvidre_1_1version.html">version</a> &amp;other) const noexcept</td></tr>
-<tr class="memdesc:a9c875fa64fa9df5fe8bbd32096bd928a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Three-way comparison.  <br /></td></tr>
 <tr class="separator:a9c875fa64fa9df5fe8bbd32096bd928a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a33360de96cd6d1ab097f08f3822b8da6" id="r_a33360de96cd6d1ab097f08f3822b8da6"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33360de96cd6d1ab097f08f3822b8da6">undefined</a> = static_cast&lt;unsigned&gt;(-1)</td></tr>
-<tr class="memdesc:a33360de96cd6d1ab097f08f3822b8da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undefined version component value.  <br /></td></tr>
 <tr class="separator:a33360de96cd6d1ab097f08f3822b8da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b91df9f17bf75ac40f1d2f503a44c9e" id="r_a9b91df9f17bf75ac40f1d2f503a44c9e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classvidre_1_1version.html">version</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b91df9f17bf75ac40f1d2f503a44c9e">vidre</a> {<a class="el" href="group__api-config-version.html#ga0ab943a407b80684b27f049f18fc08fc">VIDRE_VERSION_MAJOR</a>, <a class="el" href="group__api-config-version.html#ga599248e1392500ef429d684a5992b3c7">VIDRE_VERSION_MINOR</a>, <a class="el" href="group__api-config-version.html#ga391aa721a96319db3911a8d719a41234">VIDRE_VERSION_PATCH</a>}</td></tr>
-<tr class="memdesc:a9b91df9f17bf75ac40f1d2f503a44c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">VidRe version.  <br /></td></tr>
 <tr class="separator:a9b91df9f17bf75ac40f1d2f503a44c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>

@@ -122,44 +122,32 @@ $(function(){initNavTree('classvidre_1_1storage_1_1ccv.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
-<p>CCV file.  
- <a href="#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="ccv_8hh_source.html">plugins/storage/ccv/vidre/storage/ccv.hh</a>&gt;</code></p>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>CCV file. </p>
-</div><table class="memberdecls">
+<p><code>#include &lt;<a class="el" href="ccv_8hh_source.html">storage/ccv/vidre/storage/ccv.hh</a>&gt;</code></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1storage_1_1ccv_1_1header.html">header</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstraction of the file header.  <a href="classvidre_1_1storage_1_1ccv_1_1header.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1ccv_1_1lvstring.html">lvstring</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LV-type string.  <a href="structvidre_1_1storage_1_1ccv_1_1lvstring.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1ccv_1_1tail.html">tail</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-frame tail information.  <a href="structvidre_1_1storage_1_1ccv_1_1tail.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a62829b4b1bc27e27f744ec603fa82ed0" id="r_a62829b4b1bc27e27f744ec603fa82ed0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62829b4b1bc27e27f744ec603fa82ed0">pair32</a> = std::array&lt;uint32_t, 2&gt;</td></tr>
-<tr class="memdesc:a62829b4b1bc27e27f744ec603fa82ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pair of uint32_t (e.g.  <br /></td></tr>
 <tr class="separator:a62829b4b1bc27e27f744ec603fa82ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f84643274c2d0f2dc9264a26f15fc80" id="r_a5f84643274c2d0f2dc9264a26f15fc80"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f84643274c2d0f2dc9264a26f15fc80">pad</a> (size_t n)</td></tr>
-<tr class="memdesc:a5f84643274c2d0f2dc9264a26f15fc80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper calculating size required for field padding.  <br /></td></tr>
 <tr class="separator:a5f84643274c2d0f2dc9264a26f15fc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:aba517cb0d3c3ef54fc29409789f1394a" id="r_aba517cb0d3c3ef54fc29409789f1394a"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba517cb0d3c3ef54fc29409789f1394a">version</a> = 0.2</td></tr>
-<tr class="memdesc:aba517cb0d3c3ef54fc29409789f1394a"><td class="mdescLeft">&#160;</td><td class="mdescRight">CCV implementation version.  <br /></td></tr>
 <tr class="separator:aba517cb0d3c3ef54fc29409789f1394a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a6b55f4f80839ca6f93699517fa006c" id="r_a5a6b55f4f80839ca6f93699517fa006c"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a6b55f4f80839ca6f93699517fa006c">alignment</a> = 4</td></tr>
-<tr class="memdesc:a5a6b55f4f80839ca6f93699517fa006c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header alignment (for given version).  <br /></td></tr>
 <tr class="separator:a5a6b55f4f80839ca6f93699517fa006c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -258,7 +246,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>plugins/storage/ccv/vidre/storage/<a class="el" href="ccv_8hh_source.html">ccv.hh</a></li>
+<li>storage/ccv/vidre/storage/<a class="el" href="ccv_8hh_source.html">ccv.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

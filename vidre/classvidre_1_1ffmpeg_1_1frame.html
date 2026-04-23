@@ -120,13 +120,9 @@ $(function(){initNavTree('classvidre_1_1ffmpeg_1_1frame.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 
-<p>Raw audio or video data.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="ffmpeg_2vidre_2ffmpeg_2util_2frame_8hh_source.html">vidre/ffmpeg/util/frame.hh</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Raw audio or video data. </p>
-<dl class="section see"><dt>See also</dt><dd><a href="https://ffmpeg.org/doxygen/trunk/group__lavu__frame.html">AVFrame etal.</a> </dd></dl>
+<div class="textblock"><dl class="section see"><dt>See also</dt><dd><a href="https://ffmpeg.org/doxygen/trunk/group__lavu__frame.html">AVFrame etal.</a> </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -135,10 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afa41a0c0169dc22a8b9949b56f65f0cb" id="r_afa41a0c0169dc22a8b9949b56f65f0cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa41a0c0169dc22a8b9949b56f65f0cb">~frame</a> ()</td></tr>
 <tr class="separator:afa41a0c0169dc22a8b9949b56f65f0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79e301f23001bbada28b611e7bf6416b" id="r_a79e301f23001bbada28b611e7bf6416b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79e301f23001bbada28b611e7bf6416b">frame</a> (<a class="el" href="group__api-support-ffmpeg-util-data.html#ga87e7b6ceacd0f2dd8c84a15085b61146">pixel_format</a> pix_fmt, int width, int height, int align=0)</td></tr>
-<tr class="memdesc:a79e301f23001bbada28b611e7bf6416b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct video output frame (with buffers).  <br /></td></tr>
 <tr class="separator:a79e301f23001bbada28b611e7bf6416b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d97b0bc5250cf19ad84791a3e83cca4" id="r_a3d97b0bc5250cf19ad84791a3e83cca4"><td class="memItemLeft" align="right" valign="top">AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d97b0bc5250cf19ad84791a3e83cca4">operator-&gt;</a> () noexcept</td></tr>
-<tr class="memdesc:a3d97b0bc5250cf19ad84791a3e83cca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dereference the internal AVFrame.  <br /></td></tr>
 <tr class="separator:a3d97b0bc5250cf19ad84791a3e83cca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d6b3661121c08f2fad56020a5f97a2" id="r_a01d6b3661121c08f2fad56020a5f97a2"><td class="memItemLeft" align="right" valign="top">const AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01d6b3661121c08f2fad56020a5f97a2">operator-&gt;</a> () const noexcept</td></tr>
 <tr class="separator:a01d6b3661121c08f2fad56020a5f97a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,22 +141,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aed01cbe16e2ea07d1e6f968ffdd9d329" id="r_aed01cbe16e2ea07d1e6f968ffdd9d329"><td class="memItemLeft" align="right" valign="top">const AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed01cbe16e2ea07d1e6f968ffdd9d329">operator&amp;</a> () const noexcept</td></tr>
 <tr class="separator:aed01cbe16e2ea07d1e6f968ffdd9d329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66dc82b66046faa09b18473eab3cae6b" id="r_a66dc82b66046faa09b18473eab3cae6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66dc82b66046faa09b18473eab3cae6b">allocate</a> () noexcept</td></tr>
-<tr class="memdesc:a66dc82b66046faa09b18473eab3cae6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate frame.  <br /></td></tr>
 <tr class="separator:a66dc82b66046faa09b18473eab3cae6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f80b26077e3266a9d0739eaeaf8176" id="r_ae2f80b26077e3266a9d0739eaeaf8176"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-support-ffmpeg-util-error.html#gada6a0890c35b0b5d9a126daa7da5bc19">errc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2f80b26077e3266a9d0739eaeaf8176">allocate</a> (<a class="el" href="group__api-support-ffmpeg-util-data.html#ga87e7b6ceacd0f2dd8c84a15085b61146">pixel_format</a> pix_fmt, int width, int height, int align=0)</td></tr>
-<tr class="memdesc:ae2f80b26077e3266a9d0739eaeaf8176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate frame and internal buffers.  <br /></td></tr>
 <tr class="separator:ae2f80b26077e3266a9d0739eaeaf8176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47c1355e3fc829c84a5027fbf1078f16" id="r_a47c1355e3fc829c84a5027fbf1078f16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47c1355e3fc829c84a5027fbf1078f16">free</a> () noexcept</td></tr>
-<tr class="memdesc:a47c1355e3fc829c84a5027fbf1078f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free frame.  <br /></td></tr>
 <tr class="separator:a47c1355e3fc829c84a5027fbf1078f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40529b844cd5c62407e3bcc234f4c40a" id="r_a40529b844cd5c62407e3bcc234f4c40a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-support-ffmpeg-util-error.html#gada6a0890c35b0b5d9a126daa7da5bc19">errc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40529b844cd5c62407e3bcc234f4c40a">get_buffer</a> (int align=0) noexcept</td></tr>
-<tr class="memdesc:a40529b844cd5c62407e3bcc234f4c40a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate new buffer(s) for audio or video data.  <br /></td></tr>
 <tr class="separator:a40529b844cd5c62407e3bcc234f4c40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ff15766e5a45d2855f15b0d4e62f439" id="r_a0ff15766e5a45d2855f15b0d4e62f439"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ff15766e5a45d2855f15b0d4e62f439">is_writable</a> () const noexcept</td></tr>
-<tr class="memdesc:a0ff15766e5a45d2855f15b0d4e62f439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the frame data is writable.  <br /></td></tr>
 <tr class="separator:a0ff15766e5a45d2855f15b0d4e62f439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a302397fdbe78d4f3f583851ff2db3a4c" id="r_a302397fdbe78d4f3f583851ff2db3a4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-support-ffmpeg-util-error.html#gada6a0890c35b0b5d9a126daa7da5bc19">errc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a302397fdbe78d4f3f583851ff2db3a4c">make_writable</a> () noexcept</td></tr>
-<tr class="memdesc:a302397fdbe78d4f3f583851ff2db3a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that the frame data is writable, avoiding data copy if possible.  <br /></td></tr>
 <tr class="separator:a302397fdbe78d4f3f583851ff2db3a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>

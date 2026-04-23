@@ -121,9 +121,6 @@ $(function(){initNavTree('classvidre_1_1script_1_1engine_1_1stack.html',''); ini
 </div><!--header-->
 <div class="contents">
 
-<p>Stack scope.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="script_8hh_source.html">vidre/script.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for vidre::script::engine::stack:</div>
@@ -133,8 +130,7 @@ $(function(){initNavTree('classvidre_1_1script_1_1engine_1_1stack.html',''); ini
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1script_1_1engine_1_1stack__coll__graph.svg" width="147" height="214"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Stack scope. </p>
-<p>Lua is a stack based scripting engine requiring proper stack handling. To simplify the stack handling this class provides a scoped stack cleanup.</p>
+<div class="textblock"><p>Lua is a stack based scripting engine requiring proper stack handling. To simplify the stack handling this class provides a scoped stack cleanup.</p>
 <p>Example: </p><div class="fragment"><div class="line">    <span class="comment">// The Lua stack needs to be cleaned up after operations. This can be done</span></div>
 <div class="line">    <span class="comment">// automatically using a stack scope. Here, we log the package.path</span></div>
 <div class="line">    <span class="comment">// and package.cpath, noting the number of elements on the stack.</span></div>
@@ -169,7 +165,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ce60e3c36114d0ba4f740111f1b5a70" id="r_a6ce60e3c36114d0ba4f740111f1b5a70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ce60e3c36114d0ba4f740111f1b5a70">~stack</a> ()</td></tr>
 <tr class="separator:a6ce60e3c36114d0ba4f740111f1b5a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c5dd77b71a56a9422bf48c98b0d5600" id="r_a2c5dd77b71a56a9422bf48c98b0d5600"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a4387a453226d2208d0cf4d478c6b1bd5">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c5dd77b71a56a9422bf48c98b0d5600">size</a> () const noexcept</td></tr>
-<tr class="memdesc:a2c5dd77b71a56a9422bf48c98b0d5600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of elements on stack.  <br /></td></tr>
 <tr class="separator:a2c5dd77b71a56a9422bf48c98b0d5600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>

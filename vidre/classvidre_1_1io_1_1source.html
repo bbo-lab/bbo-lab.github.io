@@ -123,9 +123,6 @@ $(function(){initNavTree('classvidre_1_1io_1_1source.html',''); initResizable(tr
 </div><!--header-->
 <div class="contents">
 
-<p>Data source.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="libs_2core_2vidre_2io_2types_8hh_source.html">vidre/io/types.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for vidre::io::source:</div>
@@ -142,8 +139,7 @@ $(function(){initNavTree('classvidre_1_1io_1_1source.html',''); initResizable(tr
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1io_1_1source__coll__graph.svg" width="146" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Data source. </p>
-<p>Data sources provide data to be read, such as files or filter outputs. They can be either stream- or packet-based (see <code><a class="el" href="#a99219795b660ea892159d2b988817449">source::mode</a></code>).</p>
+<div class="textblock"><p>Data sources provide data to be read, such as files or filter outputs. They can be either stream- or packet-based (see <code><a class="el" href="#a99219795b660ea892159d2b988817449">source::mode</a></code>).</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a90c328d8dc908055feb57561f4c8b6d1" title="Shared pointer type for source.">source::shared</a> </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -156,7 +152,6 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="separator:a99219795b660ea892159d2b988817449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90c328d8dc908055feb57561f4c8b6d1" id="r_a90c328d8dc908055feb57561f4c8b6d1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90c328d8dc908055feb57561f4c8b6d1">shared</a> = std::shared_ptr&lt;<a class="el" href="classvidre_1_1io_1_1source.html">source</a>&gt;</td></tr>
-<tr class="memdesc:a90c328d8dc908055feb57561f4c8b6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer type for source.  <br /></td></tr>
 <tr class="separator:a90c328d8dc908055feb57561f4c8b6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -174,47 +169,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae93c30c14fe1fd3be2bf277f9c7cb1f8" id="r_ae93c30c14fe1fd3be2bf277f9c7cb1f8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae93c30c14fe1fd3be2bf277f9c7cb1f8">~source</a> ()</td></tr>
 <tr class="separator:ae93c30c14fe1fd3be2bf277f9c7cb1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8598c481bbb5e6ee5e85df0b8edb13e" id="r_ad8598c481bbb5e6ee5e85df0b8edb13e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8598c481bbb5e6ee5e85df0b8edb13e">valid</a> () const noexcept</td></tr>
-<tr class="memdesc:ad8598c481bbb5e6ee5e85df0b8edb13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the stream is valid (ie.  <br /></td></tr>
 <tr class="separator:ad8598c481bbb5e6ee5e85df0b8edb13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa94faa511a5855344348e506726a5158" id="r_aa94faa511a5855344348e506726a5158"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa94faa511a5855344348e506726a5158">operator mode</a> () const noexcept</td></tr>
-<tr class="memdesc:aa94faa511a5855344348e506726a5158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the mode of the source.  <br /></td></tr>
 <tr class="separator:aa94faa511a5855344348e506726a5158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3570c6c7efa3699e072f7b6e51316949" id="r_a3570c6c7efa3699e072f7b6e51316949"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3570c6c7efa3699e072f7b6e51316949">configure</a> (const <a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a> &amp;config)</td></tr>
-<tr class="memdesc:a3570c6c7efa3699e072f7b6e51316949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure source.  <br /></td></tr>
 <tr class="separator:a3570c6c7efa3699e072f7b6e51316949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07c7295a423bfb8ed476cfa80b6abf42" id="r_a07c7295a423bfb8ed476cfa80b6abf42"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__api-core-io-types.html#ga72ac3969f594911943b52eec600f9e2c">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07c7295a423bfb8ed476cfa80b6abf42">get</a> (<a class="el" href="classvidre_1_1memory_1_1area.html">memory::area</a> &amp;v)</td></tr>
-<tr class="memdesc:a07c7295a423bfb8ed476cfa80b6abf42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve data from the source.  <br /></td></tr>
 <tr class="separator:a07c7295a423bfb8ed476cfa80b6abf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7cc91ce35910435df956a0b5899e72d" id="r_ad7cc91ce35910435df956a0b5899e72d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvidre_1_1event_1_1result.html">event::result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7cc91ce35910435df956a0b5899e72d">wait</a> ()</td></tr>
-<tr class="memdesc:ad7cc91ce35910435df956a0b5899e72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait (indefinitely) for data to become available.  <br /></td></tr>
 <tr class="separator:ad7cc91ce35910435df956a0b5899e72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa37f9196a9c6e0e0aa41c38e98bec29f" id="r_aa37f9196a9c6e0e0aa41c38e98bec29f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvidre_1_1event_1_1result.html">event::result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa37f9196a9c6e0e0aa41c38e98bec29f">wait</a> (std::chrono::milliseconds timeout)</td></tr>
-<tr class="memdesc:aa37f9196a9c6e0e0aa41c38e98bec29f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for data to become available, with a timeout.  <br /></td></tr>
 <tr class="separator:aa37f9196a9c6e0e0aa41c38e98bec29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a333aa748c43f657d15645745dd5a7d0b" id="r_a333aa748c43f657d15645745dd5a7d0b"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="structvidre_1_1io_1_1packet_1_1base.html">packet::base</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a333aa748c43f657d15645745dd5a7d0b">get</a> ()</td></tr>
-<tr class="memdesc:a333aa748c43f657d15645745dd5a7d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a packet from the source.  <br /></td></tr>
 <tr class="separator:a333aa748c43f657d15645745dd5a7d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c2d5eda30cb86b7cd9196dba7b8cbbe" id="r_a0c2d5eda30cb86b7cd9196dba7b8cbbe"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a0c2d5eda30cb86b7cd9196dba7b8cbbe"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="#a90c328d8dc908055feb57561f4c8b6d1">shared</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0c2d5eda30cb86b7cd9196dba7b8cbbe">make</a> (Args &amp;&amp;...args)</td></tr>
-<tr class="memdesc:a0c2d5eda30cb86b7cd9196dba7b8cbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create source as shared pointer.  <br /></td></tr>
 <tr class="separator:a0c2d5eda30cb86b7cd9196dba7b8cbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a114123480e980834f4d93fb03dba1e0f" id="r_a114123480e980834f4d93fb03dba1e0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1event.html#a608ed82b9ef02c456fbb4a1ba064693f">event::state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a114123480e980834f4d93fb03dba1e0f">notify</a> (<a class="el" href="group__api-core-io-types.html#gab254d60f9613650ea519a9adc090043a">size_type</a> n=1)</td></tr>
-<tr class="memdesc:a114123480e980834f4d93fb03dba1e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify, that <em>n</em> packets are available.  <br /></td></tr>
 <tr class="separator:a114123480e980834f4d93fb03dba1e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af20ac04ea0be3fb84f6f37ca5b165801" id="r_af20ac04ea0be3fb84f6f37ca5b165801"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__api-core-io-types.html#ga72ac3969f594911943b52eec600f9e2c">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af20ac04ea0be3fb84f6f37ca5b165801">read</a> (<a class="el" href="classvidre_1_1memory_1_1area.html">memory::area</a> &amp;)=0</td></tr>
-<tr class="memdesc:af20ac04ea0be3fb84f6f37ca5b165801"><td class="mdescLeft">&#160;</td><td class="mdescRight">The low-level read method.  <br /></td></tr>
 <tr class="separator:af20ac04ea0be3fb84f6f37ca5b165801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ad6d968cfcb74f46ed56326faf2795d4d" id="r_ad6d968cfcb74f46ed56326faf2795d4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1event.html">event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6d968cfcb74f46ed56326faf2795d4d">ev_</a> {}</td></tr>
-<tr class="memdesc:ad6d968cfcb74f46ed56326faf2795d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event for signaling data availability.  <br /></td></tr>
 <tr class="separator:ad6d968cfcb74f46ed56326faf2795d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>

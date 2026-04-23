@@ -21,7 +21,7 @@ var searchData=
   ['bayer_5frggb16le_18',['bayer_rggb16le',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146adf5e215bba2bb94b4f9689e779b7095c',1,'vidre::ffmpeg']]],
   ['bayer_5frggb8_19',['bayer_rggb8',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ae3f93ea45c3bc4cf489f270b104aaa33',1,'vidre::ffmpeg']]],
   ['begin_20',['begin',['../classvidre_1_1io_1_1file.html#a4aa2b363db011f576199331a15a1ef0da8d589afa4dfaeeed85fff5aa78e5ff6a',1,'vidre::io::file::begin'],['../group__api-core-io-details.html#gga467dbdc1a8230d494cd3f6615ba178f1a8d589afa4dfaeeed85fff5aa78e5ff6a',1,'vidre::detail::io::file::begin']]],
-  ['behavior_21',['Reference Count Behavior',['../classvidre_1_1shared.html#autotoc_md14',1,'']]],
+  ['behavior_21',['Reference Count Behavior',['../classvidre_1_1shared.html#autotoc_md15',1,'']]],
   ['bggr8_22',['bggr8',['../group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aa5613fb429e8fc1fe5dcf73c0dde7b928',1,'vidre::io::packet']]],
   ['bgr24_23',['bgr24',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a2367746c39220becb1fc6e82a647d606',1,'vidre::ffmpeg::bgr24'],['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a2367746c39220becb1fc6e82a647d606',1,'bgr24:&#160;fourcc.hh']]],
   ['bgr32_24',['bgr32',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1aa204dfb7cb2fc368ff24cc3abb020119',1,'fourcc.hh']]],

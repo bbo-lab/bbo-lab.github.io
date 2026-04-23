@@ -1,9 +1,9 @@
-<map id="/home/sawinski/Workspace/MPINB/vidre/examples/playground/uvc.cc" name="/home/sawinski/Workspace/MPINB/vidre/examples/playground/uvc.cc">
-<area shape="rect" id="Node000001" title=" " alt="" coords="973,5,1244,45"/>
+<map id="examples/playground/uvc.cc" name="examples/playground/uvc.cc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1036,5,1181,45"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="574,93,731,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1000,48,733,94,732,88,999,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1036,42,733,94,732,88,1035,36"/>
 <area shape="rect" id="Node000003" href="$log_8hh.html" title=" " alt="" coords="451,240,540,265"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="987,48,895,68,802,96,745,121,669,159,529,236,526,231,667,155,743,116,800,91,894,63,986,43"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1036,40,924,61,862,77,802,96,745,121,669,159,529,236,526,231,667,155,743,116,800,91,861,72,923,56,1035,34"/>
 <area shape="rect" id="Node000014" title=" " alt="" coords="553,313,625,339"/>
 <area shape="poly" id="edge43_Node000001_Node000014" title=" " alt="" coords="1077,48,622,309,619,304,1074,43"/>
 <area shape="rect" id="Node000018" href="$program_8hh.html" title=" " alt="" coords="1049,93,1168,119"/>
@@ -13,7 +13,7 @@
 <area shape="rect" id="Node000022" title=" " alt="" coords="1329,313,1384,339"/>
 <area shape="poly" id="edge44_Node000001_Node000022" title=" " alt="" coords="1133,44,1183,92,1277,207,1344,300,1339,304,1272,210,1179,95,1129,47"/>
 <area shape="rect" id="Node000032" title=" " alt="" coords="1592,93,1721,119"/>
-<area shape="poly" id="edge42_Node000001_Node000032" title=" " alt="" coords="1240,43,1579,91,1578,96,1240,48"/>
+<area shape="poly" id="edge42_Node000001_Node000032" title=" " alt="" coords="1182,34,1578,91,1578,96,1181,40"/>
 <area shape="rect" id="Node000004" href="$libs_2core_2vidre_2core_2config_8hh.html" title=" " alt="" coords="855,387,991,412"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="541,255,657,272,726,288,794,311,853,342,900,376,897,380,850,347,792,316,725,293,656,277,540,260"/>
 <area shape="rect" id="Node000007" href="$core_2vidre_2cpp_2util_8hh.html" title=" " alt="" coords="165,313,279,339"/>

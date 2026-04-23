@@ -1,4 +1,4 @@
-<map id="plugins/storage/ccv/vidre/storage" name="plugins/storage/ccv/vidre/storage">
+<map id="storage/ccv/vidre/storage" name="storage/ccv/vidre/storage">
 <area shape="rect" id="node1" href="dir_66619330121a5d7ccd586d060e560d74.html" title="storage" alt="" coords="27,52,93,77"/>
 <area shape="rect" id="node2" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html" title="vidre" alt="" coords="35,125,85,151"/>
 <area shape="poly" id="edge1" href="dir_000035_000043.html" alt="" coords="63,78,63,112,57,112,57,78"/>

@@ -44,7 +44,7 @@ var searchData=
   ['os_2ecc_41',['os.cc',['../os_8cc.html',1,'']]],
   ['os_2ehh_42',['os.hh',['../os_8hh.html',1,'']]],
   ['other_43',['other',['../structvidre_1_1error_1_1detail_1_1allocator_1_1rebind.html#aa555d520f0c71463ea5636f2aa5c1cef',1,'vidre::error::detail::allocator::rebind::other'],['../structvidre_1_1plugin_1_1interface.html#a26840cf515445b949608942ef2246e05a795f3202b17cb6bc3d4b771d8c6c9eaf',1,'vidre::plugin::interface::other']]],
-  ['other_20licenses_44',['Other licenses',['../license.html#autotoc_md7',1,'']]],
+  ['other_20licenses_44',['Other licenses',['../license.html#autotoc_md8',1,'']]],
   ['other_20support_20libraries_45',['Other support libraries',['../group__api-support.html',1,'']]],
   ['output_46',['Output',['../group__api-core-log-io.html',1,'']]],
   ['output_47',['output',['../group__api-core-io.html',1,'In-/output'],['../classvidre_1_1ffmpeg_1_1format_1_1output.html',1,'vidre::ffmpeg::format::output'],['../classvidre_1_1ffmpeg_1_1format_1_1output.html#a91981ce21c07c1d01f2a1a8d5d4aad29',1,'vidre::ffmpeg::format::output::output() noexcept=default'],['../classvidre_1_1ffmpeg_1_1format_1_1output.html#a032bd2acc3e095ab93f270ff5a483b4f',1,'vidre::ffmpeg::format::output::output(const AVOutputFormat *ptr)']]],
@@ -53,6 +53,6 @@ var searchData=
   ['outs_5f_50',['outs_',['../classvidre_1_1log_1_1io_1_1file.html#a4d915c6f78a41e41b4aad65e7acfdc0c',1,'vidre::log::io::file']]],
   ['ov511_51',['ov511',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a855154804f6f35f4850e33aa8a382a07',1,'fourcc.hh']]],
   ['ov518_52',['ov518',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a6b4b2fc973f3b0a17da7d26a6e607a3e',1,'fourcc.hh']]],
-  ['overview_53',['Overview',['../group__api-support-ffmpeg-overview.html',1,'Overview'],['../dev-overview.html',1,'Overview'],['../dev-goals.html#dev-goals-overview',1,'Overview'],['../group__api-core-io-types.html#autotoc_md10',1,'Overview']]],
+  ['overview_53',['Overview',['../group__api-support-ffmpeg-overview.html',1,'Overview'],['../dev-overview.html',1,'Overview'],['../dev-goals.html#dev-goals-overview',1,'Overview'],['../group__api-core-io-types.html#autotoc_md11',1,'Overview']]],
   ['overview_2edox_54',['overview.dox',['../overview_8dox.html',1,'']]]
 ];

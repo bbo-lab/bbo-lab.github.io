@@ -121,14 +121,10 @@ $(function(){initNavTree('classvidre_1_1memory_1_1chunk_1_1fifo.html',''); initR
 </div><!--header-->
 <div class="contents">
 
-<p>A FIFO chunk manager.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="chunk_8hh_source.html">vidre/memory/chunk.hh</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="group__api-core-memory-base.html#ga5a195aefab7366a6e1127e9250aa9417">size_type</a> N&gt;<br />
-class vidre::memory::chunk::fifo&lt; N &gt;</div><p>A FIFO chunk manager. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
+class vidre::memory::chunk::fifo&lt; N &gt;</div><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">N</td><td>Ring size. If zero (default), the ring is dynamically allocated, otherwise (requiring N being a power of 2) it is statically allocated.</td></tr>
   </table>
@@ -140,7 +136,7 @@ class vidre::memory::chunk::fifo&lt; N &gt;</div><p>A FIFO chunk manager. </p>
 <li>producer-consumer synchronization (e.g. via eventfd)...</li>
 <li>buffer management (e.g. via a "buffer factory",see "data accessors")...</li>
 <li><p class="startli">how to signal if the producer dies? etc.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo</a></b></dt><dd>need to work out, if atomic operations are required.... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>need to work out, if atomic operations are required.... </dd></dl>
 </li>
 </ul>
 </div><table class="memberdecls">
@@ -159,10 +155,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a390845f14d97236b6c815a2f48dfd880" id="r_a390845f14d97236b6c815a2f48dfd880"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-memory-base.html#ga5a195aefab7366a6e1127e9250aa9417">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a390845f14d97236b6c815a2f48dfd880">size_</a> {}</td></tr>
-<tr class="memdesc:a390845f14d97236b6c815a2f48dfd880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ring size.  <br /></td></tr>
 <tr class="separator:a390845f14d97236b6c815a2f48dfd880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a42ddc3fc31c7898b86935428b32c5f" id="r_a2a42ddc3fc31c7898b86935428b32c5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-memory-base.html#ga06a55e405df35fe6a9d69c3982b8bf1d">pointer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a42ddc3fc31c7898b86935428b32c5f">data_</a> {}</td></tr>
-<tr class="memdesc:a2a42ddc3fc31c7898b86935428b32c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer store.  <br /></td></tr>
 <tr class="separator:a2a42ddc3fc31c7898b86935428b32c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>

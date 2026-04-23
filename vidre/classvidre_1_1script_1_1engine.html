@@ -121,9 +121,6 @@ $(function(){initNavTree('classvidre_1_1script_1_1engine.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 
-<p>Scripting engine.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="script_8hh_source.html">vidre/script.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for vidre::script::engine:</div>
@@ -140,8 +137,7 @@ $(function(){initNavTree('classvidre_1_1script_1_1engine.html',''); initResizabl
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1script_1_1engine__coll__graph.svg" width="147" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Scripting engine. </p>
-<p>The scripting engine is based on <a href="https://github.com:jsawbbo/delua">Delua</a>, which provides a low-level C++ interface to Lua (version 5.4 at the moment of writing). We add a number of high-level methods for convenience.</p>
+<div class="textblock"><p>The scripting engine is based on <a href="https://github.com:jsawbbo/delua">Delua</a>, which provides a low-level C++ interface to Lua (version 5.4 at the moment of writing). We add a number of high-level methods for convenience.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__api-core-script.html#gabd8119066998bb964d89a9df44caaccc" title="Global script state.">vidre::script::g</a> </dd>
 <dd>
 <a class="el" href="examples_2core_2script_8cc-example.html">examples/core/script.cc</a> </dd></dl>
@@ -149,7 +145,6 @@ $(function(){initNavTree('classvidre_1_1script_1_1engine.html',''); initResizabl
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1script_1_1engine_1_1stack.html">stack</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack scope.  <a href="classvidre_1_1script_1_1engine_1_1stack.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -161,30 +156,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9b60996e3678e72a88919dfb4410f004" id="r_a9b60996e3678e72a88919dfb4410f004"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b60996e3678e72a88919dfb4410f004">engine</a> (const <a class="el" href="classvidre_1_1script_1_1engine.html">engine</a> &amp;)=delete</td></tr>
 <tr class="separator:a9b60996e3678e72a88919dfb4410f004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab24cb60bda5a5120665d724c8c28ce7b" id="r_ab24cb60bda5a5120665d724c8c28ce7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab24cb60bda5a5120665d724c8c28ce7b">engine</a> (void(*init)(<a class="el" href="classvidre_1_1script_1_1engine.html">engine</a> &amp;))</td></tr>
-<tr class="memdesc:ab24cb60bda5a5120665d724c8c28ce7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create new state with initialization function.  <br /></td></tr>
 <tr class="separator:ab24cb60bda5a5120665d724c8c28ce7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51d90bcc4c7c418f909e415f87ff2497" id="r_a51d90bcc4c7c418f909e415f87ff2497"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51d90bcc4c7c418f909e415f87ff2497">~engine</a> ()</td></tr>
 <tr class="separator:a51d90bcc4c7c418f909e415f87ff2497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a814daee7c4c6e9df4a21337324b98d35" id="r_a814daee7c4c6e9df4a21337324b98d35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a814daee7c4c6e9df4a21337324b98d35">clearpath</a> (const std::string &amp;field=std::string{})</td></tr>
-<tr class="memdesc:a814daee7c4c6e9df4a21337324b98d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear loader path.  <br /></td></tr>
 <tr class="separator:a814daee7c4c6e9df4a21337324b98d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab23d674c34864ae5b1068d0461818e69" id="r_ab23d674c34864ae5b1068d0461818e69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab23d674c34864ae5b1068d0461818e69">addpath</a> (const std::filesystem::path &amp;path, const std::string &amp;field)</td></tr>
-<tr class="memdesc:ab23d674c34864ae5b1068d0461818e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add loader path.  <br /></td></tr>
 <tr class="separator:ab23d674c34864ae5b1068d0461818e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafd0e3c51f1007049dbd95c2b0d8e91d" id="r_aafd0e3c51f1007049dbd95c2b0d8e91d"><td class="memItemLeft" align="right" valign="top">lua::status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafd0e3c51f1007049dbd95c2b0d8e91d">exec</a> (const std::string &amp;s)</td></tr>
-<tr class="memdesc:aafd0e3c51f1007049dbd95c2b0d8e91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a string.  <br /></td></tr>
 <tr class="separator:aafd0e3c51f1007049dbd95c2b0d8e91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d79db5019dea218489d314a6379648b" id="r_a1d79db5019dea218489d314a6379648b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d79db5019dea218489d314a6379648b">require</a> (const std::string &amp;modname)</td></tr>
-<tr class="memdesc:a1d79db5019dea218489d314a6379648b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Require library.  <br /></td></tr>
 <tr class="separator:a1d79db5019dea218489d314a6379648b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5b1e9435db7ce1d9bdbf5f486bdb52cf" id="r_a5b1e9435db7ce1d9bdbf5f486bdb52cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b1e9435db7ce1d9bdbf5f486bdb52cf">clearpackage</a> (const std::string &amp;field)</td></tr>
-<tr class="memdesc:a5b1e9435db7ce1d9bdbf5f486bdb52cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to clear package.path or package.cpath.  <br /></td></tr>
 <tr class="separator:a5b1e9435db7ce1d9bdbf5f486bdb52cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a146cd467490cda01431f8340e95922" id="r_a3a146cd467490cda01431f8340e95922"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a146cd467490cda01431f8340e95922">addpackage</a> (const std::string &amp;path, const std::string &amp;field)</td></tr>
-<tr class="memdesc:a3a146cd467490cda01431f8340e95922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to add to package.path or package.cpath.  <br /></td></tr>
 <tr class="separator:a3a146cd467490cda01431f8340e95922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>

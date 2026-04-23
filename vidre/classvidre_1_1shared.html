@@ -120,14 +120,10 @@ $(function(){initNavTree('classvidre_1_1shared.html',''); initResizable(true); }
 </div><!--header-->
 <div class="contents">
 
-<p>Shared ownership smart pointer with custom allocator support.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="shared_8hh_source.html">vidre/util/shared.hh</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, typename Allocator = std::allocator&lt;T&gt;&gt;<br />
-class vidre::shared&lt; T, Allocator &gt;</div><p>Shared ownership smart pointer with custom allocator support. </p>
-<p>Implements reference-counted shared ownership similar to std::shared_ptr, but with full control over memory allocation through a custom allocator. The control block (reference counts + object) is allocated as a single contiguous block using the <code>rebind</code>ed allocator type.</p>
+class vidre::shared&lt; T, Allocator &gt;</div><p>Implements reference-counted shared ownership similar to std::shared_ptr, but with full control over memory allocation through a custom allocator. The control block (reference counts + object) is allocated as a single contiguous block using the <code>rebind</code>ed allocator type.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The type of the managed object </td></tr>
@@ -135,10 +131,10 @@ class vidre::shared&lt; T, Allocator &gt;</div><p>Shared ownership smart pointer
   </table>
   </dd>
 </dl>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md12"></a>
 Strong vs. Weak References</h2>
 <p>This implementation currently supports <b>strong references</b> only. A complete implementation would also include weak references:</p>
-<h3><a class="anchor" id="autotoc_md12"></a>
+<h3><a class="anchor" id="autotoc_md13"></a>
 Strong References (this class)</h3>
 <ul>
 <li>Keep the managed object alive</li>
@@ -146,7 +142,7 @@ Strong References (this class)</h3>
 <li>Can access the managed object directly (operator-&gt;, operator*)</li>
 <li>Example: <code>shared&lt;Foo&gt; sp1 = make_shared&lt;Foo&gt;();</code> // strong count = 1</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md13"></a>
+<h3><a class="anchor" id="autotoc_md14"></a>
 Weak References (not yet implemented)</h3>
 <ul>
 <li>Observe the object without keeping it alive</li>
@@ -155,13 +151,13 @@ Weak References (not yet implemented)</h3>
 <li>Prevent control block deallocation even after object destruction</li>
 <li>Example: <code>weak&lt;Foo&gt; wp = sp1;</code> // weak count = 1, strong count unchanged</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md14"></a>
+<h2><a class="anchor" id="autotoc_md15"></a>
 Reference Count Behavior</h2>
 <div class="fragment"><div class="line">Strong <a class="code hl_variable" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a> &gt; 0: Object is alive and accessible</div>
 <div class="line">Strong <a class="code hl_variable" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a> = 0: Object is destroyed, control block may persist <span class="keywordflow">if</span> weak <a class="code hl_variable" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a> &gt; 0</div>
 <div class="line">Both counts = 0: Control block is deallocated</div>
 <div class="ttc" id="ahw__decode__video_8cc_html_ad43c3812e6d13e0518d9f8b8f463ffcf"><div class="ttname"><a href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a></div><div class="ttdeci">int count</div><div class="ttdef"><b>Definition</b> hw_decode_video.cc:43</div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md15"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md16"></a>
 Memory Layout</h2>
 <div class="fragment"><div class="line">┌─────────────────────────────────────┐</div>
 <div class="line">│  counted_object (control block)     │</div>
@@ -171,7 +167,7 @@ Memory Layout</h2>
 <div class="line">│  T object (constructed in-place)    │</div>
 <div class="line">└─────────────────────────────────────┘</div>
 </div><!-- fragment --><p>The control block and object are allocated as one unit, improving cache locality and reducing allocation overhead compared to separate allocations.</p>
-<h2><a class="anchor" id="autotoc_md16"></a>
+<h2><a class="anchor" id="autotoc_md17"></a>
 Thread Safety</h2>
 <ul>
 <li>Reference count operations are atomic and thread-safe</li>
@@ -179,7 +175,7 @@ Thread Safety</h2>
 <li>Concurrent reads of the same object are safe if the object allows it</li>
 <li>Concurrent reads and writes require external synchronization</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 Usage Example</h2>
 <div class="fragment"><div class="line"><span class="comment">// Using default allocator</span></div>
 <div class="line"><span class="keyword">auto</span> sp1 = <a class="code hl_function" href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">make_shared&lt;std::string&gt;</a>(<span class="stringliteral">&quot;Hello&quot;</span>);</div>
@@ -194,7 +190,7 @@ Usage Example</h2>
 <div class="line"> </div>
 <div class="line">sp3.reset();              <span class="comment">// Strong count: 1 (object still alive)</span></div>
 <div class="line">sp2.reset();              <span class="comment">// Strong count: 0 (object destroyed)</span></div>
-<div class="ttc" id="agroup__api-core-util-shared_html_ga5869272b519d4de2d3ceba7f64fd99f9"><div class="ttname"><a href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">vidre::make_shared</a></div><div class="ttdeci">shared&lt; T, Allocator &gt; make_shared(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition</b> shared.hh:342</div></div>
+<div class="ttc" id="agroup__api-core-util-shared_html_ga5869272b519d4de2d3ceba7f64fd99f9"><div class="ttname"><a href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">vidre::make_shared</a></div><div class="ttdeci">shared&lt; T, Allocator &gt; make_shared(Args &amp;&amp;...args)</div><div class="ttdoc">Factory function for creating shared objects.</div><div class="ttdef"><b>Definition</b> shared.hh:342</div></div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Weak reference support would require:<ul>
 <li>A separate <code>weak&lt;T&gt;</code> class</li>
 <li><code>lock()</code> method to obtain strong reference</li>
@@ -202,10 +198,10 @@ Usage Example</h2>
 <li>Proper handling of weak count in control block destruction</li>
 </ul>
 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">make_shared</a> Factory function for convenient creation </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9" title="Factory function for creating shared objects.">make_shared</a> Factory function for convenient creation </dd>
 <dd>
 std::shared_ptr Standard equivalent with more features</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo</a></b></dt><dd>Code/documentatoin copied (only refactored names) directly from DeepSeek, needs audit!</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo</a></b></dt><dd>Code/documentatoin copied (only refactored names) directly from DeepSeek, needs audit!</dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -267,8 +263,6 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a0">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -297,8 +291,6 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a3">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -441,8 +433,6 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a5">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -471,8 +461,6 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a4">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -527,8 +515,6 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a6">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -556,8 +542,6 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a7">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -612,8 +596,6 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a8">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -668,8 +650,6 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a9">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -724,8 +704,6 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a10">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -753,8 +731,6 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a11">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -782,8 +758,6 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html#a12">/home/sawinski/Workspace/MPINB/vidre/src/libs/core/vidre/util/shared.hh</a>.</dd>
-</dl>
 
 </div>
 </div>

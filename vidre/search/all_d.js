@@ -35,7 +35,7 @@ var searchData=
   ['memory_32',['Memory',['../group__api-core-memory.html',1,'']]],
   ['memory_33',['memory',['../classvidre_1_1exception_1_1memory.html',1,'vidre::exception::memory'],['../structvidre_1_1os_1_1memory.html',1,'vidre::os::memory'],['../classvidre_1_1exception_1_1memory.html#ab76d99efed766cea1f306115c101afdf',1,'vidre::exception::memory::memory()'],['../structvidre_1_1plugin_1_1endpoint.html#aa63e387d245ff29e049791d7db5639e4acd69b4957f06cd818d7bf3d61980e291',1,'vidre::plugin::endpoint::memory'],['../group__api-core-os-memory.html',1,'System memory']]],
   ['memory_20i_20o_34',['File and memory I/O',['../group__api-core-io-file.html',1,'']]],
-  ['memory_20layout_35',['Memory Layout',['../classvidre_1_1shared.html#autotoc_md15',1,'']]],
+  ['memory_20layout_35',['Memory Layout',['../classvidre_1_1shared.html#autotoc_md16',1,'']]],
   ['memory_20views_36',['Memory views',['../group__api-core-memory-view.html',1,'']]],
   ['memory_2ecc_37',['memory.cc',['../memory_8cc.html',1,'(Global Namespace)'],['../os_2memory_8cc.html',1,'(Global Namespace)']]],
   ['memory_2ehh_38',['memory.hh',['../memory_8hh.html',1,'(Global Namespace)'],['../os_2memory_8hh.html',1,'(Global Namespace)']]],

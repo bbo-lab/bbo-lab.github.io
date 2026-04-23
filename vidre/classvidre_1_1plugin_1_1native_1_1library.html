@@ -121,13 +121,8 @@ $(function(){initNavTree('classvidre_1_1plugin_1_1native_1_1library.html',''); i
 </div><!--header-->
 <div class="contents">
 
-<p>Library (dynamically linked object) handler.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="native_8hh_source.html">vidre/plugin/native.hh</a>&gt;</code></p>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Library (dynamically linked object) handler. </p>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a45fd53095f64b2a63e113316c4a66dfe" id="r_a45fd53095f64b2a63e113316c4a66dfe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45fd53095f64b2a63e113316c4a66dfe">mode</a> : int { <br />
@@ -161,22 +156,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aea3035ef4d19439f72694eed95b7db80" id="r_aea3035ef4d19439f72694eed95b7db80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea3035ef4d19439f72694eed95b7db80">~library</a> ()</td></tr>
 <tr class="separator:aea3035ef4d19439f72694eed95b7db80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e3227b8ac9b6ed2e6bf043b271bdcb6" id="r_a4e3227b8ac9b6ed2e6bf043b271bdcb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e3227b8ac9b6ed2e6bf043b271bdcb6">open</a> (const char *path, <a class="el" href="#a45fd53095f64b2a63e113316c4a66dfe">mode</a> flags=<a class="el" href="#a45fd53095f64b2a63e113316c4a66dfeaadbbcb21ac038a1a62c2fc948c59c947">mode::lazy</a>)</td></tr>
-<tr class="memdesc:a4e3227b8ac9b6ed2e6bf043b271bdcb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open library by path.  <br /></td></tr>
 <tr class="separator:a4e3227b8ac9b6ed2e6bf043b271bdcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab1618c5aea7692b64effd7b90995e3b" id="r_aab1618c5aea7692b64effd7b90995e3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab1618c5aea7692b64effd7b90995e3b">open</a> (const std::string &amp;path, <a class="el" href="#a45fd53095f64b2a63e113316c4a66dfe">mode</a> flags=<a class="el" href="#a45fd53095f64b2a63e113316c4a66dfeaadbbcb21ac038a1a62c2fc948c59c947">mode::lazy</a>)</td></tr>
 <tr class="separator:aab1618c5aea7692b64effd7b90995e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18a5fa16b8892a81db79eb57acf0619c" id="r_a18a5fa16b8892a81db79eb57acf0619c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18a5fa16b8892a81db79eb57acf0619c">close</a> () noexcept</td></tr>
-<tr class="memdesc:a18a5fa16b8892a81db79eb57acf0619c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close library.  <br /></td></tr>
 <tr class="separator:a18a5fa16b8892a81db79eb57acf0619c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada5f0511b585a58c5acd9b0391aaaa8b" id="r_ada5f0511b585a58c5acd9b0391aaaa8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada5f0511b585a58c5acd9b0391aaaa8b">valid</a> () const noexcept</td></tr>
-<tr class="memdesc:ada5f0511b585a58c5acd9b0391aaaa8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if valid.  <br /></td></tr>
 <tr class="separator:ada5f0511b585a58c5acd9b0391aaaa8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a644ece9e6f2dceedeabd0ff03d0105e9" id="r_a644ece9e6f2dceedeabd0ff03d0105e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aefce9e968f64d47ce58d26c23966ad10">symbol_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a644ece9e6f2dceedeabd0ff03d0105e9">get</a> (const std::string &amp;symname)</td></tr>
-<tr class="memdesc:a644ece9e6f2dceedeabd0ff03d0105e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get library symbol.  <br /></td></tr>
 <tr class="separator:a644ece9e6f2dceedeabd0ff03d0105e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70ecd696f5ee0b114ac5d6f491f76036" id="r_a70ecd696f5ee0b114ac5d6f491f76036"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a70ecd696f5ee0b114ac5d6f491f76036"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a70ecd696f5ee0b114ac5d6f491f76036">get</a> (const std::string &amp;symname)</td></tr>
-<tr class="memdesc:a70ecd696f5ee0b114ac5d6f491f76036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get library symbol.  <br /></td></tr>
 <tr class="separator:a70ecd696f5ee0b114ac5d6f491f76036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>

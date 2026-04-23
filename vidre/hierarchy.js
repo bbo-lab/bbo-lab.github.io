@@ -6,13 +6,14 @@ var hierarchy =
     [ "vidre::program::argument", "structvidre_1_1program_1_1argument.html", [
       [ "vidre::program::argument::parameter", "structvidre_1_1program_1_1argument_1_1parameter.html", null ]
     ] ],
-    [ "vidre::device::base", "classvidre_1_1device_1_1base.html", null ],
+    [ "vidre::device::base", "classvidre_1_1device_1_1base.html", [
+      [ "vidre::video::uvc::camera", "classvidre_1_1video_1_1uvc_1_1camera.html", null ]
+    ] ],
     [ "vidre::io::packet::base", "structvidre_1_1io_1_1packet_1_1base.html", null ],
     [ "vidre::bits_of< T >", "structvidre_1_1bits__of.html", null ],
     [ "vidre::detail::io::buffer", "structvidre_1_1detail_1_1io_1_1buffer.html", null ],
     [ "device::camera", null, [
-      [ "vidre::uvc", "classvidre_1_1uvc.html", null ],
-      [ "vidre::video::uvc::camera", "classvidre_1_1video_1_1uvc_1_1camera.html", null ]
+      [ "vidre::uvc", "classvidre_1_1uvc.html", null ]
     ] ],
     [ "vidre::plugin::category", "structvidre_1_1plugin_1_1category.html", null ],
     [ "vidre::storage::ccv", "classvidre_1_1storage_1_1ccv.html", null ],

@@ -119,9 +119,6 @@ $(function(){initNavTree('group__api-core-io-packet.html',''); initResizable(tru
   <div class="headertitle"><div class="title">Packet based I/O<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-io.html">In-/output</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Packet-based I/O.  
-<a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Packet based I/O:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -130,22 +127,18 @@ $(function(){initNavTree('group__api-core-io-packet.html',''); initResizable(tru
 <div class="center"><iframe scrolling="no" frameborder="0" src="group__api-core-io-packet.svg" width="260" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Packet-based I/O. </p>
 <p><a class="el" href="core_2vidre_2io_2packet_8hh.html">vidre/io/packet.hh</a> </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1io_1_1packet.html">vidre::io::packet</a></td></tr>
-<tr class="memdesc:namespacevidre_1_1io_1_1packet"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet-based I/O types. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1io_1_1packet_1_1header.html">vidre::io::packet::header</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet header.  <a href="structvidre_1_1io_1_1packet_1_1header.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1io_1_1packet_1_1base.html">vidre::io::packet::base</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for stream packets.  <a href="structvidre_1_1io_1_1packet_1_1base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -160,7 +153,6 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="#ggafcb4b31d4dfe00e7a8f623ca0243fc4aaee11cbb19052e40b07aac0ca060c23ee">vidre::io::packet::major::user</a> = 0x8000
 <br />
  }</td></tr>
-<tr class="memdesc:gafcb4b31d4dfe00e7a8f623ca0243fc4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Major type of a packet.  <a href="#gafcb4b31d4dfe00e7a8f623ca0243fc4a">More...</a><br /></td></tr>
 <tr class="separator:gafcb4b31d4dfe00e7a8f623ca0243fc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabdd4252f9ee279fa05041e885f605e5a" id="r_gabdd4252f9ee279fa05041e885f605e5a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabdd4252f9ee279fa05041e885f605e5a">vidre::io::packet::video</a> : uint16_t { <br />
 &#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aa5e543256c480ac577d30f76f9120eb74">vidre::io::packet::video::undefined</a> = 0x0000
@@ -192,7 +184,6 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aab1500b383bccdb3946114a5d708706c4">vidre::io::packet::video::rgba32</a> = 0x0300
 <br />
  }</td></tr>
-<tr class="memdesc:gabdd4252f9ee279fa05041e885f605e5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sub-type "video" minor types.  <a href="#gabdd4252f9ee279fa05041e885f605e5a">More...</a><br /></td></tr>
 <tr class="separator:gabdd4252f9ee279fa05041e885f605e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8521a79f161ad2f6371c7934252ee902" id="r_ga8521a79f161ad2f6371c7934252ee902"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8521a79f161ad2f6371c7934252ee902">vidre::io::packet::audio</a> : uint16_t { <br />
 &#160;&#160;<a class="el" href="#gga8521a79f161ad2f6371c7934252ee902a5e543256c480ac577d30f76f9120eb74">vidre::io::packet::audio::undefined</a> = 0x0000
@@ -210,7 +201,6 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="#gga8521a79f161ad2f6371c7934252ee902a9ba951533bd098582b3512d72e5a7acd">vidre::io::packet::audio::multichannel</a> = 0x0030
 <br />
  }</td></tr>
-<tr class="memdesc:ga8521a79f161ad2f6371c7934252ee902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sub-type "audio" minor types.  <a href="#ga8521a79f161ad2f6371c7934252ee902">More...</a><br /></td></tr>
 <tr class="separator:ga8521a79f161ad2f6371c7934252ee902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>

@@ -125,26 +125,23 @@ $(function(){initNavTree('dev-docs.html',''); initResizable(true); });
 <p class="startli">Enumerations, classes, methods, functions, modules, etc. that are part of the exposed API must have proper documentation. Exceptions apply only for trivial or purely internal items.</p>
 </li>
 <li><p class="startli">The API structure is reflected by file/directory structure (and vice versa).</p>
-<p class="startli">A developer should be able to guess where to find a piece of functionality based on the API name alone.</p>
-<p class="startli"><b>Example</b>:<br  />
- See <code>@addtogroup</code> and <code>@defgroup</code> in <a href="https://github.com/bbo-lab/vidre/blob/main/src/libs/core/vidre/video.hh">vidre/core/video.hh</a>.</p>
+<p class="startli">A developer should be able to guess where to find a piece of functionality based on the API name alone. Functionality that is independently categorizable usually also uses distinct interface or implementation files.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="dev-layout.html">Directory layout</a></dd></dl>
 </li>
 </ol>
 <h2><a class="anchor" id="autotoc_md0"></a>
 C++</h2>
-<p>FIXME</p><ul>
-<li>Doxygen...</li>
-<li>.dox files</li>
-<li>sub-groups require individual headers...</li>
-</ul>
+<p>For C++ documentation VidRe uses <a href="https://doxygen.nl">doxygen</a>. Contributors should observe previous usage within the source-code tree.</p>
+<p><b>Examples</b>:<br  />
+ See <code>@addtogroup</code> and <code>@defgroup</code> in <a href="https://github.com/bbo-lab/vidre/blob/main/src/libs/video/vidre/video.hh">vidre/core/video.hh</a> and <a href="https://github.com/bbo-lab/vidre/blob/main/src/libs/api.dox">api.dox</a></p>
 <h2><a class="anchor" id="autotoc_md1"></a>
 Lua</h2>
 <p><span style="color: orange"><b>TBD</b>:<br  />
- Must fit into the Doxygen tree.</span></p>
+ At the moment of writing, Lua is not yet actively used in the project. The are projects that allow including Lua into the doxygen world (see <a href="https://github.com/AndreasMatthias/Luals2dox">Luals2dox</a>), therefore, it is recommended to use doxygen-style documentation in Lua files. </span></p>
 <h2><a class="anchor" id="autotoc_md2"></a>
 Python</h2>
 <p><span style="color: orange"><b>TBD</b>:<br  />
- Must fit into the Doxygen tree.</span> </p>
+ At the moment of writing, native Python integration is only a planned feature.</span> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

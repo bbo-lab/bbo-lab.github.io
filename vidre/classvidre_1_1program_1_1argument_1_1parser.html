@@ -122,9 +122,6 @@ $(function(){initNavTree('classvidre_1_1program_1_1argument_1_1parser.html','');
 </div><!--header-->
 <div class="contents">
 
-<p>Argument parser.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="program_8hh_source.html">vidre/program.hh</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for vidre::program::argument::parser:</div>
@@ -134,8 +131,7 @@ $(function(){initNavTree('classvidre_1_1program_1_1argument_1_1parser.html','');
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classvidre_1_1program_1_1argument_1_1parser__coll__graph.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Argument parser. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="examples_2core_2program_8cc-example.html#_a1">examples/core/program.cc</a>.</dd>
+<div class="textblock"><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="examples_2core_2program_8cc-example.html#_a1">examples/core/program.cc</a>.</dd>
 </dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -151,22 +147,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4619e7271f8ed6bad9fd9fe9e6a9ca6c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4619e7271f8ed6bad9fd9fe9e6a9ca6c">parser</a> (<a class="el" href="classvidre_1_1program_1_1options.html">program::options</a>&lt; N &gt; &amp;opt) noexcept</td></tr>
 <tr class="separator:a4619e7271f8ed6bad9fd9fe9e6a9ca6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff0828147246b60608d8752c31196cc1" id="r_aff0828147246b60608d8752c31196cc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff0828147246b60608d8752c31196cc1">parse</a> (int argc, const char **argv)</td></tr>
-<tr class="memdesc:aff0828147246b60608d8752c31196cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse program invocation arguments.  <br /></td></tr>
 <tr class="separator:aff0828147246b60608d8752c31196cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c9277e395c73b526d36c3e2a305e0a3" id="r_a8c9277e395c73b526d36c3e2a305e0a3"><td class="memItemLeft" align="right" valign="top">auto const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c9277e395c73b526d36c3e2a305e0a3">unparsed</a> () const noexcept</td></tr>
-<tr class="memdesc:a8c9277e395c73b526d36c3e2a305e0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get list of unparsed elements.  <br /></td></tr>
 <tr class="separator:a8c9277e395c73b526d36c3e2a305e0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42a8ee66c4db26a1515ed6e4d70f34ab" id="r_a42a8ee66c4db26a1515ed6e4d70f34ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42a8ee66c4db26a1515ed6e4d70f34ab">has_unparsed</a> () const noexcept</td></tr>
-<tr class="memdesc:a42a8ee66c4db26a1515ed6e4d70f34ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if unparsed arguments were encountered.  <br /></td></tr>
 <tr class="separator:a42a8ee66c4db26a1515ed6e4d70f34ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86f4c376844ac2ae7ce8f1af0f6ca440" id="r_a86f4c376844ac2ae7ce8f1af0f6ca440"><td class="memItemLeft" align="right" valign="top">auto const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86f4c376844ac2ae7ce8f1af0f6ca440">parsed</a> () const noexcept</td></tr>
-<tr class="memdesc:a86f4c376844ac2ae7ce8f1af0f6ca440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get list of parsed elements.  <br /></td></tr>
 <tr class="separator:a86f4c376844ac2ae7ce8f1af0f6ca440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75c62ccb74f08c1abe38ff58360ca0bb" id="r_a75c62ccb74f08c1abe38ff58360ca0bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1variant.html">variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75c62ccb74f08c1abe38ff58360ca0bb">get</a> (const std::string &amp;key) noexcept</td></tr>
-<tr class="memdesc:a75c62ccb74f08c1abe38ff58360ca0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get parsed value for a key.  <br /></td></tr>
 <tr class="separator:a75c62ccb74f08c1abe38ff58360ca0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae32acbbbc3706663ad64ca630aa66497" id="r_ae32acbbbc3706663ad64ca630aa66497"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae32acbbbc3706663ad64ca630aa66497">help</a> ()</td></tr>
-<tr class="memdesc:ae32acbbbc3706663ad64ca630aa66497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a help string.  <br /></td></tr>
 <tr class="separator:ae32acbbbc3706663ad64ca630aa66497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31147c9f97f2ea2381958de3854d0d63" id="r_a31147c9f97f2ea2381958de3854d0d63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31147c9f97f2ea2381958de3854d0d63">show</a> () const noexcept</td></tr>
 <tr class="separator:a31147c9f97f2ea2381958de3854d0d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,13 +173,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ab8e403eb8686c8caf360331ac472aa9a" id="r_ab8e403eb8686c8caf360331ac472aa9a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structvidre_1_1program_1_1argument_1_1options.html">argument::options</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8e403eb8686c8caf360331ac472aa9a">opt_</a> {}</td></tr>
-<tr class="memdesc:ab8e403eb8686c8caf360331ac472aa9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to program::options&lt;&gt;.  <br /></td></tr>
 <tr class="separator:ab8e403eb8686c8caf360331ac472aa9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06bf7fb253cad4f275a282b3cae677b0" id="r_a06bf7fb253cad4f275a282b3cae677b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1detail_1_1tinymap.html">detail::tinymap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06bf7fb253cad4f275a282b3cae677b0">parsed_</a> {}</td></tr>
-<tr class="memdesc:a06bf7fb253cad4f275a282b3cae677b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parsed options.  <br /></td></tr>
 <tr class="separator:a06bf7fb253cad4f275a282b3cae677b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08b1273e4e4c2d9c85fcf09d640a5599" id="r_a08b1273e4e4c2d9c85fcf09d640a5599"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08b1273e4e4c2d9c85fcf09d640a5599">unparsed_</a> {}</td></tr>
-<tr class="memdesc:a08b1273e4e4c2d9c85fcf09d640a5599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unparsed options.  <br /></td></tr>
 <tr class="separator:a08b1273e4e4c2d9c85fcf09d640a5599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
