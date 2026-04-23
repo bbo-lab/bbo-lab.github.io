@@ -1,5 +1,6 @@
 var group__api_core_log_io =
 [
+    [ "vider::log::io", "namespacevider_1_1log_1_1io.html", null ],
     [ "vidre::log::io::style", "structvidre_1_1log_1_1io_1_1style.html", [
       [ "type", "structvidre_1_1log_1_1io_1_1style.html#a7d9725faa7d08f7538d1993e66fa8c2d", [
         [ "plain", "structvidre_1_1log_1_1io_1_1style.html#a7d9725faa7d08f7538d1993e66fa8c2da37e350d1fce7343bdc395aea91dc2c21", null ],

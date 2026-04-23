@@ -113,6 +113,7 @@ $(function(){initNavTree('group__api-core-plugin.html',''); initResizable(true);
 
 <div class="header">
   <div class="summary">
+<a href="#groups">Topics</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle"><div class="title">Plugins<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a></div></div></div>
@@ -123,31 +124,37 @@ $(function(){initNavTree('group__api-core-plugin.html',''); initResizable(true);
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__api-core-plugin.svg" width="214" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__api-core-plugin.svg" width="415" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p><a class="el" href="plugin_8hh.html">libs/core/vidre/plugin.hh</a></p>
-<p>This header provides an implementation to declare, load and deal with plugins, specifically but not limited to dynamic modules.</p>
+<p><a class="el" href="plugin_8hh.html">vidre/plugin.hh</a></p>
+<p>This header provides an implementation to declare, load and deal with plugins, specifically but not limited to "dynamic" modules (i.e. "DLL"s).</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structvidre_1_1plugin_1_1hub.html" title="Plugin discovery and handling.">vidre::plugin::hub</a> </dd>
 <dd>
 <a class="el" href="examples_2core_2plugins_8cc-example.html">examples/core/plugins.cc</a> </dd></dl>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
+Topics</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-plugin-category.html">Plugin categories.</a></td></tr>
+<tr class="memdesc:group__api-core-plugin-category"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-plugin-details.html">Implementation details</a></td></tr>
+<tr class="memdesc:group__api-core-plugin-details"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1plugin_1_1dynamic.html">vidre::plugin::dynamic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically linked object plugin loader.  <a href="classvidre_1_1plugin_1_1dynamic.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1plugin_1_1dynamic_1_1exception.html">vidre::plugin::dynamic::exception</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception.  <a href="classvidre_1_1plugin_1_1dynamic_1_1exception.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1plugin_1_1dynamic_1_1library.html">vidre::plugin::dynamic::library</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DLL handler abstraction.  <a href="classvidre_1_1plugin_1_1dynamic_1_1library.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1plugin_1_1exception.html">vidre::plugin::exception</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General plugin exception.  <a href="classvidre_1_1plugin_1_1exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1plugin_1_1information.html">vidre::plugin::information</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module information.  <a href="structvidre_1_1plugin_1_1information.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1plugin_1_1native.html">vidre::plugin::native</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically linked object plugin loader.  <a href="classvidre_1_1plugin_1_1native.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1plugin_1_1native_1_1library.html">vidre::plugin::native::library</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Library (dynamically linked object) handler.  <a href="classvidre_1_1plugin_1_1native_1_1library.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1plugin_1_1hub.html">vidre::plugin::hub</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plugin discovery and handling.  <a href="structvidre_1_1plugin_1_1hub.html#details">More...</a><br /></td></tr>
@@ -202,7 +209,7 @@ Macros</h2></td></tr>
 <p>Declare a module. </p>
 <p>Usage: </p><div class="fragment"><div class="line"><a class="code hl_define" href="#ga9b0f304ed16af04adbf09419317f0db4">VIDRE_MODULE</a>(</div>
 <div class="line">    .<a class="code hl_variable" href="src_2libs_2core_2vidre_2log_8cc.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> = <span class="stringliteral">&quot;MyModule&quot;</span>,</div>
-<div class="line">    .<a class="code hl_function" href="examples_2core_2program_8cc.html#a963f147bd27a99d3e0e18a4ee91be179">version</a> = <span class="stringliteral">&quot;0.0&quot;</span>,</div>
+<div class="line">    .<a class="code hl_function" href="src_2apps_2tools_2uuid_8cc.html#a963f147bd27a99d3e0e18a4ee91be179">version</a> = <span class="stringliteral">&quot;0.0&quot;</span>,</div>
 <div class="line">    .organization = {</div>
 <div class="line">        .name = <span class="stringliteral">&quot;MPINB&quot;</span>,</div>
 <div class="line">        .domain = <span class="stringliteral">&quot;de.mpg.mpinb&quot;</span></div>
@@ -210,8 +217,8 @@ Macros</h2></td></tr>
 <div class="line">    .brief = <span class="stringliteral">&quot;Example module that does nothing.&quot;</span>,</div>
 <div class="line">    .category = <span class="stringliteral">&quot;example&quot;</span></div>
 <div class="line">);</div>
-<div class="ttc" id="aexamples_2core_2program_8cc_html_a963f147bd27a99d3e0e18a4ee91be179"><div class="ttname"><a href="examples_2core_2program_8cc.html#a963f147bd27a99d3e0e18a4ee91be179">version</a></div><div class="ttdeci">void version(program::argument::parser &amp;, variant)</div><div class="ttdef"><b>Definition</b> program.cc:8</div></div>
 <div class="ttc" id="agroup__api-core-plugin_html_ga9b0f304ed16af04adbf09419317f0db4"><div class="ttname"><a href="#ga9b0f304ed16af04adbf09419317f0db4">VIDRE_MODULE</a></div><div class="ttdeci">#define VIDRE_MODULE(...)</div><div class="ttdoc">Declare a module.</div><div class="ttdef"><b>Definition</b> information.hh:81</div></div>
+<div class="ttc" id="asrc_2apps_2tools_2uuid_8cc_html_a963f147bd27a99d3e0e18a4ee91be179"><div class="ttname"><a href="src_2apps_2tools_2uuid_8cc.html#a963f147bd27a99d3e0e18a4ee91be179">version</a></div><div class="ttdeci">void version(program::argument::parser &amp;, variant)</div><div class="ttdef"><b>Definition</b> uuid.cc:9</div></div>
 <div class="ttc" id="asrc_2libs_2core_2vidre_2log_8cc_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="src_2libs_2core_2vidre_2log_8cc.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> log.cc:246</div></div>
 </div><!-- fragment --> 
 </div>

@@ -141,13 +141,13 @@ struct vidre::storage::raw::element::fixed&lt; Value, major, minor &gt;</div><p>
 <div class="line">    <span class="keyword">using </span><a class="code hl_typedef" href="namespacefixed.html#a4ac0698580cf32120f1673de060b3801">timestamp</a> = raw::element::fixed&lt;video::timestamp, raw::major::video, raw::video::timestamp&gt;;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// fixed-size chunk header</span></div>
-<div class="line">    <span class="keyword">struct </span><a class="code hl_define" href="group__api-core-details.html#gae945a6e73151a44145ba0938e71a1dd5">__vidre_packed__</a> <a class="code hl_struct" href="structfixed_1_1header.html">header</a> {</div>
+<div class="line">    <span class="keyword">struct </span><a class="code hl_define" href="group__api-core-details.html#ga91542f6e8b34c625fab750990e548aea">__vidre_packed__</a> <a class="code hl_struct" href="structfixed_1_1header.html">header</a> {</div>
 <div class="line">        <a class="code hl_typedef" href="namespacefixed.html#a8cd189f368c1ae0c498a90d2226cc25e">fixed::index</a> <a class="code hl_typedef" href="namespacefixed.html#a8cd189f368c1ae0c498a90d2226cc25e">index</a>;</div>
 <div class="line">        <a class="code hl_typedef" href="namespacefixed.html#a96fb20e837b885f5f852e0ef91c5abc8">fixed::geometry</a> <a class="code hl_typedef" href="namespacefixed.html#a96fb20e837b885f5f852e0ef91c5abc8">geometry</a>;</div>
 <div class="line">        <a class="code hl_typedef" href="namespacefixed.html#a4ac0698580cf32120f1673de060b3801">fixed::timestamp</a> <a class="code hl_typedef" href="namespacefixed.html#a4ac0698580cf32120f1673de060b3801">timestamp</a>;</div>
 <div class="line">        <a class="code hl_typedef" href="namespacefixed.html#a4ac0698580cf32120f1673de060b3801">fixed::timestamp</a> computertime;</div>
 <div class="line"> </div>
-<div class="line">        storage::sink::offset_type put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> {</div>
+<div class="line">        storage::offset_type put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> {</div>
 <div class="line">            <span class="keywordflow">return</span> f.put(<span class="keyword">this</span>, 1);</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
@@ -250,7 +250,7 @@ template&lt;class Value , <a class="el" href="group__api-core-storage-raw.html#g
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>libs/core/vidre/storage/<a class="el" href="raw_8hh_source.html">raw.hh</a></li>
+<li>vidre/storage/<a class="el" href="raw_8hh_source.html">raw.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

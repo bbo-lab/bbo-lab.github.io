@@ -1,11 +1,11 @@
-<map id="libs/ffmpeg/vidre/ffmpeg/format/muxing.hh" name="libs/ffmpeg/vidre/ffmpeg/format/muxing.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="115,5,277,45"/>
-<area shape="rect" id="Node000002" href="$ffmpeg_2vidre_2ffmpeg_2format_8hh.html" title=" " alt="" coords="115,93,277,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,59,199,93,193,93,193,59"/>
-<area shape="rect" id="Node000003" href="$ffmpeg_8hh.html" title=" " alt="" coords="106,181,286,207"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="199,147,199,181,193,181,193,147"/>
-<area shape="rect" id="Node000004" href="$main_8cc.html" title=" " alt="" coords="5,255,184,280"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="170,217,113,257,110,252,167,212"/>
-<area shape="rect" id="Node000005" href="$ffmpeg_8cc.html" title=" " alt="" coords="209,255,389,280"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="225,212,283,252,280,257,222,217"/>
+<map id="vidre/ffmpeg/format/muxing.hh" name="vidre/ffmpeg/format/muxing.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="149,5,284,45"/>
+<area shape="rect" id="Node000002" href="$ffmpeg_2vidre_2ffmpeg_2format_8hh.html" title=" " alt="" coords="140,93,293,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,59,219,93,214,93,214,59"/>
+<area shape="rect" id="Node000003" href="$ffmpeg_8hh.html" title=" " alt="" coords="161,167,273,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="219,132,219,167,214,167,214,132"/>
+<area shape="rect" id="Node000004" href="$main_8cc.html" title=" " alt="" coords="5,240,233,295"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="195,203,151,242,147,238,192,199"/>
+<area shape="rect" id="Node000005" href="$ffmpeg_8cc.html" title=" " alt="" coords="258,255,370,280"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="242,199,302,252,299,256,238,203"/>
 </map>

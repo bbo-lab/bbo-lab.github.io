@@ -1,0 +1,7 @@
+<map id="vidre::io::source" name="vidre::io::source">
+<area shape="rect" id="Node000001" title="Data source." alt="" coords="90,5,205,31"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1io_1_1file_1_1source.html" title="File source." alt="" coords="5,79,145,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,43,89,80,85,77,124,39"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1io_1_1pipe.html" title="Data pipe." alt="" coords="169,79,269,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,39,210,77,206,80,167,43"/>
+</map>

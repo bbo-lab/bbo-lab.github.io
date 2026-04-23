@@ -1,7 +1,7 @@
-<map id="libs/device/vidre/device/config.hh" name="libs/device/vidre/device/config.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="33,5,191,45"/>
-<area shape="rect" id="Node000002" href="$vidre_2config_8hh.html" title=" " alt="" coords="5,93,112,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,47,77,83,72,80,97,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="136,93,197,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,44,153,80,149,84,123,47"/>
+<map id="vidre/device/config.hh" name="vidre/device/config.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="37,5,187,31"/>
+<area shape="rect" id="Node000002" href="$vidre_2config_8hh.html" title=" " alt="" coords="5,79,112,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,33,78,69,73,66,101,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="136,79,197,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,29,152,66,147,69,119,33"/>
 </map>

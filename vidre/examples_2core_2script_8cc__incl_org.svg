@@ -418,7 +418,7 @@
 <!-- Node22 -->
 <g id="Node000022" class="node">
 <title>Node22</title>
-<g id="a_Node000022"><a xlink:href="util_2shared_8hh.html" target="_top" xlink:title=" ">
+<g id="a_Node000022"><a xlink:href="shared_8hh.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="1150.5,-129 1051.5,-129 1051.5,-110 1150.5,-110 1150.5,-129"/>
 <text text-anchor="middle" x="1101" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">vidre/util/shared.hh</text>
 </a>

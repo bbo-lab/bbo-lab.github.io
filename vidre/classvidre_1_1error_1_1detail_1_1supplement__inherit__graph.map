@@ -1,0 +1,39 @@
+<map id="vidre::error::detail::supplement" name="vidre::error::detail::supplement">
+<area shape="rect" id="Node000001" title="Supplemental information for exceptions." alt="" coords="5,202,128,242"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1error_1_1info.html" title="Base class for supplemental exception info." alt="" coords="176,209,289,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,219,176,219,176,225,142,225"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1device_1_1error_1_1id.html" title="Device id info." alt="" coords="341,5,489,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="240,195,253,161,274,119,301,77,336,41,357,29,360,33,339,45,305,81,278,122,258,163,245,197"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1device_1_1error_1_1name.html" title="Device name info." alt="" coords="350,55,481,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="248,196,285,151,309,127,336,105,356,93,359,98,339,110,313,131,289,155,253,200"/>
+<area shape="rect" id="Node000005" href="$classvidre_1_1device_1_1error_1_1tmpl.html" title="Error message." alt="" coords="350,119,481,159"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="270,201,336,169,364,157,366,162,338,174,272,206"/>
+<area shape="rect" id="Node000006" href="$classvidre_1_1error_1_1code.html" title="General error code." alt="" coords="355,184,475,209"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="303,210,355,202,356,208,303,215"/>
+<area shape="rect" id="Node000009" href="$classvidre_1_1error_1_1location.html" title="Source code location info." alt="" coords="347,233,484,259"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="303,229,347,234,346,240,303,234"/>
+<area shape="rect" id="Node000010" href="$classvidre_1_1error_1_1message.html" title="Error message." alt="" coords="343,283,488,308"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="273,238,338,268,374,280,372,285,336,272,270,243"/>
+<area shape="rect" id="Node000011" href="$classvidre_1_1exception.html" title="General exception." alt="" coords="358,332,473,357"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="256,244,292,281,339,317,366,330,364,334,336,322,288,285,252,248"/>
+<area shape="rect" id="Node000019" href="$classvidre_1_1ffmpeg_1_1errc__info.html" title="Error&#45;code exception info." alt="" coords="337,381,493,407"/>
+<area shape="poly" id="edge18_Node000002_Node000019" title=" " alt="" coords="248,246,283,307,309,339,339,366,362,379,359,384,336,371,305,343,279,310,243,249"/>
+<area shape="rect" id="Node000007" href="$classvidre_1_1error_1_1errc.html" title="Generic error." alt="" coords="567,135,681,160"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="482,178,569,157,570,163,484,183"/>
+<area shape="rect" id="Node000008" href="$classvidre_1_1error_1_1system.html" title="System error." alt="" coords="557,184,691,209"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="489,194,556,194,556,199,489,199"/>
+<area shape="rect" id="Node000012" href="$classvidre_1_1exception_1_1logic.html" title="Logic error." alt="" coords="549,257,699,283"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="471,325,492,317,540,292,573,280,574,285,542,296,494,322,473,330"/>
+<area shape="rect" id="Node000013" href="$classvidre_1_1exception_1_1runtime.html" title="Runtime exception." alt="" coords="541,307,707,332"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="486,333,541,327,541,332,487,339"/>
+<area shape="rect" id="Node000017" href="$classvidre_1_1ffmpeg_1_1exception.html" title="FFmpeg exception." alt="" coords="543,356,705,381"/>
+<area shape="poly" id="edge16_Node000011_Node000017" title=" " alt="" coords="487,350,543,357,542,362,486,355"/>
+<area shape="rect" id="Node000018" href="$classvidre_1_1plugin_1_1exception.html" title="General plugin exception." alt="" coords="546,405,702,431"/>
+<area shape="poly" id="edge17_Node000011_Node000018" title=" " alt="" coords="476,359,494,366,542,392,574,403,573,408,540,396,492,371,474,364"/>
+<area shape="rect" id="Node000014" href="$classvidre_1_1device_1_1exception.html" title="Device exception." alt="" coords="763,257,923,283"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="694,301,785,280,786,285,695,306"/>
+<area shape="rect" id="Node000015" href="$classvidre_1_1exception_1_1argument.html" title="Argument error." alt="" coords="755,307,931,332"/>
+<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="721,317,755,317,755,322,721,322"/>
+<area shape="rect" id="Node000016" href="$classvidre_1_1exception_1_1memory.html" title="Out&#45;of&#45;memory error." alt="" coords="758,356,927,381"/>
+<area shape="poly" id="edge15_Node000013_Node000016" title=" " alt="" coords="695,332,786,353,785,359,694,338"/>
+</map>

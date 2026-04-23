@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['packing_0',['Bit mangling (such as packing).',['../group__api-core-storage-bit.html',1,'']]],
-  ['paths_1',['Paths',['../group__api-core-os-path.html',1,'']]],
-  ['paths_2',['Installation paths',['../group__api-config-paths.html',1,'']]],
-  ['plugins_3',['Plugins',['../group__api-core-plugin.html',1,'']]],
-  ['program_20invocation_20and_20tools_4',['Program invocation and tools',['../group__api-core-program.html',1,'']]]
+  ['o_0',['O',['../group__api-core-io-file.html',1,'File and memory I/O'],['../group__api-core-io-packet.html',1,'Packet based I/O']]],
+  ['onsemi_20midlib2_20wrapper_1',['OnSemi MIDlib2 wrapper',['../group__api-device-onsemi.html',1,'']]],
+  ['os_20utilities_2',['OS utilities',['../group__api-core-os.html',1,'']]],
+  ['other_20support_20libraries_3',['Other support libraries',['../group__api-support.html',1,'']]],
+  ['output_4',['Output',['../group__api-core-log-io.html',1,'']]],
+  ['output_5',['In-/output',['../group__api-core-io.html',1,'']]],
+  ['overview_6',['Overview',['../group__api-support-ffmpeg-overview.html',1,'']]]
 ];

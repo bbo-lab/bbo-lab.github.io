@@ -1,0 +1,9 @@
+<map id="vidre::io::file::sink" name="vidre::io::file::sink">
+<area shape="rect" id="Node000001" title="A file sink." alt="" coords="114,108,239,133"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1io_1_1sink.html" title="Data sink skeleton." alt="" coords="5,13,105,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,44,163,106,160,110,80,49"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1io_1_1file.html" title=" " alt="" coords="130,13,223,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,52,179,108,174,108,174,52"/>
+<area shape="rect" id="Node000004" href="$structvidre_1_1detail_1_1io_1_1buffer.html" title="Block buffer." alt="" coords="247,5,362,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="269,55,194,110,191,106,266,51"/>
+</map>

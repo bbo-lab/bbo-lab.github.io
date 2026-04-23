@@ -1,5 +1,7 @@
 var group__api_core_log_details =
 [
+    [ "vidre::log::convertible_to_message_type", "conceptvidre_1_1log_1_1convertible__to__message__type.html", null ],
+    [ "vidre::log::functor", "conceptvidre_1_1log_1_1functor.html", null ],
     [ "vidre::log::handler", "classvidre_1_1log_1_1handler.html", [
       [ "handler", "classvidre_1_1log_1_1handler.html#a16054598fa1155445226173f8593970a", null ],
       [ "handler", "classvidre_1_1log_1_1handler.html#a761c3df0d915f45c56fcf3df435d847b", null ],

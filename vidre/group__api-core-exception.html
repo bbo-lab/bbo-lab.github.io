@@ -113,6 +113,7 @@ $(function(){initNavTree('group__api-core-exception.html',''); initResizable(tru
 
 <div class="header">
   <div class="summary">
+<a href="#groups">Topics</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
@@ -125,17 +126,23 @@ $(function(){initNavTree('group__api-core-exception.html',''); initResizable(tru
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__api-core-exception.svg" width="298" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__api-core-exception.svg" width="503" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>libs/core/vidre/exception.hh</p>
+<p><a class="el" href="core_2vidre_2exception_8hh.html">vidre/exception.hh</a></p>
 <p>There are many pro's and con's for using exceptions versus error return types—which we shall not repeat here. We should note, though, that the mantra that exceptions are generally slower is <a href="https://www.youtube.com/watch?v=bY2FlayomlE">untenable</a>.</p>
 <p>Within VidRe, exceptions are used for transporting terse error reporting information, and, therefore, should not be used in fast code paths (use <code>std::optional</code> and <code>std::expected</code> there). </p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
+Topics</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-exception-details.html">Implementation details.</a></td></tr>
+<tr class="memdesc:group__api-core-exception-details"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1error.html">vidre::error</a></td></tr>
-<tr class="memdesc:namespacevidre_1_1error"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception and error namespace. <br /></td></tr>
+<tr class="memdesc:namespacevidre_1_1error"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception and errors. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -167,6 +174,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1error_1_1message.html">vidre::error::message</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error message.  <a href="classvidre_1_1error_1_1message.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1error_1_1code.html">vidre::error::code</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General error code.  <a href="classvidre_1_1error_1_1code.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1error_1_1errc.html">vidre::error::errc</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic error.  <a href="classvidre_1_1error_1_1errc.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,13 +186,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga168bd3604fdf1d1df4bd73fd0337fe46" id="r_ga168bd3604fdf1d1df4bd73fd0337fe46"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga168bd3604fdf1d1df4bd73fd0337fe46"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ga168bd3604fdf1d1df4bd73fd0337fe46">vidre::error::allocator</a> = <a class="el" href="structvidre_1_1detail_1_1exception_1_1allocator.html">detail::exception::allocator</a>&lt;T&gt;</td></tr>
-<tr class="memdesc:ga168bd3604fdf1d1df4bd73fd0337fe46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocator for exception handling.  <br /></td></tr>
-<tr class="separator:ga168bd3604fdf1d1df4bd73fd0337fe46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0f37c8f33d19b5b1811c823d2fd0c081" id="r_ga0f37c8f33d19b5b1811c823d2fd0c081"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0f37c8f33d19b5b1811c823d2fd0c081">vidre::error::string</a> = std::basic_string&lt;char, std::char_traits&lt;char&gt;, <a class="el" href="structvidre_1_1detail_1_1exception_1_1allocator.html">detail::exception::allocator</a>&lt;char&gt;&gt;</td></tr>
-<tr class="memdesc:ga0f37c8f33d19b5b1811c823d2fd0c081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard type for error messages.  <br /></td></tr>
-<tr class="separator:ga0f37c8f33d19b5b1811c823d2fd0c081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef7c3e888d0fa5b0fc7635781380fb04" id="r_gaef7c3e888d0fa5b0fc7635781380fb04"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gaef7c3e888d0fa5b0fc7635781380fb04"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gaef7c3e888d0fa5b0fc7635781380fb04">vidre::error::allocator</a> = <a class="el" href="structvidre_1_1error_1_1detail_1_1allocator.html">error::detail::allocator</a>&lt;T&gt;</td></tr>
+<tr class="memdesc:gaef7c3e888d0fa5b0fc7635781380fb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocator for exception handling.  <br /></td></tr>
+<tr class="separator:gaef7c3e888d0fa5b0fc7635781380fb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c123f6f4caebeb5427747c03f39cc18" id="r_ga9c123f6f4caebeb5427747c03f39cc18"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9c123f6f4caebeb5427747c03f39cc18">vidre::error::string</a> = std::basic_string&lt;char, std::char_traits&lt;char&gt;, <a class="el" href="structvidre_1_1error_1_1detail_1_1allocator.html">error::detail::allocator</a>&lt;char&gt;&gt;</td></tr>
+<tr class="memdesc:ga9c123f6f4caebeb5427747c03f39cc18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard type for error messages.  <br /></td></tr>
+<tr class="separator:ga9c123f6f4caebeb5427747c03f39cc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -200,8 +210,8 @@ requires (std::derived_from&lt;E, <a class="el" href="classvidre_1_1exception.ht
 <tr class="separator:gab02f4152cce232cc5c6013e5449440c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga168bd3604fdf1d1df4bd73fd0337fe46" name="ga168bd3604fdf1d1df4bd73fd0337fe46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga168bd3604fdf1d1df4bd73fd0337fe46">&#9670;&#160;</a></span>allocator</h2>
+<a id="gaef7c3e888d0fa5b0fc7635781380fb04" name="gaef7c3e888d0fa5b0fc7635781380fb04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaef7c3e888d0fa5b0fc7635781380fb04">&#9670;&#160;</a></span>allocator</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,7 +219,7 @@ requires (std::derived_from&lt;E, <a class="el" href="classvidre_1_1exception.ht
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#ga168bd3604fdf1d1df4bd73fd0337fe46">vidre::error::allocator</a> = <a class="el" href="structvidre_1_1detail_1_1exception_1_1allocator.html">detail::exception::allocator</a>&lt;T&gt;</td>
+          <td class="memname">using <a class="el" href="#gaef7c3e888d0fa5b0fc7635781380fb04">vidre::error::allocator</a> = <a class="el" href="structvidre_1_1error_1_1detail_1_1allocator.html">error::detail::allocator</a>&lt;T&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -218,14 +228,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ga0f37c8f33d19b5b1811c823d2fd0c081" name="ga0f37c8f33d19b5b1811c823d2fd0c081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0f37c8f33d19b5b1811c823d2fd0c081">&#9670;&#160;</a></span>string</h2>
+<a id="ga9c123f6f4caebeb5427747c03f39cc18" name="ga9c123f6f4caebeb5427747c03f39cc18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c123f6f4caebeb5427747c03f39cc18">&#9670;&#160;</a></span>string</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#ga0f37c8f33d19b5b1811c823d2fd0c081">vidre::error::string</a> = std::basic_string&lt;char, std::char_traits&lt;char&gt;, <a class="el" href="structvidre_1_1detail_1_1exception_1_1allocator.html">detail::exception::allocator</a>&lt;char&gt;&gt;</td>
+          <td class="memname">using <a class="el" href="#ga9c123f6f4caebeb5427747c03f39cc18">vidre::error::string</a> = std::basic_string&lt;char, std::char_traits&lt;char&gt;, <a class="el" href="structvidre_1_1error_1_1detail_1_1allocator.html">error::detail::allocator</a>&lt;char&gt;&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VidRe: Coding style and documentation</title>
+<title>VidRe: Coding style</title>
 <link rel="icon" href="vidre.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -112,13 +112,11 @@ $(function(){initNavTree('dev-style.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Coding style and documentation</div></div>
+  <div class="headertitle"><div class="title">Coding style</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md0"></a>
-Coding style</h2>
-<h3><a class="anchor" id="autotoc_md1"></a>
-C++</h3>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md3"></a>
+C++</h2>
 <p>For C++, the coding style is provided in form of a <code>.clang-format</code> file. The major rules are:</p><ul>
 <li>indentation of 4 space, no tabs,</li>
 <li>maximum width is 132</li>
@@ -175,7 +173,7 @@ C++</h3>
 <div class="line"><span class="preprocessor">#endif  </span><span class="comment">// PROJECT_MODULE_CLASS_H</span></div>
 <div class="ttc" id="acore_2vidre_2exception_8hh_html"><div class="ttname"><a href="core_2vidre_2exception_8hh.html">exception.hh</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
-<div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> midraw.hh:31</div></div>
+<div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> config.hh:31</div></div>
 <div class="ttc" id="asrc_2libs_2core_2vidre_2log_8cc_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="src_2libs_2core_2vidre_2log_8cc.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> log.cc:246</div></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">/* Copyright ...</span></div>
 <div class="line"><span class="comment"> */</span></div>
@@ -213,15 +211,14 @@ C++</h3>
 <div class="line"><span class="keywordtype">bool</span> style::ExampleClass::checkCondition(<span class="keywordtype">int</span> value)<span class="keyword"> const </span>{</div>
 <div class="line">    <span class="keywordflow">return</span> value &gt; 0 &amp;&amp; value &lt; 100;</div>
 <div class="line">}</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md2"></a>
-Lua</h3>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md4"></a>
+Lua</h2>
 <p><span style="color: orange"><b>TBD</b>:<br  />
  Coding style for Lua must be decided.</span></p>
-<h2><a class="anchor" id="autotoc_md3"></a>
-Code documentation</h2>
-<p>The code is documented using Doxygen for C++. <span style="color: orange"><b>TBD</b>:<br  />
- For Lua scripting mark-down files are used.</span> New developers are advised to observe existing code.</p>
-<p>To organize the structure, as well as to provide general documentation, '*.dox' files can be found throughout the source code tree. A good example is <a href="https://github.com/bbo-lab/vidre/blob/main/src/libs/core/vidre/program.hh">src/libs/core/vidre/program.hh</a> (note the "details" section). </p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Python</h2>
+<p><span style="color: orange"><b>TBD</b>:<br  />
+ Coding style for Python must be decided.</span> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

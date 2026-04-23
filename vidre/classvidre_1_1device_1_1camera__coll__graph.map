@@ -1,9 +1,0 @@
-<map id="vidre::device::camera" name="vidre::device::camera">
-<area shape="rect" id="Node000001" title="Camera device." alt="" coords="5,272,152,297"/>
-<area shape="rect" id="Node000002" href="$classvidre_1_1device_1_1base.html" title="Abstract device." alt="" coords="13,197,145,223"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,237,81,272,76,272,76,237"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="39,95,119,120"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,134,81,197,76,197,76,134"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="15,5,142,45"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="81,59,81,94,76,94,76,59"/>
-</map>

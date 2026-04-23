@@ -1,6 +1,7 @@
 var namespacevidre_1_1os =
 [
     [ "memory", "structvidre_1_1os_1_1memory.html", "structvidre_1_1os_1_1memory" ],
+    [ "pagesize", "group__api-core-os-memory.html#gad05232615b3e2dcf69d6c69aa05fba20", null ],
     [ "configdir", "group__api-core-os-path.html#gaf13e3b241e7fc5077eb521625c762118", null ],
     [ "tmpdir", "group__api-core-os-path.html#ga2b0c900161e3153879bb1c87b07e3f35", null ],
     [ "cachedir", "group__api-core-os-path.html#ga7fb3a071f2730739fab0aa17394417b4", null ],

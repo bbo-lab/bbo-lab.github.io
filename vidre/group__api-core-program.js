@@ -1,5 +1,6 @@
 var group__api_core_program =
 [
+    [ "Implementation details", "group__api-core-program-details.html", "group__api-core-program-details" ],
     [ "vidre::program", "namespacevidre_1_1program.html", null ],
     [ "vidre::program::argument", "structvidre_1_1program_1_1argument.html", [
       [ "callback_type", "structvidre_1_1program_1_1argument.html#a89a516e568f11a676d4c0b6f630186a5", null ],

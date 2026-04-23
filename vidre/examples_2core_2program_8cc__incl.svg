@@ -357,7 +357,7 @@ var sectionId = 'dynsection-0';
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="util_2shared_8hh.html" target="_top" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="shared_8hh.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="413.72,-129 314.72,-129 314.72,-110 413.72,-110 413.72,-129"/>
 <text text-anchor="middle" x="364.22" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">vidre/util/shared.hh</text>
 </a>

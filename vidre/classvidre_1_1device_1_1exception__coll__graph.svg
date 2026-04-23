@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 797;
+var viewWidth = 768;
 var viewHeight = 133;
 var sectionId = 'dynsection-1';
 </script>
@@ -59,8 +59,8 @@ var sectionId = 'dynsection-1';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="Device exception.">
-<polygon fill="#999999" stroke="#666666" points="789,-48.5 669,-48.5 669,-29.5 789,-29.5 789,-48.5"/>
-<text text-anchor="middle" x="729" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::device::exception</text>
+<polygon fill="#999999" stroke="#666666" points="760,-48.5 640,-48.5 640,-29.5 760,-29.5 760,-48.5"/>
+<text text-anchor="middle" x="700" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::device::exception</text>
 </a>
 </g>
 </g>
@@ -68,8 +68,8 @@ var sectionId = 'dynsection-1';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classvidre_1_1exception_1_1runtime.html" target="_top" xlink:title="Runtime exception.">
-<polygon fill="white" stroke="#666666" points="607.5,-89.5 483.5,-89.5 483.5,-70.5 607.5,-70.5 607.5,-89.5"/>
-<text text-anchor="middle" x="545.5" y="-77.5" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::exception::runtime</text>
+<polygon fill="white" stroke="#666666" points="582,-89.5 458,-89.5 458,-70.5 582,-70.5 582,-89.5"/>
+<text text-anchor="middle" x="520" y="-77.5" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::exception::runtime</text>
 </a>
 </g>
 </g>
@@ -77,8 +77,8 @@ var sectionId = 'dynsection-1';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M598.5,-68.25C626.18,-62 659.78,-54.41 685.82,-48.53"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="597.58,-64.87 588.6,-70.49 599.12,-71.7 597.58,-64.87"/>
+<path fill="none" stroke="#63b8ff" d="M572.36,-68.17C599.43,-61.93 632.21,-54.38 657.63,-48.53"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="571.24,-64.84 562.28,-70.49 572.81,-71.66 571.24,-64.84"/>
 </a>
 </g>
 </g>
@@ -86,8 +86,8 @@ var sectionId = 'dynsection-1';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classvidre_1_1exception.html" target="_top" xlink:title="General exception.">
-<polygon fill="white" stroke="#666666" points="443,-89.5 357,-89.5 357,-70.5 443,-70.5 443,-89.5"/>
-<text text-anchor="middle" x="400" y="-77.5" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::exception</text>
+<polygon fill="white" stroke="#666666" points="421,-89.5 335,-89.5 335,-70.5 421,-70.5 421,-89.5"/>
+<text text-anchor="middle" x="378" y="-77.5" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::exception</text>
 </a>
 </g>
 </g>
@@ -95,8 +95,8 @@ var sectionId = 'dynsection-1';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node3&#45;&gt;Node2</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M453.56,-80C463.26,-80 473.46,-80 483.38,-80"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="453.28,-76.5 443.28,-80 453.28,-83.5 453.28,-76.5"/>
+<path fill="none" stroke="#63b8ff" d="M431.05,-80C439.79,-80 448.93,-80 457.87,-80"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="431,-76.5 421,-80 431,-83.5 431,-76.5"/>
 </a>
 </g>
 </g>
@@ -104,8 +104,8 @@ var sectionId = 'dynsection-1';
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="classvidre_1_1error_1_1info.html" target="_top" xlink:title="Base class for supplemental exception info.">
-<polygon fill="white" stroke="#666666" points="320,-89.5 235,-89.5 235,-70.5 320,-70.5 320,-89.5"/>
-<text text-anchor="middle" x="277.5" y="-77.5" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::error::info</text>
+<polygon fill="white" stroke="#666666" points="298,-89.5 213,-89.5 213,-70.5 298,-70.5 298,-89.5"/>
+<text text-anchor="middle" x="255.5" y="-77.5" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::error::info</text>
 </a>
 </g>
 </g>
@@ -113,18 +113,18 @@ var sectionId = 'dynsection-1';
 <g id="edge3_Node000003_Node000004" class="edge">
 <title>Node4&#45;&gt;Node3</title>
 <g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M330.49,-80C339.3,-80 348.34,-80 356.86,-80"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="330.31,-76.5 320.31,-80 330.31,-83.5 330.31,-76.5"/>
+<path fill="none" stroke="#63b8ff" d="M308.49,-80C317.3,-80 326.34,-80 334.86,-80"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="308.31,-76.5 298.31,-80 308.31,-83.5 308.31,-76.5"/>
 </a>
 </g>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classvidre_1_1detail_1_1exception_1_1supplement.html" target="_top" xlink:title="Supplemental information for exceptions.">
-<polygon fill="white" stroke="#666666" points="143,-125 28,-125 28,-95 143,-95 143,-125"/>
-<text text-anchor="start" x="36" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::detail::exception</text>
-<text text-anchor="middle" x="85.5" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">::supplement</text>
+<g id="a_Node000005"><a xlink:href="classvidre_1_1error_1_1detail_1_1supplement.html" target="_top" xlink:title="Supplemental information for exceptions.">
+<polygon fill="white" stroke="#666666" points="120.5,-125 28.5,-125 28.5,-95 120.5,-95 120.5,-125"/>
+<text text-anchor="start" x="36.5" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::error::detail</text>
+<text text-anchor="middle" x="74.5" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">::supplement</text>
 </a>
 </g>
 </g>
@@ -132,8 +132,8 @@ var sectionId = 'dynsection-1';
 <g id="edge4_Node000004_Node000005" class="edge">
 <title>Node5&#45;&gt;Node4</title>
 <g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M153.45,-99.43C180.55,-95.15 211,-90.34 234.82,-86.58"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="152.58,-96.02 143.25,-101.04 153.67,-102.94 152.58,-96.02"/>
+<path fill="none" stroke="#63b8ff" d="M130.56,-100.77C157.03,-96.34 188.24,-91.1 212.72,-87"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="129.95,-97.32 120.67,-102.43 131.11,-104.23 129.95,-97.32"/>
 </a>
 </g>
 </g>
@@ -141,11 +141,11 @@ var sectionId = 'dynsection-1';
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:href="classvidre_1_1shared.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="171,-77 0,-77 0,-25 171,-25 171,-77"/>
-<text text-anchor="start" x="8" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::shared&lt; detail</text>
-<text text-anchor="start" x="8" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00">::exception::supplement,</text>
-<text text-anchor="start" x="8" y="-43" font-family="Helvetica,sans-Serif" font-size="10.00"> detail::exception::allocator</text>
-<text text-anchor="middle" x="85.5" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; detail::exception::supplement &gt; &gt;</text>
+<polygon fill="white" stroke="#666666" points="149,-77 0,-77 0,-25 149,-25 149,-77"/>
+<text text-anchor="start" x="8" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::shared&lt; error</text>
+<text text-anchor="start" x="8" y="-54" font-family="Helvetica,sans-Serif" font-size="10.00">::detail::supplement,</text>
+<text text-anchor="start" x="8" y="-43" font-family="Helvetica,sans-Serif" font-size="10.00"> error::detail::allocator</text>
+<text text-anchor="middle" x="74.5" y="-32" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; error::detail::supplement &gt; &gt;</text>
 </a>
 </g>
 </g>
@@ -153,21 +153,21 @@ var sectionId = 'dynsection-1';
 <g id="edge5_Node000004_Node000006" class="edge">
 <title>Node6&#45;&gt;Node4</title>
 <g id="a_edge5_Node000004_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M181.34,-65.48C200.14,-68.35 218.96,-71.22 234.83,-73.64"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="181.63,-61.98 171.22,-63.93 180.58,-68.9 181.63,-61.98"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M159.11,-64.55C177.81,-67.58 196.86,-70.66 212.97,-73.27"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="159.51,-61.07 149.08,-62.92 158.39,-67.98 159.51,-61.07"/>
 </a>
 </g>
-<text text-anchor="middle" x="203" y="-74" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> next_</text>
+<text text-anchor="middle" x="181" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> next_</text>
 </g>
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
 <g id="a_Node000007"><a xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="611,-52 480,-52 480,0 611,0 611,-52"/>
-<text text-anchor="start" x="488" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">std::basic_string&lt;</text>
-<text text-anchor="start" x="488" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00"> char, std::char_traits</text>
-<text text-anchor="start" x="488" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; char &gt;, detail::exception</text>
-<text text-anchor="middle" x="545.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::allocator&lt; char &gt; &gt;</text>
+<polygon fill="white" stroke="#666666" points="574.5,-52 465.5,-52 465.5,0 574.5,0 574.5,-52"/>
+<text text-anchor="start" x="473.5" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">std::basic_string&lt;</text>
+<text text-anchor="start" x="473.5" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00"> char, std::char_traits</text>
+<text text-anchor="start" x="473.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; char &gt;, error::detail</text>
+<text text-anchor="middle" x="520" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::allocator&lt; char &gt; &gt;</text>
 </a>
 </g>
 </g>
@@ -175,11 +175,11 @@ var sectionId = 'dynsection-1';
 <g id="edge6_Node000001_Node000007" class="edge">
 <title>Node7&#45;&gt;Node1</title>
 <g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M621.3,-31.36C637.15,-32.49 653.68,-33.68 668.85,-34.76"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="621.23,-27.84 611,-30.62 620.73,-34.83 621.23,-27.84"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M585.18,-30.69C602.97,-31.99 622.2,-33.39 639.71,-34.67"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="585.12,-27.17 574.89,-29.94 584.61,-34.15 585.12,-27.17"/>
 </a>
 </g>
-<text text-anchor="middle" x="640" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> tag_</text>
+<text text-anchor="middle" x="611" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> tag_</text>
 </g>
 </g>
 </svg>

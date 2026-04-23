@@ -11,7 +11,7 @@ var src_2libs_2core_2vidre_2log_8cc =
     [ "name", "src_2libs_2core_2vidre_2log_8cc.html#a8f8f80d37794cde9472343e4487ba3eb", null ],
     [ "level", "src_2libs_2core_2vidre_2log_8cc.html#af4d81d27f3db15be76fb339ce749d9f0", null ],
     [ "brief", "src_2libs_2core_2vidre_2log_8cc.html#a7ee939335547a1a647378be5928fd4da", null ],
-    [ "setup_levels", "src_2libs_2core_2vidre_2log_8cc.html#ad95c8205e2076b8d55c988fb029bdbe5", null ],
+    [ "setup_levels", "src_2libs_2core_2vidre_2log_8cc.html#a1034e49f58f877f16cabf6f57900d803", null ],
     [ "level_invalid", "src_2libs_2core_2vidre_2log_8cc.html#a5902460b7b871167393db338d0e87acd", null ],
     [ "vidre_log_files", "src_2libs_2core_2vidre_2log_8cc.html#a14cbda732e28a0f60c2c2fa43a48e58c", null ]
 ];

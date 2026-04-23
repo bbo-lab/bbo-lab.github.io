@@ -123,7 +123,7 @@ $(function(){initNavTree('structvidre_1_1os_1_1memory.html',''); initResizable(t
 <p>Physical system memory overview.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="memory_8hh_source.html">vidre/os/memory.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="os_2memory_8hh_source.html">vidre/os/memory.hh</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Physical system memory overview. </p>
 <p><b>Example</b>: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="log_8hh.html">vidre/log.hh</a>&gt;</span></div>
@@ -143,7 +143,7 @@ $(function(){initNavTree('structvidre_1_1os_1_1memory.html',''); initResizable(t
 <div class="line">    }</div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span>, <span class="keyword">const</span> <span class="keywordtype">char</span> **) {</div>
+<div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="src_2apps_2tools_2uuid_8cc.html#a217dbf8b442f20279ea00b898af96f52">main</a>(<span class="keywordtype">int</span>, <span class="keyword">const</span> <span class="keywordtype">char</span> **) {</div>
 <div class="line">    <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a> info{};</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// === memory</span></div>
@@ -169,18 +169,18 @@ $(function(){initNavTree('structvidre_1_1os_1_1memory.html',''); initResizable(t
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="ttc" id="aclassvidre_1_1log_1_1info_html"><div class="ttname"><a href="classvidre_1_1log_1_1info.html">vidre::log::info</a></div><div class="ttdoc">Purely informational.</div><div class="ttdef"><b>Definition</b> log.hh:447</div></div>
-<div class="ttc" id="agroup__api-core-log-if_html_ga1577b0dcbee0ca055b143f0c988fcb2c"><div class="ttname"><a href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">vidre::log::endl</a></div><div class="ttdeci">static constexpr message_type endl</div><div class="ttdoc">End-of-line.</div><div class="ttdef"><b>Definition</b> log.hh:226</div></div>
+<div class="ttc" id="aclassvidre_1_1log_1_1info_html"><div class="ttname"><a href="classvidre_1_1log_1_1info.html">vidre::log::info</a></div><div class="ttdoc">Purely informational.</div><div class="ttdef"><b>Definition</b> log.hh:455</div></div>
+<div class="ttc" id="agroup__api-core-log-if_html_ga1577b0dcbee0ca055b143f0c988fcb2c"><div class="ttname"><a href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">vidre::log::endl</a></div><div class="ttdeci">static constexpr message_type endl</div><div class="ttdoc">End-of-line.</div><div class="ttdef"><b>Definition</b> log.hh:236</div></div>
 <div class="ttc" id="agroup__api-core-os-path_html_ga2b0c900161e3153879bb1c87b07e3f35"><div class="ttname"><a href="group__api-core-os-path.html#ga2b0c900161e3153879bb1c87b07e3f35">vidre::os::tmpdir</a></div><div class="ttdeci">std::filesystem::path tmpdir() noexcept</div><div class="ttdoc">Get system temporary directory.</div><div class="ttdef"><b>Definition</b> paths.cc:189</div></div>
 <div class="ttc" id="agroup__api-core-os-path_html_ga37c60d716b042fe4767075a013b7d1a2"><div class="ttname"><a href="group__api-core-os-path.html#ga37c60d716b042fe4767075a013b7d1a2">vidre::os::installdir</a></div><div class="ttdeci">std::filesystem::path installdir() noexcept</div><div class="ttdoc">System installation direction of VidRe.</div><div class="ttdef"><b>Definition</b> paths.cc:197</div></div>
 <div class="ttc" id="agroup__api-core-os-path_html_ga7fb3a071f2730739fab0aa17394417b4"><div class="ttname"><a href="group__api-core-os-path.html#ga7fb3a071f2730739fab0aa17394417b4">vidre::os::cachedir</a></div><div class="ttdeci">std::filesystem::path cachedir() noexcept</div><div class="ttdoc">Get user-local cache directory (for VidRe).</div><div class="ttdef"><b>Definition</b> paths.cc:193</div></div>
 <div class="ttc" id="agroup__api-core-os-path_html_gaf13e3b241e7fc5077eb521625c762118"><div class="ttname"><a href="group__api-core-os-path.html#gaf13e3b241e7fc5077eb521625c762118">vidre::os::configdir</a></div><div class="ttdeci">std::filesystem::path configdir() noexcept</div><div class="ttdoc">Get user-local configuration directory (for VidRe).</div><div class="ttdef"><b>Definition</b> paths.cc:185</div></div>
-<div class="ttc" id="agroup__api-core-os-tty_html_ga9ff232c97af564aa1110a2f2677739ed"><div class="ttname"><a href="group__api-core-os-tty.html#ga9ff232c97af564aa1110a2f2677739ed">vidre::os::isatty</a></div><div class="ttdeci">bool isatty(FILE *stream) noexcept</div><div class="ttdoc">Check, if a C-stream is a TTY.</div><div class="ttdef"><b>Definition</b> tty.hh:67</div></div>
+<div class="ttc" id="agroup__api-core-os-tty_html_ga9ff232c97af564aa1110a2f2677739ed"><div class="ttname"><a href="group__api-core-os-tty.html#ga9ff232c97af564aa1110a2f2677739ed">vidre::os::isatty</a></div><div class="ttdeci">bool isatty(FILE *stream) noexcept</div><div class="ttdoc">Check, if a C-stream is a TTY.</div><div class="ttdef"><b>Definition</b> tty.hh:71</div></div>
 <div class="ttc" id="alog_8hh_html"><div class="ttname"><a href="log_8hh.html">log.hh</a></div></div>
-<div class="ttc" id="amain_8cc_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="main_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition</b> main.cc:16</div></div>
 <div class="ttc" id="anamespacevidre_1_1device_1_1error_html_a40a10f36b45602a824830e33d5690c61"><div class="ttname"><a href="namespacevidre_1_1device_1_1error.html#a40a10f36b45602a824830e33d5690c61">vidre::device::error::info</a></div><div class="ttdeci">vidre::error::info info</div><div class="ttdef"><b>Definition</b> base.hh:196</div></div>
-<div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> midraw.hh:31</div></div>
+<div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> config.hh:31</div></div>
 <div class="ttc" id="aos_8hh_html"><div class="ttname"><a href="os_8hh.html">os.hh</a></div></div>
+<div class="ttc" id="asrc_2apps_2tools_2uuid_8cc_html_a217dbf8b442f20279ea00b898af96f52"><div class="ttname"><a href="src_2apps_2tools_2uuid_8cc.html#a217dbf8b442f20279ea00b898af96f52">main</a></div><div class="ttdeci">int main(int argc, const char **argv)</div><div class="ttdef"><b>Definition</b> uuid.cc:25</div></div>
 <div class="ttc" id="astructshow__memory_html"><div class="ttname"><a href="structshow__memory.html">show_memory</a></div><div class="ttdef"><b>Definition</b> os.cc:6</div></div>
 <div class="ttc" id="astructshow__memory_html_a04a9e5190df1f6b7d36aac8c71d1bed2"><div class="ttname"><a href="structshow__memory.html#a04a9e5190df1f6b7d36aac8c71d1bed2">show_memory::n</a></div><div class="ttdeci">std::size_t n</div><div class="ttdef"><b>Definition</b> os.cc:9</div></div>
 <div class="ttc" id="astructshow__memory_html_a08ddc3a2c16f6d26b5df3cdc8dc86637"><div class="ttname"><a href="structshow__memory.html#a08ddc3a2c16f6d26b5df3cdc8dc86637">show_memory::operator()</a></div><div class="ttdeci">Stream &amp; operator()(Stream &amp;outs) const noexcept</div><div class="ttdef"><b>Definition</b> os.cc:12</div></div>
@@ -283,8 +283,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>libs/core/vidre/os/<a class="el" href="memory_8hh_source.html">memory.hh</a></li>
-<li>libs/core/vidre/os/<a class="el" href="memory_8cc.html">memory.cc</a></li>
+<li>vidre/os/<a class="el" href="os_2memory_8hh_source.html">memory.hh</a></li>
+<li>vidre/os/<a class="el" href="os_2memory_8cc.html">memory.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,40 +1,40 @@
-<map id="libs/ffmpeg/vidre/ffmpeg/util/exception.hh" name="libs/ffmpeg/vidre/ffmpeg/util/exception.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="417,5,580,45"/>
-<area shape="rect" id="Node000002" href="$packet_8hh.html" title=" " alt="" coords="61,181,224,221"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="404,41,323,61,282,76,244,96,217,115,193,138,157,183,153,179,189,135,214,111,241,91,280,71,322,56,403,36"/>
-<area shape="rect" id="Node000004" href="$muxing_8hh.html" title=" " alt="" coords="192,269,355,309"/>
-<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="404,36,372,43,341,55,312,72,289,95,276,115,268,138,261,186,264,232,271,268,266,269,259,233,256,186,263,137,271,113,285,92,309,68,339,50,371,38,403,30"/>
-<area shape="rect" id="Node000009" href="$ffmpeg_2vidre_2ffmpeg_2util_8hh.html" title=" " alt="" coords="405,269,568,309"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="500,59,490,269,485,269,495,59"/>
-<area shape="rect" id="Node000010" href="$dictionary_8hh.html" title=" " alt="" coords="299,93,461,133"/>
-<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="463,56,408,95,405,91,460,51"/>
-<area shape="rect" id="Node000011" href="$ffmpeg_2vidre_2ffmpeg_2util_2exception_8cc.html" title=" " alt="" coords="773,93,936,133"/>
-<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="591,46,777,91,776,96,589,51"/>
-<area shape="rect" id="Node000012" href="$ffmpeg_2vidre_2ffmpeg_2util_2frame_8hh.html" title=" " alt="" coords="561,181,724,221"/>
-<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="520,55,577,132,623,179,620,183,573,135,516,58"/>
-<area shape="rect" id="Node000015" href="$pixelformat_8hh.html" title=" " alt="" coords="587,93,749,133"/>
-<area shape="poly" id="edge22_Node000001_Node000015" title=" " alt="" coords="549,49,632,91,630,96,547,54"/>
-<area shape="rect" id="Node000003" href="$codec_8hh.html" title=" " alt="" coords="5,269,168,309"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,234,101,271,97,268,121,232"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="184,227,246,267,243,271,181,231"/>
-<area shape="rect" id="Node000005" href="$ffmpeg_2vidre_2ffmpeg_2format_8hh.html" title=" " alt="" coords="192,357,355,397"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="276,323,276,357,271,357,271,323"/>
-<area shape="rect" id="Node000006" href="$ffmpeg_8hh.html" title=" " alt="" coords="430,445,610,471"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="346,399,485,443,483,448,345,404"/>
-<area shape="rect" id="Node000007" href="$main_8cc.html" title=" " alt="" coords="545,519,724,544"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="551,475,617,516,615,521,548,480"/>
-<area shape="rect" id="Node000008" href="$ffmpeg_8cc.html" title=" " alt="" coords="327,519,507,544"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="494,481,436,521,433,516,491,476"/>
-<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="496,322,520,445,515,446,491,323"/>
-<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="471,322,444,379,421,446,417,485,419,518,413,518,412,485,416,445,439,377,466,320"/>
-<area shape="poly" id="edge13_Node000010_Node000002" title=" " alt="" coords="316,141,196,184,194,179,314,136"/>
-<area shape="poly" id="edge14_Node000010_Node000004" title=" " alt="" coords="363,147,287,271,283,268,359,144"/>
-<area shape="poly" id="edge15_Node000010_Node000009" title=" " alt="" coords="401,144,477,268,473,271,397,147"/>
-<area shape="poly" id="edge21_Node000012_Node000009" title=" " alt="" coords="598,230,522,272,520,267,595,226"/>
-<area shape="rect" id="Node000013" href="$midraw_8hh.html" title=" " alt="" coords="592,269,752,309"/>
-<area shape="poly" id="edge18_Node000012_Node000013" title=" " alt="" coords="656,234,668,268,663,270,651,235"/>
-<area shape="poly" id="edge20_Node000013_Node000007" title=" " alt="" coords="670,323,639,519,634,518,664,322"/>
-<area shape="rect" id="Node000014" href="$midraw_8cc.html" title=" " alt="" coords="685,357,845,397"/>
-<area shape="poly" id="edge19_Node000013_Node000014" title=" " alt="" coords="705,317,746,355,743,359,701,321"/>
-<area shape="poly" id="edge23_Node000015_Node000012" title=" " alt="" coords="661,147,651,182,646,180,656,146"/>
+<map id="vidre/ffmpeg/util/exception.hh" name="vidre/ffmpeg/util/exception.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="361,5,555,31"/>
+<area shape="rect" id="Node000002" href="$ffmpeg_2vidre_2ffmpeg_2codec_2packet_8hh.html" title=" " alt="" coords="21,152,154,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="348,29,260,47,216,61,174,81,152,97,132,116,101,154,97,150,128,112,148,93,171,76,214,56,259,41,347,24"/>
+<area shape="rect" id="Node000004" href="$muxing_8hh.html" title=" " alt="" coords="180,247,315,287"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="350,35,269,54,238,66,219,80,208,100,203,121,203,144,206,167,221,211,238,246,233,248,216,214,201,169,197,145,197,121,203,98,215,77,235,61,268,49,349,30"/>
+<area shape="rect" id="Node000009" href="$ffmpeg_2vidre_2ffmpeg_2util_8hh.html" title=" " alt="" coords="386,255,519,280"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="460,45,456,254,450,254,455,45"/>
+<area shape="rect" id="Node000010" href="$dictionary_8hh.html" title=" " alt="" coords="229,79,420,104"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="426,39,348,81,345,76,423,35"/>
+<area shape="rect" id="Node000011" href="$ffmpeg_2vidre_2ffmpeg_2util_2exception_8cc.html" title=" " alt="" coords="772,79,965,104"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="538,30,803,76,802,81,537,36"/>
+<area shape="rect" id="Node000012" href="$ffmpeg_2vidre_2ffmpeg_2util_2frame_8hh.html" title=" " alt="" coords="529,159,699,185"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="478,39,537,102,601,157,597,161,533,106,475,43"/>
+<area shape="rect" id="Node000015" href="$pixelformat_8hh.html" title=" " alt="" coords="547,79,748,104"/>
+<area shape="poly" id="edge22_Node000001_Node000015" title=" " alt="" coords="502,33,617,76,615,81,500,38"/>
+<area shape="rect" id="Node000003" href="$codec_8hh.html" title=" " alt="" coords="5,255,156,280"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,206,84,255,79,254,82,205"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="133,197,216,245,214,250,130,201"/>
+<area shape="rect" id="Node000005" href="$ffmpeg_2vidre_2ffmpeg_2format_8hh.html" title=" " alt="" coords="171,357,324,383"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="250,301,250,357,245,357,245,301"/>
+<area shape="rect" id="Node000006" href="$ffmpeg_8hh.html" title=" " alt="" coords="399,445,511,471"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="289,386,428,443,426,448,287,390"/>
+<area shape="rect" id="Node000007" href="$main_8cc.html" title=" " alt="" coords="443,519,671,573"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="481,477,527,517,524,521,478,481"/>
+<area shape="rect" id="Node000008" href="$ffmpeg_8cc.html" title=" " alt="" coords="306,533,418,559"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="434,482,377,535,373,531,431,478"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="456,294,458,445,453,445,450,294"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="445,294,419,362,390,446,367,534,362,532,385,445,414,360,440,292"/>
+<area shape="poly" id="edge13_Node000010_Node000002" title=" " alt="" coords="278,111,145,154,144,149,276,106"/>
+<area shape="poly" id="edge14_Node000010_Node000004" title=" " alt="" coords="316,118,258,248,253,246,312,116"/>
+<area shape="poly" id="edge15_Node000010_Node000009" title=" " alt="" coords="343,114,446,253,442,256,339,117"/>
+<area shape="poly" id="edge21_Node000012_Node000009" title=" " alt="" coords="584,194,474,257,471,252,581,189"/>
+<area shape="rect" id="Node000013" href="$midraw_8hh.html" title=" " alt="" coords="544,240,772,295"/>
+<area shape="poly" id="edge18_Node000012_Node000013" title=" " alt="" coords="628,196,648,239,643,241,623,198"/>
+<area shape="poly" id="edge20_Node000013_Node000007" title=" " alt="" coords="615,306,599,324,586,344,569,389,560,437,558,518,552,518,555,437,564,388,581,341,594,321,611,302"/>
+<area shape="rect" id="Node000014" href="$midraw_8cc.html" title=" " alt="" coords="595,343,823,397"/>
+<area shape="poly" id="edge19_Node000013_Node000014" title=" " alt="" coords="680,306,698,341,693,344,675,308"/>
+<area shape="poly" id="edge23_Node000015_Node000012" title=" " alt="" coords="640,118,621,160,616,158,635,115"/>
 </map>

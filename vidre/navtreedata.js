@@ -50,7 +50,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
@@ -63,6 +63,7 @@ var NAVTREE =
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ],
@@ -73,14 +74,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_2home_2sawinski_2Workspace_2MPINB_2vidre_2src_2libs_2core_2vidre_2util_2shared_8hh-example.html",
-"classvidre_1_1ffmpeg_1_1packet.html#aa349b154bd959240648ae1eeb270dd3b",
-"classvidre_1_1storage_1_1ccv.html#a5a6b55f4f80839ca6f93699517fa006c",
-"classvidre_1_1variant.html#aec4b106eeae1d296bc0f63ba63304cda",
-"examples_2playground_2uvc_8cc.html#a35123907be4be9f3d7d6561efac55aa5",
-"group__api-core-storage-raw.html#gga5fa0321a86ee103a5c9da9fecb857d84a8d777f385d3dfec8815d20f7496026dc",
-"group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ac7ab1aba0728d0ebe74b8afd26c0a03f",
-"structfixed_1_1header.html#a0dae6faa7033e94dccebded15adb64c9",
-"tty_8hh_source.html"
+"classvidre_1_1ffmpeg_1_1frame.html#aed01cbe16e2ea07d1e6f968ffdd9d329",
+"classvidre_1_1log_1_1notice.html#abeaf851c98d14f1d5665ab98cb27baa9",
+"classvidre_1_1storage_1_1ccv_1_1header.html#a4a9625de8141fd64d727d92dd372cffe",
+"dev-goals.html#dev-frontend",
+"fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a70d831c8685ddf61857a6d0e41eb5889",
+"group__api-config-have.html#ga90b7d338bcf58ee5620c65c8b9bc0a47",
+"group__api-core-util-filesystem.html#gad987b505f807a7cdc050d2f8836659a4",
+"group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146adb89a9da565723ef77473ec650a05b0a",
+"script_8hh.html",
+"structvidre_1_1plugin_1_1endpoint.html#a5d1e6bece23ec4ece26fa84b85f04dfb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -1,13 +1,13 @@
-<map id="libs/core/vidre/plugin.hh" name="libs/core/vidre/plugin.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="415,5,574,31"/>
+<map id="vidre/plugin.hh" name="vidre/plugin.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="439,5,545,31"/>
 <area shape="rect" id="Node000002" href="$plugins_8cc.html" title=" " alt="" coords="5,79,208,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="428,36,221,81,209,84,208,79,219,76,427,31"/>
-<area shape="rect" id="Node000003" href="$plugin_8cc.html" title=" " alt="" coords="233,93,391,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="459,39,338,95,336,91,457,34"/>
-<area shape="rect" id="Node000004" href="$dummy_8cc.html" title=" " alt="" coords="416,86,573,126"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="497,44,497,86,492,86,492,44"/>
-<area shape="rect" id="Node000005" href="$check_8cc.html" title=" " alt="" coords="598,86,754,126"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="532,34,637,83,635,88,530,39"/>
-<area shape="rect" id="Node000006" href="$midlib2_8cc.html" title=" " alt="" coords="778,86,934,126"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="566,31,767,76,794,83,793,89,766,81,565,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="426,36,221,81,209,84,208,79,219,76,425,31"/>
+<area shape="rect" id="Node000003" href="$dummy_8cc.html" title=" " alt="" coords="232,86,389,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="457,39,352,88,350,83,454,34"/>
+<area shape="rect" id="Node000004" href="$check_8cc.html" title=" " alt="" coords="414,86,570,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="495,44,495,86,489,86,489,44"/>
+<area shape="rect" id="Node000005" href="$midlib2_8cc.html" title=" " alt="" coords="594,86,750,126"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="529,34,633,83,631,88,527,39"/>
+<area shape="rect" id="Node000006" href="$plugin_8cc.html" title=" " alt="" coords="775,93,881,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="559,28,656,48,763,76,803,91,801,96,762,81,655,53,558,33"/>
 </map>

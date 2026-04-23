@@ -18,6 +18,7 @@ var classvidre_1_1uuid =
     [ "uuid", "classvidre_1_1uuid.html#aab52f5f7d26380e10c8300f6fff22245", null ],
     [ "uuid", "classvidre_1_1uuid.html#afa3f6b85d01f44f2a110746e6892b958", null ],
     [ "uuid", "classvidre_1_1uuid.html#ab6b8559236da9a26dd52b499391bb3f8", null ],
+    [ "uuid", "classvidre_1_1uuid.html#a0644b5f9242d517be80948bfcf9c6e74", null ],
     [ "make", "classvidre_1_1uuid.html#a8787c0e6688cf56bc97290ad70c3ce20", null ],
     [ "makeTime", "classvidre_1_1uuid.html#a89f0b020b55fdedda6741c75b27cef6e", null ],
     [ "makeTimeSafe", "classvidre_1_1uuid.html#a0565a662ac8b625852cd7b547f8ffad9", null ],
@@ -30,5 +31,6 @@ var classvidre_1_1uuid =
     [ "operator std::string", "classvidre_1_1uuid.html#a68c751897a73896c9857497c8c3269cb", null ],
     [ "operator==", "classvidre_1_1uuid.html#a30510b303b2cd31dd29f0aa7094d5a31", null ],
     [ "operator==", "classvidre_1_1uuid.html#a39995739f980b35a2e260036612d4084", null ],
+    [ "hash", "classvidre_1_1uuid.html#aed892bb8d1109f4b77d0030d9a22da09", null ],
     [ "uuid_", "classvidre_1_1uuid.html#a9f30b0c73db995dce3ffdb205fc433ee", null ]
 ];

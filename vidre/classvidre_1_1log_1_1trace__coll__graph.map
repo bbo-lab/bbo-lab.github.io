@@ -1,6 +1,6 @@
 <map id="vidre::log::trace" name="vidre::log::trace">
 <area shape="rect" id="Node000001" title="Log trace." alt="" coords="96,108,208,133"/>
-<area shape="rect" id="Node000002" href="$classvidre_1_1log_1_1handler.html" title="Log message handler." alt="" coords="5,13,131,38"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1log_1_1handler.html" title=" " alt="" coords="5,13,131,38"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,46,144,106,140,110,85,50"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="155,5,317,45"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,58,165,109,161,106,208,54"/>

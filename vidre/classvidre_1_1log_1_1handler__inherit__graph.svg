@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Log message handler.">
+<g id="a_Node000001"><a xlink:title=" ">
 <polygon fill="#999999" stroke="#666666" points="94,-167 0,-167 0,-148 94,-148 94,-167"/>
 <text text-anchor="middle" x="47" y="-155" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::log::handler</text>
 </a>

@@ -2,7 +2,6 @@ var dev =
 [
     [ "Topics", "dev.html#dev-topics", null ],
     [ "Overview", "dev-overview.html", null ],
-    [ "Coding style and documentation", "dev-style.html", null ],
     [ "Design goals", "dev-goals.html", [
       [ "Overview", "dev-goals.html#dev-goals-overview", [
         [ "Backend", "dev-goals.html#dev-backend", [
@@ -35,5 +34,8 @@ var dev =
           [ "Settings", "dev-goals.html#core-settings", null ]
         ] ]
       ] ]
-    ] ]
+    ] ],
+    [ "Coding style", "dev-style.html", null ],
+    [ "Documentation", "dev-docs.html", null ],
+    [ "Attribution", "dev-attribution.html", null ]
 ];

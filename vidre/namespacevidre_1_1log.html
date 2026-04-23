@@ -123,16 +123,10 @@ $(function(){initNavTree('namespacevidre_1_1log.html',''); initResizable(true); 
   <div class="headertitle"><div class="title">vidre::log Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Message logging interface.  
-<a href="#details">More...</a></p>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Message logging interface. </p>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1log_1_1io.html">io</a></td></tr>
-<tr class="memdesc:namespacevidre_1_1log_1_1io"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging IO. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -156,7 +150,6 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">File logger.  <a href="classvidre_1_1log_1_1io_1_1file.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1log_1_1handler.html">handler</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log message handler.  <a href="classvidre_1_1log_1_1handler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1log_1_1info.html">info</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purely informational.  <a href="classvidre_1_1log_1_1info.html#details">More...</a><br /></td></tr>
@@ -234,109 +227,23 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a388f2da64b353809ca10bc3b4dbf7cc4" id="r_a388f2da64b353809ca10bc3b4dbf7cc4"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a388f2da64b353809ca10bc3b4dbf7cc4">level_n</a> = 10</td></tr>
-<tr class="separator:a388f2da64b353809ca10bc3b4dbf7cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7625a30ab5fbb87dae61f4addfd5dc63" id="r_a7625a30ab5fbb87dae61f4addfd5dc63"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7625a30ab5fbb87dae61f4addfd5dc63">level_min</a> = static_cast&lt;int&gt;(<a class="el" href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecadf6402fd9ecc60f5a2159fdf45711cd4">level::fatal</a>)</td></tr>
-<tr class="separator:a7625a30ab5fbb87dae61f4addfd5dc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8226791964f115d55b58f319d716ccfa" id="r_a8226791964f115d55b58f319d716ccfa"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8226791964f115d55b58f319d716ccfa">level_max</a> = std::numeric_limits&lt;int&gt;::max()</td></tr>
-<tr class="separator:a8226791964f115d55b58f319d716ccfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91d20bd99261c731592be8c65fedc951" id="r_a91d20bd99261c731592be8c65fedc951"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91d20bd99261c731592be8c65fedc951">level_default</a> = static_cast&lt;int&gt;(<a class="el" href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecacaf9b6b99962bf5c2264824231d7a40c">level::info</a>)</td></tr>
-<tr class="separator:a91d20bd99261c731592be8c65fedc951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga388f2da64b353809ca10bc3b4dbf7cc4" id="r_ga388f2da64b353809ca10bc3b4dbf7cc4"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga388f2da64b353809ca10bc3b4dbf7cc4">level_n</a> = 10</td></tr>
+<tr class="memdesc:ga388f2da64b353809ca10bc3b4dbf7cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of discernable log levels.  <br /></td></tr>
+<tr class="separator:ga388f2da64b353809ca10bc3b4dbf7cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7625a30ab5fbb87dae61f4addfd5dc63" id="r_ga7625a30ab5fbb87dae61f4addfd5dc63"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga7625a30ab5fbb87dae61f4addfd5dc63">level_min</a> = static_cast&lt;int&gt;(<a class="el" href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecadf6402fd9ecc60f5a2159fdf45711cd4">level::fatal</a>)</td></tr>
+<tr class="memdesc:ga7625a30ab5fbb87dae61f4addfd5dc63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum log level (as integer).  <br /></td></tr>
+<tr class="separator:ga7625a30ab5fbb87dae61f4addfd5dc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8226791964f115d55b58f319d716ccfa" id="r_ga8226791964f115d55b58f319d716ccfa"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga8226791964f115d55b58f319d716ccfa">level_max</a> = std::numeric_limits&lt;int&gt;::max()</td></tr>
+<tr class="memdesc:ga8226791964f115d55b58f319d716ccfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum log level (as integer).  <br /></td></tr>
+<tr class="separator:ga8226791964f115d55b58f319d716ccfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga91d20bd99261c731592be8c65fedc951" id="r_ga91d20bd99261c731592be8c65fedc951"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga91d20bd99261c731592be8c65fedc951">level_default</a> = static_cast&lt;int&gt;(<a class="el" href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecacaf9b6b99962bf5c2264824231d7a40c">level::info</a>)</td></tr>
+<tr class="separator:ga91d20bd99261c731592be8c65fedc951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1577b0dcbee0ca055b143f0c988fcb2c" id="r_ga1577b0dcbee0ca055b143f0c988fcb2c"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d">message_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">endl</a> = {&quot;\n&quot;, 1}</td></tr>
 <tr class="memdesc:ga1577b0dcbee0ca055b143f0c988fcb2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">End-of-line.  <br /></td></tr>
 <tr class="separator:ga1577b0dcbee0ca055b143f0c988fcb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga54c4d30d637a3c5ef4f42adea9a1bd42" id="r_ga54c4d30d637a3c5ef4f42adea9a1bd42"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d">message_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga54c4d30d637a3c5ef4f42adea9a1bd42">indent_s</a> = {&quot; &quot;, 4}</td></tr>
 <tr class="separator:ga54c4d30d637a3c5ef4f42adea9a1bd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a388f2da64b353809ca10bc3b4dbf7cc4" name="a388f2da64b353809ca10bc3b4dbf7cc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a388f2da64b353809ca10bc3b4dbf7cc4">&#9670;&#160;</a></span>level_n</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned vidre::log::level_n = 10</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7625a30ab5fbb87dae61f4addfd5dc63" name="a7625a30ab5fbb87dae61f4addfd5dc63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7625a30ab5fbb87dae61f4addfd5dc63">&#9670;&#160;</a></span>level_min</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vidre::log::level_min = static_cast&lt;int&gt;(<a class="el" href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecadf6402fd9ecc60f5a2159fdf45711cd4">level::fatal</a>)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8226791964f115d55b58f319d716ccfa" name="a8226791964f115d55b58f319d716ccfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8226791964f115d55b58f319d716ccfa">&#9670;&#160;</a></span>level_max</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vidre::log::level_max = std::numeric_limits&lt;int&gt;::max()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a91d20bd99261c731592be8c65fedc951" name="a91d20bd99261c731592be8c65fedc951"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91d20bd99261c731592be8c65fedc951">&#9670;&#160;</a></span>level_default</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int vidre::log::level_default = static_cast&lt;int&gt;(<a class="el" href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecacaf9b6b99962bf5c2264824231d7a40c">level::info</a>)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

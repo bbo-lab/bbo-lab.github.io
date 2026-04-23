@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['yaml_0',['YAML',['../group__api-core-settings-yaml.html',1,'']]]
+  ['wrapper_0',['OnSemi MIDlib2 wrapper',['../group__api-device-onsemi.html',1,'']]]
 ];

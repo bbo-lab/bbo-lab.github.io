@@ -1,7 +1,0 @@
-<map id="vidre::storage::raw::entry" name="vidre::storage::raw::entry">
-<area shape="rect" id="Node000001" title="Generic TLV item." alt="" coords="14,183,145,223"/>
-<area shape="rect" id="Node000002" href="$structvidre_1_1storage_1_1raw_1_1prefix.html" title="The &quot;TL&quot; prefix." alt="" coords="14,80,145,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,134,82,183,77,183,77,134"/>
-<area shape="rect" id="Node000003" href="$structvidre_1_1storage_1_1raw_1_1id.html" title="The &quot;T&quot; type." alt="" coords="5,5,153,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="82,44,82,80,77,80,77,44"/>
-</map>

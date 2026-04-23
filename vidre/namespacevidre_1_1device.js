@@ -2,7 +2,6 @@ var namespacevidre_1_1device =
 [
     [ "error", "namespacevidre_1_1device_1_1error.html", "namespacevidre_1_1device_1_1error" ],
     [ "base", "classvidre_1_1device_1_1base.html", "classvidre_1_1device_1_1base" ],
-    [ "camera", "classvidre_1_1device_1_1camera.html", "classvidre_1_1device_1_1camera" ],
     [ "exception", "classvidre_1_1device_1_1exception.html", "classvidre_1_1device_1_1exception" ],
     [ "shared", "group__api-device-basics.html#ga9e81499dd26085fcff5646e8d779ba27", null ],
     [ "list", "group__api-device-basics.html#gad0a10c8a1950715442b5d0dcd8a46a03", null ],

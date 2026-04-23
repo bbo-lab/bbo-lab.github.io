@@ -1,11 +1,13 @@
-<map id="libs/core/vidre/util/develop.hh" name="libs/core/vidre/util/develop.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="361,5,485,45"/>
-<area shape="rect" id="Node000002" href="$examples_2core_2develop_8cc.html" title=" " alt="" coords="5,93,196,148"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="349,51,192,96,191,91,348,46"/>
-<area shape="rect" id="Node000003" href="$plugins_8cc.html" title=" " alt="" coords="221,93,423,148"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="394,57,352,95,349,91,391,53"/>
-<area shape="rect" id="Node000004" href="$src_2libs_2core_2vidre_2script_8cc.html" title=" " alt="" coords="447,108,605,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="456,53,515,106,511,110,453,57"/>
-<area shape="rect" id="Node000005" href="$src_2libs_2core_2vidre_2util_2develop_8cc.html" title=" " alt="" coords="629,101,753,141"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="492,47,618,91,638,98,637,103,616,96,490,52"/>
+<map id="vidre/util/develop.hh" name="vidre/util/develop.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="430,5,569,31"/>
+<area shape="rect" id="Node000002" href="$examples_2core_2develop_8cc.html" title=" " alt="" coords="5,79,196,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="428,36,209,81,197,84,195,79,208,76,427,31"/>
+<area shape="rect" id="Node000003" href="$plugins_8cc.html" title=" " alt="" coords="221,79,423,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="464,39,377,81,375,76,462,34"/>
+<area shape="rect" id="Node000004" href="$src_2libs_2core_2vidre_2script_8cc.html" title=" " alt="" coords="447,93,551,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="502,45,502,93,497,93,497,45"/>
+<area shape="rect" id="Node000005" href="$util_8cc.html" title=" " alt="" coords="576,93,665,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="529,37,606,91,603,95,526,41"/>
+<area shape="rect" id="Node000006" href="$src_2libs_2core_2vidre_2util_2develop_8cc.html" title=" " alt="" coords="690,93,829,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="548,33,725,91,724,96,547,38"/>
 </map>

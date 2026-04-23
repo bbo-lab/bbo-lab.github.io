@@ -2,12 +2,19 @@ var searchData=
 [
   ['d3d11_0',['d3d11',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a6590a43543d53241ebf77667ac85f2a7',1,'vidre::ffmpeg']]],
   ['d3d11va_5fvld_1',['d3d11va_vld',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ab8381096479e4172895f8b3b2b4b8925',1,'vidre::ffmpeg']]],
-  ['data_2',['data',['../group__api-core-storage-raw.html#gga5fa0321a86ee103a5c9da9fecb857d84a8d777f385d3dfec8815d20f7496026dc',1,'vidre::storage::raw']]],
-  ['dce_3',['DCE',['../classvidre_1_1uuid.html#ac551c936acd5ce8a261aede0e8685825a7ec86cdcd1ba706dcb1764fabd5ad86a',1,'vidre::uuid']]],
-  ['debug_4',['debug',['../group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecaad42f6697b035b7580e4fef93be20b4d',1,'vidre::log']]],
-  ['disabled_5',['disabled',['../group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772a075ae3d2fc31640504f814f60e5ef713',1,'vidre::device']]],
-  ['discard_6',['discard',['../classvidre_1_1ffmpeg_1_1packet.html#a79008614186dc48447d2959bce849bf6a28a00c1b5853e8207f5ea678ea260c26',1,'vidre::ffmpeg::packet']]],
-  ['disposable_7',['disposable',['../classvidre_1_1ffmpeg_1_1packet.html#a79008614186dc48447d2959bce849bf6a1fcf7e51630e44afaaf8658e2b62ce99',1,'vidre::ffmpeg::packet']]],
-  ['drm_5fprime_8',['drm_prime',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a013fcb8e23ee86a65053af9c4ab42946',1,'vidre::ffmpeg']]],
-  ['dxva2_5fvld_9',['dxva2_vld',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a15e9a382986cb34f26b4ef8ad00d08ad',1,'vidre::ffmpeg']]]
+  ['d4xx_2',['d4xx',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1aadaa04784bc205e323028c17a2a5dc6b',1,'fourcc.hh']]],
+  ['data_3',['data',['../group__api-core-storage-raw.html#gga5fa0321a86ee103a5c9da9fecb857d84a8d777f385d3dfec8815d20f7496026dc',1,'vidre::storage::raw']]],
+  ['datasync_4',['datasync',['../classvidre_1_1io_1_1file.html#a0c47435cd7b23eb2637e33ac65febae0aa919a25c09b5e0e533111577995cff53',1,'vidre::io::file::datasync'],['../group__api-core-io-details.html#gga65631992ba8134713383ea280dc9ce81aa919a25c09b5e0e533111577995cff53',1,'vidre::detail::io::file::datasync']]],
+  ['dce_5',['DCE',['../classvidre_1_1uuid.html#ac551c936acd5ce8a261aede0e8685825a7ec86cdcd1ba706dcb1764fabd5ad86a',1,'vidre::uuid::DCE'],['../namespacevidre_1_1detail_1_1uuid.html#ab844fa5adea2f4c5dfe77209ee07b6bda2e0d61fe52a311675ea3efe5a94549af',1,'vidre::detail::uuid::DCE']]],
+  ['deadline_6',['deadline',['../structvidre_1_1detail_1_1schedule.html#adf5f0b0a49c40144989d7da46702b913aa3a13ddc23c56c184449aa5609bf0e8d',1,'vidre::detail::schedule']]],
+  ['debug_7',['debug',['../group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecaad42f6697b035b7580e4fef93be20b4d',1,'vidre::log']]],
+  ['delta_5ftd08_8',['delta_td08',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a01adc55040b6cff4198663fd5be28095',1,'fourcc.hh']]],
+  ['delta_5ftd16_9',['delta_td16',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a78ced611632fe1ff37dfa4327d188f16',1,'fourcc.hh']]],
+  ['direct_10',['direct',['../classvidre_1_1io_1_1file_1_1sink.html#a461a410d92e16d034a03d381f188ed92a68ea3275a81900f1073d62d2d7efc8fc',1,'vidre::io::file::sink::direct'],['../classvidre_1_1io_1_1file.html#a0c47435cd7b23eb2637e33ac65febae0a7caa701b2bd5a182b80c72b9bdf88e2d',1,'vidre::io::file::direct'],['../group__api-core-io-details.html#gga65631992ba8134713383ea280dc9ce81a7caa701b2bd5a182b80c72b9bdf88e2d',1,'vidre::detail::io::file::direct']]],
+  ['disabled_11',['disabled',['../group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772a075ae3d2fc31640504f814f60e5ef713',1,'vidre::device']]],
+  ['discard_12',['discard',['../classvidre_1_1ffmpeg_1_1packet.html#a79008614186dc48447d2959bce849bf6a28a00c1b5853e8207f5ea678ea260c26',1,'vidre::ffmpeg::packet']]],
+  ['disposable_13',['disposable',['../classvidre_1_1ffmpeg_1_1packet.html#a79008614186dc48447d2959bce849bf6a1fcf7e51630e44afaaf8658e2b62ce99',1,'vidre::ffmpeg::packet']]],
+  ['drm_5fprime_14',['drm_prime',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a013fcb8e23ee86a65053af9c4ab42946',1,'vidre::ffmpeg']]],
+  ['dv_15',['dv',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a80457cf3a7b15afb8f491f8ae06680db',1,'fourcc.hh']]],
+  ['dxva2_5fvld_16',['dxva2_vld',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a15e9a382986cb34f26b4ef8ad00d08ad',1,'vidre::ffmpeg']]]
 ];

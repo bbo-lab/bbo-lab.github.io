@@ -1,5 +1,5 @@
-<map id="libs/core/vidre/settings.hh" name="libs/core/vidre/settings.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="847,5,1017,31"/>
+<map id="vidre/settings.hh" name="vidre/settings.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="873,5,991,31"/>
 <area shape="rect" id="Node000002" href="$libs_2core_2vidre_2core_2config_8hh.html" title=" " alt="" coords="813,299,949,324"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="933,31,888,286,883,285,927,30"/>
 <area shape="rect" id="Node000005" href="$script_8hh.html" title=" " alt="" coords="301,152,405,177"/>
@@ -30,7 +30,7 @@
 <area shape="rect" id="Node000020" title=" " alt="" coords="561,152,620,177"/>
 <area shape="poly" id="edge25_Node000009_Node000020" title=" " alt="" coords="735,106,632,149,630,144,733,102"/>
 <area shape="poly" id="edge13_Node000010_Node000002" title=" " alt="" coords="688,180,666,194,647,212,636,231,636,240,641,249,665,266,704,279,800,298,799,303,702,284,662,270,637,252,631,241,631,230,643,208,663,190,685,175"/>
-<area shape="rect" id="Node000011" href="$util_2shared_8hh.html" title=" " alt="" coords="294,225,426,251"/>
+<area shape="rect" id="Node000011" href="$shared_8hh.html" title=" " alt="" coords="294,225,426,251"/>
 <area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="653,180,430,225,429,220,652,175"/>
 <area shape="rect" id="Node000017" title=" " alt="" coords="651,225,765,251"/>
 <area shape="poly" id="edge21_Node000010_Node000017" title=" " alt="" coords="711,178,711,212,705,212,705,178"/>

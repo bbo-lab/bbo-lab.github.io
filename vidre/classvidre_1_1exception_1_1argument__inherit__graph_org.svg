@@ -74,9 +74,9 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classvidre_1_1detail_1_1exception_1_1supplement.html" target="_top" xlink:title="Supplemental information for exceptions.">
-<polygon fill="white" stroke="#666666" points="123.5,-250 8.5,-250 8.5,-220 123.5,-220 123.5,-250"/>
-<text text-anchor="start" x="16.5" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::detail::exception</text>
+<g id="a_Node000005"><a xlink:href="classvidre_1_1error_1_1detail_1_1supplement.html" target="_top" xlink:title="Supplemental information for exceptions.">
+<polygon fill="white" stroke="#666666" points="112,-250 20,-250 20,-220 112,-220 112,-250"/>
+<text text-anchor="start" x="28" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::error::detail</text>
 <text text-anchor="middle" x="66" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00">::supplement</text>
 </a>
 </g>

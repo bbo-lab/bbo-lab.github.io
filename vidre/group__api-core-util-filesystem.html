@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VidRe: File-system tools.</title>
+<title>VidRe: File-system tools</title>
 <link rel="icon" href="vidre.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -114,18 +114,18 @@ $(function(){initNavTree('group__api-core-util-filesystem.html',''); initResizab
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">File-system tools.<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-util.html">Utilities</a></div></div></div>
+  <div class="headertitle"><div class="title">File-system tools<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-util.html">Utilities</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for File-system tools.:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for File-system tools:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__api-core-util-filesystem.svg" width="252" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__api-core-util-filesystem.svg" width="248" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p><a class="el" href="filesystem_8hh.html">libs/core/vidre/util/filesystem.hh</a> </p>
+<p><a class="el" href="filesystem_8hh.html">vidre/util/filesystem.hh</a> </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -134,6 +134,9 @@ Functions</h2></td></tr>
 <tr class="separator:ga1eec9f7a63a64696bf67c144f46e66ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4866562f40b7e38c0577ec4177567e46" id="r_ga4866562f40b7e38c0577ec4177567e46"><td class="memItemLeft" align="right" valign="top">std::vector&lt; fs::path &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4866562f40b7e38c0577ec4177567e46">vidre::find_files</a> (const fs::path &amp;root, const char *pattern)</td></tr>
 <tr class="separator:ga4866562f40b7e38c0577ec4177567e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae69fb1392e7701df7defcfb653ca2f02" id="r_gae69fb1392e7701df7defcfb653ca2f02"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:gae69fb1392e7701df7defcfb653ca2f02"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; fs::path &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#gae69fb1392e7701df7defcfb653ca2f02">vidre::find_files</a> (const fs::path &amp;root, const char(&amp;pattern)[N])</td></tr>
+<tr class="separator:gae69fb1392e7701df7defcfb653ca2f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad987b505f807a7cdc050d2f8836659a4" id="r_gad987b505f807a7cdc050d2f8836659a4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad987b505f807a7cdc050d2f8836659a4">vidre::loadfile</a> (const fs::path &amp;filename)</td></tr>
 <tr class="memdesc:gad987b505f807a7cdc050d2f8836659a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a file.  <br /></td></tr>
 <tr class="separator:gad987b505f807a7cdc050d2f8836659a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,7 +146,7 @@ Functions</h2></td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga1eec9f7a63a64696bf67c144f46e66ab" name="ga1eec9f7a63a64696bf67c144f46e66ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1eec9f7a63a64696bf67c144f46e66ab">&#9670;&#160;</a></span>find_files() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1eec9f7a63a64696bf67c144f46e66ab">&#9670;&#160;</a></span>find_files() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +168,7 @@ Functions</h2></td></tr>
 <p>Find files recursively using regex-pattern. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">root</td><td>The start directory. </td></tr>
-    <tr><td class="paramname">patter</td><td>Regex pattern (default: ECMAscript, eg. <code>R"(^file[.]cpp$)"</code> ). Example: <div class="fragment"><div class="line"><span class="keyword">auto</span> <a class="code hl_function" href="examples_2playground_2uvc_8cc.html#ad6c0a7f201391971e72b1b06ec94efaf">list</a> = <a class="code hl_function" href="#ga1eec9f7a63a64696bf67c144f46e66ab">find_files</a>(<span class="stringliteral">&quot;/tmp&quot;</span>, R<span class="stringliteral">&quot;(.*[.]cfg$)&quot;);</span></div>
+    <tr><td class="paramname">pattern</td><td>Regex pattern (default: ECMAscript, eg. <code>R"(^file[.]cpp$)"</code> ). Example: <div class="fragment"><div class="line"><span class="keyword">auto</span> <a class="code hl_function" href="examples_2playground_2uvc_8cc.html#ad6c0a7f201391971e72b1b06ec94efaf">list</a> = <a class="code hl_function" href="#ga1eec9f7a63a64696bf67c144f46e66ab">find_files</a>(<span class="stringliteral">&quot;/tmp&quot;</span>, R<span class="stringliteral">&quot;(.*[.]cfg$)&quot;);</span></div>
 <div class="ttc" id="aexamples_2playground_2uvc_8cc_html_ad6c0a7f201391971e72b1b06ec94efaf"><div class="ttname"><a href="examples_2playground_2uvc_8cc.html#ad6c0a7f201391971e72b1b06ec94efaf">list</a></div><div class="ttdeci">void list(program::argument::parser &amp;, variant)</div><div class="ttdef"><b>Definition</b> uvc.cc:39</div></div>
 <div class="ttc" id="agroup__api-core-util-filesystem_html_ga1eec9f7a63a64696bf67c144f46e66ab"><div class="ttname"><a href="#ga1eec9f7a63a64696bf67c144f46e66ab">vidre::find_files</a></div><div class="ttdeci">std::vector&lt; fs::path &gt; find_files(const fs::path &amp;root, const std::regex &amp;pattern)</div><div class="ttdoc">Pull in std::filesystem namespace.</div><div class="ttdef"><b>Definition</b> filesystem.cc:27</div></div>
 </div><!-- fragment --> </td></tr>
@@ -176,7 +179,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ga4866562f40b7e38c0577ec4177567e46" name="ga4866562f40b7e38c0577ec4177567e46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4866562f40b7e38c0577ec4177567e46">&#9670;&#160;</a></span>find_files() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4866562f40b7e38c0577ec4177567e46">&#9670;&#160;</a></span>find_files() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,6 +196,37 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>pattern</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae69fb1392e7701df7defcfb653ca2f02" name="gae69fb1392e7701df7defcfb653ca2f02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae69fb1392e7701df7defcfb653ca2f02">&#9670;&#160;</a></span>find_files() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; fs::path &gt; vidre::find_files </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char(&amp;)</td>          <td class="paramname"><span class="paramname"><em>pattern</em></span>[N]&#160;)</td>
         </tr>
       </table>
   </td>

@@ -1,13 +1,23 @@
 var searchData=
 [
-  ['x2bgr10be_0',['x2bgr10be',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a6b89116adf4ad5e75b7ad143108b2235',1,'vidre::ffmpeg']]],
-  ['x2bgr10le_1',['x2bgr10le',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a09861c8e887cbf34aec7649c9ecf6677',1,'vidre::ffmpeg']]],
-  ['x2rgb10be_2',['x2rgb10be',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a8fdb430134a2102f7fe800b97e97dd4c',1,'vidre::ffmpeg']]],
-  ['x2rgb10le_3',['x2rgb10le',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146aa316bae535a7ac88c9ac9dcab36f8d48',1,'vidre::ffmpeg']]],
-  ['xv30be_4',['xv30be',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ac3d92a1171cf503edd18b59ed56441e0',1,'vidre::ffmpeg']]],
-  ['xv30le_5',['xv30le',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a7868b3b4e1e2663e0b4b2527ed6467e5',1,'vidre::ffmpeg']]],
-  ['xv36be_6',['xv36be',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146af5a8a38bfb7c075f9fb8fc44c2214832',1,'vidre::ffmpeg']]],
-  ['xv36le_7',['xv36le',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146afbbfd40ffca9a831ab865b6535ee345f',1,'vidre::ffmpeg']]],
-  ['xyz12be_8',['xyz12be',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a35f697d21d6dafd480bdcff2dc97debe',1,'vidre::ffmpeg']]],
-  ['xyz12le_9',['xyz12le',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ab64edfed87c025872e4a3cb11cab88ad',1,'vidre::ffmpeg']]]
+  ['vaapi_0',['vaapi',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a9bd39779e839d3bcb1773e5ed3f177df',1,'vidre::ffmpeg']]],
+  ['vc1_5fannex_5fg_1',['vc1_annex_g',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a090a4f851049bbadff07d89c04c0fa4c',1,'fourcc.hh']]],
+  ['vc1_5fannex_5fl_2',['vc1_annex_l',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a03ac89342c871e14a9f38050c3d74e26',1,'fourcc.hh']]],
+  ['vdpau_3',['vdpau',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a00f623541310a2b49732e483f8e93d92',1,'vidre::ffmpeg']]],
+  ['video_4',['video',['../group__api-core-io-packet.html#ggafcb4b31d4dfe00e7a8f623ca0243fc4aa421b47ffd946ca083b65cd668c6b17e6',1,'vidre::io::packet::video'],['../group__api-core-storage-raw.html#gga5fa0321a86ee103a5c9da9fecb857d84a421b47ffd946ca083b65cd668c6b17e6',1,'vidre::storage::raw::video']]],
+  ['videotoolbox_5',['videotoolbox',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a08e3b71c42a6d1ae4be0e8a81656d6bd',1,'vidre::ffmpeg']]],
+  ['vidre_6',['vidre',['../classvidre_1_1video_1_1format_1_1pixel.html#a0aa2a018e63d3f0c4edea876fdc2eed1af9115528653ca31f4a9f325a19cc4354',1,'vidre::video::format::pixel']]],
+  ['vivid_7',['vivid',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1aabe62194632daa33fb01f482b52a822e',1,'fourcc.hh']]],
+  ['vp8_8',['vp8',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a2ee971bea93ee5263bc0284b7a499831',1,'fourcc.hh']]],
+  ['vp8_5fframe_9',['vp8_frame',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a372b710e7af45910aca3cb078ea2cd6c',1,'fourcc.hh']]],
+  ['vp9_10',['vp9',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1aa5fb70268f60681d51f65b28fa9e68a7',1,'fourcc.hh']]],
+  ['vp9_5fframe_11',['vp9_frame',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a6849d0df19acd767d50164ad02dccfe2',1,'fourcc.hh']]],
+  ['vsp1_5fhgo_12',['vsp1_hgo',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a48ac7717d5fb3d0753cde5fc4325f28f',1,'fourcc.hh']]],
+  ['vsp1_5fhgt_13',['vsp1_hgt',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1aa0031b5f6ff245240c77f75191f2a45b',1,'fourcc.hh']]],
+  ['vulkan_14',['vulkan',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a8473f19e6529e22157459e75b4cbf485',1,'vidre::ffmpeg']]],
+  ['vuya_15',['vuya',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a5bb00c62e0bf7dece148302c3891b0aa',1,'vidre::ffmpeg']]],
+  ['vuya32_16',['vuya32',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a98c77a9cda41d0ab1846ee96ad1cf593',1,'fourcc.hh']]],
+  ['vuyx_17',['vuyx',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a3023b1a4b1d200729097ebaef56833f4',1,'vidre::ffmpeg']]],
+  ['vuyx32_18',['vuyx32',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ac1d6098e68b18dd43a79fb6453e94505',1,'fourcc.hh']]],
+  ['vyuy_19',['vyuy',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ad1d3b10233ff807d8e0c37af3d8ef1ff',1,'fourcc.hh']]]
 ];

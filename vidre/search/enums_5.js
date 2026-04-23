@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kind_0',['kind',['../structvidre_1_1program_1_1argument.html#ac90264a2e4fed1f3f173b8756dec6d92',1,'vidre::program::argument']]]
+  ['group_0',['group',['../group__api-core-storage-raw.html#ga7b56ae647a0602ac5096e8b984f65482',1,'vidre::storage::raw']]]
 ];

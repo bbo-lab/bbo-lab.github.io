@@ -1,11 +1,11 @@
 <map id="vidre::error::message" name="vidre::error::message">
-<area shape="rect" id="Node000001" title="Error message." alt="" coords="579,106,724,131"/>
-<area shape="rect" id="Node000002" href="$classvidre_1_1error_1_1info.html" title="Base class for supplemental exception info." alt="" coords="349,51,463,77"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="477,77,594,103,593,109,476,82"/>
-<area shape="rect" id="Node000003" href="$classvidre_1_1detail_1_1exception_1_1supplement.html" title="Supplemental information for exceptions." alt="" coords="43,5,196,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="210,35,350,54,349,59,209,40"/>
-<area shape="rect" id="Node000004" href="$classvidre_1_1shared.html" title=" " alt="" coords="5,69,233,139"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="247,84,349,69,350,74,248,89"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="319,101,493,171"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="507,126,578,121,579,126,507,132"/>
+<area shape="rect" id="Node000001" title="Error message." alt="" coords="520,106,665,131"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1error_1_1info.html" title="Base class for supplemental exception info." alt="" coords="305,51,419,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="430,77,539,103,538,109,429,82"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1error_1_1detail_1_1supplement.html" title="Supplemental information for exceptions." alt="" coords="43,5,166,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,34,305,53,305,58,179,39"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1shared.html" title=" " alt="" coords="5,69,204,139"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="217,84,305,70,305,75,218,89"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="289,101,435,171"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="448,127,519,121,520,127,449,132"/>
 </map>

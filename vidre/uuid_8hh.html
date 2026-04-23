@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VidRe: libs/core/vidre/util/uuid.hh File Reference</title>
+<title>VidRe: vidre/util/uuid.hh File Reference</title>
 <link rel="icon" href="vidre.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -114,35 +114,54 @@ $(function(){initNavTree('uuid_8hh.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">uuid.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="libs_2core_2vidre_2core_2config_8hh_source.html">vidre/core/config.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="core_2vidre_2exception_8hh_source.html">vidre/exception.hh</a>&gt;</code><br />
 <code>#include &lt;boost/uuid/uuid.hpp&gt;</code><br />
 <code>#include &lt;boost/uuid/uuid_generators.hpp&gt;</code><br />
 <code>#include &lt;boost/uuid/time_generator_v1.hpp&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for uuid.hh:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="uuid_8hh__incl.svg" width="100%" height="459"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="uuid_8hh__incl.svg" width="100%" height="558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="uuid_8hh__dep__incl.svg" width="350" height="154"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="uuid_8hh__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="uuid_8hh_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1detail_1_1uuid__t.html">vidre::detail::uuid_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1detail_1_1uuid_1_1string__generator.html">vidre::detail::uuid::string_generator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1detail_1_1uuid_1_1random__generator.html">vidre::detail::uuid::random_generator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1detail_1_1uuid_1_1time__generator.html">vidre::detail::uuid::time_generator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1detail_1_1uuid_1_1time__safe__generator.html">vidre::detail::uuid::time_safe_generator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1detail_1_1uuid_1_1name__generator__md5.html">vidre::detail::uuid::name_generator_md5</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1detail_1_1uuid_1_1name__generator__sha1.html">vidre::detail::uuid::name_generator_sha1</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1detail_1_1uuid_1_1generator.html">vidre::detail::uuid::generator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1uuid.html">vidre::uuid</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UUIDs.  <a href="classvidre_1_1uuid.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,15 +174,68 @@ Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1detail.html">vidre::detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1detail_1_1uuid.html">vidre::detail::uuid</a></td></tr>
-<tr class="memdesc:namespacevidre_1_1detail_1_1uuid"><td class="mdescLeft">&#160;</td><td class="mdescRight">UUID abstraction (libuuid vs. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ab844fa5adea2f4c5dfe77209ee07b6bd" id="r_ab844fa5adea2f4c5dfe77209ee07b6bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1detail_1_1uuid.html#ab844fa5adea2f4c5dfe77209ee07b6bd">vidre::detail::uuid::variant</a> { <br />
+&#160;&#160;<a class="el" href="namespacevidre_1_1detail_1_1uuid.html#ab844fa5adea2f4c5dfe77209ee07b6bdaf56ca1b1b2c53ec6acb411440fcfbde2">vidre::detail::uuid::NCS</a> = UUID_VARIANT_NCS
+, <br />
+&#160;&#160;<a class="el" href="namespacevidre_1_1detail_1_1uuid.html#ab844fa5adea2f4c5dfe77209ee07b6bda2e0d61fe52a311675ea3efe5a94549af">vidre::detail::uuid::DCE</a> = UUID_VARIANT_DCE
+, <br />
+&#160;&#160;<a class="el" href="namespacevidre_1_1detail_1_1uuid.html#ab844fa5adea2f4c5dfe77209ee07b6bda244eb04550a8b84dc1456cec632082bd">vidre::detail::uuid::Microsoft</a> = UUID_VARIANT_MICROSOFT
+, <br />
+&#160;&#160;<a class="el" href="namespacevidre_1_1detail_1_1uuid.html#ab844fa5adea2f4c5dfe77209ee07b6bdab275812fe32ff0be4a886dcdb216d432">vidre::detail::uuid::Future</a> = UUID_VARIANT_OTHER
+<br />
+ }</td></tr>
+<tr class="separator:ab844fa5adea2f4c5dfe77209ee07b6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068b51d1e2aa184038752c87c3e9f636" id="r_a068b51d1e2aa184038752c87c3e9f636"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1detail_1_1uuid.html#a068b51d1e2aa184038752c87c3e9f636">vidre::detail::uuid::type</a> { <br />
+&#160;&#160;<a class="el" href="namespacevidre_1_1detail_1_1uuid.html#a068b51d1e2aa184038752c87c3e9f636a9be9fa62481294a225c84b78d33e22c5">vidre::detail::uuid::Invalid</a> = -1
+, <br />
+&#160;&#160;<a class="el" href="namespacevidre_1_1detail_1_1uuid.html#a068b51d1e2aa184038752c87c3e9f636ae9f63332ee04af63e1fc36d081ff11c5">vidre::detail::uuid::NIL</a> = UUID_TYPE_DCE_NIL
+, <br />
+&#160;&#160;<a class="el" href="namespacevidre_1_1detail_1_1uuid.html#a068b51d1e2aa184038752c87c3e9f636afb2d6053271cab303b0eff3d9f94ed0b">vidre::detail::uuid::Time</a> = UUID_TYPE_DCE_TIME
+, <br />
+&#160;&#160;<a class="el" href="namespacevidre_1_1detail_1_1uuid.html#a068b51d1e2aa184038752c87c3e9f636ad23bef60a0663e9c116a946a2e1625dd">vidre::detail::uuid::Security</a> = UUID_TYPE_DCE_SECURITY
+, <br />
+&#160;&#160;<a class="el" href="namespacevidre_1_1detail_1_1uuid.html#a068b51d1e2aa184038752c87c3e9f636aa9eb425029be3cc561a4adca5685cd97">vidre::detail::uuid::MD5</a> = UUID_TYPE_DCE_MD5
+, <br />
+&#160;&#160;<a class="el" href="namespacevidre_1_1detail_1_1uuid.html#a068b51d1e2aa184038752c87c3e9f636a5008131bab448fb3564933645fb655eb">vidre::detail::uuid::Random</a> = UUID_TYPE_DCE_RANDOM
+, <br />
+&#160;&#160;<a class="el" href="namespacevidre_1_1detail_1_1uuid.html#a068b51d1e2aa184038752c87c3e9f636afaaad0b8bb518ccf81aa2d9eafc0071d">vidre::detail::uuid::SHA1</a> = UUID_TYPE_DCE_SHA1
+<br />
+ }</td></tr>
+<tr class="separator:a068b51d1e2aa184038752c87c3e9f636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga95d33e3ae9a4d58e52190fd2b9f5d176" id="r_ga95d33e3ae9a4d58e52190fd2b9f5d176"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-util-uuid-details.html#ga95d33e3ae9a4d58e52190fd2b9f5d176">vidre::detail::compare</a> (const <a class="el" href="structvidre_1_1detail_1_1uuid__t.html">uuid_t</a> &amp;lhs, const <a class="el" href="structvidre_1_1detail_1_1uuid__t.html">uuid_t</a> &amp;rhs) noexcept</td></tr>
+<tr class="separator:ga95d33e3ae9a4d58e52190fd2b9f5d176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga221389612baf3374dca46b953f410663" id="r_ga221389612baf3374dca46b953f410663"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-util-uuid-details.html#ga221389612baf3374dca46b953f410663">vidre::detail::operator==</a> (const <a class="el" href="structvidre_1_1detail_1_1uuid__t.html">uuid_t</a> &amp;lhs, const <a class="el" href="structvidre_1_1detail_1_1uuid__t.html">uuid_t</a> &amp;rhs) noexcept</td></tr>
+<tr class="separator:ga221389612baf3374dca46b953f410663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59986b06bf7c8b5e6e175d52ab915571" id="r_ga59986b06bf7c8b5e6e175d52ab915571"><td class="memItemLeft" align="right" valign="top">std::strong_ordering&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-util-uuid-details.html#ga59986b06bf7c8b5e6e175d52ab915571">vidre::detail::operator&lt;=&gt;</a> (const <a class="el" href="structvidre_1_1detail_1_1uuid__t.html">uuid_t</a> &amp;lhs, const <a class="el" href="structvidre_1_1detail_1_1uuid__t.html">uuid_t</a> &amp;rhs) noexcept</td></tr>
+<tr class="separator:ga59986b06bf7c8b5e6e175d52ab915571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a804de8626d49721567c93ac7c2a8a5" id="r_a7a804de8626d49721567c93ac7c2a8a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevidre_1_1detail_1_1uuid.html#ab844fa5adea2f4c5dfe77209ee07b6bd">variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1detail_1_1uuid.html#a7a804de8626d49721567c93ac7c2a8a5">vidre::detail::uuid::get_variant</a> (<a class="el" href="structvidre_1_1detail_1_1uuid__t.html">uuid_t</a> u) noexcept</td></tr>
+<tr class="separator:a7a804de8626d49721567c93ac7c2a8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75254072070c2f007ed19b8b26ad58c1" id="r_a75254072070c2f007ed19b8b26ad58c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevidre_1_1detail_1_1uuid.html#a068b51d1e2aa184038752c87c3e9f636">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1detail_1_1uuid.html#a75254072070c2f007ed19b8b26ad58c1">vidre::detail::uuid::get_type</a> (<a class="el" href="structvidre_1_1detail_1_1uuid__t.html">uuid_t</a> u) noexcept</td></tr>
+<tr class="separator:a75254072070c2f007ed19b8b26ad58c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217ac45c1197e8eca67ae01d3b226f82" id="r_a217ac45c1197e8eca67ae01d3b226f82"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1detail_1_1uuid.html#a217ac45c1197e8eca67ae01d3b226f82">vidre::detail::uuid::tostring</a> (<a class="el" href="structvidre_1_1detail_1_1uuid__t.html">uuid_t</a> u, bool lowercase)</td></tr>
+<tr class="separator:a217ac45c1197e8eca67ae01d3b226f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4e6336799dedeb9041e2f5c82b43f7" id="r_a4b4e6336799dedeb9041e2f5c82b43f7"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1detail_1_1uuid.html#a4b4e6336799dedeb9041e2f5c82b43f7">vidre::detail::uuid::hash</a> (<a class="el" href="structvidre_1_1detail_1_1uuid__t.html">uuid_t</a> u) noexcept</td></tr>
+<tr class="separator:a4b4e6336799dedeb9041e2f5c82b43f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d72536aa3b99a2bc1071bfd656e51ee" id="r_ga3d72536aa3b99a2bc1071bfd656e51ee"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-util-uuid-details.html#ga3d72536aa3b99a2bc1071bfd656e51ee">vidre::detail::hex2byte</a> (char c)</td></tr>
+<tr class="separator:ga3d72536aa3b99a2bc1071bfd656e51ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4cadba4499efd204039727e11983ee3" id="r_gac4cadba4499efd204039727e11983ee3"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-util-uuid-details.html#gac4cadba4499efd204039727e11983ee3">vidre::detail::hex2byte</a> (char c1, char c2)</td></tr>
+<tr class="separator:gac4cadba4499efd204039727e11983ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec8c1e953029c6e45991a0b12e74999" id="r_aeec8c1e953029c6e45991a0b12e74999"><td class="memItemLeft" align="right" valign="top">consteval void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1detail_1_1uuid.html#aeec8c1e953029c6e45991a0b12e74999">vidre::detail::uuid::parse</a> (uint8_t *bytes, const char *str, std::size_t len)</td></tr>
+<tr class="separator:aeec8c1e953029c6e45991a0b12e74999"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_87a455bccb09a92130c26a11a880c98a.html">libs</a></li><li class="navelem"><a class="el" href="dir_4ccdb3f39e2a0cb7737b4252176ba716.html">core</a></li><li class="navelem"><a class="el" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html">vidre</a></li><li class="navelem"><a class="el" href="dir_44dda3653d8ed495fb138f7de47cfc57.html">util</a></li><li class="navelem"><a class="el" href="uuid_8hh.html">uuid.hh</a></li>
+    <li class="navelem"><a class="el" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html">vidre</a></li><li class="navelem"><a class="el" href="dir_44dda3653d8ed495fb138f7de47cfc57.html">util</a></li><li class="navelem"><a class="el" href="uuid_8hh.html">uuid.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0 </li>
   </ul>
 </div>

@@ -1,9 +1,0 @@
-<map id="chunk::header" name="chunk::header">
-<area shape="rect" id="Node000001" title=" " alt="" coords="348,121,452,146"/>
-<area shape="rect" id="Node000002" href="$structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html" title=" " alt="" coords="31,5,190,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,67,360,118,359,123,202,72"/>
-<area shape="rect" id="Node000003" href="$structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html" title=" " alt="" coords="9,99,212,168"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="226,131,348,131,348,136,226,136"/>
-<area shape="rect" id="Node000004" href="$structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html" title=" " alt="" coords="5,192,216,261"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,195,323,166,373,144,375,149,325,170,230,200"/>
-</map>

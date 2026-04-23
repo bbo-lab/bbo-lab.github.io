@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="group__api-core-os.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="group__api-core-os.html" target="_top" xlink:title="Operating system utilities.">
 <polygon fill="white" stroke="#666666" points="65,-19 0,-19 0,0 65,0 65,-19"/>
 <text text-anchor="middle" x="32.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">OS utilities</text>
 </a>

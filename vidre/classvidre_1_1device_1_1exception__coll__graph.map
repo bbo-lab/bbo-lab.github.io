@@ -1,15 +1,15 @@
 <map id="vidre::device::exception" name="vidre::device::exception">
-<area shape="rect" id="Node000001" title="Device exception." alt="" coords="897,107,1057,133"/>
-<area shape="rect" id="Node000002" href="$classvidre_1_1exception_1_1runtime.html" title="Runtime exception." alt="" coords="650,53,815,78"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="804,78,920,105,919,110,803,84"/>
-<area shape="rect" id="Node000003" href="$classvidre_1_1exception.html" title="General exception." alt="" coords="481,53,596,78"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="610,63,650,63,650,68,610,68"/>
-<area shape="rect" id="Node000004" href="$classvidre_1_1error_1_1info.html" title="Base class for supplemental exception info." alt="" coords="319,53,432,78"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="446,63,481,63,481,68,446,68"/>
-<area shape="rect" id="Node000005" href="$classvidre_1_1detail_1_1exception_1_1supplement.html" title="Supplemental information for exceptions." alt="" coords="43,5,196,45"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="210,37,319,54,318,59,210,42"/>
-<area shape="rect" id="Node000006" href="$classvidre_1_1shared.html" title=" " alt="" coords="5,69,233,139"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="247,82,318,71,319,76,248,87"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="645,103,820,172"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="834,128,897,123,897,128,834,133"/>
+<area shape="rect" id="Node000001" title="Device exception." alt="" coords="859,107,1019,133"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1exception_1_1runtime.html" title="Runtime exception." alt="" coords="616,53,781,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="769,79,883,105,882,110,768,84"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1exception.html" title="General exception." alt="" coords="452,53,567,78"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="580,63,616,63,616,68,580,68"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1error_1_1info.html" title="Base class for supplemental exception info." alt="" coords="289,53,403,78"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="417,63,452,63,452,68,417,68"/>
+<area shape="rect" id="Node000005" href="$classvidre_1_1error_1_1detail_1_1supplement.html" title="Supplemental information for exceptions." alt="" coords="43,5,166,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="180,35,289,53,289,59,179,40"/>
+<area shape="rect" id="Node000006" href="$classvidre_1_1shared.html" title=" " alt="" coords="5,69,204,139"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="217,83,289,72,290,77,218,89"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="626,103,771,172"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="785,128,858,123,858,128,786,134"/>
 </map>

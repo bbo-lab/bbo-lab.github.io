@@ -34,24 +34,28 @@ var group__api_core_storage_raw =
       [ "~dynamic", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#af5164a96a7667d5a6b4bc6b83e859f24", null ],
       [ "dynamic", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#ac0be845bc7abe7e1b7a1b517baa46df9", null ],
       [ "update", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#a7d44d5963b9221fe7dae0cba91fe9ed4", null ],
-      [ "put", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#ab25b350f2c12da8fde5811580dccd8dc", null ],
-      [ "get", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#aba52697a22dc720ff296b5a140f5fa3d", null ],
+      [ "put", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#a82b991c3416070f9ab868f30281c0da4", null ],
+      [ "get", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#ab7e01bebad32559d1af09ff7817d5a2f", null ],
       [ "prefix", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#a737e38eaba47ec9f1c34fe4794bb030a", null ]
     ] ],
     [ "vidre::storage::raw::element::sequence", "structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html", [
       [ "sequence", "structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a03e74a2ab2e5c80bbac1e38adf101300", null ],
       [ "~sequence", "structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a7ad4fbc76fa8d3066965121e9d08b4fb", null ],
       [ "find", "structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a60657901f9791cb134f841e6fb53a8c1", null ],
-      [ "add", "structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a742a8955aafc0b57eab0e2b6af5b2593", null ],
+      [ "add", "structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a61749f3a22c8fdd92bd7799c479cd8c9", null ],
       [ "update", "structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#aaf1c0feeac492cbfb63c019e16537ac1", null ],
-      [ "put", "structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#ae3ab2a85ae69e0f031423cd3fc62e5e1", null ],
+      [ "put", "structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a5c8e059ccb90550b742ac0e55641e74d", null ],
       [ "nodes", "structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a761c8c6d5b0aaf3448be01ab078ed913", null ]
+    ] ],
+    [ "vidre::storage::raw::element::packet", "structvidre_1_1storage_1_1raw_1_1element_1_1packet.html", [
+      [ "uuid", "structvidre_1_1storage_1_1raw_1_1element_1_1packet.html#a307803c63cafe8a03a223ae5503e289a", null ],
+      [ "stream", "structvidre_1_1storage_1_1raw_1_1element_1_1packet.html#a0f33cdd764c6ff4a645d10749830565d", null ]
     ] ],
     [ "vidre::storage::raw::element::group", "structvidre_1_1storage_1_1raw_1_1element_1_1group.html", [
       [ "group", "structvidre_1_1storage_1_1raw_1_1element_1_1group.html#acb91186f1fce40ffdc8fdf6205471484", null ],
       [ "~group", "structvidre_1_1storage_1_1raw_1_1element_1_1group.html#a4eb40e422953bf76c25fe0a9dc7b7152", null ],
       [ "update", "structvidre_1_1storage_1_1raw_1_1element_1_1group.html#a12faf7c3e14a861bbf425ee14a2191ee", null ],
-      [ "put", "structvidre_1_1storage_1_1raw_1_1element_1_1group.html#acb37c0d629caf11fb9bf5b81466d10fb", null ]
+      [ "put", "structvidre_1_1storage_1_1raw_1_1element_1_1group.html#ad1b7ff6291d93c819ee67f881fa0fdaa", null ]
     ] ],
     [ "vidre::storage::raw::writer", "classvidre_1_1storage_1_1raw_1_1writer.html", [
       [ "writer", "classvidre_1_1storage_1_1raw_1_1writer.html#acde09f3f222337df4bfa5ccc40be08e4", null ]

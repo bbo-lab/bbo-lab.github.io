@@ -117,14 +117,14 @@ $(function(){initNavTree('structvidre_1_1video_1_1timestamp.html',''); initResiz
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structvidre_1_1video_1_1timestamp-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">vidre::video::timestamp Struct Reference<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-video.html">Video related</a></div></div></div>
+  <div class="headertitle"><div class="title">vidre::video::timestamp Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Timestamp.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="common_8hh_source.html">vidre/video/common.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="video_2vidre_2video_2frame_8hh_source.html">vidre/video/frame.hh</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Timestamp. </p>
 <p>To avoid calculations (esp. divisions) on the critical path of frame acquisition, timestamps are represented as a value and a resolution (in Hz). The actual timestamp in seconds can be calculated as <code>value / resolution</code>. The default resolution is 1 ns (1 GHz), which allows for high-precision timestamps without needing to use floating-point values.</p>
@@ -250,7 +250,7 @@ template&lt;class Rep , class Period  = std::ratio&lt;1&gt;&gt; </div>
 </div><div class="memdoc">
 
 <p>Timestamp value. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="examples_2core_2raw_8cc-example.html#a27">examples/core/raw.cc</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="examples_2core_2raw_8cc-example.html#a22">examples/core/raw.cc</a>.</dd>
 </dl>
 
 </div>
@@ -272,7 +272,7 @@ template&lt;class Rep , class Period  = std::ratio&lt;1&gt;&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>libs/core/vidre/video/<a class="el" href="common_8hh_source.html">common.hh</a></li>
+<li>vidre/video/<a class="el" href="video_2vidre_2video_2frame_8hh_source.html">frame.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

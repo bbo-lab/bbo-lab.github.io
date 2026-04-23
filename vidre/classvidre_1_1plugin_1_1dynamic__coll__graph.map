@@ -1,7 +1,0 @@
-<map id="vidre::plugin::dynamic" name="vidre::plugin::dynamic">
-<area shape="rect" id="Node000001" title="Dynamically linked object plugin loader." alt="" coords="96,108,245,133"/>
-<area shape="rect" id="Node000002" href="$classvidre_1_1plugin_1_1dynamic_1_1library.html" title="DLL handler abstraction." alt="" coords="5,5,155,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,53,161,106,157,110,106,57"/>
-<area shape="rect" id="Node000003" href="$structvidre_1_1plugin_1_1information.html" title="Module information." alt="" coords="179,13,343,38"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,50,184,110,180,106,239,46"/>
-</map>

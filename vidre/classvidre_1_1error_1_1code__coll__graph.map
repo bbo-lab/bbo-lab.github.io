@@ -1,0 +1,11 @@
+<map id="vidre::error::code" name="vidre::error::code">
+<area shape="rect" id="Node000001" title="General error code." alt="" coords="476,83,596,109"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1error_1_1info.html" title="Base class for supplemental exception info." alt="" coords="289,51,403,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="417,73,476,83,475,89,416,78"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1error_1_1detail_1_1supplement.html" title="Supplemental information for exceptions." alt="" coords="43,5,166,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,35,289,52,289,58,179,40"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1shared.html" title=" " alt="" coords="5,69,204,139"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="217,83,289,71,290,76,218,88"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="291,101,401,126"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="414,106,452,103,476,100,476,106,452,108,415,111"/>
+</map>

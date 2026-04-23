@@ -1,5 +1,5 @@
-<map id="libs/ffmpeg/vidre/ffmpeg/config.hh" name="libs/ffmpeg/vidre/ffmpeg/config.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,168,45"/>
-<area shape="rect" id="Node000002" href="$vidre_2config_8hh.html" title=" " alt="" coords="33,93,140,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,46,89,79,84,79,84,46"/>
+<map id="vidre/ffmpeg/config.hh" name="vidre/ffmpeg/config.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,156,31"/>
+<area shape="rect" id="Node000002" href="$vidre_2config_8hh.html" title=" " alt="" coords="27,79,134,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,31,83,65,78,65,78,31"/>
 </map>

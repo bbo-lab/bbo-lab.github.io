@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VidRe: libs/core/vidre/video.hh Source File</title>
+<title>VidRe: vidre/video.hh Source File</title>
 <link rel="icon" href="vidre.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -140,34 +140,23 @@ $(function(){initNavTree('video_8hh_source.html',''); initResizable(true); });
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define VIDRE_CORE_VIDEO_HH</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;<a class="code" href="libs_2core_2vidre_2core_2config_8hh.html">vidre/core/config.hh</a>&gt;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;<a class="code" href="common_8hh.html">vidre/video/common.hh</a>&gt;</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;<a class="code" href="pixel__format_8hh.html">vidre/video/pixel_format.hh</a>&gt;</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;<a class="code" href="core_2vidre_2video_2frame_8hh.html">vidre/video/frame.hh</a>&gt;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a> {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="namespacevidre_1_1video.html">   49</a></span>    <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre_1_1video.html">video</a> {}  <span class="comment">// namespace video</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}  <span class="comment">// namespace vidre</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif  </span><span class="comment">// VIDRE_CORE_VIDEO_HH</span></div>
-<div class="ttc" id="acommon_8hh_html"><div class="ttname"><a href="common_8hh.html">common.hh</a></div></div>
-<div class="ttc" id="acore_2vidre_2video_2frame_8hh_html"><div class="ttname"><a href="core_2vidre_2video_2frame_8hh.html">frame.hh</a></div></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#include &lt;<a class="code" href="libs_2core_2vidre_2core_2config_8hh.html">vidre/core/config.hh</a>&gt;</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// #include &lt;vidre/video/frame.hh&gt;</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">// #include &lt;vidre/video/format.hh&gt;</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif  </span><span class="comment">// VIDRE_CORE_VIDEO_HH</span></div>
 <div class="ttc" id="alibs_2core_2vidre_2core_2config_8hh_html"><div class="ttname"><a href="libs_2core_2vidre_2core_2config_8hh.html">config.hh</a></div></div>
-<div class="ttc" id="anamespacevidre_1_1video_html"><div class="ttname"><a href="namespacevidre_1_1video.html">vidre::video</a></div><div class="ttdoc">Video-related namespace.</div><div class="ttdef"><b>Definition</b> video.hh:49</div></div>
-<div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> midraw.hh:31</div></div>
-<div class="ttc" id="apixel__format_8hh_html"><div class="ttname"><a href="pixel__format_8hh.html">pixel_format.hh</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_87a455bccb09a92130c26a11a880c98a.html">libs</a></li><li class="navelem"><a class="el" href="dir_4ccdb3f39e2a0cb7737b4252176ba716.html">core</a></li><li class="navelem"><a class="el" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html">vidre</a></li><li class="navelem"><a class="el" href="video_8hh.html">video.hh</a></li>
+    <li class="navelem"><a class="el" href="dir_aaef0f67ad5afbacd44b140300021539.html">vidre</a></li><li class="navelem"><a class="el" href="video_8hh.html">video.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0 </li>
   </ul>
 </div>

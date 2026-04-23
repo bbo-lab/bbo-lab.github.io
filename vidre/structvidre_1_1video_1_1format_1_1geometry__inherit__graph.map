@@ -1,0 +1,7 @@
+<map id="vidre::video::format::geometry" name="vidre::video::format::geometry">
+<area shape="rect" id="Node000001" title="Geometry." alt="" coords="84,93,219,133"/>
+<area shape="rect" id="Node000002" href="$structvidre_1_1video_1_1format_1_1position.html" title="Position." alt="" coords="5,5,140,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,54,136,91,132,95,97,57"/>
+<area shape="rect" id="Node000003" href="$structvidre_1_1video_1_1format_1_1size.html" title="Size." alt="" coords="164,5,299,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,57,171,95,167,91,202,54"/>
+</map>

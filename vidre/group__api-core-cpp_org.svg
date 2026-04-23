@@ -20,7 +20,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Helpers to bridge unimplemented C++ standard features.">
 <polygon fill="#999999" stroke="#666666" points="197,-37 103,-37 103,-18 197,-18 197,-37"/>
 <text text-anchor="middle" x="150" y="-25" font-family="Helvetica,sans-Serif" font-size="10.00">C++ compatibility</text>
 </a>

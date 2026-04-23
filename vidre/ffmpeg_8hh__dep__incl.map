@@ -1,7 +1,7 @@
-<map id="libs/ffmpeg/vidre/ffmpeg.hh" name="libs/ffmpeg/vidre/ffmpeg.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="106,5,286,31"/>
-<area shape="rect" id="Node000002" href="$main_8cc.html" title=" " alt="" coords="5,79,184,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,41,113,81,110,76,167,36"/>
-<area shape="rect" id="Node000003" href="$ffmpeg_8cc.html" title=" " alt="" coords="209,79,389,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,36,283,76,280,81,222,41"/>
+<map id="vidre/ffmpeg.hh" name="vidre/ffmpeg.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="161,5,273,31"/>
+<area shape="rect" id="Node000002" href="$main_8cc.html" title=" " alt="" coords="5,79,233,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,42,151,81,147,77,192,38"/>
+<area shape="rect" id="Node000003" href="$ffmpeg_8cc.html" title=" " alt="" coords="258,93,370,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,38,302,91,299,95,238,42"/>
 </map>

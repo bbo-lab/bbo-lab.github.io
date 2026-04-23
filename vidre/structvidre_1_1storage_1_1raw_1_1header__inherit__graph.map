@@ -1,9 +1,0 @@
-<map id="vidre::storage::raw::header" name="vidre::storage::raw::header">
-<area shape="rect" id="Node000001" title="The file header." alt="" coords="5,269,136,309"/>
-<area shape="rect" id="Node000002" href="$structvidre_1_1storage_1_1raw_1_1group.html" title="Group of TLV entries." alt="" coords="5,181,136,221"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,235,73,269,68,269,68,235"/>
-<area shape="rect" id="Node000003" href="$structvidre_1_1storage_1_1raw_1_1sequence.html" title="Sequence of TLV entries." alt="" coords="5,93,136,133"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="73,147,73,181,68,181,68,147"/>
-<area shape="rect" id="Node000004" href="$structvidre_1_1storage_1_1raw_1_1atom.html" title="Generic TLV item." alt="" coords="5,5,136,45"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="73,59,73,93,68,93,68,59"/>
-</map>

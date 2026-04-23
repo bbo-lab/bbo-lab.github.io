@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['value_0',['value',['../classvidre_1_1variant.html#a9b0cf54fcd3ddcb18764f02900d31db5',1,'vidre::variant']]],
-  ['variant_1',['variant',['../classvidre_1_1uuid.html#ac551c936acd5ce8a261aede0e8685825',1,'vidre::uuid']]],
-  ['video_2',['video',['../group__api-core-storage-raw.html#gab093b6172695424643a0da872bd30400',1,'vidre::storage::raw']]]
+  ['pixel_5fformat_0',['pixel_format',['../group__api-support-ffmpeg-util-data.html#ga87e7b6ceacd0f2dd8c84a15085b61146',1,'vidre::ffmpeg']]],
+  ['policy_5ftype_1',['policy_type',['../structvidre_1_1detail_1_1schedule.html#adf5f0b0a49c40144989d7da46702b913',1,'vidre::detail::schedule']]]
 ];

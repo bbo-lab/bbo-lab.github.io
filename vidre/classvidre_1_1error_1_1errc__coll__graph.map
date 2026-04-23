@@ -1,9 +1,13 @@
 <map id="vidre::error::errc" name="vidre::error::errc">
-<area shape="rect" id="Node000001" title="Generic error." alt="" coords="481,53,596,78"/>
-<area shape="rect" id="Node000002" href="$classvidre_1_1error_1_1info.html" title="Base class for supplemental exception info." alt="" coords="319,53,432,78"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="446,63,481,63,481,68,446,68"/>
-<area shape="rect" id="Node000003" href="$classvidre_1_1detail_1_1exception_1_1supplement.html" title="Supplemental information for exceptions." alt="" coords="43,5,196,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="210,37,319,54,318,59,210,42"/>
-<area shape="rect" id="Node000004" href="$classvidre_1_1shared.html" title=" " alt="" coords="5,69,233,139"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="247,82,318,71,319,76,248,87"/>
+<area shape="rect" id="Node000001" title="Generic error." alt="" coords="645,83,760,109"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1error_1_1code.html" title="General error code." alt="" coords="476,83,596,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="609,93,645,93,645,99,609,99"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1error_1_1info.html" title="Base class for supplemental exception info." alt="" coords="289,51,403,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="417,73,476,83,475,89,416,78"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1error_1_1detail_1_1supplement.html" title="Supplemental information for exceptions." alt="" coords="43,5,166,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="180,35,289,52,289,58,179,40"/>
+<area shape="rect" id="Node000005" href="$classvidre_1_1shared.html" title=" " alt="" coords="5,69,204,139"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="217,83,289,71,290,76,218,88"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="291,101,401,126"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="414,106,452,103,476,100,476,106,452,108,415,111"/>
 </map>

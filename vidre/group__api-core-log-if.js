@@ -1,5 +1,14 @@
 var group__api_core_log_if =
 [
+    [ "vidre::log::handler", "classvidre_1_1log_1_1handler.html", [
+      [ "handler", "classvidre_1_1log_1_1handler.html#a16054598fa1155445226173f8593970a", null ],
+      [ "handler", "classvidre_1_1log_1_1handler.html#a761c3df0d915f45c56fcf3df435d847b", null ],
+      [ "emit", "classvidre_1_1log_1_1handler.html#a0bbc12cc559feeb947946f57ad3e223f", null ],
+      [ "operator<<", "classvidre_1_1log_1_1handler.html#a8a970399c90e48210cf992c23fc6f7ca", null ],
+      [ "operator<<", "classvidre_1_1log_1_1handler.html#a4a407d48db8a5d430c8158e95b8b0b06", null ],
+      [ "operator<<", "classvidre_1_1log_1_1handler.html#abd133459b407bb9bb9d56faa27fd7d1a", null ],
+      [ "level_", "classvidre_1_1log_1_1handler.html#ad4bec1badeb3093fa3be91ee42c78008", null ]
+    ] ],
     [ "vidre::log::fatal", "classvidre_1_1log_1_1fatal.html", [
       [ "fatal", "classvidre_1_1log_1_1fatal.html#a14622fbccd9059e18ada3d03413f06ca", null ],
       [ "~fatal", "classvidre_1_1log_1_1fatal.html#aee23f2f20e0565070cefcd4ec0331296", null ]
@@ -57,6 +66,10 @@ var group__api_core_log_if =
       [ "vidre::log::level::trace", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182", null ]
     ] ],
     [ "vidre::log::setup", "group__api-core-log-if.html#ga5b9bbc7d2cec4cf074305770214d5dc5", null ],
+    [ "vidre::log::level_n", "group__api-core-log-if.html#ga388f2da64b353809ca10bc3b4dbf7cc4", null ],
+    [ "vidre::log::level_min", "group__api-core-log-if.html#ga7625a30ab5fbb87dae61f4addfd5dc63", null ],
+    [ "vidre::log::level_max", "group__api-core-log-if.html#ga8226791964f115d55b58f319d716ccfa", null ],
+    [ "vidre::log::level_default", "group__api-core-log-if.html#ga91d20bd99261c731592be8c65fedc951", null ],
     [ "vidre::log::endl", "group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c", null ],
     [ "vidre::log::indent_s", "group__api-core-log-if.html#ga54c4d30d637a3c5ef4f42adea9a1bd42", null ]
 ];

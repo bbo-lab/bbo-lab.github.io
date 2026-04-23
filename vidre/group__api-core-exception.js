@@ -1,11 +1,12 @@
 var group__api_core_exception =
 [
+    [ "Implementation details.", "group__api-core-exception-details.html", "group__api-core-exception-details" ],
     [ "vidre::error", "namespacevidre_1_1error.html", null ],
     [ "vidre::error::info", "classvidre_1_1error_1_1info.html", [
-      [ "shared_type", "classvidre_1_1error_1_1info.html#ade0619fd5712280177428ddfa7bde881", null ],
+      [ "shared_type", "classvidre_1_1error_1_1info.html#a75677d8abd2d90469abc5d73262e2177", null ],
       [ "info", "classvidre_1_1error_1_1info.html#a3426b3483395175fcd6cc19510708cec", null ],
       [ "~info", "classvidre_1_1error_1_1info.html#a89909546434a4a3a7efc5baa7bb7ed3f", null ],
-      [ "attach", "classvidre_1_1error_1_1info.html#a9da1a96557d366e4fa80af6a8c1a7872", null ],
+      [ "attach", "classvidre_1_1error_1_1info.html#a370d7a947849621562e29734ad05b604", null ],
       [ "tag", "classvidre_1_1error_1_1info.html#ae56f5d4992b28d16b9493f8699482197", null ],
       [ "make", "classvidre_1_1error_1_1info.html#a17e6c7630f0b8a5c37db4f20feeb5dca", null ],
       [ "diagnostic", "classvidre_1_1error_1_1info.html#a08e21e027e8427823e5e08c54b8da524", null ],
@@ -63,23 +64,25 @@ var group__api_core_exception =
       [ "make", "classvidre_1_1error_1_1message.html#a1a2b9ea5d2d0102aed3f1a15225050dc", null ],
       [ "msg_", "classvidre_1_1error_1_1message.html#a84840870c513fe245c96c3678f3607c8", null ]
     ] ],
+    [ "vidre::error::code", "classvidre_1_1error_1_1code.html", [
+      [ "code", "classvidre_1_1error_1_1code.html#a069142b61ab7bd2d828288454d567a4a", null ],
+      [ "~code", "classvidre_1_1error_1_1code.html#afb79f1165f5853ec27b97d67e0fd5212", null ],
+      [ "tag", "classvidre_1_1error_1_1code.html#adf6c85d7c2f9fc85f0e142b659cb7a6e", null ],
+      [ "make", "classvidre_1_1error_1_1code.html#a3ad80968c5e2aaef737cc019ff13ff66", null ],
+      [ "ec_", "classvidre_1_1error_1_1code.html#a877dbdf387d439463a16effa9017fb78", null ]
+    ] ],
     [ "vidre::error::errc", "classvidre_1_1error_1_1errc.html", [
       [ "errc", "classvidre_1_1error_1_1errc.html#ac5a0d2e5d260a4c207877df5e5dae413", null ],
       [ "~errc", "classvidre_1_1error_1_1errc.html#ad3b646d516b3c943e3f4784c43cb643e", null ],
-      [ "tag", "classvidre_1_1error_1_1errc.html#a95ede767555c7559f1a287c715ca8289", null ],
-      [ "make", "classvidre_1_1error_1_1errc.html#a7725e0b8a561450f2c46e15b7e572494", null ],
-      [ "ec_", "classvidre_1_1error_1_1errc.html#ada48541052c9be9443b57115b2b90c60", null ]
+      [ "tag", "classvidre_1_1error_1_1errc.html#a95ede767555c7559f1a287c715ca8289", null ]
     ] ],
     [ "vidre::error::system", "classvidre_1_1error_1_1system.html", [
       [ "system", "classvidre_1_1error_1_1system.html#a9190b139966622310dbc91e721e38af7", null ],
-      [ "system", "classvidre_1_1error_1_1system.html#a4f9dc413b3a0d8527c07de278cb9dd91", null ],
       [ "~system", "classvidre_1_1error_1_1system.html#a7ee38919b094215ca0d3f21d0cf43224", null ],
-      [ "tag", "classvidre_1_1error_1_1system.html#a012601e85f6deff3d16d9c56ef166b1c", null ],
-      [ "make", "classvidre_1_1error_1_1system.html#a961e32d25c08ed856a852ec47e907ac2", null ],
-      [ "ec_", "classvidre_1_1error_1_1system.html#a2bdb05f605b44100a782a23bbf9091d1", null ]
+      [ "tag", "classvidre_1_1error_1_1system.html#a012601e85f6deff3d16d9c56ef166b1c", null ]
     ] ],
-    [ "vidre::error::allocator", "group__api-core-exception.html#ga168bd3604fdf1d1df4bd73fd0337fe46", null ],
-    [ "vidre::error::string", "group__api-core-exception.html#ga0f37c8f33d19b5b1811c823d2fd0c081", null ],
+    [ "vidre::error::allocator", "group__api-core-exception.html#gaef7c3e888d0fa5b0fc7635781380fb04", null ],
+    [ "vidre::error::string", "group__api-core-exception.html#ga9c123f6f4caebeb5427747c03f39cc18", null ],
     [ "vidre::abort_with_message", "group__api-core-exception.html#ga23934a101bed2ef0161a0aac21b9d5b8", null ],
     [ "vidre::operator<<", "group__api-core-exception.html#ga027f56aafd886e78d4bc8aab4e3ca78d", null ],
     [ "vidre::operator<<", "group__api-core-exception.html#gab02f4152cce232cc5c6013e5449440c3", null ]

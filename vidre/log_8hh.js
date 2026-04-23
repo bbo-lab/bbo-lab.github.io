@@ -1,7 +1,5 @@
 var log_8hh =
 [
-    [ "vidre::log::convertible_to_message_type", "conceptvidre_1_1log_1_1convertible__to__message__type.html", null ],
-    [ "vidre::log::functor", "conceptvidre_1_1log_1_1functor.html", null ],
     [ "VIDRE_CORE_LOG_IMPL", "group__api-core-log-details.html#ga52757f611fcaa735369655dca48bab74", null ],
     [ "vidre::log::message_type", "group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d", null ],
     [ "vidre::log::level", "group__api-core-log-if.html#gac7188c64802d58d335e10371224772ec", [
@@ -17,10 +15,10 @@ var log_8hh =
       [ "vidre::log::level::trace", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182", null ]
     ] ],
     [ "vidre::log::setup", "group__api-core-log-if.html#ga5b9bbc7d2cec4cf074305770214d5dc5", null ],
-    [ "vidre::log::level_n", "namespacevidre_1_1log.html#a388f2da64b353809ca10bc3b4dbf7cc4", null ],
-    [ "vidre::log::level_min", "namespacevidre_1_1log.html#a7625a30ab5fbb87dae61f4addfd5dc63", null ],
-    [ "vidre::log::level_max", "namespacevidre_1_1log.html#a8226791964f115d55b58f319d716ccfa", null ],
-    [ "vidre::log::level_default", "namespacevidre_1_1log.html#a91d20bd99261c731592be8c65fedc951", null ],
+    [ "vidre::log::level_n", "group__api-core-log-if.html#ga388f2da64b353809ca10bc3b4dbf7cc4", null ],
+    [ "vidre::log::level_min", "group__api-core-log-if.html#ga7625a30ab5fbb87dae61f4addfd5dc63", null ],
+    [ "vidre::log::level_max", "group__api-core-log-if.html#ga8226791964f115d55b58f319d716ccfa", null ],
+    [ "vidre::log::level_default", "group__api-core-log-if.html#ga91d20bd99261c731592be8c65fedc951", null ],
     [ "vidre::log::endl", "group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c", null ],
     [ "vidre::log::indent_s", "group__api-core-log-if.html#ga54c4d30d637a3c5ef4f42adea9a1bd42", null ]
 ];

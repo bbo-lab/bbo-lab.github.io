@@ -117,11 +117,11 @@ $(function(){initNavTree('classvidre_1_1log_1_1handler.html',''); initResizable(
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classvidre_1_1log_1_1handler-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">vidre::log::handler Class Reference<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-log.html">Logging</a> &raquo; <a class="el" href="group__api-core-log-details.html">Implementation details</a></div></div></div>
+  <div class="headertitle"><div class="title">vidre::log::handler Class Reference<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-log.html">Logging</a> &raquo; <a class="el" href="group__api-core-log-if.html">Interface</a> &#124; <a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-log.html">Logging</a> &raquo; <a class="el" href="group__api-core-log-details.html">Implementation details</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Log message handler.  
+<p> 
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="log_8hh_source.html">vidre/log.hh</a>&gt;</code></p>
@@ -133,7 +133,7 @@ $(function(){initNavTree('classvidre_1_1log_1_1handler.html',''); initResizable(
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1log_1_1handler__inherit__graph.svg" width="312" height="431"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Log message handler. </p>
+<div class="textblock"><p>Log message handler.</p>
 <p>This class handles logging and, as well, is the base class for the individual implementations (see <code><a class="el" href="classvidre_1_1log_1_1fatal.html" title="Fatal log message.">log::fatal</a></code>, etc.); </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -161,7 +161,7 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ad4bec1badeb3093fa3be91ee42c78008" id="r_ad4bec1badeb3093fa3be91ee42c78008"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4bec1badeb3093fa3be91ee42c78008">level_</a> = <a class="el" href="namespacevidre_1_1log.html#a91d20bd99261c731592be8c65fedc951">level_default</a></td></tr>
+<tr class="memitem:ad4bec1badeb3093fa3be91ee42c78008" id="r_ad4bec1badeb3093fa3be91ee42c78008"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4bec1badeb3093fa3be91ee42c78008">level_</a> = <a class="el" href="group__api-core-log-if.html#ga91d20bd99261c731592be8c65fedc951">level_default</a></td></tr>
 <tr class="memdesc:ad4bec1badeb3093fa3be91ee42c78008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log level for this object.  <br /></td></tr>
 <tr class="separator:ad4bec1badeb3093fa3be91ee42c78008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -341,7 +341,7 @@ requires (not convertible_to_message_type&lt;V&gt; and std::formattable&lt;std::
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int vidre::log::handler::level_ = <a class="el" href="namespacevidre_1_1log.html#a91d20bd99261c731592be8c65fedc951">level_default</a></td>
+          <td class="memname">int vidre::log::handler::level_ = <a class="el" href="group__api-core-log-if.html#ga91d20bd99261c731592be8c65fedc951">level_default</a></td>
         </tr>
       </table>
   </td>
@@ -356,8 +356,8 @@ requires (not convertible_to_message_type&lt;V&gt; and std::formattable&lt;std::
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>libs/core/vidre/<a class="el" href="log_8hh_source.html">log.hh</a></li>
-<li>libs/core/vidre/<a class="el" href="src_2libs_2core_2vidre_2log_8cc.html">log.cc</a></li>
+<li>vidre/<a class="el" href="log_8hh_source.html">log.hh</a></li>
+<li>vidre/<a class="el" href="src_2libs_2core_2vidre_2log_8cc.html">log.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

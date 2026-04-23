@@ -1,0 +1,41 @@
+var group__api_core_memory_base =
+[
+    [ "vidre::memory::view", "classvidre_1_1memory_1_1view.html", [
+      [ "view", "classvidre_1_1memory_1_1view.html#af2e7e60e4a4bf69a800473f6f4a5e997", null ],
+      [ "view", "classvidre_1_1memory_1_1view.html#ac6457e8ba78f4bd56c674f30b6db5a6e", null ],
+      [ "view", "classvidre_1_1memory_1_1view.html#a5448e219c49a9c8cff1976dc874ffce8", null ],
+      [ "view", "classvidre_1_1memory_1_1view.html#adcf2f85075ebd3933becb2dea421ee52", null ],
+      [ "view", "classvidre_1_1memory_1_1view.html#ac5ddeaa26e8bafbc16853fc54878f268", null ],
+      [ "view", "classvidre_1_1memory_1_1view.html#a10241b04d5bbd98fc8473eff6650538c", null ],
+      [ "operator=", "classvidre_1_1memory_1_1view.html#af4bf7ee8115d22a947732e1f6fc4e7fc", null ],
+      [ "operator=", "classvidre_1_1memory_1_1view.html#a6d57df457f871278e42bbd52d2a0132b", null ],
+      [ "size", "classvidre_1_1memory_1_1view.html#ae3ecbceb0d18ae2634dd0c85481b46b2", null ],
+      [ "data", "classvidre_1_1memory_1_1view.html#a0e54581f965c6bd5d08efa4956ba52e0", null ],
+      [ "operator const_pointer", "classvidre_1_1memory_1_1view.html#a64efe7e8d65cd544de3cc9adee02115f", null ],
+      [ "operator const void *", "classvidre_1_1memory_1_1view.html#a30adaad106614a474219c35c83c69f84", null ],
+      [ "size_", "classvidre_1_1memory_1_1view.html#a5cf737474764c859c5bdf7fb6a426fef", null ],
+      [ "data_", "classvidre_1_1memory_1_1view.html#a7f6a1d3185eab237e56409f80b19443a", null ]
+    ] ],
+    [ "vidre::memory::area", "classvidre_1_1memory_1_1area.html", [
+      [ "area", "classvidre_1_1memory_1_1area.html#a7878f5ae413d55a6fcb169aa96b06d9d", null ],
+      [ "area", "classvidre_1_1memory_1_1area.html#ad6df6d1ccddc968dea913719dafdfc25", null ],
+      [ "area", "classvidre_1_1memory_1_1area.html#a00a7627d0c2e7a5c220d7869da61e60b", null ],
+      [ "area", "classvidre_1_1memory_1_1area.html#ab2109104fcbebd2df9cefc2750f85ca1", null ],
+      [ "operator=", "classvidre_1_1memory_1_1area.html#af994c16c6b641575590a7c2ef64ed95f", null ],
+      [ "operator=", "classvidre_1_1memory_1_1area.html#a38c14b8083774e81a8711df0aa26daa7", null ],
+      [ "size", "classvidre_1_1memory_1_1area.html#a00b6e290b87d03708da30ae53e3ebfe5", null ],
+      [ "data", "classvidre_1_1memory_1_1area.html#a494af6b5379859bb6be6f6f98afd2ffb", null ],
+      [ "operator pointer", "classvidre_1_1memory_1_1area.html#a0382db23356214b87c74363607207635", null ],
+      [ "data", "classvidre_1_1memory_1_1area.html#a0fb92f44bbbe946b9993a4a6f622c6dc", null ],
+      [ "operator const_pointer", "classvidre_1_1memory_1_1area.html#af24367fc91aa17f0f0131efa8be1d44f", null ],
+      [ "operator const void *", "classvidre_1_1memory_1_1area.html#ad1104dcb108012b7c39ea01398c28245", null ],
+      [ "operator void *", "classvidre_1_1memory_1_1area.html#a168504d010dd616872f12c31c082d033", null ],
+      [ "size_", "classvidre_1_1memory_1_1area.html#a6b8bb7a30d9e3f53820f72153876307e", null ],
+      [ "data_", "classvidre_1_1memory_1_1area.html#af30600778c39c24fad5b0c97aa2cd1a1", null ]
+    ] ],
+    [ "vidre::memory::size_type", "group__api-core-memory-base.html#ga5a195aefab7366a6e1127e9250aa9417", null ],
+    [ "vidre::memory::difference_type", "group__api-core-memory-base.html#ga602e13ba126bff0a998f2e2723b12c70", null ],
+    [ "vidre::memory::value_type", "group__api-core-memory-base.html#gab41243da43a7617dc0977294d0592d78", null ],
+    [ "vidre::memory::pointer", "group__api-core-memory-base.html#ga06a55e405df35fe6a9d69c3982b8bf1d", null ],
+    [ "vidre::memory::const_pointer", "group__api-core-memory-base.html#ga32ef1e25da5bd0eb63ae99dc59ad35a2", null ]
+];

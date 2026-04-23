@@ -113,19 +113,29 @@ $(function(){initNavTree('namespacevidre_1_1error.html',''); initResizable(true)
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">vidre::error Namespace Reference<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-exception.html">Errors and exceptions</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Exception and error namespace.  
+<p>Exception and errors.  
 <a href="#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Exception and error namespace. </p>
+<div class="textblock"><p>Exception and errors. </p>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1error_1_1detail.html">detail</a></td></tr>
+<tr class="memdesc:namespacevidre_1_1error_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation details namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1error_1_1code.html">code</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General error code.  <a href="classvidre_1_1error_1_1code.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1error_1_1diagnostic.html">diagnostic</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception diagnostic.  <a href="classvidre_1_1error_1_1diagnostic.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,13 +157,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga168bd3604fdf1d1df4bd73fd0337fe46" id="r_ga168bd3604fdf1d1df4bd73fd0337fe46"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga168bd3604fdf1d1df4bd73fd0337fe46"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-exception.html#ga168bd3604fdf1d1df4bd73fd0337fe46">allocator</a> = <a class="el" href="structvidre_1_1detail_1_1exception_1_1allocator.html">detail::exception::allocator</a>&lt;T&gt;</td></tr>
-<tr class="memdesc:ga168bd3604fdf1d1df4bd73fd0337fe46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocator for exception handling.  <br /></td></tr>
-<tr class="separator:ga168bd3604fdf1d1df4bd73fd0337fe46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0f37c8f33d19b5b1811c823d2fd0c081" id="r_ga0f37c8f33d19b5b1811c823d2fd0c081"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-exception.html#ga0f37c8f33d19b5b1811c823d2fd0c081">string</a> = std::basic_string&lt;char, std::char_traits&lt;char&gt;, <a class="el" href="structvidre_1_1detail_1_1exception_1_1allocator.html">detail::exception::allocator</a>&lt;char&gt;&gt;</td></tr>
-<tr class="memdesc:ga0f37c8f33d19b5b1811c823d2fd0c081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard type for error messages.  <br /></td></tr>
-<tr class="separator:ga0f37c8f33d19b5b1811c823d2fd0c081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef7c3e888d0fa5b0fc7635781380fb04" id="r_gaef7c3e888d0fa5b0fc7635781380fb04"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gaef7c3e888d0fa5b0fc7635781380fb04"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-exception.html#gaef7c3e888d0fa5b0fc7635781380fb04">allocator</a> = <a class="el" href="structvidre_1_1error_1_1detail_1_1allocator.html">error::detail::allocator</a>&lt;T&gt;</td></tr>
+<tr class="memdesc:gaef7c3e888d0fa5b0fc7635781380fb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocator for exception handling.  <br /></td></tr>
+<tr class="separator:gaef7c3e888d0fa5b0fc7635781380fb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c123f6f4caebeb5427747c03f39cc18" id="r_ga9c123f6f4caebeb5427747c03f39cc18"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-exception.html#ga9c123f6f4caebeb5427747c03f39cc18">string</a> = std::basic_string&lt;char, std::char_traits&lt;char&gt;, <a class="el" href="structvidre_1_1error_1_1detail_1_1allocator.html">error::detail::allocator</a>&lt;char&gt;&gt;</td></tr>
+<tr class="memdesc:ga9c123f6f4caebeb5427747c03f39cc18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard type for error messages.  <br /></td></tr>
+<tr class="separator:ga9c123f6f4caebeb5427747c03f39cc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

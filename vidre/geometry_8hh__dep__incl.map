@@ -1,0 +1,16 @@
+<map id="vidre/video/format/geometry.hh" name="vidre/video/format/geometry.hh">
+<area shape="rect" id="Node000001" title=" " alt="" coords="147,5,274,45"/>
+<area shape="rect" id="Node000002" href="$video_2vidre_2video_2format_8hh.html" title=" " alt="" coords="88,189,232,214"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,59,189,94,165,189,160,187,184,93,196,57"/>
+<area shape="rect" id="Node000006" href="$pixel_8hh.html" title=" " alt="" coords="198,93,325,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="231,56,252,92,248,94,227,59"/>
+<area shape="rect" id="Node000003" href="$format_8cc.html" title=" " alt="" coords="5,269,149,295"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="140,225,91,271,88,267,136,222"/>
+<area shape="rect" id="Node000004" href="$video_2vidre_2video_2frame_8hh.html" title=" " alt="" coords="174,269,314,295"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="184,222,233,267,230,271,181,225"/>
+<area shape="rect" id="Node000005" href="$frame_8cc.html" title=" " alt="" coords="174,343,314,368"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="247,308,247,343,241,343,241,308"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="230,144,176,190,172,186,227,140"/>
+<area shape="rect" id="Node000007" href="$pixel_8cc.html" title=" " alt="" coords="257,181,383,221"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="284,143,309,180,305,183,280,146"/>
+</map>

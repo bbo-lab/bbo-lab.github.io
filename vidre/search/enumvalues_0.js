@@ -1,12 +1,24 @@
 var searchData=
 [
   ['abgr_0',['abgr',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a46128f8d3bdd9be3f4c5085161e4f8b9',1,'vidre::ffmpeg']]],
-  ['alert_1',['alert',['../group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca7ed21143076d0cca420653d4345baa2f',1,'vidre::log']]],
-  ['allocate_5frange_2',['allocate_range',['../classvidre_1_1storage_1_1fileio.html#ac27d12f8230081a633fb5e2bb79744f1a9331793b09b788ce6eddca851f588786',1,'vidre::storage::fileio::allocate_range'],['../group__api-core-details.html#ggaacd1bb2e24b0749a1beaef0a3f4742c4aaaa661fab18a5b49eae0d20e6b7264e0',1,'vidre::detail::file::allocate_range']]],
-  ['append_3',['append',['../classvidre_1_1storage_1_1fileio.html#a050081d123e5a253ae3ac3a93f99d94bae84de2cb98a0bbf2dae58e0dc5a611ff',1,'vidre::storage::fileio::append'],['../classvidre_1_1ffmpeg_1_1dictionary.html#ac125adff306af4513a930d261cbb9c0ea9516dfb15f51c7ee19a4d46b8c0dbe1d',1,'vidre::ffmpeg::dictionary::append'],['../group__api-core-details.html#gga3892b370e5f5d516b8fc80a6f97726d8a5f7cb828878e649230168ebb532ca723',1,'vidre::detail::file::append']]],
-  ['argb_4',['argb',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a160d69bb77496bdc5035cf5b53fd273f',1,'vidre::ffmpeg']]],
-  ['audio_5',['audio',['../group__api-core-storage-raw.html#gga5fa0321a86ee103a5c9da9fecb857d84aa5ca0b5894324f8bb54bb9fffad29d1e',1,'vidre::storage::raw']]],
-  ['available_6',['available',['../group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772ae4894ca167b08880bfc35862f18575eb',1,'vidre::device']]],
-  ['ayuv64be_7',['ayuv64be',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ae73a6894b41016d62d8a964352c6e3e9',1,'vidre::ffmpeg']]],
-  ['ayuv64le_8',['ayuv64le',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146aa8f671a36992e18da347191fab9a487d',1,'vidre::ffmpeg']]]
+  ['abgr32_1',['abgr32',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a6586d03661354a460e38afa3fa9a6516',1,'fourcc.hh']]],
+  ['abgr444_2',['abgr444',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1aa2b8bbda1373a934646b255df6f86195',1,'fourcc.hh']]],
+  ['abgr555_3',['abgr555',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ab7566935f93866a16a2217540d8bb99e',1,'fourcc.hh']]],
+  ['abgr64_5f12_4',['abgr64_12',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a37e6863d0391c122a23e78f385c0e22c',1,'fourcc.hh']]],
+  ['ajpg_5',['ajpg',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ac338436482ba16373224081cc006ca74',1,'fourcc.hh']]],
+  ['alert_6',['alert',['../group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca7ed21143076d0cca420653d4345baa2f',1,'vidre::log']]],
+  ['allocate_5frange_7',['allocate_range',['../classvidre_1_1io_1_1file.html#ac28231f3be510f5dc37756aab19afd41a8b89f8c4996434ca07b8ec1c3e278e3c',1,'vidre::io::file::allocate_range'],['../group__api-core-io-details.html#gga6b7973b158ab1c09d72020c128f939d9a1fbcfab219e5722cb0e83d67a38d1a8b',1,'vidre::detail::io::file::allocate_range']]],
+  ['append_8',['append',['../classvidre_1_1io_1_1file.html#a4ee25f9e761403980f230868d7b91a42a9516dfb15f51c7ee19a4d46b8c0dbe1d',1,'vidre::io::file::append'],['../classvidre_1_1ffmpeg_1_1dictionary.html#ac125adff306af4513a930d261cbb9c0ea9516dfb15f51c7ee19a4d46b8c0dbe1d',1,'vidre::ffmpeg::dictionary::append'],['../group__api-core-io-details.html#ggad532a1fa9acebd750f184d78d606e499a9516dfb15f51c7ee19a4d46b8c0dbe1d',1,'vidre::detail::io::file::append']]],
+  ['argb_9',['argb',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a160d69bb77496bdc5035cf5b53fd273f',1,'vidre::ffmpeg']]],
+  ['argb2101010_10',['argb2101010',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ab9770b9bb3613be076ff52c399026764',1,'fourcc.hh']]],
+  ['argb32_11',['argb32',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ae57a429bc01664112d277cc6d93d3ad6',1,'fourcc.hh']]],
+  ['argb444_12',['argb444',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a26135f9f65a926abad5f054f28f24479',1,'fourcc.hh']]],
+  ['argb555_13',['argb555',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ab8d6eaf7be423dbfce18ee9bb75a11f0',1,'fourcc.hh']]],
+  ['argb555x_14',['argb555x',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1aa7b30af655a1d3b97929d5ab17735c44',1,'fourcc.hh']]],
+  ['audio_15',['audio',['../group__api-core-io-packet.html#ggafcb4b31d4dfe00e7a8f623ca0243fc4aaa5ca0b5894324f8bb54bb9fffad29d1e',1,'vidre::io::packet::audio'],['../group__api-core-storage-raw.html#gga5fa0321a86ee103a5c9da9fecb857d84aa5ca0b5894324f8bb54bb9fffad29d1e',1,'vidre::storage::raw::audio']]],
+  ['av1_5fframe_16',['av1_frame',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a10eae5b8cd64254c50f46e0404364cb6',1,'fourcc.hh']]],
+  ['available_17',['available',['../group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772ae4894ca167b08880bfc35862f18575eb',1,'vidre::device']]],
+  ['ayuv32_18',['ayuv32',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a7236f29340d51442827e27c4352b2aad',1,'fourcc.hh']]],
+  ['ayuv64be_19',['ayuv64be',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ae73a6894b41016d62d8a964352c6e3e9',1,'vidre::ffmpeg']]],
+  ['ayuv64le_20',['ayuv64le',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146aa8f671a36992e18da347191fab9a487d',1,'vidre::ffmpeg']]]
 ];

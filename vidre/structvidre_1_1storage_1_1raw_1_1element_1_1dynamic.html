@@ -142,37 +142,37 @@ $(function(){initNavTree('structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.ht
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for dynamic elements. </p>
 <p>Dynamic elements, such as groups of elements or strings, require field updates after all value were set. This is best suited for the file header.</p>
-<p>Example: </p><div class="fragment"><div class="line">    <span class="keyword">struct </span><a class="code hl_define" href="group__api-core-details.html#gae945a6e73151a44145ba0938e71a1dd5">__vidre_packed__</a> <a class="code hl_struct" href="structvariable_1_1index.html">index</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> raw::element::dynamic {</div>
+<p>Example: </p><div class="fragment"><div class="line">    <span class="keyword">struct </span><a class="code hl_define" href="group__api-core-details.html#ga91542f6e8b34c625fab750990e548aea">__vidre_packed__</a> <a class="code hl_struct" href="structvariable_1_1index.html">index</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> raw::element::dynamic {</div>
 <div class="line">        uint64_t counter{};</div>
 <div class="line"> </div>
 <div class="line">        <a class="code hl_typedef" href="namespacefixed.html#a8cd189f368c1ae0c498a90d2226cc25e">index</a>() noexcept : raw::element::dynamic(raw::major::video, raw::video::index, sizeof(raw::prefix) + sizeof(counter)) {}</div>
 <div class="line">        <span class="keyword">virtual</span> ~index() {}</div>
 <div class="line"> </div>
-<div class="line">        <a class="code hl_typedef" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a> put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> {</div>
+<div class="line">        <a class="code hl_typedef" href="group__api-core-io-details.html#gacb9b166c2b2b3012d6d0b929b1422ac0">offset_type</a> put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> {</div>
 <div class="line">            <span class="keywordflow">return</span> dynamic::put(f) + f.put(&amp;counter, 1);</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">struct </span><a class="code hl_define" href="group__api-core-details.html#gae945a6e73151a44145ba0938e71a1dd5">__vidre_packed__</a> <a class="code hl_struct" href="structvariable_1_1geometry.html">geometry</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> raw::element::dynamic {</div>
+<div class="line">    <span class="keyword">struct </span><a class="code hl_define" href="group__api-core-details.html#ga91542f6e8b34c625fab750990e548aea">__vidre_packed__</a> <a class="code hl_struct" href="structvariable_1_1geometry.html">geometry</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> raw::element::dynamic {</div>
 <div class="line">        video::geometry content{};</div>
 <div class="line"> </div>
 <div class="line">        <a class="code hl_typedef" href="namespacefixed.html#a96fb20e837b885f5f852e0ef91c5abc8">geometry</a>() noexcept</div>
 <div class="line">            : raw::element::dynamic(raw::major::video, raw::video::geometry, sizeof(raw::prefix) + sizeof(content)) {}</div>
 <div class="line">        <span class="keyword">virtual</span> ~geometry() {}</div>
 <div class="line"> </div>
-<div class="line">        <a class="code hl_typedef" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a> put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> {</div>
+<div class="line">        <a class="code hl_typedef" href="group__api-core-io-details.html#gacb9b166c2b2b3012d6d0b929b1422ac0">offset_type</a> put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> {</div>
 <div class="line">            <span class="keywordflow">return</span> dynamic::put(f) + f.put(&amp;content, 1);</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">struct </span><a class="code hl_define" href="group__api-core-details.html#gae945a6e73151a44145ba0938e71a1dd5">__vidre_packed__</a> <a class="code hl_struct" href="structvariable_1_1timestamp.html">timestamp</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> raw::element::dynamic {</div>
+<div class="line">    <span class="keyword">struct </span><a class="code hl_define" href="group__api-core-details.html#ga91542f6e8b34c625fab750990e548aea">__vidre_packed__</a> <a class="code hl_struct" href="structvariable_1_1timestamp.html">timestamp</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> raw::element::dynamic {</div>
 <div class="line">        video::timestamp content{};</div>
 <div class="line"> </div>
 <div class="line">        <a class="code hl_typedef" href="namespacefixed.html#a4ac0698580cf32120f1673de060b3801">timestamp</a>() noexcept</div>
 <div class="line">            : raw::element::dynamic(raw::major::video, raw::video::timestamp, sizeof(raw::prefix) + sizeof(content)) {}</div>
 <div class="line">        <span class="keyword">virtual</span> ~timestamp() {}</div>
 <div class="line"> </div>
-<div class="line">        <a class="code hl_typedef" href="group__api-core-details.html#gaaf952830b24e13cadd3043e030ef9e71">offset_type</a> put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> {</div>
+<div class="line">        <a class="code hl_typedef" href="group__api-core-io-details.html#gacb9b166c2b2b3012d6d0b929b1422ac0">offset_type</a> put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> {</div>
 <div class="line">            <span class="keywordflow">return</span> dynamic::put(f) + f.put(&amp;content, 1);</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
@@ -184,15 +184,15 @@ $(function(){initNavTree('structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.ht
 <div class="line">        variable::timestamp *<a class="code hl_variable" href="structvariable_1_1header.html#ae8c8415f6b61f0bc08507be7939c6a2a">computer</a>{};</div>
 <div class="line"> </div>
 <div class="line">        <a class="code hl_function" href="structvariable_1_1header.html#abf688b2797b4788a05c1f157ca454979">header</a>() noexcept : raw::element::<a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a03e74a2ab2e5c80bbac1e38adf101300">sequence</a>() {</div>
-<div class="line">            <a class="code hl_variable" href="structvariable_1_1header.html#a4483a55fa7a3fbc48b4702da9729ad9f">index</a> = <a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a742a8955aafc0b57eab0e2b6af5b2593">add&lt;variable::index&gt;</a>();</div>
-<div class="line">            <a class="code hl_variable" href="structvariable_1_1header.html#acfbb4165523d478016f57c205845d70a">geometry</a> = <a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a742a8955aafc0b57eab0e2b6af5b2593">add&lt;variable::geometry&gt;</a>();</div>
-<div class="line">            <a class="code hl_variable" href="structvariable_1_1header.html#aadb5bd293c3d5105240f3941caef9e2a">camera</a> = <a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a742a8955aafc0b57eab0e2b6af5b2593">add&lt;variable::timestamp&gt;</a>();</div>
-<div class="line">            <a class="code hl_variable" href="structvariable_1_1header.html#ae8c8415f6b61f0bc08507be7939c6a2a">computer</a> = <a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a742a8955aafc0b57eab0e2b6af5b2593">add&lt;variable::timestamp&gt;</a>();</div>
+<div class="line">            <a class="code hl_variable" href="structvariable_1_1header.html#a4483a55fa7a3fbc48b4702da9729ad9f">index</a> = <a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a61749f3a22c8fdd92bd7799c479cd8c9">add&lt;variable::index&gt;</a>();</div>
+<div class="line">            <a class="code hl_variable" href="structvariable_1_1header.html#acfbb4165523d478016f57c205845d70a">geometry</a> = <a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a61749f3a22c8fdd92bd7799c479cd8c9">add&lt;variable::geometry&gt;</a>();</div>
+<div class="line">            <a class="code hl_variable" href="structvariable_1_1header.html#aadb5bd293c3d5105240f3941caef9e2a">camera</a> = <a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a61749f3a22c8fdd92bd7799c479cd8c9">add&lt;variable::timestamp&gt;</a>();</div>
+<div class="line">            <a class="code hl_variable" href="structvariable_1_1header.html#ae8c8415f6b61f0bc08507be7939c6a2a">computer</a> = <a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a61749f3a22c8fdd92bd7799c479cd8c9">add&lt;variable::timestamp&gt;</a>();</div>
 <div class="line">        }</div>
 <div class="line"> </div>
 <div class="line">        <span class="keyword">virtual</span> <a class="code hl_function" href="structvariable_1_1header.html#a4308a46e082d6c32d1f2f411dbb6f62e">~header</a>() {}</div>
 <div class="line">    };</div>
-</div><!-- fragment --> <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="examples_2core_2raw_8cc-example.html#_a6">examples/core/raw.cc</a>.</dd>
+</div><!-- fragment --> <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="examples_2core_2raw_8cc-example.html#_a4">examples/core/raw.cc</a>.</dd>
 </dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -215,12 +215,12 @@ requires compatible_minor&lt;Minor&gt;</td></tr>
 <tr class="memitem:a7d44d5963b9221fe7dae0cba91fe9ed4" id="r_a7d44d5963b9221fe7dae0cba91fe9ed4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__api-core-storage-raw.html#ga26567d04ddc408802501d7cfc193175e">length_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d44d5963b9221fe7dae0cba91fe9ed4">update</a> () noexcept</td></tr>
 <tr class="memdesc:a7d44d5963b9221fe7dae0cba91fe9ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update entry length and return it.  <br /></td></tr>
 <tr class="separator:a7d44d5963b9221fe7dae0cba91fe9ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab25b350f2c12da8fde5811580dccd8dc" id="r_ab25b350f2c12da8fde5811580dccd8dc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="#abd71f41c09f6f3f4c31dda19d3a2edf7">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab25b350f2c12da8fde5811580dccd8dc">put</a> (<a class="el" href="classvidre_1_1storage_1_1sink.html">sink</a> &amp;f) const noexcept</td></tr>
-<tr class="memdesc:ab25b350f2c12da8fde5811580dccd8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write entry to sink.  <br /></td></tr>
-<tr class="separator:ab25b350f2c12da8fde5811580dccd8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba52697a22dc720ff296b5a140f5fa3d" id="r_aba52697a22dc720ff296b5a140f5fa3d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="#abd71f41c09f6f3f4c31dda19d3a2edf7">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba52697a22dc720ff296b5a140f5fa3d">get</a> (<a class="el" href="classvidre_1_1storage_1_1source.html">source</a> &amp;) noexcept</td></tr>
-<tr class="memdesc:aba52697a22dc720ff296b5a140f5fa3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from source.  <br /></td></tr>
-<tr class="separator:aba52697a22dc720ff296b5a140f5fa3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b991c3416070f9ab868f30281c0da4" id="r_a82b991c3416070f9ab868f30281c0da4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="#abd71f41c09f6f3f4c31dda19d3a2edf7">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82b991c3416070f9ab868f30281c0da4">put</a> (<a class="el" href="classvidre_1_1io_1_1sink.html">io::sink</a> &amp;f) const noexcept</td></tr>
+<tr class="memdesc:a82b991c3416070f9ab868f30281c0da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write entry to sink.  <br /></td></tr>
+<tr class="separator:a82b991c3416070f9ab868f30281c0da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e01bebad32559d1af09ff7817d5a2f" id="r_ab7e01bebad32559d1af09ff7817d5a2f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="#abd71f41c09f6f3f4c31dda19d3a2edf7">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7e01bebad32559d1af09ff7817d5a2f">get</a> (<a class="el" href="classvidre_1_1io_1_1source.html">io::source</a> &amp;) noexcept</td></tr>
+<tr class="memdesc:ab7e01bebad32559d1af09ff7817d5a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from source.  <br /></td></tr>
+<tr class="separator:ab7e01bebad32559d1af09ff7817d5a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -374,8 +374,8 @@ requires compatible_minor&lt;Minor&gt;</div>
 
 </div>
 </div>
-<a id="ab25b350f2c12da8fde5811580dccd8dc" name="ab25b350f2c12da8fde5811580dccd8dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab25b350f2c12da8fde5811580dccd8dc">&#9670;&#160;</a></span>put()</h2>
+<a id="a82b991c3416070f9ab868f30281c0da4" name="a82b991c3416070f9ab868f30281c0da4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82b991c3416070f9ab868f30281c0da4">&#9670;&#160;</a></span>put()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,7 +386,7 @@ requires compatible_minor&lt;Minor&gt;</div>
         <tr>
           <td class="memname">virtual <a class="el" href="#abd71f41c09f6f3f4c31dda19d3a2edf7">offset_type</a> vidre::storage::raw::element::dynamic::put </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvidre_1_1storage_1_1sink.html">sink</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classvidre_1_1io_1_1sink.html">io::sink</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -399,12 +399,12 @@ requires compatible_minor&lt;Minor&gt;</div>
 
 <p>Write entry to sink. </p>
 
-<p>Reimplemented in <a class="el" href="structvariable_1_1geometry.html#abd0cc41d8f53f73a2fb70fb67f2d1772">variable::geometry</a>, <a class="el" href="structvariable_1_1index.html#a81be005efb473ce84560e1a88c1aa759">variable::index</a>, <a class="el" href="structvariable_1_1timestamp.html#acb0c7ce64a3a67677695710c40c41178">variable::timestamp</a>, <a class="el" href="structvidre_1_1storage_1_1raw_1_1element_1_1group.html#acb37c0d629caf11fb9bf5b81466d10fb">vidre::storage::raw::element::group</a>, and <a class="el" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#ae3ab2a85ae69e0f031423cd3fc62e5e1">vidre::storage::raw::element::sequence</a>.</p>
+<p>Reimplemented in <a class="el" href="structvidre_1_1storage_1_1raw_1_1element_1_1group.html#ad1b7ff6291d93c819ee67f881fa0fdaa">vidre::storage::raw::element::group</a>, and <a class="el" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a5c8e059ccb90550b742ac0e55641e74d">vidre::storage::raw::element::sequence</a>.</p>
 
 </div>
 </div>
-<a id="aba52697a22dc720ff296b5a140f5fa3d" name="aba52697a22dc720ff296b5a140f5fa3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba52697a22dc720ff296b5a140f5fa3d">&#9670;&#160;</a></span>get()</h2>
+<a id="ab7e01bebad32559d1af09ff7817d5a2f" name="ab7e01bebad32559d1af09ff7817d5a2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e01bebad32559d1af09ff7817d5a2f">&#9670;&#160;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,7 +415,7 @@ requires compatible_minor&lt;Minor&gt;</div>
         <tr>
           <td class="memname">virtual <a class="el" href="#abd71f41c09f6f3f4c31dda19d3a2edf7">offset_type</a> vidre::storage::raw::element::dynamic::get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvidre_1_1storage_1_1source.html">source</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classvidre_1_1io_1_1source.html">io::source</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -446,7 +446,7 @@ requires compatible_minor&lt;Minor&gt;</div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>libs/core/vidre/storage/<a class="el" href="raw_8hh_source.html">raw.hh</a></li>
+<li>vidre/storage/<a class="el" href="raw_8hh_source.html">raw.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

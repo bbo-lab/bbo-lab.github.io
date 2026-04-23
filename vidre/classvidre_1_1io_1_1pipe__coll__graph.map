@@ -1,0 +1,13 @@
+<map id="vidre::io::pipe" name="vidre::io::pipe">
+<area shape="rect" id="Node000001" title="Data pipe." alt="" coords="21,344,121,369"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1io_1_1sink.html" title="Data sink skeleton." alt="" coords="5,269,105,295"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,308,71,343,66,344,58,309"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1io_1_1source.html" title="Data source." alt="" coords="130,269,245,295"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,304,91,346,89,342,156,300"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1event.html" title="Event signalling primitive." alt="" coords="142,181,233,207"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="190,221,190,269,185,269,185,221"/>
+<area shape="rect" id="Node000005" href="$structvidre_1_1detail_1_1event.html" title="Trivial event notification primitive based on Linux&#39;s eventfd." alt="" coords="123,93,252,119"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="190,133,190,181,185,181,185,133"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="120,5,255,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="190,45,190,93,185,93,185,45"/>
+</map>

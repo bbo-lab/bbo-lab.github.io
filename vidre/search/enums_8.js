@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pixel_5fformat_0',['pixel_format',['../group__api-support-ffmpeg-util-data.html#ga87e7b6ceacd0f2dd8c84a15085b61146',1,'vidre::ffmpeg']]]
+  ['level_0',['level',['../group__api-core-log-if.html#gac7188c64802d58d335e10371224772ec',1,'vidre::log']]]
 ];

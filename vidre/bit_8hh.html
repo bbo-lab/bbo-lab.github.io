@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VidRe: libs/core/vidre/storage/bit.hh File Reference</title>
+<title>VidRe: vidre/util/bit.hh File Reference</title>
 <link rel="icon" href="vidre.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -119,64 +119,63 @@ $(function(){initNavTree('bit_8hh.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="libs_2core_2vidre_2core_2config_8hh_source.html">vidre/core/config.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="core_2vidre_2cpp_2util_8hh_source.html">vidre/cpp/util.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="io_8hh_source.html">vidre/storage/io.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="core_2vidre_2memory_2base_8hh_source.html">vidre/memory/base.hh</a>&gt;</code><br />
 <code>#include &lt;bit&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for bit.hh:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="bit_8hh__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="bit_8hh__incl.svg" width="520" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="bit_8hh__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="bit_8hh__dep__incl.svg" width="232" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="bit_8hh_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1bit.html">vidre::bit</a></td></tr>
+<tr class="memdesc:namespacevidre_1_1bit"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit-twiddling. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre.html">vidre</a></td></tr>
 <tr class="memdesc:namespacevidre"><td class="mdescLeft">&#160;</td><td class="mdescRight">General namespace. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1storage.html">vidre::storage</a></td></tr>
-<tr class="memdesc:namespacevidre_1_1storage"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage-related namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga1a54136de09c224c899d7c2b0cb7e12e" id="r_ga1a54136de09c224c899d7c2b0cb7e12e"><td class="memTemplParams" colspan="2">template&lt;std::size_t From, std::size_t To&gt; </td></tr>
-<tr class="memitem:ga1a54136de09c224c899d7c2b0cb7e12e"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classvidre_1_1storage_1_1view.html#a8b2ab014151bca410d4f0c5da0f15756">view::size_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-storage-bit.html#ga1a54136de09c224c899d7c2b0cb7e12e">vidre::storage::pack_size</a> (<a class="el" href="classvidre_1_1storage_1_1view.html#a8b2ab014151bca410d4f0c5da0f15756">view::size_type</a> bytes_in)</td></tr>
-<tr class="memdesc:ga1a54136de09c224c899d7c2b0cb7e12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get output size fo pack (or unpack).  <br /></td></tr>
-<tr class="separator:ga1a54136de09c224c899d7c2b0cb7e12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5178c5854b8dc34e7ec41a9047cf6fe" id="r_gaf5178c5854b8dc34e7ec41a9047cf6fe"><td class="memTemplParams" colspan="2">template&lt;std::size_t From, std::size_t To, bool ByteSwap = false&gt; </td></tr>
-<tr class="memitem:gaf5178c5854b8dc34e7ec41a9047cf6fe"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1storage_1_1view.html#a8b2ab014151bca410d4f0c5da0f15756">view::size_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-storage-bit.html#gaf5178c5854b8dc34e7ec41a9047cf6fe">vidre::storage::pack</a> (const <a class="el" href="classvidre_1_1storage_1_1view.html">view</a> &amp;input, <a class="el" href="classvidre_1_1storage_1_1view.html">view</a> output)</td></tr>
-<tr class="memdesc:gaf5178c5854b8dc34e7ec41a9047cf6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack (or unpack) data.  <br /></td></tr>
-<tr class="separator:gaf5178c5854b8dc34e7ec41a9047cf6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9fe5dc9fd9b0d94beaae48f5e6062c3f" id="r_ga9fe5dc9fd9b0d94beaae48f5e6062c3f"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:ga9fe5dc9fd9b0d94beaae48f5e6062c3f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1storage_1_1view.html#a8b2ab014151bca410d4f0c5da0f15756">view::size_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-storage-bit.html#ga9fe5dc9fd9b0d94beaae48f5e6062c3f">vidre::storage::pack&lt; 16, 10, false &gt;</a> (const <a class="el" href="classvidre_1_1storage_1_1view.html">view</a> &amp;input, <a class="el" href="classvidre_1_1storage_1_1view.html">view</a> output)</td></tr>
-<tr class="separator:ga9fe5dc9fd9b0d94beaae48f5e6062c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad292aa09fbe8695ab94654cb4f8f1788" id="r_gad292aa09fbe8695ab94654cb4f8f1788"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:gad292aa09fbe8695ab94654cb4f8f1788"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1storage_1_1view.html#a8b2ab014151bca410d4f0c5da0f15756">view::size_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-storage-bit.html#gad292aa09fbe8695ab94654cb4f8f1788">vidre::storage::pack&lt; 10, 16, false &gt;</a> (const <a class="el" href="classvidre_1_1storage_1_1view.html">view</a> &amp;input, <a class="el" href="classvidre_1_1storage_1_1view.html">view</a> output)</td></tr>
-<tr class="separator:gad292aa09fbe8695ab94654cb4f8f1788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga63a87da21322a8e15feaf371ec802c68" id="r_ga63a87da21322a8e15feaf371ec802c68"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:ga63a87da21322a8e15feaf371ec802c68"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1storage_1_1view.html#a8b2ab014151bca410d4f0c5da0f15756">view::size_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-storage-bit.html#ga63a87da21322a8e15feaf371ec802c68">vidre::storage::pack&lt; 16, 12, false &gt;</a> (const <a class="el" href="classvidre_1_1storage_1_1view.html">view</a> &amp;input, <a class="el" href="classvidre_1_1storage_1_1view.html">view</a> output)</td></tr>
-<tr class="separator:ga63a87da21322a8e15feaf371ec802c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f9a2658387719d9b13a42b311224e0a" id="r_ga3f9a2658387719d9b13a42b311224e0a"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:ga3f9a2658387719d9b13a42b311224e0a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvidre_1_1storage_1_1view.html#a8b2ab014151bca410d4f0c5da0f15756">view::size_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-storage-bit.html#ga3f9a2658387719d9b13a42b311224e0a">vidre::storage::pack&lt; 12, 16, false &gt;</a> (const <a class="el" href="classvidre_1_1storage_1_1view.html">view</a> &amp;input, <a class="el" href="classvidre_1_1storage_1_1view.html">view</a> output)</td></tr>
-<tr class="separator:ga3f9a2658387719d9b13a42b311224e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9cddca8d1d5e69320c840dcaed93f0b1" id="r_ga9cddca8d1d5e69320c840dcaed93f0b1"><td class="memTemplParams" colspan="2">template&lt;std::size_t From, std::size_t To&gt; </td></tr>
+<tr class="memitem:ga9cddca8d1d5e69320c840dcaed93f0b1"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="group__api-core-memory-base.html#ga5a195aefab7366a6e1127e9250aa9417">memory::size_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-util-bit.html#ga9cddca8d1d5e69320c840dcaed93f0b1">vidre::bit::pack_size</a> (<a class="el" href="group__api-core-memory-base.html#ga5a195aefab7366a6e1127e9250aa9417">memory::size_type</a> bytes_in)</td></tr>
+<tr class="memdesc:ga9cddca8d1d5e69320c840dcaed93f0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get output size fo pack (or unpack).  <br /></td></tr>
+<tr class="separator:ga9cddca8d1d5e69320c840dcaed93f0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a78891cf8d0566da7da38e0172fbd8d" id="r_ga8a78891cf8d0566da7da38e0172fbd8d"><td class="memTemplParams" colspan="2">template&lt;std::size_t From, std::size_t To, bool ByteSwap = false&gt; </td></tr>
+<tr class="memitem:ga8a78891cf8d0566da7da38e0172fbd8d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__api-core-memory-base.html#ga5a195aefab7366a6e1127e9250aa9417">memory::size_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-util-bit.html#ga8a78891cf8d0566da7da38e0172fbd8d">vidre::bit::pack</a> (const <a class="el" href="classvidre_1_1memory_1_1view.html">memory::view</a> &amp;input, <a class="el" href="classvidre_1_1memory_1_1area.html">memory::area</a> output)</td></tr>
+<tr class="memdesc:ga8a78891cf8d0566da7da38e0172fbd8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack (or unpack) data.  <br /></td></tr>
+<tr class="separator:ga8a78891cf8d0566da7da38e0172fbd8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbb394a7d5d9a7d6917fb79a6e8364c9" id="r_gadbb394a7d5d9a7d6917fb79a6e8364c9"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:gadbb394a7d5d9a7d6917fb79a6e8364c9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__api-core-memory-base.html#ga5a195aefab7366a6e1127e9250aa9417">memory::size_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-util-bit.html#gadbb394a7d5d9a7d6917fb79a6e8364c9">vidre::bit::pack&lt; 16, 10, false &gt;</a> (const <a class="el" href="classvidre_1_1memory_1_1view.html">memory::view</a> &amp;input, <a class="el" href="classvidre_1_1memory_1_1area.html">memory::area</a> output)</td></tr>
+<tr class="separator:gadbb394a7d5d9a7d6917fb79a6e8364c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71ad3260706db4fbe54076fbb022d412" id="r_ga71ad3260706db4fbe54076fbb022d412"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:ga71ad3260706db4fbe54076fbb022d412"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__api-core-memory-base.html#ga5a195aefab7366a6e1127e9250aa9417">memory::size_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-util-bit.html#ga71ad3260706db4fbe54076fbb022d412">vidre::bit::pack&lt; 10, 16, false &gt;</a> (const <a class="el" href="classvidre_1_1memory_1_1view.html">memory::view</a> &amp;input, <a class="el" href="classvidre_1_1memory_1_1area.html">memory::area</a> output)</td></tr>
+<tr class="separator:ga71ad3260706db4fbe54076fbb022d412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae753d302d361d2dd317932f774a61792" id="r_gae753d302d361d2dd317932f774a61792"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:gae753d302d361d2dd317932f774a61792"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__api-core-memory-base.html#ga5a195aefab7366a6e1127e9250aa9417">memory::size_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-util-bit.html#gae753d302d361d2dd317932f774a61792">vidre::bit::pack&lt; 16, 12, false &gt;</a> (const <a class="el" href="classvidre_1_1memory_1_1view.html">memory::view</a> &amp;input, <a class="el" href="classvidre_1_1memory_1_1area.html">memory::area</a> output)</td></tr>
+<tr class="separator:gae753d302d361d2dd317932f774a61792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac373fe7be167d249afc56afe40884e47" id="r_gac373fe7be167d249afc56afe40884e47"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:gac373fe7be167d249afc56afe40884e47"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__api-core-memory-base.html#ga5a195aefab7366a6e1127e9250aa9417">memory::size_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__api-core-util-bit.html#gac373fe7be167d249afc56afe40884e47">vidre::bit::pack&lt; 12, 16, false &gt;</a> (const <a class="el" href="classvidre_1_1memory_1_1view.html">memory::view</a> &amp;input, <a class="el" href="classvidre_1_1memory_1_1area.html">memory::area</a> output)</td></tr>
+<tr class="separator:gac373fe7be167d249afc56afe40884e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_87a455bccb09a92130c26a11a880c98a.html">libs</a></li><li class="navelem"><a class="el" href="dir_4ccdb3f39e2a0cb7737b4252176ba716.html">core</a></li><li class="navelem"><a class="el" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html">vidre</a></li><li class="navelem"><a class="el" href="dir_43696e9230b71dbdcf64b2d56c385572.html">storage</a></li><li class="navelem"><a class="el" href="bit_8hh.html">bit.hh</a></li>
+    <li class="navelem"><a class="el" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html">vidre</a></li><li class="navelem"><a class="el" href="dir_44dda3653d8ed495fb138f7de47cfc57.html">util</a></li><li class="navelem"><a class="el" href="bit_8hh.html">bit.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0 </li>
   </ul>
 </div>

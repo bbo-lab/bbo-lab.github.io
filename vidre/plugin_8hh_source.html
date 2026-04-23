@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VidRe: libs/core/vidre/plugin.hh Source File</title>
+<title>VidRe: vidre/plugin.hh Source File</title>
 <link rel="icon" href="vidre.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -140,31 +140,36 @@ $(function(){initNavTree('plugin_8hh_source.html',''); initResizable(true); });
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define VIDRE_CORE_PLUGIN_HH</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;<a class="code" href="libs_2core_2vidre_2core_2config_8hh.html">vidre/core/config.hh</a>&gt;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &lt;<a class="code" href="core_2vidre_2plugin_2exception_8hh.html">vidre/plugin/exception.hh</a>&gt;</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;<a class="code" href="information_8hh.html">vidre/plugin/information.hh</a>&gt;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;<a class="code" href="dynamic_8hh.html">vidre/plugin/dynamic.hh</a>&gt;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a> {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="namespacevidre_1_1plugin.html">   46</a></span>    <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre_1_1plugin.html">plugin</a> {}  <span class="comment">// namespace plugin</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}  <span class="comment">// namespace vidre</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif  </span><span class="comment">// VIDRE_CORE_PLUGIN_HH</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &lt;<a class="code" href="libs_2core_2vidre_2core_2config_8hh.html">vidre/core/config.hh</a>&gt;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &lt;<a class="code" href="core_2vidre_2plugin_2exception_8hh.html">vidre/plugin/exception.hh</a>&gt;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &lt;<a class="code" href="libs_2core_2vidre_2plugin_2types_8hh.html">vidre/plugin/types.hh</a>&gt;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// FIXME</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#include &lt;<a class="code" href="information_8hh.html">vidre/plugin/information.hh</a>&gt;</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#include &lt;<a class="code" href="native_8hh.html">vidre/plugin/native.hh</a>&gt;</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a> {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="namespacevidre_1_1plugin.html">   54</a></span>    <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre_1_1plugin.html">plugin</a> {}  <span class="comment">// namespace plugin</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}  <span class="comment">// namespace vidre</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif  </span><span class="comment">// VIDRE_CORE_PLUGIN_HH</span></div>
 <div class="ttc" id="acore_2vidre_2plugin_2exception_8hh_html"><div class="ttname"><a href="core_2vidre_2plugin_2exception_8hh.html">exception.hh</a></div></div>
-<div class="ttc" id="adynamic_8hh_html"><div class="ttname"><a href="dynamic_8hh.html">dynamic.hh</a></div></div>
 <div class="ttc" id="ainformation_8hh_html"><div class="ttname"><a href="information_8hh.html">information.hh</a></div></div>
 <div class="ttc" id="alibs_2core_2vidre_2core_2config_8hh_html"><div class="ttname"><a href="libs_2core_2vidre_2core_2config_8hh.html">config.hh</a></div></div>
-<div class="ttc" id="anamespacevidre_1_1plugin_html"><div class="ttname"><a href="namespacevidre_1_1plugin.html">vidre::plugin</a></div><div class="ttdef"><b>Definition</b> plugin.hh:46</div></div>
-<div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> midraw.hh:31</div></div>
+<div class="ttc" id="alibs_2core_2vidre_2plugin_2types_8hh_html"><div class="ttname"><a href="libs_2core_2vidre_2plugin_2types_8hh.html">types.hh</a></div></div>
+<div class="ttc" id="anamespacevidre_1_1plugin_html"><div class="ttname"><a href="namespacevidre_1_1plugin.html">vidre::plugin</a></div><div class="ttdef"><b>Definition</b> plugin.hh:54</div></div>
+<div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> config.hh:31</div></div>
+<div class="ttc" id="anative_8hh_html"><div class="ttname"><a href="native_8hh.html">native.hh</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_87a455bccb09a92130c26a11a880c98a.html">libs</a></li><li class="navelem"><a class="el" href="dir_4ccdb3f39e2a0cb7737b4252176ba716.html">core</a></li><li class="navelem"><a class="el" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html">vidre</a></li><li class="navelem"><a class="el" href="plugin_8hh.html">plugin.hh</a></li>
+    <li class="navelem"><a class="el" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html">vidre</a></li><li class="navelem"><a class="el" href="plugin_8hh.html">plugin.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0 </li>
   </ul>
 </div>

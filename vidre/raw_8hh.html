@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VidRe: libs/core/vidre/storage/raw.hh File Reference</title>
+<title>VidRe: vidre/storage/raw.hh File Reference</title>
 <link rel="icon" href="vidre.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -124,7 +124,7 @@ $(function(){initNavTree('raw_8hh.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="libs_2core_2vidre_2core_2config_8hh_source.html">vidre/core/config.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="io_8hh_source.html">vidre/storage/io.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="file_8hh_source.html">vidre/io/file.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="version_8hh_source.html">vidre/util/version.hh</a>&gt;</code><br />
 <code>#include &lt;bit&gt;</code><br />
 <code>#include &lt;optional&gt;</code><br />
@@ -142,7 +142,7 @@ $(function(){initNavTree('raw_8hh.html',''); initResizable(true); });
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="raw_8hh__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="raw_8hh__dep__incl.svg" width="544" height="447"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="raw_8hh_source.html">Go to the source code of this file.</a></p>
@@ -167,8 +167,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html">vidre::storage::raw::element::sequence</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of TLV entries.  <a href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1raw_1_1element_1_1packet.html">vidre::storage::raw::element::packet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Group of TLV entries.  <a href="structvidre_1_1storage_1_1raw_1_1element_1_1packet.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1storage_1_1raw_1_1element_1_1group.html">vidre::storage::raw::element::group</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Group of TLV entries.  <a href="structvidre_1_1storage_1_1raw_1_1element_1_1group.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1storage_1_1raw_1_1writer.html">vidre::storage::raw::writer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file header.  <a href="classvidre_1_1storage_1_1raw_1_1writer.html#details">More...</a><br /></td></tr>
@@ -176,14 +178,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1storage_1_1raw.html">vidre::storage::raw</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre.html">vidre</a></td></tr>
 <tr class="memdesc:namespacevidre"><td class="mdescLeft">&#160;</td><td class="mdescRight">General namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1storage.html">vidre::storage</a></td></tr>
-<tr class="memdesc:namespacevidre_1_1storage"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage-related namespace. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1storage_1_1raw.html">vidre::storage::raw</a></td></tr>
-<tr class="memdesc:namespacevidre_1_1storage_1_1raw"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace for "raw file" implementation. <br /></td></tr>
+<tr class="memdesc:namespacevidre_1_1storage"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage related. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1storage_1_1raw_1_1element.html">vidre::storage::raw::element</a></td></tr>
 <tr class="memdesc:namespacevidre_1_1storage_1_1raw_1_1element"><td class="mdescLeft">&#160;</td><td class="mdescRight">TLV elements. <br /></td></tr>
@@ -296,7 +297,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_87a455bccb09a92130c26a11a880c98a.html">libs</a></li><li class="navelem"><a class="el" href="dir_4ccdb3f39e2a0cb7737b4252176ba716.html">core</a></li><li class="navelem"><a class="el" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html">vidre</a></li><li class="navelem"><a class="el" href="dir_43696e9230b71dbdcf64b2d56c385572.html">storage</a></li><li class="navelem"><a class="el" href="raw_8hh.html">raw.hh</a></li>
+    <li class="navelem"><a class="el" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html">vidre</a></li><li class="navelem"><a class="el" href="dir_43696e9230b71dbdcf64b2d56c385572.html">storage</a></li><li class="navelem"><a class="el" href="raw_8hh.html">raw.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0 </li>
   </ul>
 </div>

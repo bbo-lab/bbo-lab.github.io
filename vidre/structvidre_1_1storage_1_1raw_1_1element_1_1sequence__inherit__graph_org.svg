@@ -39,7 +39,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="structvidre_1_1storage_1_1raw_1_1element_1_1group.html" target="_top" xlink:title="Group of TLV entries.">
+<g id="a_Node000004"><a xlink:href="structvidre_1_1storage_1_1raw_1_1element_1_1group.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="202,-30 104,-30 104,0 202,0 202,-30"/>
 <text text-anchor="start" x="112" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::storage::raw</text>
 <text text-anchor="middle" x="153" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::element::group</text>

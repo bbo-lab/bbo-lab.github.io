@@ -1,6 +1,5 @@
 var group__api_device_basics =
 [
-    [ "vidre::device", "namespacevidre_1_1device.html", null ],
     [ "vidre::device::error", "namespacevidre_1_1device_1_1error.html", null ],
     [ "vidre::device::base", "classvidre_1_1device_1_1base.html", [
       [ "base", "classvidre_1_1device_1_1base.html#afcbf3f6e8c4f547b411a36d35e5adbc5", null ],

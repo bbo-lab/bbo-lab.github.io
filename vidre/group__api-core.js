@@ -5,11 +5,11 @@ var group__api_core =
     [ "Utilities", "group__api-core-util.html", "group__api-core-util" ],
     [ "Errors and exceptions", "group__api-core-exception.html", "group__api-core-exception" ],
     [ "Logging", "group__api-core-log.html", "group__api-core-log" ],
-    [ "Memory", "group__api-core-memory.html", null ],
+    [ "Memory", "group__api-core-memory.html", "group__api-core-memory" ],
     [ "Scripting", "group__api-core-script.html", "group__api-core-script" ],
     [ "Settings", "group__api-core-settings.html", "group__api-core-settings" ],
+    [ "In-/output", "group__api-core-io.html", "group__api-core-io" ],
     [ "Storage", "group__api-core-storage.html", "group__api-core-storage" ],
-    [ "Video related", "group__api-core-video.html", "group__api-core-video" ],
     [ "Plugins", "group__api-core-plugin.html", "group__api-core-plugin" ],
     [ "Program invocation and tools", "group__api-core-program.html", "group__api-core-program" ],
     [ "Implementation details", "group__api-core-details.html", "group__api-core-details" ]

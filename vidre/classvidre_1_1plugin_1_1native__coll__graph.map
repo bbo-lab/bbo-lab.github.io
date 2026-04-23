@@ -1,0 +1,7 @@
+<map id="vidre::plugin::native" name="vidre::plugin::native">
+<area shape="rect" id="Node000001" title="Dynamically linked object plugin loader." alt="" coords="92,108,227,133"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1plugin_1_1native_1_1library.html" title="Library (dynamically linked object) handler." alt="" coords="5,5,140,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,53,150,106,146,109,97,57"/>
+<area shape="rect" id="Node000003" href="$structvidre_1_1plugin_1_1information.html" title="Module information." alt="" coords="164,13,328,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,50,172,110,168,106,224,46"/>
+</map>

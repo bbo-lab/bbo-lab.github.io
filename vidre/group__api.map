@@ -1,8 +1,9 @@
 <map id="C++&#45;API" name="C++&#45;API">
-<area shape="rect" id="Node000001" title="The C++ application programming interface." alt="" coords="5,104,80,129"/>
+<area shape="rect" id="Node000001" title="The C++ application programming interface." alt="" coords="5,129,80,155"/>
 <area shape="rect" id="Node000002" href="$group__api-config.html" title=" " alt="" coords="154,5,253,31"/>
 <area shape="rect" id="Node000003" href="$group__api-core.html" title=" " alt="" coords="159,55,248,80"/>
-<area shape="rect" id="Node000004" href="$group__api-device.html" title=" " alt="" coords="152,104,255,129"/>
-<area shape="rect" id="Node000005" href="$group__api-network.html" title=" " alt="" coords="148,153,259,179"/>
-<area shape="rect" id="Node000006" href="$group__api-support.html" title=" " alt="" coords="128,203,279,228"/>
+<area shape="rect" id="Node000005" href="$group__api-device.html" title=" " alt="" coords="152,104,255,129"/>
+<area shape="rect" id="Node000006" href="$group__api-network.html" title=" " alt="" coords="148,153,259,179"/>
+<area shape="rect" id="Node000007" href="$group__api-support.html" title=" " alt="" coords="128,203,279,228"/>
+<area shape="rect" id="Node000004" href="$group__api-video.html" title=" " alt="" coords="156,252,251,277"/>
 </map>

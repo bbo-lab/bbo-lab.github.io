@@ -6,7 +6,7 @@ var structvidre_1_1storage_1_1raw_1_1element_1_1dynamic =
     [ "~dynamic", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#af5164a96a7667d5a6b4bc6b83e859f24", null ],
     [ "dynamic", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#ac0be845bc7abe7e1b7a1b517baa46df9", null ],
     [ "update", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#a7d44d5963b9221fe7dae0cba91fe9ed4", null ],
-    [ "put", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#ab25b350f2c12da8fde5811580dccd8dc", null ],
-    [ "get", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#aba52697a22dc720ff296b5a140f5fa3d", null ],
+    [ "put", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#a82b991c3416070f9ab868f30281c0da4", null ],
+    [ "get", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#ab7e01bebad32559d1af09ff7817d5a2f", null ],
     [ "prefix", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html#a737e38eaba47ec9f1c34fe4794bb030a", null ]
 ];
