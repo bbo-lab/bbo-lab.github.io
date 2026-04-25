@@ -16,10 +16,11 @@ var searchData=
   ['max_5fsize_13',['max_size',['../structvidre_1_1error_1_1detail_1_1allocator.html#a4df206a04b1fea02beddfed83d218e8e',1,'vidre::error::detail::allocator']]],
   ['memory_14',['memory',['../classvidre_1_1exception_1_1memory.html#ab76d99efed766cea1f306115c101afdf',1,'vidre::exception::memory']]],
   ['message_15',['message',['../classvidre_1_1error_1_1message.html#a2347e0dc77fc1903911155ba23efd3df',1,'vidre::error::message::message(const char *msg) noexcept'],['../classvidre_1_1error_1_1message.html#ab64c4c21958a18953de32cfbac59485b',1,'vidre::error::message::message(const std::string &amp;msg) noexcept'],['../classvidre_1_1error_1_1message.html#a03cf37e4cbbfda9b9ce9eb419b73fb27',1,'vidre::error::message::message(const string &amp;msg) noexcept'],['../classvidre_1_1ffmpeg_1_1error__category.html#a58e9d9f2e8e2ae4d38dff1aafba3d09f',1,'vidre::ffmpeg::error_category::message()']]],
-  ['mi_5flog_5fdebug_16',['mi_log_debug',['../aptina_8cc.html#a0443ab04fd24eec44ebdc49330b62ec0',1,'aptina.cc']]],
-  ['mi_5flog_5ferror_17',['mi_log_error',['../aptina_8cc.html#a9e637bacc6e9a897210b576485b4444d',1,'aptina.cc']]],
-  ['mi_5flog_5finfo_18',['mi_log_info',['../aptina_8cc.html#a3112769fb3e31ba1613424a8d6c84cb9',1,'aptina.cc']]],
-  ['midraw_19',['midraw',['../classvidre_1_1input_1_1midraw.html#aa36c6a4ab31cf5ce878b049fbe0b817e',1,'vidre::input::midraw::midraw() noexcept=default'],['../classvidre_1_1input_1_1midraw.html#a197cb9708a4df1fd33204dfb3f0f9009',1,'vidre::input::midraw::midraw(const std::filesystem::path &amp;filename) noexcept']]],
-  ['min_5fpriority_20',['min_priority',['../structvidre_1_1detail_1_1schedule.html#a7a6173a505e87cc9827296d26c6603bf',1,'vidre::detail::schedule']]],
-  ['minor_21',['minor',['../structvidre_1_1storage_1_1raw_1_1id.html#af795755b1d557a5f1e73058706ca4034',1,'vidre::storage::raw::id::minor()'],['../classvidre_1_1version.html#a51153a36836c94508fb0af51e89c7071',1,'vidre::version::minor()']]]
+  ['meta_16',['meta',['../classvidre_1_1device_1_1base.html#a728eb656016e4bc8689dfb709952d0c8',1,'vidre::device::base']]],
+  ['mi_5flog_5fdebug_17',['mi_log_debug',['../aptina_8cc.html#a0443ab04fd24eec44ebdc49330b62ec0',1,'aptina.cc']]],
+  ['mi_5flog_5ferror_18',['mi_log_error',['../aptina_8cc.html#a9e637bacc6e9a897210b576485b4444d',1,'aptina.cc']]],
+  ['mi_5flog_5finfo_19',['mi_log_info',['../aptina_8cc.html#a3112769fb3e31ba1613424a8d6c84cb9',1,'aptina.cc']]],
+  ['midraw_20',['midraw',['../classvidre_1_1input_1_1midraw.html#aa36c6a4ab31cf5ce878b049fbe0b817e',1,'vidre::input::midraw::midraw() noexcept=default'],['../classvidre_1_1input_1_1midraw.html#a197cb9708a4df1fd33204dfb3f0f9009',1,'vidre::input::midraw::midraw(const std::filesystem::path &amp;filename) noexcept']]],
+  ['min_5fpriority_21',['min_priority',['../structvidre_1_1detail_1_1schedule.html#a7a6173a505e87cc9827296d26c6603bf',1,'vidre::detail::schedule']]],
+  ['minor_22',['minor',['../structvidre_1_1storage_1_1raw_1_1id.html#af795755b1d557a5f1e73058706ca4034',1,'vidre::storage::raw::id::minor()'],['../classvidre_1_1version.html#a51153a36836c94508fb0af51e89c7071',1,'vidre::version::minor()']]]
 ];

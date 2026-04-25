@@ -1,5 +1,9 @@
 <map id="vidre::video::uvc::camera" name="vidre::video::uvc::camera">
-<area shape="rect" id="Node000001" title=" " alt="" coords="8,79,135,119"/>
-<area shape="rect" id="Node000002" href="$classvidre_1_1device_1_1base.html" title="Abstract device." alt="" coords="5,5,137,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,44,74,79,69,79,69,44"/>
+<area shape="rect" id="Node000001" title="UVC camera." alt="" coords="93,152,219,192"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1device_1_1camera.html" title="Camera device." alt="" coords="5,79,152,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,112,139,150,135,154,98,116"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1device_1_1base.html" title="Device skeleton." alt="" coords="13,5,145,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,44,81,79,76,79,76,44"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1io_1_1source.html" title="Data source." alt="" coords="176,79,291,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="214,116,177,154,173,150,211,112"/>
 </map>

@@ -127,17 +127,19 @@ $(function(){initNavTree('classvidre_1_1device_1_1base.html',''); initResizable(
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1device_1_1base__inherit__graph.svg" width="143" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for vidre::device::base:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1device_1_1base__coll__graph.svg" width="143" height="228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1device_1_1base__inherit__graph.svg" width="240" height="198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Devices may be hard- or software devices. The latter applies, for example, to filters, and the like. Each device provides streams, ie. sinks and sources, as well as generic configuration options. Specific implementations will add more direct functionality. </p>
+<div class="textblock"><p>Devices may be hard- or software devices. The latter applies, for example, to filters, and the like. Each device provides streams, ie. sinks and sources, as well as generic configuration options. Specific implementations will add more direct functionality.</p>
+<p>Device configuration is stored internally as a JSON object, which is also returned by the <code>info()</code> method. This allows for a flexible and extensible way to store and retrieve device information, and also allows for user-defined configuration options. The general options are defined as follows:</p><ul>
+<li><code>device</code>: A string that specifies the device class or type (e.g., "camera/uvc").</li>
+<li><code>name</code>: Human-readable name for the device, which should be unique. It can be used for display purposes and may be user-settable.</li>
+<li><code>id</code>: Unique identifier for the device, which can be used to reference it in settings and other contexts. If the device does not have a unique ID, it should return an empty string.</li>
+<li><code>private</code>: Map of device- or operating-system specific configuration options and information. The contents of this object are defined by the specific device implementation and may include details such as hardware parameters, stream configurations, and other relevant information.</li>
+<li><code>preset</code>: Presets. This should at least contain a "default" preset, which is used when the device is started without a specific preset (see <code><a class="el" href="#a97e60e704a21c388b3daca7a535b2507" title="Setup device.">setup()</a></code> method).</li>
+<li><code>setup</code>: The actual device configuration (see <code><a class="el" href="#a97e60e704a21c388b3daca7a535b2507" title="Setup device.">setup()</a></code> method).</li>
+<li><code>config</code>: List of configuration options for the device. This is used to generate user interfaces for configuring the device. </li>
+</ul>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -152,33 +154,35 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aab1387c02a3f773ab9c8f7e04a663c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50057854ba2f78caa5db4442a8567530" id="r_a50057854ba2f78caa5db4442a8567530"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50057854ba2f78caa5db4442a8567530">~base</a> ()=default</td></tr>
 <tr class="separator:a50057854ba2f78caa5db4442a8567530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0a83c0aaa382aa24e5992a8849a233e" id="r_aa0a83c0aaa382aa24e5992a8849a233e"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0a83c0aaa382aa24e5992a8849a233e">tag</a> () const noexcept</td></tr>
-<tr class="separator:aa0a83c0aaa382aa24e5992a8849a233e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08ba420845d42784697f41834978e60c" id="r_a08ba420845d42784697f41834978e60c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08ba420845d42784697f41834978e60c">info</a> () const noexcept=0</td></tr>
-<tr class="separator:a08ba420845d42784697f41834978e60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03f4dfc6764f87f97055821232331d6" id="r_aa03f4dfc6764f87f97055821232331d6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa03f4dfc6764f87f97055821232331d6">tag</a> () const noexcept</td></tr>
+<tr class="separator:aa03f4dfc6764f87f97055821232331d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade9d459d12f85c8019aa41ab9e0d628e" id="r_ade9d459d12f85c8019aa41ab9e0d628e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-device-basics.html#ga9b96e641ea81e775e9c7b33804193772">state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade9d459d12f85c8019aa41ab9e0d628e">status</a> () const noexcept</td></tr>
 <tr class="separator:ade9d459d12f85c8019aa41ab9e0d628e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab71ca7ed3beb0b617beffd69c3571d51" id="r_ab71ca7ed3beb0b617beffd69c3571d51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab71ca7ed3beb0b617beffd69c3571d51">setup</a> (<a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a>)=0</td></tr>
-<tr class="separator:ab71ca7ed3beb0b617beffd69c3571d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0711e05741289c79c2ac95980ab98d9" id="r_aa0711e05741289c79c2ac95980ab98d9"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0711e05741289c79c2ac95980ab98d9">id</a> () const noexcept</td></tr>
-<tr class="separator:aa0711e05741289c79c2ac95980ab98d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c4efeb1f6a6638ae93dc86b3a9f3379" id="r_a9c4efeb1f6a6638ae93dc86b3a9f3379"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c4efeb1f6a6638ae93dc86b3a9f3379">name</a> () const noexcept</td></tr>
-<tr class="separator:a9c4efeb1f6a6638ae93dc86b3a9f3379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c09716aa38226e1d9569f444081782e" id="r_a0c09716aa38226e1d9569f444081782e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c09716aa38226e1d9569f444081782e">name</a> (const std::string &amp;username)</td></tr>
-<tr class="separator:a0c09716aa38226e1d9569f444081782e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a728eb656016e4bc8689dfb709952d0c8" id="r_a728eb656016e4bc8689dfb709952d0c8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a728eb656016e4bc8689dfb709952d0c8">meta</a> () const noexcept</td></tr>
+<tr class="separator:a728eb656016e4bc8689dfb709952d0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8212be594d3534eb628bfa2fcddcfd1" id="r_ac8212be594d3534eb628bfa2fcddcfd1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8212be594d3534eb628bfa2fcddcfd1">connect</a> ()=0</td></tr>
 <tr class="separator:ac8212be594d3534eb628bfa2fcddcfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9147d6de6b774a3f275caee4e766f0c" id="r_af9147d6de6b774a3f275caee4e766f0c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9147d6de6b774a3f275caee4e766f0c">disconnect</a> ()=0</td></tr>
 <tr class="separator:af9147d6de6b774a3f275caee4e766f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e60e704a21c388b3daca7a535b2507" id="r_a97e60e704a21c388b3daca7a535b2507"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97e60e704a21c388b3daca7a535b2507">setup</a> (const <a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a> &amp;={})=0</td></tr>
+<tr class="separator:a97e60e704a21c388b3daca7a535b2507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20e854a1d769ca15d8f915aa4a4de0bd" id="r_a20e854a1d769ca15d8f915aa4a4de0bd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20e854a1d769ca15d8f915aa4a4de0bd">start</a> ()=0</td></tr>
+<tr class="separator:a20e854a1d769ca15d8f915aa4a4de0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3584117ac6efe3e11238dffe9c97181" id="r_ab3584117ac6efe3e11238dffe9c97181"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3584117ac6efe3e11238dffe9c97181">stop</a> ()=0</td></tr>
+<tr class="separator:ab3584117ac6efe3e11238dffe9c97181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78b48e988b8ee205fc7d15a456bd3c4" id="r_aa78b48e988b8ee205fc7d15a456bd3c4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa78b48e988b8ee205fc7d15a456bd3c4">id</a> () const noexcept</td></tr>
+<tr class="separator:aa78b48e988b8ee205fc7d15a456bd3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9dcf4c913439fdb8011304150d484cf" id="r_ad9dcf4c913439fdb8011304150d484cf"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9dcf4c913439fdb8011304150d484cf">name</a> () const noexcept</td></tr>
+<tr class="separator:ad9dcf4c913439fdb8011304150d484cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76077a8c603fa0dbbc9bdea0ce80890d" id="r_a76077a8c603fa0dbbc9bdea0ce80890d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76077a8c603fa0dbbc9bdea0ce80890d">name</a> (const std::string &amp;username)</td></tr>
+<tr class="separator:a76077a8c603fa0dbbc9bdea0ce80890d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a60ca63aba96b03c261298a8ed8295d5b" id="r_a60ca63aba96b03c261298a8ed8295d5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-device-basics.html#ga9b96e641ea81e775e9c7b33804193772">state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60ca63aba96b03c261298a8ed8295d5b">state_</a> {<a class="el" href="group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772a5e543256c480ac577d30f76f9120eb74">state::undefined</a>}</td></tr>
 <tr class="separator:a60ca63aba96b03c261298a8ed8295d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e4752dd1d7b3d30d39f5cf970f61bc" id="r_a35e4752dd1d7b3d30d39f5cf970f61bc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35e4752dd1d7b3d30d39f5cf970f61bc">id_</a> {}</td></tr>
-<tr class="separator:a35e4752dd1d7b3d30d39f5cf970f61bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6d87a0753b07945e65130d8797fad6a" id="r_ae6d87a0753b07945e65130d8797fad6a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6d87a0753b07945e65130d8797fad6a">name_</a> {}</td></tr>
-<tr class="separator:ae6d87a0753b07945e65130d8797fad6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa789fecd9d22bc97ed02dec0c977022a" id="r_aa789fecd9d22bc97ed02dec0c977022a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa789fecd9d22bc97ed02dec0c977022a">meta_</a> {}</td></tr>
+<tr class="separator:aa789fecd9d22bc97ed02dec0c977022a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afcbf3f6e8c4f547b411a36d35e5adbc5" name="afcbf3f6e8c4f547b411a36d35e5adbc5"></a>
@@ -257,8 +261,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa0a83c0aaa382aa24e5992a8849a233e" name="aa0a83c0aaa382aa24e5992a8849a233e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0a83c0aaa382aa24e5992a8849a233e">&#9670;&#160;</a></span>tag()</h2>
+<a id="aa03f4dfc6764f87f97055821232331d6" name="aa03f4dfc6764f87f97055821232331d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa03f4dfc6764f87f97055821232331d6">&#9670;&#160;</a></span>tag()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +271,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const char * vidre::device::base::tag </td>
+          <td class="memname">std::string vidre::device::base::tag </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -275,44 +279,12 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Device class tag. </p>
-
-<p>Reimplemented in <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#a39b330dc7a966073b47f4ff888d5aef7">vidre::video::uvc::camera</a>.</p>
-
-</div>
-</div>
-<a id="a08ba420845d42784697f41834978e60c" name="a08ba420845d42784697f41834978e60c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08ba420845d42784697f41834978e60c">&#9670;&#160;</a></span>info()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a> vidre::device::base::info </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>General device info. </p>
-<p>FIXME describe syntax!!! </p>
-
-<p>Implemented in <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#a73007eebc53d6378372134704a0d3070">vidre::video::uvc::camera</a>.</p>
 
 </div>
 </div>
@@ -343,8 +315,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab71ca7ed3beb0b617beffd69c3571d51" name="ab71ca7ed3beb0b617beffd69c3571d51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab71ca7ed3beb0b617beffd69c3571d51">&#9670;&#160;</a></span>setup()</h2>
+<a id="a728eb656016e4bc8689dfb709952d0c8" name="a728eb656016e4bc8689dfb709952d0c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a728eb656016e4bc8689dfb709952d0c8">&#9670;&#160;</a></span>meta()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -353,36 +325,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void vidre::device::base::setup </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Setup device. </p>
-
-<p>Implemented in <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#a7b6b4b5458e962b2a8757da0edf89885">vidre::video::uvc::camera</a>.</p>
-
-</div>
-</div>
-<a id="aa0711e05741289c79c2ac95980ab98d9" name="aa0711e05741289c79c2ac95980ab98d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0711e05741289c79c2ac95980ab98d9">&#9670;&#160;</a></span>id()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::string vidre::device::base::id </td>
+          <td class="memname">virtual <a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a> vidre::device::base::meta </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -395,71 +338,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get device ID. </p>
-<p>The device ID is a unique identifier for the device, which can be used to reference it in settings and other contexts.</p>
-<p>If the device does not have a unique ID, it should return an empty string. </p>
-
-</div>
-</div>
-<a id="a9c4efeb1f6a6638ae93dc86b3a9f3379" name="a9c4efeb1f6a6638ae93dc86b3a9f3379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c4efeb1f6a6638ae93dc86b3a9f3379">&#9670;&#160;</a></span>name() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::string vidre::device::base::name </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get device name. </p>
-<p>The device name is a human-readable name for the device, which should be unique. It can be used for display purposes and may be user-settable. </p>
-
-</div>
-</div>
-<a id="a0c09716aa38226e1d9569f444081782e" name="a0c09716aa38226e1d9569f444081782e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c09716aa38226e1d9569f444081782e">&#9670;&#160;</a></span>name() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool vidre::device::base::name </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>username</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set device name. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">username</td><td>The new name for the device. It should be unique, but this is not enforced. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the name was successfully set, <code>false</code> otherwise (e.g., if the does not support it). </dd></dl>
+<p>Get device metadata. </p>
 
 </div>
 </div>
@@ -489,7 +368,7 @@ Protected Attributes</h2></td></tr>
 <p>Connect device. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the device was successfully connected, <code>false</code> otherwise. </dd></dl>
 
-<p>Implemented in <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#aaaad192ae7e6d496d78bb1321ff6c065">vidre::video::uvc::camera</a>.</p>
+<p>Implemented in <a class="el" href="classvidre_1_1uvc.html#a5634b3815ad822f683a8822fd0f7dba5">vidre::uvc</a>, and <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#ab34b6813fdbebf5d9c7876b009a96c1a">vidre::video::uvc::camera</a>.</p>
 
 </div>
 </div>
@@ -518,7 +397,195 @@ Protected Attributes</h2></td></tr>
 
 <p>Disconnect device. </p>
 
-<p>Implemented in <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#a54d1d5476aed7c467c39f10d00927660">vidre::video::uvc::camera</a>.</p>
+<p>Implemented in <a class="el" href="classvidre_1_1uvc.html#a0ced2f289c26b1ac384c33252ecff981">vidre::uvc</a>, and <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#ad27759590e856e663698111bef3ad4b1">vidre::video::uvc::camera</a>.</p>
+
+</div>
+</div>
+<a id="a97e60e704a21c388b3daca7a535b2507" name="a97e60e704a21c388b3daca7a535b2507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97e60e704a21c388b3daca7a535b2507">&#9670;&#160;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vidre::device::base::setup </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setup device. </p>
+<p>This method is used to configure the device with specific settings. The exact configuration options depend on the device implementation.</p>
+<p>There are three cases for how this method can be used:</p><ol type="1">
+<li>The device is not connected</li>
+<li>The device is connected but not running</li>
+<li>The device is running</li>
+</ol>
+<dl class="section note"><dt>Note</dt><dd>The <code><a class="el" href="#a97e60e704a21c388b3daca7a535b2507" title="Setup device.">setup()</a></code> method should be called after connecting the device. It must be called at least once before starting the device. Depending on the device implementation, it may be possible to call <code><a class="el" href="#a97e60e704a21c388b3daca7a535b2507" title="Setup device.">setup()</a></code> also in the running state with a subset of options.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772a48e54afcf03ca45bfe38f6b7ff58764a" title="Device is configured and ready to be started.">state::configured</a> </dd></dl>
+
+<p>Implemented in <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#a285aa578b844065aed7b4531acb482b2">vidre::video::uvc::camera</a>.</p>
+
+</div>
+</div>
+<a id="a20e854a1d769ca15d8f915aa4a4de0bd" name="a20e854a1d769ca15d8f915aa4a4de0bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20e854a1d769ca15d8f915aa4a4de0bd">&#9670;&#160;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vidre::device::base::start </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Start streaming. </p>
+<dl class="section note"><dt>Note</dt><dd>This method silently returns if the device is not configured or already running. </dd></dl>
+
+<p>Implemented in <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#a10d84e679542549804d414ecaa12fcb1">vidre::video::uvc::camera</a>.</p>
+
+</div>
+</div>
+<a id="ab3584117ac6efe3e11238dffe9c97181" name="ab3584117ac6efe3e11238dffe9c97181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3584117ac6efe3e11238dffe9c97181">&#9670;&#160;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vidre::device::base::stop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stop streaming. </p>
+<dl class="section note"><dt>Note</dt><dd>This method silently returns if the device is not running. </dd></dl>
+
+<p>Implemented in <a class="el" href="classvidre_1_1video_1_1uvc_1_1camera.html#a2b1b56c0b06b5676387bf4cfe4e7dcd4">vidre::video::uvc::camera</a>.</p>
+
+</div>
+</div>
+<a id="aa78b48e988b8ee205fc7d15a456bd3c4" name="aa78b48e988b8ee205fc7d15a456bd3c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa78b48e988b8ee205fc7d15a456bd3c4">&#9670;&#160;</a></span>id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vidre::device::base::id </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get device ID. </p>
+<p>The device ID is a unique identifier for the device, which can be used to reference it in settings and other contexts.</p>
+<p>If the device does not have a unique ID, it should return an empty string. </p>
+
+</div>
+</div>
+<a id="ad9dcf4c913439fdb8011304150d484cf" name="ad9dcf4c913439fdb8011304150d484cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9dcf4c913439fdb8011304150d484cf">&#9670;&#160;</a></span>name() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vidre::device::base::name </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get device name. </p>
+<p>The device name is a human-readable name for the device, which should be unique. It can be used for display purposes and may be user-settable. </p>
+
+</div>
+</div>
+<a id="a76077a8c603fa0dbbc9bdea0ce80890d" name="a76077a8c603fa0dbbc9bdea0ce80890d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76077a8c603fa0dbbc9bdea0ce80890d">&#9670;&#160;</a></span>name() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool device::base::name </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>username</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set device name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>The new name for the device. It should be unique, but this is not enforced. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the name was successfully set, <code>false</code> otherwise (e.g., if the does not support it). </dd></dl>
 
 </div>
 </div>
@@ -547,8 +614,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a35e4752dd1d7b3d30d39f5cf970f61bc" name="a35e4752dd1d7b3d30d39f5cf970f61bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35e4752dd1d7b3d30d39f5cf970f61bc">&#9670;&#160;</a></span>id_</h2>
+<a id="aa789fecd9d22bc97ed02dec0c977022a" name="aa789fecd9d22bc97ed02dec0c977022a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa789fecd9d22bc97ed02dec0c977022a">&#9670;&#160;</a></span>meta_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -557,7 +624,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string vidre::device::base::id_ {}</td>
+          <td class="memname"><a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a> vidre::device::base::meta_ {}</td>
         </tr>
       </table>
   </td>
@@ -567,36 +634,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Unique device ID, if available. Should be empty if not available. </p>
+<p>Device metadata and configuration. </p>
 
 </div>
 </div>
-<a id="ae6d87a0753b07945e65130d8797fad6a" name="ae6d87a0753b07945e65130d8797fad6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6d87a0753b07945e65130d8797fad6a">&#9670;&#160;</a></span>name_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string vidre::device::base::name_ {}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Device name, prefably unique, but this is not enforced. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>vidre/device/<a class="el" href="device_2vidre_2device_2base_8hh_source.html">base.hh</a></li>
+<li>vidre/device/<a class="el" href="base_8cc.html">base.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

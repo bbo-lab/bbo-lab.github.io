@@ -171,8 +171,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa12494da5a35e10d207390853cf85bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5522f58cc622cc9032fdbe8af421a583" id="r_a5522f58cc622cc9032fdbe8af421a583"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5522f58cc622cc9032fdbe8af421a583">valid</a> () const noexcept</td></tr>
 <tr class="separator:a5522f58cc622cc9032fdbe8af421a583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16dc0f68eea1f44a508c81a7cc4aad4c" id="r_a16dc0f68eea1f44a508c81a7cc4aad4c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16dc0f68eea1f44a508c81a7cc4aad4c">configure</a> (const <a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a> &amp;config)</td></tr>
-<tr class="separator:a16dc0f68eea1f44a508c81a7cc4aad4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff634aaed5c4efe89db53670f56bc9d0" id="r_aff634aaed5c4efe89db53670f56bc9d0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff634aaed5c4efe89db53670f56bc9d0">setup</a> (const <a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a> &amp;config)</td></tr>
+<tr class="separator:aff634aaed5c4efe89db53670f56bc9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57762352ec5b1d7015c8dee6d11b6479" id="r_a57762352ec5b1d7015c8dee6d11b6479"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__api-core-io-types.html#ga72ac3969f594911943b52eec600f9e2c">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57762352ec5b1d7015c8dee6d11b6479">put</a> (const <a class="el" href="classvidre_1_1memory_1_1view.html">memory::view</a> &amp;v)</td></tr>
 <tr class="separator:a57762352ec5b1d7015c8dee6d11b6479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d87b186e2240cb840aadce94c8f4a80" id="r_a8d87b186e2240cb840aadce94c8f4a80"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__api-core-io-types.html#ga72ac3969f594911943b52eec600f9e2c">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d87b186e2240cb840aadce94c8f4a80">put</a> (const <a class="el" href="structvidre_1_1io_1_1packet_1_1base.html">packet::base</a> *p)</td></tr>
@@ -470,8 +470,8 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a16dc0f68eea1f44a508c81a7cc4aad4c" name="a16dc0f68eea1f44a508c81a7cc4aad4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16dc0f68eea1f44a508c81a7cc4aad4c">&#9670;&#160;</a></span>configure()</h2>
+<a id="aff634aaed5c4efe89db53670f56bc9d0" name="aff634aaed5c4efe89db53670f56bc9d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff634aaed5c4efe89db53670f56bc9d0">&#9670;&#160;</a></span>setup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -480,7 +480,7 @@ template&lt;typename T , typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void vidre::io::sink::configure </td>
+          <td class="memname">virtual void vidre::io::sink::setup </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__api-core-settings-json.html#gae24f82c6a1d6b4a4155fffdf0db67338">settings::json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>config</em></span></td><td>)</td>
           <td></td>
@@ -508,7 +508,7 @@ template&lt;typename T , typename... Args&gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>The configuration format is sink-specific and may be ignored by some sinks. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classvidre_1_1io_1_1pipe.html#aa6c662d7b0e94d89d8510c151d004fd4">vidre::io::pipe</a>.</p>
+<p>Reimplemented in <a class="el" href="classvidre_1_1io_1_1pipe.html#a982ee9e418b113e1bd621be39bac03a1">vidre::io::pipe</a>.</p>
 
 </div>
 </div>

@@ -10,7 +10,7 @@ var classvidre_1_1io_1_1sink =
     [ "operator=", "classvidre_1_1io_1_1sink.html#aeda882525ab0c18c2d0750a8356b87bb", null ],
     [ "write", "classvidre_1_1io_1_1sink.html#aa924c391783e1952a717c29dfe9adb64", null ],
     [ "valid", "classvidre_1_1io_1_1sink.html#a5522f58cc622cc9032fdbe8af421a583", null ],
-    [ "configure", "classvidre_1_1io_1_1sink.html#a16dc0f68eea1f44a508c81a7cc4aad4c", null ],
+    [ "setup", "classvidre_1_1io_1_1sink.html#aff634aaed5c4efe89db53670f56bc9d0", null ],
     [ "put", "classvidre_1_1io_1_1sink.html#a57762352ec5b1d7015c8dee6d11b6479", null ],
     [ "put", "classvidre_1_1io_1_1sink.html#a8d87b186e2240cb840aadce94c8f4a80", null ]
 ];

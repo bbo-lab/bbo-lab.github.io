@@ -1,22 +1,35 @@
 <map id="vidre/device/config.hh" name="vidre/device/config.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="199,5,349,31"/>
-<area shape="rect" id="Node000002" href="$uvc_8hh.html" title=" " alt="" coords="25,79,171,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,39,141,81,139,76,235,34"/>
-<area shape="rect" id="Node000004" href="$libs_2device_2vidre_2device_8hh.html" title=" " alt="" coords="175,174,285,199"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="263,44,249,79,238,132,233,174,228,174,232,131,243,78,259,42"/>
-<area shape="rect" id="Node000008" href="$device_2vidre_2device_2base_8hh.html" title=" " alt="" coords="257,86,400,111"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="292,40,323,84,318,87,288,43"/>
-<area shape="rect" id="Node000010" href="$libs_2device_2vidre_2device_2config_8cc.html" title=" " alt="" coords="425,86,574,111"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="320,33,467,83,466,88,319,38"/>
-<area shape="rect" id="Node000003" href="$examples_2playground_2uvc_2linux_2uvc_8cc.html" title=" " alt="" coords="5,167,151,207"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,133,85,167,80,166,88,132"/>
-<area shape="rect" id="Node000005" href="$libs_2device_2vidre_2device_8cc.html" title=" " alt="" coords="101,255,212,280"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="212,211,169,256,166,253,208,208"/>
-<area shape="rect" id="Node000006" href="$plugins_2camera_2uvc_2lib_2vidre_2uvc_2device_8hh.html" title=" " alt="" coords="236,255,371,280"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="252,208,294,253,291,256,248,211"/>
-<area shape="rect" id="Node000007" href="$plugins_2camera_2uvc_2lib_2vidre_2uvc_2device_8cc.html" title=" " alt="" coords="236,328,371,353"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="306,294,306,328,301,328,301,294"/>
-<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="307,122,245,175,242,171,303,118"/>
-<area shape="rect" id="Node000009" href="$base_8cc.html" title=" " alt="" coords="309,174,452,199"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="345,122,376,172,371,175,341,125"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="393,5,542,31"/>
+<area shape="rect" id="Node000002" href="$examples_2playground_2uvc_2linux_2uvc_8hh.html" title=" " alt="" coords="103,225,248,265"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="434,40,353,88,306,119,262,154,224,192,193,227,189,224,220,188,259,150,303,115,350,83,431,35"/>
+<area shape="rect" id="Node000004" href="$libs_2device_2vidre_2device_8hh.html" title=" " alt="" coords="623,233,733,258"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="510,34,547,53,588,79,628,111,662,151,672,172,678,194,681,232,676,232,672,195,667,173,657,153,625,115,585,83,544,58,507,39"/>
+<area shape="rect" id="Node000006" href="$device_2vidre_2device_2base_8hh.html" title=" " alt="" coords="396,79,539,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="470,44,470,79,465,79,465,44"/>
+<area shape="rect" id="Node000008" href="$camera_8hh.html" title=" " alt="" coords="273,152,430,177"/>
+<area shape="poly" id="edge17_Node000001_Node000008" title=" " alt="" coords="434,40,408,58,385,80,366,118,356,153,351,151,361,116,381,77,405,53,431,35"/>
+<area shape="rect" id="Node000015" href="$libs_2device_2vidre_2device_2config_8cc.html" title=" " alt="" coords="723,79,873,104"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="534,31,745,76,744,81,533,36"/>
+<area shape="rect" id="Node000003" href="$examples_2playground_2uvc_2linux_2uvc_8cc.html" title=" " alt="" coords="5,313,151,353"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,276,101,315,98,311,142,272"/>
+<area shape="rect" id="Node000005" href="$libs_2device_2vidre_2device_8cc.html" title=" " alt="" coords="908,321,1019,346"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="730,259,926,318,924,323,729,265"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="471,117,478,147,495,176,517,190,553,205,633,230,631,235,551,210,515,195,491,179,473,149,466,118"/>
+<area shape="rect" id="Node000007" href="$base_8cc.html" title=" " alt="" coords="505,152,648,177"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="498,109,560,150,557,154,495,114"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="439,113,372,154,369,149,436,109"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="314,185,219,228,217,223,312,180"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="414,178,601,223,632,230,630,235,600,228,413,183"/>
+<area shape="rect" id="Node000009" href="$camera_8cc.html" title=" " alt="" coords="273,233,430,258"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="354,191,354,232,349,232,349,191"/>
+<area shape="rect" id="Node000010" href="$plugins_2camera_2uvc_2lib_2vidre_2uvc_2device_8hh.html" title=" " alt="" coords="455,233,589,258"/>
+<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="390,181,498,230,496,235,387,185"/>
+<area shape="rect" id="Node000011" href="$examples_2playground_2uvc_8cc.html" title=" " alt="" coords="739,313,884,353"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="575,259,748,311,747,316,573,265"/>
+<area shape="rect" id="Node000012" href="$plugins_2camera_2uvc_2lib_2vidre_2uvc_2device_8cc.html" title=" " alt="" coords="175,321,309,346"/>
+<area shape="poly" id="edge14_Node000010_Node000012" title=" " alt="" coords="472,265,280,323,279,318,470,260"/>
+<area shape="rect" id="Node000013" href="$plugins_2camera_2uvc_2lib_2vidre_2uvc_2linux_2device_8cc.html" title=" " alt="" coords="333,321,500,346"/>
+<area shape="poly" id="edge15_Node000010_Node000013" title=" " alt="" coords="499,269,433,322,429,318,496,265"/>
+<area shape="rect" id="Node000014" href="$enumerate_8cc.html" title=" " alt="" coords="525,321,714,346"/>
+<area shape="poly" id="edge16_Node000010_Node000014" title=" " alt="" coords="547,265,608,318,604,322,544,269"/>
 </map>

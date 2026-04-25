@@ -16,7 +16,7 @@ var classvidre_1_1io_1_1source =
     [ "read", "classvidre_1_1io_1_1source.html#af20ac04ea0be3fb84f6f37ca5b165801", null ],
     [ "valid", "classvidre_1_1io_1_1source.html#ad8598c481bbb5e6ee5e85df0b8edb13e", null ],
     [ "operator mode", "classvidre_1_1io_1_1source.html#aa94faa511a5855344348e506726a5158", null ],
-    [ "configure", "classvidre_1_1io_1_1source.html#a3570c6c7efa3699e072f7b6e51316949", null ],
+    [ "setup", "classvidre_1_1io_1_1source.html#a5f9df89aba3bf26621ba0e59526ca755", null ],
     [ "get", "classvidre_1_1io_1_1source.html#a07c7295a423bfb8ed476cfa80b6abf42", null ],
     [ "wait", "classvidre_1_1io_1_1source.html#ad7cc91ce35910435df956a0b5899e72d", null ],
     [ "wait", "classvidre_1_1io_1_1source.html#aa37f9196a9c6e0e0aa41c38e98bec29f", null ],

@@ -224,6 +224,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad5fe62d53948021812f4734853f49966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab10f45cf861d54c0e4266c903e6f47b8" id="r_ab10f45cf861d54c0e4266c903e6f47b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab10f45cf861d54c0e4266c903e6f47b8">valid</a> () const noexcept</td></tr>
 <tr class="separator:ab10f45cf861d54c0e4266c903e6f47b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade10f865bc6e50169e28fd0f5c5e216c" id="r_ade10f865bc6e50169e28fd0f5c5e216c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade10f865bc6e50169e28fd0f5c5e216c">operator bool</a> () const noexcept</td></tr>
+<tr class="separator:ade10f865bc6e50169e28fd0f5c5e216c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917ecdc09721411ce2791ad0b5dad2d0" id="r_a917ecdc09721411ce2791ad0b5dad2d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a917ecdc09721411ce2791ad0b5dad2d0">operator descriptor</a> () const noexcept</td></tr>
+<tr class="separator:a917ecdc09721411ce2791ad0b5dad2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76141860428c78423877588debcac07a" id="r_a76141860428c78423877588debcac07a"><td class="memItemLeft" align="right" valign="top">std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76141860428c78423877588debcac07a">error</a> () const noexcept</td></tr>
 <tr class="separator:a76141860428c78423877588debcac07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb4cb5b15b7c556d7bc235c0241f3e9d" id="r_afb4cb5b15b7c556d7bc235c0241f3e9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb4cb5b15b7c556d7bc235c0241f3e9d">filesize</a> () const noexcept</td></tr>
@@ -250,8 +254,8 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a1375315a787b3caddea9cc30b384a2d9" id="r_a1375315a787b3caddea9cc30b384a2d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__api-core-io-details.html#ga6856f2876f37551d9d4e9b0c87015c86">detail::io::file::descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1375315a787b3caddea9cc30b384a2d9">fd_</a> {<a class="el" href="group__api-core-io-details.html#gad38e2fb0633daefe922b67c5c8a45c76">detail::io::file::invalid_descriptor</a>}</td></tr>
-<tr class="separator:a1375315a787b3caddea9cc30b384a2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0d09f26d49588ec9681377dd0b970a" id="r_a6d0d09f26d49588ec9681377dd0b970a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a7a20b363b0c581e6dcb290ebd26dadb4">descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d0d09f26d49588ec9681377dd0b970a">fd_</a> {<a class="el" href="group__api-core-io-details.html#gad38e2fb0633daefe922b67c5c8a45c76">detail::io::file::invalid_descriptor</a>}</td></tr>
+<tr class="separator:a6d0d09f26d49588ec9681377dd0b970a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a7a20b363b0c581e6dcb290ebd26dadb4" name="a7a20b363b0c581e6dcb290ebd26dadb4"></a>
@@ -734,6 +738,61 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ade10f865bc6e50169e28fd0f5c5e216c" name="ade10f865bc6e50169e28fd0f5c5e216c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade10f865bc6e50169e28fd0f5c5e216c">&#9670;&#160;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vidre::io::file::operator bool </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the file is valid (ie. </p>
+<p>open). </p>
+
+</div>
+</div>
+<a id="a917ecdc09721411ce2791ad0b5dad2d0" name="a917ecdc09721411ce2791ad0b5dad2d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a917ecdc09721411ce2791ad0b5dad2d0">&#9670;&#160;</a></span>operator descriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vidre::io::file::operator <a class="el" href="#a7a20b363b0c581e6dcb290ebd26dadb4">descriptor</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implicit conversion to host descriptor type. </p>
+
+</div>
+</div>
 <a id="a76141860428c78423877588debcac07a" name="a76141860428c78423877588debcac07a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76141860428c78423877588debcac07a">&#9670;&#160;</a></span>error()</h2>
 
@@ -1080,8 +1139,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1375315a787b3caddea9cc30b384a2d9" name="a1375315a787b3caddea9cc30b384a2d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1375315a787b3caddea9cc30b384a2d9">&#9670;&#160;</a></span>fd_</h2>
+<a id="a6d0d09f26d49588ec9681377dd0b970a" name="a6d0d09f26d49588ec9681377dd0b970a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d0d09f26d49588ec9681377dd0b970a">&#9670;&#160;</a></span>fd_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1090,7 +1149,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__api-core-io-details.html#ga6856f2876f37551d9d4e9b0c87015c86">detail::io::file::descriptor</a> vidre::io::file::fd_ {<a class="el" href="group__api-core-io-details.html#gad38e2fb0633daefe922b67c5c8a45c76">detail::io::file::invalid_descriptor</a>}</td>
+          <td class="memname"><a class="el" href="#a7a20b363b0c581e6dcb290ebd26dadb4">descriptor</a> vidre::io::file::fd_ {<a class="el" href="group__api-core-io-details.html#gad38e2fb0633daefe922b67c5c8a45c76">detail::io::file::invalid_descriptor</a>}</td>
         </tr>
       </table>
   </td>

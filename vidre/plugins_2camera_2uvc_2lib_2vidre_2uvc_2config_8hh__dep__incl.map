@@ -1,5 +1,15 @@
 <map id="vidre/uvc/config.hh" name="vidre/uvc/config.hh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,137,31"/>
-<area shape="rect" id="Node000002" href="$plugins_2camera_2uvc_2lib_2vidre_2uvc_2config_8cc.html" title=" " alt="" coords="5,79,137,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,44,74,79,69,79,69,44"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="184,5,316,31"/>
+<area shape="rect" id="Node000002" href="$plugins_2camera_2uvc_2lib_2vidre_2uvc_2config_8cc.html" title=" " alt="" coords="105,79,237,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,42,186,80,182,76,225,38"/>
+<area shape="rect" id="Node000003" href="$plugins_2camera_2uvc_2lib_2vidre_2uvc_2device_8hh.html" title=" " alt="" coords="261,79,396,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="275,38,318,76,314,80,271,42"/>
+<area shape="rect" id="Node000004" href="$examples_2playground_2uvc_8cc.html" title=" " alt="" coords="5,152,151,192"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="280,111,139,154,137,149,278,106"/>
+<area shape="rect" id="Node000005" href="$plugins_2camera_2uvc_2lib_2vidre_2uvc_2device_8cc.html" title=" " alt="" coords="175,159,309,185"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="307,115,257,161,253,157,304,111"/>
+<area shape="rect" id="Node000006" href="$plugins_2camera_2uvc_2lib_2vidre_2uvc_2linux_2device_8cc.html" title=" " alt="" coords="333,159,500,185"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="353,111,405,157,402,161,350,115"/>
+<area shape="rect" id="Node000007" href="$enumerate_8cc.html" title=" " alt="" coords="525,159,714,185"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="385,105,578,157,576,162,383,110"/>
 </map>

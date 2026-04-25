@@ -1,3 +1,19 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$structvidre_1_1detail_1_1uuid__t.html" title=" " alt="" coords="5,5,137,31"/>
+<area shape="rect" id="Node000000" href="$classvidre_1_1device_1_1base.html" title="Device skeleton." alt="" coords="5,35,137,60"/>
+<area shape="rect" id="Node000001" href="$classvidre_1_1device_1_1camera.html" title="Camera device." alt="" coords="185,35,332,60"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="151,45,185,45,185,50,151,50"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1uvc.html" title=" " alt="" coords="411,5,489,31"/>
+<area shape="poly" id="edge6_Node000001_Node000002" title=" " alt="" coords="345,31,410,21,411,27,346,37"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1video_1_1uvc_1_1camera.html" title="UVC camera." alt="" coords="387,55,513,95"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="346,57,387,63,386,69,346,63"/>
+<area shape="rect" id="Node000007" href="$classvidre_1_1io_1_1sink.html" title="Data sink skeleton." alt="" coords="209,193,309,219"/>
+<area shape="rect" id="Node000008" href="$classvidre_1_1io_1_1file_1_1sink.html" title="A file sink." alt="" coords="387,219,513,244"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="323,212,387,220,387,226,322,217"/>
+<area shape="rect" id="Node000006" href="$classvidre_1_1io_1_1pipe.html" title="Data pipe." alt="" coords="400,169,500,195"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="322,195,399,186,400,191,323,201"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1io_1_1source.html" title="Data source." alt="" coords="201,120,316,145"/>
+<area shape="poly" id="edge12_Node000004_Node000003" title=" " alt="" coords="314,114,386,92,387,97,315,119"/>
+<area shape="poly" id="edge11_Node000004_Node000006" title=" " alt="" coords="322,146,400,167,399,172,321,151"/>
+<area shape="rect" id="Node000005" href="$classvidre_1_1io_1_1file_1_1source.html" title="File source." alt="" coords="380,120,520,145"/>
+<area shape="poly" id="edge10_Node000004_Node000005" title=" " alt="" coords="330,130,380,130,380,135,330,135"/>
 </map>

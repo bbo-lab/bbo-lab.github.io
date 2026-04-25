@@ -38,6 +38,7 @@ var annotated_dup =
           [ "tmpl", "classvidre_1_1device_1_1error_1_1tmpl.html", "classvidre_1_1device_1_1error_1_1tmpl" ]
         ] ],
         [ "base", "classvidre_1_1device_1_1base.html", "classvidre_1_1device_1_1base" ],
+        [ "camera", "classvidre_1_1device_1_1camera.html", "classvidre_1_1device_1_1camera" ],
         [ "exception", "classvidre_1_1device_1_1exception.html", "classvidre_1_1device_1_1exception" ]
       ] ],
       [ "error", "namespacevidre_1_1error.html", [

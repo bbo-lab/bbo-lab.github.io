@@ -8,5 +8,5 @@ var classvidre_1_1io_1_1pipe =
     [ "make", "classvidre_1_1io_1_1pipe.html#ae1f5dccf0d0101f325c0ecd79ccd0047", null ],
     [ "operator=", "classvidre_1_1io_1_1pipe.html#a1dd465a090fa11757caccd4a57ad3643", null ],
     [ "operator=", "classvidre_1_1io_1_1pipe.html#a7add1e6828d1a2bbf1f77b657e05d151", null ],
-    [ "configure", "classvidre_1_1io_1_1pipe.html#aa6c662d7b0e94d89d8510c151d004fd4", null ]
+    [ "setup", "classvidre_1_1io_1_1pipe.html#a982ee9e418b113e1bd621be39bac03a1", null ]
 ];

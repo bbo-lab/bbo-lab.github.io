@@ -7,14 +7,14 @@ var hierarchy =
       [ "vidre::program::argument::parameter", "structvidre_1_1program_1_1argument_1_1parameter.html", null ]
     ] ],
     [ "vidre::device::base", "classvidre_1_1device_1_1base.html", [
-      [ "vidre::video::uvc::camera", "classvidre_1_1video_1_1uvc_1_1camera.html", null ]
+      [ "vidre::device::camera", "classvidre_1_1device_1_1camera.html", [
+        [ "vidre::uvc", "classvidre_1_1uvc.html", null ],
+        [ "vidre::video::uvc::camera", "classvidre_1_1video_1_1uvc_1_1camera.html", null ]
+      ] ]
     ] ],
     [ "vidre::io::packet::base", "structvidre_1_1io_1_1packet_1_1base.html", null ],
     [ "vidre::bits_of< T >", "structvidre_1_1bits__of.html", null ],
     [ "vidre::detail::io::buffer", "structvidre_1_1detail_1_1io_1_1buffer.html", null ],
-    [ "device::camera", null, [
-      [ "vidre::uvc", "classvidre_1_1uvc.html", null ]
-    ] ],
     [ "vidre::plugin::category", "structvidre_1_1plugin_1_1category.html", null ],
     [ "vidre::storage::ccv", "classvidre_1_1storage_1_1ccv.html", null ],
     [ "vidre::video::format::color", "classvidre_1_1video_1_1format_1_1color.html", null ],
@@ -37,6 +37,7 @@ var hierarchy =
     [ "vidre::error::detail::store::entry", "structvidre_1_1error_1_1detail_1_1store_1_1entry.html", null ],
     [ "vidre::device::base::enumerator", "structvidre_1_1device_1_1base_1_1enumerator.html", null ],
     [ "vidre::uvc::enumerator", "structvidre_1_1uvc_1_1enumerator.html", null ],
+    [ "vidre::video::uvc::camera::enumerator", "structvidre_1_1video_1_1uvc_1_1camera_1_1enumerator.html", null ],
     [ "std::error_category", null, [
       [ "vidre::ffmpeg::error_category", "classvidre_1_1ffmpeg_1_1error__category.html", null ]
     ] ],
@@ -111,7 +112,8 @@ var hierarchy =
     ] ],
     [ "vidre::io::source", "classvidre_1_1io_1_1source.html", [
       [ "vidre::io::file::source", "classvidre_1_1io_1_1file_1_1source.html", null ],
-      [ "vidre::io::pipe", "classvidre_1_1io_1_1pipe.html", null ]
+      [ "vidre::io::pipe", "classvidre_1_1io_1_1pipe.html", null ],
+      [ "vidre::video::uvc::camera", "classvidre_1_1video_1_1uvc_1_1camera.html", null ]
     ] ],
     [ "vidre::video::format::color::space", "classvidre_1_1video_1_1format_1_1color_1_1space.html", null ],
     [ "vidre::script::engine::stack", "classvidre_1_1script_1_1engine_1_1stack.html", null ],

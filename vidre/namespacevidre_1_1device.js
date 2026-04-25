@@ -2,9 +2,11 @@ var namespacevidre_1_1device =
 [
     [ "error", "namespacevidre_1_1device_1_1error.html", "namespacevidre_1_1device_1_1error" ],
     [ "base", "classvidre_1_1device_1_1base.html", "classvidre_1_1device_1_1base" ],
+    [ "camera", "classvidre_1_1device_1_1camera.html", "classvidre_1_1device_1_1camera" ],
     [ "exception", "classvidre_1_1device_1_1exception.html", "classvidre_1_1device_1_1exception" ],
     [ "shared", "group__api-device-basics.html#ga9e81499dd26085fcff5646e8d779ba27", null ],
-    [ "list", "group__api-device-basics.html#gad0a10c8a1950715442b5d0dcd8a46a03", null ],
+    [ "list_type", "group__api-device-basics.html#gaa9ea44cc4601180b9fca40f3fdc1bd58", null ],
+    [ "list", "group__api-device-basics.html#gab0582a1cbc47c431d1a5b53ec04b5a92", null ],
     [ "state", "group__api-device-basics.html#ga9b96e641ea81e775e9c7b33804193772", [
       [ "undefined", "group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772a5e543256c480ac577d30f76f9120eb74", null ],
       [ "available", "group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772ae4894ca167b08880bfc35862f18575eb", null ],

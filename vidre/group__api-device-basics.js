@@ -5,21 +5,22 @@ var group__api_device_basics =
       [ "base", "classvidre_1_1device_1_1base.html#afcbf3f6e8c4f547b411a36d35e5adbc5", null ],
       [ "base", "classvidre_1_1device_1_1base.html#aab1387c02a3f773ab9c8f7e04a663c89", null ],
       [ "~base", "classvidre_1_1device_1_1base.html#a50057854ba2f78caa5db4442a8567530", null ],
-      [ "tag", "classvidre_1_1device_1_1base.html#aa0a83c0aaa382aa24e5992a8849a233e", null ],
-      [ "info", "classvidre_1_1device_1_1base.html#a08ba420845d42784697f41834978e60c", null ],
+      [ "tag", "classvidre_1_1device_1_1base.html#aa03f4dfc6764f87f97055821232331d6", null ],
       [ "status", "classvidre_1_1device_1_1base.html#ade9d459d12f85c8019aa41ab9e0d628e", null ],
-      [ "setup", "classvidre_1_1device_1_1base.html#ab71ca7ed3beb0b617beffd69c3571d51", null ],
-      [ "id", "classvidre_1_1device_1_1base.html#aa0711e05741289c79c2ac95980ab98d9", null ],
-      [ "name", "classvidre_1_1device_1_1base.html#a9c4efeb1f6a6638ae93dc86b3a9f3379", null ],
-      [ "name", "classvidre_1_1device_1_1base.html#a0c09716aa38226e1d9569f444081782e", null ],
+      [ "meta", "classvidre_1_1device_1_1base.html#a728eb656016e4bc8689dfb709952d0c8", null ],
       [ "connect", "classvidre_1_1device_1_1base.html#ac8212be594d3534eb628bfa2fcddcfd1", null ],
       [ "disconnect", "classvidre_1_1device_1_1base.html#af9147d6de6b774a3f275caee4e766f0c", null ],
+      [ "setup", "classvidre_1_1device_1_1base.html#a97e60e704a21c388b3daca7a535b2507", null ],
+      [ "start", "classvidre_1_1device_1_1base.html#a20e854a1d769ca15d8f915aa4a4de0bd", null ],
+      [ "stop", "classvidre_1_1device_1_1base.html#ab3584117ac6efe3e11238dffe9c97181", null ],
+      [ "id", "classvidre_1_1device_1_1base.html#aa78b48e988b8ee205fc7d15a456bd3c4", null ],
+      [ "name", "classvidre_1_1device_1_1base.html#ad9dcf4c913439fdb8011304150d484cf", null ],
+      [ "name", "classvidre_1_1device_1_1base.html#a76077a8c603fa0dbbc9bdea0ce80890d", null ],
       [ "state_", "classvidre_1_1device_1_1base.html#a60ca63aba96b03c261298a8ed8295d5b", null ],
-      [ "id_", "classvidre_1_1device_1_1base.html#a35e4752dd1d7b3d30d39f5cf970f61bc", null ],
-      [ "name_", "classvidre_1_1device_1_1base.html#ae6d87a0753b07945e65130d8797fad6a", null ]
+      [ "meta_", "classvidre_1_1device_1_1base.html#aa789fecd9d22bc97ed02dec0c977022a", null ]
     ] ],
     [ "vidre::device::base::enumerator", "structvidre_1_1device_1_1base_1_1enumerator.html", [
-      [ "find", "structvidre_1_1device_1_1base_1_1enumerator.html#a9a85f8d40b9d8c4c3b59b8ffacda6bf5", null ]
+      [ "find", "structvidre_1_1device_1_1base_1_1enumerator.html#aa49172f693500401359ecf8dc45967c3", null ]
     ] ],
     [ "vidre::device::error::tmpl", "classvidre_1_1device_1_1error_1_1tmpl.html", [
       [ "tmpl", "classvidre_1_1device_1_1error_1_1tmpl.html#abd89c701083ed51c9f03004b61b89123", null ],
@@ -50,7 +51,8 @@ var group__api_device_basics =
       [ "name_", "classvidre_1_1device_1_1error_1_1name.html#af2e8733e8dcd760a118b010b5662fff2", null ]
     ] ],
     [ "vidre::device::shared", "group__api-device-basics.html#ga9e81499dd26085fcff5646e8d779ba27", null ],
-    [ "vidre::device::list", "group__api-device-basics.html#gad0a10c8a1950715442b5d0dcd8a46a03", null ],
+    [ "vidre::device::list_type", "group__api-device-basics.html#gaa9ea44cc4601180b9fca40f3fdc1bd58", null ],
+    [ "vidre::device::list", "group__api-device-basics.html#gab0582a1cbc47c431d1a5b53ec04b5a92", null ],
     [ "vidre::device::state", "group__api-device-basics.html#ga9b96e641ea81e775e9c7b33804193772", [
       [ "vidre::device::state::undefined", "group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772a5e543256c480ac577d30f76f9120eb74", null ],
       [ "vidre::device::state::available", "group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772ae4894ca167b08880bfc35862f18575eb", null ],

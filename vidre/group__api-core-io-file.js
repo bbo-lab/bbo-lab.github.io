@@ -47,6 +47,8 @@ var group__api_core_io_file =
       [ "operator=", "classvidre_1_1io_1_1file.html#a48f0ee7f1b35b676557040860c21e216", null ],
       [ "operator=", "classvidre_1_1io_1_1file.html#a6bcba620d437feef86574ac3b6365e25", null ],
       [ "valid", "classvidre_1_1io_1_1file.html#ab10f45cf861d54c0e4266c903e6f47b8", null ],
+      [ "operator bool", "classvidre_1_1io_1_1file.html#ade10f865bc6e50169e28fd0f5c5e216c", null ],
+      [ "operator descriptor", "classvidre_1_1io_1_1file.html#a917ecdc09721411ce2791ad0b5dad2d0", null ],
       [ "error", "classvidre_1_1io_1_1file.html#a76141860428c78423877588debcac07a", null ],
       [ "filesize", "classvidre_1_1io_1_1file.html#afb4cb5b15b7c556d7bc235c0241f3e9d", null ],
       [ "blocksize", "classvidre_1_1io_1_1file.html#ad8f05549c7f312bedbd1c1a0c935fd88", null ],
@@ -57,7 +59,7 @@ var group__api_core_io_file =
       [ "write", "classvidre_1_1io_1_1file.html#adfef2fb0a8304767476ff7943dd39039", null ],
       [ "allocate", "classvidre_1_1io_1_1file.html#ac0a4807aa2490ecb4277dfd37402b35d", null ],
       [ "path_max", "classvidre_1_1io_1_1file.html#aeee4499125213614f36012bffad39db4", null ],
-      [ "fd_", "classvidre_1_1io_1_1file.html#a1375315a787b3caddea9cc30b384a2d9", null ]
+      [ "fd_", "classvidre_1_1io_1_1file.html#a6d0d09f26d49588ec9681377dd0b970a", null ]
     ] ],
     [ "vidre::io::file::sink", "classvidre_1_1io_1_1file_1_1sink.html", [
       [ "openmode_type", "classvidre_1_1io_1_1file_1_1sink.html#a461a410d92e16d034a03d381f188ed92", [

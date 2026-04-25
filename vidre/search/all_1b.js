@@ -3,7 +3,7 @@ var searchData=
   ['_7eargument_0',['~argument',['../classvidre_1_1exception_1_1argument.html#adbb1495255249ac96b309a71896ce0f9',1,'vidre::exception::argument']]],
   ['_7ebase_1',['~base',['../classvidre_1_1device_1_1base.html#a50057854ba2f78caa5db4442a8567530',1,'vidre::device::base']]],
   ['_7ebuffer_2',['~buffer',['../structvidre_1_1detail_1_1io_1_1buffer.html#a7c8b1866523dc12ff68d818c75328373',1,'vidre::detail::io::buffer']]],
-  ['_7ecamera_3',['~camera',['../classvidre_1_1video_1_1uvc_1_1camera.html#a3f04fb6618f7f59a01e0ae449e199221',1,'vidre::video::uvc::camera']]],
+  ['_7ecamera_3',['~camera',['../classvidre_1_1device_1_1camera.html#ab298aaf85d80fcec78b3d9bc6f29d2c1',1,'vidre::device::camera::~camera()'],['../classvidre_1_1video_1_1uvc_1_1camera.html#a3f04fb6618f7f59a01e0ae449e199221',1,'vidre::video::uvc::camera::~camera()']]],
   ['_7ecode_4',['~code',['../classvidre_1_1error_1_1code.html#afb79f1165f5853ec27b97d67e0fd5212',1,'vidre::error::code']]],
   ['_7econtext_5',['~context',['../classvidre_1_1ffmpeg_1_1format_1_1context.html#a3fd0a0d6eb9639829e7cedcf89bdad90',1,'vidre::ffmpeg::format::context']]],
   ['_7edictionary_6',['~dictionary',['../classvidre_1_1ffmpeg_1_1dictionary.html#aa87469f3cb5ca6bf759fe8dfb35e816e',1,'vidre::ffmpeg::dictionary']]],
