@@ -2,6 +2,7 @@ var group__api_core_details =
 [
     [ "VIDRE_CORE_VISIBILITY", "group__api-core-details.html#ga6c2d85761ef80f8a974396c5059068bb", null ],
     [ "__vidre_packed__", "group__api-core-details.html#ga91542f6e8b34c625fab750990e548aea", null ],
+    [ "__vidre_noinline__", "group__api-core-details.html#ga2d49edd3380742e400bc91f2cc9d98da", null ],
     [ "VIDRE_HOST_LINUX", "group__api-core-details.html#ga06a0f82f7616d659d7b2f9246d927abb", null ],
     [ "VIDRE_HOST_LINUX", "group__api-core-details.html#ga06a0f82f7616d659d7b2f9246d927abb", null ],
     [ "VIDRE_HOST_WINDOWS", "group__api-core-details.html#ga582a6958a14619834ffb2b4f3e814da8", null ],

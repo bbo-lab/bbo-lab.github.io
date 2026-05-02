@@ -123,22 +123,23 @@ $(function(){initNavTree('src_2libs_2core_2vidre_2log_8cc.html',''); initResizab
 <code>#include &quot;<a class="el" href="tty_8hh_source.html">os/tty.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="core_2vidre_2cpp_2util_8hh_source.html">cpp/util.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="core_2vidre_2exception_8hh_source.html">exception.hh</a>&quot;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
+<code>#include &quot;<a class="el" href="file_8hh_source.html">io/file.hh</a>&quot;</code><br />
 <code>#include &lt;array&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;ranges&gt;</code><br />
-<code>#include &lt;string_view&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for log.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="src_2libs_2core_2vidre_2log_8cc__incl.svg" width="100%" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="src_2libs_2core_2vidre_2log_8cc__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1lognew_1_1thread_1_1impl.html">vidre::lognew::thread::impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstyle__tags.html">style_tags</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -153,7 +154,9 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aa2fe343f2e38b3f07ed3afe0c76a6a5c" id="r_aa2fe343f2e38b3f07ed3afe0c76a6a5c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classvidre_1_1log_1_1io_1_1stream.html">vidre::log::stream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2fe343f2e38b3f07ed3afe0c76a6a5c">vidrelog</a> {<a class="el" href="#a7a931c16bb0fa14f4685dbf575f6ae37">vidre_use_fret</a>()}</td></tr>
+<tr class="memitem:ab3b909d40d7ab73182f5c4e6143e70bd" id="r_ab3b909d40d7ab73182f5c4e6143e70bd"><td class="memItemLeft" align="right" valign="top">static auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3b909d40d7ab73182f5c4e6143e70bd">_log_init</a> = <a class="el" href="classvidre_1_1lognew_1_1thread.html#a791ae252c8c26d5fd2cd7aa32bb80ec3">vidre::lognew::thread::instance</a>()</td></tr>
+<tr class="separator:ab3b909d40d7ab73182f5c4e6143e70bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2fe343f2e38b3f07ed3afe0c76a6a5c" id="r_aa2fe343f2e38b3f07ed3afe0c76a6a5c"><td class="memItemLeft" align="right" valign="top">static vidre::log::stream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2fe343f2e38b3f07ed3afe0c76a6a5c">vidrelog</a> {<a class="el" href="#a7a931c16bb0fa14f4685dbf575f6ae37">vidre_use_fret</a>()}</td></tr>
 <tr class="separator:aa2fe343f2e38b3f07ed3afe0c76a6a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0c4a7c8c75b88be7d264a7dca508dd0" id="r_ab0c4a7c8c75b88be7d264a7dca508dd0"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="structstyle__tags.html">style_tags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0c4a7c8c75b88be7d264a7dca508dd0">vidre_log_style_color</a> [log::level_n]</td></tr>
 <tr class="separator:ab0c4a7c8c75b88be7d264a7dca508dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,6 +256,28 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="ab3b909d40d7ab73182f5c4e6143e70bd" name="ab3b909d40d7ab73182f5c4e6143e70bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3b909d40d7ab73182f5c4e6143e70bd">&#9670;&#160;</a></span>_log_init</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto&amp; _log_init = <a class="el" href="classvidre_1_1lognew_1_1thread.html#a791ae252c8c26d5fd2cd7aa32bb80ec3">vidre::lognew::thread::instance</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa2fe343f2e38b3f07ed3afe0c76a6a5c" name="aa2fe343f2e38b3f07ed3afe0c76a6a5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2fe343f2e38b3f07ed3afe0c76a6a5c">&#9670;&#160;</a></span>vidrelog</h2>
 
@@ -263,7 +288,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvidre_1_1log_1_1io_1_1stream.html">vidre::log::stream</a> vidrelog {<a class="el" href="#a7a931c16bb0fa14f4685dbf575f6ae37">vidre_use_fret</a>()}</td>
+          <td class="memname">vidre::log::stream vidrelog {<a class="el" href="#a7a931c16bb0fa14f4685dbf575f6ae37">vidre_use_fret</a>()}</td>
         </tr>
       </table>
   </td>

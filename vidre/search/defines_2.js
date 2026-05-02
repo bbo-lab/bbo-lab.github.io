@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mib_0',['MiB',['../hdspeed_8cc.html#a6e6c290ea1f73a50e4e84adb8c26ccc3',1,'hdspeed.cc']]]
+  ['kib_0',['kiB',['../examples_2core_2io_8cc.html#a1f99257810c3b11c2dfc28983719f7de',1,'io.cc']]]
 ];

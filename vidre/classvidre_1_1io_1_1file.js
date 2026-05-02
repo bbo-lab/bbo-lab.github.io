@@ -1,8 +1,8 @@
 var classvidre_1_1io_1_1file =
 [
-    [ "descriptor", "classvidre_1_1io_1_1file.html#a7a20b363b0c581e6dcb290ebd26dadb4", null ],
-    [ "size_type", "classvidre_1_1io_1_1file.html#a5df6e0f7d235eaaedea6a9aa0537d4aa", null ],
-    [ "offset_type", "classvidre_1_1io_1_1file.html#a853e8a38fc1f59b61a3a1e24978b4069", null ],
+    [ "descriptor", "classvidre_1_1io_1_1file.html#ace019e776472695ee308882d6eb0766a", null ],
+    [ "size_type", "classvidre_1_1io_1_1file.html#aab854c7855e8b7f6093a2a7649e03223", null ],
+    [ "offset_type", "classvidre_1_1io_1_1file.html#aa56f3ab0da28d04c919e55cce3cb51b9", null ],
     [ "access", "classvidre_1_1io_1_1file.html#a94ca4020ed6d4a41de2b126722f19f60", [
       [ "readonly", "classvidre_1_1io_1_1file.html#a94ca4020ed6d4a41de2b126722f19f60a336ebbb2179beaa7340a4f1620f3af40", null ],
       [ "writeonly", "classvidre_1_1io_1_1file.html#a94ca4020ed6d4a41de2b126722f19f60aef1d48fe20b591902a50fa3ba5f7e88f", null ],
@@ -42,6 +42,7 @@ var classvidre_1_1io_1_1file =
     [ "file", "classvidre_1_1io_1_1file.html#a7894cffdadabeaf8ec5659085c40ddda", null ],
     [ "file", "classvidre_1_1io_1_1file.html#a0cbcb4754e1988386738ba456d82bb2b", null ],
     [ "file", "classvidre_1_1io_1_1file.html#a1d188c84ef14a736283e99737ca7c53a", null ],
+    [ "file", "classvidre_1_1io_1_1file.html#a47b8a3e85b52da830248c0b260c04c5d", null ],
     [ "~file", "classvidre_1_1io_1_1file.html#ad5fe62d53948021812f4734853f49966", null ],
     [ "operator=", "classvidre_1_1io_1_1file.html#a48f0ee7f1b35b676557040860c21e216", null ],
     [ "operator=", "classvidre_1_1io_1_1file.html#a6bcba620d437feef86574ac3b6365e25", null ],

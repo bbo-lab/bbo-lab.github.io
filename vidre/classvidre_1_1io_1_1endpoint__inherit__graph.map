@@ -1,0 +1,13 @@
+<map id="vidre::io::endpoint" name="vidre::io::endpoint">
+<area shape="rect" id="Node000001" title="Endpoint capabilities." alt="" coords="84,5,209,31"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1io_1_1sink.html" title="Data sink skeleton." alt="" coords="31,79,131,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,43,94,80,90,77,125,39"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1io_1_1source.html" title="Data source." alt="" coords="168,79,283,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="171,38,214,76,211,80,168,42"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1io_1_1file_1_1sink.html" title="A file sink." alt="" coords="5,159,131,185"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,118,73,160,67,159,74,117"/>
+<area shape="rect" id="Node000005" href="$classvidre_1_1io_1_1file_1_1source.html" title="File source." alt="" coords="155,159,295,185"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="228,118,228,159,223,159,223,118"/>
+<area shape="rect" id="Node000006" href="$classvidre_1_1video_1_1uvc_1_1camera.html" title="UVC camera." alt="" coords="319,152,446,192"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="262,108,346,149,343,154,259,112"/>
+</map>

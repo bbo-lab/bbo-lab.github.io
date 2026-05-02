@@ -1,0 +1,5 @@
+<map id="vidre::io::packet::basic" name="vidre::io::packet::basic">
+<area shape="rect" id="Node000001" title="Stream packets." alt="" coords="11,93,133,133"/>
+<area shape="rect" id="Node000002" href="$structvidre_1_1io_1_1packet_1_1id.html" title="Packet ID." alt="" coords="5,5,139,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,44,75,93,69,93,69,44"/>
+</map>

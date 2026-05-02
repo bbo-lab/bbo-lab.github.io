@@ -9,5 +9,7 @@ var searchData=
   ['and_20twiddling_20utilities_6',['Bit-packing and -twiddling utilities',['../group__api-core-util-bit.html',1,'']]],
   ['and_20utilities_7',['Basic types and utilities',['../group__api-core-memory-base.html',1,'']]],
   ['api_8',['API',['../group__api.html',1,'C++-API'],['../group__api-support-ffmpeg.html',1,'FFmpeg C++ API']]],
-  ['api_20abi_20and_20system_20settings_9',['API/ABI and system settings',['../group__api-config-abi.html',1,'']]]
+  ['api_20abi_20and_20system_20settings_9',['API/ABI and system settings',['../group__api-config-abi.html',1,'']]],
+  ['api_20core_20util_20thread_10',['Api-core-util-thread',['../group__api-core-util-thread.html',1,'']]],
+  ['api_20core_20util_20thread_20details_11',['Api-core-util-thread-details',['../group__api-core-util-thread-details.html',1,'']]]
 ];

@@ -115,7 +115,8 @@ $(function(){initNavTree('group__api-core-io-packet.html',''); initResizable(tru
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Packet based I/O<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-io.html">In-/output</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -127,7 +128,9 @@ $(function(){initNavTree('group__api-core-io-packet.html',''); initResizable(tru
 <div class="center"><iframe scrolling="no" frameborder="0" src="group__api-core-io-packet.svg" width="260" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p><a class="el" href="core_2vidre_2io_2packet_8hh.html">vidre/io/packet.hh</a> </p>
+<p><a class="el" href="core_2vidre_2io_2packet_8hh.html">vidre/io/packet.hh</a></p>
+<p>Packet-based I/O is designed for handling variable-sized data units, such as video frames or audio samples, which may not fit well into a stream-based model. It provides a structured way to read and write packets of data, each with its own header and payload. This allows for more efficient processing and better support for multiplexed data streams. In addition, VidRe uses the format for storing data on disk, as well as for inter-process or network communication.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacevidre_1_1storage_1_1raw.html">vidre::storage::raw</a> </dd></dl>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -136,9 +139,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1io_1_1packet_1_1header.html">vidre::io::packet::header</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1io_1_1packet_1_1id.html">vidre::io::packet::id</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1io_1_1packet_1_1base.html">vidre::io::packet::base</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1io_1_1packet_1_1basic.html">vidre::io::packet::basic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -146,62 +149,57 @@ Enumerations</h2></td></tr>
 <tr class="memitem:gafcb4b31d4dfe00e7a8f623ca0243fc4a" id="r_gafcb4b31d4dfe00e7a8f623ca0243fc4a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafcb4b31d4dfe00e7a8f623ca0243fc4a">vidre::io::packet::major</a> : uint16_t { <br />
 &#160;&#160;<a class="el" href="#ggafcb4b31d4dfe00e7a8f623ca0243fc4aa5e543256c480ac577d30f76f9120eb74">vidre::io::packet::major::undefined</a> = 0x0000
 , <br />
+&#160;&#160;<a class="el" href="#ggafcb4b31d4dfe00e7a8f623ca0243fc4aaac7938d40cfc2307e2bf325d28e7884e">vidre::io::packet::major::plain</a> = 0x0001
+, <br />
+&#160;&#160;<a class="el" href="#ggafcb4b31d4dfe00e7a8f623ca0243fc4aaa8cfde6331bd59eb2ac96f8911c4b666">vidre::io::packet::major::object</a> = 0x0002
+, <br />
 &#160;&#160;<a class="el" href="#ggafcb4b31d4dfe00e7a8f623ca0243fc4aa421b47ffd946ca083b65cd668c6b17e6">vidre::io::packet::major::video</a> = 0x0010
 , <br />
 &#160;&#160;<a class="el" href="#ggafcb4b31d4dfe00e7a8f623ca0243fc4aaa5ca0b5894324f8bb54bb9fffad29d1e">vidre::io::packet::major::audio</a> = 0x0020
 , <br />
-&#160;&#160;<a class="el" href="#ggafcb4b31d4dfe00e7a8f623ca0243fc4aaee11cbb19052e40b07aac0ca060c23ee">vidre::io::packet::major::user</a> = 0x8000
+&#160;&#160;<a class="el" href="#ggafcb4b31d4dfe00e7a8f623ca0243fc4aaa5fe26d5d09b736a77f4345e9f80b951">vidre::io::packet::major::sensor</a> = 0x0030
+, <br />
+&#160;&#160;<a class="el" href="#ggafcb4b31d4dfe00e7a8f623ca0243fc4aadc1d71bbb5c4d2a5e936db79ef10c19f">vidre::io::packet::major::log</a> = 0x8080
+, <br />
+&#160;&#160;<a class="el" href="#ggafcb4b31d4dfe00e7a8f623ca0243fc4aaee11cbb19052e40b07aac0ca060c23ee">vidre::io::packet::major::user</a> = 0xF000
 <br />
  }</td></tr>
 <tr class="separator:gafcb4b31d4dfe00e7a8f623ca0243fc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabdd4252f9ee279fa05041e885f605e5a" id="r_gabdd4252f9ee279fa05041e885f605e5a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabdd4252f9ee279fa05041e885f605e5a">vidre::io::packet::video</a> : uint16_t { <br />
-&#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aa5e543256c480ac577d30f76f9120eb74">vidre::io::packet::video::undefined</a> = 0x0000
+<tr class="memitem:ga4b0fc645b000c5498122bb6f4a0aeee5" id="r_ga4b0fc645b000c5498122bb6f4a0aeee5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4b0fc645b000c5498122bb6f4a0aeee5">vidre::io::packet::minor</a> : uint16_t { <a class="el" href="#gga4b0fc645b000c5498122bb6f4a0aeee5adb0f6f37ebeb6ea09489124345af2a45">vidre::io::packet::minor::group</a> = 0x0000
+ }</td></tr>
+<tr class="separator:ga4b0fc645b000c5498122bb6f4a0aeee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8274eba5ba00af5aaf87d8d70bb435fd" id="r_ga8274eba5ba00af5aaf87d8d70bb435fd"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8274eba5ba00af5aaf87d8d70bb435fd">vidre::io::packet::plain</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="#gga8274eba5ba00af5aaf87d8d70bb435fdafa1c731ead93e333a9180e16f968c01e">vidre::io::packet::plain::sequence</a> = 0x0000
 , <br />
-&#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aaf59dcd306ec32930f1e78a1d82280b48">vidre::io::packet::video::packed</a> = 0x0001
+&#160;&#160;<a class="el" href="#gga8274eba5ba00af5aaf87d8d70bb435fda852438d026c018c4307b916406f98c62">vidre::io::packet::plain::nil</a> = 0x0010
 , <br />
-&#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aaf2ce11ebf110993621bedd8e747d7b1b">vidre::io::packet::video::mask</a> = 0xFFFE
+&#160;&#160;<a class="el" href="#gga8274eba5ba00af5aaf87d8d70bb435fda84e2c64f38f78ba3ea5c905ab5a2da27">vidre::io::packet::plain::boolean</a> = 0x0011
 , <br />
-&#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aa67e83ab1518237f0bfd6a5e5dc61cd8a">vidre::io::packet::video::mono8</a> = 0x0100
+&#160;&#160;<a class="el" href="#gga8274eba5ba00af5aaf87d8d70bb435fda157db7df530023575515d366c9b672e8">vidre::io::packet::plain::integer</a> = 0x0012
 , <br />
-&#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aa9ba41516cd81f8cd86f33fd8ac96c52f">vidre::io::packet::video::mono8_packed</a> = 0x0101
+&#160;&#160;<a class="el" href="#gga8274eba5ba00af5aaf87d8d70bb435fda8f4ef05b543fb6157b374099100574b3">vidre::io::packet::plain::natural</a> = 0x0013
 , <br />
-&#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aad4585e31a369f36be93d048d5105d995">vidre::io::packet::video::mono10</a> = 0x0110
+&#160;&#160;<a class="el" href="#gga8274eba5ba00af5aaf87d8d70bb435fdab1bc248a7ff2b2e95569f56de68615df">vidre::io::packet::plain::number</a> = 0x0014
 , <br />
-&#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aad6ba91d6a72075cb291d916947888cf2">vidre::io::packet::video::mono10_packed</a> = 0x0111
+&#160;&#160;<a class="el" href="#gga8274eba5ba00af5aaf87d8d70bb435fdab45cffe084dd3d20d928bee85e7b0f21">vidre::io::packet::plain::string</a> = 0x0015
 , <br />
-&#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aa6007cdb032028ef144dacca7256e96a1">vidre::io::packet::video::mono12</a> = 0x0120
+&#160;&#160;<a class="el" href="#gga8274eba5ba00af5aaf87d8d70bb435fda9d7183f16acce70658f686ae7f1a4d20">vidre::io::packet::plain::binary</a> = 0x0016
 , <br />
-&#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aaf7f8e386fd2f686347fb5d90ac8251a0">vidre::io::packet::video::mono12_packed</a> = 0x0121
+&#160;&#160;<a class="el" href="#gga8274eba5ba00af5aaf87d8d70bb435fdaef7c876f00f3acddd00fa671f52d0b1f">vidre::io::packet::plain::uuid</a> = 0x0017
 , <br />
-&#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aab3804f411d914f83353d33c4f8955d17">vidre::io::packet::video::mono14</a> = 0x0130
+&#160;&#160;<a class="el" href="#gga8274eba5ba00af5aaf87d8d70bb435fdae2984f40e9e01b6181f601efc08629f6">vidre::io::packet::plain::isodate</a> = 0x0020
 , <br />
-&#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aa0bee0689e09ccbd067a75ce57062ab27">vidre::io::packet::video::mono14_packed</a> = 0x0131
+&#160;&#160;<a class="el" href="#gga8274eba5ba00af5aaf87d8d70bb435fdad7e6d55ba379a13d08c25d15faf2a23b">vidre::io::packet::plain::timestamp</a> = 0x0021
 , <br />
-&#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aa6b53b9f17c96fdeeac1fe6a4b4f64b88">vidre::io::packet::video::mono16</a> = 0x0140
-, <br />
-&#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aa5613fb429e8fc1fe5dcf73c0dde7b928">vidre::io::packet::video::bggr8</a> = 0x0200
-, <br />
-&#160;&#160;<a class="el" href="#ggabdd4252f9ee279fa05041e885f605e5aab1500b383bccdb3946114a5d708706c4">vidre::io::packet::video::rgba32</a> = 0x0300
+&#160;&#160;<a class="el" href="#gga8274eba5ba00af5aaf87d8d70bb435fdace8274bd92f5c430833dac9e92927d26">vidre::io::packet::plain::localtime</a> = 0x0022
 <br />
  }</td></tr>
-<tr class="separator:gabdd4252f9ee279fa05041e885f605e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8521a79f161ad2f6371c7934252ee902" id="r_ga8521a79f161ad2f6371c7934252ee902"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8521a79f161ad2f6371c7934252ee902">vidre::io::packet::audio</a> : uint16_t { <br />
-&#160;&#160;<a class="el" href="#gga8521a79f161ad2f6371c7934252ee902a5e543256c480ac577d30f76f9120eb74">vidre::io::packet::audio::undefined</a> = 0x0000
-, <br />
-&#160;&#160;<a class="el" href="#gga8521a79f161ad2f6371c7934252ee902acc411e6c13670e52124629b8ac83f7d0">vidre::io::packet::audio::bits</a> = 0x000F
-, <br />
-&#160;&#160;<a class="el" href="#gga8521a79f161ad2f6371c7934252ee902a599dcce2998a6b40b1e38e8c6006cb0a">vidre::io::packet::audio::type</a> = 0x00F0
-, <br />
-&#160;&#160;<a class="el" href="#gga8521a79f161ad2f6371c7934252ee902a84bea1f0fd2ce16f7e562a9f06ef03d3">vidre::io::packet::audio::encoding</a> = 0xFF00
-, <br />
-&#160;&#160;<a class="el" href="#gga8521a79f161ad2f6371c7934252ee902a654db8a14a5f633b9ba85ec92dc51f7c">vidre::io::packet::audio::mono</a> = 0x0010
-, <br />
-&#160;&#160;<a class="el" href="#gga8521a79f161ad2f6371c7934252ee902a4855655ebf33c0714f51895000e2f5f3">vidre::io::packet::audio::stereo</a> = 0x0020
-, <br />
-&#160;&#160;<a class="el" href="#gga8521a79f161ad2f6371c7934252ee902a9ba951533bd098582b3512d72e5a7acd">vidre::io::packet::audio::multichannel</a> = 0x0030
-<br />
- }</td></tr>
-<tr class="separator:ga8521a79f161ad2f6371c7934252ee902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga8274eba5ba00af5aaf87d8d70bb435fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga0dbcb493973614d8a6b03988f405410d" id="r_ga0dbcb493973614d8a6b03988f405410d"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0dbcb493973614d8a6b03988f405410d">vidre::io::packet::alignment</a> = 8</td></tr>
+<tr class="separator:ga0dbcb493973614d8a6b03988f405410d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="gafcb4b31d4dfe00e7a8f623ca0243fc4a" name="gafcb4b31d4dfe00e7a8f623ca0243fc4a"></a>
@@ -227,9 +225,17 @@ Enumerations</h2></td></tr>
 <p>Major type of a packet. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggafcb4b31d4dfe00e7a8f623ca0243fc4aa5e543256c480ac577d30f76f9120eb74" name="ggafcb4b31d4dfe00e7a8f623ca0243fc4aa5e543256c480ac577d30f76f9120eb74"></a>undefined&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggafcb4b31d4dfe00e7a8f623ca0243fc4aaac7938d40cfc2307e2bf325d28e7884e" name="ggafcb4b31d4dfe00e7a8f623ca0243fc4aaac7938d40cfc2307e2bf325d28e7884e"></a>plain&#160;</td><td class="fielddoc"><p>Plain data (see FIXME). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggafcb4b31d4dfe00e7a8f623ca0243fc4aaa8cfde6331bd59eb2ac96f8911c4b666" name="ggafcb4b31d4dfe00e7a8f623ca0243fc4aaa8cfde6331bd59eb2ac96f8911c4b666"></a>object&#160;</td><td class="fielddoc"><p>Structured data (see FIXME). </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ggafcb4b31d4dfe00e7a8f623ca0243fc4aa421b47ffd946ca083b65cd668c6b17e6" name="ggafcb4b31d4dfe00e7a8f623ca0243fc4aa421b47ffd946ca083b65cd668c6b17e6"></a>video&#160;</td><td class="fielddoc"><p>Video data (see FIXME). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggafcb4b31d4dfe00e7a8f623ca0243fc4aaa5ca0b5894324f8bb54bb9fffad29d1e" name="ggafcb4b31d4dfe00e7a8f623ca0243fc4aaa5ca0b5894324f8bb54bb9fffad29d1e"></a>audio&#160;</td><td class="fielddoc"><p>Audio data (see FIXME). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggafcb4b31d4dfe00e7a8f623ca0243fc4aaa5fe26d5d09b736a77f4345e9f80b951" name="ggafcb4b31d4dfe00e7a8f623ca0243fc4aaa5fe26d5d09b736a77f4345e9f80b951"></a>sensor&#160;</td><td class="fielddoc"><p>Sensor data, e.g. temperature (see FIXME). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggafcb4b31d4dfe00e7a8f623ca0243fc4aadc1d71bbb5c4d2a5e936db79ef10c19f" name="ggafcb4b31d4dfe00e7a8f623ca0243fc4aadc1d71bbb5c4d2a5e936db79ef10c19f"></a>log&#160;</td><td class="fielddoc"><p>Log message (see <code>log::packet</code>). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggafcb4b31d4dfe00e7a8f623ca0243fc4aaee11cbb19052e40b07aac0ca060c23ee" name="ggafcb4b31d4dfe00e7a8f623ca0243fc4aaee11cbb19052e40b07aac0ca060c23ee"></a>user&#160;</td><td class="fielddoc"><p>User-defined packet types (see FIXME). </p>
 </td></tr>
@@ -237,8 +243,8 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="gabdd4252f9ee279fa05041e885f605e5a" name="gabdd4252f9ee279fa05041e885f605e5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabdd4252f9ee279fa05041e885f605e5a">&#9670;&#160;</a></span>video</h2>
+<a id="ga4b0fc645b000c5498122bb6f4a0aeee5" name="ga4b0fc645b000c5498122bb6f4a0aeee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b0fc645b000c5498122bb6f4a0aeee5">&#9670;&#160;</a></span>minor</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,7 +253,7 @@ Enumerations</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="#gabdd4252f9ee279fa05041e885f605e5a">vidre::io::packet::video</a> : uint16_t</td>
+          <td class="memname">enum class <a class="el" href="#ga4b0fc645b000c5498122bb6f4a0aeee5">vidre::io::packet::minor</a> : uint16_t</td>
         </tr>
       </table>
   </td>
@@ -257,31 +263,17 @@ Enumerations</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sub-type "video" minor types. </p>
+<p>Minor type of a packet. </p>
+<dl class="section note"><dt>Note</dt><dd>For every major type, the minor type '0x0000' is reserved for the group (one prominent exception is the log packet, which does not have a group type). </dd></dl>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabdd4252f9ee279fa05041e885f605e5aa5e543256c480ac577d30f76f9120eb74" name="ggabdd4252f9ee279fa05041e885f605e5aa5e543256c480ac577d30f76f9120eb74"></a>undefined&#160;</td><td class="fielddoc"><p>Video format is undefined, relevant information is embedded in the stream config. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4b0fc645b000c5498122bb6f4a0aeee5adb0f6f37ebeb6ea09489124345af2a45" name="gga4b0fc645b000c5498122bb6f4a0aeee5adb0f6f37ebeb6ea09489124345af2a45"></a>group&#160;</td><td class="fielddoc"><p>Grouped packet. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggabdd4252f9ee279fa05041e885f605e5aaf59dcd306ec32930f1e78a1d82280b48" name="ggabdd4252f9ee279fa05041e885f605e5aaf59dcd306ec32930f1e78a1d82280b48"></a>packed&#160;</td><td class="fielddoc"><p>Data is packed (flag). </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggabdd4252f9ee279fa05041e885f605e5aaf2ce11ebf110993621bedd8e747d7b1b" name="ggabdd4252f9ee279fa05041e885f605e5aaf2ce11ebf110993621bedd8e747d7b1b"></a>mask&#160;</td><td class="fielddoc"><p>Mask for extracting format. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggabdd4252f9ee279fa05041e885f605e5aa67e83ab1518237f0bfd6a5e5dc61cd8a" name="ggabdd4252f9ee279fa05041e885f605e5aa67e83ab1518237f0bfd6a5e5dc61cd8a"></a>mono8&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggabdd4252f9ee279fa05041e885f605e5aa9ba41516cd81f8cd86f33fd8ac96c52f" name="ggabdd4252f9ee279fa05041e885f605e5aa9ba41516cd81f8cd86f33fd8ac96c52f"></a>mono8_packed&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggabdd4252f9ee279fa05041e885f605e5aad4585e31a369f36be93d048d5105d995" name="ggabdd4252f9ee279fa05041e885f605e5aad4585e31a369f36be93d048d5105d995"></a>mono10&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggabdd4252f9ee279fa05041e885f605e5aad6ba91d6a72075cb291d916947888cf2" name="ggabdd4252f9ee279fa05041e885f605e5aad6ba91d6a72075cb291d916947888cf2"></a>mono10_packed&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggabdd4252f9ee279fa05041e885f605e5aa6007cdb032028ef144dacca7256e96a1" name="ggabdd4252f9ee279fa05041e885f605e5aa6007cdb032028ef144dacca7256e96a1"></a>mono12&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggabdd4252f9ee279fa05041e885f605e5aaf7f8e386fd2f686347fb5d90ac8251a0" name="ggabdd4252f9ee279fa05041e885f605e5aaf7f8e386fd2f686347fb5d90ac8251a0"></a>mono12_packed&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggabdd4252f9ee279fa05041e885f605e5aab3804f411d914f83353d33c4f8955d17" name="ggabdd4252f9ee279fa05041e885f605e5aab3804f411d914f83353d33c4f8955d17"></a>mono14&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggabdd4252f9ee279fa05041e885f605e5aa0bee0689e09ccbd067a75ce57062ab27" name="ggabdd4252f9ee279fa05041e885f605e5aa0bee0689e09ccbd067a75ce57062ab27"></a>mono14_packed&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggabdd4252f9ee279fa05041e885f605e5aa6b53b9f17c96fdeeac1fe6a4b4f64b88" name="ggabdd4252f9ee279fa05041e885f605e5aa6b53b9f17c96fdeeac1fe6a4b4f64b88"></a>mono16&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggabdd4252f9ee279fa05041e885f605e5aa5613fb429e8fc1fe5dcf73c0dde7b928" name="ggabdd4252f9ee279fa05041e885f605e5aa5613fb429e8fc1fe5dcf73c0dde7b928"></a>bggr8&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggabdd4252f9ee279fa05041e885f605e5aab1500b383bccdb3946114a5d708706c4" name="ggabdd4252f9ee279fa05041e885f605e5aab1500b383bccdb3946114a5d708706c4"></a>rgba32&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="ga8521a79f161ad2f6371c7934252ee902" name="ga8521a79f161ad2f6371c7934252ee902"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8521a79f161ad2f6371c7934252ee902">&#9670;&#160;</a></span>audio</h2>
+<a id="ga8274eba5ba00af5aaf87d8d70bb435fd" name="ga8274eba5ba00af5aaf87d8d70bb435fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8274eba5ba00af5aaf87d8d70bb435fd">&#9670;&#160;</a></span>plain</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,7 +282,7 @@ Enumerations</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="#ga8521a79f161ad2f6371c7934252ee902">vidre::io::packet::audio</a> : uint16_t</td>
+          <td class="memname">enum class <a class="el" href="#ga8274eba5ba00af5aaf87d8d70bb435fd">vidre::io::packet::plain</a> : uint16_t</td>
         </tr>
       </table>
   </td>
@@ -300,19 +292,58 @@ Enumerations</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sub-type "audio" minor types. </p>
+<p>Plain data types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga8521a79f161ad2f6371c7934252ee902a5e543256c480ac577d30f76f9120eb74" name="gga8521a79f161ad2f6371c7934252ee902a5e543256c480ac577d30f76f9120eb74"></a>undefined&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga8521a79f161ad2f6371c7934252ee902acc411e6c13670e52124629b8ac83f7d0" name="gga8521a79f161ad2f6371c7934252ee902acc411e6c13670e52124629b8ac83f7d0"></a>bits&#160;</td><td class="fielddoc"><p>Mask for extracting bits per sample. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga8274eba5ba00af5aaf87d8d70bb435fdafa1c731ead93e333a9180e16f968c01e" name="gga8274eba5ba00af5aaf87d8d70bb435fdafa1c731ead93e333a9180e16f968c01e"></a>sequence&#160;</td><td class="fielddoc"><p>Grouped packet (see FIXME). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga8521a79f161ad2f6371c7934252ee902a599dcce2998a6b40b1e38e8c6006cb0a" name="gga8521a79f161ad2f6371c7934252ee902a599dcce2998a6b40b1e38e8c6006cb0a"></a>type&#160;</td><td class="fielddoc"><p>Mask for extracting audio type. </p>
+<tr><td class="fieldname"><a id="gga8274eba5ba00af5aaf87d8d70bb435fda852438d026c018c4307b916406f98c62" name="gga8274eba5ba00af5aaf87d8d70bb435fda852438d026c018c4307b916406f98c62"></a>nil&#160;</td><td class="fielddoc"><p>Nil value (no data). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga8521a79f161ad2f6371c7934252ee902a84bea1f0fd2ce16f7e562a9f06ef03d3" name="gga8521a79f161ad2f6371c7934252ee902a84bea1f0fd2ce16f7e562a9f06ef03d3"></a>encoding&#160;</td><td class="fielddoc"><p>Mask for extracting audio encoding. </p>
+<tr><td class="fieldname"><a id="gga8274eba5ba00af5aaf87d8d70bb435fda84e2c64f38f78ba3ea5c905ab5a2da27" name="gga8274eba5ba00af5aaf87d8d70bb435fda84e2c64f38f78ba3ea5c905ab5a2da27"></a>boolean&#160;</td><td class="fielddoc"><p>Boolean value (true/false). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga8521a79f161ad2f6371c7934252ee902a654db8a14a5f633b9ba85ec92dc51f7c" name="gga8521a79f161ad2f6371c7934252ee902a654db8a14a5f633b9ba85ec92dc51f7c"></a>mono&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga8521a79f161ad2f6371c7934252ee902a4855655ebf33c0714f51895000e2f5f3" name="gga8521a79f161ad2f6371c7934252ee902a4855655ebf33c0714f51895000e2f5f3"></a>stereo&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga8521a79f161ad2f6371c7934252ee902a9ba951533bd098582b3512d72e5a7acd" name="gga8521a79f161ad2f6371c7934252ee902a9ba951533bd098582b3512d72e5a7acd"></a>multichannel&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga8274eba5ba00af5aaf87d8d70bb435fda157db7df530023575515d366c9b672e8" name="gga8274eba5ba00af5aaf87d8d70bb435fda157db7df530023575515d366c9b672e8"></a>integer&#160;</td><td class="fielddoc"><p>64-bit signed integer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8274eba5ba00af5aaf87d8d70bb435fda8f4ef05b543fb6157b374099100574b3" name="gga8274eba5ba00af5aaf87d8d70bb435fda8f4ef05b543fb6157b374099100574b3"></a>natural&#160;</td><td class="fielddoc"><p>64-bit unsigned integer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8274eba5ba00af5aaf87d8d70bb435fdab1bc248a7ff2b2e95569f56de68615df" name="gga8274eba5ba00af5aaf87d8d70bb435fdab1bc248a7ff2b2e95569f56de68615df"></a>number&#160;</td><td class="fielddoc"><p>64-bit floating-point value (double). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8274eba5ba00af5aaf87d8d70bb435fdab45cffe084dd3d20d928bee85e7b0f21" name="gga8274eba5ba00af5aaf87d8d70bb435fdab45cffe084dd3d20d928bee85e7b0f21"></a>string&#160;</td><td class="fielddoc"><p>UTF-8 sequence (not! zero-terminated). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8274eba5ba00af5aaf87d8d70bb435fda9d7183f16acce70658f686ae7f1a4d20" name="gga8274eba5ba00af5aaf87d8d70bb435fda9d7183f16acce70658f686ae7f1a4d20"></a>binary&#160;</td><td class="fielddoc"><p>Binary data (see FIXME). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8274eba5ba00af5aaf87d8d70bb435fdaef7c876f00f3acddd00fa671f52d0b1f" name="gga8274eba5ba00af5aaf87d8d70bb435fdaef7c876f00f3acddd00fa671f52d0b1f"></a>uuid&#160;</td><td class="fielddoc"><p>UUID (128-bit universally unique identifier). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8274eba5ba00af5aaf87d8d70bb435fdae2984f40e9e01b6181f601efc08629f6" name="gga8274eba5ba00af5aaf87d8d70bb435fdae2984f40e9e01b6181f601efc08629f6"></a>isodate&#160;</td><td class="fielddoc"><p>ISO 8601 date ("YYYYMMDDTHHMMSS.SSSZ\0\0\0"). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8274eba5ba00af5aaf87d8d70bb435fdad7e6d55ba379a13d08c25d15faf2a23b" name="gga8274eba5ba00af5aaf87d8d70bb435fdad7e6d55ba379a13d08c25d15faf2a23b"></a>timestamp&#160;</td><td class="fielddoc"><p>Timestamp. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8274eba5ba00af5aaf87d8d70bb435fdace8274bd92f5c430833dac9e92927d26" name="gga8274eba5ba00af5aaf87d8d70bb435fdace8274bd92f5c430833dac9e92927d26"></a>localtime&#160;</td><td class="fielddoc"><p>Local time (timestamp with timezone information). </p>
+</td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga0dbcb493973614d8a6b03988f405410d" name="ga0dbcb493973614d8a6b03988f405410d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0dbcb493973614d8a6b03988f405410d">&#9670;&#160;</a></span>alignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t vidre::io::packet::alignment = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Byte alignment. </p>
 
 </div>
 </div>

@@ -11,6 +11,7 @@ var group__api_core =
     [ "In-/output", "group__api-core-io.html", "group__api-core-io" ],
     [ "Storage", "group__api-core-storage.html", "group__api-core-storage" ],
     [ "Plugins", "group__api-core-plugin.html", "group__api-core-plugin" ],
+    [ "Thread support", "group__api-core-thread.html", "group__api-core-thread" ],
     [ "Program invocation and tools", "group__api-core-program.html", "group__api-core-program" ],
     [ "Implementation details", "group__api-core-details.html", "group__api-core-details" ]
 ];

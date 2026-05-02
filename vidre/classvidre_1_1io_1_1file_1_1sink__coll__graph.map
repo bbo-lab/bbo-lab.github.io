@@ -1,9 +1,17 @@
 <map id="vidre::io::file::sink" name="vidre::io::file::sink">
-<area shape="rect" id="Node000001" title="A file sink." alt="" coords="114,108,239,133"/>
-<area shape="rect" id="Node000002" href="$classvidre_1_1io_1_1sink.html" title="Data sink skeleton." alt="" coords="5,13,105,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,44,163,106,160,110,80,49"/>
-<area shape="rect" id="Node000003" href="$classvidre_1_1io_1_1file.html" title=" " alt="" coords="130,13,223,38"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,52,179,108,174,108,174,52"/>
-<area shape="rect" id="Node000004" href="$structvidre_1_1detail_1_1io_1_1buffer.html" title="Block buffer." alt="" coords="247,5,362,45"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="269,55,194,110,191,106,266,51"/>
+<area shape="rect" id="Node000001" title="A file sink." alt="" coords="148,372,273,397"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1io_1_1sink.html" title="Data sink skeleton." alt="" coords="39,277,139,302"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,308,197,370,194,374,114,313"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1io_1_1endpoint.html" title="Endpoint capabilities." alt="" coords="5,181,131,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="76,219,89,276,84,277,71,220"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1event.html" title="Event signalling primitive." alt="" coords="155,181,245,207"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="178,218,105,279,101,274,174,214"/>
+<area shape="rect" id="Node000005" href="$structvidre_1_1detail_1_1event.html" title="Trivial event notification primitive based on Linux&#39;s eventfd." alt="" coords="135,93,265,119"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="203,133,203,181,197,181,197,133"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="133,5,267,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="203,45,203,93,197,93,197,45"/>
+<area shape="rect" id="Node000007" href="$classvidre_1_1io_1_1file.html" title=" " alt="" coords="164,277,257,302"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="213,316,213,372,208,372,208,316"/>
+<area shape="rect" id="Node000008" href="$structvidre_1_1io_1_1detail_1_1buffer.html" title="Block buffer." alt="" coords="281,269,396,309"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="303,319,228,374,225,370,300,315"/>
 </map>

@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classvidre_1_1video_1_1format_1_1color_1_1transfer.html" target="_top" xlink:title="Transfer function.">
+<g id="a_Node000000"><a xlink:href="classvidre_1_1video_1_1format_1_1color_1_1space.html" target="_top" xlink:title="Colorspace.">
 <polygon fill="white" stroke="#666666" points="101,-30 0,-30 0,0 101,0 101,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">vidre::video::format</text>
-<text text-anchor="middle" x="50.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::color::transfer</text>
+<text text-anchor="middle" x="50.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::color::space</text>
 </a>
 </g>
 </g>

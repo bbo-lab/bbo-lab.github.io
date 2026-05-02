@@ -113,6 +113,7 @@ $(function(){initNavTree('group__api-core-log-details.html',''); initResizable(t
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#concepts">Concepts</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
@@ -129,6 +130,11 @@ $(function(){initNavTree('group__api-core-log-details.html',''); initResizable(t
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1log_1_1detail.html">vidre::log::detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
 Concepts</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptvidre_1_1log_1_1convertible__to__message__type.html">vidre::log::convertible_to_message_type</a></td></tr>
@@ -138,6 +144,10 @@ Concepts</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1lognew_1_1detail_1_1store.html">vidre::lognew::detail::store</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1lognew_1_1thread.html">vidre::lognew::thread</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1log_1_1handler.html">vidre::log::handler</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1log_1_1null.html">vidre::log::null</a></td></tr>
@@ -145,6 +155,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ga54b8fdbb5d6a2c274443f1af51ccba78" id="r_ga54b8fdbb5d6a2c274443f1af51ccba78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga54b8fdbb5d6a2c274443f1af51ccba78">VIDRE_CORE_LOG_BUFFER_SIZE</a>&#160;&#160;&#160;32768</td></tr>
+<tr class="separator:ga54b8fdbb5d6a2c274443f1af51ccba78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52757f611fcaa735369655dca48bab74" id="r_ga52757f611fcaa735369655dca48bab74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga52757f611fcaa735369655dca48bab74">VIDRE_CORE_LOG_IMPL</a>(T)</td></tr>
 <tr class="separator:ga52757f611fcaa735369655dca48bab74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -154,6 +166,22 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga55539a1c6c988fda328a8103a9e8401d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga54b8fdbb5d6a2c274443f1af51ccba78" name="ga54b8fdbb5d6a2c274443f1af51ccba78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga54b8fdbb5d6a2c274443f1af51ccba78">&#9670;&#160;</a></span>VIDRE_CORE_LOG_BUFFER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VIDRE_CORE_LOG_BUFFER_SIZE&#160;&#160;&#160;32768</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default per-thread buffer size. </p>
+
+</div>
+</div>
 <a id="ga52757f611fcaa735369655dca48bab74" name="ga52757f611fcaa735369655dca48bab74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga52757f611fcaa735369655dca48bab74">&#9670;&#160;</a></span>VIDRE_CORE_LOG_IMPL</h2>
 
@@ -173,7 +201,7 @@ Typedefs</h2></td></tr>
 <div class="line">        T() noexcept : handler(<a class="code hl_variable" href="src_2libs_2core_2vidre_2log_8cc.html#af4d81d27f3db15be76fb339ce749d9f0">level</a>::T) {}          \</div>
 <div class="line">    };</div>
 <div class="ttc" id="agroup__api-core-details_html_ga6c2d85761ef80f8a974396c5059068bb"><div class="ttname"><a href="group__api-core-details.html#ga6c2d85761ef80f8a974396c5059068bb">VIDRE_CORE_VISIBILITY</a></div><div class="ttdeci">#define VIDRE_CORE_VISIBILITY</div><div class="ttdoc">Declaration specification for import/export for the core library.</div><div class="ttdef"><b>Definition</b> config.hh:55</div></div>
-<div class="ttc" id="asrc_2libs_2core_2vidre_2log_8cc_html_af4d81d27f3db15be76fb339ce749d9f0"><div class="ttname"><a href="src_2libs_2core_2vidre_2log_8cc.html#af4d81d27f3db15be76fb339ce749d9f0">level</a></div><div class="ttdeci">log::level level</div><div class="ttdef"><b>Definition</b> log.cc:247</div></div>
+<div class="ttc" id="asrc_2libs_2core_2vidre_2log_8cc_html_af4d81d27f3db15be76fb339ce749d9f0"><div class="ttname"><a href="src_2libs_2core_2vidre_2log_8cc.html#af4d81d27f3db15be76fb339ce749d9f0">level</a></div><div class="ttdeci">log::level level</div><div class="ttdef"><b>Definition</b> log.cc:314</div></div>
 </div><!-- fragment -->
 <p>Helper for log-level classes. </p>
 

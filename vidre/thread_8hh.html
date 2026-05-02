@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>VidRe: vidre/util/thread.hh File Reference</title>
+<title>VidRe: vidre/thread.hh File Reference</title>
 <link rel="icon" href="vidre.svg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -112,86 +112,34 @@ $(function(){initNavTree('thread_8hh.html',''); initResizable(true); });
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">thread.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="libs_2core_2vidre_2core_2config_8hh_source.html">vidre/core/config.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="core_2vidre_2exception_8hh_source.html">vidre/exception.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="log_8hh_source.html">vidre/log.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="status_8hh_source.html">vidre/util/status.hh</a>&gt;</code><br />
-<code>#include &lt;pthread.h&gt;</code><br />
-<code>#include &lt;unistd.h&gt;</code><br />
-<code>#include &lt;atomic&gt;</code><br />
-<code>#include &lt;thread&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;cerrno&gt;</code><br />
-<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;<a class="el" href="libs_2core_2vidre_2thread_2types_8hh_source.html">vidre/thread/types.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="schedule_8hh_source.html">vidre/thread/schedule.hh</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for thread.hh:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="thread_8hh__incl.svg" width="100%" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="thread_8hh__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="thread_8hh__dep__incl.svg" width="286" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="thread_8hh__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="thread_8hh_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1detail_1_1schedule.html">vidre::detail::schedule</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre.html">vidre</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1detail.html">vidre::detail</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a8d92bba621f70b82000860c671109116" id="r_a8d92bba621f70b82000860c671109116"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d92bba621f70b82000860c671109116">VIDRE_USE_PTHREAD</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a8d92bba621f70b82000860c671109116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gaaca790f1489036ecc6c5aa8c9482ee34" id="r_gaaca790f1489036ecc6c5aa8c9482ee34"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-util-thread.html#gaaca790f1489036ecc6c5aa8c9482ee34">vidre::thread</a> = std::thread</td></tr>
-<tr class="separator:gaaca790f1489036ecc6c5aa8c9482ee34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a8d92bba621f70b82000860c671109116" name="a8d92bba621f70b82000860c671109116"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d92bba621f70b82000860c671109116">&#9670;&#160;</a></span>VIDRE_USE_PTHREAD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VIDRE_USE_PTHREAD&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo</a></b></dt><dd>see signalfd </dd></dl>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html">vidre</a></li><li class="navelem"><a class="el" href="dir_44dda3653d8ed495fb138f7de47cfc57.html">util</a></li><li class="navelem"><a class="el" href="thread_8hh.html">thread.hh</a></li>
+    <li class="navelem"><a class="el" href="dir_abfbd75b8d5d8fa64115dd5dc04364b4.html">vidre</a></li><li class="navelem"><a class="el" href="thread_8hh.html">thread.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.0 </li>
   </ul>
 </div>

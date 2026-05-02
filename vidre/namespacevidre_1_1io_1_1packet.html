@@ -114,16 +114,17 @@ $(function(){initNavTree('namespacevidre_1_1io_1_1packet.html',''); initResizabl
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">vidre::io::packet Namespace Reference<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-core.html">Core library</a> &raquo; <a class="el" href="group__api-core-io.html">In-/output</a> &raquo; <a class="el" href="group__api-core-io-packet.html">Packet based I/O</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1io_1_1packet_1_1base.html">base</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1io_1_1packet_1_1basic.html">basic</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1io_1_1packet_1_1header.html">header</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1io_1_1packet_1_1id.html">id</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -131,62 +132,57 @@ Enumerations</h2></td></tr>
 <tr class="memitem:gafcb4b31d4dfe00e7a8f623ca0243fc4a" id="r_gafcb4b31d4dfe00e7a8f623ca0243fc4a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-io-packet.html#gafcb4b31d4dfe00e7a8f623ca0243fc4a">major</a> : uint16_t { <br />
 &#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggafcb4b31d4dfe00e7a8f623ca0243fc4aa5e543256c480ac577d30f76f9120eb74">major::undefined</a> = 0x0000
 , <br />
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggafcb4b31d4dfe00e7a8f623ca0243fc4aaac7938d40cfc2307e2bf325d28e7884e">major::plain</a> = 0x0001
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggafcb4b31d4dfe00e7a8f623ca0243fc4aaa8cfde6331bd59eb2ac96f8911c4b666">major::object</a> = 0x0002
+, <br />
 &#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggafcb4b31d4dfe00e7a8f623ca0243fc4aa421b47ffd946ca083b65cd668c6b17e6">major::video</a> = 0x0010
 , <br />
 &#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggafcb4b31d4dfe00e7a8f623ca0243fc4aaa5ca0b5894324f8bb54bb9fffad29d1e">major::audio</a> = 0x0020
 , <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggafcb4b31d4dfe00e7a8f623ca0243fc4aaee11cbb19052e40b07aac0ca060c23ee">major::user</a> = 0x8000
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggafcb4b31d4dfe00e7a8f623ca0243fc4aaa5fe26d5d09b736a77f4345e9f80b951">major::sensor</a> = 0x0030
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggafcb4b31d4dfe00e7a8f623ca0243fc4aadc1d71bbb5c4d2a5e936db79ef10c19f">major::log</a> = 0x8080
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggafcb4b31d4dfe00e7a8f623ca0243fc4aaee11cbb19052e40b07aac0ca060c23ee">major::user</a> = 0xF000
 <br />
  }</td></tr>
 <tr class="separator:gafcb4b31d4dfe00e7a8f623ca0243fc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabdd4252f9ee279fa05041e885f605e5a" id="r_gabdd4252f9ee279fa05041e885f605e5a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-io-packet.html#gabdd4252f9ee279fa05041e885f605e5a">video</a> : uint16_t { <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aa5e543256c480ac577d30f76f9120eb74">video::undefined</a> = 0x0000
+<tr class="memitem:ga4b0fc645b000c5498122bb6f4a0aeee5" id="r_ga4b0fc645b000c5498122bb6f4a0aeee5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-io-packet.html#ga4b0fc645b000c5498122bb6f4a0aeee5">minor</a> : uint16_t { <a class="el" href="group__api-core-io-packet.html#gga4b0fc645b000c5498122bb6f4a0aeee5adb0f6f37ebeb6ea09489124345af2a45">minor::group</a> = 0x0000
+ }</td></tr>
+<tr class="separator:ga4b0fc645b000c5498122bb6f4a0aeee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8274eba5ba00af5aaf87d8d70bb435fd" id="r_ga8274eba5ba00af5aaf87d8d70bb435fd"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-io-packet.html#ga8274eba5ba00af5aaf87d8d70bb435fd">plain</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fdafa1c731ead93e333a9180e16f968c01e">plain::sequence</a> = 0x0000
 , <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aaf59dcd306ec32930f1e78a1d82280b48">video::packed</a> = 0x0001
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fda852438d026c018c4307b916406f98c62">plain::nil</a> = 0x0010
 , <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aaf2ce11ebf110993621bedd8e747d7b1b">video::mask</a> = 0xFFFE
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fda84e2c64f38f78ba3ea5c905ab5a2da27">plain::boolean</a> = 0x0011
 , <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aa67e83ab1518237f0bfd6a5e5dc61cd8a">video::mono8</a> = 0x0100
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fda157db7df530023575515d366c9b672e8">plain::integer</a> = 0x0012
 , <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aa9ba41516cd81f8cd86f33fd8ac96c52f">video::mono8_packed</a> = 0x0101
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fda8f4ef05b543fb6157b374099100574b3">plain::natural</a> = 0x0013
 , <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aad4585e31a369f36be93d048d5105d995">video::mono10</a> = 0x0110
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fdab1bc248a7ff2b2e95569f56de68615df">plain::number</a> = 0x0014
 , <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aad6ba91d6a72075cb291d916947888cf2">video::mono10_packed</a> = 0x0111
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fdab45cffe084dd3d20d928bee85e7b0f21">plain::string</a> = 0x0015
 , <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aa6007cdb032028ef144dacca7256e96a1">video::mono12</a> = 0x0120
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fda9d7183f16acce70658f686ae7f1a4d20">plain::binary</a> = 0x0016
 , <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aaf7f8e386fd2f686347fb5d90ac8251a0">video::mono12_packed</a> = 0x0121
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fdaef7c876f00f3acddd00fa671f52d0b1f">plain::uuid</a> = 0x0017
 , <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aab3804f411d914f83353d33c4f8955d17">video::mono14</a> = 0x0130
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fdae2984f40e9e01b6181f601efc08629f6">plain::isodate</a> = 0x0020
 , <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aa0bee0689e09ccbd067a75ce57062ab27">video::mono14_packed</a> = 0x0131
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fdad7e6d55ba379a13d08c25d15faf2a23b">plain::timestamp</a> = 0x0021
 , <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aa6b53b9f17c96fdeeac1fe6a4b4f64b88">video::mono16</a> = 0x0140
-, <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aa5613fb429e8fc1fe5dcf73c0dde7b928">video::bggr8</a> = 0x0200
-, <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aab1500b383bccdb3946114a5d708706c4">video::rgba32</a> = 0x0300
+&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fdace8274bd92f5c430833dac9e92927d26">plain::localtime</a> = 0x0022
 <br />
  }</td></tr>
-<tr class="separator:gabdd4252f9ee279fa05041e885f605e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8521a79f161ad2f6371c7934252ee902" id="r_ga8521a79f161ad2f6371c7934252ee902"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-io-packet.html#ga8521a79f161ad2f6371c7934252ee902">audio</a> : uint16_t { <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8521a79f161ad2f6371c7934252ee902a5e543256c480ac577d30f76f9120eb74">audio::undefined</a> = 0x0000
-, <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8521a79f161ad2f6371c7934252ee902acc411e6c13670e52124629b8ac83f7d0">audio::bits</a> = 0x000F
-, <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8521a79f161ad2f6371c7934252ee902a599dcce2998a6b40b1e38e8c6006cb0a">audio::type</a> = 0x00F0
-, <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8521a79f161ad2f6371c7934252ee902a84bea1f0fd2ce16f7e562a9f06ef03d3">audio::encoding</a> = 0xFF00
-, <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8521a79f161ad2f6371c7934252ee902a654db8a14a5f633b9ba85ec92dc51f7c">audio::mono</a> = 0x0010
-, <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8521a79f161ad2f6371c7934252ee902a4855655ebf33c0714f51895000e2f5f3">audio::stereo</a> = 0x0020
-, <br />
-&#160;&#160;<a class="el" href="group__api-core-io-packet.html#gga8521a79f161ad2f6371c7934252ee902a9ba951533bd098582b3512d72e5a7acd">audio::multichannel</a> = 0x0030
-<br />
- }</td></tr>
-<tr class="separator:ga8521a79f161ad2f6371c7934252ee902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga8274eba5ba00af5aaf87d8d70bb435fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga0dbcb493973614d8a6b03988f405410d" id="r_ga0dbcb493973614d8a6b03988f405410d"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-io-packet.html#ga0dbcb493973614d8a6b03988f405410d">alignment</a> = 8</td></tr>
+<tr class="separator:ga0dbcb493973614d8a6b03988f405410d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

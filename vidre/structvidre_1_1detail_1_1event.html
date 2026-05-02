@@ -166,6 +166,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a194742f17e426db4402f64f4936287b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c82344a1ed984e2ba4698e9ca93719d" id="r_a6c82344a1ed984e2ba4698e9ca93719d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c82344a1ed984e2ba4698e9ca93719d">notify</a> (<a class="el" href="#a5b58e5df1d016ff788d83bdf40070599">value_type</a> <a class="el" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a>=1)</td></tr>
 <tr class="separator:a6c82344a1ed984e2ba4698e9ca93719d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2732aec2170fc33b2706dcb1013be1d9" id="r_a2732aec2170fc33b2706dcb1013be1d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2732aec2170fc33b2706dcb1013be1d9">avail</a> (std::chrono::milliseconds timeout={}) const noexcept</td></tr>
+<tr class="separator:a2732aec2170fc33b2706dcb1013be1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a61e79e1f6e34562b6ffb877cd0fa03" id="r_a2a61e79e1f6e34562b6ffb877cd0fa03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a99d1b9cd2d809b32fb4c752dcf937cad">result_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a61e79e1f6e34562b6ffb877cd0fa03">wait</a> ()</td></tr>
 <tr class="separator:a2a61e79e1f6e34562b6ffb877cd0fa03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27fd556542773c4fd6c676c9eacd46f2" id="r_a27fd556542773c4fd6c676c9eacd46f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a99d1b9cd2d809b32fb4c752dcf937cad">result_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27fd556542773c4fd6c676c9eacd46f2">wait</a> (std::chrono::milliseconds timeout)</td></tr>
@@ -568,6 +570,40 @@ Static Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <p>c <a class="el" href="classvidre_1_1exception_1_1runtime.html" title="Runtime exception.">exception::runtime</a> with <code><a class="el" href="classvidre_1_1error_1_1system.html" title="System error.">error::system</a></code> information if the notification failed due to a system error. </p><dl class="section note"><dt>Note</dt><dd>This call fails if <code>max_count</code> would overflow. </dd></dl>
+
+</div>
+</div>
+<a id="a2732aec2170fc33b2706dcb1013be1d9" name="a2732aec2170fc33b2706dcb1013be1d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2732aec2170fc33b2706dcb1013be1d9">&#9670;&#160;</a></span>avail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vidre::detail::event::avail </td>
+          <td>(</td>
+          <td class="paramtype">std::chrono::milliseconds</td>          <td class="paramname"><span class="paramname"><em>timeout</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if notifications are pending (i.e. </p>
+<p>the counter is zero). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>The maximum time to wait for notifications (milliseconds, default: 0). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt;0 if an error occurred, 0 if no notifications are pending, &gt;0 if notifications are pending. </dd></dl>
 
 </div>
 </div>

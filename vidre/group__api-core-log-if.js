@@ -1,5 +1,18 @@
 var group__api_core_log_if =
 [
+    [ "vidre::lognew::packet", "structvidre_1_1lognew_1_1packet.html", [
+      [ "packet", "structvidre_1_1lognew_1_1packet.html#af69551b930ab6a14047512d4b307fa3d", null ],
+      [ "packet", "structvidre_1_1lognew_1_1packet.html#a3bdb2ebb6aeb66b7b67594a1bef61774", null ],
+      [ "packet", "structvidre_1_1lognew_1_1packet.html#a9c58c0f0a74df60e749eba30de6ea86f", null ],
+      [ "~packet", "structvidre_1_1lognew_1_1packet.html#af38bc47ed92e6daf7f791c03306850eb", null ],
+      [ "packet", "structvidre_1_1lognew_1_1packet.html#ab65cf6cfb8fd94373a9aba71e01e6e7e", null ],
+      [ "operator=", "structvidre_1_1lognew_1_1packet.html#a6e2ac6feadcb5eff09776910397e877e", null ],
+      [ "operator=", "structvidre_1_1lognew_1_1packet.html#a3ef835bac8a0a345eff9ce620be6704d", null ],
+      [ "put", "structvidre_1_1lognew_1_1packet.html#a9cbab2b75b5d189e6533e69f17868404", null ],
+      [ "get_level", "structvidre_1_1lognew_1_1packet.html#a84972e99d50ebf90ec17b4494b2cb99c", null ],
+      [ "message", "structvidre_1_1lognew_1_1packet.html#ae44695d50b162221070a53693f843837", null ],
+      [ "timestamp", "structvidre_1_1lognew_1_1packet.html#aebbfa9714a7431b0541e86b1b84b6c85", null ]
+    ] ],
     [ "vidre::log::handler", "classvidre_1_1log_1_1handler.html", [
       [ "handler", "classvidre_1_1log_1_1handler.html#a16054598fa1155445226173f8593970a", null ],
       [ "handler", "classvidre_1_1log_1_1handler.html#a761c3df0d915f45c56fcf3df435d847b", null ],
@@ -53,6 +66,19 @@ var group__api_core_log_if =
       [ "match", "classvidre_1_1log_1_1trace.html#a7dcacc85e6c6676fb2a0b9d5cbace589", null ],
       [ "follow_", "classvidre_1_1log_1_1trace.html#ac679efe65d136d150311d6052879239c", null ]
     ] ],
+    [ "vidre::lognew::level", "group__api-core-log-if.html#ga65cc38bd37d7359874748c924f0a6db8", [
+      [ "vidre::lognew::level::fatal", "group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8adf6402fd9ecc60f5a2159fdf45711cd4", null ],
+      [ "vidre::lognew::level::alert", "group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8a7ed21143076d0cca420653d4345baa2f", null ],
+      [ "vidre::lognew::level::critical", "group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8a7e85bcb66fb9a809d5ab4f62a8b8bea8", null ],
+      [ "vidre::lognew::level::error", "group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8acb5e100e5a9a3e7f6d1fd97512215282", null ],
+      [ "vidre::lognew::level::warning", "group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8a7b83d3f08fa392b79e3f553b585971cd", null ],
+      [ "vidre::lognew::level::user", "group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8aee11cbb19052e40b07aac0ca060c23ee", null ],
+      [ "vidre::lognew::level::notice", "group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8aefd2af60c8501931cb9c736b5ad74f65", null ],
+      [ "vidre::lognew::level::status", "group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8a9acb44549b41563697bb490144ec6258", null ],
+      [ "vidre::lognew::level::info", "group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8acaf9b6b99962bf5c2264824231d7a40c", null ],
+      [ "vidre::lognew::level::debug", "group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8aad42f6697b035b7580e4fef93be20b4d", null ],
+      [ "vidre::lognew::level::trace", "group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8a04a75036e9d520bb983c5ed03b8d0182", null ]
+    ] ],
     [ "vidre::log::level", "group__api-core-log-if.html#gac7188c64802d58d335e10371224772ec", [
       [ "vidre::log::level::fatal", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecadf6402fd9ecc60f5a2159fdf45711cd4", null ],
       [ "vidre::log::level::alert", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca7ed21143076d0cca420653d4345baa2f", null ],
@@ -66,6 +92,10 @@ var group__api_core_log_if =
       [ "vidre::log::level::trace", "group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182", null ]
     ] ],
     [ "vidre::log::setup", "group__api-core-log-if.html#ga5b9bbc7d2cec4cf074305770214d5dc5", null ],
+    [ "vidre::lognew::level_n", "group__api-core-log-if.html#ga879fac32cae9f360d20e4aa2db0469b6", null ],
+    [ "vidre::lognew::level_min", "group__api-core-log-if.html#ga528290361b7acad69db03eb873be39b5", null ],
+    [ "vidre::lognew::level_max", "group__api-core-log-if.html#gab4e7fc8c5b3bc1c3af642b6823fa5c41", null ],
+    [ "vidre::lognew::level_default", "group__api-core-log-if.html#ga828b697d139ab04ffdf4833808d886e0", null ],
     [ "vidre::log::level_n", "group__api-core-log-if.html#ga388f2da64b353809ca10bc3b4dbf7cc4", null ],
     [ "vidre::log::level_min", "group__api-core-log-if.html#ga7625a30ab5fbb87dae61f4addfd5dc63", null ],
     [ "vidre::log::level_max", "group__api-core-log-if.html#ga8226791964f115d55b58f319d716ccfa", null ],

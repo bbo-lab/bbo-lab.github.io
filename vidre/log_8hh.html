@@ -127,9 +127,19 @@ $(function(){initNavTree('log_8hh.html',''); initResizable(true); });
 <div class="textblock"><code>#include &lt;<a class="el" href="libs_2core_2vidre_2core_2config_8hh_source.html">vidre/core/config.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="core_2vidre_2cpp_2util_8hh_source.html">vidre/cpp/util.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="core_2vidre_2cpp_2format_8hh_source.html">vidre/cpp/format.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="libs_2core_2vidre_2io_2types_8hh_source.html">vidre/io/types.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="core_2vidre_2io_2packet_8hh_source.html">vidre/io/packet.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="chrono_8hh_source.html">vidre/util/chrono.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="events_8hh_source.html">vidre/util/events.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="core_2vidre_2exception_8hh_source.html">vidre/exception.hh</a>&gt;</code><br />
+<code>#include &lt;ankerl/unordered_dense.h&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;string_view&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -137,7 +147,7 @@ $(function(){initNavTree('log_8hh.html',''); initResizable(true); });
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="log_8hh__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="log_8hh__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -151,6 +161,12 @@ $(function(){initNavTree('log_8hh.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1lognew_1_1packet.html">vidre::lognew::packet</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1lognew_1_1detail_1_1store.html">vidre::lognew::detail::store</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1lognew_1_1thread.html">vidre::lognew::thread</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1log_1_1handler.html">vidre::log::handler</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1log_1_1io_1_1style.html">vidre::log::io::style</a></td></tr>
@@ -186,15 +202,17 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevider_1_1log.html">vider::log</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevider_1_1log_1_1io.html">vider::log::io</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre.html">vidre</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1log.html">vidre::log</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1log_1_1io.html">vidre::log::io</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1log_1_1detail.html">vidre::log::detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre.html">vidre</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1lognew.html">vidre::lognew</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevidre_1_1lognew_1_1detail.html">vidre::lognew::detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
@@ -206,6 +224,8 @@ Concepts</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ga54b8fdbb5d6a2c274443f1af51ccba78" id="r_ga54b8fdbb5d6a2c274443f1af51ccba78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-details.html#ga54b8fdbb5d6a2c274443f1af51ccba78">VIDRE_CORE_LOG_BUFFER_SIZE</a>&#160;&#160;&#160;32768</td></tr>
+<tr class="separator:ga54b8fdbb5d6a2c274443f1af51ccba78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52757f611fcaa735369655dca48bab74" id="r_ga52757f611fcaa735369655dca48bab74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-details.html#ga52757f611fcaa735369655dca48bab74">VIDRE_CORE_LOG_IMPL</a>(T)</td></tr>
 <tr class="separator:ga52757f611fcaa735369655dca48bab74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -216,6 +236,31 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga65cc38bd37d7359874748c924f0a6db8" id="r_ga65cc38bd37d7359874748c924f0a6db8"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga65cc38bd37d7359874748c924f0a6db8">vidre::lognew::level</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8adf6402fd9ecc60f5a2159fdf45711cd4">vidre::lognew::level::fatal</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8a7ed21143076d0cca420653d4345baa2f">vidre::lognew::level::alert</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8a7e85bcb66fb9a809d5ab4f62a8b8bea8">vidre::lognew::level::critical</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8acb5e100e5a9a3e7f6d1fd97512215282">vidre::lognew::level::error</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8a7b83d3f08fa392b79e3f553b585971cd">vidre::lognew::level::warning</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8aee11cbb19052e40b07aac0ca060c23ee">vidre::lognew::level::user</a> = 5
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8aefd2af60c8501931cb9c736b5ad74f65">vidre::lognew::level::notice</a> = 6
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8a9acb44549b41563697bb490144ec6258">vidre::lognew::level::status</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8acaf9b6b99962bf5c2264824231d7a40c">vidre::lognew::level::info</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8aad42f6697b035b7580e4fef93be20b4d">vidre::lognew::level::debug</a> = 9
+, <br />
+&#160;&#160;<a class="el" href="group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8a04a75036e9d520bb983c5ed03b8d0182">vidre::lognew::level::trace</a> = 10
+<br />
+ }</td></tr>
+<tr class="separator:ga65cc38bd37d7359874748c924f0a6db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac7188c64802d58d335e10371224772ec" id="r_gac7188c64802d58d335e10371224772ec"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#gac7188c64802d58d335e10371224772ec">vidre::log::level</a> : int { <br />
 &#160;&#160;<a class="el" href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecadf6402fd9ecc60f5a2159fdf45711cd4">vidre::log::level::fatal</a> = -5
 , <br />
@@ -247,13 +292,21 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ga879fac32cae9f360d20e4aa2db0469b6" id="r_ga879fac32cae9f360d20e4aa2db0469b6"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga879fac32cae9f360d20e4aa2db0469b6">vidre::lognew::level_n</a> = 11</td></tr>
+<tr class="separator:ga879fac32cae9f360d20e4aa2db0469b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga528290361b7acad69db03eb873be39b5" id="r_ga528290361b7acad69db03eb873be39b5"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga528290361b7acad69db03eb873be39b5">vidre::lognew::level_min</a> = <a class="el" href="group__api-core-cpp-util.html#gaf2585385c90cccecb77ecac59eeb5b5b">to_underlying</a>(<a class="el" href="group__api-core-log-if.html#gga65cc38bd37d7359874748c924f0a6db8adf6402fd9ecc60f5a2159fdf45711cd4">level::fatal</a>)</td></tr>
+<tr class="separator:ga528290361b7acad69db03eb873be39b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4e7fc8c5b3bc1c3af642b6823fa5c41" id="r_gab4e7fc8c5b3bc1c3af642b6823fa5c41"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#gab4e7fc8c5b3bc1c3af642b6823fa5c41">vidre::lognew::level_max</a> = std::numeric_limits&lt;uint16_t&gt;::max()</td></tr>
+<tr class="separator:gab4e7fc8c5b3bc1c3af642b6823fa5c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga828b697d139ab04ffdf4833808d886e0" id="r_ga828b697d139ab04ffdf4833808d886e0"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga828b697d139ab04ffdf4833808d886e0">vidre::lognew::level_default</a> = defined_at_compile_time</td></tr>
+<tr class="separator:ga828b697d139ab04ffdf4833808d886e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga388f2da64b353809ca10bc3b4dbf7cc4" id="r_ga388f2da64b353809ca10bc3b4dbf7cc4"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga388f2da64b353809ca10bc3b4dbf7cc4">vidre::log::level_n</a> = 10</td></tr>
 <tr class="separator:ga388f2da64b353809ca10bc3b4dbf7cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7625a30ab5fbb87dae61f4addfd5dc63" id="r_ga7625a30ab5fbb87dae61f4addfd5dc63"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga7625a30ab5fbb87dae61f4addfd5dc63">vidre::log::level_min</a> = static_cast&lt;int&gt;(<a class="el" href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecadf6402fd9ecc60f5a2159fdf45711cd4">level::fatal</a>)</td></tr>
 <tr class="separator:ga7625a30ab5fbb87dae61f4addfd5dc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8226791964f115d55b58f319d716ccfa" id="r_ga8226791964f115d55b58f319d716ccfa"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga8226791964f115d55b58f319d716ccfa">vidre::log::level_max</a> = std::numeric_limits&lt;int&gt;::max()</td></tr>
 <tr class="separator:ga8226791964f115d55b58f319d716ccfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga91d20bd99261c731592be8c65fedc951" id="r_ga91d20bd99261c731592be8c65fedc951"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga91d20bd99261c731592be8c65fedc951">vidre::log::level_default</a> = static_cast&lt;int&gt;(<a class="el" href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecacaf9b6b99962bf5c2264824231d7a40c">level::info</a>)</td></tr>
+<tr class="memitem:ga91d20bd99261c731592be8c65fedc951" id="r_ga91d20bd99261c731592be8c65fedc951"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga91d20bd99261c731592be8c65fedc951">vidre::log::level_default</a> = static_cast&lt;int&gt;(<a class="el" href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772ecaad42f6697b035b7580e4fef93be20b4d">level::debug</a>)</td></tr>
 <tr class="separator:ga91d20bd99261c731592be8c65fedc951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1577b0dcbee0ca055b143f0c988fcb2c" id="r_ga1577b0dcbee0ca055b143f0c988fcb2c"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d">message_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">vidre::log::endl</a> = {&quot;\n&quot;, 1}</td></tr>
 <tr class="separator:ga1577b0dcbee0ca055b143f0c988fcb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>

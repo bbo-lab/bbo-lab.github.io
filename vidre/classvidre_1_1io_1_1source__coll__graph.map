@@ -1,9 +1,13 @@
 <map id="vidre::io::source" name="vidre::io::source">
-<area shape="rect" id="Node000001" title="Data source." alt="" coords="15,269,130,295"/>
-<area shape="rect" id="Node000002" href="$classvidre_1_1event.html" title="Event signalling primitive." alt="" coords="27,181,118,207"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,221,75,269,70,269,70,221"/>
-<area shape="rect" id="Node000003" href="$structvidre_1_1detail_1_1event.html" title="Trivial event notification primitive based on Linux&#39;s eventfd." alt="" coords="8,93,137,119"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="75,133,75,181,70,181,70,133"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,140,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="75,45,75,93,70,93,70,45"/>
+<area shape="rect" id="Node000001" title="Data source." alt="" coords="143,269,257,295"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1io_1_1endpoint.html" title="Endpoint capabilities." alt="" coords="5,181,131,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,212,184,267,181,271,96,216"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1event.html" title="Event signalling primitive." alt="" coords="155,181,245,207"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,221,203,269,197,269,197,221"/>
+<area shape="rect" id="Node000004" href="$structvidre_1_1detail_1_1event.html" title="Trivial event notification primitive based on Linux&#39;s eventfd." alt="" coords="135,93,265,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="203,133,203,181,197,181,197,133"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="133,5,267,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="203,45,203,93,197,93,197,45"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="269,181,427,207"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="318,216,221,271,219,267,315,211"/>
 </map>

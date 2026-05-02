@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['last_5ferror_0',['last_error',['../group__api-core-io-details.html#ga22e9057fd6b6f18e13c6db7a246240ee',1,'vidre::detail::io::file']]],
+  ['last_5ferror_0',['last_error',['../group__api-core-io-details.html#ga1ba2346bdd361abbce063608469b8410',1,'vidre::io::detail::file']]],
   ['level1_1',['level1',['../examples_2core_2log_8cc.html#ad9a0191b10b336d911295dacced2c042',1,'log.cc']]],
   ['level2_2',['level2',['../examples_2core_2log_8cc.html#a1bb2dd2a07faa1139bb485a1c81218f5',1,'log.cc']]],
   ['level3_3',['level3',['../examples_2core_2log_8cc.html#ae8db1b1d88fef9504b6da9273677fc5d',1,'log.cc']]],
@@ -9,8 +9,9 @@ var searchData=
   ['list_6',['list',['../examples_2playground_2uvc_8cc.html#ad6c0a7f201391971e72b1b06ec94efaf',1,'uvc.cc']]],
   ['load_7',['load',['../classvidre_1_1plugin_1_1native.html#acbb974048280720a8745412fcbad98ec',1,'vidre::plugin::native::load()'],['../classvidre_1_1settings_1_1file.html#aa1fd6a11a76652bbc47e02f8801ed561',1,'vidre::settings::file::load()']]],
   ['loadfile_8',['loadfile',['../group__api-core-util-filesystem.html#gad987b505f807a7cdc050d2f8836659a4',1,'vidre']]],
-  ['location_9',['location',['../classvidre_1_1error_1_1location.html#a3ad580448302e53630009b1f7c0e4b76',1,'vidre::error::location::location(const std::source_location &amp;src=std::source_location::current()) noexcept'],['../classvidre_1_1error_1_1location.html#a4c8d38e119751955dc44522f20835b12',1,'vidre::error::location::location(const char *filename, uint_least32_t line=0, uint_least32_t column=0) noexcept'],['../classvidre_1_1error_1_1location.html#a3a95ca1f7a85cf06c745c277589c9a4e',1,'vidre::error::location::location(const char *function, const char *filename, uint_least32_t line=0, uint_least32_t column=0) noexcept']]],
-  ['log_5flevel_10',['log_level',['../src_2apps_2tools_2uuid_8cc.html#a43b9c10e529c4f34db26d087c11c5bba',1,'log_level(program::argument::parser &amp;, variant value):&#160;uuid.cc'],['../examples_2core_2program_8cc.html#a43b9c10e529c4f34db26d087c11c5bba',1,'log_level(program::argument::parser &amp;, variant value):&#160;program.cc'],['../examples_2playground_2uvc_8cc.html#a43b9c10e529c4f34db26d087c11c5bba',1,'log_level(program::argument::parser &amp;, variant value):&#160;uvc.cc']]],
-  ['logic_11',['logic',['../classvidre_1_1exception_1_1logic.html#a358d5b775da03e2730024c413687e508',1,'vidre::exception::logic']]],
-  ['longquote_12',['longquote',['../src_2libs_2core_2vidre_2settings_8cc.html#a343093ec128d431c26530e3a2e7feeba',1,'settings.cc']]]
+  ['local_5fclock_9',['local_clock',['../group__api-core-util-chrono.html#gaf4795469d171a639d38f4101cdc484b6',1,'vidre::chrono']]],
+  ['location_10',['location',['../classvidre_1_1error_1_1location.html#a3ad580448302e53630009b1f7c0e4b76',1,'vidre::error::location::location(const std::source_location &amp;src=std::source_location::current()) noexcept'],['../classvidre_1_1error_1_1location.html#a4c8d38e119751955dc44522f20835b12',1,'vidre::error::location::location(const char *filename, uint_least32_t line=0, uint_least32_t column=0) noexcept'],['../classvidre_1_1error_1_1location.html#a3a95ca1f7a85cf06c745c277589c9a4e',1,'vidre::error::location::location(const char *function, const char *filename, uint_least32_t line=0, uint_least32_t column=0) noexcept']]],
+  ['log_5flevel_11',['log_level',['../src_2apps_2tools_2uuid_8cc.html#a43b9c10e529c4f34db26d087c11c5bba',1,'log_level(program::argument::parser &amp;, variant value):&#160;uuid.cc'],['../examples_2core_2program_8cc.html#a43b9c10e529c4f34db26d087c11c5bba',1,'log_level(program::argument::parser &amp;, variant value):&#160;program.cc'],['../examples_2playground_2uvc_8cc.html#a43b9c10e529c4f34db26d087c11c5bba',1,'log_level(program::argument::parser &amp;, variant value):&#160;uvc.cc']]],
+  ['logic_12',['logic',['../classvidre_1_1exception_1_1logic.html#a358d5b775da03e2730024c413687e508',1,'vidre::exception::logic']]],
+  ['longquote_13',['longquote',['../src_2libs_2core_2vidre_2settings_8cc.html#a343093ec128d431c26530e3a2e7feeba',1,'settings.cc']]]
 ];

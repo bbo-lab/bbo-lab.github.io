@@ -9,6 +9,7 @@ var classvidre_1_1device_1_1base =
     [ "connect", "classvidre_1_1device_1_1base.html#ac8212be594d3534eb628bfa2fcddcfd1", null ],
     [ "disconnect", "classvidre_1_1device_1_1base.html#af9147d6de6b774a3f275caee4e766f0c", null ],
     [ "setup", "classvidre_1_1device_1_1base.html#a97e60e704a21c388b3daca7a535b2507", null ],
+    [ "prepare", "classvidre_1_1device_1_1base.html#aacef887ce4b008a4e476beebb85d7ea9", null ],
     [ "start", "classvidre_1_1device_1_1base.html#a20e854a1d769ca15d8f915aa4a4de0bd", null ],
     [ "stop", "classvidre_1_1device_1_1base.html#ab3584117ac6efe3e11238dffe9c97181", null ],
     [ "id", "classvidre_1_1device_1_1base.html#aa78b48e988b8ee205fc7d15a456bd3c4", null ],

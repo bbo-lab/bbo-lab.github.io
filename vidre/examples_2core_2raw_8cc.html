@@ -113,21 +113,16 @@ $(function(){initNavTree('examples_2core_2raw_8cc.html',''); initResizable(true)
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">raw.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="raw_8hh_source.html">vidre/storage/raw.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="video_8hh_source.html">vidre/video.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="chrono_8hh_source.html">vidre/util/chrono.hh</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="log_8hh_source.html">vidre/log.hh</a>&gt;</code><br />
 <code>#include &lt;format&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;locale&gt;</code><br />
-<code>#include &quot;benchmark/benchmark.hh&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for raw.cc:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -136,60 +131,11 @@ $(function(){initNavTree('examples_2core_2raw_8cc.html',''); initResizable(true)
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="examples_2core_2raw_8cc__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfixed_1_1header.html">fixed::header</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvariable_1_1index.html">variable::index</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvariable_1_1geometry.html">variable::geometry</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvariable_1_1timestamp.html">variable::timestamp</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvariable_1_1header.html">variable::header</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefixed.html">fixed</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevariable.html">variable</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a2c9384c67919c632913b8db2088f8341" id="r_a2c9384c67919c632913b8db2088f8341"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c9384c67919c632913b8db2088f8341">REPEAT</a>&#160;&#160;&#160;10000000</td></tr>
-<tr class="separator:a2c9384c67919c632913b8db2088f8341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a8cd189f368c1ae0c498a90d2226cc25e" id="r_a8cd189f368c1ae0c498a90d2226cc25e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefixed.html#a8cd189f368c1ae0c498a90d2226cc25e">fixed::index</a> = <a class="el" href="structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html">raw::element::fixed</a>&lt;uint64_t, <a class="el" href="group__api-core-storage-raw.html#gga5fa0321a86ee103a5c9da9fecb857d84a421b47ffd946ca083b65cd668c6b17e6">raw::major::video</a>, raw::video::index&gt;</td></tr>
-<tr class="separator:a8cd189f368c1ae0c498a90d2226cc25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96fb20e837b885f5f852e0ef91c5abc8" id="r_a96fb20e837b885f5f852e0ef91c5abc8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefixed.html#a96fb20e837b885f5f852e0ef91c5abc8">fixed::geometry</a> = <a class="el" href="structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html">raw::element::fixed</a>&lt;video::geometry, <a class="el" href="group__api-core-storage-raw.html#gga5fa0321a86ee103a5c9da9fecb857d84a421b47ffd946ca083b65cd668c6b17e6">raw::major::video</a>, raw::video::geometry&gt;</td></tr>
-<tr class="separator:a96fb20e837b885f5f852e0ef91c5abc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ac0698580cf32120f1673de060b3801" id="r_a4ac0698580cf32120f1673de060b3801"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefixed.html#a4ac0698580cf32120f1673de060b3801">fixed::timestamp</a> = <a class="el" href="structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html">raw::element::fixed</a>&lt;<a class="el" href="structvidre_1_1video_1_1timestamp.html">video::timestamp</a>, <a class="el" href="group__api-core-storage-raw.html#gga5fa0321a86ee103a5c9da9fecb857d84a421b47ffd946ca083b65cd668c6b17e6">raw::major::video</a>, raw::video::timestamp&gt;</td></tr>
-<tr class="separator:a4ac0698580cf32120f1673de060b3801"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a217dbf8b442f20279ea00b898af96f52" id="r_a217dbf8b442f20279ea00b898af96f52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a217dbf8b442f20279ea00b898af96f52">main</a> (int argc, const char **argv)</td></tr>
 <tr class="separator:a217dbf8b442f20279ea00b898af96f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a2c9384c67919c632913b8db2088f8341" name="a2c9384c67919c632913b8db2088f8341"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c9384c67919c632913b8db2088f8341">&#9670;&#160;</a></span>REPEAT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define REPEAT&#160;&#160;&#160;10000000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a217dbf8b442f20279ea00b898af96f52" name="a217dbf8b442f20279ea00b898af96f52"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a217dbf8b442f20279ea00b898af96f52">&#9670;&#160;</a></span>main()</h2>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['handle_5ftype_0',['handle_type',['../classvidre_1_1plugin_1_1native_1_1library.html#acc15163bcfd55d1f146ca8c40a96b6b7',1,'vidre::plugin::native::library::handle_type'],['../group__api-core-plugin-details.html#ga758ab909353c31bc93701d66f6d3493e',1,'vidre::plugin::detail::library::handle_type']]]
+  ['index_5ftype_0',['index_type',['../classvidre_1_1script_1_1engine_1_1stack.html#ae4bca2d96e4a9a9d141fbdfb8cf139df',1,'vidre::script::engine::stack']]],
+  ['info_1',['info',['../namespacevidre_1_1device_1_1error.html#a40a10f36b45602a824830e33d5690c61',1,'vidre::device::error']]]
 ];

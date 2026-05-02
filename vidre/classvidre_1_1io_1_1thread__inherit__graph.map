@@ -1,0 +1,9 @@
+<map id="vidre::io::thread" name="vidre::io::thread">
+<area shape="rect" id="Node000001" title="IO thread." alt="" coords="98,5,210,31"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1io_1_1source.html" title="Data source." alt="" coords="97,79,211,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,44,157,79,151,79,151,44"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1io_1_1file_1_1source.html" title="File source." alt="" coords="5,159,145,185"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,116,89,161,85,157,131,112"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1video_1_1uvc_1_1camera.html" title="UVC camera." alt="" coords="169,152,296,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="177,112,216,150,212,154,173,116"/>
+</map>

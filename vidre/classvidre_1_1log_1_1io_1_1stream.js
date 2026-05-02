@@ -10,7 +10,7 @@ var classvidre_1_1log_1_1io_1_1stream =
     [ "threshold", "classvidre_1_1log_1_1io_1_1stream.html#a9328d4564fc9039d64c81e77b24bf83e", null ],
     [ "threshold", "classvidre_1_1log_1_1io_1_1stream.html#a89cc6376c3584ba50d1758870f79719d", null ],
     [ "threshold", "classvidre_1_1log_1_1io_1_1stream.html#a5dbccaa112021f7a22bdd834e0ae0685", null ],
-    [ "put", "classvidre_1_1log_1_1io_1_1stream.html#ad682cd7dd92f5d53feac35f4dc767981", null ],
+    [ "put", "classvidre_1_1log_1_1io_1_1stream.html#a7a984e2ecc145c4469a85ec86586f69d", null ],
     [ "vidre::log::handler", "classvidre_1_1log_1_1io_1_1stream.html#adf894dfeb94d9d4bd8ebd8966f36575a", null ],
     [ "vidre::log::trace", "classvidre_1_1log_1_1io_1_1stream.html#a90745a85dde87445bd85b3fecfa59522", null ],
     [ "channels", "classvidre_1_1log_1_1io_1_1stream.html#a1366ff9e8709e89d42a1e583faf6fbe8", null ],

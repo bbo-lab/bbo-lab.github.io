@@ -129,8 +129,8 @@ $(function(){initNavTree('group__api-core-log-if.html',''); initResizable(true);
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The general log interface used within the framework follows the convention: </p><div class="fragment"><div class="line">log::LEVEL() &lt;&lt; <span class="stringliteral">&quot;message output&quot;</span> &lt;&lt; <a class="code hl_variable" href="#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
-<div class="ttc" id="agroup__api-core-log-if_html_ga1577b0dcbee0ca055b143f0c988fcb2c"><div class="ttname"><a href="#ga1577b0dcbee0ca055b143f0c988fcb2c">vidre::log::endl</a></div><div class="ttdeci">static constexpr message_type endl</div><div class="ttdoc">End-of-line.</div><div class="ttdef"><b>Definition</b> log.hh:236</div></div>
-</div><!-- fragment --><p> where <code>LEVEL</code> may be any of the existing <a class="el" href="#gac7188c64802d58d335e10371224772ec">log levels</a> and may be used as if <code>std::clog</code> would be used directly.</p>
+<div class="ttc" id="agroup__api-core-log-if_html_ga1577b0dcbee0ca055b143f0c988fcb2c"><div class="ttname"><a href="#ga1577b0dcbee0ca055b143f0c988fcb2c">vidre::log::endl</a></div><div class="ttdeci">static constexpr message_type endl</div><div class="ttdoc">End-of-line.</div><div class="ttdef"><b>Definition</b> log.hh:539</div></div>
+</div><!-- fragment --><p> where <code>LEVEL</code> may be any of the existing <a class="el" href="#gac7188c64802d58d335e10371224772ec">log levels</a> and may be used as if <code>stderr</code> would be used directly.</p>
 <p>Special conditions apply to the following levels:</p><ul>
 <li><a class="el" href="classvidre_1_1log_1_1fatal.html">log::fatal</a> terminates the program when the object is destructed.</li>
 <li><a class="el" href="classvidre_1_1log_1_1debug.html">log::debug</a> is only supported (i.e. functional) when initially compiled without <code>NDEBUG</code>.</li>
@@ -139,6 +139,8 @@ $(function(){initNavTree('group__api-core-log-if.html',''); initResizable(true);
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1lognew_1_1packet.html">vidre::lognew::packet</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1log_1_1handler.html">vidre::log::handler</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1log_1_1fatal.html">vidre::log::fatal</a></td></tr>
@@ -164,6 +166,31 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga65cc38bd37d7359874748c924f0a6db8" id="r_ga65cc38bd37d7359874748c924f0a6db8"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga65cc38bd37d7359874748c924f0a6db8">vidre::lognew::level</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="#gga65cc38bd37d7359874748c924f0a6db8adf6402fd9ecc60f5a2159fdf45711cd4">vidre::lognew::level::fatal</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="#gga65cc38bd37d7359874748c924f0a6db8a7ed21143076d0cca420653d4345baa2f">vidre::lognew::level::alert</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="#gga65cc38bd37d7359874748c924f0a6db8a7e85bcb66fb9a809d5ab4f62a8b8bea8">vidre::lognew::level::critical</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="#gga65cc38bd37d7359874748c924f0a6db8acb5e100e5a9a3e7f6d1fd97512215282">vidre::lognew::level::error</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#gga65cc38bd37d7359874748c924f0a6db8a7b83d3f08fa392b79e3f553b585971cd">vidre::lognew::level::warning</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="#gga65cc38bd37d7359874748c924f0a6db8aee11cbb19052e40b07aac0ca060c23ee">vidre::lognew::level::user</a> = 5
+, <br />
+&#160;&#160;<a class="el" href="#gga65cc38bd37d7359874748c924f0a6db8aefd2af60c8501931cb9c736b5ad74f65">vidre::lognew::level::notice</a> = 6
+, <br />
+&#160;&#160;<a class="el" href="#gga65cc38bd37d7359874748c924f0a6db8a9acb44549b41563697bb490144ec6258">vidre::lognew::level::status</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="#gga65cc38bd37d7359874748c924f0a6db8acaf9b6b99962bf5c2264824231d7a40c">vidre::lognew::level::info</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="#gga65cc38bd37d7359874748c924f0a6db8aad42f6697b035b7580e4fef93be20b4d">vidre::lognew::level::debug</a> = 9
+, <br />
+&#160;&#160;<a class="el" href="#gga65cc38bd37d7359874748c924f0a6db8a04a75036e9d520bb983c5ed03b8d0182">vidre::lognew::level::trace</a> = 10
+<br />
+ }</td></tr>
+<tr class="separator:ga65cc38bd37d7359874748c924f0a6db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac7188c64802d58d335e10371224772ec" id="r_gac7188c64802d58d335e10371224772ec"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac7188c64802d58d335e10371224772ec">vidre::log::level</a> : int { <br />
 &#160;&#160;<a class="el" href="#ggac7188c64802d58d335e10371224772ecadf6402fd9ecc60f5a2159fdf45711cd4">vidre::log::level::fatal</a> = -5
 , <br />
@@ -195,13 +222,21 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ga879fac32cae9f360d20e4aa2db0469b6" id="r_ga879fac32cae9f360d20e4aa2db0469b6"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga879fac32cae9f360d20e4aa2db0469b6">vidre::lognew::level_n</a> = 11</td></tr>
+<tr class="separator:ga879fac32cae9f360d20e4aa2db0469b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga528290361b7acad69db03eb873be39b5" id="r_ga528290361b7acad69db03eb873be39b5"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga528290361b7acad69db03eb873be39b5">vidre::lognew::level_min</a> = <a class="el" href="group__api-core-cpp-util.html#gaf2585385c90cccecb77ecac59eeb5b5b">to_underlying</a>(<a class="el" href="#gga65cc38bd37d7359874748c924f0a6db8adf6402fd9ecc60f5a2159fdf45711cd4">level::fatal</a>)</td></tr>
+<tr class="separator:ga528290361b7acad69db03eb873be39b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4e7fc8c5b3bc1c3af642b6823fa5c41" id="r_gab4e7fc8c5b3bc1c3af642b6823fa5c41"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab4e7fc8c5b3bc1c3af642b6823fa5c41">vidre::lognew::level_max</a> = std::numeric_limits&lt;uint16_t&gt;::max()</td></tr>
+<tr class="separator:gab4e7fc8c5b3bc1c3af642b6823fa5c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga828b697d139ab04ffdf4833808d886e0" id="r_ga828b697d139ab04ffdf4833808d886e0"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga828b697d139ab04ffdf4833808d886e0">vidre::lognew::level_default</a> = defined_at_compile_time</td></tr>
+<tr class="separator:ga828b697d139ab04ffdf4833808d886e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga388f2da64b353809ca10bc3b4dbf7cc4" id="r_ga388f2da64b353809ca10bc3b4dbf7cc4"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga388f2da64b353809ca10bc3b4dbf7cc4">vidre::log::level_n</a> = 10</td></tr>
 <tr class="separator:ga388f2da64b353809ca10bc3b4dbf7cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7625a30ab5fbb87dae61f4addfd5dc63" id="r_ga7625a30ab5fbb87dae61f4addfd5dc63"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7625a30ab5fbb87dae61f4addfd5dc63">vidre::log::level_min</a> = static_cast&lt;int&gt;(<a class="el" href="#ggac7188c64802d58d335e10371224772ecadf6402fd9ecc60f5a2159fdf45711cd4">level::fatal</a>)</td></tr>
 <tr class="separator:ga7625a30ab5fbb87dae61f4addfd5dc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8226791964f115d55b58f319d716ccfa" id="r_ga8226791964f115d55b58f319d716ccfa"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8226791964f115d55b58f319d716ccfa">vidre::log::level_max</a> = std::numeric_limits&lt;int&gt;::max()</td></tr>
 <tr class="separator:ga8226791964f115d55b58f319d716ccfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga91d20bd99261c731592be8c65fedc951" id="r_ga91d20bd99261c731592be8c65fedc951"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga91d20bd99261c731592be8c65fedc951">vidre::log::level_default</a> = static_cast&lt;int&gt;(<a class="el" href="#ggac7188c64802d58d335e10371224772ecacaf9b6b99962bf5c2264824231d7a40c">level::info</a>)</td></tr>
+<tr class="memitem:ga91d20bd99261c731592be8c65fedc951" id="r_ga91d20bd99261c731592be8c65fedc951"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga91d20bd99261c731592be8c65fedc951">vidre::log::level_default</a> = static_cast&lt;int&gt;(<a class="el" href="#ggac7188c64802d58d335e10371224772ecaad42f6697b035b7580e4fef93be20b4d">level::debug</a>)</td></tr>
 <tr class="separator:ga91d20bd99261c731592be8c65fedc951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1577b0dcbee0ca055b143f0c988fcb2c" id="r_ga1577b0dcbee0ca055b143f0c988fcb2c"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d">message_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1577b0dcbee0ca055b143f0c988fcb2c">vidre::log::endl</a> = {&quot;\n&quot;, 1}</td></tr>
 <tr class="separator:ga1577b0dcbee0ca055b143f0c988fcb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,8 +244,56 @@ Variables</h2></td></tr>
 <tr class="separator:ga54c4d30d637a3c5ef4f42adea9a1bd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga65cc38bd37d7359874748c924f0a6db8" name="ga65cc38bd37d7359874748c924f0a6db8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65cc38bd37d7359874748c924f0a6db8">&#9670;&#160;</a></span>level <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#ga65cc38bd37d7359874748c924f0a6db8">vidre::lognew::level</a> : uint16_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Log levels. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga65cc38bd37d7359874748c924f0a6db8adf6402fd9ecc60f5a2159fdf45711cd4" name="gga65cc38bd37d7359874748c924f0a6db8adf6402fd9ecc60f5a2159fdf45711cd4"></a>fatal&#160;</td><td class="fielddoc"><p>System is in an unusable state and the program will terminate. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga65cc38bd37d7359874748c924f0a6db8a7ed21143076d0cca420653d4345baa2f" name="gga65cc38bd37d7359874748c924f0a6db8a7ed21143076d0cca420653d4345baa2f"></a>alert&#160;</td><td class="fielddoc"><p>Immediate user interaction is required, usually when data corruption occurs. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga65cc38bd37d7359874748c924f0a6db8a7e85bcb66fb9a809d5ab4f62a8b8bea8" name="gga65cc38bd37d7359874748c924f0a6db8a7e85bcb66fb9a809d5ab4f62a8b8bea8"></a>critical&#160;</td><td class="fielddoc"><p>A critical error, such as hardware failure. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga65cc38bd37d7359874748c924f0a6db8acb5e100e5a9a3e7f6d1fd97512215282" name="gga65cc38bd37d7359874748c924f0a6db8acb5e100e5a9a3e7f6d1fd97512215282"></a>error&#160;</td><td class="fielddoc"><p>An application error occurred. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga65cc38bd37d7359874748c924f0a6db8a7b83d3f08fa392b79e3f553b585971cd" name="gga65cc38bd37d7359874748c924f0a6db8a7b83d3f08fa392b79e3f553b585971cd"></a>warning&#160;</td><td class="fielddoc"><p>Warning level, which may hint to future failure. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga65cc38bd37d7359874748c924f0a6db8aee11cbb19052e40b07aac0ca060c23ee" name="gga65cc38bd37d7359874748c924f0a6db8aee11cbb19052e40b07aac0ca060c23ee"></a>user&#160;</td><td class="fielddoc"><p>A user message (such as an experimental note). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga65cc38bd37d7359874748c924f0a6db8aefd2af60c8501931cb9c736b5ad74f65" name="gga65cc38bd37d7359874748c924f0a6db8aefd2af60c8501931cb9c736b5ad74f65"></a>notice&#160;</td><td class="fielddoc"><p>A noteworthy condition occurred. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga65cc38bd37d7359874748c924f0a6db8a9acb44549b41563697bb490144ec6258" name="gga65cc38bd37d7359874748c924f0a6db8a9acb44549b41563697bb490144ec6258"></a>status&#160;</td><td class="fielddoc"><p>A status message. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga65cc38bd37d7359874748c924f0a6db8acaf9b6b99962bf5c2264824231d7a40c" name="gga65cc38bd37d7359874748c924f0a6db8acaf9b6b99962bf5c2264824231d7a40c"></a>info&#160;</td><td class="fielddoc"><p>A purely informational message. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga65cc38bd37d7359874748c924f0a6db8aad42f6697b035b7580e4fef93be20b4d" name="gga65cc38bd37d7359874748c924f0a6db8aad42f6697b035b7580e4fef93be20b4d"></a>debug&#160;</td><td class="fielddoc"><p>Debugging information. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga65cc38bd37d7359874748c924f0a6db8a04a75036e9d520bb983c5ed03b8d0182" name="gga65cc38bd37d7359874748c924f0a6db8a04a75036e9d520bb983c5ed03b8d0182"></a>trace&#160;</td><td class="fielddoc"><p>Tracing. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="gac7188c64802d58d335e10371224772ec" name="gac7188c64802d58d335e10371224772ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac7188c64802d58d335e10371224772ec">&#9670;&#160;</a></span>level</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7188c64802d58d335e10371224772ec">&#9670;&#160;</a></span>level <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,13 +355,110 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Setup log streams. </p>
-<p>This command intended for use with command line options. FIXME </p>
+<p>This command intended for use with command line options.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo</a></b></dt><dd>show example </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="ga879fac32cae9f360d20e4aa2db0469b6" name="ga879fac32cae9f360d20e4aa2db0469b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga879fac32cae9f360d20e4aa2db0469b6">&#9670;&#160;</a></span>level_n <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned vidre::lognew::level_n = 11</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of discernable log levels. </p>
+
+</div>
+</div>
+<a id="ga528290361b7acad69db03eb873be39b5" name="ga528290361b7acad69db03eb873be39b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga528290361b7acad69db03eb873be39b5">&#9670;&#160;</a></span>level_min <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned vidre::lognew::level_min = <a class="el" href="group__api-core-cpp-util.html#gaf2585385c90cccecb77ecac59eeb5b5b">to_underlying</a>(<a class="el" href="#gga65cc38bd37d7359874748c924f0a6db8adf6402fd9ecc60f5a2159fdf45711cd4">level::fatal</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Minimum log level (as integer). </p>
+
+</div>
+</div>
+<a id="gab4e7fc8c5b3bc1c3af642b6823fa5c41" name="gab4e7fc8c5b3bc1c3af642b6823fa5c41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab4e7fc8c5b3bc1c3af642b6823fa5c41">&#9670;&#160;</a></span>level_max <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned vidre::lognew::level_max = std::numeric_limits&lt;uint16_t&gt;::max()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum log level (as integer). </p>
+
+</div>
+</div>
+<a id="ga828b697d139ab04ffdf4833808d886e0" name="ga828b697d139ab04ffdf4833808d886e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga828b697d139ab04ffdf4833808d886e0">&#9670;&#160;</a></span>level_default <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned vidre::lognew::level_default = defined_at_compile_time</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default log level. </p>
+
+</div>
+</div>
 <a id="ga388f2da64b353809ca10bc3b4dbf7cc4" name="ga388f2da64b353809ca10bc3b4dbf7cc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga388f2da64b353809ca10bc3b4dbf7cc4">&#9670;&#160;</a></span>level_n</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga388f2da64b353809ca10bc3b4dbf7cc4">&#9670;&#160;</a></span>level_n <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,7 +482,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ga7625a30ab5fbb87dae61f4addfd5dc63" name="ga7625a30ab5fbb87dae61f4addfd5dc63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7625a30ab5fbb87dae61f4addfd5dc63">&#9670;&#160;</a></span>level_min</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7625a30ab5fbb87dae61f4addfd5dc63">&#9670;&#160;</a></span>level_min <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -326,7 +506,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ga8226791964f115d55b58f319d716ccfa" name="ga8226791964f115d55b58f319d716ccfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8226791964f115d55b58f319d716ccfa">&#9670;&#160;</a></span>level_max</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8226791964f115d55b58f319d716ccfa">&#9670;&#160;</a></span>level_max <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,7 +530,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ga91d20bd99261c731592be8c65fedc951" name="ga91d20bd99261c731592be8c65fedc951"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga91d20bd99261c731592be8c65fedc951">&#9670;&#160;</a></span>level_default</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga91d20bd99261c731592be8c65fedc951">&#9670;&#160;</a></span>level_default <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -359,7 +539,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int vidre::log::level_default = static_cast&lt;int&gt;(<a class="el" href="#ggac7188c64802d58d335e10371224772ecacaf9b6b99962bf5c2264824231d7a40c">level::info</a>)</td>
+          <td class="memname">int vidre::log::level_default = static_cast&lt;int&gt;(<a class="el" href="#ggac7188c64802d58d335e10371224772ecaad42f6697b035b7580e4fef93be20b4d">level::debug</a>)</td>
         </tr>
       </table>
   </td>
@@ -368,6 +548,8 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Default log level. </p>
 
 </div>
 </div>

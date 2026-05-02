@@ -1,15 +1,18 @@
 var searchData=
 [
-  ['data_0',['data',['../structvidre_1_1detail_1_1io_1_1buffer.html#af718ffb64d2beb9f52eca1a62eeec08a',1,'vidre::detail::io::buffer::data'],['../structvidre_1_1detail_1_1uuid__t.html#ad8916121749abcc3f6f903249348464e',1,'vidre::detail::uuid_t::data'],['../structvidre_1_1storage_1_1ccv_1_1lvstring.html#aedf9b2ef318211827387100639737db2',1,'vidre::storage::ccv::lvstring::data']]],
-  ['data_5f_1',['data_',['../classvidre_1_1memory_1_1view.html#a7f6a1d3185eab237e56409f80b19443a',1,'vidre::memory::view::data_'],['../classvidre_1_1memory_1_1area.html#af30600778c39c24fad5b0c97aa2cd1a1',1,'vidre::memory::area::data_'],['../classvidre_1_1memory_1_1chunk_1_1fifo.html#a2a42ddc3fc31c7898b86935428b32c5f',1,'vidre::memory::chunk::fifo::data_'],['../classvidre_1_1variant.html#afd0a628234bf07bbe77a0139e84153e7',1,'vidre::variant::data_']]],
-  ['decode_5f_2',['decode_',['../classvidre_1_1input_1_1midraw.html#a7c45f3cd249c837799ef63c51c3a5e10',1,'vidre::input::midraw']]],
-  ['default_5fpolicy_3',['default_policy',['../structvidre_1_1detail_1_1schedule.html#a97e28815d0a7c55242e03af04fc83e16',1,'vidre::detail::schedule']]],
-  ['default_5fresolution_4',['default_resolution',['../structvidre_1_1video_1_1timestamp.html#a82ff1e75044f9187ecd47aa0b3da69d7',1,'vidre::video::timestamp']]],
-  ['default_5fvalue_5',['default_value',['../structvidre_1_1program_1_1argument.html#a99cc0f500621030f441f02fbd90d8534',1,'vidre::program::argument']]],
-  ['description_6',['description',['../structvidre_1_1plugin_1_1information.html#a0249c259ca48fd75cbd267b902361924',1,'vidre::plugin::information::description'],['../structvidre_1_1program_1_1argument_1_1options.html#a9227c89ed0c48a8fbde52f050882f570',1,'vidre::program::argument::options::description'],['../classvidre_1_1program_1_1options.html#a9e39015b9a6bb28d31271ada950b716f',1,'vidre::program::options::description']]],
-  ['dev_5fmeta_5f_7',['dev_meta_',['../classvidre_1_1uvc.html#a4d883e4ce465f7f20ec16550efe6b8b9',1,'vidre::uvc']]],
-  ['dev_5fstream_5f_8',['dev_stream_',['../classvidre_1_1uvc.html#ad260c807edfadd1467031f5f181091c6',1,'vidre::uvc']]],
-  ['domain_9',['domain',['../structvidre_1_1plugin_1_1information.html#a19c760f3cca2260a29e69b628f9d5704',1,'vidre::plugin::information']]],
-  ['dummy_5fendianness_10',['dummy_endianness',['../ccv_8cc.html#abe60393c728817976af270a3afb9a495',1,'ccv.cc']]],
-  ['dummy_5fsystem_5fidentification_11',['dummy_system_identification',['../ccv_8cc.html#a38ed6b846df93ec09a07719067fe7d81',1,'ccv.cc']]]
+  ['callback_0',['callback',['../structvidre_1_1program_1_1argument.html#af3978180c079efacf226bd921895aa5f',1,'vidre::program::argument']]],
+  ['camera_5ftimestamp_1',['camera_timestamp',['../structvidre_1_1storage_1_1ccv_1_1tail.html#af4dc8eca3c5a2f615104172586d8c6df',1,'vidre::storage::ccv::tail']]],
+  ['camera_5ftype_5f_2',['camera_type_',['../classvidre_1_1storage_1_1ccv_1_1header.html#ab41b6a186eb3f1c881a3dedf0220d7ad',1,'vidre::storage::ccv::header']]],
+  ['category_3',['category',['../structvidre_1_1plugin_1_1information.html#ab19939b69410cb7a45d2f9d953d65ad3',1,'vidre::plugin::information']]],
+  ['chanid_5f_4',['chanid_',['../classvidre_1_1log_1_1io_1_1stream.html#ae94bb7bcfa8942188563dfa167e76967',1,'vidre::log::io::stream']]],
+  ['channels_5',['channels',['../classvidre_1_1log_1_1io_1_1stream.html#a1366ff9e8709e89d42a1e583faf6fbe8',1,'vidre::log::io::stream']]],
+  ['clock_5f_6',['clock_',['../classvidre_1_1chrono_1_1reference.html#a6cb3a9bbd4574872f2798b67b83fa817',1,'vidre::chrono::reference']]],
+  ['clock_5fspeed_5f_7',['clock_speed_',['../classvidre_1_1storage_1_1ccv_1_1header.html#aed0ce48af79c78e022f3909bd474ce7b',1,'vidre::storage::ccv::header']]],
+  ['code_5f_8',['code_',['../classvidre_1_1video_1_1format_1_1pixel.html#aa89ca286fd12ca57dc31974c807ea5ff',1,'vidre::video::format::pixel']]],
+  ['column_5f_9',['column_',['../classvidre_1_1error_1_1location.html#a0d9492c636a563890b0b2f031c070af8',1,'vidre::error::location']]],
+  ['compatible_5fv_10',['compatible_v',['../classvidre_1_1device_1_1state.html#a5eb60fd449a4caf577a579f0f3311bbc',1,'vidre::device::state']]],
+  ['computer_5ftime_11',['computer_time',['../structvidre_1_1storage_1_1ccv_1_1tail.html#a75ff278ca5fd82826b9ae7d1bc26be9b',1,'vidre::storage::ccv::tail']]],
+  ['convention_5f_12',['convention_',['../classvidre_1_1video_1_1format_1_1pixel.html#adeb2ee01be095936108809c7f936fc96',1,'vidre::video::format::pixel']]],
+  ['copyright_13',['copyright',['../structvidre_1_1program_1_1argument_1_1options.html#a772b9e187a194df28cab0b046ca4b856',1,'vidre::program::argument::options::copyright'],['../classvidre_1_1program_1_1options.html#ae0ff4cc0602afc1b3484f06d939a5b0e',1,'vidre::program::options::copyright']]],
+  ['count_14',['count',['../structvidre_1_1io_1_1result.html#aa12988124e8b06b457ba2e22dd1dcc30',1,'vidre::io::result::count'],['../structvidre_1_1event_1_1result.html#afc031f10467674e7d8d0caa8043ff585',1,'vidre::event::result::count'],['../structvidre_1_1video_1_1index.html#ada1fce8a126ccc2eb10a8e0f882ba35d',1,'vidre::video::index::count'],['../hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf',1,'count:&#160;hw_decode_video.cc']]]
 ];

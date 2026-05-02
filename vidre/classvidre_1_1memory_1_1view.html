@@ -140,9 +140,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adcf2f85075ebd3933becb2dea421ee52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5ddeaa26e8bafbc16853fc54878f268" id="r_ac5ddeaa26e8bafbc16853fc54878f268"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5ddeaa26e8bafbc16853fc54878f268">view</a> (<a class="el" href="group__api-core-memory-base.html#ga5a195aefab7366a6e1127e9250aa9417">size_type</a> n, <a class="el" href="group__api-core-memory-base.html#ga32ef1e25da5bd0eb63ae99dc59ad35a2">const_pointer</a> ptr) noexcept</td></tr>
 <tr class="separator:ac5ddeaa26e8bafbc16853fc54878f268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10241b04d5bbd98fc8473eff6650538c" id="r_a10241b04d5bbd98fc8473eff6650538c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a10241b04d5bbd98fc8473eff6650538c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a10241b04d5bbd98fc8473eff6650538c">view</a> (const T &amp;value) noexcept</td></tr>
-<tr class="separator:a10241b04d5bbd98fc8473eff6650538c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06cd1f2df065bf8ff526de88e2ea4710" id="r_a06cd1f2df065bf8ff526de88e2ea4710"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06cd1f2df065bf8ff526de88e2ea4710">view</a> (<a class="el" href="group__api-core-memory-base.html#ga5a195aefab7366a6e1127e9250aa9417">size_type</a> n, const char *ptr) noexcept</td></tr>
+<tr class="separator:a06cd1f2df065bf8ff526de88e2ea4710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea9bc61cfc07436007fde317ced3c24" id="r_a4ea9bc61cfc07436007fde317ced3c24"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:a4ea9bc61cfc07436007fde317ced3c24"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4ea9bc61cfc07436007fde317ced3c24">view</a> (const char(&amp;arr)[N]) noexcept</td></tr>
+<tr class="separator:a4ea9bc61cfc07436007fde317ced3c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad951c5389a7a179a11269bc10ccd9ff6" id="r_ad951c5389a7a179a11269bc10ccd9ff6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad951c5389a7a179a11269bc10ccd9ff6">view</a> (const std::string_view &amp;str) noexcept</td></tr>
+<tr class="separator:ad951c5389a7a179a11269bc10ccd9ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d986ef79b0bed29bf87c8ff0d5011b" id="r_ac7d986ef79b0bed29bf87c8ff0d5011b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7d986ef79b0bed29bf87c8ff0d5011b">view</a> (const std::string &amp;str) noexcept</td></tr>
+<tr class="separator:ac7d986ef79b0bed29bf87c8ff0d5011b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13a626964ae2fa16d59d4de7793784a" id="r_af13a626964ae2fa16d59d4de7793784a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; <br />
+requires (not string_type&lt;T&gt; and std::contiguous_iterator&lt;T&gt;)</td></tr>
+<tr class="memitem:af13a626964ae2fa16d59d4de7793784a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af13a626964ae2fa16d59d4de7793784a">view</a> (const T &amp;value) noexcept</td></tr>
+<tr class="separator:af13a626964ae2fa16d59d4de7793784a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3ecbceb0d18ae2634dd0c85481b46b2" id="r_ae3ecbceb0d18ae2634dd0c85481b46b2"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="group__api-core-memory-base.html#ga5a195aefab7366a6e1127e9250aa9417">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3ecbceb0d18ae2634dd0c85481b46b2">size</a> () const noexcept</td></tr>
 <tr class="separator:ae3ecbceb0d18ae2634dd0c85481b46b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
@@ -162,7 +172,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af2e7e60e4a4bf69a800473f6f4a5e997" name="af2e7e60e4a4bf69a800473f6f4a5e997"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2e7e60e4a4bf69a800473f6f4a5e997">&#9670;&#160;</a></span>view() <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e7e60e4a4bf69a800473f6f4a5e997">&#9670;&#160;</a></span>view() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,7 +197,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="ac6457e8ba78f4bd56c674f30b6db5a6e" name="ac6457e8ba78f4bd56c674f30b6db5a6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6457e8ba78f4bd56c674f30b6db5a6e">&#9670;&#160;</a></span>view() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6457e8ba78f4bd56c674f30b6db5a6e">&#9670;&#160;</a></span>view() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +222,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a5448e219c49a9c8cff1976dc874ffce8" name="a5448e219c49a9c8cff1976dc874ffce8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5448e219c49a9c8cff1976dc874ffce8">&#9670;&#160;</a></span>view() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5448e219c49a9c8cff1976dc874ffce8">&#9670;&#160;</a></span>view() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,7 +247,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="adcf2f85075ebd3933becb2dea421ee52" name="adcf2f85075ebd3933becb2dea421ee52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcf2f85075ebd3933becb2dea421ee52">&#9670;&#160;</a></span>view() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adcf2f85075ebd3933becb2dea421ee52">&#9670;&#160;</a></span>view() <span class="overload">[4/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,7 +276,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="ac5ddeaa26e8bafbc16853fc54878f268" name="ac5ddeaa26e8bafbc16853fc54878f268"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5ddeaa26e8bafbc16853fc54878f268">&#9670;&#160;</a></span>view() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ddeaa26e8bafbc16853fc54878f268">&#9670;&#160;</a></span>view() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,13 +304,120 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a10241b04d5bbd98fc8473eff6650538c" name="a10241b04d5bbd98fc8473eff6650538c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10241b04d5bbd98fc8473eff6650538c">&#9670;&#160;</a></span>view() <span class="overload">[6/6]</span></h2>
+<a id="a06cd1f2df065bf8ff526de88e2ea4710" name="a06cd1f2df065bf8ff526de88e2ea4710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06cd1f2df065bf8ff526de88e2ea4710">&#9670;&#160;</a></span>view() <span class="overload">[6/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vidre::memory::view::view </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__api-core-memory-base.html#ga5a195aefab7366a6e1127e9250aa9417">size_type</a></td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ea9bc61cfc07436007fde317ced3c24" name="a4ea9bc61cfc07436007fde317ced3c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea9bc61cfc07436007fde317ced3c24">&#9670;&#160;</a></span>view() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vidre::memory::view::view </td>
+          <td>(</td>
+          <td class="paramtype">const char(&amp;)</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad951c5389a7a179a11269bc10ccd9ff6" name="ad951c5389a7a179a11269bc10ccd9ff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad951c5389a7a179a11269bc10ccd9ff6">&#9670;&#160;</a></span>view() <span class="overload">[8/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vidre::memory::view::view </td>
+          <td>(</td>
+          <td class="paramtype">const std::string_view &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7d986ef79b0bed29bf87c8ff0d5011b" name="ac7d986ef79b0bed29bf87c8ff0d5011b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7d986ef79b0bed29bf87c8ff0d5011b">&#9670;&#160;</a></span>view() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vidre::memory::view::view </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af13a626964ae2fa16d59d4de7793784a" name="af13a626964ae2fa16d59d4de7793784a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af13a626964ae2fa16d59d4de7793784a">&#9670;&#160;</a></span>view() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; <br />
+requires (not string_type&lt;T&gt; and std::contiguous_iterator&lt;T&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">

@@ -131,10 +131,10 @@ class vidre::shared&lt; T, Allocator &gt;</div><p>Implements reference-counted s
   </table>
   </dd>
 </dl>
-<h2><a class="anchor" id="autotoc_md12"></a>
+<h2><a class="anchor" id="autotoc_md14"></a>
 Strong vs. Weak References</h2>
 <p>This implementation currently supports <b>strong references</b> only. A complete implementation would also include weak references:</p>
-<h3><a class="anchor" id="autotoc_md13"></a>
+<h3><a class="anchor" id="autotoc_md15"></a>
 Strong References (this class)</h3>
 <ul>
 <li>Keep the managed object alive</li>
@@ -142,7 +142,7 @@ Strong References (this class)</h3>
 <li>Can access the managed object directly (operator-&gt;, operator*)</li>
 <li>Example: <code>shared&lt;Foo&gt; sp1 = make_shared&lt;Foo&gt;();</code> // strong count = 1</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md14"></a>
+<h3><a class="anchor" id="autotoc_md16"></a>
 Weak References (not yet implemented)</h3>
 <ul>
 <li>Observe the object without keeping it alive</li>
@@ -151,13 +151,13 @@ Weak References (not yet implemented)</h3>
 <li>Prevent control block deallocation even after object destruction</li>
 <li>Example: <code>weak&lt;Foo&gt; wp = sp1;</code> // weak count = 1, strong count unchanged</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md17"></a>
 Reference Count Behavior</h2>
 <div class="fragment"><div class="line">Strong <a class="code hl_variable" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a> &gt; 0: Object is alive and accessible</div>
 <div class="line">Strong <a class="code hl_variable" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a> = 0: Object is destroyed, control block may persist <span class="keywordflow">if</span> weak <a class="code hl_variable" href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a> &gt; 0</div>
 <div class="line">Both counts = 0: Control block is deallocated</div>
 <div class="ttc" id="ahw__decode__video_8cc_html_ad43c3812e6d13e0518d9f8b8f463ffcf"><div class="ttname"><a href="hw__decode__video_8cc.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a></div><div class="ttdeci">int count</div><div class="ttdef"><b>Definition</b> hw_decode_video.cc:43</div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md16"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md18"></a>
 Memory Layout</h2>
 <div class="fragment"><div class="line">┌─────────────────────────────────────┐</div>
 <div class="line">│  counted_object (control block)     │</div>
@@ -167,7 +167,7 @@ Memory Layout</h2>
 <div class="line">│  T object (constructed in-place)    │</div>
 <div class="line">└─────────────────────────────────────┘</div>
 </div><!-- fragment --><p>The control block and object are allocated as one unit, improving cache locality and reducing allocation overhead compared to separate allocations.</p>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md19"></a>
 Thread Safety</h2>
 <ul>
 <li>Reference count operations are atomic and thread-safe</li>
@@ -175,7 +175,7 @@ Thread Safety</h2>
 <li>Concurrent reads of the same object are safe if the object allows it</li>
 <li>Concurrent reads and writes require external synchronization</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md18"></a>
+<h2><a class="anchor" id="autotoc_md20"></a>
 Usage Example</h2>
 <div class="fragment"><div class="line"><span class="comment">// Using default allocator</span></div>
 <div class="line"><span class="keyword">auto</span> sp1 = <a class="code hl_function" href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9">make_shared&lt;std::string&gt;</a>(<span class="stringliteral">&quot;Hello&quot;</span>);</div>
@@ -201,7 +201,7 @@ Usage Example</h2>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__api-core-util-shared.html#ga5869272b519d4de2d3ceba7f64fd99f9" title="Factory function for creating shared objects.">make_shared</a> Factory function for convenient creation </dd>
 <dd>
 std::shared_ptr Standard equivalent with more features</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo</a></b></dt><dd>Code/documentatoin copied (only refactored names) directly from DeepSeek, needs audit!</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo</a></b></dt><dd>Code/documentatoin copied (only refactored names) directly from DeepSeek, needs audit!</dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>

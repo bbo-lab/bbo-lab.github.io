@@ -144,7 +144,7 @@ $(function(){initNavTree('native_8hh_source.html',''); initResizable(true); });
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;<a class="code" href="core_2vidre_2plugin_2exception_8hh.html">vidre/plugin/exception.hh</a>&gt;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;<a class="code" href="information_8hh.html">vidre/plugin/information.hh</a>&gt;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#if defined(_MSC_VER)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#if VIDRE_HOST_WINDOWS</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;libloaderapi.h&gt;</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#define VIDRE_USING_LIBLOADERAPI</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#else</span></div>
@@ -320,7 +320,7 @@ $(function(){initNavTree('native_8hh_source.html',''); initResizable(true); });
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>}  <span class="comment">// namespace vidre</span></div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">#endif  </span><span class="comment">// VIDRE_CORE_PLUGIN_NATIVE_HH</span></div>
-<div class="ttc" id="aclassvidre_1_1error_1_1message_html"><div class="ttname"><a href="classvidre_1_1error_1_1message.html">vidre::error::message</a></div><div class="ttdoc">Error message.</div><div class="ttdef"><b>Definition</b> exception.hh:476</div></div>
+<div class="ttc" id="aclassvidre_1_1error_1_1message_html"><div class="ttname"><a href="classvidre_1_1error_1_1message.html">vidre::error::message</a></div><div class="ttdoc">Error message.</div><div class="ttdef"><b>Definition</b> exception.hh:477</div></div>
 <div class="ttc" id="aclassvidre_1_1plugin_1_1exception_html"><div class="ttname"><a href="classvidre_1_1plugin_1_1exception.html">vidre::plugin::exception</a></div><div class="ttdoc">General plugin exception.</div><div class="ttdef"><b>Definition</b> exception.hh:40</div></div>
 <div class="ttc" id="aclassvidre_1_1plugin_1_1native_1_1library_html"><div class="ttname"><a href="classvidre_1_1plugin_1_1native_1_1library.html">vidre::plugin::native::library</a></div><div class="ttdoc">Library (dynamically linked object) handler.</div><div class="ttdef"><b>Definition</b> native.hh:108</div></div>
 <div class="ttc" id="aclassvidre_1_1plugin_1_1native_1_1library_html_a0c6749f4a5c7e8d918909b6aab4fe612"><div class="ttname"><a href="classvidre_1_1plugin_1_1native_1_1library.html#a0c6749f4a5c7e8d918909b6aab4fe612">vidre::plugin::native::library::library</a></div><div class="ttdeci">library(const char *path, mode flags=mode::lazy)</div><div class="ttdef"><b>Definition</b> native.hh:128</div></div>
@@ -365,7 +365,7 @@ $(function(){initNavTree('native_8hh_source.html',''); initResizable(true); });
 <div class="ttc" id="anamespacevidre_1_1plugin_1_1detail_1_1library_html"><div class="ttname"><a href="namespacevidre_1_1plugin_1_1detail_1_1library.html">vidre::plugin::detail::library</a></div><div class="ttdef"><b>Definition</b> native.hh:45</div></div>
 <div class="ttc" id="anamespacevidre_1_1plugin_1_1detail_html"><div class="ttname"><a href="namespacevidre_1_1plugin_1_1detail.html">vidre::plugin::detail</a></div><div class="ttdef"><b>Definition</b> native.hh:43</div></div>
 <div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> config.hh:31</div></div>
-<div class="ttc" id="asrc_2libs_2core_2vidre_2log_8cc_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="src_2libs_2core_2vidre_2log_8cc.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> log.cc:246</div></div>
+<div class="ttc" id="asrc_2libs_2core_2vidre_2log_8cc_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="src_2libs_2core_2vidre_2log_8cc.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> log.cc:313</div></div>
 <div class="ttc" id="astructvidre_1_1plugin_1_1information_html"><div class="ttname"><a href="structvidre_1_1plugin_1_1information.html">vidre::plugin::information</a></div><div class="ttdoc">Module information.</div><div class="ttdef"><b>Definition</b> information.hh:43</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

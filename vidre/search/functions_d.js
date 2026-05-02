@@ -7,6 +7,6 @@ var searchData=
   ['node_4',['node',['../classvidre_1_1settings_1_1node.html#a0f0fa9535901878cfd823a42e206464a',1,'vidre::settings::node::node()=default'],['../classvidre_1_1settings_1_1node.html#aa7495f9aa700dc612cf733df8f4080aa',1,'vidre::settings::node::node(node &amp;&amp;other)'],['../classvidre_1_1settings_1_1node.html#a82be04c47da231ffbce40c3afd7bfec7',1,'vidre::settings::node::node(const node &amp;)=delete'],['../classvidre_1_1settings_1_1node.html#a21b69c1b5f3adb03713556f0aac480ab',1,'vidre::settings::node::node(const node &amp;parent, const std::string &amp;field)']]],
   ['notice_5',['notice',['../classvidre_1_1log_1_1notice.html#abeaf851c98d14f1d5665ab98cb27baa9',1,'vidre::log::notice']]],
   ['notify_6',['notify',['../classvidre_1_1io_1_1source.html#a114123480e980834f4d93fb03dba1e0f',1,'vidre::io::source::notify()'],['../structvidre_1_1detail_1_1event.html#a6c82344a1ed984e2ba4698e9ca93719d',1,'vidre::detail::event::notify()'],['../classvidre_1_1event.html#a3294922e500a2dd9a997663d342b2538',1,'vidre::event::notify()']]],
-  ['now_7',['now',['../structvidre_1_1video_1_1timestamp.html#a0734c5603c43830a4a7944a8bce4b3d8',1,'vidre::video::timestamp']]],
+  ['now_7',['now',['../structvidre_1_1chrono_1_1timestamp.html#ae8d4eff7b8982bfb578905d58d272068',1,'vidre::chrono::timestamp::now()'],['../structvidre_1_1video_1_1timestamp.html#a0734c5603c43830a4a7944a8bce4b3d8',1,'vidre::video::timestamp::now()']]],
   ['null_8',['null',['../classvidre_1_1log_1_1null.html#aaac1e73943f5c57c7a272ea6ea57eaa2',1,'vidre::log::null']]]
 ];

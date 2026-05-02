@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['repeat_0',['REPEAT',['../examples_2core_2raw_8cc.html#a2c9384c67919c632913b8db2088f8341',1,'raw.cc']]],
-  ['run_5ffor_5fs_1',['RUN_FOR_S',['../event_8cc.html#a6528491f482ec69d30d6500baf7c2d0e',1,'event.cc']]]
+  ['mib_0',['MiB',['../examples_2core_2io_8cc.html#a6e6c290ea1f73a50e4e84adb8c26ccc3',1,'MiB:&#160;io.cc'],['../hdspeed_8cc.html#a6e6c290ea1f73a50e4e84adb8c26ccc3',1,'MiB:&#160;hdspeed.cc']]]
 ];

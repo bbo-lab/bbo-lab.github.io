@@ -1,7 +1,7 @@
 <map id="vidre::io::sink" name="vidre::io::sink">
-<area shape="rect" id="Node000001" title="Data sink skeleton." alt="" coords="86,5,186,31"/>
-<area shape="rect" id="Node000002" href="$classvidre_1_1io_1_1file_1_1sink.html" title="A file sink." alt="" coords="5,79,131,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,42,81,80,77,77,114,39"/>
-<area shape="rect" id="Node000003" href="$classvidre_1_1io_1_1pipe.html" title="Data pipe." alt="" coords="155,79,255,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,39,196,77,192,80,155,43"/>
+<area shape="rect" id="Node000001" title="Data sink skeleton." alt="" coords="18,79,118,104"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1io_1_1file_1_1sink.html" title="A file sink." alt="" coords="5,152,131,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="71,118,71,152,65,152,65,118"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1io_1_1endpoint.html" title="Endpoint capabilities." alt="" coords="5,5,131,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,44,71,79,65,79,65,44"/>
 </map>

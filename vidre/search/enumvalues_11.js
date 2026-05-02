@@ -1,8 +1,8 @@
 var searchData=
 [
   ['random_0',['Random',['../classvidre_1_1uuid.html#a5b9648f028bfb70ebdbd5d57ec4ac6c3a64663f4646781c9c0110838b905daa23',1,'vidre::uuid::Random'],['../namespacevidre_1_1detail_1_1uuid.html#a068b51d1e2aa184038752c87c3e9f636a5008131bab448fb3564933645fb655eb',1,'vidre::detail::uuid::Random']]],
-  ['readonly_1',['readonly',['../classvidre_1_1io_1_1file.html#a94ca4020ed6d4a41de2b126722f19f60a336ebbb2179beaa7340a4f1620f3af40',1,'vidre::io::file::readonly'],['../group__api-core-io-details.html#gga2a4239ceda62c0f9ba1284a7b917fe8da336ebbb2179beaa7340a4f1620f3af40',1,'vidre::detail::io::file::readonly']]],
-  ['readwrite_2',['readwrite',['../classvidre_1_1io_1_1file.html#a94ca4020ed6d4a41de2b126722f19f60a2ea7fe2bd051ec076a226b7dab76aaa3',1,'vidre::io::file::readwrite'],['../group__api-core-io-details.html#gga2a4239ceda62c0f9ba1284a7b917fe8da2ea7fe2bd051ec076a226b7dab76aaa3',1,'vidre::detail::io::file::readwrite']]],
+  ['readonly_1',['readonly',['../classvidre_1_1io_1_1file.html#a94ca4020ed6d4a41de2b126722f19f60a336ebbb2179beaa7340a4f1620f3af40',1,'vidre::io::file::readonly'],['../group__api-core-io-details.html#ggaae86961eb238690bf15b457c817396c9a336ebbb2179beaa7340a4f1620f3af40',1,'vidre::io::detail::file::readonly']]],
+  ['readwrite_2',['readwrite',['../classvidre_1_1io_1_1file.html#a94ca4020ed6d4a41de2b126722f19f60a2ea7fe2bd051ec076a226b7dab76aaa3',1,'vidre::io::file::readwrite'],['../group__api-core-io-details.html#ggaae86961eb238690bf15b457c817396c9a2ea7fe2bd051ec076a226b7dab76aaa3',1,'vidre::io::detail::file::readwrite']]],
   ['required_3',['required',['../structvidre_1_1program_1_1argument.html#ac90264a2e4fed1f3f173b8756dec6d92a58de72d9d21822d7be28a0be7fdaad4b',1,'vidre::program::argument']]],
   ['rgb24_4',['rgb24',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146adb89a9da565723ef77473ec650a05b0a',1,'vidre::ffmpeg::rgb24'],['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1adb89a9da565723ef77473ec650a05b0a',1,'rgb24:&#160;fourcc.hh']]],
   ['rgb32_5',['rgb32',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a9044824f66300d6c0072a574d49bd00e',1,'fourcc.hh']]],
@@ -25,7 +25,7 @@ var searchData=
   ['rgb8_22',['rgb8',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a0d16d8a03c4a015e24dca17617722c4a',1,'vidre::ffmpeg']]],
   ['rgba_23',['rgba',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a7082a31b8759c9d59795876351ec63aa',1,'vidre::ffmpeg']]],
   ['rgba1010102_24',['rgba1010102',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a8bf73384b4e88460347f7c3fa681934b',1,'fourcc.hh']]],
-  ['rgba32_25',['rgba32',['../group__api-core-io-packet.html#ggabdd4252f9ee279fa05041e885f605e5aab1500b383bccdb3946114a5d708706c4',1,'vidre::io::packet::rgba32'],['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ab1500b383bccdb3946114a5d708706c4',1,'rgba32:&#160;fourcc.hh']]],
+  ['rgba32_25',['rgba32',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ab1500b383bccdb3946114a5d708706c4',1,'fourcc.hh']]],
   ['rgba444_26',['rgba444',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1af017d610f7b02f4e7ea466bc1e6fdebe',1,'fourcc.hh']]],
   ['rgba555_27',['rgba555',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ab53dc4d7a94c76656f392882c4a7eb90',1,'fourcc.hh']]],
   ['rgba64be_28',['rgba64be',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a1aa47bbec20d0da7d3bb459591f04bb2',1,'vidre::ffmpeg']]],
@@ -43,9 +43,9 @@ var searchData=
   ['rgbz_40',['rgbz',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146aa775e858b1ef4b271e8d5f99f862cfa9',1,'vidre::ffmpeg']]],
   ['rk_5fisp1_5fparams_41',['rk_isp1_params',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a0ad6d19d733cf3d67b8df1ccc1f0aa68',1,'fourcc.hh']]],
   ['rk_5fisp1_5fstat_5f3a_42',['rk_isp1_stat_3a',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a67dd085d2dd421fbde6a344e54646236',1,'fourcc.hh']]],
-  ['round_5frobin_43',['round_robin',['../structvidre_1_1detail_1_1schedule.html#adf5f0b0a49c40144989d7da46702b913ab84a0d1db12e3b1a7f313c31afe84998',1,'vidre::detail::schedule']]],
+  ['round_5frobin_43',['round_robin',['../classvidre_1_1schedule.html#a67392b6a3f29577e4ae01f75dc8a9015a4412c3395f407a75c2adce7824ebf428',1,'vidre::schedule']]],
   ['ru12le_44',['ru12le',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ac87066023cd8f72299033f6ef853618a',1,'fourcc.hh']]],
-  ['running_45',['running',['../group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772a75101dcdfc88455bcafc9e53e0b06689',1,'vidre::device']]],
+  ['running_45',['running',['../classvidre_1_1device_1_1state.html#ac34957d4cee2518db7665766961cf337a47a91e10d455b5bfa0f567745626c304',1,'vidre::device::state']]],
   ['rv30_46',['rv30',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a7c7477297ac3e5233cc2c0a00a5aaf6c',1,'fourcc.hh']]],
   ['rv40_47',['rv40',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a1ffc8e5679254bedc5dc71afa6034a0b',1,'fourcc.hh']]]
 ];

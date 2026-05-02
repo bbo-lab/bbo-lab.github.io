@@ -1,74 +1,82 @@
 var group__api_core_io_details =
 [
-    [ "vidre::detail::io", "namespacevidre_1_1detail_1_1io.html", null ],
-    [ "vidre::detail::io::file", "namespacevidre_1_1detail_1_1io_1_1file.html", null ],
-    [ "vidre::detail::io::buffer", "structvidre_1_1detail_1_1io_1_1buffer.html", [
-      [ "size_type", "structvidre_1_1detail_1_1io_1_1buffer.html#a5e92a8c30dcf896dca061087e26da304", null ],
-      [ "value_type", "structvidre_1_1detail_1_1io_1_1buffer.html#a7fe8954b5bfe63a4d90ae96302c66de1", null ],
-      [ "pointer", "structvidre_1_1detail_1_1io_1_1buffer.html#a727689631598406dbdebe98ac3872302", null ],
-      [ "const_pointer", "structvidre_1_1detail_1_1io_1_1buffer.html#aa8ef44e6f9e39bddf25776db0b3e7cba", null ],
-      [ "buffer", "structvidre_1_1detail_1_1io_1_1buffer.html#a1922fb3b6e9cd79352b9112642218ae3", null ],
-      [ "~buffer", "structvidre_1_1detail_1_1io_1_1buffer.html#a7c8b1866523dc12ff68d818c75328373", null ],
-      [ "setup", "structvidre_1_1detail_1_1io_1_1buffer.html#a407d62328336994304e8368a5ef3c677", null ],
-      [ "operator bool", "structvidre_1_1detail_1_1io_1_1buffer.html#acad48e568a940c267154f695d0757c96", null ],
-      [ "full", "structvidre_1_1detail_1_1io_1_1buffer.html#aafae57ccb55e0b98d372dd51c7b06b12", null ],
-      [ "flush", "structvidre_1_1detail_1_1io_1_1buffer.html#a78cfb5525d1419d639b266b2b3439266", null ],
-      [ "append", "structvidre_1_1detail_1_1io_1_1buffer.html#a5d9c3c349f1f2c2a6e12312d51e26e2e", null ],
-      [ "size", "structvidre_1_1detail_1_1io_1_1buffer.html#afe370f593c7eccb2db5ab5336056b6a8", null ],
-      [ "used", "structvidre_1_1detail_1_1io_1_1buffer.html#ab8f568333636f5048a181b2d8a99fd2c", null ],
-      [ "data", "structvidre_1_1detail_1_1io_1_1buffer.html#af718ffb64d2beb9f52eca1a62eeec08a", null ]
+    [ "vidre::io::detail", "namespacevidre_1_1io_1_1detail.html", null ],
+    [ "vidre::io::detail::file", "namespacevidre_1_1io_1_1detail_1_1file.html", null ],
+    [ "vidre::io::detail::buffer", "structvidre_1_1io_1_1detail_1_1buffer.html", [
+      [ "size_type", "structvidre_1_1io_1_1detail_1_1buffer.html#a74ac320294391db7e56761334f2a14ec", null ],
+      [ "value_type", "structvidre_1_1io_1_1detail_1_1buffer.html#a14d5175730892b85916657dafe034fe7", null ],
+      [ "pointer", "structvidre_1_1io_1_1detail_1_1buffer.html#a810449fee052c78c1ee5fdc8955ddaae", null ],
+      [ "const_pointer", "structvidre_1_1io_1_1detail_1_1buffer.html#a0a1f016c85ac7a5a994d894231bc1b9a", null ],
+      [ "buffer", "structvidre_1_1io_1_1detail_1_1buffer.html#a15bdcc8ea313ac89aaae3b9655760a12", null ],
+      [ "buffer", "structvidre_1_1io_1_1detail_1_1buffer.html#a67b656ae3c42bac218758090db25873c", null ],
+      [ "buffer", "structvidre_1_1io_1_1detail_1_1buffer.html#a4a290cf91e6080bc62bdac6cd13e981e", null ],
+      [ "buffer", "structvidre_1_1io_1_1detail_1_1buffer.html#a5d4ca1009d573ea81822047a71989049", null ],
+      [ "~buffer", "structvidre_1_1io_1_1detail_1_1buffer.html#ab33680d20faaa8a0fd202020f072777b", null ],
+      [ "operator=", "structvidre_1_1io_1_1detail_1_1buffer.html#ac1b36879d1a766e94d3a16852287b4da", null ],
+      [ "operator=", "structvidre_1_1io_1_1detail_1_1buffer.html#a814d64510c4422e80d4f2084f419dc91", null ],
+      [ "setup", "structvidre_1_1io_1_1detail_1_1buffer.html#a042c2623143ba8e6799ebd96dc2ba229", null ],
+      [ "operator bool", "structvidre_1_1io_1_1detail_1_1buffer.html#a559ed96dc86cb457f9cf5e28b1936246", null ],
+      [ "full", "structvidre_1_1io_1_1detail_1_1buffer.html#a50a7cecb8cdaabcf437a6cf19fed4923", null ],
+      [ "flush", "structvidre_1_1io_1_1detail_1_1buffer.html#a4ab591927b35f824cb1217e20dbdb6ca", null ],
+      [ "put", "structvidre_1_1io_1_1detail_1_1buffer.html#aa7934b94daa400dbcf1e219e9224b728", null ],
+      [ "operator memory::area", "structvidre_1_1io_1_1detail_1_1buffer.html#a641a059d8dd9cf40c802bbd0dff01adb", null ],
+      [ "size", "structvidre_1_1io_1_1detail_1_1buffer.html#ab806a5f45ed10c5f69b2513de4de117a", null ],
+      [ "used", "structvidre_1_1io_1_1detail_1_1buffer.html#a53213bbf750c3df494306b760f77fcbe", null ],
+      [ "data", "structvidre_1_1io_1_1detail_1_1buffer.html#aabf3f45b912f5a17fde95ff555cd1868", null ]
     ] ],
     [ "VIDRE_IO_BLOCKSIZE", "group__api-core-io-details.html#ga7fe1ba77f26c8a7677607984fa0fcd64", null ],
-    [ "vidre::detail::io::file::size_type", "group__api-core-io-details.html#gac3b9d930a3ec238a07a0370556686983", null ],
-    [ "vidre::detail::io::file::offset_type", "group__api-core-io-details.html#gacb9b166c2b2b3012d6d0b929b1422ac0", null ],
-    [ "vidre::detail::io::file::descriptor", "group__api-core-io-details.html#ga6856f2876f37551d9d4e9b0c87015c86", null ],
-    [ "vidre::detail::io::file::access_mode", "group__api-core-io-details.html#ga2a4239ceda62c0f9ba1284a7b917fe8d", [
-      [ "vidre::detail::io::file::access_mode::readonly", "group__api-core-io-details.html#gga2a4239ceda62c0f9ba1284a7b917fe8da336ebbb2179beaa7340a4f1620f3af40", null ],
-      [ "vidre::detail::io::file::access_mode::writeonly", "group__api-core-io-details.html#gga2a4239ceda62c0f9ba1284a7b917fe8daef1d48fe20b591902a50fa3ba5f7e88f", null ],
-      [ "vidre::detail::io::file::access_mode::readwrite", "group__api-core-io-details.html#gga2a4239ceda62c0f9ba1284a7b917fe8da2ea7fe2bd051ec076a226b7dab76aaa3", null ]
+    [ "vidre::io::detail::file::size_type", "group__api-core-io-details.html#gad43d24b357bdc9e1da75b7bcaf034a4a", null ],
+    [ "vidre::io::detail::file::offset_type", "group__api-core-io-details.html#ga9a7d2a7b02504e79a7006ef284177d69", null ],
+    [ "vidre::io::detail::file::descriptor", "group__api-core-io-details.html#ga84931c39b2ec00c12869dce5dd743141", null ],
+    [ "vidre::io::detail::file::access_mode", "group__api-core-io-details.html#gaae86961eb238690bf15b457c817396c9", [
+      [ "vidre::io::detail::file::access_mode::readonly", "group__api-core-io-details.html#ggaae86961eb238690bf15b457c817396c9a336ebbb2179beaa7340a4f1620f3af40", null ],
+      [ "vidre::io::detail::file::access_mode::writeonly", "group__api-core-io-details.html#ggaae86961eb238690bf15b457c817396c9aef1d48fe20b591902a50fa3ba5f7e88f", null ],
+      [ "vidre::io::detail::file::access_mode::readwrite", "group__api-core-io-details.html#ggaae86961eb238690bf15b457c817396c9a2ea7fe2bd051ec076a226b7dab76aaa3", null ]
     ] ],
-    [ "vidre::detail::io::file::disposition", "group__api-core-io-details.html#gad532a1fa9acebd750f184d78d606e499", [
-      [ "vidre::detail::io::file::disposition::append", "group__api-core-io-details.html#ggad532a1fa9acebd750f184d78d606e499a9516dfb15f51c7ee19a4d46b8c0dbe1d", null ],
-      [ "vidre::detail::io::file::disposition::create", "group__api-core-io-details.html#ggad532a1fa9acebd750f184d78d606e499a76ea0bebb3c22822b4f0dd9c9fd021c5", null ],
-      [ "vidre::detail::io::file::disposition::exclusive", "group__api-core-io-details.html#ggad532a1fa9acebd750f184d78d606e499aa4293995cfbfa9ce60ce71ade2ff75f7", null ],
-      [ "vidre::detail::io::file::disposition::truncate", "group__api-core-io-details.html#ggad532a1fa9acebd750f184d78d606e499a244f58cf07c35fd48d7524b289551e5c", null ]
+    [ "vidre::io::detail::file::disposition", "group__api-core-io-details.html#gadb37a85fbe994561cd130e69d49b22b8", [
+      [ "vidre::io::detail::file::disposition::append", "group__api-core-io-details.html#ggadb37a85fbe994561cd130e69d49b22b8a9516dfb15f51c7ee19a4d46b8c0dbe1d", null ],
+      [ "vidre::io::detail::file::disposition::create", "group__api-core-io-details.html#ggadb37a85fbe994561cd130e69d49b22b8a76ea0bebb3c22822b4f0dd9c9fd021c5", null ],
+      [ "vidre::io::detail::file::disposition::exclusive", "group__api-core-io-details.html#ggadb37a85fbe994561cd130e69d49b22b8aa4293995cfbfa9ce60ce71ade2ff75f7", null ],
+      [ "vidre::io::detail::file::disposition::truncate", "group__api-core-io-details.html#ggadb37a85fbe994561cd130e69d49b22b8a244f58cf07c35fd48d7524b289551e5c", null ]
     ] ],
-    [ "vidre::detail::io::file::hint", "group__api-core-io-details.html#ga65631992ba8134713383ea280dc9ce81", [
-      [ "vidre::detail::io::file::hint::none", "group__api-core-io-details.html#gga65631992ba8134713383ea280dc9ce81a334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
-      [ "vidre::detail::io::file::hint::close_on_exec", "group__api-core-io-details.html#gga65631992ba8134713383ea280dc9ce81a54e3e08d0201c6b040ee40f2d8857eb3", null ],
-      [ "vidre::detail::io::file::hint::non_block", "group__api-core-io-details.html#gga65631992ba8134713383ea280dc9ce81a3c092d5dc073f08bb2581754f9f963dd", null ],
-      [ "vidre::detail::io::file::hint::synchronous", "group__api-core-io-details.html#gga65631992ba8134713383ea280dc9ce81a1303c4f41a88e739bc859612321b189f", null ],
-      [ "vidre::detail::io::file::hint::direct", "group__api-core-io-details.html#gga65631992ba8134713383ea280dc9ce81a7caa701b2bd5a182b80c72b9bdf88e2d", null ],
-      [ "vidre::detail::io::file::hint::datasync", "group__api-core-io-details.html#gga65631992ba8134713383ea280dc9ce81aa919a25c09b5e0e533111577995cff53", null ]
+    [ "vidre::io::detail::file::hint", "group__api-core-io-details.html#ga85315f3df4798ba5d1a26666f2b7ebaa", [
+      [ "vidre::io::detail::file::hint::none", "group__api-core-io-details.html#gga85315f3df4798ba5d1a26666f2b7ebaaa334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
+      [ "vidre::io::detail::file::hint::close_on_exec", "group__api-core-io-details.html#gga85315f3df4798ba5d1a26666f2b7ebaaa54e3e08d0201c6b040ee40f2d8857eb3", null ],
+      [ "vidre::io::detail::file::hint::non_block", "group__api-core-io-details.html#gga85315f3df4798ba5d1a26666f2b7ebaaa3c092d5dc073f08bb2581754f9f963dd", null ],
+      [ "vidre::io::detail::file::hint::synchronous", "group__api-core-io-details.html#gga85315f3df4798ba5d1a26666f2b7ebaaa1303c4f41a88e739bc859612321b189f", null ],
+      [ "vidre::io::detail::file::hint::direct", "group__api-core-io-details.html#gga85315f3df4798ba5d1a26666f2b7ebaaa7caa701b2bd5a182b80c72b9bdf88e2d", null ],
+      [ "vidre::io::detail::file::hint::datasync", "group__api-core-io-details.html#gga85315f3df4798ba5d1a26666f2b7ebaaaa919a25c09b5e0e533111577995cff53", null ]
     ] ],
-    [ "vidre::detail::io::file::whence", "group__api-core-io-details.html#ga467dbdc1a8230d494cd3f6615ba178f1", [
-      [ "vidre::detail::io::file::whence::begin", "group__api-core-io-details.html#gga467dbdc1a8230d494cd3f6615ba178f1a8d589afa4dfaeeed85fff5aa78e5ff6a", null ],
-      [ "vidre::detail::io::file::whence::current", "group__api-core-io-details.html#gga467dbdc1a8230d494cd3f6615ba178f1a43b5c9175984c071f30b873fdce0a000", null ],
-      [ "vidre::detail::io::file::whence::end", "group__api-core-io-details.html#gga467dbdc1a8230d494cd3f6615ba178f1a7f021a1415b86f2d013b2618fb31ae53", null ]
+    [ "vidre::io::detail::file::whence", "group__api-core-io-details.html#gac67ab47bfdd36c000fc3d95ed7eb4fb3", [
+      [ "vidre::io::detail::file::whence::begin", "group__api-core-io-details.html#ggac67ab47bfdd36c000fc3d95ed7eb4fb3a8d589afa4dfaeeed85fff5aa78e5ff6a", null ],
+      [ "vidre::io::detail::file::whence::current", "group__api-core-io-details.html#ggac67ab47bfdd36c000fc3d95ed7eb4fb3a43b5c9175984c071f30b873fdce0a000", null ],
+      [ "vidre::io::detail::file::whence::end", "group__api-core-io-details.html#ggac67ab47bfdd36c000fc3d95ed7eb4fb3a7f021a1415b86f2d013b2618fb31ae53", null ]
     ] ],
-    [ "vidre::detail::io::file::allocation_type", "group__api-core-io-details.html#ga6b7973b158ab1c09d72020c128f939d9", [
-      [ "vidre::detail::io::file::allocate_range", "group__api-core-io-details.html#gga6b7973b158ab1c09d72020c128f939d9a1fbcfab219e5722cb0e83d67a38d1a8b", null ],
-      [ "vidre::detail::io::file::keep_size", "group__api-core-io-details.html#gga6b7973b158ab1c09d72020c128f939d9a19d0bf47f5235268e90229c7e03f196b", null ],
-      [ "vidre::detail::io::file::punch_hole", "group__api-core-io-details.html#gga6b7973b158ab1c09d72020c128f939d9aac5c950c5081a16d5ec40903926ce0c0", null ],
-      [ "vidre::detail::io::file::no_hide_stale", "group__api-core-io-details.html#gga6b7973b158ab1c09d72020c128f939d9a38f66a87d3ba404f7d40918c0c312b67", null ],
-      [ "vidre::detail::io::file::collapse_range", "group__api-core-io-details.html#gga6b7973b158ab1c09d72020c128f939d9ad6b0ed819bb96642b19238b71de257e4", null ],
-      [ "vidre::detail::io::file::zero_range", "group__api-core-io-details.html#gga6b7973b158ab1c09d72020c128f939d9a4ae164d5c26b0b9f65c000d4190c9690", null ],
-      [ "vidre::detail::io::file::insert_range", "group__api-core-io-details.html#gga6b7973b158ab1c09d72020c128f939d9a3e9d3594a4b566096e1632ead5f7c6a9", null ],
-      [ "vidre::detail::io::file::unshare_range", "group__api-core-io-details.html#gga6b7973b158ab1c09d72020c128f939d9a5931fbfa61cdeeb723dea45b7162dc82", null ]
+    [ "vidre::io::detail::file::allocation_type", "group__api-core-io-details.html#ga3a0f7e2f736f999c3c1411a8d254a078", [
+      [ "vidre::io::detail::file::allocate_range", "group__api-core-io-details.html#gga3a0f7e2f736f999c3c1411a8d254a078a92d3cdbf86fd0668efc4029988643ab3", null ],
+      [ "vidre::io::detail::file::keep_size", "group__api-core-io-details.html#gga3a0f7e2f736f999c3c1411a8d254a078af26be067a07e2e9ca87ac360969ebbf4", null ],
+      [ "vidre::io::detail::file::punch_hole", "group__api-core-io-details.html#gga3a0f7e2f736f999c3c1411a8d254a078a2832cc7b449eac6595b7a799cd709e11", null ],
+      [ "vidre::io::detail::file::no_hide_stale", "group__api-core-io-details.html#gga3a0f7e2f736f999c3c1411a8d254a078a9aae0e0c3b0d2b1b67dc4798185c0f67", null ],
+      [ "vidre::io::detail::file::collapse_range", "group__api-core-io-details.html#gga3a0f7e2f736f999c3c1411a8d254a078a7f329c1416dda676d9163181738bec8f", null ],
+      [ "vidre::io::detail::file::zero_range", "group__api-core-io-details.html#gga3a0f7e2f736f999c3c1411a8d254a078a943b64b5dae3cb00696d0f609529c900", null ],
+      [ "vidre::io::detail::file::insert_range", "group__api-core-io-details.html#gga3a0f7e2f736f999c3c1411a8d254a078a9969aa39ed583ad676f2e6107b5e8a6f", null ],
+      [ "vidre::io::detail::file::unshare_range", "group__api-core-io-details.html#gga3a0f7e2f736f999c3c1411a8d254a078ade5a5849f2f2694c5d7f50a3bfde498c", null ]
     ] ],
-    [ "vidre::detail::io::file::valid", "group__api-core-io-details.html#ga21704c6a8a3a1c8261a6a28e613028c1", null ],
-    [ "vidre::detail::io::file::last_error", "group__api-core-io-details.html#ga22e9057fd6b6f18e13c6db7a246240ee", null ],
-    [ "vidre::detail::io::file::open", "group__api-core-io-details.html#ga7461c68f1d44d8ad0c310400928f3a5f", null ],
-    [ "vidre::detail::io::file::close", "group__api-core-io-details.html#gaf3da732fa565b76025c078a0d848ce4e", null ],
-    [ "vidre::detail::io::file::read", "group__api-core-io-details.html#ga2a6697a0dcc528d8d7b04b6a3c697c3b", null ],
-    [ "vidre::detail::io::file::read", "group__api-core-io-details.html#gac1f14930abbc512b04a813d33ea736ae", null ],
-    [ "vidre::detail::io::file::write", "group__api-core-io-details.html#ga06fe78ce18a0bca81377491958ed90fb", null ],
-    [ "vidre::detail::io::file::write", "group__api-core-io-details.html#gab8ea63dc47feb2cc418d1bedd3351671", null ],
-    [ "vidre::detail::io::file::seek", "group__api-core-io-details.html#ga4ce153915c83dab0633f8bea527ef60d", null ],
-    [ "vidre::detail::io::file::filesize", "group__api-core-io-details.html#ga3a7213190664c5a9ab2f64c8838b7ced", null ],
-    [ "vidre::detail::io::file::blocksize", "group__api-core-io-details.html#ga4b9d1effcc3e2af89a96d9b9c6043860", null ],
-    [ "vidre::detail::io::file::filename", "group__api-core-io-details.html#ga704bcd48c4823b5b17e82a9978b0313e", null ],
-    [ "vidre::detail::io::file::allocate", "group__api-core-io-details.html#ga02c77bbd6090dcf03b8e3e66f3e3a3d1", null ],
-    [ "vidre::detail::io::file::invalid_descriptor", "group__api-core-io-details.html#gad38e2fb0633daefe922b67c5c8a45c76", null ],
-    [ "vidre::detail::io::file::path_max", "group__api-core-io-details.html#ga05fb63121977e41deae7921ccaf62b52", null ]
+    [ "vidre::io::detail::file::valid", "group__api-core-io-details.html#ga4ac3b4d103edae6d06ab427182f6fef4", null ],
+    [ "vidre::io::detail::file::last_error", "group__api-core-io-details.html#ga1ba2346bdd361abbce063608469b8410", null ],
+    [ "vidre::io::detail::file::dup", "group__api-core-io-details.html#ga714075e557bf21c8ee7e7ff5c6816c6e", null ],
+    [ "vidre::io::detail::file::open", "group__api-core-io-details.html#ga1f7e155b556c8b8f477575d4e39d64a9", null ],
+    [ "vidre::io::detail::file::close", "group__api-core-io-details.html#gab46a7f14b558bae0d0cce3bbaa13380f", null ],
+    [ "vidre::io::detail::file::read", "group__api-core-io-details.html#ga257c4e82d40cc57ff47921c93169ded6", null ],
+    [ "vidre::io::detail::file::read", "group__api-core-io-details.html#gae05b957e5e0d670e65ab1c6fc978721d", null ],
+    [ "vidre::io::detail::file::write", "group__api-core-io-details.html#ga066d43def375376e33c821e579c7b542", null ],
+    [ "vidre::io::detail::file::write", "group__api-core-io-details.html#gae4adcdc0a09a6b975f8e8ee263778b05", null ],
+    [ "vidre::io::detail::file::seek", "group__api-core-io-details.html#ga85800e4572f506bcfd92f4743be07ce2", null ],
+    [ "vidre::io::detail::file::filesize", "group__api-core-io-details.html#ga598c587fac52cc79ec932c54921800fd", null ],
+    [ "vidre::io::detail::file::blocksize", "group__api-core-io-details.html#gafd894e36eed90c5d99b4af669a52e871", null ],
+    [ "vidre::io::detail::file::filename", "group__api-core-io-details.html#ga451d9bfc0648cadfcf7bef182cea868a", null ],
+    [ "vidre::io::detail::file::allocate", "group__api-core-io-details.html#gae01ef854b4522f9e78f7a24a35da9fcf", null ],
+    [ "vidre::io::detail::file::fileno", "group__api-core-io-details.html#ga1a77fada1fedf504711a8768f72b217c", null ],
+    [ "vidre::io::detail::file::invalid_descriptor", "group__api-core-io-details.html#ga9a79ce5456154edd21384551ea481cc1", null ],
+    [ "vidre::io::detail::file::path_max", "group__api-core-io-details.html#gaa7704bccec4f53162031304a628149ee", null ]
 ];

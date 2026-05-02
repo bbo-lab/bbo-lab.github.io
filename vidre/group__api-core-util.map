@@ -1,16 +1,17 @@
 <map id="Utilities" name="Utilities">
-<area shape="rect" id="Node000002" href="$group__api-core.html" title=" " alt="" coords="5,293,95,318"/>
-<area shape="rect" id="Node000001" title="General purpose utilities." alt="" coords="143,293,209,318"/>
+<area shape="rect" id="Node000002" href="$group__api-core.html" title=" " alt="" coords="5,317,95,342"/>
+<area shape="rect" id="Node000001" title="General purpose utilities." alt="" coords="143,317,209,342"/>
 <area shape="rect" id="Node000003" href="$group__api-core-util-bit.html" title=" " alt="" coords="257,5,428,45"/>
-<area shape="rect" id="Node000004" href="$group__api-core-util-develop.html" title=" " alt="" coords="271,70,415,95"/>
-<area shape="rect" id="Node000005" href="$group__api-core-util-endian.html" title=" " alt="" coords="271,119,414,145"/>
-<area shape="rect" id="Node000006" href="$group__api-core-util-events.html" title=" " alt="" coords="289,169,397,194"/>
-<area shape="rect" id="Node000007" href="$group__api-core-util-filesystem.html" title=" " alt="" coords="281,218,404,243"/>
-<area shape="rect" id="Node000008" href="$group__api-core-util-macro.html" title="Preprocessor macros for various purposes (such as &quot;stringification&quot;)." alt="" coords="291,267,394,293"/>
-<area shape="rect" id="Node000009" href="$group__api-core-util-shared.html" title=" " alt="" coords="265,317,420,342"/>
-<area shape="rect" id="Node000010" href="$group__api-core-util-status.html" title=" " alt="" coords="273,366,412,391"/>
-<area shape="rect" id="Node000011" href="$group__api-core-util-thread.html" title=" " alt="" coords="281,415,405,441"/>
-<area shape="rect" id="Node000012" href="$group__api-core-util-uuid.html" title=" " alt="" coords="315,465,371,490"/>
-<area shape="rect" id="Node000013" href="$group__api-core-util-variant.html" title=" " alt="" coords="308,514,377,539"/>
-<area shape="rect" id="Node000014" href="$group__api-core-util-version.html" title=" " alt="" coords="283,563,402,589"/>
+<area shape="rect" id="Node000004" href="$group__api-core-util-chrono.html" title=" " alt="" coords="295,70,391,95"/>
+<area shape="rect" id="Node000005" href="$group__api-core-util-debug.html" title=" " alt="" coords="290,119,395,145"/>
+<area shape="rect" id="Node000006" href="$group__api-core-util-develop.html" title=" " alt="" coords="271,169,415,194"/>
+<area shape="rect" id="Node000007" href="$group__api-core-util-endian.html" title=" " alt="" coords="271,218,414,243"/>
+<area shape="rect" id="Node000008" href="$group__api-core-util-events.html" title=" " alt="" coords="289,267,397,293"/>
+<area shape="rect" id="Node000009" href="$group__api-core-util-filesystem.html" title=" " alt="" coords="281,317,404,342"/>
+<area shape="rect" id="Node000010" href="$group__api-core-util-macro.html" title="Preprocessor macros for various purposes (such as &quot;stringification&quot;)." alt="" coords="291,366,394,391"/>
+<area shape="rect" id="Node000011" href="$group__api-core-util-shared.html" title=" " alt="" coords="265,415,420,441"/>
+<area shape="rect" id="Node000012" href="$group__api-core-util-status.html" title=" " alt="" coords="273,465,412,490"/>
+<area shape="rect" id="Node000013" href="$group__api-core-util-uuid.html" title=" " alt="" coords="315,514,371,539"/>
+<area shape="rect" id="Node000014" href="$group__api-core-util-variant.html" title=" " alt="" coords="308,563,377,589"/>
+<area shape="rect" id="Node000015" href="$group__api-core-util-version.html" title=" " alt="" coords="283,613,402,638"/>
 </map>

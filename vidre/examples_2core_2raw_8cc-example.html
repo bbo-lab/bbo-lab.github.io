@@ -117,31 +117,31 @@ $(function(){initNavTree('examples_2core_2raw_8cc-example.html',''); initResizab
 <div class="contents">
 <p>Raw storage format usage example.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="raw_8hh.html">vidre/storage/raw.hh</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="video_8hh.html">vidre/video.hh</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="chrono_8hh.html">vidre/util/chrono.hh</a>&gt;</span></div>
+<div class="line"><span class="comment">// #include &lt;vidre/video.hh&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="log_8hh.html">vidre/log.hh</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;format&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;locale&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &quot;benchmark/benchmark.hh&quot;</span></div>
-<div class="line"> </div>
 <div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacevidre.html">vidre</a>;</div>
-<div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevidre_1_1storage_1_1raw.html">raw</a> = <a class="code hl_namespace" href="namespacevidre_1_1storage_1_1raw.html">vidre::storage::raw</a>;</div>
+<div class="line"><span class="preprocessor">#if 0</span></div>
+<div class="line"><span class="keyword">namespace </span>raw = <a class="code hl_namespace" href="namespacevidre_1_1storage_1_1raw.html">vidre::storage::raw</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define REPEAT 10000000</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefixed.html">fixed</a> {</div>
-<div class="line">    <span class="keyword">using </span><a id="a0" name="a0"></a><a class="code hl_typedef" href="namespacefixed.html#a8cd189f368c1ae0c498a90d2226cc25e">index</a> = <a id="_a1" name="_a1"></a><a class="code hl_struct" href="structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html">raw::element::fixed&lt;uint64_t, raw::major::video, raw::video::index&gt;</a>;</div>
-<div class="line">    <span class="keyword">using </span><a id="a2" name="a2"></a><a class="code hl_typedef" href="namespacefixed.html#a96fb20e837b885f5f852e0ef91c5abc8">geometry</a> = <a class="code hl_struct" href="structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html">raw::element::fixed&lt;video::geometry, raw::major::video, raw::video::geometry&gt;</a>;</div>
-<div class="line">    <span class="keyword">using </span><a id="a3" name="a3"></a><a class="code hl_typedef" href="namespacefixed.html#a4ac0698580cf32120f1673de060b3801">timestamp</a> = <a class="code hl_struct" href="structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html">raw::element::fixed&lt;video::timestamp, raw::major::video, raw::video::timestamp&gt;</a>;</div>
+<div class="line"><span class="keyword">namespace </span>fixed {</div>
+<div class="line">    <span class="keyword">using </span>index = raw::element::fixed&lt;uint64_t, raw::major::video, raw::video::index&gt;;</div>
+<div class="line">    <span class="keyword">using </span>geometry = raw::element::fixed&lt;video::geometry, raw::major::video, raw::video::geometry&gt;;</div>
+<div class="line">    <span class="keyword">using </span>timestamp = raw::element::fixed&lt;video::timestamp, raw::major::video, raw::video::timestamp&gt;;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// fixed-size chunk header</span></div>
 <div class="line">    <span class="keyword">struct </span><a class="code hl_define" href="group__api-core-details.html#ga91542f6e8b34c625fab750990e548aea">__vidre_packed__</a> header {</div>
-<div class="line">        <a class="code hl_typedef" href="namespacefixed.html#a8cd189f368c1ae0c498a90d2226cc25e">fixed::index</a> index;</div>
-<div class="line">        <a class="code hl_typedef" href="namespacefixed.html#a96fb20e837b885f5f852e0ef91c5abc8">fixed::geometry</a> geometry;</div>
-<div class="line">        <a class="code hl_typedef" href="namespacefixed.html#a4ac0698580cf32120f1673de060b3801">fixed::timestamp</a> timestamp;</div>
-<div class="line">        <a class="code hl_typedef" href="namespacefixed.html#a4ac0698580cf32120f1673de060b3801">fixed::timestamp</a> computertime;</div>
+<div class="line">        fixed::index index;</div>
+<div class="line">        fixed::geometry geometry;</div>
+<div class="line">        fixed::timestamp timestamp;</div>
+<div class="line">        fixed::timestamp computertime;</div>
 <div class="line"> </div>
 <div class="line">        storage::offset_type put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> {</div>
 <div class="line">            <span class="keywordflow">return</span> f.put(<span class="keyword">this</span>, 1);</div>
@@ -149,120 +149,123 @@ $(function(){initNavTree('examples_2core_2raw_8cc-example.html',''); initResizab
 <div class="line">    };</div>
 <div class="line">}  <span class="comment">// namespace fixed</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacevariable.html">variable</a> {</div>
-<div class="line">    <span class="keyword">struct </span><a class="code hl_define" href="group__api-core-details.html#ga91542f6e8b34c625fab750990e548aea">__vidre_packed__</a> index : <span class="keyword">public</span> <span class="keyword">virtual</span> <a id="_a4" name="_a4"></a><a class="code hl_struct" href="structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html">raw::element::dynamic</a> {</div>
+<div class="line"><span class="keyword">namespace </span>variable {</div>
+<div class="line">    <span class="keyword">struct </span><a class="code hl_define" href="group__api-core-details.html#ga91542f6e8b34c625fab750990e548aea">__vidre_packed__</a> index : <span class="keyword">public</span> <span class="keyword">virtual</span> raw::element::dynamic {</div>
 <div class="line">        uint64_t counter{};</div>
 <div class="line"> </div>
-<div class="line">        <a class="code hl_typedef" href="namespacefixed.html#a8cd189f368c1ae0c498a90d2226cc25e">index</a>() noexcept : raw::element::dynamic(raw::major::video, raw::video::index, sizeof(raw::prefix) + sizeof(counter)) {}</div>
+<div class="line">        index() noexcept : raw::element::dynamic(raw::major::video, raw::video::index, sizeof(raw::prefix) + sizeof(counter)) {}</div>
 <div class="line">        <span class="keyword">virtual</span> ~index() {}</div>
 <div class="line"> </div>
-<div class="line">        <a class="code hl_typedef" href="group__api-core-io-details.html#gacb9b166c2b2b3012d6d0b929b1422ac0">offset_type</a> put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> {</div>
+<div class="line">        <a class="code hl_typedef" href="group__api-core-io-details.html#ga9a7d2a7b02504e79a7006ef284177d69">offset_type</a> put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> {</div>
 <div class="line">            <span class="keywordflow">return</span> dynamic::put(f) + f.put(&amp;counter, 1);</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">struct </span><a id="a5" name="a5"></a><a class="code hl_define" href="group__api-core-details.html#ga91542f6e8b34c625fab750990e548aea">__vidre_packed__</a> <a id="_a6" name="_a6"></a><a class="code hl_struct" href="structvariable_1_1geometry.html">geometry</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> raw::element::dynamic {</div>
+<div class="line">    <span class="keyword">struct </span><a id="a0" name="a0"></a><a class="code hl_define" href="group__api-core-details.html#ga91542f6e8b34c625fab750990e548aea">__vidre_packed__</a> geometry : <span class="keyword">public</span> <span class="keyword">virtual</span> raw::element::dynamic {</div>
 <div class="line">        video::geometry content{};</div>
 <div class="line"> </div>
-<div class="line">        <a class="code hl_typedef" href="namespacefixed.html#a96fb20e837b885f5f852e0ef91c5abc8">geometry</a>() noexcept</div>
+<div class="line">        geometry() noexcept</div>
 <div class="line">            : raw::element::dynamic(raw::major::video, raw::video::geometry, sizeof(raw::prefix) + sizeof(content)) {}</div>
 <div class="line">        <span class="keyword">virtual</span> ~geometry() {}</div>
 <div class="line"> </div>
-<div class="line">        <a class="code hl_typedef" href="group__api-core-io-details.html#gacb9b166c2b2b3012d6d0b929b1422ac0">offset_type</a> put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> {</div>
+<div class="line">        <a class="code hl_typedef" href="group__api-core-io-details.html#ga9a7d2a7b02504e79a7006ef284177d69">offset_type</a> put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> {</div>
 <div class="line">            <span class="keywordflow">return</span> dynamic::put(f) + f.put(&amp;content, 1);</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">struct </span><a class="code hl_define" href="group__api-core-details.html#ga91542f6e8b34c625fab750990e548aea">__vidre_packed__</a> <a id="_a7" name="_a7"></a><a class="code hl_struct" href="structvariable_1_1timestamp.html">timestamp</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> raw::element::dynamic {</div>
+<div class="line">    <span class="keyword">struct </span><a class="code hl_define" href="group__api-core-details.html#ga91542f6e8b34c625fab750990e548aea">__vidre_packed__</a> <a class="code hl_enumvalue" href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fdad7e6d55ba379a13d08c25d15faf2a23b">timestamp</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> raw::element::dynamic {</div>
 <div class="line">        video::timestamp content{};</div>
 <div class="line"> </div>
-<div class="line">        <a class="code hl_typedef" href="namespacefixed.html#a4ac0698580cf32120f1673de060b3801">timestamp</a>() noexcept</div>
+<div class="line">        <a class="code hl_enumvalue" href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fdad7e6d55ba379a13d08c25d15faf2a23b">timestamp</a>() noexcept</div>
 <div class="line">            : raw::element::dynamic(raw::major::video, raw::video::timestamp, sizeof(raw::prefix) + sizeof(content)) {}</div>
 <div class="line">        <span class="keyword">virtual</span> ~timestamp() {}</div>
 <div class="line"> </div>
-<div class="line">        <a class="code hl_typedef" href="group__api-core-io-details.html#gacb9b166c2b2b3012d6d0b929b1422ac0">offset_type</a> put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> {</div>
+<div class="line">        <a class="code hl_typedef" href="group__api-core-io-details.html#ga9a7d2a7b02504e79a7006ef284177d69">offset_type</a> put(storage::sink &amp;f) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> {</div>
 <div class="line">            <span class="keywordflow">return</span> dynamic::put(f) + f.put(&amp;content, 1);</div>
 <div class="line">        }</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">struct </span><a id="_a8" name="_a8"></a><a class="code hl_struct" href="structvariable_1_1header.html">header</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> raw::element::sequence {</div>
-<div class="line">        variable::index *<a class="code hl_variable" href="structvariable_1_1header.html#a4483a55fa7a3fbc48b4702da9729ad9f">index</a>{};</div>
-<div class="line">        variable::geometry *<a class="code hl_variable" href="structvariable_1_1header.html#acfbb4165523d478016f57c205845d70a">geometry</a>{};</div>
-<div class="line">        variable::timestamp *<a class="code hl_variable" href="structvariable_1_1header.html#aadb5bd293c3d5105240f3941caef9e2a">camera</a>{};</div>
-<div class="line">        variable::timestamp *<a class="code hl_variable" href="structvariable_1_1header.html#ae8c8415f6b61f0bc08507be7939c6a2a">computer</a>{};</div>
+<div class="line">    <span class="keyword">struct </span>header : <span class="keyword">public</span> <span class="keyword">virtual</span> raw::element::sequence {</div>
+<div class="line">        variable::index *index{};</div>
+<div class="line">        variable::geometry *geometry{};</div>
+<div class="line">        variable::timestamp *camera{};</div>
+<div class="line">        variable::timestamp *computer{};</div>
 <div class="line"> </div>
-<div class="line">        <a id="a9" name="a9"></a><a class="code hl_function" href="structvariable_1_1header.html#abf688b2797b4788a05c1f157ca454979">header</a>() noexcept : raw::element::<a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a03e74a2ab2e5c80bbac1e38adf101300">sequence</a>() {</div>
-<div class="line">            <a class="code hl_variable" href="structvariable_1_1header.html#a4483a55fa7a3fbc48b4702da9729ad9f">index</a> = <a id="a10" name="a10"></a><a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a61749f3a22c8fdd92bd7799c479cd8c9">add&lt;variable::index&gt;</a>();</div>
-<div class="line">            <a class="code hl_variable" href="structvariable_1_1header.html#acfbb4165523d478016f57c205845d70a">geometry</a> = <a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a61749f3a22c8fdd92bd7799c479cd8c9">add&lt;variable::geometry&gt;</a>();</div>
-<div class="line">            <a class="code hl_variable" href="structvariable_1_1header.html#aadb5bd293c3d5105240f3941caef9e2a">camera</a> = <a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a61749f3a22c8fdd92bd7799c479cd8c9">add&lt;variable::timestamp&gt;</a>();</div>
-<div class="line">            <a class="code hl_variable" href="structvariable_1_1header.html#ae8c8415f6b61f0bc08507be7939c6a2a">computer</a> = <a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a61749f3a22c8fdd92bd7799c479cd8c9">add&lt;variable::timestamp&gt;</a>();</div>
+<div class="line">        header() noexcept : raw::element::sequence() {</div>
+<div class="line">            index = add&lt;variable::index&gt;();</div>
+<div class="line">            geometry = add&lt;variable::geometry&gt;();</div>
+<div class="line">            camera = add&lt;variable::timestamp&gt;();</div>
+<div class="line">            computer = add&lt;variable::timestamp&gt;();</div>
 <div class="line">        }</div>
 <div class="line"> </div>
-<div class="line">        <span class="keyword">virtual</span> <a id="a11" name="a11"></a><a class="code hl_function" href="structvariable_1_1header.html#a4308a46e082d6c32d1f2f411dbb6f62e">~header</a>() {}</div>
+<div class="line">        <span class="keyword">virtual</span> ~header() {}</div>
 <div class="line">    };</div>
 <div class="line">}  <span class="comment">// namespace variable</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> <a id="a12" name="a12"></a><a class="code hl_function" href="src_2apps_2tools_2uuid_8cc.html#a217dbf8b442f20279ea00b898af96f52">main</a>(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span> **argv) {</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a id="a1" name="a1"></a><a class="code hl_function" href="src_2apps_2tools_2uuid_8cc.html#a217dbf8b442f20279ea00b898af96f52">main</a>(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span> **argv) {</div>
 <div class="line">    <a class="code hl_function" href="classvidre_1_1log_1_1io_1_1stream.html#a9328d4564fc9039d64c81e77b24bf83e">log::io::stream::threshold</a>(0, <a class="code hl_enumvalue" href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182">log::level::trace</a>);</div>
 <div class="line">    <a class="code hl_function" href="classvidre_1_1log_1_1trace.html#ab6eaf9fc74f5299a6250ac8110e1ba53">log::trace::pattern</a>(<span class="stringliteral">&quot;*&quot;</span>);</div>
 <div class="line"> </div>
+<div class="line"><span class="preprocessor">#if 0</span></div>
 <div class="line">    std::locale::global(std::locale(<span class="stringliteral">&quot;&quot;</span>));</div>
 <div class="line"> </div>
-<div class="line">    <a id="_a13" name="_a13"></a><a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; std::format(<span class="stringliteral">&quot;Running raw storage benchmark with {:L} iterations.&quot;</span>, <a class="code hl_define" href="examples_2core_2raw_8cc.html#a2c9384c67919c632913b8db2088f8341">REPEAT</a>) &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a> &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
-<div class="line">    benchmark::timer t;</div>
+<div class="line">    <a id="_a2" name="_a2"></a><a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; std::format(<span class="stringliteral">&quot;Running raw storage benchmark with {:L} iterations.&quot;</span>, REPEAT) &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a> &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
+<div class="line">    <a id="_a3" name="_a3"></a><a class="code hl_class" href="classvidre_1_1chrono_1_1timer.html">vidre::chrono::timer</a> t;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// write fixed elements</span></div>
 <div class="line">    {</div>
-<div class="line">        <a id="_a14" name="_a14"></a><a class="code hl_struct" href="structfixed_1_1header.html">fixed::header</a> hdr;</div>
+<div class="line">        fixed::header hdr;</div>
 <div class="line">        storage::file::sink f;</div>
 <div class="line">        f.open(PROJECT_BINARY_DIR <span class="stringliteral">&quot;/fixed.tmp&quot;</span>, storage::file::sink::direct);</div>
 <div class="line">        <span class="keywordflow">if</span> (not f.valid())</div>
-<div class="line">            <a id="_a15" name="_a15"></a><a class="code hl_class" href="classvidre_1_1log_1_1fatal.html">log::fatal</a>() &lt;&lt; <span class="stringliteral">&quot;Could not open file: &quot;</span> &lt;&lt; std::strerror(errno) &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
+<div class="line">            <a id="_a4" name="_a4"></a><a class="code hl_class" href="classvidre_1_1log_1_1fatal.html">log::fatal</a>() &lt;&lt; <span class="stringliteral">&quot;Could not open file: &quot;</span> &lt;&lt; std::strerror(errno) &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
 <div class="line"> </div>
-<div class="line">        t.start();</div>
-<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_define" href="examples_2core_2raw_8cc.html#a2c9384c67919c632913b8db2088f8341">REPEAT</a>; ++i) {</div>
-<div class="line">            hdr.<a id="a16" name="a16"></a><a class="code hl_variable" href="structfixed_1_1header.html#a0dae6faa7033e94dccebded15adb64c9">index</a>.<a id="a17" name="a17"></a><a class="code hl_variable" href="structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html#a07be94c36bfd7af917275ccce1f5aae0">content</a> = i;</div>
-<div class="line">            hdr.<a id="a18" name="a18"></a><a class="code hl_variable" href="structfixed_1_1header.html#a316f4aea5a5af200fbd3164b081ae0bd">geometry</a>.<a id="a19" name="a19"></a><a class="code hl_variable" href="structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html#a07be94c36bfd7af917275ccce1f5aae0">content</a> = {{uint32_t(i), uint32_t(i)}, {uint32_t(i), uint32_t(i)}};</div>
-<div class="line">            hdr.<a id="a20" name="a20"></a><a class="code hl_variable" href="structfixed_1_1header.html#a2e08fc4fa7199f1ac38b3a4af87fa541">timestamp</a>.<a id="a21" name="a21"></a><a class="code hl_variable" href="structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html#a07be94c36bfd7af917275ccce1f5aae0">content</a>.<a id="a22" name="a22"></a><a class="code hl_variable" href="structvidre_1_1video_1_1timestamp.html#af5c832fb6595a72b6f3c28cb0adf4e0b">value</a> = uint64_t(i);</div>
+<div class="line">        t.<a id="a5" name="a5"></a><a class="code hl_function" href="classvidre_1_1chrono_1_1timer.html#a333351f60d3002bbee3bb316904337b9">start</a>();</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; REPEAT; ++i) {</div>
+<div class="line">            hdr.index.content = i;</div>
+<div class="line">            hdr.geometry.content = {{uint32_t(i), uint32_t(i)}, {uint32_t(i), uint32_t(i)}};</div>
+<div class="line">            hdr.timestamp.content.value = uint64_t(i);</div>
 <div class="line">            <span class="comment">// hdr.computertime.content.now();</span></div>
-<div class="line">            hdr.<a id="a23" name="a23"></a><a class="code hl_function" href="structfixed_1_1header.html#aa7ae3546daf2241f0968d7355a6f0240">put</a>(f);</div>
+<div class="line">            hdr.put(f);</div>
 <div class="line">        }</div>
-<div class="line">        t.stop();</div>
+<div class="line">        t.<a id="a6" name="a6"></a><a class="code hl_function" href="classvidre_1_1chrono_1_1timer.html#a598c97e3e00b7ac7910f8f008f24ffad">stop</a>();</div>
 <div class="line"> </div>
 <div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;Fixed elements&quot;</span> &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
-<div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;         duration: &quot;</span> &lt;&lt; std::format(<span class="stringliteral">&quot;{:.3f} ms&quot;</span>, t.duration&lt;benchmark::milliseconds&gt;()) &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
+<div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;         duration: &quot;</span> &lt;&lt; std::format(<span class="stringliteral">&quot;{:.3f} ms&quot;</span>, t.<a id="a7" name="a7"></a><a class="code hl_function" href="classvidre_1_1chrono_1_1timer.html#ad2239543e58b6a49bc08b3663c8ed6d4">duration</a>&lt;<a class="code hl_typedef" href="classvidre_1_1chrono_1_1timer.html#ad7a7e937f521f73fffeece0ff452679a">vidre::chrono::timer::milliseconds</a>&gt;()) &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
 <div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;       throughput: &quot;</span></div>
-<div class="line">                    &lt;&lt; std::format(<span class="stringliteral">&quot;{:.3f}&quot;</span>, (<a class="code hl_define" href="examples_2core_2raw_8cc.html#a2c9384c67919c632913b8db2088f8341">REPEAT</a> * <span class="keyword">sizeof</span>(hdr)) / t.duration&lt;benchmark::seconds&gt;() / (1024.0 * 1024.0))</div>
+<div class="line">                    &lt;&lt; std::format(<span class="stringliteral">&quot;{:.3f}&quot;</span>, (REPEAT * <span class="keyword">sizeof</span>(hdr)) / t.<a class="code hl_function" href="classvidre_1_1chrono_1_1timer.html#ad2239543e58b6a49bc08b3663c8ed6d4">duration</a>&lt;<a class="code hl_typedef" href="classvidre_1_1chrono_1_1timer.html#a3be195ccba33e81a605e2438e47e5256">vidre::chrono::timer::seconds</a>&gt;() / (1024.0 * 1024.0))</div>
 <div class="line">                    &lt;&lt; <span class="stringliteral">&quot; MiB/s&quot;</span> &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
-<div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;    call overhead: &quot;</span> &lt;&lt; std::format(<span class="stringliteral">&quot;{:.3f} ns&quot;</span>, t.duration&lt;benchmark::nanoseconds&gt;() / <a class="code hl_define" href="examples_2core_2raw_8cc.html#a2c9384c67919c632913b8db2088f8341">REPEAT</a>)</div>
+<div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;    call overhead: &quot;</span> &lt;&lt; std::format(<span class="stringliteral">&quot;{:.3f} ns&quot;</span>, t.<a class="code hl_function" href="classvidre_1_1chrono_1_1timer.html#ad2239543e58b6a49bc08b3663c8ed6d4">duration</a>&lt;<a class="code hl_typedef" href="classvidre_1_1chrono_1_1timer.html#ae609a0eff1dbc052b726474d95a9dfec">vidre::chrono::timer::nanoseconds</a>&gt;(REPEAT))</div>
 <div class="line">                    &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// write dynamic elements</span></div>
 <div class="line">    {</div>
-<div class="line">        <a class="code hl_struct" href="structvariable_1_1header.html">variable::header</a> hdr;</div>
+<div class="line">        variable::header hdr;</div>
 <div class="line">        storage::file::sink f;</div>
 <div class="line">        f.open(PROJECT_BINARY_DIR <span class="stringliteral">&quot;/dynamic.tmp&quot;</span>, storage::file::sink::direct);</div>
 <div class="line">        <span class="keywordflow">if</span> (not f.valid())</div>
 <div class="line">            <a class="code hl_class" href="classvidre_1_1log_1_1fatal.html">log::fatal</a>() &lt;&lt; <span class="stringliteral">&quot;Could not open file: &quot;</span> &lt;&lt; std::strerror(errno) &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
 <div class="line"> </div>
-<div class="line">        t.start();</div>
-<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_define" href="examples_2core_2raw_8cc.html#a2c9384c67919c632913b8db2088f8341">REPEAT</a>; ++i) {</div>
-<div class="line">            hdr.<a id="a24" name="a24"></a><a class="code hl_variable" href="structvariable_1_1header.html#a4483a55fa7a3fbc48b4702da9729ad9f">index</a>-&gt;<a id="a25" name="a25"></a><a class="code hl_variable" href="structvariable_1_1index.html#a82c00bd6071690a23f2c01d9b0b77f0b">counter</a> = i;</div>
-<div class="line">            hdr.<a id="a26" name="a26"></a><a class="code hl_variable" href="structvariable_1_1header.html#acfbb4165523d478016f57c205845d70a">geometry</a>-&gt;<a id="a27" name="a27"></a><a class="code hl_variable" href="structvariable_1_1geometry.html#ab258bc99b6b3248e9fe452528fa4c6ea">content</a> = {{uint32_t(i), uint32_t(i)}, {uint32_t(i), uint32_t(i)}};</div>
-<div class="line">            hdr.<a id="a28" name="a28"></a><a class="code hl_variable" href="structvariable_1_1header.html#aadb5bd293c3d5105240f3941caef9e2a">camera</a>-&gt;<a id="a29" name="a29"></a><a class="code hl_variable" href="structvariable_1_1timestamp.html#a42f071f801d2b63949cac9fb60d6edf3">content</a>.value = uint64_t(i);</div>
+<div class="line">        t.<a class="code hl_function" href="classvidre_1_1chrono_1_1timer.html#a333351f60d3002bbee3bb316904337b9">start</a>();</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; REPEAT; ++i) {</div>
+<div class="line">            hdr.index-&gt;counter = i;</div>
+<div class="line">            hdr.geometry-&gt;content = {{uint32_t(i), uint32_t(i)}, {uint32_t(i), uint32_t(i)}};</div>
+<div class="line">            hdr.camera-&gt;content.value = uint64_t(i);</div>
 <div class="line">            <span class="comment">// hdr.computertime-&gt;content.now();</span></div>
-<div class="line">            hdr.<a id="a30" name="a30"></a><a class="code hl_function" href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a5c8e059ccb90550b742ac0e55641e74d">put</a>(f);</div>
+<div class="line">            hdr.put(f);</div>
 <div class="line">        }</div>
-<div class="line">        t.stop();</div>
+<div class="line">        t.<a class="code hl_function" href="classvidre_1_1chrono_1_1timer.html#a598c97e3e00b7ac7910f8f008f24ffad">stop</a>();</div>
 <div class="line"> </div>
 <div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
 <div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;Dynamic elements&quot;</span> &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
-<div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;         duration: &quot;</span> &lt;&lt; std::format(<span class="stringliteral">&quot;{:.3f} ms&quot;</span>, t.duration&lt;benchmark::milliseconds&gt;()) &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
+<div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;         duration: &quot;</span> &lt;&lt; std::format(<span class="stringliteral">&quot;{:.3f} ms&quot;</span>, t.<a class="code hl_function" href="classvidre_1_1chrono_1_1timer.html#ad2239543e58b6a49bc08b3663c8ed6d4">duration</a>&lt;<a class="code hl_typedef" href="classvidre_1_1chrono_1_1timer.html#ad7a7e937f521f73fffeece0ff452679a">vidre::chrono::timer::milliseconds</a>&gt;()) &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
 <div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;       throughput: &quot;</span></div>
-<div class="line">                    &lt;&lt; std::format(<span class="stringliteral">&quot;{:.3f}&quot;</span>, (<a class="code hl_define" href="examples_2core_2raw_8cc.html#a2c9384c67919c632913b8db2088f8341">REPEAT</a> * <span class="keyword">sizeof</span>(hdr)) / t.duration&lt;benchmark::seconds&gt;() / (1024.0 * 1024.0))</div>
+<div class="line">                    &lt;&lt; std::format(<span class="stringliteral">&quot;{:.3f}&quot;</span>, (REPEAT * <span class="keyword">sizeof</span>(hdr)) / t.<a class="code hl_function" href="classvidre_1_1chrono_1_1timer.html#ad2239543e58b6a49bc08b3663c8ed6d4">duration</a>&lt;<a class="code hl_typedef" href="classvidre_1_1chrono_1_1timer.html#a3be195ccba33e81a605e2438e47e5256">vidre::chrono::timer::seconds</a>&gt;() / (1024.0 * 1024.0))</div>
 <div class="line">                    &lt;&lt; <span class="stringliteral">&quot; MiB/s&quot;</span> &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
-<div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;    call overhead: &quot;</span> &lt;&lt; std::format(<span class="stringliteral">&quot;{:.3f} ns&quot;</span>, t.duration&lt;benchmark::nanoseconds&gt;() / <a class="code hl_define" href="examples_2core_2raw_8cc.html#a2c9384c67919c632913b8db2088f8341">REPEAT</a>)</div>
+<div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;    call overhead: &quot;</span> &lt;&lt; std::format(<span class="stringliteral">&quot;{:.3f} ns&quot;</span>, t.<a class="code hl_function" href="classvidre_1_1chrono_1_1timer.html#ad2239543e58b6a49bc08b3663c8ed6d4">duration</a>&lt;<a class="code hl_typedef" href="classvidre_1_1chrono_1_1timer.html#ae609a0eff1dbc052b726474d95a9dfec">vidre::chrono::timer::nanoseconds</a>&gt;(REPEAT))</div>
 <div class="line">                    &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
@@ -278,7 +281,7 @@ $(function(){initNavTree('examples_2core_2raw_8cc-example.html',''); initResizab
 <div class="line">            <a class="code hl_class" href="classvidre_1_1log_1_1fatal.html">log::fatal</a>() &lt;&lt; <span class="stringliteral">&quot;File size mismatch: &quot;</span> &lt;&lt; fix.size() &lt;&lt; <span class="stringliteral">&quot; vs. &quot;</span> &lt;&lt; var.size() &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
 <div class="line"> </div>
 <div class="line">        <span class="comment">// different content?</span></div>
-<div class="line">        t.start();</div>
+<div class="line">        t.<a class="code hl_function" href="classvidre_1_1chrono_1_1timer.html#a333351f60d3002bbee3bb316904337b9">start</a>();</div>
 <div class="line">        uint8_t fbuf[4096], vbuf[4096];</div>
 <div class="line">        storage::file::io::offset_type pos = 0;</div>
 <div class="line">        <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
@@ -293,11 +296,11 @@ $(function(){initNavTree('examples_2core_2raw_8cc-example.html',''); initResizab
 <div class="line">                <span class="keywordflow">break</span>;</div>
 <div class="line">            pos += fn;</div>
 <div class="line">        }</div>
-<div class="line">        t.stop();</div>
+<div class="line">        t.<a class="code hl_function" href="classvidre_1_1chrono_1_1timer.html#a598c97e3e00b7ac7910f8f008f24ffad">stop</a>();</div>
 <div class="line"> </div>
 <div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
 <div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;Checked &quot;</span> &lt;&lt; pos &lt;&lt; <span class="stringliteral">&quot; bytes (&quot;</span></div>
-<div class="line">                    &lt;&lt; std::format(<span class="stringliteral">&quot;{:.3f} MiB/s&quot;</span>, <span class="keywordtype">double</span>(pos) / t.duration&lt;benchmark::seconds&gt;() / (1024.0 * 1024.0))</div>
+<div class="line">                    &lt;&lt; std::format(<span class="stringliteral">&quot;{:.3f} MiB/s&quot;</span>, <span class="keywordtype">double</span>(pos) / t.<a class="code hl_function" href="classvidre_1_1chrono_1_1timer.html#ad2239543e58b6a49bc08b3663c8ed6d4">duration</a>&lt;<a class="code hl_typedef" href="classvidre_1_1chrono_1_1timer.html#a3be195ccba33e81a605e2438e47e5256">vidre::chrono::timer::seconds</a>&gt;() / (1024.0 * 1024.0))</div>
 <div class="line">                    &lt;&lt; <span class="stringliteral">&quot;).&quot;</span> &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
 <div class="line">        <a class="code hl_class" href="classvidre_1_1log_1_1info.html">log::info</a>() &lt;&lt; <span class="stringliteral">&quot;Files are consistent.&quot;</span> &lt;&lt; <a class="code hl_variable" href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">log::endl</a>;</div>
 <div class="line">    }</div>
@@ -305,54 +308,33 @@ $(function(){initNavTree('examples_2core_2raw_8cc-example.html',''); initResizab
 <div class="line">    <span class="comment">// remove temporary files</span></div>
 <div class="line">    storage::file::remove(PROJECT_BINARY_DIR <span class="stringliteral">&quot;/fixed.tmp&quot;</span>);</div>
 <div class="line">    storage::file::remove(PROJECT_BINARY_DIR <span class="stringliteral">&quot;/dynamic.tmp&quot;</span>);</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="ttc" id="aclassvidre_1_1log_1_1fatal_html"><div class="ttname"><a href="classvidre_1_1log_1_1fatal.html">vidre::log::fatal</a></div><div class="ttdoc">Fatal log message.</div><div class="ttdef"><b>Definition</b> log.hh:427</div></div>
-<div class="ttc" id="aclassvidre_1_1log_1_1info_html"><div class="ttname"><a href="classvidre_1_1log_1_1info.html">vidre::log::info</a></div><div class="ttdoc">Purely informational.</div><div class="ttdef"><b>Definition</b> log.hh:455</div></div>
-<div class="ttc" id="aclassvidre_1_1log_1_1io_1_1stream_html_a9328d4564fc9039d64c81e77b24bf83e"><div class="ttname"><a href="classvidre_1_1log_1_1io_1_1stream.html#a9328d4564fc9039d64c81e77b24bf83e">vidre::log::io::stream::threshold</a></div><div class="ttdeci">static level threshold(unsigned chanid) noexcept</div><div class="ttdoc">Get threshold.</div><div class="ttdef"><b>Definition</b> log.cc:69</div></div>
+<div class="ttc" id="achrono_8hh_html"><div class="ttname"><a href="chrono_8hh.html">chrono.hh</a></div></div>
+<div class="ttc" id="aclassvidre_1_1chrono_1_1timer_html"><div class="ttname"><a href="classvidre_1_1chrono_1_1timer.html">vidre::chrono::timer</a></div><div class="ttdoc">Simple timer.</div><div class="ttdef"><b>Definition</b> chrono.hh:170</div></div>
+<div class="ttc" id="aclassvidre_1_1chrono_1_1timer_html_a333351f60d3002bbee3bb316904337b9"><div class="ttname"><a href="classvidre_1_1chrono_1_1timer.html#a333351f60d3002bbee3bb316904337b9">vidre::chrono::timer::start</a></div><div class="ttdeci">void start()</div><div class="ttdoc">Start (or continue) the timer.</div><div class="ttdef"><b>Definition</b> chrono.hh:190</div></div>
+<div class="ttc" id="aclassvidre_1_1chrono_1_1timer_html_a3be195ccba33e81a605e2438e47e5256"><div class="ttname"><a href="classvidre_1_1chrono_1_1timer.html#a3be195ccba33e81a605e2438e47e5256">vidre::chrono::timer::seconds</a></div><div class="ttdeci">std::chrono::duration&lt; double &gt; seconds</div><div class="ttdef"><b>Definition</b> chrono.hh:178</div></div>
+<div class="ttc" id="aclassvidre_1_1chrono_1_1timer_html_a598c97e3e00b7ac7910f8f008f24ffad"><div class="ttname"><a href="classvidre_1_1chrono_1_1timer.html#a598c97e3e00b7ac7910f8f008f24ffad">vidre::chrono::timer::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">Stop the timer.</div><div class="ttdef"><b>Definition</b> chrono.hh:196</div></div>
+<div class="ttc" id="aclassvidre_1_1chrono_1_1timer_html_ad2239543e58b6a49bc08b3663c8ed6d4"><div class="ttname"><a href="classvidre_1_1chrono_1_1timer.html#ad2239543e58b6a49bc08b3663c8ed6d4">vidre::chrono::timer::duration</a></div><div class="ttdeci">double duration()</div><div class="ttdoc">Get the duration between the start and stop times.</div><div class="ttdef"><b>Definition</b> chrono.hh:218</div></div>
+<div class="ttc" id="aclassvidre_1_1chrono_1_1timer_html_ad7a7e937f521f73fffeece0ff452679a"><div class="ttname"><a href="classvidre_1_1chrono_1_1timer.html#ad7a7e937f521f73fffeece0ff452679a">vidre::chrono::timer::milliseconds</a></div><div class="ttdeci">std::chrono::duration&lt; double, std::milli &gt; milliseconds</div><div class="ttdef"><b>Definition</b> chrono.hh:177</div></div>
+<div class="ttc" id="aclassvidre_1_1chrono_1_1timer_html_ae609a0eff1dbc052b726474d95a9dfec"><div class="ttname"><a href="classvidre_1_1chrono_1_1timer.html#ae609a0eff1dbc052b726474d95a9dfec">vidre::chrono::timer::nanoseconds</a></div><div class="ttdeci">std::chrono::duration&lt; double, std::nano &gt; nanoseconds</div><div class="ttdef"><b>Definition</b> chrono.hh:175</div></div>
+<div class="ttc" id="aclassvidre_1_1log_1_1fatal_html"><div class="ttname"><a href="classvidre_1_1log_1_1fatal.html">vidre::log::fatal</a></div><div class="ttdoc">Fatal log message.</div><div class="ttdef"><b>Definition</b> log.hh:728</div></div>
+<div class="ttc" id="aclassvidre_1_1log_1_1info_html"><div class="ttname"><a href="classvidre_1_1log_1_1info.html">vidre::log::info</a></div><div class="ttdoc">Purely informational.</div><div class="ttdef"><b>Definition</b> log.hh:756</div></div>
+<div class="ttc" id="aclassvidre_1_1log_1_1io_1_1stream_html_a9328d4564fc9039d64c81e77b24bf83e"><div class="ttname"><a href="classvidre_1_1log_1_1io_1_1stream.html#a9328d4564fc9039d64c81e77b24bf83e">vidre::log::io::stream::threshold</a></div><div class="ttdeci">static level threshold(unsigned chanid) noexcept</div><div class="ttdoc">Get threshold.</div><div class="ttdef"><b>Definition</b> log.cc:136</div></div>
 <div class="ttc" id="aclassvidre_1_1log_1_1trace_html_ab6eaf9fc74f5299a6250ac8110e1ba53"><div class="ttname"><a href="classvidre_1_1log_1_1trace.html#ab6eaf9fc74f5299a6250ac8110e1ba53">vidre::log::trace::pattern</a></div><div class="ttdeci">static void pattern(std::string_view pat)</div><div class="ttdoc">Set wildcard pattern (what to trace).</div></div>
-<div class="ttc" id="aexamples_2core_2raw_8cc_html_a2c9384c67919c632913b8db2088f8341"><div class="ttname"><a href="examples_2core_2raw_8cc.html#a2c9384c67919c632913b8db2088f8341">REPEAT</a></div><div class="ttdeci">#define REPEAT</div><div class="ttdef"><b>Definition</b> raw.cc:14</div></div>
 <div class="ttc" id="agroup__api-core-details_html_ga91542f6e8b34c625fab750990e548aea"><div class="ttname"><a href="group__api-core-details.html#ga91542f6e8b34c625fab750990e548aea">__vidre_packed__</a></div><div class="ttdeci">#define __vidre_packed__(ALIGN)</div><div class="ttdoc">Standard packing attribute.</div><div class="ttdef"><b>Definition</b> config.hh:63</div></div>
-<div class="ttc" id="agroup__api-core-io-details_html_gacb9b166c2b2b3012d6d0b929b1422ac0"><div class="ttname"><a href="group__api-core-io-details.html#gacb9b166c2b2b3012d6d0b929b1422ac0">vidre::detail::io::file::offset_type</a></div><div class="ttdeci">vidre::io::offset_type offset_type</div><div class="ttdef"><b>Definition</b> file.hh:73</div></div>
-<div class="ttc" id="agroup__api-core-log-if_html_ga1577b0dcbee0ca055b143f0c988fcb2c"><div class="ttname"><a href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">vidre::log::endl</a></div><div class="ttdeci">static constexpr message_type endl</div><div class="ttdoc">End-of-line.</div><div class="ttdef"><b>Definition</b> log.hh:236</div></div>
-<div class="ttc" id="agroup__api-core-log-if_html_ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182"><div class="ttname"><a href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182">vidre::log::level::trace</a></div><div class="ttdeci">@ trace</div><div class="ttdoc">Tracing.</div><div class="ttdef"><b>Definition</b> log.hh:174</div></div>
+<div class="ttc" id="agroup__api-core-io-details_html_ga9a7d2a7b02504e79a7006ef284177d69"><div class="ttname"><a href="group__api-core-io-details.html#ga9a7d2a7b02504e79a7006ef284177d69">vidre::io::detail::file::offset_type</a></div><div class="ttdeci">vidre::io::offset_type offset_type</div><div class="ttdef"><b>Definition</b> file.hh:73</div></div>
+<div class="ttc" id="agroup__api-core-io-packet_html_gga8274eba5ba00af5aaf87d8d70bb435fdad7e6d55ba379a13d08c25d15faf2a23b"><div class="ttname"><a href="group__api-core-io-packet.html#gga8274eba5ba00af5aaf87d8d70bb435fdad7e6d55ba379a13d08c25d15faf2a23b">vidre::io::packet::plain::timestamp</a></div><div class="ttdeci">@ timestamp</div><div class="ttdoc">Timestamp.</div><div class="ttdef"><b>Definition</b> packet.hh:129</div></div>
+<div class="ttc" id="agroup__api-core-log-if_html_ga1577b0dcbee0ca055b143f0c988fcb2c"><div class="ttname"><a href="group__api-core-log-if.html#ga1577b0dcbee0ca055b143f0c988fcb2c">vidre::log::endl</a></div><div class="ttdeci">static constexpr message_type endl</div><div class="ttdoc">End-of-line.</div><div class="ttdef"><b>Definition</b> log.hh:539</div></div>
+<div class="ttc" id="agroup__api-core-log-if_html_ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182"><div class="ttname"><a href="group__api-core-log-if.html#ggac7188c64802d58d335e10371224772eca04a75036e9d520bb983c5ed03b8d0182">vidre::log::level::trace</a></div><div class="ttdeci">@ trace</div><div class="ttdoc">Tracing.</div><div class="ttdef"><b>Definition</b> log.hh:477</div></div>
 <div class="ttc" id="alog_8hh_html"><div class="ttname"><a href="log_8hh.html">log.hh</a></div></div>
-<div class="ttc" id="anamespacefixed_html"><div class="ttname"><a href="namespacefixed.html">fixed</a></div><div class="ttdef"><b>Definition</b> raw.cc:16</div></div>
-<div class="ttc" id="anamespacefixed_html_a4ac0698580cf32120f1673de060b3801"><div class="ttname"><a href="namespacefixed.html#a4ac0698580cf32120f1673de060b3801">fixed::timestamp</a></div><div class="ttdeci">raw::element::fixed&lt; video::timestamp, raw::major::video, raw::video::timestamp &gt; timestamp</div><div class="ttdef"><b>Definition</b> raw.cc:20</div></div>
-<div class="ttc" id="anamespacefixed_html_a8cd189f368c1ae0c498a90d2226cc25e"><div class="ttname"><a href="namespacefixed.html#a8cd189f368c1ae0c498a90d2226cc25e">fixed::index</a></div><div class="ttdeci">raw::element::fixed&lt; uint64_t, raw::major::video, raw::video::index &gt; index</div><div class="ttdoc">[fixed-elements]</div><div class="ttdef"><b>Definition</b> raw.cc:18</div></div>
-<div class="ttc" id="anamespacefixed_html_a96fb20e837b885f5f852e0ef91c5abc8"><div class="ttname"><a href="namespacefixed.html#a96fb20e837b885f5f852e0ef91c5abc8">fixed::geometry</a></div><div class="ttdeci">raw::element::fixed&lt; video::geometry, raw::major::video, raw::video::geometry &gt; geometry</div><div class="ttdef"><b>Definition</b> raw.cc:19</div></div>
-<div class="ttc" id="anamespacevariable_html"><div class="ttname"><a href="namespacevariable.html">variable</a></div><div class="ttdef"><b>Definition</b> raw.cc:36</div></div>
 <div class="ttc" id="anamespacevidre_1_1storage_1_1raw_html"><div class="ttname"><a href="namespacevidre_1_1storage_1_1raw.html">vidre::storage::raw</a></div></div>
 <div class="ttc" id="anamespacevidre_html"><div class="ttname"><a href="namespacevidre.html">vidre</a></div><div class="ttdoc">General namespace.</div><div class="ttdef"><b>Definition</b> config.hh:31</div></div>
 <div class="ttc" id="araw_8hh_html"><div class="ttname"><a href="raw_8hh.html">raw.hh</a></div></div>
 <div class="ttc" id="asrc_2apps_2tools_2uuid_8cc_html_a217dbf8b442f20279ea00b898af96f52"><div class="ttname"><a href="src_2apps_2tools_2uuid_8cc.html#a217dbf8b442f20279ea00b898af96f52">main</a></div><div class="ttdeci">int main(int argc, const char **argv)</div><div class="ttdef"><b>Definition</b> uuid.cc:25</div></div>
-<div class="ttc" id="astructfixed_1_1header_html"><div class="ttname"><a href="structfixed_1_1header.html">fixed::header</a></div><div class="ttdef"><b>Definition</b> raw.cc:23</div></div>
-<div class="ttc" id="astructfixed_1_1header_html_a0dae6faa7033e94dccebded15adb64c9"><div class="ttname"><a href="structfixed_1_1header.html#a0dae6faa7033e94dccebded15adb64c9">fixed::header::index</a></div><div class="ttdeci">fixed::index index</div><div class="ttdef"><b>Definition</b> raw.cc:24</div></div>
-<div class="ttc" id="astructfixed_1_1header_html_a2e08fc4fa7199f1ac38b3a4af87fa541"><div class="ttname"><a href="structfixed_1_1header.html#a2e08fc4fa7199f1ac38b3a4af87fa541">fixed::header::timestamp</a></div><div class="ttdeci">fixed::timestamp timestamp</div><div class="ttdef"><b>Definition</b> raw.cc:26</div></div>
-<div class="ttc" id="astructfixed_1_1header_html_a316f4aea5a5af200fbd3164b081ae0bd"><div class="ttname"><a href="structfixed_1_1header.html#a316f4aea5a5af200fbd3164b081ae0bd">fixed::header::geometry</a></div><div class="ttdeci">fixed::geometry geometry</div><div class="ttdef"><b>Definition</b> raw.cc:25</div></div>
-<div class="ttc" id="astructfixed_1_1header_html_aa7ae3546daf2241f0968d7355a6f0240"><div class="ttname"><a href="structfixed_1_1header.html#aa7ae3546daf2241f0968d7355a6f0240">fixed::header::put</a></div><div class="ttdeci">storage::offset_type put(storage::sink &amp;f) const noexcept</div><div class="ttdef"><b>Definition</b> raw.cc:29</div></div>
-<div class="ttc" id="astructvariable_1_1geometry_html"><div class="ttname"><a href="structvariable_1_1geometry.html">variable::geometry</a></div><div class="ttdef"><b>Definition</b> raw.cc:49</div></div>
-<div class="ttc" id="astructvariable_1_1geometry_html_ab258bc99b6b3248e9fe452528fa4c6ea"><div class="ttname"><a href="structvariable_1_1geometry.html#ab258bc99b6b3248e9fe452528fa4c6ea">variable::geometry::content</a></div><div class="ttdeci">video::geometry content</div><div class="ttdef"><b>Definition</b> raw.cc:50</div></div>
-<div class="ttc" id="astructvariable_1_1header_html"><div class="ttname"><a href="structvariable_1_1header.html">variable::header</a></div><div class="ttdef"><b>Definition</b> raw.cc:73</div></div>
-<div class="ttc" id="astructvariable_1_1header_html_a4308a46e082d6c32d1f2f411dbb6f62e"><div class="ttname"><a href="structvariable_1_1header.html#a4308a46e082d6c32d1f2f411dbb6f62e">variable::header::~header</a></div><div class="ttdeci">virtual ~header()</div><div class="ttdef"><b>Definition</b> raw.cc:86</div></div>
-<div class="ttc" id="astructvariable_1_1header_html_a4483a55fa7a3fbc48b4702da9729ad9f"><div class="ttname"><a href="structvariable_1_1header.html#a4483a55fa7a3fbc48b4702da9729ad9f">variable::header::index</a></div><div class="ttdeci">variable::index * index</div><div class="ttdef"><b>Definition</b> raw.cc:74</div></div>
-<div class="ttc" id="astructvariable_1_1header_html_aadb5bd293c3d5105240f3941caef9e2a"><div class="ttname"><a href="structvariable_1_1header.html#aadb5bd293c3d5105240f3941caef9e2a">variable::header::camera</a></div><div class="ttdeci">variable::timestamp * camera</div><div class="ttdef"><b>Definition</b> raw.cc:76</div></div>
-<div class="ttc" id="astructvariable_1_1header_html_abf688b2797b4788a05c1f157ca454979"><div class="ttname"><a href="structvariable_1_1header.html#abf688b2797b4788a05c1f157ca454979">variable::header::header</a></div><div class="ttdeci">header() noexcept</div><div class="ttdef"><b>Definition</b> raw.cc:79</div></div>
-<div class="ttc" id="astructvariable_1_1header_html_acfbb4165523d478016f57c205845d70a"><div class="ttname"><a href="structvariable_1_1header.html#acfbb4165523d478016f57c205845d70a">variable::header::geometry</a></div><div class="ttdeci">variable::geometry * geometry</div><div class="ttdef"><b>Definition</b> raw.cc:75</div></div>
-<div class="ttc" id="astructvariable_1_1header_html_ae8c8415f6b61f0bc08507be7939c6a2a"><div class="ttname"><a href="structvariable_1_1header.html#ae8c8415f6b61f0bc08507be7939c6a2a">variable::header::computer</a></div><div class="ttdeci">variable::timestamp * computer</div><div class="ttdef"><b>Definition</b> raw.cc:77</div></div>
-<div class="ttc" id="astructvariable_1_1index_html_a82c00bd6071690a23f2c01d9b0b77f0b"><div class="ttname"><a href="structvariable_1_1index.html#a82c00bd6071690a23f2c01d9b0b77f0b">variable::index::counter</a></div><div class="ttdeci">uint64_t counter</div><div class="ttdef"><b>Definition</b> raw.cc:39</div></div>
-<div class="ttc" id="astructvariable_1_1timestamp_html"><div class="ttname"><a href="structvariable_1_1timestamp.html">variable::timestamp</a></div><div class="ttdef"><b>Definition</b> raw.cc:61</div></div>
-<div class="ttc" id="astructvariable_1_1timestamp_html_a42f071f801d2b63949cac9fb60d6edf3"><div class="ttname"><a href="structvariable_1_1timestamp.html#a42f071f801d2b63949cac9fb60d6edf3">variable::timestamp::content</a></div><div class="ttdeci">video::timestamp content</div><div class="ttdef"><b>Definition</b> raw.cc:62</div></div>
-<div class="ttc" id="astructvidre_1_1storage_1_1raw_1_1element_1_1dynamic_html"><div class="ttname"><a href="structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html">vidre::storage::raw::element::dynamic</a></div><div class="ttdoc">Base class for dynamic elements.</div><div class="ttdef"><b>Definition</b> raw.hh:334</div></div>
-<div class="ttc" id="astructvidre_1_1storage_1_1raw_1_1element_1_1fixed_html"><div class="ttname"><a href="structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html">vidre::storage::raw::element::fixed</a></div><div class="ttdoc">Instantiation of &quot;fixed-size&quot; elements.</div><div class="ttdef"><b>Definition</b> raw.hh:315</div></div>
-<div class="ttc" id="astructvidre_1_1storage_1_1raw_1_1element_1_1fixed_html_a07be94c36bfd7af917275ccce1f5aae0"><div class="ttname"><a href="structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html#a07be94c36bfd7af917275ccce1f5aae0">vidre::storage::raw::element::fixed::content</a></div><div class="ttdeci">value_type content</div><div class="ttdef"><b>Definition</b> raw.hh:321</div></div>
-<div class="ttc" id="astructvidre_1_1storage_1_1raw_1_1element_1_1sequence_html_a03e74a2ab2e5c80bbac1e38adf101300"><div class="ttname"><a href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a03e74a2ab2e5c80bbac1e38adf101300">vidre::storage::raw::element::sequence::sequence</a></div><div class="ttdeci">sequence() noexcept</div><div class="ttdef"><b>Definition</b> raw.hh:375</div></div>
-<div class="ttc" id="astructvidre_1_1storage_1_1raw_1_1element_1_1sequence_html_a5c8e059ccb90550b742ac0e55641e74d"><div class="ttname"><a href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a5c8e059ccb90550b742ac0e55641e74d">vidre::storage::raw::element::sequence::put</a></div><div class="ttdeci">offset_type put(io::sink &amp;f) const noexcept override</div><div class="ttdoc">Write entry to sink.</div><div class="ttdef"><b>Definition</b> raw.hh:402</div></div>
-<div class="ttc" id="astructvidre_1_1storage_1_1raw_1_1element_1_1sequence_html_a61749f3a22c8fdd92bd7799c479cd8c9"><div class="ttname"><a href="structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html#a61749f3a22c8fdd92bd7799c479cd8c9">vidre::storage::raw::element::sequence::add</a></div><div class="ttdeci">T * add(Args &amp;&amp;...args) noexcept</div><div class="ttdoc">Add an element.</div><div class="ttdef"><b>Definition</b> raw.hh:388</div></div>
-<div class="ttc" id="astructvidre_1_1video_1_1timestamp_html_af5c832fb6595a72b6f3c28cb0adf4e0b"><div class="ttname"><a href="structvidre_1_1video_1_1timestamp.html#af5c832fb6595a72b6f3c28cb0adf4e0b">vidre::video::timestamp::value</a></div><div class="ttdeci">uint64_t value</div><div class="ttdoc">Timestamp value.</div><div class="ttdef"><b>Definition</b> frame.hh:71</div></div>
-<div class="ttc" id="avideo_8hh_html"><div class="ttname"><a href="video_8hh.html">video.hh</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

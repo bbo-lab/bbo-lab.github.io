@@ -115,8 +115,7 @@ $(function(){initNavTree('group__api-device-basics.html',''); initResizable(true
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">Fundamentals<div class="ingroups"><a class="el" href="group__api.html">C++-API</a> &raquo; <a class="el" href="group__api-device.html">Device library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -136,11 +135,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1device_1_1state.html">vidre::device::state</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1device_1_1base.html">vidre::device::base</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1device_1_1base_1_1enumerator.html">vidre::device::base::enumerator</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1device_1_1error_1_1tmpl.html">vidre::device::error::tmpl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1device_1_1error_1_1id.html">vidre::device::error::id</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,26 +156,6 @@ Typedefs</h2></td></tr>
 <tr class="separator:gaa9ea44cc4601180b9fca40f3fdc1bd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab0582a1cbc47c431d1a5b53ec04b5a92" id="r_gab0582a1cbc47c431d1a5b53ec04b5a92"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab0582a1cbc47c431d1a5b53ec04b5a92">vidre::device::list</a> = <a class="el" href="#gaa9ea44cc4601180b9fca40f3fdc1bd58">list_type</a>&lt;<a class="el" href="classvidre_1_1device_1_1base.html">base</a>&gt;</td></tr>
 <tr class="separator:gab0582a1cbc47c431d1a5b53ec04b5a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga9b96e641ea81e775e9c7b33804193772" id="r_ga9b96e641ea81e775e9c7b33804193772"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9b96e641ea81e775e9c7b33804193772">vidre::device::state</a> : uint32_t { <br />
-&#160;&#160;<a class="el" href="#gga9b96e641ea81e775e9c7b33804193772a5e543256c480ac577d30f76f9120eb74">vidre::device::state::undefined</a> = 0
-, <br />
-&#160;&#160;<a class="el" href="#gga9b96e641ea81e775e9c7b33804193772ae4894ca167b08880bfc35862f18575eb">vidre::device::state::available</a> = 1 &lt;&lt; 0
-, <br />
-&#160;&#160;<a class="el" href="#gga9b96e641ea81e775e9c7b33804193772a075ae3d2fc31640504f814f60e5ef713">vidre::device::state::disabled</a> = 1 &lt;&lt; 1
-, <br />
-&#160;&#160;<a class="el" href="#gga9b96e641ea81e775e9c7b33804193772a06aa6fa8bdc2078e7e1bd903e70c8f6a">vidre::device::state::connected</a> = 1 &lt;&lt; 2
-, <br />
-&#160;&#160;<a class="el" href="#gga9b96e641ea81e775e9c7b33804193772a48e54afcf03ca45bfe38f6b7ff58764a">vidre::device::state::configured</a> = 1 &lt;&lt; 3
-, <br />
-&#160;&#160;<a class="el" href="#gga9b96e641ea81e775e9c7b33804193772a75101dcdfc88455bcafc9e53e0b06689">vidre::device::state::running</a> = 1 &lt;&lt; 4
-, <br />
-&#160;&#160;<a class="el" href="#gga9b96e641ea81e775e9c7b33804193772a26934eb377001f66e37289a5c93fe284">vidre::device::state::failed</a> = 1 &lt;&lt; 8
-<br />
- }</td></tr>
-<tr class="separator:ga9b96e641ea81e775e9c7b33804193772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga9e81499dd26085fcff5646e8d779ba27" name="ga9e81499dd26085fcff5646e8d779ba27"></a>
@@ -227,47 +206,6 @@ template&lt;typename Device &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga9b96e641ea81e775e9c7b33804193772" name="ga9b96e641ea81e775e9c7b33804193772"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9b96e641ea81e775e9c7b33804193772">&#9670;&#160;</a></span>state</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum class <a class="el" href="#ga9b96e641ea81e775e9c7b33804193772">vidre::device::state</a> : uint32_t</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Device state. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9b96e641ea81e775e9c7b33804193772a5e543256c480ac577d30f76f9120eb74" name="gga9b96e641ea81e775e9c7b33804193772a5e543256c480ac577d30f76f9120eb74"></a>undefined&#160;</td><td class="fielddoc"><p>Device is in an undefined state. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga9b96e641ea81e775e9c7b33804193772ae4894ca167b08880bfc35862f18575eb" name="gga9b96e641ea81e775e9c7b33804193772ae4894ca167b08880bfc35862f18575eb"></a>available&#160;</td><td class="fielddoc"><p>Device is available. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga9b96e641ea81e775e9c7b33804193772a075ae3d2fc31640504f814f60e5ef713" name="gga9b96e641ea81e775e9c7b33804193772a075ae3d2fc31640504f814f60e5ef713"></a>disabled&#160;</td><td class="fielddoc"><p>Device is disabled (possibly due to unrecoverable issues). </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga9b96e641ea81e775e9c7b33804193772a06aa6fa8bdc2078e7e1bd903e70c8f6a" name="gga9b96e641ea81e775e9c7b33804193772a06aa6fa8bdc2078e7e1bd903e70c8f6a"></a>connected&#160;</td><td class="fielddoc"><p>Device is connected to VidRe. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga9b96e641ea81e775e9c7b33804193772a48e54afcf03ca45bfe38f6b7ff58764a" name="gga9b96e641ea81e775e9c7b33804193772a48e54afcf03ca45bfe38f6b7ff58764a"></a>configured&#160;</td><td class="fielddoc"><p>Device is configured and ready to be started. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga9b96e641ea81e775e9c7b33804193772a75101dcdfc88455bcafc9e53e0b06689" name="gga9b96e641ea81e775e9c7b33804193772a75101dcdfc88455bcafc9e53e0b06689"></a>running&#160;</td><td class="fielddoc"><p>Device is active. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga9b96e641ea81e775e9c7b33804193772a26934eb377001f66e37289a5c93fe284" name="gga9b96e641ea81e775e9c7b33804193772a26934eb377001f66e37289a5c93fe284"></a>failed&#160;</td><td class="fielddoc"><p>Device experienced issues. </p>
-</td></tr>
-</table>
 
 </div>
 </div>

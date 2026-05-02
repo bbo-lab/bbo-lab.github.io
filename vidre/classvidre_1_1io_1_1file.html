@@ -124,7 +124,10 @@ $(function(){initNavTree('classvidre_1_1io_1_1file.html',''); initResizable(true
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="file_8hh_source.html">vidre/io/file.hh</a>&gt;</code></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="examples_2core_2io_8cc-example.html#_a1">examples/core/io.cc</a>.</dd>
+</dl>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1file_1_1sink.html">sink</a></td></tr>
@@ -135,46 +138,46 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a94ca4020ed6d4a41de2b126722f19f60" id="r_a94ca4020ed6d4a41de2b126722f19f60"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94ca4020ed6d4a41de2b126722f19f60">access</a> { <br />
-&#160;&#160;<a class="el" href="#a94ca4020ed6d4a41de2b126722f19f60a336ebbb2179beaa7340a4f1620f3af40">readonly</a> = to_underlying(detail::io::file::access_mode::readonly)
+&#160;&#160;<a class="el" href="#a94ca4020ed6d4a41de2b126722f19f60a336ebbb2179beaa7340a4f1620f3af40">readonly</a> = to_underlying(io::detail::file::access_mode::readonly)
 , <br />
-&#160;&#160;<a class="el" href="#a94ca4020ed6d4a41de2b126722f19f60aef1d48fe20b591902a50fa3ba5f7e88f">writeonly</a> = to_underlying(detail::io::file::access_mode::writeonly)
+&#160;&#160;<a class="el" href="#a94ca4020ed6d4a41de2b126722f19f60aef1d48fe20b591902a50fa3ba5f7e88f">writeonly</a> = to_underlying(io::detail::file::access_mode::writeonly)
 , <br />
-&#160;&#160;<a class="el" href="#a94ca4020ed6d4a41de2b126722f19f60a2ea7fe2bd051ec076a226b7dab76aaa3">readwrite</a> = to_underlying(detail::io::file::access_mode::readwrite)
+&#160;&#160;<a class="el" href="#a94ca4020ed6d4a41de2b126722f19f60a2ea7fe2bd051ec076a226b7dab76aaa3">readwrite</a> = to_underlying(io::detail::file::access_mode::readwrite)
 <br />
  }</td></tr>
 <tr class="separator:a94ca4020ed6d4a41de2b126722f19f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ee25f9e761403980f230868d7b91a42" id="r_a4ee25f9e761403980f230868d7b91a42"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ee25f9e761403980f230868d7b91a42">disposition</a> { <br />
-&#160;&#160;<a class="el" href="#a4ee25f9e761403980f230868d7b91a42a76ea0bebb3c22822b4f0dd9c9fd021c5">create</a> = to_underlying(detail::io::file::disposition::create)
+&#160;&#160;<a class="el" href="#a4ee25f9e761403980f230868d7b91a42a76ea0bebb3c22822b4f0dd9c9fd021c5">create</a> = to_underlying(io::detail::file::disposition::create)
 , <br />
-&#160;&#160;<a class="el" href="#a4ee25f9e761403980f230868d7b91a42aa4293995cfbfa9ce60ce71ade2ff75f7">exclusive</a> = to_underlying(detail::io::file::disposition::exclusive)
+&#160;&#160;<a class="el" href="#a4ee25f9e761403980f230868d7b91a42aa4293995cfbfa9ce60ce71ade2ff75f7">exclusive</a> = to_underlying(io::detail::file::disposition::exclusive)
 , <br />
-&#160;&#160;<a class="el" href="#a4ee25f9e761403980f230868d7b91a42a9516dfb15f51c7ee19a4d46b8c0dbe1d">append</a> = to_underlying(detail::io::file::disposition::append)
+&#160;&#160;<a class="el" href="#a4ee25f9e761403980f230868d7b91a42a9516dfb15f51c7ee19a4d46b8c0dbe1d">append</a> = to_underlying(io::detail::file::disposition::append)
 , <br />
-&#160;&#160;<a class="el" href="#a4ee25f9e761403980f230868d7b91a42a244f58cf07c35fd48d7524b289551e5c">truncate</a> = to_underlying(detail::io::file::disposition::truncate)
+&#160;&#160;<a class="el" href="#a4ee25f9e761403980f230868d7b91a42a244f58cf07c35fd48d7524b289551e5c">truncate</a> = to_underlying(io::detail::file::disposition::truncate)
 <br />
  }</td></tr>
 <tr class="separator:a4ee25f9e761403980f230868d7b91a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c47435cd7b23eb2637e33ac65febae0" id="r_a0c47435cd7b23eb2637e33ac65febae0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0">hint</a> { <br />
 &#160;&#160;<a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0a334c4a4c42fdb79d7ebc3e73b517e6f8">none</a> = 0
 , <br />
-&#160;&#160;<a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0a54e3e08d0201c6b040ee40f2d8857eb3">close_on_exec</a> = to_underlying(detail::io::file::hint::close_on_exec)
+&#160;&#160;<a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0a54e3e08d0201c6b040ee40f2d8857eb3">close_on_exec</a> = to_underlying(io::detail::file::hint::close_on_exec)
 , <br />
-&#160;&#160;<a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0a3c092d5dc073f08bb2581754f9f963dd">non_block</a> = to_underlying(detail::io::file::hint::non_block)
+&#160;&#160;<a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0a3c092d5dc073f08bb2581754f9f963dd">non_block</a> = to_underlying(io::detail::file::hint::non_block)
 , <br />
-&#160;&#160;<a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0a1303c4f41a88e739bc859612321b189f">synchronous</a> = to_underlying(detail::io::file::hint::synchronous)
+&#160;&#160;<a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0a1303c4f41a88e739bc859612321b189f">synchronous</a> = to_underlying(io::detail::file::hint::synchronous)
 , <br />
-&#160;&#160;<a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0a7caa701b2bd5a182b80c72b9bdf88e2d">direct</a> = to_underlying(detail::io::file::hint::direct)
+&#160;&#160;<a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0a7caa701b2bd5a182b80c72b9bdf88e2d">direct</a> = to_underlying(io::detail::file::hint::direct)
 , <br />
-&#160;&#160;<a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0aa919a25c09b5e0e533111577995cff53">datasync</a> = to_underlying(detail::io::file::hint::datasync)
+&#160;&#160;<a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0aa919a25c09b5e0e533111577995cff53">datasync</a> = to_underlying(io::detail::file::hint::datasync)
 <br />
  }</td></tr>
 <tr class="separator:a0c47435cd7b23eb2637e33ac65febae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aa2b363db011f576199331a15a1ef0d" id="r_a4aa2b363db011f576199331a15a1ef0d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4aa2b363db011f576199331a15a1ef0d">whence</a> { <br />
-&#160;&#160;<a class="el" href="#a4aa2b363db011f576199331a15a1ef0da8d589afa4dfaeeed85fff5aa78e5ff6a">begin</a> = to_underlying(detail::io::file::whence::begin)
+&#160;&#160;<a class="el" href="#a4aa2b363db011f576199331a15a1ef0da8d589afa4dfaeeed85fff5aa78e5ff6a">begin</a> = to_underlying(io::detail::file::whence::begin)
 , <br />
-&#160;&#160;<a class="el" href="#a4aa2b363db011f576199331a15a1ef0da43b5c9175984c071f30b873fdce0a000">current</a> = to_underlying(detail::io::file::whence::current)
+&#160;&#160;<a class="el" href="#a4aa2b363db011f576199331a15a1ef0da43b5c9175984c071f30b873fdce0a000">current</a> = to_underlying(io::detail::file::whence::current)
 , <br />
-&#160;&#160;<a class="el" href="#a4aa2b363db011f576199331a15a1ef0da7f021a1415b86f2d013b2618fb31ae53">end</a> = to_underlying(detail::io::file::whence::end)
+&#160;&#160;<a class="el" href="#a4aa2b363db011f576199331a15a1ef0da7f021a1415b86f2d013b2618fb31ae53">end</a> = to_underlying(io::detail::file::whence::end)
 <br />
  }</td></tr>
 <tr class="separator:a4aa2b363db011f576199331a15a1ef0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,7 +188,7 @@ Public Types</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="#ac28231f3be510f5dc37756aab19afd41a40040d7f11dfcc49463cf4519300bafd">punch_hole</a>
 , <br />
-&#160;&#160;<a class="el" href="#ac28231f3be510f5dc37756aab19afd41ad8e50d1ad9a9a467b442d86043b7c159">no_hide_stale</a> = to_underlying(detail::io::file::allocation_type::no_hide_stale)
+&#160;&#160;<a class="el" href="#ac28231f3be510f5dc37756aab19afd41ad8e50d1ad9a9a467b442d86043b7c159">no_hide_stale</a> = to_underlying(io::detail::file::allocation_type::no_hide_stale)
 , <br />
 &#160;&#160;<a class="el" href="#ac28231f3be510f5dc37756aab19afd41af4c69c7d7a05902680ad4a6e8e610234">collapse_range</a>
 , <br />
@@ -197,12 +200,12 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ac28231f3be510f5dc37756aab19afd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a20b363b0c581e6dcb290ebd26dadb4" id="r_a7a20b363b0c581e6dcb290ebd26dadb4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a20b363b0c581e6dcb290ebd26dadb4">descriptor</a> = <a class="el" href="group__api-core-io-details.html#ga6856f2876f37551d9d4e9b0c87015c86">detail::io::file::descriptor</a></td></tr>
-<tr class="separator:a7a20b363b0c581e6dcb290ebd26dadb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5df6e0f7d235eaaedea6a9aa0537d4aa" id="r_a5df6e0f7d235eaaedea6a9aa0537d4aa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5df6e0f7d235eaaedea6a9aa0537d4aa">size_type</a> = <a class="el" href="group__api-core-io-details.html#gac3b9d930a3ec238a07a0370556686983">detail::io::file::size_type</a></td></tr>
-<tr class="separator:a5df6e0f7d235eaaedea6a9aa0537d4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a853e8a38fc1f59b61a3a1e24978b4069" id="r_a853e8a38fc1f59b61a3a1e24978b4069"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a> = <a class="el" href="group__api-core-io-details.html#gacb9b166c2b2b3012d6d0b929b1422ac0">detail::io::file::offset_type</a></td></tr>
-<tr class="separator:a853e8a38fc1f59b61a3a1e24978b4069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace019e776472695ee308882d6eb0766a" id="r_ace019e776472695ee308882d6eb0766a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace019e776472695ee308882d6eb0766a">descriptor</a> = <a class="el" href="group__api-core-io-details.html#ga84931c39b2ec00c12869dce5dd743141">io::detail::file::descriptor</a></td></tr>
+<tr class="separator:ace019e776472695ee308882d6eb0766a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab854c7855e8b7f6093a2a7649e03223" id="r_aab854c7855e8b7f6093a2a7649e03223"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab854c7855e8b7f6093a2a7649e03223">size_type</a> = <a class="el" href="group__api-core-io-details.html#gad43d24b357bdc9e1da75b7bcaf034a4a">io::detail::file::size_type</a></td></tr>
+<tr class="separator:aab854c7855e8b7f6093a2a7649e03223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa56f3ab0da28d04c919e55cce3cb51b9" id="r_aa56f3ab0da28d04c919e55cce3cb51b9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a> = <a class="el" href="group__api-core-io-details.html#ga9a7d2a7b02504e79a7006ef284177d69">io::detail::file::offset_type</a></td></tr>
+<tr class="separator:aa56f3ab0da28d04c919e55cce3cb51b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -220,6 +223,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0cbcb4754e1988386738ba456d82bb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d188c84ef14a736283e99737ca7c53a" id="r_a1d188c84ef14a736283e99737ca7c53a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d188c84ef14a736283e99737ca7c53a">file</a> (const char *filename, <a class="el" href="#a94ca4020ed6d4a41de2b126722f19f60">access</a> access_mode=<a class="el" href="#a94ca4020ed6d4a41de2b126722f19f60a336ebbb2179beaa7340a4f1620f3af40">access::readonly</a>, <a class="el" href="#a4ee25f9e761403980f230868d7b91a42">disposition</a> disposition_mode=static_cast&lt; <a class="el" href="#a4ee25f9e761403980f230868d7b91a42">disposition</a> &gt;(0), <a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0">hint</a> hint_mode=<a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0a334c4a4c42fdb79d7ebc3e73b517e6f8">hint::none</a>) noexcept</td></tr>
 <tr class="separator:a1d188c84ef14a736283e99737ca7c53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b8a3e85b52da830248c0b260c04c5d" id="r_a47b8a3e85b52da830248c0b260c04c5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47b8a3e85b52da830248c0b260c04c5d">file</a> (FILE *f) noexcept</td></tr>
+<tr class="separator:a47b8a3e85b52da830248c0b260c04c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5fe62d53948021812f4734853f49966" id="r_ad5fe62d53948021812f4734853f49966"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5fe62d53948021812f4734853f49966">~file</a> ()</td></tr>
 <tr class="separator:ad5fe62d53948021812f4734853f49966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab10f45cf861d54c0e4266c903e6f47b8" id="r_ab10f45cf861d54c0e4266c903e6f47b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab10f45cf861d54c0e4266c903e6f47b8">valid</a> () const noexcept</td></tr>
@@ -230,70 +235,70 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a917ecdc09721411ce2791ad0b5dad2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76141860428c78423877588debcac07a" id="r_a76141860428c78423877588debcac07a"><td class="memItemLeft" align="right" valign="top">std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76141860428c78423877588debcac07a">error</a> () const noexcept</td></tr>
 <tr class="separator:a76141860428c78423877588debcac07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb4cb5b15b7c556d7bc235c0241f3e9d" id="r_afb4cb5b15b7c556d7bc235c0241f3e9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb4cb5b15b7c556d7bc235c0241f3e9d">filesize</a> () const noexcept</td></tr>
+<tr class="memitem:afb4cb5b15b7c556d7bc235c0241f3e9d" id="r_afb4cb5b15b7c556d7bc235c0241f3e9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb4cb5b15b7c556d7bc235c0241f3e9d">filesize</a> () const noexcept</td></tr>
 <tr class="separator:afb4cb5b15b7c556d7bc235c0241f3e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8f05549c7f312bedbd1c1a0c935fd88" id="r_ad8f05549c7f312bedbd1c1a0c935fd88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5df6e0f7d235eaaedea6a9aa0537d4aa">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8f05549c7f312bedbd1c1a0c935fd88">blocksize</a> () const noexcept</td></tr>
+<tr class="memitem:ad8f05549c7f312bedbd1c1a0c935fd88" id="r_ad8f05549c7f312bedbd1c1a0c935fd88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aab854c7855e8b7f6093a2a7649e03223">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8f05549c7f312bedbd1c1a0c935fd88">blocksize</a> () const noexcept</td></tr>
 <tr class="separator:ad8f05549c7f312bedbd1c1a0c935fd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a5c277ba7d0b71982920532c2101787" id="r_a6a5c277ba7d0b71982920532c2101787"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a5c277ba7d0b71982920532c2101787">open</a> (const std::filesystem::path &amp;filename, <a class="el" href="#a94ca4020ed6d4a41de2b126722f19f60">access</a> access_mode=<a class="el" href="#a94ca4020ed6d4a41de2b126722f19f60a336ebbb2179beaa7340a4f1620f3af40">access::readonly</a>, <a class="el" href="#a4ee25f9e761403980f230868d7b91a42">disposition</a> disposition_mode=static_cast&lt; <a class="el" href="#a4ee25f9e761403980f230868d7b91a42">disposition</a> &gt;(0), <a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0">hint</a> hint_mode=<a class="el" href="#a0c47435cd7b23eb2637e33ac65febae0a334c4a4c42fdb79d7ebc3e73b517e6f8">hint::none</a>) noexcept</td></tr>
 <tr class="separator:a6a5c277ba7d0b71982920532c2101787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae91b5934c3c07f9c0616a1a0f0b8d2d6" id="r_ae91b5934c3c07f9c0616a1a0f0b8d2d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae91b5934c3c07f9c0616a1a0f0b8d2d6">close</a> () noexcept</td></tr>
 <tr class="separator:ae91b5934c3c07f9c0616a1a0f0b8d2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a710add648fad3b8073593b28db800c3f" id="r_a710add648fad3b8073593b28db800c3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a710add648fad3b8073593b28db800c3f">seek</a> (<a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a> off, <a class="el" href="#a4aa2b363db011f576199331a15a1ef0d">whence</a> from=<a class="el" href="#a4aa2b363db011f576199331a15a1ef0da8d589afa4dfaeeed85fff5aa78e5ff6a">whence::begin</a>) noexcept</td></tr>
+<tr class="memitem:a710add648fad3b8073593b28db800c3f" id="r_a710add648fad3b8073593b28db800c3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a710add648fad3b8073593b28db800c3f">seek</a> (<a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a> off, <a class="el" href="#a4aa2b363db011f576199331a15a1ef0d">whence</a> from=<a class="el" href="#a4aa2b363db011f576199331a15a1ef0da8d589afa4dfaeeed85fff5aa78e5ff6a">whence::begin</a>) noexcept</td></tr>
 <tr class="separator:a710add648fad3b8073593b28db800c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ff00ebf94ba9f1574ef01c494c2c056" id="r_a5ff00ebf94ba9f1574ef01c494c2c056"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ff00ebf94ba9f1574ef01c494c2c056">read</a> (<a class="el" href="classvidre_1_1memory_1_1area.html">memory::area</a> &amp;buf) noexcept</td></tr>
+<tr class="memitem:a5ff00ebf94ba9f1574ef01c494c2c056" id="r_a5ff00ebf94ba9f1574ef01c494c2c056"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ff00ebf94ba9f1574ef01c494c2c056">read</a> (<a class="el" href="classvidre_1_1memory_1_1area.html">memory::area</a> &amp;buf) noexcept</td></tr>
 <tr class="separator:a5ff00ebf94ba9f1574ef01c494c2c056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfef2fb0a8304767476ff7943dd39039" id="r_adfef2fb0a8304767476ff7943dd39039"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfef2fb0a8304767476ff7943dd39039">write</a> (const <a class="el" href="classvidre_1_1memory_1_1view.html">memory::view</a> &amp;buf) noexcept</td></tr>
+<tr class="memitem:adfef2fb0a8304767476ff7943dd39039" id="r_adfef2fb0a8304767476ff7943dd39039"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfef2fb0a8304767476ff7943dd39039">write</a> (const <a class="el" href="classvidre_1_1memory_1_1view.html">memory::view</a> &amp;buf) noexcept</td></tr>
 <tr class="separator:adfef2fb0a8304767476ff7943dd39039"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0a4807aa2490ecb4277dfd37402b35d" id="r_ac0a4807aa2490ecb4277dfd37402b35d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0a4807aa2490ecb4277dfd37402b35d">allocate</a> (<a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a> offset, <a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a> length, <a class="el" href="#ac28231f3be510f5dc37756aab19afd41">allocation</a> type=<a class="el" href="#ac28231f3be510f5dc37756aab19afd41a0e5ac799b7d185add23566dc8f81cf31">allocation::keep_size</a>) noexcept</td></tr>
+<tr class="memitem:ac0a4807aa2490ecb4277dfd37402b35d" id="r_ac0a4807aa2490ecb4277dfd37402b35d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0a4807aa2490ecb4277dfd37402b35d">allocate</a> (<a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a> offset, <a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a> length, <a class="el" href="#ac28231f3be510f5dc37756aab19afd41">allocation</a> type=<a class="el" href="#ac28231f3be510f5dc37756aab19afd41a0e5ac799b7d185add23566dc8f81cf31">allocation::keep_size</a>) noexcept</td></tr>
 <tr class="separator:ac0a4807aa2490ecb4277dfd37402b35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:aeee4499125213614f36012bffad39db4" id="r_aeee4499125213614f36012bffad39db4"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="#a5df6e0f7d235eaaedea6a9aa0537d4aa">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeee4499125213614f36012bffad39db4">path_max</a> = detail::io::file::path_max</td></tr>
+<tr class="memitem:aeee4499125213614f36012bffad39db4" id="r_aeee4499125213614f36012bffad39db4"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="#aab854c7855e8b7f6093a2a7649e03223">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeee4499125213614f36012bffad39db4">path_max</a> = io::detail::file::path_max</td></tr>
 <tr class="separator:aeee4499125213614f36012bffad39db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a6d0d09f26d49588ec9681377dd0b970a" id="r_a6d0d09f26d49588ec9681377dd0b970a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a7a20b363b0c581e6dcb290ebd26dadb4">descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d0d09f26d49588ec9681377dd0b970a">fd_</a> {<a class="el" href="group__api-core-io-details.html#gad38e2fb0633daefe922b67c5c8a45c76">detail::io::file::invalid_descriptor</a>}</td></tr>
+<tr class="memitem:a6d0d09f26d49588ec9681377dd0b970a" id="r_a6d0d09f26d49588ec9681377dd0b970a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ace019e776472695ee308882d6eb0766a">descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d0d09f26d49588ec9681377dd0b970a">fd_</a> {<a class="el" href="group__api-core-io-details.html#ga9a79ce5456154edd21384551ea481cc1">io::detail::file::invalid_descriptor</a>}</td></tr>
 <tr class="separator:a6d0d09f26d49588ec9681377dd0b970a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a7a20b363b0c581e6dcb290ebd26dadb4" name="a7a20b363b0c581e6dcb290ebd26dadb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a20b363b0c581e6dcb290ebd26dadb4">&#9670;&#160;</a></span>descriptor</h2>
+<a id="ace019e776472695ee308882d6eb0766a" name="ace019e776472695ee308882d6eb0766a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace019e776472695ee308882d6eb0766a">&#9670;&#160;</a></span>descriptor</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a7a20b363b0c581e6dcb290ebd26dadb4">vidre::io::file::descriptor</a> = <a class="el" href="group__api-core-io-details.html#ga6856f2876f37551d9d4e9b0c87015c86">detail::io::file::descriptor</a></td>
+          <td class="memname">using <a class="el" href="#ace019e776472695ee308882d6eb0766a">vidre::io::file::descriptor</a> = <a class="el" href="group__api-core-io-details.html#ga84931c39b2ec00c12869dce5dd743141">io::detail::file::descriptor</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a5df6e0f7d235eaaedea6a9aa0537d4aa" name="a5df6e0f7d235eaaedea6a9aa0537d4aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5df6e0f7d235eaaedea6a9aa0537d4aa">&#9670;&#160;</a></span>size_type</h2>
+<a id="aab854c7855e8b7f6093a2a7649e03223" name="aab854c7855e8b7f6093a2a7649e03223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab854c7855e8b7f6093a2a7649e03223">&#9670;&#160;</a></span>size_type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a5df6e0f7d235eaaedea6a9aa0537d4aa">vidre::io::file::size_type</a> = <a class="el" href="group__api-core-io-details.html#gac3b9d930a3ec238a07a0370556686983">detail::io::file::size_type</a></td>
+          <td class="memname">using <a class="el" href="#aab854c7855e8b7f6093a2a7649e03223">vidre::io::file::size_type</a> = <a class="el" href="group__api-core-io-details.html#gad43d24b357bdc9e1da75b7bcaf034a4a">io::detail::file::size_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a853e8a38fc1f59b61a3a1e24978b4069" name="a853e8a38fc1f59b61a3a1e24978b4069"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a853e8a38fc1f59b61a3a1e24978b4069">&#9670;&#160;</a></span>offset_type</h2>
+<a id="aa56f3ab0da28d04c919e55cce3cb51b9" name="aa56f3ab0da28d04c919e55cce3cb51b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa56f3ab0da28d04c919e55cce3cb51b9">&#9670;&#160;</a></span>offset_type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">vidre::io::file::offset_type</a> = <a class="el" href="group__api-core-io-details.html#gacb9b166c2b2b3012d6d0b929b1422ac0">detail::io::file::offset_type</a></td>
+          <td class="memname">using <a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">vidre::io::file::offset_type</a> = <a class="el" href="group__api-core-io-details.html#ga9a7d2a7b02504e79a7006ef284177d69">io::detail::file::offset_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -482,7 +487,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6fe15fae5d8cfbf60c42086f7aa0a6ea" name="a6fe15fae5d8cfbf60c42086f7aa0a6ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fe15fae5d8cfbf60c42086f7aa0a6ea">&#9670;&#160;</a></span>file() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fe15fae5d8cfbf60c42086f7aa0a6ea">&#9670;&#160;</a></span>file() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -507,7 +512,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a7583e529a261eaa5db836d2f3d0d9c4a" name="a7583e529a261eaa5db836d2f3d0d9c4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7583e529a261eaa5db836d2f3d0d9c4a">&#9670;&#160;</a></span>file() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7583e529a261eaa5db836d2f3d0d9c4a">&#9670;&#160;</a></span>file() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -532,7 +537,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a7894cffdadabeaf8ec5659085c40ddda" name="a7894cffdadabeaf8ec5659085c40ddda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7894cffdadabeaf8ec5659085c40ddda">&#9670;&#160;</a></span>file() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7894cffdadabeaf8ec5659085c40ddda">&#9670;&#160;</a></span>file() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -557,7 +562,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a0cbcb4754e1988386738ba456d82bb2b" name="a0cbcb4754e1988386738ba456d82bb2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cbcb4754e1988386738ba456d82bb2b">&#9670;&#160;</a></span>file() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cbcb4754e1988386738ba456d82bb2b">&#9670;&#160;</a></span>file() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -596,7 +601,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a1d188c84ef14a736283e99737ca7c53a" name="a1d188c84ef14a736283e99737ca7c53a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d188c84ef14a736283e99737ca7c53a">&#9670;&#160;</a></span>file() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d188c84ef14a736283e99737ca7c53a">&#9670;&#160;</a></span>file() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -631,6 +636,41 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47b8a3e85b52da830248c0b260c04c5d" name="a47b8a3e85b52da830248c0b260c04c5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47b8a3e85b52da830248c0b260c04c5d">&#9670;&#160;</a></span>file() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vidre::io::file::file </td>
+          <td>(</td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Open a file from a C FILE pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>The C FILE pointer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This constructor is intended for use with stdin, stdout, and stderr, but can be used with any valid FILE pointer.</p>
+<dl class="section note"><dt>Note</dt><dd>The file will be duplicated, so the caller retains ownership of the FILE pointer and is responsible for closing it. The returned file object will have its own file descriptor that is independent of the original FILE pointer. </dd></dl>
 
 </div>
 </div>
@@ -735,6 +775,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Check if the file is valid (ie. </p>
 <p>open). </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="examples_2core_2io_8cc-example.html#a2">examples/core/io.cc</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -776,7 +818,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vidre::io::file::operator <a class="el" href="#a7a20b363b0c581e6dcb290ebd26dadb4">descriptor</a> </td>
+          <td class="memname">vidre::io::file::operator <a class="el" href="#ace019e776472695ee308882d6eb0766a">descriptor</a> </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -831,7 +873,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a> vidre::io::file::filesize </td>
+          <td class="memname"><a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a> vidre::io::file::filesize </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -859,7 +901,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a5df6e0f7d235eaaedea6a9aa0537d4aa">size_type</a> vidre::io::file::blocksize </td>
+          <td class="memname"><a class="el" href="#aab854c7855e8b7f6093a2a7649e03223">size_type</a> vidre::io::file::blocksize </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -967,9 +1009,9 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a> vidre::io::file::seek </td>
+          <td class="memname"><a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a> vidre::io::file::seek </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a></td>          <td class="paramname"><span class="paramname"><em>off</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a></td>          <td class="paramname"><span class="paramname"><em>off</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1006,7 +1048,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a> vidre::io::file::read </td>
+          <td class="memname"><a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a> vidre::io::file::read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classvidre_1_1memory_1_1area.html">memory::area</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>buf</em></span></td><td>)</td>
           <td></td>
@@ -1041,7 +1083,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a> vidre::io::file::write </td>
+          <td class="memname"><a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a> vidre::io::file::write </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvidre_1_1memory_1_1view.html">memory::view</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>buf</em></span></td><td>)</td>
           <td></td>
@@ -1063,6 +1105,8 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes written, <code>-1</code> on error. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="examples_2core_2io_8cc-example.html#a5">examples/core/io.cc</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -1078,12 +1122,12 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">bool vidre::io::file::allocate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a></td>          <td class="paramname"><span class="paramname"><em>offset</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a></td>          <td class="paramname"><span class="paramname"><em>offset</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a853e8a38fc1f59b61a3a1e24978b4069">offset_type</a></td>          <td class="paramname"><span class="paramname"><em>length</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#aa56f3ab0da28d04c919e55cce3cb51b9">offset_type</a></td>          <td class="paramname"><span class="paramname"><em>length</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1125,7 +1169,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a5df6e0f7d235eaaedea6a9aa0537d4aa">size_type</a> vidre::io::file::path_max = detail::io::file::path_max</td>
+          <td class="memname"><a class="el" href="#aab854c7855e8b7f6093a2a7649e03223">size_type</a> vidre::io::file::path_max = io::detail::file::path_max</td>
         </tr>
       </table>
   </td>
@@ -1149,7 +1193,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a7a20b363b0c581e6dcb290ebd26dadb4">descriptor</a> vidre::io::file::fd_ {<a class="el" href="group__api-core-io-details.html#gad38e2fb0633daefe922b67c5c8a45c76">detail::io::file::invalid_descriptor</a>}</td>
+          <td class="memname"><a class="el" href="#ace019e776472695ee308882d6eb0766a">descriptor</a> vidre::io::file::fd_ {<a class="el" href="group__api-core-io-details.html#ga9a79ce5456154edd21384551ea481cc1">io::detail::file::invalid_descriptor</a>}</td>
         </tr>
       </table>
   </td>

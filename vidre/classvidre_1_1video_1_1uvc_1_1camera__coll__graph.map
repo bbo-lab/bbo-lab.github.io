@@ -1,19 +1,25 @@
 <map id="vidre::video::uvc::camera" name="vidre::video::uvc::camera">
-<area shape="rect" id="Node000001" title="UVC camera." alt="" coords="940,109,1067,149"/>
-<area shape="rect" id="Node000002" href="$classvidre_1_1device_1_1camera.html" title="Camera device." alt="" coords="744,77,891,103"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="893,103,940,113,939,118,892,108"/>
-<area shape="rect" id="Node000003" href="$classvidre_1_1device_1_1base.html" title="Device skeleton." alt="" coords="472,5,604,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="611,31,650,41,773,75,772,80,649,46,610,36"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="459,55,617,95"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="631,78,744,84,744,89,631,83"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="427,120,649,145"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="641,115,720,103,743,100,744,105,720,109,641,121"/>
-<area shape="rect" id="Node000006" href="$classvidre_1_1io_1_1source.html" title="Data source." alt="" coords="760,140,875,165"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="888,141,940,134,940,139,888,146"/>
-<area shape="rect" id="Node000007" href="$classvidre_1_1event.html" title="Event signalling primitive." alt="" coords="493,169,583,195"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="597,181,656,180,720,174,773,163,774,168,720,179,657,185,597,186"/>
-<area shape="rect" id="Node000008" href="$structvidre_1_1detail_1_1event.html" title="Trivial event notification primitive based on Linux&#39;s eventfd." alt="" coords="213,169,343,195"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="356,179,492,179,492,185,356,185"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="5,169,140,195"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="154,179,213,179,213,185,154,185"/>
+<area shape="rect" id="Node000001" title="UVC camera." alt="" coords="949,149,1076,189"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1device_1_1camera.html" title="Camera device." alt="" coords="753,114,900,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="896,140,950,152,948,157,895,145"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1device_1_1base.html" title="Device skeleton." alt="" coords="481,7,613,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="627,33,660,43,741,78,805,112,802,116,738,83,658,48,626,38"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1device_1_1state.html" title="Device state." alt="" coords="213,7,347,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="360,17,481,17,481,23,360,23"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="468,57,627,97"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="641,91,754,111,754,117,640,96"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="436,122,659,147"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="672,128,753,126,753,131,672,134"/>
+<area shape="rect" id="Node000007" href="$classvidre_1_1io_1_1source.html" title="Data source." alt="" coords="769,181,884,206"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="897,182,949,175,950,180,898,187"/>
+<area shape="rect" id="Node000008" href="$classvidre_1_1io_1_1endpoint.html" title="Endpoint capabilities." alt="" coords="485,171,610,197"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="624,184,769,189,769,194,624,189"/>
+<area shape="rect" id="Node000009" href="$classvidre_1_1event.html" title="Event signalling primitive." alt="" coords="502,221,593,246"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="606,224,729,208,769,201,770,207,730,213,607,230"/>
+<area shape="rect" id="Node000010" href="$structvidre_1_1detail_1_1event.html" title="Trivial event notification primitive based on Linux&#39;s eventfd." alt="" coords="215,221,345,246"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="358,231,502,231,502,236,358,236"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="5,221,140,246"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="154,231,215,231,215,236,154,236"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="469,270,626,295"/>
+<area shape="poly" id="edge11_Node000007_Node000012" title=" " alt="" coords="627,264,678,251,728,235,799,204,801,209,730,240,679,257,629,270"/>
 </map>

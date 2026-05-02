@@ -1,9 +1,9 @@
 <map id="vidre::io::source" name="vidre::io::source">
-<area shape="rect" id="Node000001" title="Data source." alt="" coords="162,5,277,31"/>
-<area shape="rect" id="Node000002" href="$classvidre_1_1io_1_1file_1_1source.html" title="File source." alt="" coords="5,86,145,111"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,40,98,88,95,83,185,35"/>
-<area shape="rect" id="Node000003" href="$classvidre_1_1io_1_1pipe.html" title="Data pipe." alt="" coords="169,86,269,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,44,222,86,217,86,217,44"/>
-<area shape="rect" id="Node000004" href="$classvidre_1_1video_1_1uvc_1_1camera.html" title="UVC camera." alt="" coords="293,79,420,119"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="253,35,325,76,322,81,250,40"/>
+<area shape="rect" id="Node000001" title="Data source." alt="" coords="97,79,211,104"/>
+<area shape="rect" id="Node000003" href="$classvidre_1_1io_1_1file_1_1source.html" title="File source." alt="" coords="5,159,145,185"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,116,89,161,85,157,131,112"/>
+<area shape="rect" id="Node000004" href="$classvidre_1_1video_1_1uvc_1_1camera.html" title="UVC camera." alt="" coords="169,152,296,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,112,216,150,212,154,173,116"/>
+<area shape="rect" id="Node000002" href="$classvidre_1_1io_1_1endpoint.html" title="Endpoint capabilities." alt="" coords="91,5,217,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,44,157,79,151,79,151,44"/>
 </map>

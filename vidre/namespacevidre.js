@@ -8,6 +8,10 @@ var namespacevidre =
       [ "pack< 16, 12, false >", "group__api-core-util-bit.html#gae753d302d361d2dd317932f774a61792", null ],
       [ "pack< 12, 16, false >", "group__api-core-util-bit.html#gac373fe7be167d249afc56afe40884e47", null ]
     ] ],
+    [ "chrono", "namespacevidre_1_1chrono.html", "namespacevidre_1_1chrono" ],
+    [ "debug", "namespacevidre_1_1debug.html", [
+      [ "do_not_optimize", "group__api-core-util-debug.html#ga26686965a3079558468fa6c6f12f9d1c", null ]
+    ] ],
     [ "detail", "namespacevidre_1_1detail.html", "namespacevidre_1_1detail" ],
     [ "develop", "namespacevidre_1_1develop.html", [
       [ "inbuild", "group__api-core-util-develop.html#gabc680176303417bdd50638b74427ace0", null ]
@@ -21,6 +25,7 @@ var namespacevidre =
     [ "input", "namespacevidre_1_1input.html", "namespacevidre_1_1input" ],
     [ "io", "namespacevidre_1_1io.html", "namespacevidre_1_1io" ],
     [ "log", "namespacevidre_1_1log.html", "namespacevidre_1_1log" ],
+    [ "lognew", "namespacevidre_1_1lognew.html", "namespacevidre_1_1lognew" ],
     [ "memory", "namespacevidre_1_1memory.html", "namespacevidre_1_1memory" ],
     [ "midlib2", "namespacevidre_1_1midlib2.html", [
       [ "device", "group__api-device-onsemi-types.html#ga9b5e730786191097583cb79b82e97d49", null ]
@@ -35,6 +40,7 @@ var namespacevidre =
     [ "bits_of", "structvidre_1_1bits__of.html", "structvidre_1_1bits__of" ],
     [ "event", "classvidre_1_1event.html", "classvidre_1_1event" ],
     [ "exception", "classvidre_1_1exception.html", "classvidre_1_1exception" ],
+    [ "schedule", "classvidre_1_1schedule.html", "classvidre_1_1schedule" ],
     [ "shared", "classvidre_1_1shared.html", "classvidre_1_1shared" ],
     [ "status", "classvidre_1_1status.html", "classvidre_1_1status" ],
     [ "uuid", "classvidre_1_1uuid.html", "classvidre_1_1uuid" ],
@@ -43,7 +49,7 @@ var namespacevidre =
     [ "version", "classvidre_1_1version.html", "classvidre_1_1version" ],
     [ "expected", "namespacevidre.html#a3db2df171b8adf8d1f111e3c3d906c8b", null ],
     [ "unexpected", "namespacevidre.html#ad97a24b112509130b0b63569ad1a8cb6", null ],
-    [ "thread", "group__api-core-util-thread.html#gaaca790f1489036ecc6c5aa8c9482ee34", null ],
+    [ "thread", "group__api-core-thread-types.html#gaaca790f1489036ecc6c5aa8c9482ee34", null ],
     [ "size_of", "group__api-core-cpp-util.html#ga60b45cf7ce0de3e77e3f93db02eb0e96", null ],
     [ "to_underlying", "group__api-core-cpp-util.html#gaf2585385c90cccecb77ecac59eeb5b5b", null ],
     [ "abort_with_message", "group__api-core-exception.html#ga23934a101bed2ef0161a0aac21b9d5b8", null ],

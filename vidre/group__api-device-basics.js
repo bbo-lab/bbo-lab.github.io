@@ -1,6 +1,34 @@
 var group__api_device_basics =
 [
     [ "vidre::device::error", "namespacevidre_1_1device_1_1error.html", null ],
+    [ "vidre::device::state", "classvidre_1_1device_1_1state.html", [
+      [ "flag", "classvidre_1_1device_1_1state.html#ac34957d4cee2518db7665766961cf337", [
+        [ "undefined", "classvidre_1_1device_1_1state.html#ac34957d4cee2518db7665766961cf337a167c91054ffab9899f8f5eccb501dd0a", null ],
+        [ "available", "classvidre_1_1device_1_1state.html#ac34957d4cee2518db7665766961cf337a6686abd408520a7e898ba60893ebeedc", null ],
+        [ "disabled", "classvidre_1_1device_1_1state.html#ac34957d4cee2518db7665766961cf337ad37649c3e0371240e376ffb4754803d9", null ],
+        [ "error", "classvidre_1_1device_1_1state.html#ac34957d4cee2518db7665766961cf337a08ca44a8843808bad039ed10807123b1", null ],
+        [ "connected", "classvidre_1_1device_1_1state.html#ac34957d4cee2518db7665766961cf337a96830f0879fc5d1963ec162131b86104", null ],
+        [ "configured", "classvidre_1_1device_1_1state.html#ac34957d4cee2518db7665766961cf337a50d491505e2f94f4f795b2a78b8fd900", null ],
+        [ "running", "classvidre_1_1device_1_1state.html#ac34957d4cee2518db7665766961cf337a47a91e10d455b5bfa0f567745626c304", null ]
+      ] ],
+      [ "state", "classvidre_1_1device_1_1state.html#a3f8365e482b66f769f7aab720da88c67", null ],
+      [ "state", "classvidre_1_1device_1_1state.html#a8c7359df1ec98708656e75eabd8b26d1", null ],
+      [ "operator bool", "classvidre_1_1device_1_1state.html#a0b45e864a1b722eadda39147eec8192e", null ],
+      [ "operator!", "classvidre_1_1device_1_1state.html#a72067ed16edf2da7ae3902086ccc82a4", null ],
+      [ "operator==", "classvidre_1_1device_1_1state.html#ae0972d02cd607bb658fe5270c6f1110e", null ],
+      [ "operator==", "classvidre_1_1device_1_1state.html#a5b8b426fbdbf5ee844f8863c8779828c", null ],
+      [ "has", "classvidre_1_1device_1_1state.html#a37c21eaa417d1c99b89f01c8cb302928", null ],
+      [ "set", "classvidre_1_1device_1_1state.html#a61cfc2b34d8cafd3254922bfaa258bc9", null ],
+      [ "clear", "classvidre_1_1device_1_1state.html#a40a839a41a03847a2cd63a2c79e6c2e3", null ],
+      [ "toggle", "classvidre_1_1device_1_1state.html#a64a0f29895da5af5292cdaa08407491f", null ],
+      [ "reset", "classvidre_1_1device_1_1state.html#a4176bb7a834dffc75277495d9b94bcc7", null ],
+      [ "operator&=", "classvidre_1_1device_1_1state.html#a6c45ed34035c1e7dede3c88ef0f73c8b", null ],
+      [ "operator&=", "classvidre_1_1device_1_1state.html#a72a3bbedc02b2a18918255a263686b5d", null ],
+      [ "operator|=", "classvidre_1_1device_1_1state.html#a97d41cc5ee6e9ee4e8cfb7c6fbed8176", null ],
+      [ "operator|=", "classvidre_1_1device_1_1state.html#af60c4d1bfde02427ac0cb44182bc098f", null ],
+      [ "compatible_v", "classvidre_1_1device_1_1state.html#a5eb60fd449a4caf577a579f0f3311bbc", null ],
+      [ "flags_", "classvidre_1_1device_1_1state.html#a15c21a52d39c1cfc01cf357054a05c4e", null ]
+    ] ],
     [ "vidre::device::base", "classvidre_1_1device_1_1base.html", [
       [ "base", "classvidre_1_1device_1_1base.html#afcbf3f6e8c4f547b411a36d35e5adbc5", null ],
       [ "base", "classvidre_1_1device_1_1base.html#aab1387c02a3f773ab9c8f7e04a663c89", null ],
@@ -11,6 +39,7 @@ var group__api_device_basics =
       [ "connect", "classvidre_1_1device_1_1base.html#ac8212be594d3534eb628bfa2fcddcfd1", null ],
       [ "disconnect", "classvidre_1_1device_1_1base.html#af9147d6de6b774a3f275caee4e766f0c", null ],
       [ "setup", "classvidre_1_1device_1_1base.html#a97e60e704a21c388b3daca7a535b2507", null ],
+      [ "prepare", "classvidre_1_1device_1_1base.html#aacef887ce4b008a4e476beebb85d7ea9", null ],
       [ "start", "classvidre_1_1device_1_1base.html#a20e854a1d769ca15d8f915aa4a4de0bd", null ],
       [ "stop", "classvidre_1_1device_1_1base.html#ab3584117ac6efe3e11238dffe9c97181", null ],
       [ "id", "classvidre_1_1device_1_1base.html#aa78b48e988b8ee205fc7d15a456bd3c4", null ],
@@ -21,12 +50,6 @@ var group__api_device_basics =
     ] ],
     [ "vidre::device::base::enumerator", "structvidre_1_1device_1_1base_1_1enumerator.html", [
       [ "find", "structvidre_1_1device_1_1base_1_1enumerator.html#aa49172f693500401359ecf8dc45967c3", null ]
-    ] ],
-    [ "vidre::device::error::tmpl", "classvidre_1_1device_1_1error_1_1tmpl.html", [
-      [ "tmpl", "classvidre_1_1device_1_1error_1_1tmpl.html#abd89c701083ed51c9f03004b61b89123", null ],
-      [ "~tmpl", "classvidre_1_1device_1_1error_1_1tmpl.html#ae032ebcf89ebc3399b5f4a8ab9bdbc21", null ],
-      [ "tag", "classvidre_1_1device_1_1error_1_1tmpl.html#afe7a65fface64d022b723d6515c897aa", null ],
-      [ "make", "classvidre_1_1device_1_1error_1_1tmpl.html#a2785e29e6d00fa6da4f05188fd26e072", null ]
     ] ],
     [ "vidre::device::error::id", "classvidre_1_1device_1_1error_1_1id.html", [
       [ "id", "classvidre_1_1device_1_1error_1_1id.html#a2edf6171f6b99a9a1e43e84ac2b670e5", null ],
@@ -52,14 +75,5 @@ var group__api_device_basics =
     ] ],
     [ "vidre::device::shared", "group__api-device-basics.html#ga9e81499dd26085fcff5646e8d779ba27", null ],
     [ "vidre::device::list_type", "group__api-device-basics.html#gaa9ea44cc4601180b9fca40f3fdc1bd58", null ],
-    [ "vidre::device::list", "group__api-device-basics.html#gab0582a1cbc47c431d1a5b53ec04b5a92", null ],
-    [ "vidre::device::state", "group__api-device-basics.html#ga9b96e641ea81e775e9c7b33804193772", [
-      [ "vidre::device::state::undefined", "group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772a5e543256c480ac577d30f76f9120eb74", null ],
-      [ "vidre::device::state::available", "group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772ae4894ca167b08880bfc35862f18575eb", null ],
-      [ "vidre::device::state::disabled", "group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772a075ae3d2fc31640504f814f60e5ef713", null ],
-      [ "vidre::device::state::connected", "group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772a06aa6fa8bdc2078e7e1bd903e70c8f6a", null ],
-      [ "vidre::device::state::configured", "group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772a48e54afcf03ca45bfe38f6b7ff58764a", null ],
-      [ "vidre::device::state::running", "group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772a75101dcdfc88455bcafc9e53e0b06689", null ],
-      [ "vidre::device::state::failed", "group__api-device-basics.html#gga9b96e641ea81e775e9c7b33804193772a26934eb377001f66e37289a5c93fe284", null ]
-    ] ]
+    [ "vidre::device::list", "group__api-device-basics.html#gab0582a1cbc47c431d1a5b53ec04b5a92", null ]
 ];

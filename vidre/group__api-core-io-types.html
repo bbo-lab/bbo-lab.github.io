@@ -128,18 +128,35 @@ $(function(){initNavTree('group__api-core-io-types.html',''); initResizable(true
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p><a class="el" href="libs_2core_2vidre_2io_2types_8hh.html">vidre/io/types.hh</a></p>
-<p>The data flow in VidRe has to cover various forms of data (such as its main focus: video images, see api-core-video-format) as well as modes of transmission (from fixed to variable sized data packets, as well as raw I/O). FIXME</p>
+<p>The data flow in VidRe has to cover various forms of data (such as its main focus: video images, see <a class="el" href="group__api-video.html">Video library</a>) as well as modes of transmission (from fixed to variable sized data packets, as well as raw I/O).</p>
 <h2><a class="anchor" id="autotoc_md11"></a>
 Overview</h2>
-<p>FIXME </p>
+<h3><a class="anchor" id="autotoc_md12"></a>
+Endpoints and transmission</h3>
+<p>The basic building blocks for data transmission are:</p><ul>
+<li><b>source</b>: a data producer (from input devices, such as video cameras, or data files).</li>
+<li><b>sink</b>: a data consumer (from output devices, such as audio, video, or, as above, data files).</li>
+<li><b>channel</b>: a channel exposing both, source and sink interface, allowing for, e.g., filtering data.</li>
+<li><b>arbiter</b>: arbiters are responsible for distributing a single source to multiple sinks.</li>
+<li><b>merger</b>: mergers are responsible for combining multiple sources into a single sink.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md13"></a>
+Flow control</h3>
+<p>FIXME see <a href="https://chat.deepseek.com/a/chat/s/8cc10342-f684-4a3e-805a-82c0b7973e4c">https://chat.deepseek.com/a/chat/s/8cc10342-f684-4a3e-805a-82c0b7973e4c</a> </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1io_1_1result.html">vidre::io::result</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1endpoint.html">vidre::io::endpoint</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1thread.html">vidre::io::thread</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvidre_1_1io_1_1thread_1_1state.html">vidre::io::thread::state</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1sink.html">vidre::io::sink</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1source.html">vidre::io::source</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvidre_1_1io_1_1pipe.html">vidre::io::pipe</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -214,10 +231,10 @@ template&lt;class T  = offset_type&gt; </div>
 </div><div class="memdoc">
 
 <p>Invalid offset value. </p>
-<p>Typical usage: </p><div class="fragment"><div class="line"><span class="keywordflow">if</span> (write(x,y,z) == <a class="code hl_variable" href="#ga9fd88433e269dcd2f55a82d37fccd7f2">io::invalid</a>) {</div>
+<p>Typical usage: </p><div class="fragment"><div class="line"><span class="keywordflow">if</span> (write(x,y,z) == <a class="code hl_variable" href="#ga9fd88433e269dcd2f55a82d37fccd7f2">io::invalid&lt;io::offset_type&gt;</a>) {</div>
 <div class="line">    <span class="comment">// handle error</span></div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__api-core-io-types_html_ga9fd88433e269dcd2f55a82d37fccd7f2"><div class="ttname"><a href="#ga9fd88433e269dcd2f55a82d37fccd7f2">vidre::io::invalid</a></div><div class="ttdeci">constexpr T invalid</div><div class="ttdoc">Invalid offset value.</div><div class="ttdef"><b>Definition</b> types.hh:193</div></div>
+<div class="ttc" id="agroup__api-core-io-types_html_ga9fd88433e269dcd2f55a82d37fccd7f2"><div class="ttname"><a href="#ga9fd88433e269dcd2f55a82d37fccd7f2">vidre::io::invalid</a></div><div class="ttdeci">constexpr T invalid</div><div class="ttdoc">Invalid offset value.</div><div class="ttdef"><b>Definition</b> types.hh:218</div></div>
 </div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a class="el" href="#ga72ac3969f594911943b52eec600f9e2c" title="Signed default offset type.">offset_type</a> </dd></dl>
 
 </div>

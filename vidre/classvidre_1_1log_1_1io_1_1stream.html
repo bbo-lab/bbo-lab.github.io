@@ -139,7 +139,7 @@ $(function(){initNavTree('classvidre_1_1log_1_1io_1_1stream.html',''); initResiz
 <div class="center"><iframe scrolling="no" frameborder="0" src="classvidre_1_1log_1_1io_1_1stream__coll__graph.svg" width="154" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class implements logging to <code>std::clog</code>, but also, serves a base class for implementing individual log streamers.</p>
+<div class="textblock"><p>This class implements logging to <code>stderr</code>, but also, serves a base class for implementing individual log streamers.</p>
 <p>Developers wishing to implement their own logic should study <code><a class="el" href="classvidre_1_1log_1_1io_1_1file.html" title="File logger.">log::io::file</a></code>. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -154,8 +154,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9d9e61be4c30b070ba7147ca3d1d2f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81cc8487649b7a143755c8e42aac0907" id="r_a81cc8487649b7a143755c8e42aac0907"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81cc8487649b7a143755c8e42aac0907">~stream</a> ()</td></tr>
 <tr class="separator:a81cc8487649b7a143755c8e42aac0907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad682cd7dd92f5d53feac35f4dc767981" id="r_ad682cd7dd92f5d53feac35f4dc767981"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad682cd7dd92f5d53feac35f4dc767981">put</a> (const <a class="el" href="group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d">message_type</a> &amp;msg) noexcept</td></tr>
-<tr class="separator:ad682cd7dd92f5d53feac35f4dc767981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a984e2ecc145c4469a85ec86586f69d" id="r_a7a984e2ecc145c4469a85ec86586f69d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a984e2ecc145c4469a85ec86586f69d">put</a> (const <a class="el" href="group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d">message_type</a> &amp;msg) noexcept</td></tr>
+<tr class="separator:a7a984e2ecc145c4469a85ec86586f69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -466,8 +466,8 @@ requires std::derived_from&lt;S, <a class="el" href="classvidre_1_1log_1_1io_1_1
 
 </div>
 </div>
-<a id="ad682cd7dd92f5d53feac35f4dc767981" name="ad682cd7dd92f5d53feac35f4dc767981"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad682cd7dd92f5d53feac35f4dc767981">&#9670;&#160;</a></span>put()</h2>
+<a id="a7a984e2ecc145c4469a85ec86586f69d" name="a7a984e2ecc145c4469a85ec86586f69d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a984e2ecc145c4469a85ec86586f69d">&#9670;&#160;</a></span>put()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -476,7 +476,7 @@ requires std::derived_from&lt;S, <a class="el" href="classvidre_1_1log_1_1io_1_1
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void vidre::log::io::stream::put </td>
+          <td class="memname">void log::io::stream::put </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__api-core-log-details.html#ga55539a1c6c988fda328a8103a9e8401d">message_type</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>msg</em></span></td><td>)</td>
           <td></td>
@@ -484,7 +484,7 @@ requires std::derived_from&lt;S, <a class="el" href="classvidre_1_1log_1_1io_1_1
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

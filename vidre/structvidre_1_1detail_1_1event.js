@@ -14,6 +14,7 @@ var structvidre_1_1detail_1_1event =
     [ "close", "structvidre_1_1detail_1_1event.html#a4e59190bf53e7d0c53787a02cc5ec46b", null ],
     [ "terminate", "structvidre_1_1detail_1_1event.html#a194742f17e426db4402f64f4936287b7", null ],
     [ "notify", "structvidre_1_1detail_1_1event.html#a6c82344a1ed984e2ba4698e9ca93719d", null ],
+    [ "avail", "structvidre_1_1detail_1_1event.html#a2732aec2170fc33b2706dcb1013be1d9", null ],
     [ "wait", "structvidre_1_1detail_1_1event.html#a2a61e79e1f6e34562b6ffb877cd0fa03", null ],
     [ "wait", "structvidre_1_1detail_1_1event.html#a27fd556542773c4fd6c676c9eacd46f2", null ],
     [ "max_count", "structvidre_1_1detail_1_1event.html#a7746147de20c5dff14926e0cb3c764ca", null ],

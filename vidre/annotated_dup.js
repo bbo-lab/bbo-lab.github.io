@@ -1,22 +1,16 @@
 var annotated_dup =
 [
-    [ "fixed", "namespacefixed.html", [
-      [ "header", "structfixed_1_1header.html", "structfixed_1_1header" ]
-    ] ],
     [ "std", "namespacestd.html", [
       [ "is_error_code_enum< vidre::ffmpeg::errc >", "structstd_1_1is__error__code__enum_3_01vidre_1_1ffmpeg_1_1errc_01_4.html", null ]
     ] ],
-    [ "variable", "namespacevariable.html", [
-      [ "geometry", "structvariable_1_1geometry.html", "structvariable_1_1geometry" ],
-      [ "header", "structvariable_1_1header.html", "structvariable_1_1header" ],
-      [ "index", "structvariable_1_1index.html", "structvariable_1_1index" ],
-      [ "timestamp", "structvariable_1_1timestamp.html", "structvariable_1_1timestamp" ]
-    ] ],
     [ "vidre", "namespacevidre.html", [
+      [ "chrono", "namespacevidre_1_1chrono.html", [
+        [ "isodate", "structvidre_1_1chrono_1_1isodate.html", "structvidre_1_1chrono_1_1isodate" ],
+        [ "reference", "classvidre_1_1chrono_1_1reference.html", "classvidre_1_1chrono_1_1reference" ],
+        [ "timer", "classvidre_1_1chrono_1_1timer.html", "classvidre_1_1chrono_1_1timer" ],
+        [ "timestamp", "structvidre_1_1chrono_1_1timestamp.html", "structvidre_1_1chrono_1_1timestamp" ]
+      ] ],
       [ "detail", "namespacevidre_1_1detail.html", [
-        [ "io", "namespacevidre_1_1detail_1_1io.html", [
-          [ "buffer", "structvidre_1_1detail_1_1io_1_1buffer.html", "structvidre_1_1detail_1_1io_1_1buffer" ]
-        ] ],
         [ "uuid", "namespacevidre_1_1detail_1_1uuid.html", [
           [ "generator", "structvidre_1_1detail_1_1uuid_1_1generator.html", "structvidre_1_1detail_1_1uuid_1_1generator" ],
           [ "name_generator_md5", "structvidre_1_1detail_1_1uuid_1_1name__generator__md5.html", "structvidre_1_1detail_1_1uuid_1_1name__generator__md5" ],
@@ -27,19 +21,18 @@ var annotated_dup =
           [ "time_safe_generator", "structvidre_1_1detail_1_1uuid_1_1time__safe__generator.html", "structvidre_1_1detail_1_1uuid_1_1time__safe__generator" ]
         ] ],
         [ "event", "structvidre_1_1detail_1_1event.html", "structvidre_1_1detail_1_1event" ],
-        [ "schedule", "structvidre_1_1detail_1_1schedule.html", "structvidre_1_1detail_1_1schedule" ],
         [ "tinymap", "classvidre_1_1detail_1_1tinymap.html", "classvidre_1_1detail_1_1tinymap" ],
         [ "uuid_t", "structvidre_1_1detail_1_1uuid__t.html", "structvidre_1_1detail_1_1uuid__t" ]
       ] ],
       [ "device", "namespacevidre_1_1device.html", [
         [ "error", "namespacevidre_1_1device_1_1error.html", [
           [ "id", "classvidre_1_1device_1_1error_1_1id.html", "classvidre_1_1device_1_1error_1_1id" ],
-          [ "name", "classvidre_1_1device_1_1error_1_1name.html", "classvidre_1_1device_1_1error_1_1name" ],
-          [ "tmpl", "classvidre_1_1device_1_1error_1_1tmpl.html", "classvidre_1_1device_1_1error_1_1tmpl" ]
+          [ "name", "classvidre_1_1device_1_1error_1_1name.html", "classvidre_1_1device_1_1error_1_1name" ]
         ] ],
         [ "base", "classvidre_1_1device_1_1base.html", "classvidre_1_1device_1_1base" ],
         [ "camera", "classvidre_1_1device_1_1camera.html", "classvidre_1_1device_1_1camera" ],
-        [ "exception", "classvidre_1_1device_1_1exception.html", "classvidre_1_1device_1_1exception" ]
+        [ "exception", "classvidre_1_1device_1_1exception.html", "classvidre_1_1device_1_1exception" ],
+        [ "state", "classvidre_1_1device_1_1state.html", "classvidre_1_1device_1_1state" ]
       ] ],
       [ "error", "namespacevidre_1_1error.html", [
         [ "detail", "namespacevidre_1_1error_1_1detail.html", [
@@ -72,14 +65,19 @@ var annotated_dup =
         [ "midraw", "classvidre_1_1input_1_1midraw.html", "classvidre_1_1input_1_1midraw" ]
       ] ],
       [ "io", "namespacevidre_1_1io.html", [
-        [ "packet", "namespacevidre_1_1io_1_1packet.html", [
-          [ "base", "structvidre_1_1io_1_1packet_1_1base.html", "structvidre_1_1io_1_1packet_1_1base" ],
-          [ "header", "structvidre_1_1io_1_1packet_1_1header.html", "structvidre_1_1io_1_1packet_1_1header" ]
+        [ "detail", "namespacevidre_1_1io_1_1detail.html", [
+          [ "buffer", "structvidre_1_1io_1_1detail_1_1buffer.html", "structvidre_1_1io_1_1detail_1_1buffer" ]
         ] ],
+        [ "packet", "namespacevidre_1_1io_1_1packet.html", [
+          [ "basic", "structvidre_1_1io_1_1packet_1_1basic.html", "structvidre_1_1io_1_1packet_1_1basic" ],
+          [ "id", "structvidre_1_1io_1_1packet_1_1id.html", "structvidre_1_1io_1_1packet_1_1id" ]
+        ] ],
+        [ "endpoint", "classvidre_1_1io_1_1endpoint.html", "classvidre_1_1io_1_1endpoint" ],
         [ "file", "classvidre_1_1io_1_1file.html", "classvidre_1_1io_1_1file" ],
-        [ "pipe", "classvidre_1_1io_1_1pipe.html", "classvidre_1_1io_1_1pipe" ],
+        [ "result", "structvidre_1_1io_1_1result.html", "structvidre_1_1io_1_1result" ],
         [ "sink", "classvidre_1_1io_1_1sink.html", "classvidre_1_1io_1_1sink" ],
-        [ "source", "classvidre_1_1io_1_1source.html", "classvidre_1_1io_1_1source" ]
+        [ "source", "classvidre_1_1io_1_1source.html", "classvidre_1_1io_1_1source" ],
+        [ "thread", "classvidre_1_1io_1_1thread.html", "classvidre_1_1io_1_1thread" ]
       ] ],
       [ "log", "namespacevidre_1_1log.html", [
         [ "io", "namespacevidre_1_1log_1_1io.html", [
@@ -93,17 +91,20 @@ var annotated_dup =
         [ "debug", "classvidre_1_1log_1_1debug.html", "classvidre_1_1log_1_1debug" ],
         [ "error", "classvidre_1_1log_1_1error.html", "classvidre_1_1log_1_1error" ],
         [ "fatal", "classvidre_1_1log_1_1fatal.html", "classvidre_1_1log_1_1fatal" ],
-        [ "file", "classvidre_1_1log_1_1io_1_1file.html", "classvidre_1_1log_1_1io_1_1file" ],
         [ "handler", "classvidre_1_1log_1_1handler.html", "classvidre_1_1log_1_1handler" ],
         [ "info", "classvidre_1_1log_1_1info.html", "classvidre_1_1log_1_1info" ],
         [ "notice", "classvidre_1_1log_1_1notice.html", "classvidre_1_1log_1_1notice" ],
         [ "null", "classvidre_1_1log_1_1null.html", "classvidre_1_1log_1_1null" ],
         [ "status", "classvidre_1_1log_1_1status.html", "classvidre_1_1log_1_1status" ],
-        [ "stream", "classvidre_1_1log_1_1io_1_1stream.html", "classvidre_1_1log_1_1io_1_1stream" ],
-        [ "string", "classvidre_1_1log_1_1io_1_1string.html", "classvidre_1_1log_1_1io_1_1string" ],
-        [ "style", "structvidre_1_1log_1_1io_1_1style.html", "structvidre_1_1log_1_1io_1_1style" ],
         [ "trace", "classvidre_1_1log_1_1trace.html", "classvidre_1_1log_1_1trace" ],
         [ "warning", "classvidre_1_1log_1_1warning.html", "classvidre_1_1log_1_1warning" ]
+      ] ],
+      [ "lognew", "namespacevidre_1_1lognew.html", [
+        [ "detail", "namespacevidre_1_1lognew_1_1detail.html", [
+          [ "store", "classvidre_1_1lognew_1_1detail_1_1store.html", "classvidre_1_1lognew_1_1detail_1_1store" ]
+        ] ],
+        [ "packet", "structvidre_1_1lognew_1_1packet.html", "structvidre_1_1lognew_1_1packet" ],
+        [ "thread", "classvidre_1_1lognew_1_1thread.html", "classvidre_1_1lognew_1_1thread" ]
       ] ],
       [ "memory", "namespacevidre_1_1memory.html", [
         [ "chunk", "namespacevidre_1_1memory_1_1chunk.html", [
@@ -138,17 +139,7 @@ var annotated_dup =
       ] ],
       [ "storage", "namespacevidre_1_1storage.html", [
         [ "raw", "namespacevidre_1_1storage_1_1raw.html", [
-          [ "element", "namespacevidre_1_1storage_1_1raw_1_1element.html", [
-            [ "dynamic", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic.html", "structvidre_1_1storage_1_1raw_1_1element_1_1dynamic" ],
-            [ "fixed", "structvidre_1_1storage_1_1raw_1_1element_1_1fixed.html", "structvidre_1_1storage_1_1raw_1_1element_1_1fixed" ],
-            [ "group", "structvidre_1_1storage_1_1raw_1_1element_1_1group.html", "structvidre_1_1storage_1_1raw_1_1element_1_1group" ],
-            [ "packet", "structvidre_1_1storage_1_1raw_1_1element_1_1packet.html", "structvidre_1_1storage_1_1raw_1_1element_1_1packet" ],
-            [ "sequence", "structvidre_1_1storage_1_1raw_1_1element_1_1sequence.html", "structvidre_1_1storage_1_1raw_1_1element_1_1sequence" ]
-          ] ],
-          [ "id", "structvidre_1_1storage_1_1raw_1_1id.html", "structvidre_1_1storage_1_1raw_1_1id" ],
-          [ "prefix", "structvidre_1_1storage_1_1raw_1_1prefix.html", "structvidre_1_1storage_1_1raw_1_1prefix" ],
-          [ "version_type", "structvidre_1_1storage_1_1raw_1_1version__type.html", "structvidre_1_1storage_1_1raw_1_1version__type" ],
-          [ "writer", "classvidre_1_1storage_1_1raw_1_1writer.html", "classvidre_1_1storage_1_1raw_1_1writer" ]
+          [ "version_type", "structvidre_1_1storage_1_1raw_1_1version__type.html", "structvidre_1_1storage_1_1raw_1_1version__type" ]
         ] ],
         [ "ccv", "classvidre_1_1storage_1_1ccv.html", "classvidre_1_1storage_1_1ccv" ]
       ] ],
@@ -169,6 +160,7 @@ var annotated_dup =
       [ "bits_of", "structvidre_1_1bits__of.html", "structvidre_1_1bits__of" ],
       [ "event", "classvidre_1_1event.html", "classvidre_1_1event" ],
       [ "exception", "classvidre_1_1exception.html", "classvidre_1_1exception" ],
+      [ "schedule", "classvidre_1_1schedule.html", "classvidre_1_1schedule" ],
       [ "shared", "classvidre_1_1shared.html", "classvidre_1_1shared" ],
       [ "status", "classvidre_1_1status.html", "classvidre_1_1status" ],
       [ "uuid", "classvidre_1_1uuid.html", "classvidre_1_1uuid" ],

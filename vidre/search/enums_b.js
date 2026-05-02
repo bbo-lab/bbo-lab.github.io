@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pixel_5fformat_0',['pixel_format',['../group__api-support-ffmpeg-util-data.html#ga87e7b6ceacd0f2dd8c84a15085b61146',1,'vidre::ffmpeg']]],
-  ['policy_5ftype_1',['policy_type',['../structvidre_1_1detail_1_1schedule.html#adf5f0b0a49c40144989d7da46702b913',1,'vidre::detail::schedule']]]
+  ['state_0',['state',['../classvidre_1_1event.html#a608ed82b9ef02c456fbb4a1ba064693f',1,'vidre::event']]],
+  ['status_5ftype_1',['status_type',['../classvidre_1_1status.html#ad56f24ea0b59e64fbc062324ed2dd704',1,'vidre::status']]]
 ];

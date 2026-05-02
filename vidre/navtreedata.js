@@ -74,16 +74,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classvidre_1_1ffmpeg_1_1format_1_1output.html#a91981ce21c07c1d01f2a1a8d5d4aad29",
-"classvidre_1_1log_1_1io_1_1stream.html#a81cc8487649b7a143755c8e42aac0907",
-"classvidre_1_1storage_1_1ccv.html#a5f84643274c2d0f2dc9264a26f15fc80",
-"decode__video_8cc.html#a9decdb9a2529baa6bd2a855a12f1f0fc",
-"fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1a4eda9391818a53ebe85a5780a57ff05a",
-"functions_vars_q.html",
-"group__api-core-storage-raw.html#gga775ed8fecfc8b9b9f4e40441f90b2a64ab45cffe084dd3d20d928bee85e7b0f21",
-"group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146ac3d92a1171cf503edd18b59ed56441e0",
-"paths_8cc.html",
-"structvidre_1_1event_1_1result.html"
+"classvidre_1_1exception_1_1runtime.html#a828bdd9274444d28163d23887cd2e7c1",
+"classvidre_1_1io_1_1sink.html#aff634aaed5c4efe89db53670f56bc9d0",
+"classvidre_1_1plugin_1_1native_1_1library.html#aefce9e968f64d47ce58d26c23966ad10",
+"classvidre_1_1uvc.html#afcaf4723863ffd01a663c7ddcaaf90d2",
+"examples_2core_2io_8cc.html#a217dbf8b442f20279ea00b898af96f52",
+"fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1ab1df37b487e3e776bf48ee0bfdc97e49",
+"group__api-core-io-details.html#gga85315f3df4798ba5d1a26666f2b7ebaaaa919a25c09b5e0e533111577995cff53",
+"group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a2a9275ab197905df1ab30cbd424b4426",
+"libs_2core_2vidre_2core_2config_8cc.html",
+"structvidre_1_1detail_1_1event.html#a6b1e71dab21899533d5c24b696f17cb8",
+"structvidre_1_1variant_1_1deduce.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

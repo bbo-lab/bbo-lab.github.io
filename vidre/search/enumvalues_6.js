@@ -28,7 +28,7 @@ var searchData=
   ['gbrp9le_25',['gbrp9le',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a309b330e515277a1e015e014d02d7eef',1,'vidre::ffmpeg']]],
   ['gbrpf32be_26',['gbrpf32be',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a8f91dc1276b87793f48c91247e958023',1,'vidre::ffmpeg']]],
   ['gbrpf32le_27',['gbrpf32le',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146aa5aea46512974d39bda726080f74080f',1,'vidre::ffmpeg']]],
-  ['geometry_28',['geometry',['../classvidre_1_1device_1_1camera.html#adebd76996986499b1ae0329cc8fb5768a2f24945f74ca070d7e5b16b02c869b95',1,'vidre::device::camera::geometry'],['../group__api-core-storage-raw.html#ggab093b6172695424643a0da872bd30400aed7daeb157cd9b31e53896ad3c771a26',1,'vidre::storage::raw::geometry']]],
+  ['geometry_28',['geometry',['../classvidre_1_1device_1_1camera.html#adebd76996986499b1ae0329cc8fb5768a2f24945f74ca070d7e5b16b02c869b95',1,'vidre::device::camera']]],
   ['gigevision_29',['gigevision',['../classvidre_1_1video_1_1format_1_1pixel.html#a0aa2a018e63d3f0c4edea876fdc2eed1aa566960baa66fcca508f46be774f2721',1,'vidre::video::format::pixel']]],
   ['good_30',['good',['../classvidre_1_1status.html#ad56f24ea0b59e64fbc062324ed2dd704aabe5455e64fb08376cdb7618a89dd70a',1,'vidre::status']]],
   ['gray10be_31',['gray10be',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a1a3d6d3e3658ee3fd6c56e0f080cb332',1,'vidre::ffmpeg']]],
@@ -46,5 +46,5 @@ var searchData=
   ['grayf32be_43',['grayf32be',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146affc88ba3b113a44fcc304dbb7a0408b8',1,'vidre::ffmpeg']]],
   ['grayf32le_44',['grayf32le',['../group__api-support-ffmpeg-util-data.html#gga87e7b6ceacd0f2dd8c84a15085b61146a551b953612af5d0cf3e8ab8f1e180ec8',1,'vidre::ffmpeg']]],
   ['grey_45',['grey',['../fourcc_8hh.html#aec9764bac8da751067a7c2bb08eb5cc1aca50000a180a293de0b27acb67a695cb',1,'fourcc.hh']]],
-  ['group_46',['group',['../group__api-core-storage-raw.html#gga5fa0321a86ee103a5c9da9fecb857d84adb0f6f37ebeb6ea09489124345af2a45',1,'vidre::storage::raw']]]
+  ['group_46',['group',['../group__api-core-io-packet.html#gga4b0fc645b000c5498122bb6f4a0aeee5adb0f6f37ebeb6ea09489124345af2a45',1,'vidre::io::packet']]]
 ];
